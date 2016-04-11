@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  11 APR 2016 11:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  11 APR 2016 11:15
 entering extended mode
 **ThesisMainFile.tex
 ("C:\Users\Jie\Documents\GitHub\Thesis\Jie_Thesis -V3\ThesisMainFile.tex"
@@ -875,7 +875,7 @@ File: image/Ch1/rubella_spec.png Graphic file (type png)
 Package pdftex.def Info: image/Ch1/rubella_spec.png used on input line 97.
 (pdftex.def)             Requested size: 128.03676pt x 85.36221pt.
 
-Overfull \hbox (5.89537pt too wide) in paragraph at lines 88--99
+Overfull \hbox (8.59567pt too wide) in paragraph at lines 88--99
  [][] 
  []
 
@@ -992,7 +992,7 @@ File: image/Ch1/mimula_jcu_spec.png Graphic file (type png)
 Package pdftex.def Info: image/Ch1/mimula_jcu_spec.png used on input line 120.
 (pdftex.def)             Requested size: 128.03952pt x 85.35927pt.
 
-Overfull \hbox (2.89948pt too wide) in paragraph at lines 180--192
+Overfull \hbox (4.00351pt too wide) in paragraph at lines 180--192
  [][] 
  []
 
@@ -2940,9 +2940,6 @@ Package rerunfilecheck Info: File `ThesisMainFile.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 71.
  ) 
 Here is how much of TeX's memory you used:
@@ -2983,7 +2980,7 @@ fonts/txex.pfb><C:/Jie/software/MiKTeX/fonts/type1/public/txfonts/txsy.pfb><C:/
 Jie/software/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Jie/software/MiKTeX/fo
 nts/type1/urw/times/utmr8a.pfb><C:/Jie/software/MiKTeX/fonts/type1/urw/times/ut
 mri8a.pfb>
-Output written on ThesisMainFile.pdf (137 pages, 11882936 bytes).
+Output written on ThesisMainFile.pdf (137 pages, 11882909 bytes).
 PDF statistics:
  2406 PDF objects out of 2487 (max. 8388607)
  366 named destinations out of 1000 (max. 500000)
