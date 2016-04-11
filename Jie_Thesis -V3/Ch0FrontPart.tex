@@ -1,0 +1,175 @@
+% Part0FrontPart.tex
+
+%============frontmatter % Coverpage etc
+\title{Acoustic classification of Australian frogs for ecosystem surveys}
+       
+\author{Jie Xie}
+%\authoremail{xiej8734@gmail.com}
+\supervisor{Dr Jinglan Zhang, Professor Paul Roe, Dr Michael Towsey, Professor Vinold Chandran}
+\thesistype{Doctor of Philosophy}    % or comment it out (the default is Doctor of Philosophy)
+\university{Queensland University of Technology} % or comment it out (the default is QUT)
+\faculty{Science and Engineering Faculty}   % or comment it out (the default one is SEF)
+\school{School of Electrical Engineering and Computer Science}   % or School of xxx xxx xxx 
+                         % or comment it out (the default one is Elec Eng and Computer Science)                         
+\universitylogo{yes}{1.0}{./QUTLogo.eps}  % yes (true, 1) or no (false, 0), scale = 1.0; filename = QUTLogo.eps
+\submissiondate{April 2016}
+\copyrightyear{2016}
+%\informationcutoffdate{01 March 2010} %for cut of date of information in the thesis
+
+\maketitle	   %cover page of the thesis; a blank page is automatically added for double-side printing
+
+%\blankpage         %two more blank pages. If you don't want them, comment them out
+% \blankpage
+
+\setcounter{page}{1} %start to count page numbers
+
+% \insidetitlepage   %if you don't like an insidetitle page, comment it out
+
+\copyrightpage     %another format available: \copyrightpageWithTitle. You may try it (with thesis title). 
+
+%\signaturepage\cleardoublepage   % you may not need this signature page, so comment it out
+
+%============dedication
+\begin{dedication}
+To my family 
+\end{dedication}
+
+%============abstract
+\begin{abstract}
+Rapid decreases in frog populations have been spotted from locations over the world, which are regarded as one of the most critical threats to the global biodiversity. Causes of these declines can be summarised as follows: disease, habitat destruction and modification, exploitation, pollution, pesticide use, introduced species, and ultraviolet-B radiation (UV-B). On the one hand frog populations are declining globally, but on the other frogs play an important role in the whole ecosystem. To assess frog populations and optimise the protection policy, monitoring frogs is becoming ever more necessary. Since frogs are much easier to be heared than seen, frog populations are often assessed by their vocalisations. In order to collect frogs' vocalisations, traditional manual methods require ecologists and volunteers to visite the field, which limits the        
+scale for acoustic data collection. In contrast, recent advances in acoustic sensors provide us a novel method to survey vocalising animals such as frogs. 
+Deploying acoustic sensors in the field, they can then automatically collect large volumes of acoustic data at large spatial and temporal scales. After the data is collected by sensors, the raw audio data must be analysed to provide interpretable results. Due to the amount of collected data, enabling automating species identification in acoustic data has become important. Also since the data is collected from the field, the acoustic data tend to be very noisy. Very often the desired signal (frog call) is weak and there are multiple overlapping signals over the frog call. These characteristics pose a big challenge to perform the classification of frog species in acoustic data.
+
+
+
+The research presented in this dissertation aims to investigate methods to build a robust and high performance classification system for frog species in acosutic data. By considering the influences for a classification system, two aspects are investigated: feature extraction and classification, which consist of contributions towards three main objectives:
+\begin{enumerate} 
+\item[(1)]	Develop an enhanced feature representation for frog call classification. Classifying frog calls based on the enhanced temporal, perceptual and cepstral features is proposed. Time-frequency information of frog calls can be effectively represented via the enhanced feature representation. Classification performance of various machine learning techniques is compared with different feature representations. Our proposed enhanced feature representation achieves the best classification accuracy which outperforms the state-of-the-art.
+ 
+\item[(2)]	Propose a novel feature representation based on adaptive wavelet packet decomposition. To better capture the frequency domain information of frog calls with a good anti-noise ability, a novel feature representation is proposed named \textit{adaptive frequency scaled wavelet packet decomposition sub-band cepstral coefficients}. Compared with other cepstral coefficients, our proposed feature representation shows the best classification performance and a good anti-noise ability.
+
+\item[(3)]	Design a robust classification system to study overlapping frog vocalisations. Two classification frameworks are employed to classify overlapping frog vocalisations. 
+
+
+
+
+\begin{enumerate}
+\item Multiple-instance Multiple-label (MIML) learning
+\\
+To use MIML learning for classifying overlapping frog vocalisations, each individual syllabels are first segmented. Then, various features are calculated from each segmented syllable. Next, a bag generator is applied to those extracted features to constuct a suitable bag-of-syllable representation. Finally, three MIML learning algorithms are employed for the classification of frog vocalisations: MIML-SVM, MIML-KNN, and MIML-RBF. 
+
+\item Multiple-label (ML) learning
+\\
+As for the ML learning, acoustic features are first calculated without segmentation. Then, ML learning is used to classify the overlapping frog vocalisations using extracted features.
+\end{enumerate}
+
+
+\end{enumerate} 
+
+
+Our proposed approach achieves promising classification results compared to the state-of-the-art. Novel feature representations and classification learning frameworks have different contributions to the performance of the classification system of frog vocalisations. To our knowledge so far, it is the first time that MIML learning and ML learning are employed for automatic classification of overlapping frog vocalisations.
+
+\end{abstract}
+
+
+
+%\newpage
+%\begin{center}
+%{\huge \textbf{List of Abbreviations}}
+%\end{center}
+%
+%\begin{table}[htb!]
+%%\caption{My caption}
+%%\label{my-label}
+%\begin{tabular}{lllll}
+%DFT   &  &  &  & Discrete Fourier Transform          \\
+%DCT   &  &  &  & Discrete Cosine Transform           \\
+%SNR   &  &  &  & Signal to Noise Ratio               \\
+%LPCs  &  &  &  & Linear Predictive Coding            \\
+%MFCCs &  &  &  & Mel-Frequency Cepstral Coefficients \\
+%LDA   &  &  &  & Linear Discriminant Analysis        \\
+%K-NN  &  &  &  & K-Nearest Neighbour                 \\
+%SVM   &  &  &  & Support Vector Machine              \\
+%ANN   &  &  &  & Artificial Neural Network           \\
+%RF    &  &  &  & Random Forest                       \\
+%AED   &  &  &  & Acoustic Event Detection            \\
+%WPD   &  &  &  & Wavelet Packet Decomposition        \\
+%MIML  &  &  &  & Multiple-Instance Multiple-Label    \\
+%ML    &  &  &  & Multiple Label                     
+%\end{tabular}
+%\end{table}
+
+
+
+
+
+\newpage
+\begin{center}
+{\huge \textbf{List of Publications}}
+\end{center}
+
+{ \large \textbf{Journal Article}}
+\begin{enumerate} 
+\item[1]	\textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul (2016) Adaptive frequency scaled wavelet packet decomposition for frog call classification.  Ecological Informatics, 32, pp. 134-144.
+\item[2]	Zhang Liang, Towsey Michael, \textbf{Xie Jie}, Zhang Jinglan, Roe Paul,  Using multi-label classification for acoustic pattern detection and assisting bird species surveys, Applied Acoustics, Volume 110, September 2016, Pages 91-98, ISSN 0003-682X,
+\end{enumerate}
+
+{ \large \textbf{Conference Paper}}
+\begin{enumerate} 
+\item[3]	\textbf{Xie, Jie}, Towsey, Michael, Truskinger, Anthony, Eichinski, Philip, Zhang, Jinglan, and Roe, Paul (2015) Acoustic classification of Australian anurans using syllable features. In 2015 IEEE Tenth International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP), IEEE, Singapore, pp. 1-6.
+
+\item[4]	\textbf{Xie, Jie}, Towsey, Michael, Yasumiba, Kiyomi, Zhang, Jinglan, and Roe, Paul (2015) Detection of anuran calling activity in long field recordings for bio-acoustic monitoring. In 2015 IEEE Tenth International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP), IEEE, Singapore, pp. 1-6.
+\item[5]	\textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul (2015) Image processing and classification procedure for the analysis of Australian frog vocalisations. InProceedings of the 2nd International Workshop on Environmental Multimedia Retrieval, ACM, Shanghai, China, pp. 15-20.
+\item[6]	\textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, Dong, Xueyan, and Roe, Paul (2015)Application of image processing techniques for frog call classification. In IEEE International Conference on Image Processing (ICIP 2015), 27-30 September 2015, Québec City, Canada.
+
+\item[7]	\textbf{Xie, Jie}, Towsey, Michael, Eichinski, Philip, Zhang, Jinglan, and Roe, Paul (2015)Acoustic feature extraction using perceptual wavelet packet decomposition for frog call classification. In 2015 IEEE 11th International Conference on e-Science (e-Science), IEEE, Munich, Germany, pp. 237-242.
+
+\item[8]	\textbf{Xie, Jie}, Zhang, Jinglan and Roe, Paul,  “Discovering acoustic feature extraction and selection algorithms for frog vocalization monitoring with machine learning techniques”, 2015 Annual Conference of the Ecological Society of Australia. (Abstract accepted for poster presentation) 
+
+\item[9]	\textbf{Xie, Jie}, Zhang, Jinglan, and Roe, Paul (2015) Acoustic features for hierarchical classification of Australian frog calls. In 10th International Conference on Information, Communications and Signal Processing, 2-4 December 2015, Singapore.
+
+\item[10]	Dong, Xueyan, \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul (2015)Generalised features for bird vocalisation retrieval in acoustic recordings. In IEEE International Workshop on Multimedia Signal Processing, 19-21 October 2015, Xiamen, China.
+
+\end{enumerate} 
+
+
+
+%============keywords
+\begin{keywords}
+Bio-acoustic monitoring \\
+Environment audio analysis \\
+Frog call classification \\
+Spectrogram analysis \\
+Feature fusion \\
+Wavelet packet decomposition \\
+Multiple-instance multiple-label learning \\
+Multiple-label learning \\
+ 
+\end{keywords}
+
+%============acknowledgment
+\begin{ack}
+First, I would like to express my sincere gratitude and thanks to Dr Jinglan Zhang (principal supervisor). I want to thank Jinglan for giving me an opportunity to study in Australia. During the whole PhD study, I learnt so much from her about passion for work and high motivation, which will benefit me throughout my life. I would also like to express my gratitude to Professor Paul Roe (associate supervisor), for his consistent instructions and supports through the last three years. I would also like to thank Dr Michael Towsey for his provision of consistent guidelines, discussions, and encouragement. I want to thank Professor Viond Chandran for his support in writing my confirmation report and this dissertation. 
+
+I would also like to express my gratefulness to my family, especially my grandparents, parents and my wife. They always support my oversea study silently and firmly. Without their support, I could not pay full attention to PhD study and complete this thesis. My sincere thanks also go to all the friends for their love, attention and continuous concern about my PhD study.
+
+I also want to thank the China Scholarship Council (CSC), Queensland University of Technology and the Wet Tropics management authority for their financial support. 
+
+\end{ack}
+
+
+%=============preface
+%\begin{preface}
+%%Here is the preface. 
+%%
+%\end{preface}
+
+
+%==============
+% If you don't like to put nomenclature, which you have manually 
+% edited in the file nomenclature.tex, at the front, comment the 
+% following line out
+% \listnomenclatureatfront{yes}{./nomenclature.tex} 
+
+%==============
+\afterpreface

@@ -1,0 +1,14 @@
+DFT,,,,Discrete Fourier Transform
+DCT,,,,Discrete Cosine Transform
+SNR,,,,Signal to Noise Ratio
+LPCs,,,,Linear Predictive Coding
+MFCCs,,,,Mel-Frequency Cepstral Coefficients
+LDA,,,,Linear Discriminant Analysis
+K-NN,,,,K-Nearest Neighbour
+SVM,,,,Support Vector Machine
+ANN,,,,Artificial Neural Network
+RF,,,,Random Forest
+AED,,,,Acoustic Event Detection
+WPD,,,,Wavelet Packet Decomposition
+MIML,,,,Multiple-Instance Multiple-Label 
+ML,,,,Multiple Label
