@@ -250,7 +250,7 @@ For a frog call classification system, it often consists of four parts (Figure.~
 Most datasets used in previous frog call classification studies assumes that there is only one frog species exist in each individual recordings. However, these resulting frog calls cannot reflect the characteristics of frog vocalisations in real-world situations, such as background noise, frog chorus. To develop a robust frog call classification system for environmental recordings, two main challenges have been identified. 
 
 
-\noindent \textbf{Challenge 1}: Most previous work studied frog call classification using high SNR recordings, the first challenge is thus to further improve the classification performance using high SNR recordings. Various acoustic features have been investigated for the classification of frog calls in high SNR recordings. Since our work finally aims to classify frog calls in low SNR recordings, most features that can sucessfully classify high SNR recordings cannot perform well for low SNR recordings. Consequently, it is still a big challenge to develop robust acoustic features to classify frog species in low SNR recordings. 
+\noindent \textbf{Challenge 1}: Most previous work studied frog call classification using high SNR recordings, the first challenge is thus to further improve the classification performance using high SNR recordings. Various acoustic features have been investigated for the classification of frog calls in high SNR recordings. Since our work finally aims to classify frog calls in low SNR recordings, most features that can successfully classify high SNR recordings cannot perform well for low SNR recordings. Consequently, it is still a big challenge to develop robust acoustic features to classify frog species in low SNR recordings. 
 
 \noindent \textbf{Challenge 2}: Another challenge is the classification framework for studying frog vocalisations in low SNR recordings. Since most previous work assumed that each individual recording consists of only one frog species, a single-instance single-label (SISL) framework is suitable for classifying frog calls in those recordings. However, due to the different characters of low SNR recordings, which consist of more than one frog species, the SISL framework is no longer suitable. Therefore, different classification frameworks need to be investigated to study frog vocalisations in low SNR recordings.
 
@@ -269,7 +269,7 @@ The research questions are developed in order to solve the aforementioned proble
 
 
 \subsection{Aims and objectives}
-This thesis aims to develop a robust frog call classification system to monitor the environment. For high SNR recordings, we want to improve the classification performance. As for the low SNR recordings, we plan to design novel frameworks to classify multiple simultaneously vocalising frog speceis. With our classification results, ecologists can then make decisions on how to protect and improve the health of frog populations. The specific research objectives are listed below.
+This thesis aims to develop a robust frog call classification system to monitor the environment. For high SNR recordings, we want to improve the classification performance. As for the low SNR recordings, we plan to design novel frameworks to classify multiple simultaneously vocalising frog species. With our classification results, ecologists can then make decisions on how to protect and improve the health of frog populations. The specific research objectives are listed below.
 
 
 \begin{enumerate}
@@ -285,8 +285,10 @@ This thesis aims to develop a robust frog call classification system to monitor 
  
  
 \subsection{Significance and contributions}
-For the development of sensor techniques, acoustic sensors have been widely deployed in the field for surveying vocalising animals. Different from recordings collected in the constrained environment, recordings collected in the wild often have low SNR for the change of the environment. In this dissertation, we first investigate the high SNR recordings to further improve the classification performance of frog calls with high SNR. Then, those features than can be used for studying frog calls in low SNR recordings are transplanted from high SNR recordings for further analysis. Combined with MIML or ML techniques, recordings collected in the field are studied to realise the long term monitoring of frog population.
-With the developed frog classifiers, ecologist can then analyse frogs by collecting audio data. It will significantly reduce the expert labour cost for monitoring frog population of a particular area. The monitoring result can also help reveal the importance of environment protection, which can be achieved by studying the correlation between the frog population and environment variables.
+For the development of sensor techniques, acoustic sensors have been widely deployed in the field for surveying vocalising animals. Different from recordings collected in the constrained environment, recordings collected in the field often have low SNR and consist of multiple simultaneous vocalising frog species. In this dissertation, we first investigate the high SNR recordings to further improve the classification performance of frog recordings with high SNR. 
+Then, those features that can be used for studying frog calls in low SNR recordings are transplanted from high SNR recordings for further analysis.
+Since field recordings often consists of multiple simultaneous vocalising frog species, both MIML and ML learning are used for the classification of those low SNR field recordings. Meanwhile, the frog calling activity can also be monitored based on the MIML and ML classification results.
+With our developed frog call classification frameworks, ecologists can then analyse frogs by collecting audio data. It will significantly reduce the expert labour cost for monitoring frog calling activity of a particular area. The monitoring result can also help reveal the importance of environment protection, which can be achieved via studying the correlation between the frog calling activity and weather variables. 
 
  
  
