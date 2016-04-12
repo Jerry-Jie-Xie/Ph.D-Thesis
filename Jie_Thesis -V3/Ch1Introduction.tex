@@ -16,7 +16,7 @@ On one hand frog populations are rapidly worldwide declining, and on the other f
 For those aforementioned reasons, increasing frog populations and optimising the protection policy necessitates monitoring of frogs. Frogs are often much easier to be heard than to be seen (Figure.~\ref{fig:Ch1_frogs}). Also frog vocalizations are often employed for most communication, which offer a possible way to study and evaluate frog populations by detecting species-specific calls \citep{dorcas2009auditory}. Therefore, frogs are often monitored via their vocalisations. Traditional manual monitoring methods require ecologists and volunteers to spend extensive time in the field for collecting acoustic data. Although traditional methods can provide an accurate measure of daytime species and richness, it has a limitation in monitoring frog populations over large spatial and temporal scales.
 To address this limitation, recent advances in acoustic sensors provide a way to automatically survey vocal animals (such as frogs). Deploying acoustic sensors in the field, frog vocalisations can then be automatically collected. Compared with the manual point-counting method, sensors can greatly extend the survey into larger spatial and temporal scales, and generate large volumes of acoustic data that needs to be analysed. Consequently, enabling automatic species identification in acoustic data has become important. However, because the recordings are automatically collected from the field, the audio data tends to be very noisy. Very often the desired signal (frog call) is weak, and there are multiple overlapping signals over the frog call. Furthermore, different frog species tend to call together to make chorus. All those characteristics pose a big challenge to automatic frog vocalisations survey.
 
-\begin{figure}[htb!]
+\begin{figure*}[htb!]
 \centering
       \begin{subfigure}[b]{0.5\textwidth}
            \includegraphics[width=1\textwidth,height=0.75\textwidth]{image/Ch1/unseen_frog_1.jpg}
@@ -27,7 +27,7 @@ To address this limitation, recent advances in acoustic sensors provide a way to
     \end{subfigure}%
 \caption[Photos of frogs]{Photos of frogs to indicate that frogs are difficult to be seen in the field}
 \label{fig:Ch1_frogs}       % Give a unique label
-\end{figure}
+\end{figure*}
 
 
 
@@ -47,7 +47,7 @@ Compared with audio data collected in the laboratories and quiet places (such as
 \subsection{Audio data analysis}
 Audio data is usually considered as a mono-dimensional signal. To ease the tasks of understanding, comparison, modification, and resynthesise of signals \citep{rocchesso2003introduction}, audio data analysis is often developed to find the major features representing the time-varying audio data. Many application areas of audio data analysis have been identified: speech processing, mechanical signal processing, bioacoustics analysis, etc. Two most important audio data analysis techniques are Short-time Fourier Transform (STFT) and Linear Predictive Coding (LPC). STFT is a Fourier-related transform, which determines the sinusoidal frequency and phase content of local sections of a signal as it changes over the time \citep{allen1997short}. LPC is mostly used to represent the spectral envelope of an audio data based on the information of a linear predictive model \citep{deng2003speech}. An example of a spectrogram of frog calls derived from a field recording is shown in Figure.~\ref{fig:Ch1_spectrogram}.
 
-\begin{figure}[htb!]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{image/Ch1/spectrogram_example.png}
 \caption[An example of spectrogram of environmental recording]{An example of spectrogram of environmental recording. The x-axis is time (seconds); the y-axis is frequency (kHz). The spectrogram is generated from a one-minute recording collected in Townsville, Queensland on around 11.50 pm February 03 2013; the frog species in this recording is \textit{Litoria caerulea}}
@@ -62,7 +62,7 @@ Audio data is usually considered as a mono-dimensional signal. To ease the tasks
 \subsection{Frog call structure}
 Spectrogram (also called sonogram) is a widely used tool for most bioacoustics analysis for its flexible implementation and good applicability. Compared with the hierarchical structure of bird calls, frog calls have a relatively simple call structure \citep{somervuo2006parametric}. The frog vocalisation structure mainly has two ingredients: call and syllable. A frog call is normally made up of several frog syllables (Figure.~\ref{fig:Ch1_spec_mark}).
 
-\begin{figure}[htb!]
+\begin{figure}[H]
 \centering
 \includegraphics[width=\textwidth]{image/Ch1/spectrogram_mark.pdf}
 \caption[Spectrogram of \textit{Litoria caerulea}]{Spectrogram of \textit{Litoria caerulea}, three syllable of \textit{Litoria caerulea} are annotated with one black rectangle, respectively.}
@@ -154,7 +154,7 @@ where $\mu$ and $\sigma$ are the mean and standard deviation, respectively, $Z$ 
 
 
 
-\begin{table}[htb!]
+\begin{table}[H]
 \centering
 \caption[Confidence interval for CD]{Confidence interval of signal and noise (David Stewart's CD)}
 \label{tab:CI_CD}
@@ -173,7 +173,7 @@ where $\mu$ and $\sigma$ are the mean and standard deviation, respectively, $Z$ 
 
 
 
-\begin{table}[htb!]
+\begin{table}[H]
 \centering
 \caption[Confidence interval for JCU recordings]{Confidence interval of signal and noise for JCU recordings}
 \label{tab:CI_JCU}
@@ -202,7 +202,7 @@ An acoustic event is a localised region of high intensity in a spectrogram. As w
 
 
 
-\begin{table}[htb!]
+\begin{table}[h]
 \centering
 \caption[PSD of JCU recordings]{Power spectral density (PSD) estimate of signal and noise (JCU recordings); for some frog species, the PSD difference between the signal and background noise is marked with the red rectangle, which indicates the frequency location of specific frog species; for others, the PSD of signal and noise is very similar, which means that some sources have similar frequency information with frog species}
 \label{tab:psd}
@@ -220,7 +220,7 @@ An acoustic event is a localised region of high intensity in a spectrogram. As w
 \end{table}
 
 
-\begin{table}[htb!]
+\begin{table}[h]
 \centering
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lll}
@@ -238,7 +238,7 @@ For a frog call classification system, it often consists of four parts (Figure.~
 
 
 
-\begin{figure}[htb!]
+\begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{image/Ch1/flowchart.jpg}
 \caption[Flowchart of frog call classification]{Flowchart of frog call classification}
@@ -262,7 +262,7 @@ The research questions are developed in order to solve the aforementioned proble
  \begin{enumerate}
      \item which acoustic features used for addressing high SNR recordings can be transplanted to study low SNR recordings?
      \item How to develop acoustic features to classify frog calls in low SNR recordings?
-     \item How to adopt machine learning techniques to classify simultaneous overlapping frog calls?
+     \item How to employ suitable classification frameworks to classify multiple simultaneous vocalising frog species in low SNR recordings?
   \end{enumerate}
 
 
@@ -276,7 +276,7 @@ This thesis aims to develop a robust frog call classification system to monitor 
 
 \item	To improve the current representation schemes for modelling frog calls in high SNR recordings
 
-\item 	To develop robust feature extraction methods for low SNR recordings for frog call classification
+\item 	To develop robust feature extraction methods for frog call classification in low SNR recordings 
 
 \item   To investigate machine learning techniques (MIML learning and ML learning) to tackle the frog call classification problem in low SNR recordings
 
