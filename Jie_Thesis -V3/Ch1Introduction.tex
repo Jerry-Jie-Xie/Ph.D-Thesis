@@ -35,11 +35,23 @@ To address this limitation, recent advances in acoustic sensors provide a way to
 \section{Basic concepts} 
 
 \subsection{Environment audio data}
-The audio data used in this study is mainly derived from two sources: David Stewart's CD \citep{CD} and recordings collected by James Cook University (JCU) \footnote{All the recordings can be obtained from our group website: https://www.ecosounds.org/}. David Stewart's CD is used for the preliminary testing, which is used for the experiment in Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5Wavelet}. Recordings collected by JCU are used for Chapters \ref{cha:cha6MIML} and \ref{cha:cha7ML}. Firstly, since almost all prior work studied frog recordings with an assumption that only one frog species exists in each individual frog recording, the experiments in Chapter \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5Wavelet} aim to develop a state-of-the-art frog call classification system under this assumption. Secondly, Chapters \ref{cha:cha6MIML} and \ref{cha:cha7ML} focus on the  
-study of recordings including multiple overlapping frog vocalisations, which is the real situation for most environment audio data. 
+The audio data used in this study is mainly derived from two sources: David Stewart's CD \citep{CD} and recordings collected by James Cook University (JCU) \footnote{All the recordings can be obtained from our group website: https://www.ecosounds.org/}. 
+David Stewart's CD is employed for the preliminary testing, and used for the experiments in chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5Wavelet}. 
+Recordings collected by JCU are used for chapters \ref{cha:cha6MIML} and \ref{cha:cha7ML}. 
+The reasons for using those two datasets are list as follows:
+\begin{itemize}
+\item  Since almost all prior work studied frog recordings with an assumption that only one frog species exists in each individual frog recording, the experiments in Chapter \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5Wavelet} aim to develop a state-of-the-art frog call classification system under this assumption. 
+
+\item  Chapters \ref{cha:cha6MIML} and \ref{cha:cha7ML} focus on the  
+study of recordings including multiple simultaneously vocalising frog species, which is the real situation for most environmental recordings. 
 
 
-Compared with audio data collected in the laboratories and quiet places (such as David Stewart’s CD), environmental audio data are normally collected under unconstrained noisy conditions (such as JCU recordings). Consequently, the noise and variability issues need to be considered when dealing with environmental audio data. For the background noise, there are a wide variety of non-biological noises and a variety of animal sounds in the environmental recordings. These non-biological noises often come from different sources: rain, wind, human activities (e.g. traffic noise). Besides non-biological noises, many competitive animal sounds (e.g. birds when we are interested in frogs) are also recorded in the environmental audio recordings. In the case of variability, it is produced in many aspects: call structure between species, population of one specific species, time and season changes. All those noises and variabilities make it a challenge to develop a robust frog call classification system.
+\end{itemize}
+
+
+
+
+Compared with audio data collected in the laboratories and quiet places (such as David Stewart’s CD), environmental recordings are normally collected under unconstrained noisy conditions (such as JCU recordings). Consequently, the noise and variability issues need to be considered when dealing with environmental audio data. For the background noise, there are a wide variety of non-biological noises and a variety of animal sounds in the environmental recordings. These non-biological noises often come from different sources: rain, wind, human activities (e.g. traffic noise). Besides non-biological noises, many competitive animal sounds (e.g. birds when we are interested in frogs) are also recorded in the environmental  recordings. In the case of variability, it is produced in many aspects: call structure between species, population of one specific species, time and season changes. All those noises and variabilities make it a challenge to develop a robust frog call classification system.
 
 
 
@@ -47,7 +59,7 @@ Compared with audio data collected in the laboratories and quiet places (such as
 \subsection{Audio data analysis}
 Audio data is usually considered as a mono-dimensional signal. To ease the tasks of understanding, comparison, modification, and resynthesise of signals \citep{rocchesso2003introduction}, audio data analysis is often developed to find the major features representing the time-varying audio data. Many application areas of audio data analysis have been identified: speech processing, mechanical signal processing, bioacoustics analysis, etc. Two most important audio data analysis techniques are Short-time Fourier Transform (STFT) and Linear Predictive Coding (LPC). STFT is a Fourier-related transform, which determines the sinusoidal frequency and phase content of local sections of a signal as it changes over the time \citep{allen1997short}. LPC is mostly used to represent the spectral envelope of an audio data based on the information of a linear predictive model \citep{deng2003speech}. An example of a spectrogram of frog calls derived from a field recording is shown in Figure.~\ref{fig:Ch1_spectrogram}.
 
-\begin{figure}[H]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=\textwidth]{image/Ch1/spectrogram_example.png}
 \caption[An example of spectrogram of environmental recording]{An example of spectrogram of environmental recording. The x-axis is time (seconds); the y-axis is frequency (kHz). The spectrogram is generated from a one-minute recording collected in Townsville, Queensland on around 11.50 pm February 03 2013; the frog species in this recording is \textit{Litoria caerulea}}
@@ -62,7 +74,7 @@ Audio data is usually considered as a mono-dimensional signal. To ease the tasks
 \subsection{Frog call structure}
 Spectrogram (also called sonogram) is a widely used tool for most bioacoustics analysis for its flexible implementation and good applicability. Compared with the hierarchical structure of bird calls, frog calls have a relatively simple call structure \citep{somervuo2006parametric}. The frog vocalisation structure mainly has two ingredients: call and syllable. A frog call is normally made up of several frog syllables (Figure.~\ref{fig:Ch1_spec_mark}).
 
-\begin{figure}[H]
+\begin{figure}[htb!]
 \centering
 \includegraphics[width=\textwidth]{image/Ch1/spectrogram_mark.pdf}
 \caption[Spectrogram of \textit{Litoria caerulea}]{Spectrogram of \textit{Litoria caerulea}, three syllable of \textit{Litoria caerulea} are annotated with one black rectangle, respectively.}
@@ -144,7 +156,7 @@ where $L$ is the length of the signal and noise used for calculating SNR, and se
 
 
 
-Since the signal power and background noise in this study vary from recordings to recordings and calls to calls within the recording, Table~\ref{tab:CI_CD} and Table~\ref{tab:CI_JCU} calculate the confidence intervals of high and low SNR recordings for the power of signal and noise. The calculation of confidence interval is defined as follows:
+Since the power of signal and background noise in this study vary from recordings to recordings and calls to calls within the recording, Table~\ref{tab:CI_CD} and Table~\ref{tab:CI_JCU} calculate the confidence intervals of high and low SNR recordings for the power of signal and noise. The calculation of confidence interval is defined as follows:
 
 \begin{equation}
 CI=\mu \pm Z*\frac{\sigma}{\sqrt{L}}
@@ -154,7 +166,7 @@ where $\mu$ and $\sigma$ are the mean and standard deviation, respectively, $Z$ 
 
 
 
-\begin{table}[H]
+\begin{table}[htb!]
 \centering
 \caption[Confidence interval for CD]{Confidence interval of signal and noise (David Stewart's CD)}
 \label{tab:CI_CD}
@@ -173,7 +185,7 @@ where $\mu$ and $\sigma$ are the mean and standard deviation, respectively, $Z$ 
 
 
 
-\begin{table}[H]
+\begin{table}[htb!]
 \centering
 \caption[Confidence interval for JCU recordings]{Confidence interval of signal and noise for JCU recordings}
 \label{tab:CI_JCU}
@@ -195,9 +207,9 @@ where $\mu$ and $\sigma$ are the mean and standard deviation, respectively, $Z$ 
 
 
 \subsection{Acoustic event and background noise}
-
-
-An acoustic event is a localised region of high intensity in a spectrogram. As we can see from Figure.~\ref{fig:label}, there are lots of acoustic events in one-minute recording. This study focuses on the frog vocalisations, and frog calls are recorded as signals. Consequently, all the other events are called background noise, whose definition is ambiguous. In this study, both high and low SNR recordings are investigated to build a robust frog call classification system. Most previous studies present the frog call classification system using the high SNR recordings. The high SNR recordings often assume that there is only one frog species in each individual recording with few background noises ($SNR \geq 15 dB$). In contrast, most low SNR recordings consist of more than one frog species in an individual recording with lots of background noises ($SNR \leq 15 dB$). For the low SNR recordings, Table~\ref{tab:psd} show the power spectral density of signal and noise. It can be seen that the noises in low SNR recordings are often generated by several sources and broadband, which cover different frequency bands and lead to the frequency overlapping between the signal and noise. Therefore, it is challenging to analyse the recordings containing background noise and simultaneous vocalising events.
+An acoustic event is a localised region of high intensity in a spectrogram. As we can see from Figure.~\ref{fig:label}, there are lots of acoustic events in an one-minute recording. This study focuses on the frog vocalisations, and frog calls are recorded as signals. Consequently, all the other events are called background noise. 
+In this study, both high and low SNR recordings are investigated to build a robust frog call classification system. Most previous studies present the frog call classification system using high SNR recordings. The high SNR recordings often assume that there is only one frog species in each individual recording with few background noises ($SNR \geq 15 dB$). In contrast, most low SNR recordings consist of more than one frog species in an individual recording with lots of background noises ($SNR \leq 15 dB$). For the low SNR recordings, Table~\ref{tab:psd} show the power spectral density of signal and noise. It can be seen that the noises in low SNR recordings are often generated by several sources and broadband, which cover different frequency bands and lead to the frequency overlapping between the signal and noise. 
+Therefore, it is challenging to improve the classification performance in high SNR recordings over current frog call classification systems, and analyse the recordings containing background noise and simultaneous vocalising events.
 
 
 
@@ -247,12 +259,12 @@ For a frog call classification system, it often consists of four parts (Figure.~
 
 
 \subsection{Research problem}
-Most datasets used in previous frog call classification studies assumes that there is only one frog species exist in each individual recordings. However, these resulting frog calls cannot reflect the characteristics of frog vocalisations in real-world situations, such as background noise, frog chorus. To develop a robust frog call classification system for environmental recordings, two main challenges have been identified. 
+Most datasets used in previous frog call classification studies assume that there is only one frog species in each individual recordings. However, these resulting frog calls cannot reflect the characteristics of frog vocalisations in real-world situations, such as background noise, frog chorus, and other vocalising animals. To develop a robust frog call classification system for environmental recordings, two main challenges have been identified. 
 
 
 \noindent \textbf{Challenge 1}: Most previous work studied frog call classification using high SNR recordings, the first challenge is thus to further improve the classification performance using high SNR recordings. Various acoustic features have been investigated for the classification of frog calls in high SNR recordings. Since our work finally aims to classify frog calls in low SNR recordings, most features that can successfully classify high SNR recordings cannot perform well for low SNR recordings. Consequently, it is still a big challenge to develop robust acoustic features to classify frog species in low SNR recordings. 
 
-\noindent \textbf{Challenge 2}: Another challenge is the classification framework for studying frog vocalisations in low SNR recordings. Since most previous work assumed that each individual recording consists of only one frog species, a single-instance single-label (SISL) framework is suitable for classifying frog calls in those recordings. However, due to the different characters of low SNR recordings, which consist of more than one frog species, the SISL framework is no longer suitable. Therefore, different classification frameworks need to be investigated to study frog vocalisations in low SNR recordings.
+\noindent \textbf{Challenge 2}: Another challenge is the classification framework for studying frog vocalisations in low SNR recordings. Since most previous work assumed that each individual recording consists of only one frog species, a single-instance single-label (SISL) framework is suitable for classifying frog calls in those high SNR recordings. However, low SNR recordings often have different characteristics containing more than one frog species, the SISL framework is no longer suitable. Therefore, different classification frameworks need to be investigated to study frog vocalisations in low SNR recordings.
 
 
 
