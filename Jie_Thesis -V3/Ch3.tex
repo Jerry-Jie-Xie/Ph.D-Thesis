@@ -230,9 +230,48 @@ After feature extraction, the next step is to perform classification. This secti
 
 \subsection{Introduction}
 
-Recent advances in acoustic sensors have made it possible to collect acoustics data over large spatial temporal scales. Also, large volumes of acoustic data are collected. Therefore, it is unavoidable to develop automatic means for data analysis. Over the past decades, machine learning has become a hot topic in the field of data analysis. Among various machine learning techniques, classification is one methodology to assign a class label to a set of unknown objects on the basis of a training data with known class membership, which is potentially useful for tagging collected acoustic data. For a classification process, it often consists of two stages: training and testing. In the training stage, a model is constructed using the testing data with known class label. In the testing stage, the learned model is used to predict the class label for the testing data. In general, classification can be divided into two types: binary classification and multiclass classification. For the binary classification, the data is separated into two classes. If the data is separated into one of several classes, then it is named as multiclass classification. Most classification methods have been specifically developed for binary classification. To extent the binary classification into multiclass classification, the combined use of multiple binary classifiers can be a solution.  For a specific classification task, it is common that several classifiers are tested in order to find a suitable classifier with high accuracy. 
+Recent advances in acoustic sensors have made it possible to collect acoustics data over large spatial and temporal scales. Also, large volumes of acoustic data are collected. Therefore, it is unavoidable to develop automatic means for data analysis. Over the past decades, machine learning has become a hot topic in the field of data analysis. Among various machine learning techniques, classification is one methodology to assign a class label to a set of unknown objects on the basis of a training data with known class membership, which is potentially useful for tagging collected acoustic data. For a classification process, it often consists of two stages: training and testing. In the training stage, a model is constructed using the testing data with known class label. In the testing stage, the learned model is used to predict the class label for the testing data. 
 
-\subsection{Classifiers}
+In previous studies, it is often assumes that there is only one frog species in one individual recording. Then, frog call classification is framed as a single-instance single-label (SISL) classification problem. Each segmented frog syllable (instance) is represented by a frog species (label). 
+However, classify frog calls in environmental recordings can not fit in this framework well. In particular, each individual environmental recording consists of multiple simultaneously vocalising frog species and therefore multiple labels need to be assigned to one recording. To address this problem, two different classification frameworks are first introduced to study frog calls: multiple-instance multiple-label (MIML) classification and multiple-label (ML) classification. Compared to the traditional SISL classification framework, both MIML and ML classification frameworks are more convenient and natural for representing the frog species in environmental recordings. The frameworks for the SISL learning, ML learning and MIML learning are shown in Figure.~\ref{fig:framework}.
+
+
+\begin{figure}[htb!]
+\centering
+      \begin{subfigure}[b]{0.32\textwidth}
+           \includegraphics[width=1\textwidth,height=0.75\textwidth]{image/Method/SISL.pdf}
+           \caption{SISL learning}
+    \end{subfigure}
+	~
+	 \begin{subfigure}[b]{0.32\textwidth}
+           \includegraphics[width=1\textwidth,height=0.75\textwidth]{image/Method/ML.pdf}
+           \caption{ML learning}
+    \end{subfigure}
+    ~
+   \begin{subfigure}[b]{0.32\textwidth}
+           \includegraphics[width=1\textwidth,height=0.75\textwidth]{image/Method/MIML.pdf}
+           \caption{MIML learning}
+    \end{subfigure}
+\caption[Different classification frameworks]{Three different learning frameworks for frog call classification}
+\label{fig:framework}       % Give a unique label
+\end{figure}
+
+
+
+The SISL classification can be generally divided into two types: binary classification and multi-class classification. For the binary classification, the data is separated into two classes. If the data is separated into one of several classes, then it is named as multi-class classification. Most classification methods have been specifically developed for binary classification. To extent the binary classification into multi-class classification, the combined use of multiple binary classifiers can be a solution. For a specific classification task, it is common that several classifiers are tested in order to find a suitable classifier with high classification accuracy. 
+
+
+For the ML classification, there are mainly two methods for tackling, which are problem transformation methods and algorithm adaptation methods. 
+Problem transformation methods address the classification problem using single-class classifiers by transforming the ML problem into a set of binary classification problems. In contrast, algorithm adaptation methods try to handle the ML classification problem in its full form. Therefore, the algorithms are directly applied to perform ML classification instead of simplifying the problem.
+
+
+
+MIML classification is often addressed by using the multiple-instance (MI) learning or ML learning as the bridge. 
+
+
+
+
+\subsection{SISL learning}
 
 \subsubsection{Linear discriminant analysis (LDA)}
 LDA is a classification method originally developed in 1936 by R. A. Fisher \citep{fisher1936use}. The goal of LDA is to improve the classification accuracy at a relatively low-dimensional feature space. To achieve this goal, the within-class distance needs to be minimised while the between-class distance needs to be maximised. In LDA, a feature space from $n$-dimension to $d$-dimension can be determined by using an optimal transformation matrix, where the transformation matrix is a linear mapping that maximised the Fisher criterion.
@@ -289,8 +328,6 @@ where $k=k_{1}+k_{2}$, $k_{1}$ is the number of class $s_{1}$, $k_{2}$ is the nu
 
 
 \subsubsection{Decision tree (DT)}
-
-
 Decision tree is a tree structure that classifies instances by sorting them based on the values of feature vectors. It aims to create a model that predicts the class label of a target feature based on several input feature vectors.  Compared to other classifiers, decision tree can provide a visual representation of the classification process. Also the importance of different feature vectors is given. An example of a decision tree is shown in Figure.~\ref{fig:DT}.  For a decision tree, each internal node is labelled with an input feature, and each leaf node is labelled with a class. To construct a decision tree, an attribute value test is recursively used to split the source feature set into subsets until the subset at a node has the same value of the target variable or splitting no longer adds value to the predictions. The most common strategy for learning decision tree from data is top-down induction of decision trees \citep{quinlan1986induction}, which is an example of a greedy algorithm. 
  
 
@@ -300,8 +337,6 @@ Decision tree is a tree structure that classifies instances by sorting them base
 \caption[A DT classifier]{An example of decision tree structure with three components}
 \label{fig:DT}
 \end{figure}
-
-
 
 Given a set of training instances, a feature set and cut-off value $\tau$ are used to split the data into two sets: those instances for which $X_{1}={x|x(j) \leq \tau}$ and those for which $X_{2}={x|x(j) \geq \tau}$. The choice of feature $j$ and value $\tau$ is made by minimising some measure of impurity of sets $X_{1}$ and $X_{2}$ with respect to the classes of the points in each set. A commonly used measure is the Gini index, which is defined as 
 
@@ -387,7 +422,6 @@ For neural networks, each basis function is itself a non-linear combination of a
 
 The basis neural network model can be described as a series of functional transformations. First we construct $M$ linear combinations of the input variables $x_{1},\ldots , x_{D}$ in the form
 
-
 \begin{equation}
 a_{j}=\sum_{i=1}^{D}w_{ji}^{(1)}x_{i}+w_{j0}^{(0)}
 \end{equation}
@@ -430,6 +464,40 @@ where the set of all weight and bias parameters have been grouped together into 
 \caption[An ANN classifier]{Network diagram for the two-layer neural network. The input, hidden, and output variables are represented by nodes, and the weight parameters are presented by links between the nodes. The bias parameters are denoted by links coming from additional input and hidden variables $x_{0}$ and $z_{0}$. Arrows denote the direction of information flow through the network during forward propagation}
 \label{fig:ANN}
 \end{figure}
+
+\subsection{MIML learning}
+
+
+\textbf{MIML-KNN
+}
+
+
+\textbf{MIML-SVM
+}
+
+
+
+
+\textbf{MIML-RBF
+}
+
+\subsection{ML learning}
+
+\textbf{Binary relevance for ML classification
+}
+
+\textbf{Classifier chains for ML classification
+}
+
+
+
+\textbf{Random k-labelsets for ML classification
+}
+
+
+
+
+
 
 
 \section{Conclusion}

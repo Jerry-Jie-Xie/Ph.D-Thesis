@@ -1,8 +1,8 @@
 \contentsline {chapter}{Abstract}{v}{chapter*.3}
-\contentsline {chapter}{Keywords}{ix}{chapter*.4}
-\contentsline {chapter}{Acknowledgments}{xi}{chapter*.5}
-\contentsline {chapter}{List of Figures}{xvii}{chapter*.7}
-\contentsline {chapter}{List of Tables}{xix}{chapter*.8}
+\contentsline {chapter}{Keywords}{xi}{chapter*.4}
+\contentsline {chapter}{Acknowledgments}{xiii}{chapter*.5}
+\contentsline {chapter}{List of Figures}{xix}{chapter*.7}
+\contentsline {chapter}{List of Tables}{xxi}{chapter*.8}
 \contentsline {chapter}{Nomenclature}{1}{chapter*.9}
 \contentsline {chapter}{\numberline {1}Introduction}{3}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation and background}{3}{section.1.1}
@@ -12,11 +12,11 @@
 \contentsline {subsection}{\numberline {1.2.3}Frog call structure}{6}{subsection.1.2.3}
 \contentsline {subsection}{\numberline {1.2.4}Acoustic event and background noise}{8}{subsection.1.2.4}
 \contentsline {subsection}{\numberline {1.2.5}Frog call classification}{11}{subsection.1.2.5}
-\contentsline {subsection}{\numberline {1.2.6}Research problem}{12}{subsection.1.2.6}
-\contentsline {subsection}{\numberline {1.2.7}Research questions}{12}{subsection.1.2.7}
-\contentsline {subsection}{\numberline {1.2.8}Aims and objectives}{13}{subsection.1.2.8}
-\contentsline {subsection}{\numberline {1.2.9}Significance and contributions}{13}{subsection.1.2.9}
-\contentsline {subsection}{\numberline {1.2.10}Thesis structure}{14}{subsection.1.2.10}
+\contentsline {subsection}{\numberline {1.2.6}Research problem}{13}{subsection.1.2.6}
+\contentsline {subsection}{\numberline {1.2.7}Research questions}{14}{subsection.1.2.7}
+\contentsline {subsection}{\numberline {1.2.8}Aims and objectives}{14}{subsection.1.2.8}
+\contentsline {subsection}{\numberline {1.2.9}Significance and contributions}{15}{subsection.1.2.9}
+\contentsline {subsection}{\numberline {1.2.10}Thesis structure}{15}{subsection.1.2.10}
 \contentsline {chapter}{\numberline {2}Literature Review}{17}{chapter.2}
 \contentsline {section}{\numberline {2.1}Introduction}{17}{section.2.1}
 \contentsline {section}{\numberline {2.2}Signal pre-processing}{19}{section.2.2}
@@ -31,13 +31,13 @@
 \contentsline {section}{\numberline {2.4}Classifiers}{25}{section.2.4}
 \contentsline {section}{\numberline {2.5}Experiment results of the state-of-the-art methods}{25}{section.2.5}
 \contentsline {subsection}{\numberline {2.5.1}Evaluation criteria}{25}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Experiment results for summarization}{26}{subsection.2.5.2}
+\contentsline {subsection}{\numberline {2.5.2}Experiment results for summarise}{26}{subsection.2.5.2}
 \contentsline {section}{\numberline {2.6}Discussion and future work}{26}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Database}{26}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Signal pre-processing}{28}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Acoustic features}{29}{subsection.2.6.3}
+\contentsline {subsection}{\numberline {2.6.2}Signal pre-processing}{27}{subsection.2.6.2}
+\contentsline {subsection}{\numberline {2.6.3}Acoustic features}{28}{subsection.2.6.3}
 \contentsline {subsection}{\numberline {2.6.4}Classifiers}{29}{subsection.2.6.4}
-\contentsline {section}{\numberline {2.7}Conclusions}{30}{section.2.7}
+\contentsline {section}{\numberline {2.7}Conclusions}{29}{section.2.7}
 \contentsline {chapter}{\numberline {3}Methodology}{33}{chapter.3}
 \contentsline {section}{\numberline {3.1}Feature extraction}{33}{section.3.1}
 \contentsline {subsection}{\numberline {3.1.1}Introduction}{33}{subsection.3.1.1}
@@ -59,22 +59,24 @@
 \contentsline {subsubsection}{Multi-stage average spectrum}{39}{section*.41}
 \contentsline {section}{\numberline {3.2}Classification}{41}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Introduction}{41}{subsection.3.2.1}
-\contentsline {subsection}{\numberline {3.2.2}Classifiers}{42}{subsection.3.2.2}
-\contentsline {subsubsection}{Linear discriminant analysis (LDA)}{42}{section*.43}
-\contentsline {subsubsection}{K-nearest neighbour (K-NN)}{43}{section*.44}
-\contentsline {subsubsection}{Decision tree (DT)}{44}{section*.46}
-\contentsline {subsubsection}{Support vector machines (SVM)}{46}{section*.48}
-\contentsline {subsubsection}{Artificial neural network (ANN)}{48}{section*.51}
-\contentsline {section}{\numberline {3.3}Conclusion}{51}{section.3.3}
+\contentsline {subsection}{\numberline {3.2.2}SISL learning}{43}{subsection.3.2.2}
+\contentsline {subsubsection}{Linear discriminant analysis (LDA)}{43}{section*.44}
+\contentsline {subsubsection}{K-nearest neighbour (K-NN)}{44}{section*.45}
+\contentsline {subsubsection}{Decision tree (DT)}{45}{section*.47}
+\contentsline {subsubsection}{Support vector machines (SVM)}{47}{section*.49}
+\contentsline {subsubsection}{Artificial neural network (ANN)}{49}{section*.52}
+\contentsline {subsection}{\numberline {3.2.3}MIML learning}{52}{subsection.3.2.3}
+\contentsline {subsection}{\numberline {3.2.4}ML learning}{52}{subsection.3.2.4}
+\contentsline {section}{\numberline {3.3}Conclusion}{52}{section.3.3}
 \contentsline {chapter}{\numberline {4}Frog call classification based on enhanced features and machine learning algorithms}{53}{chapter.4}
 \contentsline {section}{\numberline {4.1}Introduction}{53}{section.4.1}
 \contentsline {section}{\numberline {4.2}Journal paper - Acoustic classification of Australian frogs based on enhanced features and machine learning algorithms}{54}{section.4.2}
 \contentsline {chapter}{\numberline {5}Adaptive frequency scaled wavelet packet decomposition for frog call classification}{65}{chapter.5}
 \contentsline {section}{\numberline {5.1}Introduction}{65}{section.5.1}
-\contentsline {section}{\numberline {5.2}Journal paper - }{66}{section.5.2}
+\contentsline {section}{\numberline {5.2}Journal paper - Adaptive frequency scaled wavelet packet decomposition for frog call classification}{66}{section.5.2}
 \contentsline {chapter}{\numberline {6}Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}{79}{chapter.6}
 \contentsline {section}{\numberline {6.1}Introduction}{79}{section.6.1}
-\contentsline {section}{\numberline {6.2}Conference paper - }{80}{section.6.2}
+\contentsline {section}{\numberline {6.2}Conference paper - Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}{80}{section.6.2}
 \contentsline {chapter}{\numberline {7}Detecting frog calling activity based on acoustic event detection and multi-label learning}{91}{chapter.7}
 \contentsline {section}{\numberline {7.1}Introduction}{91}{section.7.1}
 \contentsline {section}{\numberline {7.2}Conference paper - Detecting frog calling activity based on acoustic event detection and multi-label learning}{92}{section.7.2}
@@ -82,4 +84,4 @@
 \contentsline {section}{\numberline {8.1}Summary of contributions}{105}{section.8.1}
 \contentsline {section}{\numberline {8.2}Limitations and further research}{107}{section.8.2}
 \contentsline {chapter}{\numberline {A}Frog species studied in this study}{109}{appendix.I}
-\contentsline {chapter}{Literature Cited}{116}{appendix*.53}
+\contentsline {chapter}{Literature Cited}{116}{appendix*.54}
