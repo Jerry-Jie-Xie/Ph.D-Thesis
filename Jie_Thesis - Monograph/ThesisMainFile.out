@@ -40,18 +40,62 @@
 \BOOKMARK [1][-]{section.2.7}{Conclusions}{chapter.2}% 40
 \BOOKMARK [0][-]{chapter.3}{Frog call classification based on enhanced features and machine learning algorithms}{}% 41
 \BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 42
-\BOOKMARK [1][-]{section.3.2}{Journal paper - Acoustic classification of Australian frogs based on enhanced features and machine learning algorithms}{chapter.3}% 43
-\BOOKMARK [0][-]{chapter.4}{Adaptive frequency scaled wavelet packet decomposition for frog call classification}{}% 44
-\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 45
-\BOOKMARK [1][-]{section.4.2}{Journal paper - Adaptive frequency scaled wavelet packet decomposition for frog call classification}{chapter.4}% 46
-\BOOKMARK [0][-]{chapter.5}{Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}{}% 47
-\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 48
-\BOOKMARK [1][-]{section.5.2}{Conference paper - Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}{chapter.5}% 49
-\BOOKMARK [0][-]{chapter.6}{Detecting frog calling activity based on acoustic event detection and multi-label learning}{}% 50
-\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 51
-\BOOKMARK [1][-]{section.6.2}{Conference paper - Detecting frog calling activity based on acoustic event detection and multi-label learning}{chapter.6}% 52
-\BOOKMARK [0][-]{chapter.7}{Conclusions and Future work}{}% 53
-\BOOKMARK [1][-]{section.7.1}{Summary of contributions}{chapter.7}% 54
-\BOOKMARK [1][-]{section.7.2}{Limitations and further research}{chapter.7}% 55
-\BOOKMARK [0][-]{appendix.H}{Frog species studied in this study}{}% 56
-\BOOKMARK [0][-]{appendix*.26}{Literature Cited}{}% 57
+\BOOKMARK [1][-]{section.3.2}{Architecture of the classification system for frog calls}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.2.1}{Data description}{section.3.2}% 44
+\BOOKMARK [2][-]{subsection.3.2.2}{Syllable segmentation based on an adaptive end point detection}{section.3.2}% 45
+\BOOKMARK [2][-]{subsection.3.2.3}{Pre-processing}{section.3.2}% 46
+\BOOKMARK [2][-]{subsection.3.2.4}{Feature extraction}{section.3.2}% 47
+\BOOKMARK [2][-]{subsection.3.2.5}{Classifier description}{section.3.2}% 48
+\BOOKMARK [1][-]{section.3.3}{Experiment results}{chapter.3}% 49
+\BOOKMARK [2][-]{subsection.3.3.1}{Effects of different machine learning techniques}{section.3.3}% 50
+\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 51
+\BOOKMARK [1][-]{section.3.5}{Conclusion and future work}{chapter.3}% 52
+\BOOKMARK [0][-]{chapter.4}{Adaptive frequency scaled wavelet packet decomposition for frog call classification}{}% 53
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 54
+\BOOKMARK [1][-]{section.4.2}{Methods}{chapter.4}% 55
+\BOOKMARK [2][-]{subsection.4.2.1}{Sound recording and pre-processing}{section.4.2}% 56
+\BOOKMARK [2][-]{subsection.4.2.2}{Spectrogram analysis based on validation set}{section.4.2}% 57
+\BOOKMARK [2][-]{subsection.4.2.3}{Syllable segmentation}{section.4.2}% 58
+\BOOKMARK [2][-]{subsection.4.2.4}{Spectral peak track extraction}{section.4.2}% 59
+\BOOKMARK [2][-]{subsection.4.2.5}{Syllable SPT features}{section.4.2}% 60
+\BOOKMARK [2][-]{subsection.4.2.6}{Wavelet packet decomposition}{section.4.2}% 61
+\BOOKMARK [2][-]{subsection.4.2.7}{WPD based on an adaptive frequency scale}{section.4.2}% 62
+\BOOKMARK [2][-]{subsection.4.2.8}{Feature extraction based on adaptive frequency scaled WPD}{section.4.2}% 63
+\BOOKMARK [2][-]{subsection.4.2.9}{Classification}{section.4.2}% 64
+\BOOKMARK [1][-]{section.4.3}{Experiment result and discussion}{chapter.4}% 65
+\BOOKMARK [2][-]{subsection.4.3.1}{Parameter tuning}{section.4.3}% 66
+\BOOKMARK [2][-]{subsection.4.3.2}{Feature evaluation}{section.4.3}% 67
+\BOOKMARK [2][-]{subsection.4.3.3}{Comparison between different feature sets}{section.4.3}% 68
+\BOOKMARK [2][-]{subsection.4.3.4}{Comparison under different SNRs}{section.4.3}% 69
+\BOOKMARK [2][-]{subsection.4.3.5}{Proposed feature evaluation using the JCU recordings}{section.4.3}% 70
+\BOOKMARK [1][-]{section.4.4}{Conclusion and future work}{chapter.4}% 71
+\BOOKMARK [0][-]{chapter.5}{Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}{}% 72
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 73
+\BOOKMARK [1][-]{section.5.2}{Materials and methods}{chapter.5}% 74
+\BOOKMARK [2][-]{subsection.5.2.1}{Materials}{section.5.2}% 75
+\BOOKMARK [2][-]{subsection.5.2.2}{Signal processing}{section.5.2}% 76
+\BOOKMARK [2][-]{subsection.5.2.3}{Acoustic event detection for syllable segmentation}{section.5.2}% 77
+\BOOKMARK [2][-]{subsection.5.2.4}{Feature extraction}{section.5.2}% 78
+\BOOKMARK [1][-]{section.5.3}{Multiple-instance multiple-label classifiers}{chapter.5}% 79
+\BOOKMARK [1][-]{section.5.4}{Experiment results}{chapter.5}% 80
+\BOOKMARK [2][-]{subsection.5.4.1}{Parameter tuning}{section.5.4}% 81
+\BOOKMARK [2][-]{subsection.5.4.2}{Classification}{section.5.4}% 82
+\BOOKMARK [1][-]{section.5.5}{Conclusion}{chapter.5}% 83
+\BOOKMARK [0][-]{chapter.6}{Detecting frog calling activity based on acoustic event detection and multi-label learning}{}% 84
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 85
+\BOOKMARK [1][-]{section.6.2}{Materials and methods}{chapter.6}% 86
+\BOOKMARK [2][-]{subsection.6.2.1}{Acquisition of frog call recordings}{section.6.2}% 87
+\BOOKMARK [2][-]{subsection.6.2.2}{Frog abundance monitoring}{section.6.2}% 88
+\BOOKMARK [2][-]{subsection.6.2.3}{Wavelet-based feature extraction for species richness analysis}{section.6.2}% 89
+\BOOKMARK [2][-]{subsection.6.2.4}{Multi-label classification for species richness analysis}{section.6.2}% 90
+\BOOKMARK [1][-]{section.6.3}{Experiment setup}{chapter.6}% 91
+\BOOKMARK [1][-]{section.6.4}{Experiment results}{chapter.6}% 92
+\BOOKMARK [2][-]{subsection.6.4.1}{Frog abundance detection}{section.6.4}% 93
+\BOOKMARK [2][-]{subsection.6.4.2}{Frog species richness analysis}{section.6.4}% 94
+\BOOKMARK [2][-]{subsection.6.4.3}{Statistical analysis}{section.6.4}% 95
+\BOOKMARK [1][-]{section.6.5}{Conclusion and future work}{chapter.6}% 96
+\BOOKMARK [0][-]{chapter.7}{Conclusions and Future work}{}% 97
+\BOOKMARK [1][-]{section.7.1}{Summary of contributions}{chapter.7}% 98
+\BOOKMARK [1][-]{section.7.2}{Limitations and further research}{chapter.7}% 99
+\BOOKMARK [0][-]{appendix.H}{Frog species studied in this study}{}% 100
+\BOOKMARK [0][-]{appendix*.83}{Literature Cited}{}% 101

@@ -61,6 +61,18 @@
   Keywords                 = {Band pass filters;Bandwidth;Channel bank filters;Discrete Fourier transforms;Filter bank;Frequency;Low pass filters;Signal analysis;Signal synthesis;Spectral analysis}
 }
 
+@Article{bao2005prediction,
+  Title                    = {Prediction of the phenotypic effects of non-synonymous single nucleotide polymorphisms using structural and evolutionary information},
+  Author                   = {Bao, Lei and Cui, Yan},
+  Journal                  = {Bioinformatics},
+  Year                     = {2005},
+  Number                   = {10},
+  Pages                    = {2185--2190},
+  Volume                   = {21},
+
+  Publisher                = {Oxford Univ Press}
+}
+
 @Article{bedoya2014automatic,
   Title                    = {Automatic recognition of anuran species based on syllable identification},
   Author                   = {Bedoya, Carol and Isaza, Claudia and Daza, Juan M and L{\'o}pez, Jos{\'e} D},
@@ -845,6 +857,13 @@
   Author                   = {Tan, WC and Jaafar, H and Ramli, DA and Rosdi, BA and Shahrudin, S},
   Journal                  = {International journal of circuits, systems and signal processing},
   Year                     = {2014}
+}
+
+@Book{tanton2005encyclopedia,
+  Title                    = {Encyclopedia of mathematics},
+  Author                   = {Tanton, James Stuart},
+  Publisher                = {Facts On File},
+  Year                     = {2005}
 }
 
 @InProceedings{tjahja2015supervised,

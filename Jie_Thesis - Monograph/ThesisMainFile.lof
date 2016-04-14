@@ -8,8 +8,35 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Acoustic event detection}}{24}{figure.caption.23}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces An example of collected recording}}{30}{figure.caption.25}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Flowchart of frog call classification system\relax }}{34}{figure.caption.26}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Segmentation method based on H$\mathaccentV {ddot}07F{a}$rm$\mathaccentV {ddot}07F{a}$'s algorithm. Here, $D$ is the amplitude threshold for stopping criteria which is set at 20 dB experimentally, and the segmentation result is sensitive with this value. $A$ is the maximum amplitude value of the spectrogram and we save the first maximum amplitude as $A(1)$, $B(t)$ is the amplitude of frame $t$. An asterisk denotes the optional processing step.\relax }}{36}{figure.caption.28}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Syllable segmentation results are marked with red line for \textit {Neobatrachus sudelli} (one syllable).\relax }}{37}{figure.caption.29}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution of syllable number for all frog species. The x-axis is the abbreviation of each frog species, and the corresponding scientific name can be found in Table \ref {tab:Ch4_frogName}.\relax }}{38}{figure.caption.30}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Classification results of different classifiers\relax }}{48}{figure.caption.38}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Classification results with different feature sets\relax }}{49}{figure.caption.40}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Classification results of MFCCs with different window size\relax }}{49}{figure.caption.42}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Classification results of TemPer with different window size\relax }}{50}{figure.caption.43}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Sensitivity of different features for different levels of noise contamination\relax }}{50}{figure.caption.45}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Block diagram of the frog call classification system. The line of dashes indicates the extracted feature set. AWSCCs is the abbreviation of \textit {adaptive wavelet packet decomposition sub-band cepstral coefficients}. STFT is short-time Fourier transform. For STFT(1), the window function, size and overlap are Kaiser window, 512 samples and 25\%. For STFT(2), the window function, size and overlap are Hamming window, 128 samples and 90\%. In this diagram, two feature sets are extracted, the description of other feature sets is shown in Figure.\nobreakspace {}\ref {fig:featureExtraction}.\relax }}{54}{figure.caption.47}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Distribution of syllable number for all frog species. The x-axis is the abbreviation of each frog species, and the corresponding scientific name can be found in Table \ref {tab:parameter}.\relax }}{57}{figure.caption.50}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Segmentation results based on bandpass filtering for \textit {Uperolela mimula}, noise reduction and H$\mathaccentV {ddot}07F{a}$rm$\mathaccentV {ddot}07F{a}$'s method. The red line in (b) indicates the start and stop location of each segmented syllable.\relax }}{58}{figure.caption.51}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Spectral peak track extraction results for \textit {Neobatrachus sudelli}. By filling the gaps within the track, the dominant frequency can be more accurately calculated.\relax }}{60}{figure.caption.53}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Adaptive wavelet packet tree for classifying twenty frog species. The upper image is the wavelet packet tree; the lower image is the histogram of dominant frequency for twenty frog species.\relax }}{64}{figure.caption.55}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Description of three feature extraction methods including MFCCs, MWSCCs, and different AWSCCs.\relax }}{64}{figure.caption.56}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The feature vectors for 31 syllables of the single species, \textit {Assa darlingtoni}. x-axis is feature index and y-axis is the feature value. Note that the feature vectors for averaged AWSCCs (c) and delta-AWSCCs (d) are more highly correlated than for the other two methods (a) and (b).\relax }}{70}{figure.caption.61}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Wavelet packet tree based on adaptive frequency scale for classifying ten and fifteen frog species.\relax }}{72}{figure.caption.64}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Mel-scaled wavelet packet tree for frog call classification.\relax }}{72}{figure.caption.65}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Sensitivity of five features for different levels of noise contamination.\relax }}{73}{figure.caption.67}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart of frog call classification system\relax }}{78}{figure.caption.69}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Acoustic event detection results before (Left) and after (Right) event filtering based on dominant frequency. Here, blue rectangle means the time and frequency boundary of each detected event.\relax }}{82}{figure.caption.72}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Acoustic event detection results after region growing. Left: binary segmentation results; Right: segmented frog syllables.\relax }}{82}{figure.caption.73}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Flowchart of frog call classification system\relax }}{89}{figure.caption.76}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Acoustic event detection for frog abundance monitoring using different methods. For each row, different methods are applied to the same recordings. The baseline of the detection results is show in the first row; detected frog calls are draw using a blue rectangle.\relax }}{92}{figure.caption.78}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Frog abundance detection of different sites: \textit {Kiyomi dam}, \textit {Stony creek dam} and \textit {BG creek dam}. For \textit {Kiyomi dam}, three days do not record any acoustic data and then there is no value in those particular days. All the frog abundance value is normalized to [0 1].\relax }}{96}{figure.caption.79}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Frog species richness distribution of three selected sites. Here green bar represents the species variation, blue bar means there is no frog calls, zero value denotes the data loss of those particular days.\relax }}{97}{figure.caption.81}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Averaged frog species richness of different sites.\relax }}{97}{figure.caption.82}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
