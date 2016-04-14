@@ -1,0 +1,61 @@
+% Ch7Conclusions.tex
+
+\chapter[Conclusions and Future work]{Conclusions and Future work}
+\label{cha:cha8Conclusions}
+
+%===============================
+In this thesis, both feature extraction methods and classification frameworks for frog call classification are investigated. For feature extraction, enhanced feature representations and a novel feature representation based on wavelet packet decomposition are proposed. As for the classification framework, we adopt both MIML learning and ML learning frameworks to study multiple simultaneously vocalising frog species in low SNR recordings. 
+
+Many challenges of this thesis lies in the designing and identifying the effective feature extraction algorithms and adopting novel classification frameworks that can successfully classify low SNR recordings with multiple simultaneously vocalising frog species. 
+In this chapter, key contributions of this research to the challenge will be summarised. Furthermore, useful avenues of inquiry for improving the methods described in this thesis will be explored.
+
+\section{Summary of contributions}
+	
+Four contributions have	been made by this research:
+
+
+\begin{itemize}
+	
+\item \textit{Enhanced acoustic feature representation for frog call classification in high SNR recordings.} 
+\\
+The classification of frog calls has been addressed in this thesis using both high and low SNR recordings. A systematic scheme was developed towards the goal of automatic classification of frog calls. The performances of various classification methods such as LDA, K-NN, SVM, RF, MLP were evaluated together with different feature representations. The experience gained and experimental results demonstrate that: 1) Compared with previous feature representation, an enhanced feature representation including temporal, perpetual, and cepstral features can achieve the best classification performance. 2) The best classification performance is achieved by SVM and RF, in comparison with LDA, K-NN, and MLP. 3) The cepstral features are very sensitive to the background noise, but can achieve good classification accuracy in the high SNR recordings. 
+
+\item \textit{A novel feature representation via WPD for frog call classification in both high and low SNR recordings.}
+\\
+To improve the anti-noise ability of cepstral features, wavelet packet decomposition is utilised to design a novel cepstral feature representation. Compared with other cepstral features such as MFCCs, Mel-scale wavelet packet decomposition coefficients, our proposed feature representation shows both good classification performance and excellent anti-noise ability. 
+
+
+
+\item  \textit{Design a MIML classification framework for frog call classification in low SNR recordings.} 
+\\
+Since most frog field recordings consist of multiple simultaneously vocalising frog species, both MIML and ML classification frameworks are first introduced to study frog calls. For MIML learning, a novel acoustic event detection algorithm is designed to segment acoustic events by using events filtering. Then, different MIML classifiers are evaluated together with various acoustic features based on the content and shape of the segmented events. The results show that MIML-RBF achieves the best classification results. 
+
+
+\item  \textit{Design a ML classification framework for frog call classification in low SNR recordings.} 
+\\
+For a ML classification framework, acoustic event detection is first used to filter all the recordings to find those that have frog calls. Meanwhile, frog abundance is detected based on the shape and content of segmented acoustic events. Then, those recordings with frog calls are classified via ML learning. The feature representation used is a modified adaptive WPD sub-band cepstral coefficients. Compared with MIML learning, ML learning can achieve a better classification performance. Lastly, the correlation between the frog calling activity (frog abundance and frog species richness) and weather variables (mean temperature and rainfall) are studied.
+
+\end{itemize}
+
+%\textit{The major contributions of this thesis can be summarised as:
+%\begin{itemize}
+%
+%\item An enhanced feature representation is proposed for frog call classification.
+%\item A novel cepstral feature representation using WPD is developed for frog call classification.
+%\item A modified acoustic event detection method is used to segment overlapping frog calls.
+%\item Both MIML and ML framework are first employed to classify multiple simultaneous vocalising frog species in low SNR recordings.
+%
+%\end{itemize}}
+
+
+\section{Limitations and further research}	
+On the topic of this thesis, there is still much work that can be done to help scientists and researchers in data collection and analysis in the bioacoustics communities. One of the most important issues when dealing with frog recordings is the need for the existence of standardised species-specific data with behavioural labels. 
+Therefore, the algorithms we developed for frog call classification can be evaluated on a larger dataset. 
+Consequently, researchers will be able to use the outcomes of such automatic call classification methods for field studies.
+
+Another aspect which requires tremendous improvement is the need for an advanced frog syllable segmentation method for the field recordings so as to extract more accurate event-based features and conduct more thorough analysis on frog vocalisations. The problem of syllable segmentation is very complicated, because there are many simultaneous overlapping calling activities from birds, frogs, insects, and many other sources. In addition, the \textit{adaptive WPD sub-band cepstral coefficients} feature has been successfully used for frog call classification, which is used to capture the frequency domain information. The time-varying information still has not been explicitly addressed for frog call classification. 
+
+Our developed frog call classification system aims to help ecologists to study frogs over larger spatial and temporal scales. However, there is still no a generic platform for running the frog calls recordings. It is necessary to develop an on-line website with our developed frog call classification algorithms, and then ecologists can do the analysis on their own. Another important aspect of practical systems is the speed of data processing executed through classification algorithms. For this purpose, the MATLAB code corresponding to feature extractors and classifiers needs to be optimised to perform real-time frog call classification in the field.
+
+
+

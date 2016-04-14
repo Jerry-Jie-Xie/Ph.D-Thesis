@@ -1,0 +1,57 @@
+\BOOKMARK [0][-]{chapter*.3}{Abstract}{}% 1
+\BOOKMARK [0][-]{chapter*.4}{Keywords}{}% 2
+\BOOKMARK [0][-]{chapter*.5}{Acknowledgments}{}% 3
+\BOOKMARK [0][-]{chapter*.7}{List of Figures}{}% 4
+\BOOKMARK [0][-]{chapter*.8}{List of Tables}{}% 5
+\BOOKMARK [0][-]{chapter*.9}{Nomenclature}{}% 6
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
+\BOOKMARK [1][-]{section.1.1}{Motivation and background}{chapter.1}% 8
+\BOOKMARK [1][-]{section.1.2}{Basic concepts}{chapter.1}% 9
+\BOOKMARK [2][-]{subsection.1.2.1}{Environment audio data}{section.1.2}% 10
+\BOOKMARK [2][-]{subsection.1.2.2}{Audio data analysis}{section.1.2}% 11
+\BOOKMARK [2][-]{subsection.1.2.3}{Frog call structure}{section.1.2}% 12
+\BOOKMARK [2][-]{subsection.1.2.4}{Acoustic event and background noise}{section.1.2}% 13
+\BOOKMARK [2][-]{subsection.1.2.5}{Frog call classification}{section.1.2}% 14
+\BOOKMARK [2][-]{subsection.1.2.6}{Research problem}{section.1.2}% 15
+\BOOKMARK [2][-]{subsection.1.2.7}{Research questions}{section.1.2}% 16
+\BOOKMARK [2][-]{subsection.1.2.8}{Aims and objectives}{section.1.2}% 17
+\BOOKMARK [2][-]{subsection.1.2.9}{Significance and contributions}{section.1.2}% 18
+\BOOKMARK [2][-]{subsection.1.2.10}{Thesis structure}{section.1.2}% 19
+\BOOKMARK [0][-]{chapter.2}{Literature Review}{}% 20
+\BOOKMARK [1][-]{section.2.1}{Introduction}{chapter.2}% 21
+\BOOKMARK [1][-]{section.2.2}{Signal pre-processing}{chapter.2}% 22
+\BOOKMARK [2][-]{subsection.2.2.1}{Signal processing}{section.2.2}% 23
+\BOOKMARK [2][-]{subsection.2.2.2}{Noise reduction}{section.2.2}% 24
+\BOOKMARK [2][-]{subsection.2.2.3}{Syllable segmentation}{section.2.2}% 25
+\BOOKMARK [1][-]{section.2.3}{Acoustic features for frog call classification}{chapter.2}% 26
+\BOOKMARK [2][-]{subsection.2.3.1}{Time domain and frequency domain features for frog call classification}{section.2.3}% 27
+\BOOKMARK [2][-]{subsection.2.3.2}{Time-frequency features for frog call classification}{section.2.3}% 28
+\BOOKMARK [2][-]{subsection.2.3.3}{Cepstral features for frog call classification}{section.2.3}% 29
+\BOOKMARK [2][-]{subsection.2.3.4}{Other features for frog call classification}{section.2.3}% 30
+\BOOKMARK [1][-]{section.2.4}{Classifiers}{chapter.2}% 31
+\BOOKMARK [1][-]{section.2.5}{Experiment results of the state-of-the-art methods}{chapter.2}% 32
+\BOOKMARK [2][-]{subsection.2.5.1}{Evaluation criteria}{section.2.5}% 33
+\BOOKMARK [2][-]{subsection.2.5.2}{Experiment results for summarise}{section.2.5}% 34
+\BOOKMARK [1][-]{section.2.6}{Discussion and future work}{chapter.2}% 35
+\BOOKMARK [2][-]{subsection.2.6.1}{Database}{section.2.6}% 36
+\BOOKMARK [2][-]{subsection.2.6.2}{Signal pre-processing}{section.2.6}% 37
+\BOOKMARK [2][-]{subsection.2.6.3}{Acoustic features}{section.2.6}% 38
+\BOOKMARK [2][-]{subsection.2.6.4}{Classifiers}{section.2.6}% 39
+\BOOKMARK [1][-]{section.2.7}{Conclusions}{chapter.2}% 40
+\BOOKMARK [0][-]{chapter.3}{Frog call classification based on enhanced features and machine learning algorithms}{}% 41
+\BOOKMARK [1][-]{section.3.1}{Introduction}{chapter.3}% 42
+\BOOKMARK [1][-]{section.3.2}{Journal paper - Acoustic classification of Australian frogs based on enhanced features and machine learning algorithms}{chapter.3}% 43
+\BOOKMARK [0][-]{chapter.4}{Adaptive frequency scaled wavelet packet decomposition for frog call classification}{}% 44
+\BOOKMARK [1][-]{section.4.1}{Introduction}{chapter.4}% 45
+\BOOKMARK [1][-]{section.4.2}{Journal paper - Adaptive frequency scaled wavelet packet decomposition for frog call classification}{chapter.4}% 46
+\BOOKMARK [0][-]{chapter.5}{Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}{}% 47
+\BOOKMARK [1][-]{section.5.1}{Introduction}{chapter.5}% 48
+\BOOKMARK [1][-]{section.5.2}{Conference paper - Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}{chapter.5}% 49
+\BOOKMARK [0][-]{chapter.6}{Detecting frog calling activity based on acoustic event detection and multi-label learning}{}% 50
+\BOOKMARK [1][-]{section.6.1}{Introduction}{chapter.6}% 51
+\BOOKMARK [1][-]{section.6.2}{Conference paper - Detecting frog calling activity based on acoustic event detection and multi-label learning}{chapter.6}% 52
+\BOOKMARK [0][-]{chapter.7}{Conclusions and Future work}{}% 53
+\BOOKMARK [1][-]{section.7.1}{Summary of contributions}{chapter.7}% 54
+\BOOKMARK [1][-]{section.7.2}{Limitations and further research}{chapter.7}% 55
+\BOOKMARK [0][-]{appendix.H}{Frog species studied in this study}{}% 56
+\BOOKMARK [0][-]{appendix*.26}{Literature Cited}{}% 57

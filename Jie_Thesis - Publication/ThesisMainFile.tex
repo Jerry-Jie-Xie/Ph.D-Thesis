@@ -1,0 +1,72 @@
+\documentclass[12pt,twoside,a4paper,openright]{report}
+\usepackage{qutthesis}
+\usepackage{amsmath}
+\usepackage{amssymb}
+%\usepackage{amsart}
+\usepackage{verbatim}
+\usepackage{nomencl}
+\usepackage{longtable}
+\usepackage{hyperref}
+% \usepackage{graphicx}
+\usepackage[sort&compress,square]{natbib}
+\usepackage{subcaption}
+\usepackage{booktabs}
+\usepackage{natbib}
+\usepackage{multirow}
+\usepackage{hhline}
+\usepackage{float}
+\usepackage{array}
+\usepackage{epstopdf}
+\usepackage[figuresright]{rotating}
+\usepackage{slashbox}
+\usepackage[graphicx]{realboxes}
+\usepackage[ruled,vlined]{algorithm2e}
+\usepackage{color}
+\usepackage{float}
+\usepackage[final]{pdfpages}
+\bibpunct{[}{]}{,}{a}{,}{,}
+%\usepackage{named}
+
+% correct bad hyphenation here
+\hyphenation{op-tical net-works semi-conduc-tor}
+
+
+%%%%%%%%%%%%%%%%
+\begin{document}
+
+%%%%%%%%%% Front Part: Cover page, abstract, ack, preface
+\include{./Ch0FrontPart}           %Ch0FrontPart.tex
+                                   %   including title page information, abstract,
+                                   %   acknowledgement, etc
+%%% Body Text
+\include{./nomenclature}
+\include{./Ch1Introduction}        %Ch1Introduction.tex
+\include{./Ch2LiteratureReview}    %Ch2LiteratureReview.tex
+%\include{./Ch3}                    %Ch3.tex
+\include{./Ch4}                    %Ch4.tex
+\include{./Ch5}                    %Ch5.tex
+\include{./Ch6}
+\include{./Ch7}
+\include{./Ch8Conclusions}         %Ch6Conclusions.tex
+
+%%%%%%%%%%%Appendix
+% If you don't have any appendix, comment the following line out
+\include{./Appendix}
+
+%%%%%%%%%%%%References
+% The default heading for references is ``Literature Cited''
+%   If you prefer ``References'' to ``Literature Cited'', 
+%   un-comment out the following line. 
+%\renewcommand{\bibname}{References}
+%\bibliographystyle{named}  
+\bibliographystyle{apalike}      %other styles: plainnat,abbrvnat, ...
+\bibliography{./References}       %References.bib
+\addcontentsline{toc}{chapter}{\bibname}    
+
+%%%%%%%% Create double pages for the back cover of the thesis
+\cleardoublepage
+\pagestyle{empty}
+\newpage
+~~
+\cleardoublepage
+\end{document}
