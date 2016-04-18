@@ -51,7 +51,7 @@ The research presented in this dissertation aims to investigate methods to build
  
 \item[(2)]	Propose a novel feature representation based on adaptive wavelet packet decomposition. To better capture the frequency domain information of frog calls with a good anti-noise ability, a novel feature representation is proposed named \textit{adaptive frequency scaled wavelet packet decomposition sub-band cepstral coefficients}. Compared with other cepstral coefficients, our proposed feature representation shows the best classification performance and a good anti-noise ability.
 
-\item[(3)]	Design a robust classification system to study overlapping frog vocalisations. Two classification frameworks are employed to classify overlapping frog vocalisations. 
+\item[(3)]	Design a robust classification system to study low SNR recordings with multiple simultaneously vocalising frog species. Two classification frameworks are employed to classify multiple simultaneously vocalising frog species. 
 
 
 
@@ -59,7 +59,7 @@ The research presented in this dissertation aims to investigate methods to build
 \begin{enumerate}
 \item Multiple-instance Multiple-label (MIML) learning
 \\
-To use MIML learning for classifying overlapping frog vocalisations, each individual syllables are first segmented. Then, various features are calculated from each segmented syllable. Next, a bag generator is applied to those extracted features to construct a suitable bag-of-syllable representation. Finally, three MIML learning algorithms are employed for the classification of frog vocalisations: MIML-SVM, MIML-KNN, and MIML-RBF. 
+To use MIML learning for classifying multiple simultaneously vocalising frog species, each individual syllables are first segmented. Then, various features are calculated from each segmented syllable. Next, a bag generator is applied to those extracted features to construct a suitable bag-of-syllable representation. Finally, three MIML learning algorithms are employed for the classification of frog vocalisations: MIML-SVM, MIML-KNN, and MIML-RBF. 
 
 \item Multiple-label (ML) learning
 \\
@@ -71,7 +71,7 @@ Lastly, the correlation analysis between frog calling activity (frog abundance a
 \end{enumerate} 
 
 
-Our proposed approach achieves promising classification results compared to the state-of-the-art. Novel feature representations and classification learning frameworks have different contributions to the performance of the classification system of frog vocalisations. To our knowledge so far, it is the first time that MIML learning and ML learning are employed for automatic classification of overlapping frog vocalisations.
+Our proposed approach achieves promising classification results compared to the state-of-the-art. Novel feature representations and classification learning frameworks have different contributions to the performance of the classification system of frog vocalisations. To our knowledge so far, it is the first time that MIML learning and ML learning are employed for automatic classification of multiple simultaneously vocalising frog species.
 
 \end{abstract}
 
@@ -155,7 +155,7 @@ Bio-acoustic monitoring \\
 Environment audio analysis \\
 Frog call classification \\
 Spectrogram analysis \\
-Feature fusion \\
+Acoustic feature extraction \\
 Wavelet packet decomposition \\
 Multiple-instance multiple-label learning \\
 Multiple-label learning \\

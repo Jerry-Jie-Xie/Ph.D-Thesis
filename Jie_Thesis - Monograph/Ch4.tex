@@ -31,7 +31,7 @@ In this study, twenty-four frog species, which are widespread in Queensland, Aus
 
 \begin{table}[htb!]
 \centering
-\caption{Summary of scientific name, common name, and corresponding code. Frog species name with asterisk means means that it needs to be smoothed before segmentation}
+\caption[Summary of scientific name, common name, and corresponding code]{Summary of scientific name, common name, and corresponding code. Frog species name with asterisk means means that it needs to be smoothed before segmentation}
 \resizebox{0.85\textwidth}{!}{
 \begin{tabular}{cllc}
 \hline\hline
@@ -73,7 +73,7 @@ Each recording is made up of the continuous multiple calls of one frog species. 
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=1\linewidth]{image/Ch4/segmentation.pdf}}
-\caption{Segmentation method based on H$\ddot{a}$rm$\ddot{a}$'s algorithm. Here, $D$ is the amplitude threshold for stopping criteria which is set at 20 dB experimentally, and the segmentation result is sensitive with this value. $A$ is the maximum amplitude value of the spectrogram and we save the first maximum amplitude as $A(1)$, $B(t)$ is the amplitude of frame $t$. An asterisk denotes the optional processing step.}
+\caption[H$\ddot{a}$rm$\ddot{a}$'s segmentation algorithm]{Segmentation method based on H$\ddot{a}$rm$\ddot{a}$'s algorithm. Here, $D$ is the amplitude threshold for stopping criteria which is set at 20 dB experimentally, and the segmentation result is sensitive with this value. $A$ is the maximum amplitude value of the spectrogram and we save the first maximum amplitude as $A(1)$, $B(t)$ is the amplitude of frame $t$. An asterisk denotes the optional processing step.}
 \label{fig:segmentation} 
 \end{figure}
 
@@ -92,7 +92,7 @@ In this study, smoothing spectrogram is optionally applied to the spectrogram be
                 \includegraphics[width=\textwidth]{image/Ch4/yes.pdf}
                 \caption{After smoothing}
         \end{subfigure}
-        \caption{Syllable segmentation results are marked with red
+        \caption[Syllable segmentation results]{Syllable segmentation results are marked with red
 line for \textit{Neobatrachus sudelli} (one syllable).}       
         \label{fig:smooth}
 \end{figure}
@@ -101,7 +101,7 @@ line for \textit{Neobatrachus sudelli} (one syllable).}
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=0.6\linewidth]{image/Ch4/syllable.pdf}}
-\caption{Distribution of syllable number for all frog species. The x-axis is the abbreviation of each frog species, and the corresponding scientific name can be found in Table \ref{tab:Ch4_frogName}.}
+\caption[Distribution of syllable number for all frog species]{Distribution of syllable number for all frog species. The x-axis is the abbreviation of each frog species, and the corresponding scientific name can be found in Table \ref{tab:Ch4_frogName}.}
 \label{fig:Ch4_syllable} 
 \end{figure}
 

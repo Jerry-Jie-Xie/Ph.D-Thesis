@@ -9,23 +9,23 @@
 \contentsline {table}{\numberline {2.1}{\ignorespaces Summary of related work}}{21}{table.caption.22}
 \contentsline {table}{\numberline {2.2}{\ignorespaces Overview of frog call classification performance}}{27}{table.caption.24}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Summary of scientific name, common name, and corresponding code. Frog species name with asterisk means means that it needs to be smoothed before segmentation\relax }}{35}{table.caption.27}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Summary of scientific name, common name, and corresponding code}}{35}{table.caption.27}
 \contentsline {table}{\numberline {3.2}{\ignorespaces Comparision with previous used feature representations\relax }}{51}{table.caption.46}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Parameters of 18 frog species averaged of three randomly selected syllable samples in the commercial recording. These selected samples make the \textit {reference data set}.\relax }}{55}{table.caption.48}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Parameters of 8 frog species obtained by averaging three randomly selected syllable samples from recordings of James Cook University. NA indicates there is no oscillation structure in the spectrogram for the background noise and frog chorus. Since syllable duration of \textit {Rhinella marina} (Commom name: Canetoad) is very different from each other, we manually set the duration of Canetoad using the maximum duration of other frog species, which is 500 milliseconds.\relax }}{56}{table.caption.49}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Parameters of 18 frog species averaged of three randomly selected syllable samples in the commercial recording}}{55}{table.caption.48}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Parameters of 8 frog species obtained by averaging three randomly selected syllable samples from recordings of James Cook University}}{56}{table.caption.49}
 \contentsline {table}{\numberline {4.3}{\ignorespaces Parameters used for spectral peak extraction\relax }}{59}{table.caption.52}
 \contentsline {table}{\numberline {4.4}{\ignorespaces Parameter setting for calculating spectral peak track.\relax }}{68}{table.caption.59}
 \contentsline {table}{\numberline {4.5}{\ignorespaces Weighted classification accuracy (mean and standard deviation) comparison for five feature sets with two classifiers.\relax }}{69}{table.caption.60}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Classification accuracy of five features for the classification of twenty-four frog species using the SVM classifier. Here, Avg AWSCCs means the averaged AWSCCs.\relax }}{71}{table.caption.62}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Paired statistical analysis of the results in Table 4. For the classification accuracy of each frog species, the paired Student t-test was conducted \citep {tanton2005encyclopedia}.\relax }}{71}{table.caption.63}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Classification accuracy of five features for the classification of twenty-four frog species using the SVM classifier}}{71}{table.caption.62}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Paired statistical analysis of the results in Table\nobreakspace {}\ref {tab:featureComp}}}{71}{table.caption.63}
 \contentsline {table}{\numberline {4.8}{\ignorespaces Classification accuracy (\%) for classifying different number of frog species with four feature sets.\relax }}{72}{table.caption.66}
 \contentsline {table}{\numberline {4.9}{\ignorespaces Classification accuracy using the JCU recordings.\relax }}{74}{table.caption.68}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Accuracy measure for MIML classifiers with different feature sets. Here, $\delimiter "3223379 $ indicates ‘the smaller the better’, while ‘$\delimiter "3222378 $’ indicates ‘the bigger the better’.\relax }}{85}{table.caption.74}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Accuracy measure for MIML classifiers with different feature sets}}{85}{table.caption.74}
 \contentsline {table}{\numberline {5.2}{\ignorespaces Example predictions with MIML-RBF.\relax }}{85}{table.caption.75}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Dominant frequency ($F_{0}$) and syllable duration ($T_{s}$) of eight frog species averaged for ten randomly selected syllables.\relax }}{89}{table.caption.77}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Classification results based on four feature sets and four multi-label learning algorithms. Here the methods for multi-label algorithms are in accordance to the name in the Meka software. The base classifier of all methods is decision tree. For a metric, the best value is in bold. Here, $\delimiter "3223379 $ indicates ‘the smaller the better’, while ‘$\delimiter "3222378 $’ indicates ‘the bigger the better’.\relax }}{96}{table.caption.80}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Acoustic parameters of eight frog species averaged for ten randomly selected syllables}}{89}{table.caption.77}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Classification results based on four feature sets and four multi-label learning algorithms.}}{96}{table.caption.80}
 \addvspace {10\p@ }
 \addvspace {10\p@ }

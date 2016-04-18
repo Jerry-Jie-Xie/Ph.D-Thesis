@@ -48,7 +48,7 @@ We first manually inspected spectrograms of ten randomly selected call examples 
 %different number of frog species is shown in Fig.~\ref{fig:labelDistribution}.
 \begin{table}[htb!]
 \centering
-\caption{Dominant frequency ($F_{0}$) and syllable duration ($T_{s}$) of eight frog species averaged for ten randomly selected syllables.}
+\caption[Acoustic parameters of eight frog species averaged for ten randomly selected syllables]{Dominant frequency ($F_{0}$) and syllable duration ($T_{s}$) of eight frog species averaged for ten randomly selected syllables.}
 \label{tab:Ch7_parameters}
 \resizebox{0.8\textwidth}{!}{
 \begin{tabular}{llcc}
@@ -149,7 +149,7 @@ Here, $A_{i,j}$ represents the decibel value of location $(i,j)$ within each aco
        \includegraphics[width=\textwidth]{image/Ch7/AED_Jie_2.pdf}
                 \caption{Proposed method}
         \end{subfigure}                
-        \caption{Acoustic event detection for frog abundance monitoring using different methods. For each row, different methods are applied to the same recordings. The baseline of the detection results is show in the first row; detected frog calls are draw using a blue rectangle.}        
+        \caption[Acoustic event detection for frog abundance monitoring using different methods]{Acoustic event detection for frog abundance monitoring using different methods. For each row, different methods are applied to the same recordings. The baseline of the detection results is show in the first row; detected frog calls are draw using a blue rectangle.}        
         \label{fig:Ch7_AED}
 \end{figure}
 
@@ -232,7 +232,7 @@ Figure~\ref{fig:frogAbundance} shows the frog abundance result of three selected
                 \includegraphics[width=\textwidth]{image/Ch7/abundance1079.pdf}     
                 \caption{\textit{BG creek dam}}           
         \end{subfigure}       
-\caption{Frog abundance detection of different sites: \textit{Kiyomi dam}, \textit{Stony creek dam} and \textit{BG creek dam}. For \textit{Kiyomi dam}, three days do not record any acoustic data and then there is no value in those particular days. All the frog abundance value is normalized to [0 1].}
+\caption[Frog abundance detection of different sites]{Frog abundance detection of different sites: \textit{Kiyomi dam}, \textit{Stony creek dam} and \textit{BG creek dam}. For \textit{Kiyomi dam}, three days do not record any acoustic data and then there is no value in those particular days. All the frog abundance value is normalized to [0 1].}
         \label{fig:frogAbundance}
 \end{figure}
 
@@ -245,7 +245,7 @@ Experiment results are shown in Table~\ref{tab:classificationResults}.
 %\vspace{-1em}
 \begin{table}[htb!]
 \centering
-\caption{Classification results based on four feature sets and four multi-label learning algorithms. Here the methods for multi-label algorithms are in accordance to the name in the Meka software. The base classifier of all methods is decision tree. For a metric, the best value is in bold. Here, $\downarrow$ indicates ‘the smaller the better’, while ‘$\uparrow$’ indicates ‘the bigger the better’.}
+\caption[Classification results based on four feature sets and four multi-label learning algorithms.]{Classification results based on four feature sets and four multi-label learning algorithms. Here the methods for multi-label algorithms are in accordance to the name in the Meka software. The base classifier of all methods is decision tree. For a metric, the best value is in bold. Here, $\downarrow$ indicates ‘the smaller the better’, while ‘$\uparrow$’ indicates ‘the bigger the better’.}
 \label{tab:classificationResults}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{llllllll}
@@ -294,7 +294,7 @@ Figure~\ref{fig:frogRichness} shows the frog species richness of the three selec
                 \includegraphics[width=\textwidth]{image/Ch7/richness1079.pdf}     
                 \caption{\textit{BG creek dam}}           
         \end{subfigure}       
-\caption{Frog species richness distribution of three selected sites. Here green bar represents the species variation, blue bar means there is no frog calls, zero value denotes the data loss of those particular days.}
+\caption[Frog species richness distribution of three selected sites]{Frog species richness distribution of three selected sites. Here green bar represents the species variation, blue bar means there is no frog calls, zero value denotes the data loss of those particular days.}
         \label{fig:frogRichness}
 \end{figure}
 
