@@ -4,7 +4,7 @@
 \label{cha:cha6MIML}
 
 
-\section{Introduction}
+\section{Overview}
 \label{sec:intro}
 
 This chapter presents a method for the classification of simultaneously vocalising frog species in low SNR recordings. In chapter \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5Wavelet}, frog call classification is solved using a SISL framework, which cannot reflect the nature of the low SNR recordings. Most low SNR recordings often consist of multiple simultaneously animal vocal activities including frogs, birds, crickets and so on. This character of low SNR recordings makes the multiple-instance multiple-label (MIML) learning a suitable classification framework for addressing. To be specific, individual frog syllables in one audio clip is regarded as \textit{multiple instance}, and the frog species included in that audio clip denotes \textit{multiple labels}. 
@@ -201,7 +201,7 @@ Based on acoustic event detection results, two feature sets are first calculated
 
 
 
-\section{Multiple-instance multiple-label classifiers}
+\subsection{Multiple-instance multiple-label classifiers}
 After feature extraction, three MIML algorithms are evaluated for the classification of multiple  simultaneous frog calls: MIML-SVM, MIML-RBF, and MIML-kNN. With some form of event-level distance measure, the MIML problem has been reduced to a single-instance multiple-label problem by associating each event with a event-level feature \cite{briggs2012acoustic}. Here, the maximal and average Hausdorff distances between two syllables are used by MIML-SVM and MIML-RBF, separately. For MIML-kNN, the nearest neighbour is used to assign syllable-level features. 
 
 
@@ -276,7 +276,7 @@ AF (MD+PS)              & MIML-RBF        & 0.191              & 0.142          
 
 
 
-\section{Conclusion}
+\section{Summary}
 In this study, we propose a novel framework for the classification of multiple simultaneous frog vocalizations in environmental recordings. To the best of our knowledge, this is the first study that applies the MIML algorithm to frog calls. Since frogs tend to call simultaneously, the MIML algorithm is more suitable for dealing with those recordings than single-instance single-label classification. After applying acoustic event detection algorithm to each 10s recording, each frog syllable is segmented. Then, three feature sets are calculated based on those segmented syllables. Finally, three MIML classifiers are used for the classification of frog calls with the best accuracy (81.8\% true positive/negatives). Future work will focus on the study of novel features and MIML classifiers for further improving the classification performance.   
 
 

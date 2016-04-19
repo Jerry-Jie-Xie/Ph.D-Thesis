@@ -2,41 +2,44 @@
 \contentsline {figure}{\numberline {1.1}{\ignorespaces Photos of frogs}}{4}{figure.caption.10}
 \contentsline {figure}{\numberline {1.2}{\ignorespaces An example of spectrogram of environmental recording}}{6}{figure.caption.11}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Spectrogram of \textit {Litoria caerulea}}}{7}{figure.caption.12}
-\contentsline {figure}{\numberline {1.4}{\ignorespaces Flowchart of frog call classification}}{11}{figure.caption.20}
+\contentsline {figure}{\numberline {1.4}{\ignorespaces Flowchart of frog call classification}}{9}{figure.caption.16}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Waveform, spectrum and spectrogram of one frog syllable}}{20}{figure.caption.21}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Acoustic event detection}}{24}{figure.caption.23}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces An example of collected recording}}{30}{figure.caption.25}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Waveform, spectrum and spectrogram of one frog syllable}}{16}{figure.caption.17}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Acoustic event detection}}{20}{figure.caption.19}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces An example of collected recording}}{26}{figure.caption.21}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Flowchart of frog call classification system\relax }}{34}{figure.caption.26}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces H$\mathaccentV {ddot}07F{a}$rm$\mathaccentV {ddot}07F{a}$'s segmentation algorithm}}{36}{figure.caption.28}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Syllable segmentation results}}{37}{figure.caption.29}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution of syllable number for all frog species}}{38}{figure.caption.30}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Classification results of different classifiers\relax }}{48}{figure.caption.38}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Classification results with different feature sets\relax }}{49}{figure.caption.40}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Classification results of MFCCs with different window size\relax }}{49}{figure.caption.42}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Classification results of TemPer with different window size\relax }}{50}{figure.caption.43}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Sensitivity of different features for different levels of noise contamination\relax }}{50}{figure.caption.45}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Flowchart of frog call classification system\relax }}{28}{figure.caption.22}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces H$\mathaccentV {ddot}07F{a}$rm$\mathaccentV {ddot}07F{a}$'s segmentation algorithm}}{30}{figure.caption.24}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Syllable segmentation results}}{31}{figure.caption.25}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution of syllable number for all frog species}}{32}{figure.caption.26}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Classification results of different classifiers\relax }}{42}{figure.caption.34}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Classification results with different feature sets\relax }}{43}{figure.caption.36}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Classification results of MFCCs with different window size\relax }}{43}{figure.caption.38}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Classification results of TemPer with different window size\relax }}{44}{figure.caption.39}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Sensitivity of different features for different levels of noise contamination\relax }}{44}{figure.caption.41}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Block diagram of the frog call classification system}}{54}{figure.caption.47}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Distribution of syllable number for all frog species}}{57}{figure.caption.50}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Segmentation results based on bandpass filtering}}{58}{figure.caption.51}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Spectral peak track extraction results}}{60}{figure.caption.53}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Adaptive wavelet packet tree for classifying twenty frog species}}{64}{figure.caption.55}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Description of three feature extraction methods including MFCCs, MWSCCs, and different AWSCCs.\relax }}{64}{figure.caption.56}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces The feature vectors for 31 syllables of the single species, \textit {Assa darlingtoni}}}{70}{figure.caption.61}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces Wavelet packet tree based on adaptive frequency scale for classifying ten and fifteen frog species.\relax }}{72}{figure.caption.64}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Mel-scaled wavelet packet tree for frog call classification.\relax }}{72}{figure.caption.65}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Sensitivity of five features for different levels of noise contamination.\relax }}{73}{figure.caption.67}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Block diagram of the frog call classification system}}{48}{figure.caption.43}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Distribution of syllable number for all frog species}}{51}{figure.caption.46}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Segmentation results based on bandpass filtering}}{52}{figure.caption.47}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Spectral peak track extraction results}}{54}{figure.caption.49}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Adaptive wavelet packet tree for classifying twenty frog species}}{58}{figure.caption.51}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Description of three feature extraction methods including MFCCs, MWSCCs, and different AWSCCs.\relax }}{58}{figure.caption.52}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces The feature vectors for 31 syllables of the single species, \textit {Assa darlingtoni}}}{64}{figure.caption.57}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Wavelet packet tree based on adaptive frequency scale for classifying ten and fifteen frog species.\relax }}{66}{figure.caption.60}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Mel-scaled wavelet packet tree for frog call classification.\relax }}{66}{figure.caption.61}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Sensitivity of five features for different levels of noise contamination.\relax }}{67}{figure.caption.63}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart of frog call classification system\relax }}{78}{figure.caption.69}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Acoustic event detection results before (Left) and after (Right) event filtering based on dominant frequency}}{82}{figure.caption.72}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Acoustic event detection results after region growing}}{82}{figure.caption.73}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart of frog call classification system\relax }}{72}{figure.caption.65}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Acoustic event detection results before (Left) and after (Right) event filtering based on dominant frequency}}{76}{figure.caption.68}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Acoustic event detection results after region growing}}{76}{figure.caption.69}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Flowchart of frog call classification system\relax }}{89}{figure.caption.76}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces Acoustic event detection for frog abundance monitoring using different methods}}{92}{figure.caption.78}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Frog abundance detection of different sites}}{96}{figure.caption.79}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Frog species richness distribution of three selected sites}}{97}{figure.caption.81}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Averaged frog species richness of different sites.\relax }}{97}{figure.caption.82}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Flowchart of frog call classification system\relax }}{83}{figure.caption.72}
+\contentsline {figure}{\numberline {6.2}{\ignorespaces Acoustic event detection for frog abundance monitoring using different methods}}{86}{figure.caption.74}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Frog abundance detection of different sites}}{90}{figure.caption.75}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Frog species richness distribution of three selected sites}}{91}{figure.caption.77}
+\contentsline {figure}{\numberline {6.5}{\ignorespaces Averaged frog species richness of different sites.\relax }}{91}{figure.caption.78}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

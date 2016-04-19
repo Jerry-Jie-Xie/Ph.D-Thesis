@@ -1,12 +1,12 @@
 % Ch2LiteratureReview.tex
 
-\chapter[Literature Review]{Literature Review}
+\chapter[Literature review]{Literature review}
 \label{cha:cha2LiteratureReview}
 
 This chapter reviews the extant literature on frog call classification. 
 It aims to give a quantitative and detailed analysis of related techniques used in frog call classification. Since previous studies have not used multiple-instance multiple-label (ML) learning or multiple-label (ML) learning for frog call classification, we just focus on the studies of single-instance single-label (MIML) classification of frog calls.    
 
-\section{Introduction}
+\section{Overview}
 \label{intro}
 Over the past decade, frog biodiversity has rapidly declined because of frogs' sensitive to habitat loss and degradation, introduced invasive species, and environmental pollution \citep{dudgeon2006freshwater}. On one hand, frog biodiversity is rapidly declining, and on the other frogs are greatly valuable for the environment. Firstly, frogs are an integral part of the food web, and the decline of their population can result in negative impacts through the whole ecosystem. Secondly, frogs are famous indicator species for environment health. Finally, frogs are very useful in medical research that benefit human \footnote{http://www.savethefrogs.com/why-frogs}. The rapid biodiversity decline and great importance of frogs make it necessary for frog biodiversity monitoring to increase. 
 
@@ -16,6 +16,8 @@ To monitor the change of frog biodiversity and optimise the protection policy, m
 Over the last few years, many researchers have described automated methods for detecting and classifying frog calls \citep{huang2008realization, huang2009frog, han2011acoustic,chen2012automatic, Gingras2013, camacho2013automatic, Huang20141, Xie1504:Acoustic}. However, there is no paper that summarises those methods. In this work, we present a comprehensive survey of frog call classification to provide acoustic signal researchers with basic information, current methods and trends in this field. 
 
 Three parts play important roles in the performance and precision of frog call classification: signal pre-processing, feature extraction, and classification. In this survey, these three important parts of frog call classification are presented as shown in Fig.~\ref{fig:flowchart}. 
+
+
 
 
 Signal pre-processing consists of signal processing, noise reduction and syllable segmentation. Signal processing often denotes changing a signal from one-dimension (audio data) into two-dimensional representation (image). Noise reduction is essential to improve the classification performance. Since the elementary acoustic unit for frog call classification is the syllable, which is a continuous vocalization emitted by an individual, segmenting continuous recordings of frog calls into individual syllables is necessary. 
@@ -45,7 +47,8 @@ In section \ref{features}, different acoustic features are investigated for frog
 \section{Signal pre-processing}
 \label{pre-processing}
 
-For frog call classification, signal pre-processing is the first step after acoustic data is collected. It often consists of signal processing, noise reduction, and syllable segmentation. Each part of signal pre-processing is described below.
+Frog call recordings are often collected using a battery-powered acoustic sensor (stored in a weather proof metal box) with an external microphone. After signal acquisition,  signal pre-processing is the first step for a frog call classification system.
+It often consists of signal processing, noise reduction, and syllable segmentation. Each part of signal pre-processing is described below.
 
 
 \subsection{Signal processing}
@@ -179,7 +182,7 @@ SVM is another classifier which is widely used for its good generalization abili
 
 
 
-\section{Experiment results of the state-of-the-art methods}
+\section{Experiment results with state-of-the-art methods}
 \label{experiment}
 
 
@@ -209,7 +212,7 @@ Specificity = \frac{TN}{FP+TN}
 \end{equation}
 
 
-\subsection{Experiment results for summarise}
+\subsection{Previous experimental results}
 
 
 Table \ref{tab:classificationPerformance} shows the list of summarised frog call classification methods, together with the database they used and corresponding performance.
@@ -301,7 +304,7 @@ University of Amazonas in \\ Manaus, Brazil (unavailable) \end{tabular}
 
 
  
-\section{Discussion and future work}
+\section{Research gap in current literature}
 \label{discussion}
 In this section, each part of a frog call classification system is discussed to give a direction for future work. 
 
@@ -341,9 +344,9 @@ Almost all previous studies assume that each recording has only one frog species
 
 
 
-\section{Conclusions}
+\section{Summary}
 \label{conclusion}
-The main objective of this survey is to provide a research direction for analysing acoustic signals, especially frog calls. With the use of signal processing and machine learning techniques, different frog species can be classified based on their vocalizations. To achieve this goal, three main parts of a frog call classification system are explained: signal pre-processing, feature extraction, and classification. For each part, current techniques used by different researchers are explored. For signal pre-processing, signal processing, noise reduction, and syllable segmentation are studied respectively. For feature extraction, acoustic features in different domains are explored. For classification, different classification frameworks are investigated: single-instance single-label classification, multi-label classification, and multi-instance multi-label classification. 
+The main objective of this survey is to provide a research direction for analysing acoustic signals, especially frog calls. With the use of signal processing and machine learning techniques, different frog species can be classified based on their vocalizations. To achieve this goal, three main parts of a frog call classification system are explained: signal pre-processing, feature extraction, and classification. For each part, current techniques used by different researchers are explored. For signal pre-processing, signal processing, noise reduction, and syllable segmentation are studied respectively. For feature extraction, acoustic features in different domains are explored. For classification, different single-instance single-label classifiers are investigated. 
 
 In general, frog call classification is still in its infancy as a field of study, and potential applications and unsolved problems are extending every day. For future work, it is worth further improving the accuracy and efficiency of noise reduction and syllable segmentation because they are critical processes for frog call classification. Since collected frog calls in the field often contain many background noises (birds, insects, rain, wind, human voices, etc.), it is necessary to design new noise reduction methods based on different environments. It is also necessary to develop accurate and efficient methods for syllable segmentation for its great influence in the frog call classification system performance. Currently, studies have focused on frequency domain features for classification. In the future, time domain features can be more incorporated for increasing the accuracy of frog call classification. For the classification frameworks, using MIML learning or ML learning for studying environmental recordings may be a productive research direction because of the characteristic of collected acoustic data. It is also worth making a uniform dataset that covers different frog species from different areas, since there is still no available uniform datasets of frog calls. Then researchers can evaluate their particular methods on a uniform platform.
 

@@ -4,7 +4,7 @@
 \label{cha:cha5Wavelet}
 
 
-\section{Introduction}
+\section{Overview}
 This chapter presents a novel cepstral feature representation based on adaptive frequency scaled wavelet packet decomposition. Following the conclusion of chapter 4 that cepstral features can achieve a good classification accuracy, but sensitive to the background noise, this research aims to develop a ceptral feature representation with a good anti-noise ability.
 
 
@@ -19,7 +19,7 @@ However, most low SNR recordings have more than one frog species. Therefore, in 
 
 
 
-\section{Methods}
+\section{Method}
 The architecture of the proposed classification method consists of five modules: syllable segmentation, syllable feature extraction, adaptive frequency scale generation, WPD feature extraction and classification (see Figure.~\ref{fig:Ch5_flowchart}). Each module is described in the following sections. 
 
 \begin{figure}[htb!] % Example image
@@ -662,7 +662,7 @@ different levels of noise contamination.}
 \label{fig:snr} 
 \end{figure}
 
-\subsection{Proposed feature evaluation using the JCU recordings}
+\subsection{Feature evaluation using the real world recordings}
 Table \ref{tab:realField} shows the classification accuracy comparison using our proposed feature to classify 8 frog species obtained from the JCU recordings. Since calls of some frog species in the JCU recordings do not have oscillation structure, SFs are not included for the comparison. Compared with other referred features, our proposed feature also achieves the best classification performance.
 Since the JCU recordings often have multiple calls from different frog species, spectral peak track occasionally can not capture the specific frog species (labelled species for that syllable) but other frog species to be classified, however, applying k-mean clustering to the dominant frequency calculated from the spectral peak track can reduce this deviation. Therefore, the frequency scale used for the WPD can be accurately achieved which still leads to a high classification accuracy with the proposed feature.
 
@@ -686,7 +686,7 @@ Delta-AWSCCs                       &         97.0   $\pm$ 5.2                &  
 \end{table}
 
 
-\section{Conclusion and future work}
+\section{Summary and future work}
 In this study, a novel feature extraction method for frog call classification is developed using the adaptive frequency scaled wavelet packet decomposition. With segmented syllables, spectral peak track is first extracted from each syllable. Then, track duration, dominant frequency, and oscillation rate are calculated based on each track. Next, a k-means clustering algorithm is applied to the dominant frequency, which generates the frequency scale for WPD. Finally, a new feature set, AWSCCs, is calculated. Since our feature extraction method is developed based on the data itself, the wavelet packet tree differs according to the frog species to be classified. Compared with the Mel-scaled WPD tree, the proposed adaptive wavelet packet tree can better fit the dominant frequency distribution of the frog species to be classified. With the proposed frequency scale, the call character of those frog species to be classified can be enhanced, however, the background noise and calls from other animals will be suppressed. Therefore, our proposed feature sets can achieve a higher accuracy for the classification of frog calls than others. Meanwhile, since the frequency scale is calculated based on the dominant frequency of those frog species to be classified, our proposed wavelet tree structure is more accurate and efficiency in classifying the frog calls when compared with Mel-scale (Figure.~\ref{fig:wpTree} and Figure.~\ref{fig:melTree}).
 
 
