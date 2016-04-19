@@ -32,7 +32,7 @@ The architecture of our calling activity detection system is shown in Figure \re
 \begin{figure}[htb!]
 \centering
 \includegraphics[width=\textwidth]{image/Ch7/flowchart.pdf}
-\caption{Flowchart of frog call classification system}
+\caption{Flowchart of a frog call classification system using ML learning}
 \label{fig:Ch7_flowchart}
 \end{figure}
 
@@ -208,10 +208,17 @@ F_{rich} = \frac{\sum_{k=1}^{K}f_{rich}(k)}{K}
 where $f_{rich}(k)$ is the number of frog species of each tagged 10-second recording, $K$ is the number of 10-second recording for each day.
 
 
-\section{Experiment setup}
-Each 10-second recording is divided into frames of 512 samples and 50\% frame overlap for STFT. $A_{large}$ and $A_{small}$, which are used for area filtering in acoustic event detection, are empirically set at 3000 pixels and 300 pixels, respectively. Allowed fluctuations in both sides of dominant frequency are 300 Hz for dominant frequency filtering. For WP-based feature, window size and overlap are 512 samples and 50\%, the window function is a Hamming window. All algorithms were programmed in Matlab 2014b except multi-label learning, which was implemented in Meka 1.7.7\footnote[4]{http://meka.sourceforge.net/}. 
+
 
 \section{Experiment results}
+
+
+
+\subsection{Experiment setup}
+Each 10-second recording is divided into frames of 512 samples and 50\% frame overlap for STFT. $A_{large}$ and $A_{small}$, which are used for area filtering in acoustic event detection, are empirically set at 3000 pixels and 300 pixels, respectively. Allowed fluctuations in both sides of dominant frequency are 300 Hz for dominant frequency filtering. For WP-based feature, window size and overlap are 512 samples and 50\%, the window function is a Hamming window. All algorithms were programmed in Matlab 2014b except multi-label learning, which was implemented in Meka 1.7.7\footnote[4]{http://meka.sourceforge.net/}. 
+
+
+
 
 \subsection{Frog abundance detection}
 Figure~\ref{fig:frogAbundance} shows the frog abundance result of three selected sites through the whole frog breeding season. It can be found that the frog abundance of the same site changes a great deal over time. In the \textit{Kiyomi dam}, frog abundance is relatively high from February 21 to February 25. However, frog abundance is quite low in two period, which are February 26 to March 11 and April 07 to April 12. The highest abundance of this site is achieved on March 22. However, the highest abundance for \textit{Stony creek dam} and \textit{BG creek dam} is obtained in February, which shows that frog abundance of different sites often varies a lot for different environments. Recordings of 47 days of all three sites have no frog calls. In the subsequent analysis, only those recordings that consist of frog calls are used for frog species richness analysis. 

@@ -21,7 +21,7 @@ Our frog call classification system consists of six steps (Figure.~ \ref{fig:Ch4
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=1\linewidth]{image/Ch4/flowchart.pdf}}
-\caption{Flowchart of frog call classification system}
+\caption{Flowchart of frog call classification system using enhanced features}
 \label{fig:Ch4_flowchart} 
 \end{figure}
 
@@ -360,11 +360,11 @@ Figure.~\ref{diffClassifier} shows the frog call classification performance with
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=0.6\linewidth]{image/Ch4/diffClassifier.pdf}}
-\caption{Classification results of different classifiers}
+\caption{Results of different classifiers}
 \label{diffClassifier} 
 \end{figure}
 
-\subsubsection{Effects of different feature sets}
+\subsection{Effects of different feature sets}
 Figure.~\ref{diffFeature} illustrates the classification accuracy with different feature sets: LPC feature, MFCCs (\textit{Cep}), temporal features and MFCCs (\textit{TempCep}), temporal features and perceptual features (\textit{TemPer}), and temporal features, perceptual features and MFCCs (\textit{TemPerCep}). It can be seen that cepstral features (\textit{Cep}, \textit{TempCep}, \textit{TemPerCep}) have more stable performance than LPC and perceptual features. It is evident that our proposed enhanced feature (\textit{TemPerCep}) show outstanding performance of all proposed feature representations of all the machine learning techniques. The reason for the high classification accuracy is that frog calls are short duration and cover a small spectral band. Our proposed enhanced feature, \textit{TemPerCep}, can better characterise the content of frog calls. Although the classification performance of \textit{TemPerCep} is not significantly higher than other feature representations, the difference does show that our proposed feature set is suitable and effective for the classification of frog calls.   
 
 
@@ -374,7 +374,7 @@ Figure.~\ref{diffFeature} illustrates the classification accuracy with different
 \label{diffFeature} 
 \end{figure}
 
-\subsubsection{Effects of different window size for MFCCs and perceptual features}
+\subsection{Effects of different window size for MFCCs and perceptual features}
 As we know, the window size have an effect on the MFCCs and perceptual features. Therefore, different window size will lead to different classification performance (Figure.~\ref{diffWinSize1} and Figure.~\ref{diffWinSize2}). The window size used for test is 32, 64, 128, 256, because the syllable length of some frog species is less than 512 samples.
 It is found that the best classification performance for MFCCs is achieved with window size of 64 samples. For \textit{TemPer}, the window size of 64 obtains the best classification performance. 
 It also can be observed that SVM and RF achieve the best classification performance. Moreover, different window sizes of MFCCs have a larger variation than \textit{TemPer} features, which  might be that temporal features have a high weight in \textit{TemPer} for the classification task.
@@ -391,13 +391,13 @@ It also can be observed that SVM and RF achieve the best classification performa
 \label{diffWinSize2} 
 \end{figure}
 
-\subsubsection{Effects of noise}
+\subsection{Effects of noise}
 To further evaluate the robustness of our proposed feature set, white noise with different signal-to-noise (SNR) of 40 dB, 30 dB, 20 dB, 10 dB, 0dB, and -10 dB is added to the frog calls. Because this paper focuses on the evaluation of features rather than the segmentation method, the artificial noise is added after syllable segmentation. Since SVM has shown a good performance for frog call classification in 3.3.1, we only use SVM to test the effects of different levels of artificial noise. The classification results of different levels of noise contamination are shown in Figure.~\ref{diffNoise}. It is found from Figure.~\ref{diffNoise} that MFCCs (Cep) are very sensitive to the background noise, compared with other feature representations. Comparing \textit{TemCep} with \textit{TemPer}, it can be observed that perceptual features have a better anti-noise ability than cepstral feature. It is also found that LPC has a good anti-noise ability when SNR is larger than 10, but the classification accuracy quickly decreases when SNR is smaller than 10. 
 
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=0.6\linewidth]{image/Ch4/affectNoise.pdf}}
-\caption{Sensitivity of different features for different levels of noise contamination}
+\caption{Sensitivity for different features for different levels of noise contamination}
 \label{diffNoise} 
 \end{figure}
 

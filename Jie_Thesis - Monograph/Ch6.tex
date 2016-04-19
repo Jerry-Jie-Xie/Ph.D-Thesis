@@ -23,7 +23,7 @@ extraction, and classification (Fig.~\ref{fig:flowchart}). Detailed description 
 \begin{figure}[htb!]
 \centering
 \includegraphics[width=\textwidth]{image/Ch6/flowchart.pdf}
-\caption{Flowchart of frog call classification system}
+\caption{Flowchart of a frog call classification system using MIML learning}
 \label{fig:flowchart}
 \end{figure}
 
@@ -275,8 +275,11 @@ AF (MD+PS)              & MIML-RBF        & 0.191              & 0.142          
 
 
 
+\section{Discussion}
+Since most recordings used in this study consist of multiple simultaneously vocalising frog species, the traditional signal-instance single-label classification framework is no longer suitable. A novel framework for the classification of multiple simultaneous vocalising frog species in environmental recordings is proposed, which is adopt from \cite{briggs2012acoustic} that studied birds. Different from their study, we design a new acoustic event detection method for syllable segmentation rather than using a supervised learning algorithm. It is because we are lack of lots of annotated frog recordings. As for the classification results, our proposed framework can achieve a acceptable classification accuracy. However, the classification results are highly affected by the AED results. 
 
-\section{Summary}
-In this study, we propose a novel framework for the classification of multiple simultaneous frog vocalizations in environmental recordings. To the best of our knowledge, this is the first study that applies the MIML algorithm to frog calls. Since frogs tend to call simultaneously, the MIML algorithm is more suitable for dealing with those recordings than single-instance single-label classification. After applying acoustic event detection algorithm to each 10s recording, each frog syllable is segmented. Then, three feature sets are calculated based on those segmented syllables. Finally, three MIML classifiers are used for the classification of frog calls with the best accuracy (81.8\% true positive/negatives). Future work will focus on the study of novel features and MIML classifiers for further improving the classification performance.   
+
+\section{Summary and future work}
+In this study, we propose a novel framework for the classification of multiple simultaneous vocalising frog species in environmental recordings. To the best of our knowledge, this is the first study that applies the MIML algorithm to frog calls. Since frogs tend to call simultaneously, the MIML algorithm is more suitable for dealing with those recordings than single-instance single-label classification. After applying acoustic event detection algorithm to each 10s recording, each frog syllable is segmented. Then, three feature sets are calculated based on those segmented syllables. Finally, three MIML classifiers are used for the classification of frog calls with the best accuracy (81.8\% true positive/negatives). Future work will focus on the study of novel features and MIML classifiers for further improving the classification performance. To solve this problem, one solution is to prepare an annotated dataset and change to use supervised learning algorithm. Another is to used a different classification framework, which does not need the AED process.  
 
 
