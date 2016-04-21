@@ -215,18 +215,18 @@ There are three modules whose parameters need to be discussed: signal processing
 In this study, all the algorithms were programmed in Matlab 2014b. Each MIML algorithm is evaluated with five-fold cross-validation on the collection of 342 species-labelled recordings. 
 Five evaluation rules are used for comparing the performance with the combination of seven feature sets and three ML algorithms: Hamming loss, Rank loss, Average precision, One error, Exampled based F1, and Micro F1 \citep{Madjarov20123084, zhou2008miml}. The value range of all five evaluation rules is between 0 to 1. The definition of each evaluation rule is described as follows:
 \\
-\textbf{(1)} Hamming loss directly measures the fraction of labels that are incorrectly predicted. A smaller value of hamming loss indicates a better classification performance. 
+\textbf{1)} Hamming loss directly measures the fraction of labels that are incorrectly predicted. A smaller value of hamming loss indicates a better classification performance. 
 \\
-\textbf{(2)} Rank loss indicates the number of label pairs that are incorrectly ordered by the scores of ML classifier. A smaller value of rank loss indicates a better classification performance.
+\textbf{2)} Rank loss indicates the number of label pairs that are incorrectly ordered by the scores of ML classifier. A smaller value of rank loss indicates a better classification performance.
 \\
-\textbf{(3)} Average precision is the average fraction of labels that are ranked higher than an actual label belonging to an example. A higher value of average precision indicates a better classification performance.
+\textbf{3)} Average precision is the average fraction of labels that are ranked higher than an actual label belonging to an example. A higher value of average precision indicates a better classification performance.
 \\
-\textbf{(4)} One error is the fraction of bags whose top scoring label is not in the true label set. A smaller value of one error indicates a better classification performance.
+\textbf{4)} One error is the fraction of bags whose top scoring label is not in the true label set. A smaller value of one error indicates a better classification performance.
 \\
-\textbf{(5)}
+\textbf{5)}
 Exampled based F1 is the average of the harmonic mean of example-precision and example-recall for every example. The example-precision is defined for an example as the size of the intersection of the set of its predicted labels and the set of its ground truth labels divided by the size of the set of its predicted labels. The example-recall is defined for an example as the size of the intersection of the set of its predicted labels and the set of its ground truth labels divided by the size of the set of its ground truth labels. A higher value of exampled based F1 indicates a better classification performance.
 \\
-\textbf{(6)}
+\textbf{6)}
 Micro F1 is the harmonic mean of micro-precision and micro-recall where micro-precision and micro-recall are the precision and the recall which are averaged over all example and label pairs. A higher value of micro F1 indicates a better classification performance.
 
 

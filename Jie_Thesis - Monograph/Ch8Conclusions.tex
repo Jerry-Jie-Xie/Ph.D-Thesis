@@ -11,8 +11,15 @@ In this chapter, key contributions of this research to the challenge will be sum
 
 \section{Summary of contributions}
 	
-Four contributions have	been made by this research:
+We have categorised our contributions of algorithms into one of two kinds:
 
+\begin{enumerate}
+\item Feature: where our contribution is a novel feature representation.
+
+\item Integration: where our contribution is a new framework that combines several techniques into a unified and effective system.
+\end{enumerate}
+
+Below is the summary of the contributions in this thesis:
 
 \begin{itemize}
 	
@@ -47,15 +54,36 @@ For a ML classification framework, acoustic event detection is first used to fil
 %
 %\end{itemize}}
 
+\section{Limitations and future work}
+Although our proposed frog call classification system shows promising classification performance, there is still much work that can be done to help scientists and researchers in data collection and analysis in the bioacoustics communities.
 
-\section{Limitations and further research}	
-On the topic of this thesis, there is still much work that can be done to help scientists and researchers in data collection and analysis in the bioacoustics communities. One of the most important issues when dealing with frog recordings is the need for the existence of standardised species-specific data with behavioural labels. 
-Therefore, the algorithms we developed for frog call classification can be evaluated on a larger dataset. 
-Consequently, researchers will be able to use the outcomes of such automatic call classification methods for field studies.
 
-Another aspect which requires tremendous improvement is the need for an advanced frog syllable segmentation method for the field recordings so as to extract more accurate event-based features and conduct more thorough analysis on frog vocalisations. The problem of syllable segmentation is very complicated, because there are many simultaneous overlapping calling activities from birds, frogs, insects, and many other sources. In addition, the \textit{adaptive WPD sub-band cepstral coefficients} feature has been successfully used for frog call classification, which is used to capture the frequency domain information. The time-varying information still has not been explicitly addressed for frog call classification. 
+\begin{itemize}
+\item  One of the most important issues when dealing with frog recordings is the need for the existence of standardised species-specific data with behavioural labels. 
+Therefore, the algorithms we developed for frog call classification can be evaluated on a larger dataset. Consequently, researchers will be able to use the outcomes of such automatic call classification methods for field studies. However, it is very time-consuming to perform manual labelling. It is necessary to develop automatic or semi-automatic methods to perform the labelling.
 
-Our developed frog call classification system aims to help ecologists to study frogs over larger spatial and temporal scales. However, there is still no a generic platform for running the frog calls recordings. It is necessary to develop an on-line website with our developed frog call classification algorithms, and then ecologists can do the analysis on their own. Another important aspect of practical systems is the speed of data processing executed through classification algorithms. For this purpose, the MATLAB code corresponding to feature extractors and classifiers needs to be optimised to perform real-time frog call classification in the field.
+\item  Another aspect which requires tremendous improvement is the need for an advanced frog syllable segmentation method for the field recordings so as to extract more accurate event-based features and conduct more thorough analysis on frog vocalisations. The problem of syllable segmentation is very complicated, because there are many simultaneous overlapping calling activities from birds, frogs, insects, and many other sources. 
+
+\item Since collected low SNR recordings often contains much background noise, it is important to develop effective noise reduction algorithms to improve the classification performance.
+
+
+
+\item In addition, the \textit{adaptive WPD sub-band cepstral coefficients} feature has been successfully used for frog call classification, which is used to capture the frequency domain information. The time-varying information still has not been explicitly addressed for frog call classification. 
+
+
+
+
+\item Our developed frog call classification system aims to help ecologists to study frogs over larger spatial and temporal scales. However, there is still no a generic platform for running the frog calls recordings. It is necessary to develop an on-line website with our developed frog call classification algorithms, and then ecologists can do the analysis on their own. Another important aspect of practical systems is the speed of data processing executed through classification algorithms. For this purpose, the MATLAB code corresponding to feature extractors and classifiers needs to be optimised to perform real-time frog call classification in the field.
+
+
+\end{itemize}
+
+
+
+
+
+
+
 
 
 
