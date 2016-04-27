@@ -42,8 +42,8 @@
 \contentsline {section}{\numberline {3.2}Architecture of the classification system for frog calls}{30}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Data description}{30}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Syllable segmentation based on an adaptive end point detection}{30}{subsection.3.2.2}
-\contentsline {subsection}{\numberline {3.2.3}Pre-processing}{33}{subsection.3.2.3}
-\contentsline {subsubsection}{Pre-emphasise}{34}{section*.25}
+\contentsline {subsection}{\numberline {3.2.3}Pre-processing}{32}{subsection.3.2.3}
+\contentsline {subsubsection}{Pre-emphasise}{33}{section*.25}
 \contentsline {subsubsection}{Windowing}{34}{section*.26}
 \contentsline {subsection}{\numberline {3.2.4}Feature extraction}{35}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Classifier description}{39}{subsection.3.2.5}
@@ -52,12 +52,12 @@
 \contentsline {subsubsection}{Support vector machines}{41}{section*.29}
 \contentsline {subsubsection}{Random forest}{41}{section*.30}
 \contentsline {subsubsection}{Artificial neural network}{42}{section*.31}
-\contentsline {section}{\numberline {3.3}Experiment results}{43}{section.3.3}
+\contentsline {section}{\numberline {3.3}Experiment results}{42}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Effects of different machine learning techniques}{43}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Effects of different feature sets}{44}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Effects of different feature sets}{43}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Effects of different window size for MFCCs and perceptual features}{44}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Effects of noise}{45}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Discussion}{47}{section.3.4}
+\contentsline {subsection}{\numberline {3.3.4}Effects of noise}{46}{subsection.3.3.4}
+\contentsline {section}{\numberline {3.4}Discussion}{46}{section.3.4}
 \contentsline {section}{\numberline {3.5}Summary and future work}{47}{section.3.5}
 \contentsline {chapter}{\numberline {4}Adaptive frequency scaled wavelet packet decomposition for frog call classification}{49}{chapter.4}
 \contentsline {section}{\numberline {4.1}Overview}{49}{section.4.1}
@@ -113,5 +113,4 @@
 \contentsline {chapter}{\numberline {B}Waveform, spectrogram and SNR of six frog species from JCU recordings}{101}{appendix.I}
 \contentsline {chapter}{\numberline {C}Power spectral density (PSD) estimate of signal and noise (JCU recordings)}{103}{appendix.J}
 \contentsline {chapter}{\numberline {D}Confidence interval of signal and noise}{105}{appendix.K}
-\contentsline {chapter}{\numberline {E}Frog species studied in this study}{107}{appendix.L}
-\contentsline {chapter}{References}{116}{appendix*.82}
+\contentsline {chapter}{References}{114}{appendix*.82}
