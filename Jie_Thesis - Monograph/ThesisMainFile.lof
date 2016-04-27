@@ -14,9 +14,9 @@
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Syllable segmentation results}}{33}{figure.caption.23}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution of syllable number for all frog species}}{34}{figure.caption.24}
 \contentsline {figure}{\numberline {3.5}{\ignorespaces Results of different classifiers\relax }}{44}{figure.caption.32}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Classification results with different feature sets\relax }}{44}{figure.caption.33}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Classification results with different feature sets\relax }}{45}{figure.caption.33}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Classification results of MFCCs with different window size\relax }}{45}{figure.caption.34}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Classification results of TemPer with different window size\relax }}{45}{figure.caption.35}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Classification results of TemPer with different window size\relax }}{46}{figure.caption.35}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Sensitivity for different features for different levels of noise contamination\relax }}{46}{figure.caption.36}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Block diagram of the frog call classification system for wavelet-based feature extraction}}{50}{figure.caption.38}
@@ -34,10 +34,10 @@
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Acoustic event detection results before (Left) and after (Right) event filtering based on dominant frequency}}{78}{figure.caption.63}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Acoustic event detection results after region growing}}{78}{figure.caption.64}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Flowchart of a frog call classification system using ML learning\relax }}{85}{figure.caption.67}
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Flowchart of a frog call classification system using ML learning\relax }}{84}{figure.caption.67}
 \contentsline {figure}{\numberline {6.2}{\ignorespaces Acoustic event detection for frog abundance monitoring using different methods}}{88}{figure.caption.69}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Frog abundance detection of different sites}}{92}{figure.caption.70}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Frog species richness distribution of three selected sites}}{93}{figure.caption.72}
+\contentsline {figure}{\numberline {6.3}{\ignorespaces Frog abundance detection of different sites}}{91}{figure.caption.70}
+\contentsline {figure}{\numberline {6.4}{\ignorespaces Frog species richness distribution of three selected sites}}{92}{figure.caption.72}
 \contentsline {figure}{\numberline {6.5}{\ignorespaces Averaged frog species richness of different sites.\relax }}{93}{figure.caption.73}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
