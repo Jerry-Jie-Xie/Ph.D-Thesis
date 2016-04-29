@@ -4,7 +4,7 @@
 \BOOKMARK [0][-]{chapter*.7}{List of Figures}{}% 4
 \BOOKMARK [0][-]{chapter*.8}{List of Tables}{}% 5
 \BOOKMARK [0][-]{chapter*.9}{Abbreviations}{}% 6
-\BOOKMARK [0][-]{chapter.1}{Overview}{}% 7
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
 \BOOKMARK [1][-]{section.1.1}{Motivation and background}{chapter.1}% 8
 \BOOKMARK [1][-]{section.1.2}{Basic concepts}{chapter.1}% 9
 \BOOKMARK [2][-]{subsection.1.2.1}{Environmental audio data}{section.1.2}% 10
@@ -16,7 +16,7 @@
 \BOOKMARK [1][-]{section.1.4}{Research questions}{chapter.1}% 16
 \BOOKMARK [1][-]{section.1.5}{Aims and objectives}{chapter.1}% 17
 \BOOKMARK [1][-]{section.1.6}{Significance and contributions}{chapter.1}% 18
-\BOOKMARK [1][-]{section.1.7}{Summary by chapters}{chapter.1}% 19
+\BOOKMARK [1][-]{section.1.7}{Thesis structure}{chapter.1}% 19
 \BOOKMARK [0][-]{chapter.2}{Literature review}{}% 20
 \BOOKMARK [1][-]{section.2.1}{Overview}{chapter.2}% 21
 \BOOKMARK [1][-]{section.2.2}{Signal pre-processing}{chapter.2}% 22
@@ -98,7 +98,7 @@
 \BOOKMARK [2][-]{subsection.6.3.3}{Frog species richness analysis}{section.6.3}% 98
 \BOOKMARK [2][-]{subsection.6.3.4}{Statistical analysis}{section.6.3}% 99
 \BOOKMARK [1][-]{section.6.4}{Summary and future work}{chapter.6}% 100
-\BOOKMARK [0][-]{chapter.7}{Conclusions and future work}{}% 101
+\BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 101
 \BOOKMARK [1][-]{section.7.1}{Summary of contributions}{chapter.7}% 102
 \BOOKMARK [1][-]{section.7.2}{Limitations and future work}{chapter.7}% 103
 \BOOKMARK [0][-]{appendix.H}{Waveform, spectrogram and SNR of frog species from David Stewart's CD}{}% 104

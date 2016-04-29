@@ -40,15 +40,15 @@ To my family
 %============abstract
 \begin{abstract}
 Rapid decreases in frog populations have been spotted from locations around the world, which are regarded as one of the most critical threats to the global biodiversity. Causes of these declines can be summarised as follows: disease, habitat destruction and modification, exploitation, pollution, pesticide use, introduced species, and ultraviolet-B radiation (UV-B). On the one hand frogs play an important role in the whole ecosystem, but on the other frog populations are declining globally. To assess frog populations and optimise the protection policy, monitoring frogs is becoming ever more necessary. Since frogs are much easier to be heard than seen, frog populations are often assessed by their vocalisations. In order to collect frog vocalisations, traditional manual methods require ecologists and volunteers to visit the field, which limits the        
-scale for acoustic data collection. In contrast, recent advances in acoustic sensors provide a novel method to survey vocalising animals such as frogs. After deploying acoustic sensors in the field, they can automatically collect acoustic data at large spatial and temporal scales. The large volumes of raw acoustic data collected must be analysed to gain insights about frogs and the environment from the data It has become very important to enable automated species identification in acoustic data. Also since the data is collected from the field, the acoustic data tend to be very noisy and very often the desired signal (frog call) is weak. There are also very often multiple overlapping signals over the frog calls. These characteristics pose a big challenge to perform the automatic classification of frog species in acoustic data.
+scale for acoustic data collection. In contrast, recent advances in acoustic sensors provide a novel method to survey vocalising animals such as frogs. After deploying acoustic sensors in the field, they can automatically collect acoustic data at large spatial and temporal scales. The large volumes of raw acoustic data collected must be analysed to gain insights about frogs and the environment from the data. It has become very important to enable automated species identification in acoustic data. Also since the data is collected from the field, the acoustic data tend to be very noisy and very often the desired signal (frog call) is weak. There are also very often multiple signals overlapping the frog calls. These characteristics pose a big challenge to perform the automatic classification of frog species in acoustic data.
 
 
 
-The research presented in this dissertation aims to investigate methods to build a robust and high performance classification system for frog species in acoustic data. Two important aspects of a classification system are investigated: feature extraction and classification, which consist of contributions towards three main objectives:
+The research presented in this dissertation aims to investigate methods to build a robust and accuracy classification prototype system for frog species in acoustic data. Two important aspects of a classification prototype system are investigated: feature extraction and classification, which consist of contributions towards three main objectives:
 \begin{enumerate} 
 \item[(1)]	Develop an enhanced feature representation for frog call classification. Time-frequency information of frog calls can be effectively represented via the enhanced representation of temporal, perceptual and cepstral features. The classification performance of various machine learning techniques is compared with different feature representations. Our proposed enhanced feature representation achieves the best classification accuracy which outperforms most previous studies.
  
-\item[(2)]	Propose a novel feature representation based on adaptive wavelet packet decomposition. To better capture the frequency domain information of frog calls with a good anti-noise ability, a novel feature representation is proposed named \textit{adaptive frequency scaled wavelet packet decomposition sub-band cepstral coefficients}. Compared with other cepstral coefficients, our proposed feature representation shows the best classification performance and a good anti-noise ability.
+\item[(2)]	Propose a novel feature representation based on adaptive wavelet packet decomposition. To better capture the frequency domain information of frog calls with a good anti-noise ability, a novel feature representation, namely \textit{adaptive frequency scaled wavelet packet decomposition sub-band cepstral coefficients}, is proposed. Compared with other cepstral coefficients, our proposed feature representation shows the best classification performance and a good anti-noise ability.
 
 \item[(3)]	Design a robust classification system to study low signal-to-noise ratio (SNR) recordings with multiple simultaneously vocalising frog species. Two classification frameworks are employed to classify multiple simultaneously vocalising frog species. 
 
@@ -104,55 +104,6 @@ With our developed classification system, we can survey the ecosystem at large s
 
 
 
-
-
-\newpage
-\begin{center}
-{\huge \textbf{List of Publications}}
-\end{center}
-
-{ \large \textbf{Journal Article}}
-\begin{enumerate} 
-\item	\textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul (2016) Adaptive frequency scaled wavelet packet decomposition for frog call classification.  Ecological Informatics, 32, pp. 134-144.
-\item	Zhang Liang, Towsey Michael, \textbf{Xie Jie}, Zhang Jinglan, Roe Paul,  Using multi-label classification for acoustic pattern detection and assisting bird species surveys, Applied Acoustics, Volume 110, September 2016, Pages 91-98.
-\item \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul, Frog call classification: a survey, Artificial Intelligence Review (\textbf{Under review})
-
-\item  \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul, Frog call classification based on enhanced features and machine learning algorithms, Applied acoustics (\textbf{Under review})
-
-
-\end{enumerate}
-
-{ \large \textbf{Conference Paper}}
-\begin{enumerate} 
-
-\item \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul, Detecting frog calling activity based on acoustic event detection and multi-label learning, International Conference on Computational Science (Accepted)
- 
- 
-\item \textbf{Xie, Jie}, Towsey, Michael,  Zhang, Liang, Zhang, Jinglan, and Roe, Paul, Multiple-Instance Multiple-Label Learning for the Classification of Frog Calls With Acoustic Event Detection,  International Conference on Image and Signal Processing (Accepted)
- 
- 
-\item \textbf{Xie, Jie}, Towsey, Michael, Zhang, Liang, Zhang, Jinglan, and Roe, Paul, Feature Extraction Based on Bandpass Filtering for Frog Call Classification, International Conference on Image and Signal Processing (Accepted)
-
-
-
-\item	\textbf{Xie, Jie}, Towsey, Michael, Truskinger, Anthony, Eichinski, Philip, Zhang, Jinglan, and Roe, Paul (2015) Acoustic classification of Australian anurans using syllable features. In 2015 IEEE Tenth International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP), IEEE, Singapore, pp. 1-6.
-
-\item	\textbf{Xie, Jie}, Towsey, Michael, Yasumiba, Kiyomi, Zhang, Jinglan, and Roe, Paul (2015) Detection of anuran calling activity in long field recordings for bio-acoustic monitoring. In 2015 IEEE Tenth International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP), IEEE, Singapore, pp. 1-6.
-\item	\textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul (2015) Image processing and classification procedure for the analysis of Australian frog vocalisations. InProceedings of the 2nd International Workshop on Environmental Multimedia Retrieval, ACM, Shanghai, China, pp. 15-20.
-\item	\textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, Dong, Xueyan, and Roe, Paul (2015)Application of image processing techniques for frog call classification. In IEEE International Conference on Image Processing (ICIP 2015), 27-30 September 2015, Québec City, Canada.
-
-\item	\textbf{Xie, Jie}, Towsey, Michael, Eichinski, Philip, Zhang, Jinglan, and Roe, Paul (2015)Acoustic feature extraction using perceptual wavelet packet decomposition for frog call classification. In 2015 IEEE 11th International Conference on e-Science (e-Science), IEEE, Munich, Germany, pp. 237-242.
-
-\item	\textbf{Xie, Jie}, Zhang, Jinglan and Roe, Paul,  “Discovering acoustic feature extraction and selection algorithms for frog vocalization monitoring with machine learning techniques”, 2015 Annual Conference of the Ecological Society of Australia. (Abstract accepted for poster presentation) 
-
-\item	\textbf{Xie, Jie}, Zhang, Jinglan, and Roe, Paul (2015) Acoustic features for hierarchical classification of Australian frog calls. In 10th International Conference on Information, Communications and Signal Processing, 2-4 December 2015, Singapore.
-
-\item	Dong, Xueyan, \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul (2015)Generalised features for bird vocalisation retrieval in acoustic recordings. In IEEE International Workshop on Multimedia Signal Processing, 19-21 October 2015, Xiamen, China.
-
-\end{enumerate} 
-
-
-
 %============keywords
 \begin{keywords}
 Bio-acoustic monitoring \\
@@ -166,6 +117,11 @@ Multiple-label learning \\
  
 \end{keywords}
 
+
+
+
+
+
 %============acknowledgment
 \begin{ack}
 First, I would like to express my sincere gratitude and thanks to Dr Jinglan Zhang (principal supervisor). I want to thank Jinglan for giving me an opportunity to study in Australia. During the whole PhD study, I learnt so much from her about passion for work and high motivation, which will benefit me throughout my life. 
@@ -176,7 +132,7 @@ I would also like to thank Dr Michael Towsey for his provision of consistent gui
 
 I want to thank Professor Vinod Chandran for his support in writing my confirmation report and this thesis. Vinod's strong background knowledge in signal processing greatly helps me improve my understanding of this research.
 
-I would also like to express my gratefulness to my family, especially my grandparents, parents and my wife. They always support my oversea study silently and firmly. Without their support, I could not pay full attention to PhD study and complete this thesis. 
+I would also like to express my gratefulness to my family, especially my grandparents, parents and my wife. They always support my oversea study. Without their support, I could not pay full attention to PhD study and complete this thesis. 
 My sincere thanks also go to all the friends for their love, attention and continuous concern about my PhD study. 
 
 I also want to thank the China Scholarship Council (CSC), Queensland University of Technology and the Wet Tropics management authority for their financial support. 
