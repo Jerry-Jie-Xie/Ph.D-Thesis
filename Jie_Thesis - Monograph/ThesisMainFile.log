@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  27 APR 2016 11:41
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  28 APR 2016 15:09
 entering extended mode
 **ThesisMainFile.tex
 
@@ -1225,35 +1225,38 @@ File: image/Ch6/flowchart.pdf Graphic file (type pdf)
 Package pdftex.def Info: image/Ch6/flowchart.pdf used on input line 25.
 (pdftex.def)             Requested size: 455.24408pt x 146.57724pt.
  [74 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch6/flo
-wchart.pdf>] [75] [76] [77]
-<image/Ch6/AEoriginal.png, id=2307, 359.54324pt x 285.4665pt>
+wchart.pdf>] [75] [76]
+<image/Ch6/AEoriginal.png, id=2299, 359.54324pt x 285.4665pt>
 File: image/Ch6/AEoriginal.png Graphic file (type png)
 
 <use image/Ch6/AEoriginal.png>
-Package pdftex.def Info: image/Ch6/AEoriginal.png used on input line 166.
+Package pdftex.def Info: image/Ch6/AEoriginal.png used on input line 168.
 (pdftex.def)             Requested size: 204.85844pt x 162.65225pt.
 
-<image/Ch6/AEfinal.png, id=2308, 359.54324pt x 285.4665pt>
+<image/Ch6/AEfinal.png, id=2300, 359.54324pt x 285.4665pt>
 File: image/Ch6/AEfinal.png Graphic file (type png)
 
 <use image/Ch6/AEfinal.png>
-Package pdftex.def Info: image/Ch6/AEfinal.png used on input line 171.
+Package pdftex.def Info: image/Ch6/AEfinal.png used on input line 173.
 (pdftex.def)             Requested size: 204.85844pt x 162.65225pt.
 
-<image/Ch6/binary.png, id=2309, 359.54324pt x 285.4665pt>
+<image/Ch6/binary.png, id=2301, 359.54324pt x 285.4665pt>
 File: image/Ch6/binary.png Graphic file (type png)
 
 <use image/Ch6/binary.png>
-Package pdftex.def Info: image/Ch6/binary.png used on input line 182.
+Package pdftex.def Info: image/Ch6/binary.png used on input line 184.
 (pdftex.def)             Requested size: 204.85844pt x 162.65225pt.
 
-<image/Ch6/segmentEvents.png, id=2310, 359.54324pt x 285.4665pt>
+<image/Ch6/segmentEvents.png, id=2302, 359.54324pt x 285.4665pt>
 File: image/Ch6/segmentEvents.png Graphic file (type png)
 
 <use image/Ch6/segmentEvents.png>
-Package pdftex.def Info: image/Ch6/segmentEvents.png used on input line 187.
+Package pdftex.def Info: image/Ch6/segmentEvents.png used on input line 189.
 (pdftex.def)             Requested size: 204.85844pt x 162.65225pt.
 
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [77]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [78 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch6/AEo
@@ -1262,9 +1265,6 @@ graph/image/Ch6/AEfinal.png (PNG copy)> <C:/Users/Jie/Documents/GitHub/Thesis/J
 ie_Thesis - Monograph/image/Ch6/binary.png (PNG copy)> <C:/Users/Jie/Documents/
 GitHub/Thesis/Jie_Thesis - Monograph/image/Ch6/segmentEvents.png (PNG copy)>] [
 79]
-Underfull \vbox (badness 1189) has occurred while \output is active []
-
- [80]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ˜ in font ptmr7t!
@@ -1302,15 +1302,9 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-[81]) [82] ("C:\Users\Jie\Documents\GitHub\Thesis\Jie_Thesis - Monograph\Ch7.te
-x"
+[80] [81]) [82]
+("C:\Users\Jie\Documents\GitHub\Thesis\Jie_Thesis - Monograph\Ch7.tex"
 Chapter 6.
-
-Overfull \hbox (4.79578pt too wide) in paragraph at lines 16--17
-\OT1/ptm/m/n/12 seg-mented record-ing: lin-ear pre-dic-tive cod-ing, MFCCs and 
-wavelet-based fea-tures. The wavelet-
- []
-
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
@@ -1940,17 +1934,13 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 72.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 72.
 Package rerunfilecheck Info: File `ThesisMainFile.out' has not changed.
 (rerunfilecheck)             Checksum: DD136D6CAE32F54D033767DC9150FD6C;8515.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 72.
  ) 
 Here is how much of TeX's memory you used:
- 11592 strings out of 493921
- 180606 string characters out of 3149293
- 303633 words of memory out of 3000000
- 14014 multiletter control sequences out of 15000+200000
+ 11595 strings out of 493921
+ 180661 string characters out of 3149293
+ 303724 words of memory out of 3000000
+ 14016 multiletter control sequences out of 15000+200000
  36391 words of font info for 78 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
  42i,20n,77p,1914b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1967,9 +1957,9 @@ C:/Jie/software/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Jie/softwar
 e/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Jie/software/MiKTe
 X/fonts/type1/urw/times/utmb8a.pfb><C:/Jie/software/MiKTeX/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Jie/software/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ThesisMainFile.pdf (142 pages, 9126297 bytes).
+Output written on ThesisMainFile.pdf (142 pages, 9126897 bytes).
 PDF statistics:
  2899 PDF objects out of 2984 (max. 8388607)
- 517 named destinations out of 1000 (max. 500000)
+ 518 named destinations out of 1000 (max. 500000)
  1370 words of extra memory for PDF output out of 10000 (max. 10000000)
 
