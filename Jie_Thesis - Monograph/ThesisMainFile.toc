@@ -27,32 +27,33 @@
 \contentsline {subsection}{\numberline {2.3.1}Time domain and frequency domain features for frog call classification}{19}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Time-frequency features for frog call classification}{20}{subsection.2.3.2}
 \contentsline {subsection}{\numberline {2.3.3}Cepstral features for frog call classification}{21}{subsection.2.3.3}
-\contentsline {subsection}{\numberline {2.3.4}Other features for frog call classification}{22}{subsection.2.3.4}
-\contentsline {section}{\numberline {2.4}Classifiers}{23}{section.2.4}
-\contentsline {section}{\numberline {2.5}Experiment results with state-of-the-art methods}{23}{section.2.5}
-\contentsline {subsection}{\numberline {2.5.1}Evaluation criteria}{23}{subsection.2.5.1}
-\contentsline {subsection}{\numberline {2.5.2}Previous experimental results}{24}{subsection.2.5.2}
-\contentsline {section}{\numberline {2.6}Research gap in current literature}{24}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Database}{24}{subsection.2.6.1}
-\contentsline {subsection}{\numberline {2.6.2}Signal pre-processing}{25}{subsection.2.6.2}
-\contentsline {subsection}{\numberline {2.6.3}Acoustic features}{26}{subsection.2.6.3}
-\contentsline {subsection}{\numberline {2.6.4}Classifiers}{27}{subsection.2.6.4}
-\contentsline {section}{\numberline {2.7}Summary}{27}{section.2.7}
+\contentsline {subsection}{\numberline {2.3.4}Other features for frog call classification}{21}{subsection.2.3.4}
+\contentsline {section}{\numberline {2.4}Classifiers}{22}{section.2.4}
+\contentsline {section}{\numberline {2.5}Bird call classification with MIML or ML learning}{23}{section.2.5}
+\contentsline {section}{\numberline {2.6}Experiment results with state-of-the-art methods}{23}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Evaluation criteria}{23}{subsection.2.6.1}
+\contentsline {subsection}{\numberline {2.6.2}Previous experimental results}{24}{subsection.2.6.2}
+\contentsline {section}{\numberline {2.7}Research gap in current literature}{24}{section.2.7}
+\contentsline {subsection}{\numberline {2.7.1}Database}{24}{subsection.2.7.1}
+\contentsline {subsection}{\numberline {2.7.2}Signal pre-processing}{25}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Acoustic features}{26}{subsection.2.7.3}
+\contentsline {subsection}{\numberline {2.7.4}Classifiers}{27}{subsection.2.7.4}
+\contentsline {section}{\numberline {2.8}Summary}{27}{section.2.8}
 \contentsline {chapter}{\numberline {3}Frog call classification based on enhanced features and machine learning algorithms}{29}{chapter.3}
 \contentsline {section}{\numberline {3.1}Overview}{29}{section.3.1}
 \contentsline {section}{\numberline {3.2}Architecture of the classification system for frog calls}{30}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Data description}{30}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Syllable segmentation based on an adaptive end point detection}{30}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Pre-processing}{33}{subsection.3.2.3}
-\contentsline {subsubsection}{Pre-emphasise}{34}{section*.25}
-\contentsline {subsubsection}{Windowing}{34}{section*.26}
+\contentsline {subsubsection}{Pre-emphasise}{34}{section*.26}
+\contentsline {subsubsection}{Windowing}{34}{section*.27}
 \contentsline {subsection}{\numberline {3.2.4}Feature extraction}{35}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Classifier description}{39}{subsection.3.2.5}
-\contentsline {subsubsection}{Linear discriminant analysis}{39}{section*.27}
-\contentsline {subsubsection}{K-nearest neighbour}{40}{section*.28}
-\contentsline {subsubsection}{Support vector machines}{41}{section*.29}
-\contentsline {subsubsection}{Random forest}{41}{section*.30}
-\contentsline {subsubsection}{Artificial neural network}{42}{section*.31}
+\contentsline {subsubsection}{Linear discriminant analysis}{39}{section*.28}
+\contentsline {subsubsection}{K-nearest neighbour}{40}{section*.29}
+\contentsline {subsubsection}{Support vector machines}{41}{section*.30}
+\contentsline {subsubsection}{Random forest}{41}{section*.31}
+\contentsline {subsubsection}{Artificial neural network}{42}{section*.32}
 \contentsline {section}{\numberline {3.3}Experiment results}{43}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Effects of different machine learning techniques}{43}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Effects of different feature sets}{44}{subsection.3.3.2}
@@ -72,8 +73,8 @@
 \contentsline {subsection}{\numberline {4.2.7}WPD based on an adaptive frequency scale}{58}{subsection.4.2.7}
 \contentsline {subsection}{\numberline {4.2.8}Feature extraction based on adaptive frequency scaled WPD}{58}{subsection.4.2.8}
 \contentsline {subsection}{\numberline {4.2.9}Classification}{62}{subsection.4.2.9}
-\contentsline {subsubsection}{k-nearest neighbours}{62}{section*.48}
-\contentsline {subsubsection}{Support vector machines}{62}{section*.49}
+\contentsline {subsubsection}{k-nearest neighbours}{62}{section*.49}
+\contentsline {subsubsection}{Support vector machines}{62}{section*.50}
 \contentsline {section}{\numberline {4.3}Experiment result and discussion}{63}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Parameter tuning}{63}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Feature evaluation}{64}{subsection.4.3.2}
@@ -114,4 +115,4 @@
 \contentsline {chapter}{\numberline {B}Waveform, spectrogram and SNR of six frog species from JCU recordings}{101}{appendix.I}
 \contentsline {chapter}{\numberline {C}Power spectral density (PSD) estimate of signal and noise (JCU recordings)}{103}{appendix.J}
 \contentsline {chapter}{\numberline {D}Confidence interval of signal and noise}{105}{appendix.K}
-\contentsline {chapter}{References}{114}{appendix*.82}
+\contentsline {chapter}{References}{114}{appendix*.83}

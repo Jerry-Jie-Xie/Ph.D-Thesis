@@ -4,29 +4,29 @@
 \label{cha:cha2LiteratureReview}
 
 This chapter reviews the extant literature on frog call classification. 
-It aims to give a quantitative and detailed analysis of related techniques used in frog call classification. Since previous studies have not used multiple-instance multiple-label (ML) learning or multiple-label (ML) learning for frog call classification, we just focus on the studies of single-instance single-label (MIML) classification of frog calls.    
+It aims to give a quantitative and detailed analysis of related techniques used in frog call classification. To the best of our knowledge, previous studies have not used multiple-instance multiple-label (MIML) learning or multiple-label (ML) learning for frog call classification, therefore we focus on the studies of single-instance single-label (SISL) classification of frog calls. For MIML and ML learning, some papers that study birds are reviewed.
 
 \section{Overview}
 \label{intro}
-Over the past decade, frog biodiversity has rapidly declined because of frogs' sensitive to habitat loss and degradation, introduced invasive species, and environmental pollution \citep{dudgeon2006freshwater}. On one hand, frog biodiversity is rapidly declining, and on the other frogs are greatly valuable for the environment. Firstly, frogs are an integral part of the food web, and the decline of their population can result in negative impacts through the whole ecosystem. Secondly, frogs are famous indicator species for environment health. Finally, frogs are very useful in medical research that benefit human \footnote{http://www.savethefrogs.com/why-frogs}. The rapid biodiversity decline and great importance of frogs make it necessary for frog biodiversity monitoring to increase. 
+Over the past decade, frog biodiversity has rapidly declined because of frogs' sensitivity to habitat loss and degradation, introduced invasive species, and environmental pollution \citep{dudgeon2006freshwater}. On the one hand, frog biodiversity is rapidly declining, and on the other hand frogs are greatly valuable for the environment. Firstly, frogs are an integral part of the food web, and the decline of their population can result in negative impacts through the whole ecosystem. Secondly, frogs are famous indicator species for environment health. Finally, frogs are very useful in medical research that benefit human \footnote{http://www.savethefrogs.com/why-frogs}. The rapid biodiversity decline and great importance of frogs make it necessary for frog biodiversity monitoring to increase. 
 
 To monitor the change of frog biodiversity and optimise the protection policy, many researchers have shown interest in studying frogs. Compared to counting frogs by visual observation, hearing the vocalisations of frogs is much easier. Consequently, frog vocalisations are often used for monitoring frogs. There are two approaches for acoustic frog monitoring. The traditional field survey methods require ecologists to physically visit sites to collect acoustic data, which are both time-consuming and costly. In contrast, recent advances in acoustic sensor techniques have greatly extended the spatio-temporal scale for acoustic monitoring of frog biodiversity \citep{wimmer2013analysing}. The large volumes of acoustic data collected this way make it essential to develop new automated methods of analysis. 
 
 
-Over the last few years, many researchers have described automated methods for detecting and classifying frog calls \citep{huang2008realization, huang2009frog, han2011acoustic,chen2012automatic, Gingras2013, camacho2013automatic, Huang20141, Xie1504:Acoustic}. However, there is no paper that summarises those methods. In this work, we present a comprehensive survey of frog call classification to provide acoustic signal researchers with basic information, current methods and trends in this field. 
+Over the last few years, many researchers have described automated methods for detecting and classifying frog calls \citep{huang2008realization, huang2009frog, han2011acoustic,chen2012automatic, Gingras2013, camacho2013automatic, Huang20141}. However, there is no paper that summarises those methods. In this work, we present a comprehensive survey of frog call classification to provide acoustic signal researchers with basic information, current methods and trends in this field. 
 
-Three parts play important roles in the performance and precision of frog call classification: signal pre-processing, feature extraction, and classification. In this survey, these three important parts of frog call classification are presented as shown in Fig.~\ref{fig:flowchart}. 
-
-
+Three parts play important roles in the performance and precision of frog call classification: signal pre-processing, feature extraction, and classification. In this survey, these three important parts of frog call classification are presented as shown in Fig.~\ref{fig:Ch1_flowchart}. 
 
 
-Signal pre-processing consists of signal processing, noise reduction and syllable segmentation. Signal processing often denotes changing a signal from one-dimension (audio data) into two-dimensional representation (image). Noise reduction is essential to improve the classification performance. Since the elementary acoustic unit for frog call classification is the syllable, which is a continuous vocalization emitted by an individual, segmenting continuous recordings of frog calls into individual syllables is necessary. 
 
-Previous studies have developed various methods for feature extraction \citep{huang2008realization, huang2009frog, han2011acoustic, chen2012automatic, Gingras2013, camacho2013automatic, Huang20141, Xie1504:Acoustic}. Here we review and analyse all the used features: time domain and frequency domain features, 
+
+Signal pre-processing consists of signal processing, noise reduction and syllable segmentation. Signal processing here denotes changing a signal from one-dimension (audio data) into two-dimensional representation (image). Noise reduction is essential to improve the classification performance. Since the elementary acoustic unit for frog call classification is the syllable, which is a continuous vocalization emitted by an individual, segmenting continuous recordings of frog calls into individual syllables is necessary. 
+
+Previous studies have developed various methods for feature extraction \citep{huang2008realization, huang2009frog, han2011acoustic, chen2012automatic, Gingras2013, camacho2013automatic, Huang20141}. Here we review and analyse all the used features: time domain and frequency domain features, 
 time-frequency features, cepstral features, and other features. After feature extraction, numerous classifiers have been proposed for frog call classification. A summary of those classifiers is given in section \ref{classifiers}.
 
 
-It is worth noting that most previous researchers used different databases for their experiments because frog call research is often related to geographical regions \citep{jang2011geographic}. Consequently, there is still a lack of uniformity in the way classification methods are evaluated and assessed. This survey is not meant to compare all previous frog call classification methods and find the best one, but to assemble all the methods to provide other researchers with a direction for the classification of frog calls. To be specific, we mainly survey different features used for frog call classification because most studies focus on new features rather than new signal processing techniques, syllable segmentation methods, or classifiers.
+It is worth noting that most previous researchers used different databases for their experiments because frog call research is often related to geographical regions \citep{jang2011geographic}. Consequently, there is still a lack of uniformity in the way classification methods are evaluated and assessed. This survey is not meant to compare all previous frog call classification methods and find the best one, but to assemble all the methods to provide a direction for the classification of frog calls. To be specific, we mainly survey different features used for frog call classification because most studies focus on new features rather than new signal processing techniques, syllable segmentation methods, or classifiers.
 
 %\begin{figure*}[htb!]
 %\centering
@@ -39,7 +39,7 @@ It is worth noting that most previous researchers used different databases for t
 
 
 The remainder of this survey is organised as follows: In section \ref{pre-processing}, signal pre-processing is presented in its three parts: signal processing, noise reduction, and syllable segmentation. 
-In section \ref{features}, different acoustic features are investigated for frog call classification. In section \ref{classifiers}, numerous classifiers are studied for frog call classification. In section \ref{experiment}, experimental results of state-of-the-art research are discussed. Finally, the discussion and conclusion are given in sections \ref{discussion} and \ref{conclusion}, respectively.
+In section \ref{features}, different acoustic features are investigated for frog call classification. In section \ref{classifiers}, numerous classifiers are studied for frog call classification. In section \ref{experiment}, experimental results of state-of-the-art research are discussed. Finally, Sections \ref{discussion} discusses research gaps and \ref{conclusion} sums up this chapter.
 
 
 
@@ -48,11 +48,11 @@ In section \ref{features}, different acoustic features are investigated for frog
 \label{pre-processing}
 
 Frog call recordings are often collected using a battery-powered acoustic sensor (stored in a weather proof metal box) with an external microphone. After signal acquisition,  signal pre-processing is the first step for a frog call classification system.
-It often consists of signal processing, noise reduction, and syllable segmentation. Each part of signal pre-processing is described below.
+It often consists of signal processing, noise reduction, and syllable segmentation. The research gap in each part of signal pre-processing is described below.
 
 
 \subsection{Signal processing}
-Signal processing often denotes the transformation of frog calls from one-dimension (recording waveform) to two dimensions (time-frequency representation). Many techniques have been developed for this transformation including short-time Fourier transform (STFT) \citep{STFT1977}, Wigner-Ville distribution \citep{WV1987}, and wavelet transform \citep{meyer1995wavelets}. STFT is the most widely used technique among them for its flexible implementation and better applicability. Given one frog call $x(t)$, its fast Fourier transform can be expressed as
+Signal processing often denotes the transformation of frog calls from one-dimension (recording waveform) to two dimensions (time-frequency representation). Two main techniques used for frog signal processing are short-time Fourier transform (STFT) \citep{huang2009frog, Huang20141, Colonna20157367,  Noda2016100}, wavelet packet decomposition \citep{yen2002automatic}, and discrete wavelet transform \citep{colonna2012feature}. STFT is the most widely used technique among them for its flexible implementation and better applicability. Given one frog call $x(n)$, its fast Fourier transform can be expressed as
 \begin{equation}
 X(k) = \sum_{n=0}^{L-1}x(n)w(n)e^{-j2 \pi kn/L}, 0 \leq k \leq L-1
 \end{equation}
@@ -85,13 +85,15 @@ where $X(k)$ is the frequency domain signal (spectrum) and denotes each frame of
 \subsection{Noise reduction}
 Noise reduction is an optional process for frog call classification. 
 \cite{Huang20141} applied a de-noise filter for noise reduction. The wavelet threshold function in the one-dimensional signal was used as the filter kernel function.
-\cite{bedoya2014automatic} introduced spectral noise gating method for noise reduction. Specifically, the selected frequency band spectrum of the frogs' call to be detected was estimated and suppressed. \cite{emr2015Xie} used Wiener filtering to remove the background graininess, then applied spectral subtraction to the filtered spectrogram using a modified method from the adaptive level equalization algorithm. While the aforementioned noise reduction methods can remove some background noise, some of the desired signals will be suppressed. Noise reduction methods are therefore selectively used based on signal-to-noise ratio of the acoustic data and the research problem.
+\cite{bedoya2014automatic} introduced spectral noise gating method for noise reduction. Specifically, the selected frequency band spectrum of the frogs' call to be detected was estimated and suppressed. While the aforementioned noise reduction methods can remove some background noise, some of the desired signals will be suppressed. Noise reduction methods are therefore selectively used based on signal-to-noise ratio of the acoustic data and the research problem.
 
 
 
 
 \subsection{Syllable segmentation}
-For frog calls, the basic elementary acoustic unit is a syllable, which is a continuous frog vocalisation emitted by an individual frog \citep{huang2009frog}. The precision of syllable segmentation will directly affect the classification performance, since features used for frog call classification are calculated based on each syllable. Frog syllable segmentation methods in previous studies are summarised and listed in Table \ref{tab:segmentation}. All previous methods except \citep{jie2015ICIP} cannot address recordings with simultaneous vocalising frog calls. Meanwhile, those methods that used the time domain feature for segmentation, cannot address recordings with low signal-to-noise ratio. \cite{jie2015ICIP} introduced an unsupervised learning method, which included multiple image processing techniques for syllable segmentation. However, the downside of this unsupervised process was that not all segmented syllables correspond to frog vocalisations.
+For frog calls, the basic elementary acoustic unit is a syllable, which is a continuous frog vocalisation emitted by an individual frog \citep{huang2009frog}. The precision of syllable segmentation will directly affect the classification performance, since features used for frog call classification are calculated based on each syllable. Frog syllable segmentation methods in previous studies are summarised and listed in Table \ref{tab:segmentation}. All previous methods cannot address recordings with simultaneous vocalising frog calls. Meanwhile, those methods that used the time domain feature for segmentation, cannot address recordings with low signal-to-noise ratio. 
+
+%\cite{jie2015ICIP} introduced an unsupervised learning method, which included multiple image processing techniques for syllable segmentation. However, the downside of this unsupervised process was that not all segmented syllables correspond to frog vocalisations.
 
 %Since the accuracy of segmentation results directly affect the final classification accuracy \citep{Colonna20157367}, meanwhile we focus on the evaluation of different features for frog call classification in this survey, we manually segment the frog calls for reducing the effect of segmentation result for classification accuracy,
   
@@ -106,10 +108,9 @@ For frog calls, the basic elementary acoustic unit is a syllable, which is a con
    \citet{han2011acoustic}            & Spectral entropy                  & Manual                                      \\ 
   \citet{jaafar2013}             & E and ZCR                         & Sequential                \\ 
     \citet{huang2009frog}           & Amplitude                         & Non-sequential                           \\ 
-    \citet{chen2012automatic}           & Spectrogram                         & Non-sequential            \\ 
-     \citet{Xie1504:Acoustic}          & Spectrogram                       & Non-sequential           \\ 
+    \citet{chen2012automatic}           & Spectrogram                          & Non-sequential           \\ 
      \citet{Colonna20157367}          & Incremental E and Incremental ZCR & Sequential and real time      \\
-     \citet{jie2015ICIP}   &    Image processing    & Non-sequential    \\    
+    % \citet{jie2015ICIP}   &    Image processing    & Non-sequential    \\    
       \hline\hline
 \end{tabular}
 }
@@ -139,23 +140,20 @@ To classify anurans into four genera, a three-parameter model was proposed based
 \subsection{Time-frequency features for frog call classification}
 
 For frog call classification, we often transform the one-dimensional signal into its two-dimensional time-frequency representation. Then features based on the time-frequency representation can be calculated for classification.
-\cite{acevedo2009automated} developed two feature sets for automated animal classification. The first was minimum and maximum frequencies, call duration, and maximum power; the second was minimum and maximum frequencies, call duration, and frequency of maximum power in eight segments of duration. With two feature sets, three classifiers were used for the classification: linear discriminant analysis(LDA), decision tree and SVM. \cite{brandes2008feature} proposed a method for classifying animals using duration, maximum frequency, and frequency bandwidth, and with Hidden Markov Model (HMM) used as the classifier.  \cite{yen2002automatic} combined wavelet packet feature extraction and two different dimensionality reduction algorithms to produce the final feature vectors. Then, they adopted a neural network classier for classification. \cite{grigg1996monitoring} developed a system to monitor the effect on frog population of Queensland of the introduced Cane Toad. The classification was based on the local peaks in the spectrogram using Quinlan's machine learning system, C4.5. \cite{Brandes2006} proposed a method to classify frogs using central frequency, duration, and bandwidth with a Bayesian classifier. \cite{croker2012using} introduced a feature vector for detecting frogs with a similarity measure based on Euclidean distance. The feature vector consisted of dominant frequency, frequency difference between the lowest and dominant frequencies, frequency difference between the highest and dominant frequencies, time from the start of the sound to the peak volume, and time from the peak volume to the end of the sound. \cite{Xie1504:Acoustic} developed a method for frog call classification using syllable duration, dominant frequency, oscillation rate \footnote{Oscillation rate denotes the
-number of pulses within one second.}, frequency modulation, and energy modulation using a K-NN classifier. 
+\cite{acevedo2009automated} developed two feature sets for automated animal classification. The first was minimum and maximum frequencies, call duration, and maximum power; the second was minimum and maximum frequencies, call duration, and frequency of maximum power in eight segments of duration. With two feature sets, three classifiers were used for the classification: linear discriminant analysis(LDA), decision tree and SVM. \cite{brandes2008feature} proposed a method for classifying animals using duration, maximum frequency, and frequency bandwidth, and with Hidden Markov Model (HMM) used as the classifier.  \cite{yen2002automatic} combined wavelet packet feature extraction and two different dimensionality reduction algorithms to produce the final feature vectors. Then, they adopted a neural network classier for classification. \cite{grigg1996monitoring} developed a system to monitor the effect on frog population of Queensland of the introduced Cane Toad. The classification was based on the local peaks in the spectrogram using Quinlan's machine learning system, C4.5. \cite{Brandes2006} proposed a method to classify frogs using central frequency, duration, and bandwidth with a Bayesian classifier. \cite{croker2012using} introduced a feature vector for detecting frogs with a similarity measure based on Euclidean distance. The feature vector consisted of dominant frequency, frequency difference between the lowest and dominant frequencies, frequency difference between the highest and dominant frequencies, time from the start of the sound to the peak volume, and time from the peak volume to the end of the sound. 
  
 
 
 \subsection{Cepstral features for frog call classification}
 
-Cepstral features are also popular for frog call classification. These features include Linear Prediction Coefficients (LPCs), Mel-frequency cepstral coefficients (MFCCs), and perceptual wavelet packet decomposition sub-band cepstral coefficients (PWSCCs) \citep{jie2015escience}. 
+Cepstral features are also popular for frog call classification. These features include Linear Prediction Coefficients (LPCs) and Mel-frequency cepstral coefficients (MFCCs). 
 \cite{colombia2009frogs} introduced LPCs for frog call classification with a modified K-Means classifier. \cite{jaafarcomparative} introduced MFCCs and LPCs as features, and K-NN and SVM as classifiers for frog call identification. \cite{yuan2012frog} also used MFCCs and LPCs as features, and K-NN as the classifier for frog sound identification.
-\cite{lee2006automatic} used the averaged MFCCs and LDA for the automatic recognition of animal sounds. \cite{bedoya2014automatic} combined MFCCs and a learning algorithm for multivariate data analysis (LAMDA) for frog call recognition. \cite{vaca2010using} proposed a method to identify animal species, which consisted of MFCCs, principal component analysis (PCA) and K-NN. \cite{jaafar2013, jaafar2013mfcc, tanintelligent2014} published three papers about frog call classification with MFCCs, $\Delta$ MFCC and $\Delta \Delta$ MFCC calculated as features, and K-NN and SVM used as classifiers. \cite{feature2012Colona} introduced MFCCs for classifying anurans with a K-NN classifier.
-\cite{jie2015escience} proposed a novel feature set named perceptual wavelet packet decomposition sub-band cepstral coefficients for frog call classification. Compared with MFCCs, this feature set was more suitable for the frequency distribution of frog calls and provided a better performance for classifying frog calls . \cite{Noda2016100} fused time domain features with cepstral features for frog call classification which achieved a better classification performance than using only cepstral features. Three classifiers were investigated for the classification: HMM, random forest, and SVM.
+\cite{lee2006automatic} used the averaged MFCCs and LDA for the automatic recognition of animal sounds. \cite{bedoya2014automatic} combined MFCCs and a learning algorithm for multivariate data analysis (LAMDA) for frog call recognition. \cite{vaca2010using} proposed a method to identify animal species, which consisted of MFCCs, principal component analysis (PCA) and K-NN. \cite{jaafar2013, jaafar2013mfcc, tanintelligent2014} published three papers about frog call classification with MFCCs, $\Delta$ MFCC and $\Delta \Delta$ MFCC calculated as features, and K-NN and SVM used as classifiers. \cite{feature2012Colona} introduced MFCCs for classifying anurans with a K-NN classifier. \cite{Noda2016100} fused time domain features with cepstral features for frog call classification which achieved a better classification performance than using only cepstral features. Three classifiers were investigated for the classification: HMM, random forest, and SVM.
 
 
 \subsection{Other features for frog call classification}
 Besides time domain features, frequency domain features, time-frequency domain features and cepstral features, other features are also introduced to classify frog calls.
-\cite{wei2012distributed} proposed a distributed sparse approximation method based on $\ell 1$ minimization for frog call classification. \cite{dang2008lightweight} extracted vocalization waveform envelope as features, then classified calls by matching the extracted envelope with the original signal envelope.  \cite{emr2015Xie} used two feature sets for frog call classification: (1) minimum frequency, maximum frequency, bandwidth, duration, acoustic event area, acoustic event perimeter, acoustic event non-compactness, acoustic event rectangularity. (2) frequency mean, frequency variance, frequency skewness, frequency kurtosis, time mean, time variance, time skewness, time kurtosis, mask mean, mask standard deviation. Feature set (1) was used to describe the mask of each segmented event, feature set (2) was used to describe the statistical properties of each segmented event, each event corresponds to an individual event in 
-Fig. \ref{fig:evenets}. Meanwhile, \cite{jie2015ICIP} introduced ridge related features for frog call classification: mean value for dominant frequency, low and high frequencies, histogram of ridges, and entropy of ridges in horizontal and vertical directions.
+\cite{wei2012distributed} proposed a distributed sparse approximation method based on $\ell 1$ minimization for frog call classification. \cite{dang2008lightweight} extracted vocalization waveform envelope as features, then classified calls by matching the extracted envelope with the original signal envelope. \cite{kular2015classifying} treated the sound signal of a frog call as a texture image. Then, texture visual words and MFCCs were calculated as the features for frog call classification. 
 
 
 
@@ -177,8 +175,42 @@ Fig. \ref{fig:evenets}. Meanwhile, \cite{jie2015ICIP} introduced ridge related f
 
 \section{Classifiers}
 \label{classifiers}
-For frog call classification, numerous pattern recognition methods have been used to construct the classifier, such as the Bayesian classifier \citep{Brandes2006}, k-nearest neighbour classifier (K-NN) \citep{ huang2008realization,huang2009frog, han2011acoustic, dayou2011classification, jaafar2013, Gingras2013, jaafar2013mfcc,jaafarcomparative, yuan2012frog, vaca2010using, Xie1504:Acoustic, emr2015Xie, jie2015escience, feature2012Colona}, support vector machine (SVM) \citep{huang2008realization,acevedo2009automated, huang2009frog, tanintelligent2014, Gingras2013,jaafarcomparative,jie2015ICIP}, hidden Markov model (HMM) \citep{brandes2008feature}, Gaussian mixture model (GMM) \citep{huang2008realization, Gingras2013}, neural networks (NN) \citep{Huang20141, yen2002automatic}, decision tree (DT) \citep{grigg1996monitoring, acevedo2009automated}, one-way multivariate ANOVA \citep{camacho2013automatic}, and linear discriminant analysis (LDA) \citep{acevedo2009automated,lee2006automatic}.  Besides classifiers, other methods for classifying frog species include those based on the similarity measure \citep{croker2012using, dang2008lightweight, chen2012automatic} and those based on the clustering technique \citep{colombia2009frogs, wei2012distributed, bedoya2014automatic}. K-NN is the most commonly used classifier for its simplicity and easy application. However, the K-NN classifier is sensitive to the local structure of the data, as well as to the initial cluster centroids. Therefore, the K-NN classifier is often run multiple times based on different initial points. 
-SVM is another classifier which is widely used for its good generalization ability. However, the performance of SVM can be quite sensitive to the selection of the regularization and kernel parameters, and it is possible to over-fit when tuning these hyper-parameters. Therefore, selecting suitable parameters for SVM is very important and is realized by grid search in most previous studies  \citep{hsu2003practical}.
+For frog call classification, numerous pattern recognition methods have been used to construct the classifier, such as the Bayesian classifier \citep{Brandes2006}, k-nearest neighbour classifier (K-NN) \citep{ huang2008realization,huang2009frog, han2011acoustic, dayou2011classification, jaafar2013, Gingras2013, jaafar2013mfcc,jaafarcomparative, yuan2012frog, vaca2010using, feature2012Colona}, support vector machine (SVM) \citep{huang2008realization,acevedo2009automated, huang2009frog, tanintelligent2014, Gingras2013,jaafarcomparative}, hidden Markov model (HMM) \citep{brandes2008feature}, Gaussian mixture model (GMM) \citep{huang2008realization, Gingras2013}, neural networks (NN) \citep{Huang20141, yen2002automatic}, decision tree (DT) \citep{grigg1996monitoring, acevedo2009automated}, one-way multivariate ANOVA \citep{camacho2013automatic}, and linear discriminant analysis (LDA) \citep{acevedo2009automated,lee2006automatic}.  Besides classifiers, other methods for classifying frog species include those based on the similarity measure \citep{croker2012using, dang2008lightweight, chen2012automatic} and those based on the clustering technique \citep{colombia2009frogs, wei2012distributed, bedoya2014automatic}. The summary of those classifiers used in frog call classification is listed in Table \ref{tab:classifierscomp}.
+K-NN is the most commonly used classifier for its simplicity and easy application. However, the K-NN classifier is sensitive to the local structure of the data, as well as to the initial cluster centroids. Therefore, the K-NN classifier is often run multiple times based on different initial points. 
+SVM is another classifier which is widely used for its good generalization ability. However, the performance of SVM can be quite sensitive to the selection of the regularization and kernel parameters, and it is possible to over-fit when tuning these hyper-parameters. Therefore, selecting suitable parameters for SVM is very important and is realized by grid search in most previous studies \citep{hsu2003practical}.
+
+\begin{table}[htb!]
+\centering
+\caption{A brief summary of classifiers used in previous studies.}
+\label{tab:classifierscomp}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{llll}
+\hline\hline
+Reference                         & Classifier             & Reference                      & Classifier                   \\ \hline
+\citet{Brandes2006}             & Bayesian classifier    & \citet{acevedo2009automated} & Support vector machine       \\ 
+\citet{huang2008realization}    & K-nearest neighbour    & \citet{huang2009frog}        & Support vector machine       \\ 
+\citet{huang2009frog}           & K-nearest neighbour    & \citet{tanintelligent2014}   & Support vector machine       \\ 
+\citet{han2011acoustic}         & K-nearest neighbour    & \citet{Gingras2013}          & Support vector machine       \\ 
+\citet{dayou2011classification} & K-nearest neighbour    & \citet{jaafarcomparative}    & Support vector machine       \\ 
+\citet{jaafar2013}              & K-nearest neighbour    & 
+\citet{Gingras2013}             & K-nearest neighbour       \\ \citet{brandes2008feature}   & Hidden Markov model       &   
+\citet{jaafar2013mfcc}          & K-nearest neighbour       \\ \citet{huang2008realization} & Gaussian mixture model     &   
+\citet{jaafarcomparative}       & K-nearest neighbour    \\ \citet{Gingras2013}          & Gaussian mixture model     &   
+\citet{yuan2012frog}            & K-nearest neighbour    \\ 
+\citet{Huang20141}           & Neural networks             &  
+\citet{vaca2010using}           & K-nearest neighbour    \\ \citet{yen2002automatic}     & Neural networks               & \citet{grigg1996monitoring}  & Decision tree                \\ 
+ \citet{acevedo2009automated} & Decision tree              &   
+ \citet{camacho2013automatic} & One-way multivariate ANOVA   \\ 
+\citet{feature2012Colona}       & K-nearest neighbour    & \citet{acevedo2009automated} & Linear discriminant analysis \\ 
+\citet{huang2008realization}    & Support vector machine & \citet{lee2006automatic}     & Linear discriminant analysis \\ \hline\hline
+\end{tabular}
+}
+\end{table}
+
+\section{Bird call classification with MIML or ML learning}
+
+
+
 
 
 
@@ -215,7 +247,7 @@ Specificity = \frac{TN}{FP+TN}
 \subsection{Previous experimental results}
 
 
-Table \ref{tab:classificationPerformance} shows the list of summarised frog call classification methods, together with the database they used and corresponding performance.
+Table \ref{tab:classificationPerformance} shows the list of summarised frog call classification methods, together with the database they used and corresponding performance. From table \ref{tab:classificationPerformance}, we can find that few studies explore  frog vocalisations using signal processing and machine learning techniques before 2010. Due to the decrease of frog biodiversity, advances in signal processing, machine learning techniques and acoustic sensors, the research in frogs have been increased in the last 5 years. In addition, we also notice that only few datasets used are public shared with researchers. The classification performance of different studies varies a lot. One of the main reason is the use of different datasets. 
 
 
 
@@ -279,10 +311,6 @@ bit.ly/1b8bvyE) (available)  \\
 
   15 frog species with 436 syllables             &        Averaged classification accuracy of 74.73\%         &      \citet{jie2015ICIP}  &  Collected from compact disk (http://www.naturesound.com.au/) (available)  \\ 
 
-16 frog species with 898 syllables    & Averaged classification accuracy of 90.5\%   &    \citet{Xie1504:Acoustic}  &  Collected from compact disk (http://www.naturesound.com.au/) (available)       \\ 
-
- 14 frog species with 985 syllables & Averaged classification accuracy of 87.00\%   &    \citet{emr2015Xie}    &   \begin{tabular}[c]{@{}l@{}} Collected from compact disk (http://www.naturesound.com.au/) (available) \\ and one public website (http://amphibiaweb.org/maps/index.html) \end{tabular}    \\ 
-
   9 frog species with 49 samples            &    Averaged classification accuracy of 97.60\%  & \citet{feature2012Colona} &  \begin{tabular}[c]{@{}l@{}} Collected on the campus of the Federal
 University of Amazonas in \\ Manaus, Brazil (unavailable) \end{tabular} 
 \\ 
@@ -293,7 +321,6 @@ University of Amazonas in \\ Manaus, Brazil (unavailable) \end{tabular}
 100 anurans from Brizil-Uruguay,\\ and 199 anurans  from all datasets (http://www.nhbs.com/) (available) \end{tabular}
 \\  
   
-\begin{tabular}[c]{@{}l@{}}  18 frog species from commercial \\ recordings and field recordings of 8  \\ frog speciesfrom James Cook University   \\  recordings  \end{tabular} &  \begin{tabular}[c]{@{}l@{}} 99.5\% and 97.4\% for 18 frog species \\ and 8 frog species respectively   \end{tabular} &  \citet{Xie2016}  &  \begin{tabular}[c]{@{}l@{}}  David Stewart's commercial CD (http://www.naturesound.com.au/) \\ and frog calls collected from the wild (https://www.ecosounds.org/) (available) \end{tabular}
   
 \\ \hline\hline
 \end{tabular}
@@ -306,7 +333,7 @@ University of Amazonas in \\ Manaus, Brazil (unavailable) \end{tabular}
  
 \section{Research gap in current literature}
 \label{discussion}
-In this section, each part of a frog call classification system is discussed to give a direction for future work. 
+In this section, the research gap of each part of a frog call classification system is discussed to give a direction for future work. 
 
 \subsection{Database}
 One major problem for frog call classification is the lack of an universal database. The databases used are often related to geographical regions, since researchers from different countries focus on particular frog species in their specific area (Table \ref{tab:classificationPerformance}). Therefore, it is difficult for researchers to compare their particular classification methods. Current studies often focus on the study of limited number of frog species (less than 100), but the number of known amphibian species is above 7000. To reach a high quality resolution, there still is a long way to go.
@@ -326,8 +353,9 @@ For syllable segmentation, time domain features are more sensitive to background
 
 
 \subsection{Acoustic features}
-Most previous studies directly transplant features developed for speech recognition to analyze frog calls, which might not be suitable. For example, MFCCs are designed for studying speech, which are based on the calculation of a non-linear Mel-scale. However, the Mel-scale is designed for the perceptual scale of pitches judged by listeners rather than frogs. The direct use of speech features will therefore restrict classification performance. Recently, \cite{jie2015escience} used an adaptive frequency scaled wavelet packet decomposition to classify frog calls, and it achieved a better performance than Mel-scaled wavelet packet decomposition. Here, an adaptive frequency scale was generated by applying K-Means clustering to dominant frequencies, which was more accurate and efficient than using Mel-scale \citep{jie2015escience}.
-Most frequency domain features are calculated by directly calculating the statistics over frames, which leads to the loss of temporal information. To add the temporal information of the feature set, time domain features can be combined with frequency domain features to achieve higher classification accuracy. Transforming audio data into its a two dimensional representation (such as a spectrogram) for quick visual analysis, has led to increasing attention being given to image processing techniques for automatically analysing animal calls. Ridges extracted from spectrogram images ware applied to perform frog call classification \citep{jie2015ICIP}. Besides ridges, other image features are worth being investigated for frog call classification.
+Most previous studies directly transplant features developed for speech recognition to analyze frog calls, which might not be suitable. For example, MFCCs are designed for studying speech, which are based on the calculation of a non-linear Mel-scale. However, the Mel-scale is designed for the perceptual scale of pitches judged by listeners rather than frogs. The direct use of speech features will therefore restrict classification performance. 
+
+Most frequency domain features are calculated by directly calculating the statistics over frames, which leads to the loss of temporal information. To add the temporal information of the feature set, time domain features can be combined with frequency domain features to achieve higher classification accuracy. Transforming audio data into its a two dimensional representation (such as a spectrogram) for quick visual analysis, has led to increasing attention being given to image processing techniques for automatically analysing animal calls. Image features are worth being investigated for frog call classification.
 
 \subsection{Classifiers}
 Almost all previous studies assume that each recording has only one frog species, then a single-instance single-label classification framework is adopted to classify  frog calls. However, recent advances in acoustic sensor techniques have collected large volumes of acoustic data that have multiple simultaneously vocalising frog species, because different frog species tend to call together to make frog chorus (Figure.~\ref{fig:label}). Based on this characteristic of frog call recordings, the classification problem can be naturally framed as a multiple-instance multiple-label classification or a multiple-label classification problem rather than a single-instance single-label classification.

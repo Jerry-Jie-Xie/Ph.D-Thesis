@@ -13,13 +13,6 @@ Akmentins, M., Pereyra, L., Sanabria, E., and Vaira, M. (2015).
   direct-developing frog of the subtropical andean forests of argentina.
 \newblock {\em Bioacoustics}, 24(2):89--99.
 
-\bibitem[Allen, 1977]{STFT1977}
-Allen, J. (1977).
-\newblock Short term spectral analysis, synthesis, and modification by discrete
-  fourier transform.
-\newblock {\em Acoustics, Speech and Signal Processing, IEEE Transactions on},
-  25(3):235--238.
-
 \bibitem[Allen, 1997]{allen1997short}
 Allen, J. (1997).
 \newblock Short term spectral analysis, synthesis, and modification by discrete
@@ -44,13 +37,6 @@ Biswas, A., Sahu, P., and Chandra, M. (2014).
 \newblock Admissible wavelet packet features based on human inner ear frequency
   response for hindi consonant recognition.
 \newblock {\em Computers \& Electrical Engineering}, 40(4):1111 -- 1122.
-
-\bibitem[Boashash and Black, 1987]{WV1987}
-Boashash, B. and Black, P. (1987).
-\newblock An efficient real-time implementation of the wigner-ville
-  distribution.
-\newblock {\em Acoustics, Speech and Signal Processing, IEEE Transactions on},
-  35(11):1611--1618.
 
 \bibitem[Brandes, 2008]{brandes2008feature}
 Brandes, T.~S. (2008).
@@ -106,8 +92,8 @@ Colombia, C. and del Cauca, V. (2009).
 \newblock Frogs species classification using lpc and classification algorithms
   on wireless sensor network platform.
 
-\bibitem[Colonna et~al., 2012]{feature2012Colona}
-Colonna, J., Ribas, A., dos Santos, E., and Nakamura, E. (2012).
+\bibitem[Colonna et~al., 2012a]{feature2012Colona}
+Colonna, J., Ribas, A., dos Santos, E., and Nakamura, E. (2012a).
 \newblock Feature subset selection for automatically classifying anuran calls
   using sensor networks.
 \newblock In {\em Neural Networks (IJCNN), The 2012 International Joint
@@ -118,6 +104,13 @@ Colonna, J.~G., Cristo, M., Junior, M.~S., and Nakamura, E.~F. (2015).
 \newblock An incremental technique for real-time bioacoustic signal
   segmentation.
 \newblock {\em Expert Systems with Applications}, 42(21):7367 -- 7374.
+
+\bibitem[Colonna et~al., 2012b]{colonna2012feature}
+Colonna, J.~G., Ribas, A.~D., dos Santos, E.~M., and Nakamura, E.~F. (2012b).
+\newblock Feature subset selection for automatically classifying anuran calls
+  using sensor networks.
+\newblock In {\em Neural Networks (IJCNN), The 2012 International Joint
+  Conference on}, pages 1--8. IEEE.
 
 \bibitem[Cortes and Vapnik, 1995]{cortes1995support}
 Cortes, C. and Vapnik, V. (1995).
@@ -294,6 +287,12 @@ Juan~Mayor, L. M.~M. (2009).
 \newblock In {\em XVII General Assembly, Ibero-American Conference on Trends in
   Engineering Education and Collaboration, ISTEC, 2009}.
 
+\bibitem[Kular et~al., 2015]{kular2015classifying}
+Kular, D., Hollowood, K., Ommojaro, O., Smart, K., Bush, M., and Ribeiro, E.
+  (2015).
+\newblock Classifying frog calls using gaussian mixture models.
+\newblock In {\em Advances in Visual Computing}, pages 347--354. Springer.
+
 \bibitem[Lee et~al., 2006]{lee2006automatic}
 Lee, C.-H., Chou, C.-H., Han, C.-C., and Huang, R.-Z. (2006).
 \newblock Automatic recognition of animal vocalizations using averaged mfcc and
@@ -331,11 +330,6 @@ Mellinger, D.~K., Martin, S.~W., Morrissey, R.~P., Thomas, L., and Yosco, J.~J.
 Melter, R.~A. (1987).
 \newblock Some characterizations of city block distance.
 \newblock {\em Pattern Recognition Letters}, 6(4):235 -- 240.
-
-\bibitem[Meyer and Salinger, 1995]{meyer1995wavelets}
-Meyer, Y. and Salinger, D.~H. (1995).
-\newblock {\em Wavelets and operators}, volume~1.
-\newblock Cambridge university press.
 
 \bibitem[Noda et~al., 2016]{Noda2016100}
 Noda, J.~J., Travieso, C.~M., and S?nchez-Rodr?guez, D. (2016).
