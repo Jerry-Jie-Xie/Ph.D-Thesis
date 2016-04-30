@@ -74,6 +74,12 @@ Canavero, A., Arim, M., Naya, D.~E., Camargo, A., Da~Rosa, I., and Maneyro, R.
   seasonal trends and weather determinants.
 \newblock {\em North-Western Journal of Zoology}, 4(1):29--41.
 
+\bibitem[Chen et~al., 2013]{chen2013novel}
+Chen, W., Zhao, G., and Li, X. (2013).
+\newblock A novel approach based on ensemble learning to nips4b challenge.
+\newblock In {\em proc. of int. symp. Neural Information Scaled for
+  Bioacoustics, sabiod. org/nips4b, joint to NIPS, Nevada}.
+
 \bibitem[Chen et~al., 2012]{chen2012automatic}
 Chen, W.-P., Chen, S.-S., Lin, C.-C., Chen, Y.-Z., and Lin, W.-C. (2012).
 \newblock Automatic recognition of frog calls using a multi-stage average
@@ -157,6 +163,13 @@ Dudgeon, D., Arthington, A.~H., Gessner, M.~O., Kawabata, Z.-I., Knowler,
 \newblock Freshwater biodiversity: importance, threats, status and conservation
   challenges.
 \newblock {\em Biological reviews}, 81(02):163--182.
+
+\bibitem[Dufour et~al., 2013]{dufour2013multi}
+Dufour, O., Glotin, H., Artires, T., Bas, Y., and Giraudet, P. (2013).
+\newblock Multi-instance multi-label acoustic classification of plurality of
+  animals: birds, insects \& amphibian.
+\newblock {\em Workshop on Neural Information Processing Scaled for
+  Bioacoustics}, pages 164--174.
 
 \bibitem[Farooq and Datta, 2001]{farooq2001mel}
 Farooq, O. and Datta, S. (2001).
@@ -293,6 +306,13 @@ Kular, D., Hollowood, K., Ommojaro, O., Smart, K., Bush, M., and Ribeiro, E.
 \newblock Classifying frog calls using gaussian mixture models.
 \newblock In {\em Advances in Visual Computing}, pages 347--354. Springer.
 
+\bibitem[Lasseck, 2013]{lasseck2013bird}
+Lasseck, M. (2013.).
+\newblock Bird song classification in field recordings: winning solution for
+  nips4b 2013 competition.
+\newblock In {\em Proc. of int. symp. Neural Information Scaled for
+  Bioacoustics, sabiod. org/nips4b, joint to NIPS, Nevada.}
+
 \bibitem[Lee et~al., 2006]{lee2006automatic}
 Lee, C.-H., Chou, C.-H., Han, C.-C., and Huang, R.-Z. (2006).
 \newblock Automatic recognition of animal vocalizations using averaged mfcc and
@@ -318,6 +338,13 @@ Mallawaarachchi, A., Ong, S., Chitre, M., and Taylor, E. (2008).
 \newblock {\em The Journal of the Acoustical Society of America},
   124(2):1159--1170.
 
+\bibitem[Massaron, 2013]{massaronensemble}
+Massaron, L. (2013).
+\newblock Ensemble logistic regression and gradient boosting classifiers for
+  multilabel bird song classification in noise (nips4b challenge).
+\newblock {\em Proc of Neural Information Processing Scaled for Bioacoustics,
+  joint to NIPS}.
+
 \bibitem[Mellinger et~al., 2011]{mellinger2011method}
 Mellinger, D.~K., Martin, S.~W., Morrissey, R.~P., Thomas, L., and Yosco, J.~J.
   (2011).
@@ -330,6 +357,13 @@ Mellinger, D.~K., Martin, S.~W., Morrissey, R.~P., Thomas, L., and Yosco, J.~J.
 Melter, R.~A. (1987).
 \newblock Some characterizations of city block distance.
 \newblock {\em Pattern Recognition Letters}, 6(4):235 -- 240.
+
+\bibitem[Menc{\i}a et~al., 2013]{mencia2013learning}
+Menc{\i}a, E.~L., Nam, J., and Lee, D.-H. (2013).
+\newblock Learning multi-labeled bioacoustic samples with an unsupervised
+  feature learning approach.
+\newblock {\em Proc of Neural Information Processing Scaled for Bioacoustics,
+  joint to NIPS}, 2013:184--189.
 
 \bibitem[Noda et~al., 2016]{Noda2016100}
 Noda, J.~J., Travieso, C.~M., and S?nchez-Rodr?guez, D. (2016).
@@ -397,6 +431,13 @@ Somervuo, P., H{\"a}rm{\"a}, A., and Fagerlund, S. (2006).
 Stewart, D. (1999).
 \newblock Australian frog calls: subtropical east.
 \newblock Audio CD.
+
+\bibitem[Stowell and Plumbley, 2013]{stowell2013feature}
+Stowell, D. and Plumbley, M.~D. (2013).
+\newblock Feature design for multilabel bird song classification in noise
+  (nips4b challenge).
+\newblock {\em Proceedings of NIPS4b: neural information processing scaled for
+  bioacoustics, from neurons to big data}.
 
 \bibitem[Tan et~al., 2014]{tanintelligent2014}
 Tan, W., Jaafar, H., Ramli, D., Rosdi, B., and Shahrudin, S. (2014).

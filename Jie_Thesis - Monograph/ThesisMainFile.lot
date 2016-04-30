@@ -2,33 +2,33 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {2.1}{\ignorespaces Summary of related work}}{19}{table.caption.16}
 \contentsline {table}{\numberline {2.2}{\ignorespaces A brief summary of classifiers used in previous studies.\relax }}{23}{table.caption.18}
-\contentsline {table}{\numberline {2.3}{\ignorespaces Overview of frog call classification performance}}{25}{table.caption.19}
+\contentsline {table}{\numberline {2.3}{\ignorespaces Overview of frog call classification performance}}{26}{table.caption.19}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Summary of scientific name, common name, and corresponding code}}{31}{table.caption.22}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Comparision with previous used feature representations\relax }}{47}{table.caption.38}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Summary of scientific name, common name, and corresponding code}}{33}{table.caption.22}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparision with previous used feature representations\relax }}{49}{table.caption.38}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Parameters of 18 frog species averaged of three randomly selected syllable samples in the commercial recording}}{51}{table.caption.40}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Parameters of 8 frog species obtained by averaging three randomly selected syllable samples from recordings of James Cook University}}{52}{table.caption.41}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Parameters used for spectral peak extraction\relax }}{55}{table.caption.44}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Parameter setting for calculating spectral peak track.\relax }}{64}{table.caption.51}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Weighted classification accuracy (mean and standard deviation) comparison for five feature sets with two classifiers.\relax }}{65}{table.caption.52}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Classification accuracy of five features for the classification of twenty-four frog species using the SVM classifier}}{67}{table.caption.54}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Paired statistical analysis of the results in Table\nobreakspace {}\ref {tab:featureComp}}}{67}{table.caption.55}
-\contentsline {table}{\numberline {4.8}{\ignorespaces Classification accuracy (\%) for classifying different number of frog species with four feature sets.\relax }}{68}{table.caption.58}
-\contentsline {table}{\numberline {4.9}{\ignorespaces Classification accuracy using the JCU recordings.\relax }}{70}{table.caption.60}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Parameters of 18 frog species averaged of three randomly selected syllable samples in the commercial recording}}{53}{table.caption.40}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Parameters of 8 frog species obtained by averaging three randomly selected syllable samples from recordings of James Cook University}}{54}{table.caption.41}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Parameters used for spectral peak extraction\relax }}{57}{table.caption.44}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Parameter setting for calculating spectral peak track.\relax }}{66}{table.caption.51}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Weighted classification accuracy (mean and standard deviation) comparison for five feature sets with two classifiers.\relax }}{67}{table.caption.52}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Classification accuracy of five features for the classification of twenty-four frog species using the SVM classifier}}{69}{table.caption.54}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Paired statistical analysis of the results in Table\nobreakspace {}\ref {tab:featureComp}}}{69}{table.caption.55}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Classification accuracy (\%) for classifying different number of frog species with four feature sets.\relax }}{70}{table.caption.58}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Classification accuracy using the JCU recordings.\relax }}{72}{table.caption.60}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Accuracy measure for MIML classifiers with different feature representations}}{81}{table.caption.66}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Example predictions with MIML-RBF.\relax }}{81}{table.caption.67}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Accuracy measure for MIML classifiers with different feature representations}}{83}{table.caption.66}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Example predictions with MIML-RBF.\relax }}{83}{table.caption.67}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Acoustic parameters of eight frog species averaged for ten randomly selected syllables}}{85}{table.caption.69}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Classification results based on four feature sets and four multi-label learning algorithms.}}{92}{table.caption.72}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Acoustic parameters of eight frog species averaged for ten randomly selected syllables}}{87}{table.caption.69}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Classification results based on four feature sets and four multi-label learning algorithms.}}{94}{table.caption.72}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Waveform, spectrogram, and SNR of CD}}{99}{table.caption.75}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Waveform, spectrogram, and SNR of CD}}{101}{table.caption.75}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Waveform, spectrogram, and SNR of JCU recordings}}{101}{table.caption.77}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Waveform, spectrogram, and SNR of JCU recordings}}{103}{table.caption.77}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces PSD of JCU recordings}}{103}{table.caption.79}
+\contentsline {table}{\numberline {C.1}{\ignorespaces PSD of JCU recordings}}{105}{table.caption.79}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Confidence interval for CD recordings}}{105}{table.caption.81}
-\contentsline {table}{\numberline {D.2}{\ignorespaces Confidence interval for JCU recordings}}{105}{table.caption.82}
+\contentsline {table}{\numberline {D.1}{\ignorespaces Confidence interval for CD recordings}}{107}{table.caption.81}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Confidence interval for JCU recordings}}{107}{table.caption.82}

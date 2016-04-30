@@ -191,6 +191,13 @@
   Volume                   = {4}
 }
 
+@InProceedings{chen2013novel,
+  Title                    = {A Novel Approach Based on Ensemble Learning to NIPS4B Challenge},
+  Author                   = {Chen, Wei and Zhao, Gang and Li, Xiaohui},
+  Booktitle                = {proc. of int. symp. Neural Information Scaled for Bioacoustics, sabiod. org/nips4b, joint to NIPS, Nevada},
+  Year                     = {2013}
+}
+
 @Article{chen2012automatic,
   Title                    = {Automatic recognition of frog calls using a multi-stage average spectrum},
   Author                   = {Chen, Wen-Ping and Chen, Song-Shyong and Lin, Chun-Cheng and Chen, Ya-Zhung and Lin, Wen-Chih},
@@ -331,6 +338,14 @@
   Volume                   = {81},
 
   Publisher                = {Cambridge Univ Press}
+}
+
+@Article{dufour2013multi,
+  Title                    = {Multi-Instance Multi-Label Acoustic Classification of Plurality of Animals: birds, insects \& amphibian},
+  Author                   = {Dufour, O and Glotin, H and Artires, T and Bas, Y and Giraudet, P},
+  Journal                  = {Workshop on Neural Information Processing Scaled for Bioacoustics},
+  Year                     = {2013},
+  Pages                    = {164--174}
 }
 
 @Article{farooq2001mel,
@@ -602,6 +617,13 @@
   Pages                    = {347--354}
 }
 
+@InProceedings{lasseck2013bird,
+  Title                    = {Bird song classification in field recordings: winning solution for NIPS4B 2013 competition},
+  Author                   = {Lasseck, Mario},
+  Booktitle                = {Proc. of int. symp. Neural Information Scaled for Bioacoustics, sabiod. org/nips4b, joint to NIPS, Nevada.},
+  Year                     = {2013.}
+}
+
 @Article{lee2006automatic,
   Title                    = {Automatic recognition of animal vocalizations using averaged MFCC and linear discriminant analysis},
   Author                   = {Lee, Chang-Hsing and Chou, Chih-Hsun and Han, Chin-Chuan and Huang, Ren-Zhuang},
@@ -666,6 +688,13 @@
   Publisher                = {Acoustical Society of America}
 }
 
+@Article{massaronensemble,
+  Title                    = {Ensemble logistic regression and gradient boosting classifiers for multilabel bird song classification in noise (NIPS4B challenge)},
+  Author                   = {Massaron, Luca},
+  Journal                  = {Proc of Neural Information Processing Scaled for Bioacoustics, joint to NIPS},
+  Year                     = {2013}
+}
+
 @Article{mccallum2007amphibian,
   Title                    = {Amphibian decline or extinction? Current declines dwarf background extinction rate},
   Author                   = {McCallum, Malcolm L},
@@ -701,6 +730,15 @@
 
   ISSN                     = {0167-8655},
   Keywords                 = {City block distance}
+}
+
+@Article{mencia2013learning,
+  Title                    = {Learning multi-labeled bioacoustic samples with an unsupervised feature learning approach},
+  Author                   = {Menc{\i}a, Eneldo Loza and Nam, Jinseok and Lee, Dong-Hyun},
+  Journal                  = {Proc of Neural Information Processing Scaled for Bioacoustics, joint to NIPS},
+  Year                     = {2013},
+  Pages                    = {184--189},
+  Volume                   = {2013}
 }
 
 @Book{meyer1995wavelets,
@@ -868,6 +906,13 @@
   Owner                    = {Jie},
   Timestamp                = {2015.07.17},
   Url                      = {http://www.naturesound.com.au/cd_frogsSE.htm}
+}
+
+@Article{stowell2013feature,
+  Title                    = {Feature design for multilabel bird song classification in noise (nips4b challenge)},
+  Author                   = {Stowell, Dan and Plumbley, Mark D},
+  Journal                  = {Proceedings of NIPS4b: neural information processing scaled for bioacoustics, from neurons to big data},
+  Year                     = {2013}
 }
 
 @Article{tanintelligent2014,
