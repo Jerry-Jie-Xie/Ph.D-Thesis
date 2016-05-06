@@ -177,10 +177,17 @@ Most datasets used in previous frog call classification studies assume that ther
 
 \noindent \textbf{Challenge 2}: Since our work finally aims to classify frog calls in low SNR recordings, most features that can successfully classify high SNR recordings cannot perform well for low SNR recordings. Consequently, it is still a big challenge to develop robust acoustic features to classify frog species in low SNR recordings. 
 
-\noindent \textbf{Challenge 3}: Since most previous work assumed that each individual recording consists of only one frog species, a single-instance single-label (SISL) framework is suitable for classifying frog calls in those high SNR recordings. However, low SNR recordings often have different characteristics containing more than one frog species, the SISL framework is no longer suitable. Therefore, the last challenge of this thesis is to design a novel classification framework for studying frog vocalisations in low SNR recordings with overlapping vocalising frog species. 
+\noindent \textbf{Challenge 3}: Since most previous work assumed that each individual recording consists of only one frog species, a single-instance single-label (SISL) framework is suitable for classifying frog calls in those high SNR recordings Figure.~\ref{fig:label}. However, low SNR recordings often have different characteristics containing more than one frog species, the SISL framework is no longer suitable. Therefore, the last challenge of this thesis is to design a novel classification framework for studying frog vocalisations in low SNR recordings with overlapping vocalising frog species. 
 
 
-
+\begin{figure}[htb!]
+\centering
+    \begin{subfigure}[b]{\textwidth}
+           \includegraphics[width=1\textwidth]{image/LR/label.pdf}
+    \end{subfigure}%
+\caption[An example of collected recording]{An example of collected recording with multiple simultaneously vocalizing frog species. Five frog species exist in this 10-second recording: \textit{Cyclorana novaehollandiae}, \textit{Litoria rubella}, \textit{Litoria nasuta}, \textit{Litoria rothii}, and \textit{Litoria fallax}.}
+\label{fig:label}       
+\end{figure}
 
 \section{Research questions}
 The research questions are developed in order to solve the aforementioned challenges, which can be categorised into three parts. 
@@ -225,7 +232,7 @@ Below is a list of the publications arising from this PhD research:
 %{\huge \textbf{List of Publications}}
 %\end{center}
 
-{\textbf{Journal Article}}
+{\textbf{Journal Articles}}
 \begin{enumerate} 
 \item	\textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul (2016) Adaptive frequency scaled wavelet packet decomposition for frog call classification.  Ecological Informatics, 32, pp. 134-144.
 \item	Zhang Liang, Towsey Michael, \textbf{Xie Jie}, Zhang Jinglan, Roe Paul,  Using multi-label classification for acoustic pattern detection and assisting bird species surveys, Applied Acoustics, Volume 110, September 2016, Pages 91-98.
@@ -236,7 +243,7 @@ Below is a list of the publications arising from this PhD research:
 
 \end{enumerate}
 
-{ \textbf{Conference Paper}}
+{ \textbf{Conference Papers}}
 \begin{enumerate} 
 
 \item \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul, Detecting frog calling activity based on acoustic event detection and multi-label learning, International Conference on Computational Science (Accepted)

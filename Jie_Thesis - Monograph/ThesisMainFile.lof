@@ -3,11 +3,11 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces An example of spectrogram of environmental recording}}{4}{figure.caption.11}
 \contentsline {figure}{\numberline {1.3}{\ignorespaces Spectrogram of \textit {Litoria caerulea}}}{5}{figure.caption.12}
 \contentsline {figure}{\numberline {1.4}{\ignorespaces Flowchart of a frog call classification system}}{6}{figure.caption.13}
-\contentsline {figure}{\numberline {1.5}{\ignorespaces Structure of the four main chapters of this thesis}}{11}{figure.caption.14}
+\contentsline {figure}{\numberline {1.5}{\ignorespaces An example of collected recording}}{7}{figure.caption.14}
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Structure of the four main chapters of this thesis}}{12}{figure.caption.15}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces Waveform, spectrum and spectrogram of one frog syllable}}{18}{figure.caption.15}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Acoustic event detection}}{22}{figure.caption.17}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces An example of collected recording}}{29}{figure.caption.20}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Waveform, spectrum and spectrogram of one frog syllable}}{18}{figure.caption.16}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Acoustic event detection}}{22}{figure.caption.18}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces Flowchart of frog call classification system using enhanced features\relax }}{32}{figure.caption.21}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces H$\mathaccentV {ddot}07F{a}$rm$\mathaccentV {ddot}07F{a}$'s segmentation algorithm}}{34}{figure.caption.23}

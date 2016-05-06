@@ -29,7 +29,7 @@
 \BOOKMARK [2][-]{subsection.2.3.3}{Cepstral features for frog call classification}{section.2.3}% 29
 \BOOKMARK [2][-]{subsection.2.3.4}{Other features for frog call classification}{section.2.3}% 30
 \BOOKMARK [1][-]{section.2.4}{Classifiers}{chapter.2}% 31
-\BOOKMARK [1][-]{section.2.5}{Bird call classification with MIML or ML learning}{chapter.2}% 32
+\BOOKMARK [1][-]{section.2.5}{MIML or ML learning for bioacoustic classification}{chapter.2}% 32
 \BOOKMARK [1][-]{section.2.6}{Experiment results with state-of-the-art methods}{chapter.2}% 33
 \BOOKMARK [2][-]{subsection.2.6.1}{Evaluation criteria}{section.2.6}% 34
 \BOOKMARK [2][-]{subsection.2.6.2}{Previous experimental results}{section.2.6}% 35
@@ -99,7 +99,7 @@
 \BOOKMARK [2][-]{subsection.6.3.3}{Frog species richness analysis}{section.6.3}% 99
 \BOOKMARK [2][-]{subsection.6.3.4}{Statistical analysis}{section.6.3}% 100
 \BOOKMARK [1][-]{section.6.4}{Summary and future work}{chapter.6}% 101
-\BOOKMARK [0][-]{chapter.7}{Conclusions}{}% 102
+\BOOKMARK [0][-]{chapter.7}{Conclusion and future work}{}% 102
 \BOOKMARK [1][-]{section.7.1}{Summary of contributions}{chapter.7}% 103
 \BOOKMARK [1][-]{section.7.2}{Limitations and future work}{chapter.7}% 104
 \BOOKMARK [0][-]{appendix.H}{Waveform, spectrogram and SNR of frog species from David Stewart's CD}{}% 105

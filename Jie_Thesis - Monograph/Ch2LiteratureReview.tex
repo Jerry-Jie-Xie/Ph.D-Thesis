@@ -207,20 +207,19 @@ Reference                         & Classifier             & Reference          
 }
 \end{table}
 
-\section{Bird call classification with MIML or ML learning}
-To the best of our knowledge, there is still no paper that uses MIML or ML learning to focus on frog call classification. However, some previous studies have applied MIML or ML learning to bird calls.
+\section{MIML or ML learning for bioacoustic classification}
+To the best of our knowledge, there is still no paper that uses MIML or ML learning to focus on frog call classification. In contrast, some previous research has applied MIML or ML learning to study bird calls.
 
 For MIML learning, \citep{briggs2012acoustic} introduced the MIML classifiers for acoustic classification of multiple simultaneous bird species. In their method, a supervised learning classifier (random forest) was first employed for segmenting acoustic events. Then features were extracted from each segmented acoustic events. Before putting features into classifiers, a bag generator was used to construct a bag-level feature. Lastly, three MIML classifiers were experimentally evaluated: MIML-SVM (support vector machines Based Multi-Instance Multi-Label Learning Algorithm), MIML-RBF(MIML Radial Basis Function), and MIML-kNN (k-Nearest Neighbor Based Multi-Instance Multi-Label Learning Algorithm).
 \citep{dufour2013multi} used Mel-filter cepstral coefficients and three MIML classifiers to classify birds. To be specific, Mel-filter cepstral coefficients were first calculated for each frame. Then two new feature vectors were computed to represent longer segments.
-Lastly, three MIML classifiers were experimentally evaluated: MIML-RBF, MIML-kNN, and M3MIML (Maximum Margin Method for Multi-instance Multi-label Learn-
-ing). 
+Lastly, three MIML classifiers were experimentally evaluated: MIML-RBF, MIML-kNN, and M3MIML (Maximum Margin Method for Multi-instance Multi-label Learning). 
 
 For ML learning, several papers have been published in the Neural Information Processing Scaled for Bioacoustics (NIPS4B challenge), which classified birds, insects, and amphibians recordings following by pre-processing and segmentation, feature extraction, feature selection, and classification \citep{lasseck2013bird, stowell2013feature, mencia2013learning, massaronensemble, chen2013novel}. \citep{lasseck2013bird} first pre-processed the recordings via applying short-time Fourier transform, noise reduction and segmentation. Then, file-Statistics, segment-Statistics and segment-Probabilities are calculated as the features. Finally, for each sound class an ensemble of
 randomized decision trees is applied for the classification. \citep{stowell2013feature} used either MFCC statistics (52 dimensions), chirplet histograms (up
 to 20,000 dimensions), or both as the features. Then, Random Forests was applied for multi-label classification. \citep{mencia2013learning} proposed an new feature extraction method via an unsupervised generation of an aleatory number of features, which included random patching, a Denoising Autoencoder unit and subsequent convolution. For the classification, a pairwise ensemble of SVMs, random decision trees and a single layer
 neural network were used. 
 \citep{massaronensemble} described an approach involved building an ensemble of generalized linear models and a classification model by hinge loss and program based on stochastic gradient descent optimization, and boosted trees ensembles. 
-\citep{chen2013novel} first calculated prominent features from windowing MFCCs with overlap, and leveraged them to build a a ensemble classifier which was a blend of different classifiers (Gradient Boosting Tree models, Random Forest models and Lasso and elastic-net regularized generalized linear model etc).
+\citep{chen2013novel} first calculated prominent features from windowing MFCCs with overlap, and leveraged them to build a a ensemble classifier which was a blend of different classifiers (Gradient Boosting Tree models, Random Forest models, Lasso and elastic-net regularized generalized linear model .etc).
 
 
 
@@ -372,14 +371,7 @@ Most frequency domain features are calculated by directly calculating the statis
 Almost all previous studies assume that each recording has only one frog species, then a SISL classification framework is adopted to classify frog calls. However, recent advances in acoustic sensor techniques have collected large volumes of acoustic data that have multiple simultaneously vocalising frog species, because different frog species tend to call together to make frog chorus (Figure.~\ref{fig:label}). Based on this characteristic of frog call recordings, the classification problem can be naturally framed as a MIML classification or a ML classification problem rather than a SISL classification.
 In previous studies, MIML learning and ML learning have been used to solve bioacoustic problem, but mainly focus on the birds. In this thesis, MIML and ML learning will be investigated to study frog vocalisations.
 
-\begin{figure}[htb!]
-\centering
-    \begin{subfigure}[b]{\textwidth}
-           \includegraphics[width=1\textwidth]{image/LR/label.pdf}
-    \end{subfigure}%
-\caption[An example of collected recording]{An example of collected recording with multiple simultaneously vocalizing frog species. Five frog species exist in this 10-second recording: \textit{Cyclorana novaehollandiae}, \textit{Litoria rubella}, \textit{Litoria nasuta}, \textit{Litoria rothii}, and \textit{Litoria fallax}.}
-\label{fig:label}       
-\end{figure}
+
 
 
 
