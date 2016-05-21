@@ -494,7 +494,7 @@ For feature extraction, the window size and overlap are the same for MFCCs, MWSC
 Following prior work \citep{huang2009frog, han2011acoustic, Xie1504:Acoustic}, the distance function used for k-NN is the Euclidean distance, and $k$ is set as 3. As for the SVM classifier, the Gaussian kernel is used. Parameters $\alpha$ and $v$ are selected independently for each feature set by grid-search using cross validation \citep{hsu2003practical}. 
 
 \subsection{Feature evaluation}
-All experiments are carried out in Matlab R2014b. Performance statistics are estimated with ten-fold cross validation. Totally, five feature sets including SFs, MFCCs, MWSCCs, and averaged AWSCCs, and delta-AWSCCs, are adopted to two classifiers, which are the k-NN and SVM classifiers. Both k-NN and SVM classifiers are run ten times for evaluating the feature robustness. Due to the non-uniform distribution of the number of syllables for different frog species in the commercial recordings, a weighted classification accuracy is define as follows
+All experiments are carried out in Matlab R2014b. Performance statistics are estimated with ten-fold cross validation. Totally, five feature sets including SFs, MFCCs, MWSCCs, and averaged AWSCCs, and delta-AWSCCs, are fed to two classifiers, which are the k-NN and SVM classifiers. Both k-NN and SVM classifiers are run ten times for evaluating the feature robustness. Due to the non-uniform distribution of the number of syllables for different frog species in the commercial recordings, a weighted classification accuracy is define as follows
 \begin{equation}
 weighted \, Acc=\sum_{i=1}^{N}Acc(i)*\frac{n_{i}}{N}
 \end{equation}
@@ -525,7 +525,7 @@ Delta-AWSCCs                          & 99.2 $\pm$   2.1    &      \textbf{99.6 
 }
 \end{table}
 
-In this experiment, the best classification accuracy is 99.6\%, which is achieved by the delta-AWSCCs with the SVM classifier. Compared with the average AWSCCs, the delta-AWSCCs are slightly improved. One may conjecture that the delta-AWSCCs can capture the dynamic information of the frog calls. For MWSCCs, the averaged classification accuracy of both classifiers is about 2\% lower than averaged AWSCCs and delta-AWSCCs with 96.3\%. The improvement shows that our proposed adaptive frequency scale can capture more information of frog calls than Mel-scale (Figure.~\ref{fig:Ch5_feature}). 
+In this experiment, the best classification accuracy is 99.6\%, which is achieved by the delta-AWSCCs with the SVM classifier. Compared with the average AWSCCs, the delta-AWSCCs achieved slightly better performance. One may conjecture that the delta-AWSCCs can capture the dynamic information of the frog calls. For MWSCCs, the averaged classification accuracy of both classifiers is about 2\% lower than that of averaged AWSCCs and delta-AWSCCs with 96.3\%. The improvement shows that our proposed adaptive frequency scale can capture more information of frog calls than Mel-scale (Figure.~\ref{fig:Ch5_feature}). 
 
 \begin{figure}[htb!]
 \centering
@@ -602,7 +602,7 @@ The statistical significance of the results is shown in Table \ref{tab:t-test}. 
 \resizebox{0.85\textwidth}{!}{
 \begin{tabular}{lll}
 \hline\hline
-{\bf Pairs}                  & \multicolumn{2}{l}{{\bf Test results}}                               \\ \hline
+{\bf Pairs}                  & \multicolumn{2}{l}{{\bf t-test results}}                               \\ \hline
 %\multicolumn{3}{l}{{\bf Student t-test on test results based on species}}                           \\ 
 Delta-AWSCCs - Avg AWSCCs    & \multicolumn{2}{l}{t=1.95 (not significant)}                         \\ 
 Delta-AWSCCs - MWSCCs        & \multicolumn{2}{l}{t=3.41 (significant at p \textless 0.01, df =17)} \\ 
