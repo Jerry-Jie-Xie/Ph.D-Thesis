@@ -37,11 +37,11 @@ In this section, some basic concepts are given to better describe the research p
 
 \subsection{Environmental audio data}
 The audio data used in this study is mainly derived from two sources: David Stewart's CD \citep{CD} and recordings collected by James Cook University (JCU) \footnote{All the recordings can be obtained from our group website: https://www.ecosounds.org/}. 
-David Stewart's CD is employed for the preliminary testing, and used for the experiments in chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5Wavelet}. 
+David Stewart's CD is employed for the preliminary testing, and used for the experiments in chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}. 
 Recordings collected by JCU are used for chapters \ref{cha:cha6MIML} and \ref{cha:cha7ML}. 
 The reasons for using those two datasets are list as follows:
 \begin{itemize}
-\item  Almost all prior work studied frog recordings with an assumption that only one frog species exists in each individual recording, we first review those previous methods and develop a frog call classification system to outperform the state-of-the-art, where the CD recordings are used for testing. In this thesis, CD recordings are used in chapter \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5Wavelet}.
+\item  Almost all prior work studied frog recordings with an assumption that only one frog species exists in each individual recording, we first review those previous methods and develop a frog call classification system to outperform the state-of-the-art, where the CD recordings are used for testing. In this thesis, CD recordings are used in chapter \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}.
 
 
 \item  Compared with the CD recordings, most JCU recordings have multiple simultaneously vocalising frog species, which is in accord with the real environment. Chapters \ref{cha:cha6MIML} and \ref{cha:cha7ML} focus on the investigation of JCU recordings, which is the real situation for most environmental recordings. 
@@ -235,10 +235,20 @@ Below is a list of the publications arising from this PhD research:
 {\textbf{Journal Articles}}
 \begin{enumerate} 
 \item	\textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul (2016) Adaptive frequency scaled wavelet packet decomposition for frog call classification.  Ecological Informatics, 32, pp. 134-144.
+
+This work corresponds to Chapter \ref{cha:cha5WaveletFeature} in this thesis, which developed a novel spectral features for frog call classification.
+
 \item	Zhang Liang, Towsey Michael, \textbf{Xie Jie}, Zhang Jinglan, Roe Paul,  Using multi-label classification for acoustic pattern detection and assisting bird species surveys, Applied Acoustics, Volume 110, September 2016, Pages 91-98.
+
 \item \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul, Frog call classification: a survey, Artificial Intelligence Review (\textbf{Under review})
 
+
+This work corresponds to Chapter \ref{cha:cha2LiteratureReview} in this thesis, which reviewed the extant literature on frog call classification.
+
+
 \item  \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul, Frog call classification based on enhanced features and machine learning algorithms, Applied acoustics (\textbf{Under review})
+
+This work corresponds to Chapter \ref{cha:cha4EnhancedFeature} in this thesis, which presented an enhanced feature representation for frog call classification using various machine learning algorithms.
 
 
 \end{enumerate}
@@ -248,8 +258,14 @@ Below is a list of the publications arising from this PhD research:
 
 \item \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul, Detecting frog calling activity based on acoustic event detection and multi-label learning, International Conference on Computational Science (Accepted)
  
+This work corresponds to Chapter \ref{cha:cha6MIML} in this thesis, which applied multiple-label learning for frog call classification. 
+ 
  
 \item \textbf{Xie, Jie}, Towsey, Michael,  Zhang, Liang, Zhang, Jinglan, and Roe, Paul, Multiple-Instance Multiple-Label Learning for the Classification of Frog Calls With Acoustic Event Detection,  International Conference on Image and Signal Processing (Accepted)
+ 
+This work corresponds to Chapter \ref{cha:cha7ML} in this thesis, which applied multiple-instance multiple-label learning for frog call classification. 
+ 
+ 
  
  
 \item \textbf{Xie, Jie}, Towsey, Michael, Zhang, Liang, Zhang, Jinglan, and Roe, Paul, Feature Extraction Based on Bandpass Filtering for Frog Call Classification, International Conference on Image and Signal Processing (Accepted)
@@ -259,7 +275,12 @@ Below is a list of the publications arising from this PhD research:
 \item	\textbf{Xie, Jie}, Towsey, Michael, Truskinger, Anthony, Eichinski, Philip, Zhang, Jinglan, and Roe, Paul (2015) Acoustic classification of Australian anurans using syllable features. In 2015 IEEE Tenth International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP), IEEE, Singapore, pp. 1-6.
 
 \item	\textbf{Xie, Jie}, Towsey, Michael, Yasumiba, Kiyomi, Zhang, Jinglan, and Roe, Paul (2015) Detection of anuran calling activity in long field recordings for bio-acoustic monitoring. In 2015 IEEE Tenth International Conference on Intelligent Sensors, Sensor Networks and Information Processing (ISSNIP), IEEE, Singapore, pp. 1-6.
+
+
+
 \item	\textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul (2015) Image processing and classification procedure for the analysis of Australian frog vocalisations. InProceedings of the 2nd International Workshop on Environmental Multimedia Retrieval, ACM, Shanghai, China, pp. 15-20.
+
+
 \item	\textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, Dong, Xueyan, and Roe, Paul (2015)Application of image processing techniques for frog call classification. In IEEE International Conference on Image Processing (ICIP 2015), 27-30 September 2015, Québec City, Canada.
 
 \item	\textbf{Xie, Jie}, Towsey, Michael, Eichinski, Philip, Zhang, Jinglan, and Roe, Paul (2015)Acoustic feature extraction using perceptual wavelet packet decomposition for frog call classification. In 2015 IEEE 11th International Conference on e-Science (e-Science), IEEE, Munich, Germany, pp. 237-242.
@@ -301,13 +322,13 @@ Detailed description of each chapter is shown below:
 \item Chapter \ref{cha:cha4EnhancedFeature} presents an enhanced feature representation for frog call classification in high SNR recordings. An enhanced feature representation is constructed via the combination of temporal, perceptual, and cepstral features. Five machine learning algorithms are evaluated with our proposed feature representation. This chapter aims to (1) review previous features used for frog call classification and develop a better feature representation; (2) explore those previous features and study which can be adapted from high SNR recordings to low SNR recordings.
 
 
-\item  Chapter \ref{cha:cha5Wavelet} discusses wavelet analysis for frog call classification. According to the conclusion from Chapter \ref{cha:cha4EnhancedFeature}, we find that ceptral feature can achieve higher classification accuracy compared with temporal and perceptual features but it is very sensitive to the background noise. Consequently, we design a novel cepstral feature representation with wavelet packet decomposition that have both high classification performance and a good anti-noise ability. It is because our research will move to low SNR recordings from high SNR recordings, rather than only focusing on the low SNR recordings.
+\item  Chapter \ref{cha:cha5WaveletFeature} discusses wavelet analysis for frog call classification. According to the conclusion from Chapter \ref{cha:cha4EnhancedFeature}, we find that ceptral feature can achieve higher classification accuracy compared with temporal and perceptual features but it is very sensitive to the background noise. Consequently, we design a novel cepstral feature representation with wavelet packet decomposition that have both high classification performance and a good anti-noise ability. It is because our research will move to low SNR recordings from high SNR recordings, rather than only focusing on the low SNR recordings.
 
 
 \item  Chapter \ref{cha:cha6MIML} discusses the use of multiple-instance multiple-label framework for frog call classification. To cope with low SNR recordings with multiple simultaneously vocalising frog species, the traditional single-instance single-label classification framework is no longer suitable. Therefore, we try to adopt other classification frameworks such as MIML learning and ML learning. MIML learning is presented in this chapter. A MIML classification framework is adopted for studying frogs. Frog syllables are detected using a supervised learning algorithm, which needs lots of annotated data. However, in our study we are lack of those annotated frog recordings. An unsupervised learning method is developed to segment syllables, which is named \textit{acoustic event detection (AED)}. Then, three MIML learning classifiers are evaluated with extracted features from each syllable after applying a bagging algorithms. The classification performance is highly affected by the results of AED. Although our AED methods achieves better results compared with previous AED methods, the results still need to be further improved.
 
 
-\item  Chapter \ref{cha:cha7ML} discusses the multiple-label learning method for frog call classification. Since Chapter \ref{cha:cha6MIML} shows that classification performance is highly affected by the AED results, and the AED results still need to be improved. This chapter uses ML learning to study low SNR recordings with multiple simultaneously vocalising frog species, where AED is not necessary for the classification. In contrast, AED is used to predict the frog abundance. The cepstral feature representation proposed in Chapter \ref{cha:cha5Wavelet} is used, where a simple but effective method is used to modify it. Both the results of AED and ML classification are applied to field recordings over three months. 
+\item  Chapter \ref{cha:cha7ML} discusses the multiple-label learning method for frog call classification. Since Chapter \ref{cha:cha6MIML} shows that classification performance is highly affected by the AED results, and the AED results still need to be improved. This chapter uses ML learning to study low SNR recordings with multiple simultaneously vocalising frog species, where AED is not necessary for the classification. In contrast, AED is used to predict the frog abundance. The cepstral feature representation proposed in Chapter \ref{cha:cha5WaveletFeature} is used, where a simple but effective method is used to modify it. Both the results of AED and ML classification are applied to field recordings over three months. 
 
 
 
