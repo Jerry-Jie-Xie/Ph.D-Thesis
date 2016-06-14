@@ -5,16 +5,16 @@
 \pagenumbering{arabic}
 %=============
 \section{Motivation and background}
-During the past decades, rapid decreases in frog populations have been spotted from locations around the world, which are regarded as one of the most critical threats to the global biodiversity. Many environment problems are regarded as the reasons for these declines: disease, habitat destruction and modification, exploitation, pollution, pesticide use, introduced species, and ultraviolet-B radiation (UV-B). 
-On one hand frog populations are rapidly worldwide declining, and on the other frogs are greatly important to the global ecosystem. 
+During the past decades, rapid decreases in frog populations, which are regarded as one of the most critical threats to the global biodiversity, have been spotted from locations around the world. Many environment problems are regarded as the reasons for these declines: disease, habitat destruction and modification, exploitation, pollution, pesticide use, introduced species, and ultraviolet-B radiation (UV-B). 
+On one hand frog populations are declining rapidly worldwide, and on the other, frogs are greatly important to the global ecosystem. 
 \begin{enumerate}
-\item[(1)] Frogs are integral part of the food web
-\item[(2)] Frogs are often used as the environment indicators 
+\item[(1)] Frogs are an integral part of the food web
+\item[(2)] Frogs are often used as environment indicators 
 \item[(3)] Frogs are important in medical research that benefits humans 
 \end{enumerate}
 
-For those aforementioned reasons, increasing frog populations and optimising the protection policy necessitates monitoring of frogs. Frogs are often much easier to be heard than to be seen (Figure.~\ref{fig:Ch1_frogs}). Also frog vocalizations are often employed for most communication, which offer a possible way to study and evaluate frog populations by detecting species-specific calls \citep{dorcas2009auditory}. Therefore, frogs are often monitored via their vocalisations. Traditional manual monitoring methods require ecologists and volunteers to spend extensive time in the field for  acoustic data collection. Although traditional methods can provide an accurate measure of daytime species and richness, it has a scale limitation in both spatial and temporal domains for this measurement.
-To address this limitation, recent advances in acoustic sensors provide a way to automatically survey vocal animals (such as frogs). Deploying acoustic sensors in the field, frog vocalisations can then be automatically collected. Compared with the manual point-counting method, sensors can greatly extend the survey into larger spatial and temporal scales, and generate large volumes of acoustic data that needs to be analysed. Consequently, enabling automatic species identification in acoustic data has become important. However, since the recordings are automatically collected from the field, the audio data tends to be very noisy. Very often the desired signal (frog call) is weak, and there are multiple overlapping signals over the frog call. Furthermore, different frog species tend to call together to make chorus. All those characteristics pose a big challenge to monitor frog vocalisations automatically.
+For those aforementioned reasons, increasing frog populations and optimising protection policies necessitates monitoring of frogs. Frogs are often much easier to be heard than to be seen (Figure.~\ref{fig:Ch1_frogs}). Also frog vocalisations are often employed for most communication; this offers a possible way to study and evaluate frog populations by detecting species-specific calls \citep{dorcas2009auditory}. Therefore, frogs are often monitored via their vocalisations. Traditional manual monitoring methods require ecologists and volunteers to spend extensive time in the field for  acoustic data collection. Although traditional methods can provide an accurate measure of daytime species and richness, it has a scale limitation in both spatial and temporal domains for this measurement.
+To address this limitation, recent advances in acoustic sensors provide a way to automatically survey vocal animals (such as frogs). Deploying acoustic sensors in the field, frog vocalisations can then be automatically collected. Compared with the manual point-counting method, sensors can greatly extend the survey into larger spatial and temporal scales, and generate large volumes of acoustic data that needs to be analysed. Consequently, enabling automatic species identification in acoustic data has become important. However, since the recordings are automatically collected from the field, the audio data tends to be very noisy. Very often the desired signal (frog call) is weak, and there are multiple overlapping signals over the frog call. Furthermore, different frog species tend to call together to make a chorus. All those characteristics pose a big challenge in monitoring frog vocalisations automatically.
 
 \begin{figure*}[htb!]
 \centering
@@ -33,15 +33,15 @@ To address this limitation, recent advances in acoustic sensors provide a way to
 
 %===============
 \section{Basic concepts} 
-In this section, some basic concepts are given to better describe the research problem and questions, aims and objectives, significance and contributions in the following sections.
+In this section, some basic concepts are given to better describe the research problem and questions, aims and objectives, significance and contributions that are presented in the thesis.
 
 \subsection{Environmental audio data}
 The audio data used in this study is mainly derived from two sources: David Stewart's CD \citep{CD} and recordings collected by James Cook University (JCU) \footnote{All the recordings can be obtained from our group website: https://www.ecosounds.org/}. 
-David Stewart's CD is employed for the preliminary testing, and used for the experiments in chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}. 
-Recordings collected by JCU are used for chapters \ref{cha:cha6MIML} and \ref{cha:cha7ML}. 
-The reasons for using those two datasets are list as follows:
+David Stewart's CD is employed for the preliminary testing, and used for the experiments in Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}. 
+Recordings collected by JCU are used for Chapters \ref{cha:cha6MIML} and \ref{cha:cha7ML}. 
+The reasons for using those two datasets are listed as follows.
 \begin{itemize}
-\item  Almost all prior work studied frog recordings with an assumption that only one frog species exists in each individual recording, we first review those previous methods and develop a frog call classification system to outperform the state-of-the-art, where the CD recordings are used for testing. In this thesis, CD recordings are used in chapter \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}.
+\item  Almost all prior work studied frog recordings with an assumption that only one frog species exists in each individual recording; first, those previous methods are reviewed and a frog call classification system is developed to outperform the state-of-the-art, whereas the CD recordings are used for testing. In this thesis, CD recordings are used in Chapter \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}.
 
 
 \item  Compared with the CD recordings, most JCU recordings have multiple simultaneously vocalising frog species, which is in accord with the real environment. Chapters \ref{cha:cha6MIML} and \ref{cha:cha7ML} focus on the investigation of JCU recordings, which is the real situation for most environmental recordings. 
@@ -50,8 +50,8 @@ The reasons for using those two datasets are list as follows:
 \end{itemize}
 
 
-Compared with audio data collected in the laboratories and quiet places (such as David Stewart’s CD), environmental recordings are normally collected under unconstrained noisy conditions (such as JCU recordings). Consequently, the noise and variability issues need to be considered when coping with environmental audio data. 
-For the background noise, there are a wide variety of non-biological noises and a variety of animal sounds in the environmental recordings. These non-biological noises often come from different sources: rain, wind, human activities (e.g. traffic noise). Besides non-biological noises, many competitive animal sounds (e.g. birds when we are interested in frogs) are also recorded in the environmental recordings. The signal-to-noise ratio (SNR) of CD recordings and JCU recordings are list in 
+Compared with audio data collected in the laboratories and quiet places (such as on David Stewart’s CD), environmental recordings are normally collected under unconstrained noisy conditions (such as JCU recordings). Consequently, the noise and variability issues need to be considered when coping with environmental audio data. 
+In terms of the background noise, there are a wide variety of non-biological noises and a variety of animal sounds in the environmental recordings. These non-biological noises often come from different sources: rain, wind, human activities (e.g. traffic noise). Besides non-biological noises, many competitive animal sounds (e.g. birds when we are interested in frogs) are also recorded in the environmental recordings. The signal-to-noise ratio (SNR) of CD recordings and JCU recordings are listed in 
 Table~\ref{tab:wav_spec_cd} and Table~\ref{tab:JCU_para}. 
 
 
@@ -64,7 +64,7 @@ Table~\ref{tab:wav_spec_cd} and Table~\ref{tab:JCU_para}.
 
 
 
-Since the power of signal and background noise in this study vary from recordings to recordings and calls to calls within the recording, Table~\ref{tab:CI_CD} and Table~\ref{tab:CI_JCU} (Appendix D) show the confidence intervals of high and low SNR recordings for the power of signal and noise. 
+Since the power of signal and background noise in this study varies from recording to recording and call to call within the recording, Table~\ref{tab:CI_CD} and Table~\ref{tab:CI_JCU} (Appendix D) show the confidence intervals of high and low SNR recordings for the power of signal and noise. 
 
 %The calculation of confidence interval is defined as follows:
 %
@@ -83,13 +83,13 @@ In the case of variability, it is produced in many aspects: call structure betwe
 
 
 \subsection{Audio data analysis}
-Audio data is usually considered as a mono-dimensional signal. To ease the tasks of understanding, comparison, modification, and resynthesise of signals \citep{rocchesso2003introduction}, audio data analysis is often developed to find the major features representing the time-varying audio data. Many application areas of audio data analysis have been identified: speech processing, mechanical signal processing, bioacoustics analysis, etc. Two most important audio data analysis techniques are Short-time Fourier Transform (STFT) and Linear Predictive Coding (LPC). STFT is a Fourier-related transform, which determines the sinusoidal frequency and phase content of local sections of a signal as it changes over the time \citep{allen1997short}. LPC is mostly used to represent the spectral envelope of an audio data based on the information of a linear predictive model \citep{deng2003speech}. After STFT, the audio data is transformed to its two dimensional representation (spectrogram), which is widely used for most bioacoustics analysis for its flexible implementation and good applicability.
+Audio data is usually considered as a mono-dimensional signal. To ease the tasks of understanding, comparison, modification, and resynthesisation of signals \citep{rocchesso2003introduction}, audio data analysis is often developed to find the major features representing the time-varying audio data. Many application areas of audio data analysis have been identified: speech processing, mechanical signal processing, bioacoustics analysis, etc. The two most important audio data analysis techniques are Short-time Fourier Transform (STFT) and Linear Predictive Coding (LPC). STFT is a Fourier-related transform, which determines the sinusoidal frequency and phase content of local sections of a signal as it changes over time \citep{allen1997short}. LPC is mostly used to represent the spectral envelope of audio data based on the information of a linear predictive model \citep{deng2003speech}. After STFT, the audio data is transformed into its two dimensional representation (spectrogram), which is widely used for most bioacoustics analysis for its flexible implementation and good applicability.
 An example of a spectrogram of frog calls derived from a field recording is shown in Figure.~\ref{fig:Ch1_spectrogram}.
 
 \begin{figure}[htb!]
 \centering
 \includegraphics[width=\textwidth]{image/Ch1/spectrogram_example.png}
-\caption[An example of spectrogram of environmental recording]{An example of spectrogram of environmental recording. The x-axis is time (seconds); the y-axis is frequency (kHz). The spectrogram is generated from a one-minute recording collected in Townsville, Queensland on around 11.50 pm February 03 2013; the frog species in this recording is \textit{Litoria caerulea}}
+\caption[An example of a spectrogram of environmental recording]{An example of spectrogram of environmental recording. The x-axis is time (seconds); the y-axis is frequency (kHz). The spectrogram is generated from a one-minute recording collected in Townsville, Queensland, on around 11.50 pm February 03 2013; the frog species in this recording is \textit{Litoria caerulea}}
 \label{fig:Ch1_spectrogram}
 \end{figure}
 
@@ -112,7 +112,7 @@ In contrast to the hierarchical structure of bird calls, frog calls have a relat
 
 
 One syllable is basically a sound that a frog produces with a single blow of air from the lungs \citep{huang2009frog}. For frog call classification, an elementary unit is one syllable. 
-To get an intuitive sense of frog call structure, examples of different frog species in both waveform and spectrogram are shown in Table~\ref{tab:wav_spec_cd} and Table~\ref{tab:JCU_para}. For the waveform, x-axis and y-axis represent time and amplitude scales, respectively. The x-axis and y-axis of the spectrogram represent the time and frequency scales, respectively. The grey scale represents the acoustic intensity. 
+To get an intuitive sense of the frog call structure, examples of different frog species in both waveform and spectrogram are shown in Table~\ref{tab:wav_spec_cd} and Table~\ref{tab:JCU_para}. For the waveform, x-axis and y-axis represent time and amplitude scales, respectively. The x-axis and y-axis of the spectrogram represent the time and frequency scales, respectively. The grey scale represents the acoustic intensity. 
 
 
 %Six frog species, which are widely distributed in Queensland, Australia, are selected from David Stewart's CD to generate waveform and spectrogram \citep{CD}. For JCU recordings, eight frog species are selected. The parameters of those frog species are shown in Table \ref{tab:cd_parameter}.
@@ -144,9 +144,9 @@ To get an intuitive sense of frog call structure, examples of different frog spe
 
 
 \subsection{Acoustic event and background noise}
-An acoustic event is a localised region of high intensity in a spectrogram. As we can see from Figure.~\ref{fig:label}, there are lots of acoustic events in an one-minute recording. This study focuses on the frog vocalisations, and frog calls are regarded as signals. Consequently, all the other events are called background noise. 
+An acoustic event is a localised region of high intensity in a spectrogram. As can be seen from Figure.~\ref{fig:label}, there are lots of acoustic events in an one-minute recording. This study focuses on the frog vocalisations, and frog calls are regarded as signals. Consequently, all the other events are called background noise. 
 In this study, both high and low SNR recordings are investigated to build a robust frog call classification system. Most previous studies present the frog call classification system using high SNR recordings. The high SNR recordings often assume that there is only one frog species in each individual recording with few background noises ($SNR \geq 15 dB$). In contrast, most low SNR recordings consist of more than one frog species in an individual recording with lots of background noises ($SNR \leq 15 dB$). 
-For the low SNR recordings, Table~\ref{tab:psd} show the power spectral density of signal and noise. It can be seen that the noise in low SNR recordings is often generated by several sources and broadband, which covers different frequency bands and leads to the frequency overlapping between the signal and noise. 
+For the low SNR recordings, Table~\ref{tab:psd} shows the power spectral density of signal and noise. It can be seen that the noise in low SNR recordings is often generated by several sources and broadband, which covers different frequency bands and leads to the frequency overlapping between the signal and noise. 
 
 %Therefore, it is challenging to improve the classification performance in high SNR recordings over current frog call classification systems, and analyse the recordings containing background noise and simultaneous vocalising events.
 
@@ -157,7 +157,7 @@ For the low SNR recordings, Table~\ref{tab:psd} show the power spectral density 
 
 \subsection{Frog call classification}
 
-A frog call classification system often consists of four parts (Figure.~\ref{fig:Ch1_flowchart}) : (1)signal pre-processing, which includes signal processing and noise reduction; (2) syllable segmentation, which is used to generate basic classification unit for frog calls; (3) feature extraction; and (4) classification.  
+A frog call classification system often consists of four parts (Figure.~\ref{fig:Ch1_flowchart}): (1)signal pre-processing, which includes signal processing and noise reduction; (2) syllable segmentation, which is used to generate a basic classification unit for frog calls; (3) feature extraction; and (4) classification.  
 
 
 
@@ -170,14 +170,14 @@ A frog call classification system often consists of four parts (Figure.~\ref{fig
 
 
 \section{Research Challenges}
-Most datasets used in previous frog call classification studies assume that there is only one frog species in each individual recordings. However, these resulting frog calls cannot reflect the characteristics of frog vocalisations in real-world situations, such as background noise, frog chorus, and other vocalising animals. To develop a robust frog call classification system for environmental recordings, two main challenges have been identified. 
+Most datasets used in previous frog call classification studies assume that there is only one frog species in each individual recording. However, these resulting frog calls cannot reflect the characteristics of frog vocalisations in real-world situations, such as background noise, frog chorus, and other vocalising animals. To develop a robust frog call classification system for environmental recordings, two main challenges have been identified. 
 
 
 \noindent \textbf{Challenge 1}: Most previous work studied frog call classification using high SNR recordings, but the classification performance of different studies varied a lot with a relatively low classification accuracy. The first challenge of this thesis is to build an enhanced feature representation to further improve the classification performance using high SNR recordings. 
 
 \noindent \textbf{Challenge 2}: Since our work finally aims to classify frog calls in low SNR recordings, most features that can successfully classify high SNR recordings cannot perform well for low SNR recordings. Consequently, it is still a big challenge to develop robust acoustic features to classify frog species in low SNR recordings. 
 
-\noindent \textbf{Challenge 3}: Since most previous work assumed that each individual recording consists of only one frog species, a single-instance single-label (SISL) framework is suitable for classifying frog calls in those high SNR recordings Figure.~\ref{fig:label}. However, low SNR recordings often have different characteristics containing more than one frog species, the SISL framework is no longer suitable. Therefore, the last challenge of this thesis is to design a novel classification framework for studying frog vocalisations in low SNR recordings with overlapping vocalising frog species. 
+\noindent \textbf{Challenge 3}: Since most previous work assumed that each individual recording consists of only one frog species, a single-instance single-label (SISL) framework is suitable for classifying frog calls in those high SNR recordings Figure.~\ref{fig:label}. However, as low SNR recordings often have different characteristics containing more than one frog species, the SISL framework is no longer suitable. Therefore, the last challenge of this thesis is to design a novel classification framework for studying frog vocalisations in low SNR recordings with overlapping vocalising frog species. 
 
 
 \begin{figure}[htb!]
@@ -185,7 +185,7 @@ Most datasets used in previous frog call classification studies assume that ther
     \begin{subfigure}[b]{\textwidth}
            \includegraphics[width=1\textwidth]{image/LR/label.pdf}
     \end{subfigure}%
-\caption[An example of collected recording]{An example of collected recording with multiple simultaneously vocalizing frog species. Five frog species exist in this 10-second recording: \textit{Cyclorana novaehollandiae}, \textit{Litoria rubella}, \textit{Litoria nasuta}, \textit{Litoria rothii}, and \textit{Litoria fallax}.}
+\caption[An example of collected recording]{An example of collected recording with multiple simultaneously vocalising frog species. Five frog species exist in this 10-second recording: \textit{Cyclorana novaehollandiae}, \textit{Litoria rubella}, \textit{Litoria nasuta}, \textit{Litoria rothii}, and \textit{Litoria fallax}.}
 \label{fig:label}       
 \end{figure}
 
@@ -205,7 +205,7 @@ The research questions are developed in order to solve the aforementioned challe
 
 
 \section{Aims and objectives}
-This thesis This thesis aims to investigate techniques for robust and effective classification of frog species in acoustic data for environmental monitoring. For high SNR recordings, we need to improve the classification performance. As for the low SNR recordings, we plan to design novel frameworks to classify multiple simultaneously vocalising frog species. With our classification results, ecologists can then make decisions on how to protect and improve the health of frog populations. The specific research objectives are listed below.
+This thesis aims to investigate techniques for robust and effective classification of frog species in acoustic data for environmental monitoring. For high SNR recordings, we need to improve the classification performance. As for the low SNR recordings, we plan to design novel frameworks to classify multiple simultaneously vocalising frog species. With our classification results, ecologists can then make decisions on how to protect and improve the health of frog populations. The specific research objectives are listed below.
 
 
 \begin{enumerate}
@@ -221,12 +221,12 @@ This thesis This thesis aims to investigate techniques for robust and effective 
  
  
 \section{Significance and contributions}
-Due to the development of sensor techniques, acoustic sensors have been widely deployed in the field for surveying vocalising animals. Different from recordings collected in the constrained environment, recordings collected in the field often have low SNR and consist of multiple simultaneous vocalising frog species. In this dissertation, we first investigate the high SNR recordings to further improve the classification performance of frog recordings with high SNR. 
+Due to the development of sensor techniques, acoustic sensors have been widely deployed in the field for surveying vocalising animals. Different from recordings collected in the constrained environment, recordings collected in the field often have low SNR and consist of multiple simultaneous vocalising frog species. In this dissertation, firstly the high SNR recordings are investigated to further improve the classification performance of frog recordings with high SNR. 
 Then, those features that can be used for studying frog calls in high SNR recordings are developed or adapted for analysing low SNR recordings for further analysis.
 Since field recordings often consist of multiple simultaneous vocalising frog species, both MIML and ML learning are used for the classification of those low SNR field recordings. Meanwhile, the frog calling activity can also be monitored based on the MIML and ML classification results.
-With the frog call classification framework we developed, ecologists can then monitor frogs by collecting audio data. It will enable frog monitoring over large areas and long period of time, and significantly reduce the expert labour cost for monitoring frog calling activity of a particular area. The monitoring result can also help reveal the importance of environmental protection, which can be achieved via studying the correlation between the frog calling activity and weather variables. 
+With the frog call classification framework developed, ecologists can then monitor frogs by collecting audio data. This will enable frog monitoring over large areas and long periods of time, and significantly reduce the expert labour cost for monitoring frog calling activity of a particular area. The monitoring result can also help reveal the importance of environmental protection, which can be achieved via studying the correlation between the frog calling activity and weather variables. 
 
-Below is a list of the publications arising from this PhD research:
+Below is a list of the publications arising from this PhD research.
 
 %\begin{center}
 %{\huge \textbf{List of Publications}}
@@ -322,17 +322,17 @@ Detailed description of each chapter is shown below:
 \item Chapter \ref{cha:cha4EnhancedFeature} presents an enhanced feature representation for frog call classification in high SNR recordings. An enhanced feature representation is constructed via the combination of temporal, perceptual, and cepstral features. Five machine learning algorithms are evaluated with our proposed feature representation. This chapter aims to (1) review previous features used for frog call classification and develop a better feature representation; (2) explore those previous features and study which can be adapted from high SNR recordings to low SNR recordings.
 
 
-\item  Chapter \ref{cha:cha5WaveletFeature} discusses wavelet analysis for frog call classification. According to the conclusion from Chapter \ref{cha:cha4EnhancedFeature}, we find that ceptral feature can achieve higher classification accuracy compared with temporal and perceptual features but it is very sensitive to the background noise. Consequently, we design a novel cepstral feature representation with wavelet packet decomposition that have both high classification performance and a good anti-noise ability. It is because our research will move to low SNR recordings from high SNR recordings, rather than only focusing on the low SNR recordings.
+\item  Chapter \ref{cha:cha5WaveletFeature} discusses wavelet analysis for frog call classification. According to the conclusion from Chapter \ref{cha:cha4EnhancedFeature}, it is found that a ceptral feature can achieve higher classification accuracy compared with temporal and perceptual features but it is very sensitive to the background noise. Consequently, in this research, a novel cepstral feature representation has been designed with wavelet packet decomposition that has both high classification performance and a good anti-noise ability. It is because this research will move to low SNR recordings from high SNR recordings, rather than only focusing on the low SNR recordings.
 
 
-\item  Chapter \ref{cha:cha6MIML} discusses the use of multiple-instance multiple-label framework for frog call classification. To cope with low SNR recordings with multiple simultaneously vocalising frog species, the traditional single-instance single-label classification framework is no longer suitable. Therefore, we try to adopt other classification frameworks such as MIML learning and ML learning. MIML learning is presented in this chapter. A MIML classification framework is adopted for studying frogs. Frog syllables are detected using a supervised learning algorithm, which needs lots of annotated data. However, in our study we are lack of those annotated frog recordings. An unsupervised learning method is developed to segment syllables, which is named \textit{acoustic event detection (AED)}. Then, three MIML learning classifiers are evaluated with extracted features from each syllable after applying a bagging algorithms. The classification performance is highly affected by the results of AED. Although our AED methods achieves better results compared with previous AED methods, the results still need to be further improved.
+\item  Chapter \ref{cha:cha6MIML} discusses the use of multiple-instance multiple-label framework for frog call classification. To cope with low SNR recordings with multiple simultaneously vocalising frog species, the traditional single-instance single-label classification framework is no longer suitable. Therefore, this research tries to adopt other classification frameworks such as MIML learning and ML learning. MIML learning is presented in this chapter. A MIML classification framework is adopted for studying frogs. Frog syllables are detected using a supervised learning algorithm, which needs lots of annotated data. However, in this study there is a lack of those annotated frog recordings. An unsupervised learning method is developed to segment syllables, which is named \textit{acoustic event detection (AED)}. Then, three MIML learning classifiers are evaluated with extracted features from each syllable after applying a bagging algorithm. The classification performance is highly affected by the results of AED. Although our AED methods achieves better results compared with previous AED methods, the results still need to be further improved.
 
 
-\item  Chapter \ref{cha:cha7ML} discusses the multiple-label learning method for frog call classification. Since Chapter \ref{cha:cha6MIML} shows that classification performance is highly affected by the AED results, and the AED results still need to be improved. This chapter uses ML learning to study low SNR recordings with multiple simultaneously vocalising frog species, where AED is not necessary for the classification. In contrast, AED is used to predict the frog abundance. The cepstral feature representation proposed in Chapter \ref{cha:cha5WaveletFeature} is used, where a simple but effective method is used to modify it. Both the results of AED and ML classification are applied to field recordings over three months. 
+\item  Chapter \ref{cha:cha7ML} discusses the multiple-label learning method for frog call classification. Since Chapter \ref{cha:cha6MIML} shows that classification performance is highly affected by the AED results, the AED results still need to be improved. This chapter uses ML learning to study low SNR recordings with multiple simultaneously vocalising frog species, where AED is not necessary for the classification. In contrast, AED is used to predict the frog abundance. The cepstral feature representation proposed in Chapter \ref{cha:cha5WaveletFeature} is used, where a simple but effective method is used to modify it. Both the results of AED and ML classification are applied to field recordings over three months. 
 
 
 
-\item  Chapter \ref{cha:cha8Conclusions} summarises and concludes the thesis, claims the achievements.
+\item  Chapter \ref{cha:cha8Conclusions} summarises and concludes the thesis, and identifies the achievements.
 
 
 
