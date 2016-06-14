@@ -996,7 +996,7 @@ These algorithms are applied to a number of animal call recognition tasks, chose
 }
 
 @Article{songMeter,
-  Title                    = {Song Meter 2 (Widelife Acoustic)},
+  Title                    = {Song Meter (SM2) Widelife Acoustic},
   Author                   = {Jie Xie},
   Journal                  = {http://www.wildlifeacoustics.com/products/song-meter-sm2-birds},
   Year                     = {2016},
