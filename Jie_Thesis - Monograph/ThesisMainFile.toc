@@ -106,7 +106,7 @@
 \contentsline {subsection}{\numberline {6.3.1}Experiment setup}{92}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Frog abundance detection}{93}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Frog species richness analysis}{93}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Statistical analysis}{94}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.4}Statistical analysis}{95}{subsection.6.3.4}
 \contentsline {section}{\numberline {6.4}Summary and limitations}{95}{section.6.4}
 \contentsline {chapter}{\numberline {7}Conclusion and future work}{97}{chapter.7}
 \contentsline {section}{\numberline {7.1}Summary of contributions}{97}{section.7.1}
