@@ -20,6 +20,11 @@ Allen, J. (1997).
 \newblock In {\em IEEE Trans. on Acoust., Speech, and Sig. Proc.}, volume~4,
   pages 21--24.
 
+\bibitem[Arch et~al., 2008]{arch2008ultrasonic}
+Arch, V.~S., Grafe, T.~U., and Narins, P.~M. (2008).
+\newblock Ultrasonic signalling by a bornean frog.
+\newblock {\em Biology Letters}, 4(1):19--22.
+
 \bibitem[Bao and Cui, 2005]{bao2005prediction}
 Bao, L. and Cui, Y. (2005).
 \newblock Prediction of the phenotypic effects of non-synonymous single
@@ -196,6 +201,13 @@ Gingras, B. and Fitch, W.~T. (2013).
 \newblock {\em The Journal of the Acoustical Society of America},
   133(1):547--559.
 
+\bibitem[Glotin et~al., 2013]{glotin2013sparse}
+Glotin, H., Sueur, J., Arti{\`e}res, T., Adam, O., and Razik, J. (2013).
+\newblock Sparse coding for scaled bioacoustics: From humpback whale songs
+  evolution to forest soundscape analyses.
+\newblock {\em The Journal of the Acoustical Society of America},
+  133(5):3311--3311.
+
 \bibitem[Gordon et~al., 2003]{gordon2003sequence}
 Gordon, L., Chervonenkis, A.~Y., Gammerman, A.~J., Shahmuradov, I.~A., and
   Solovyev, V.~V. (2003).
@@ -365,6 +377,12 @@ Menc{\i}a, E.~L., Nam, J., and Lee, D.-H. (2013).
 \newblock {\em Proc of Neural Information Processing Scaled for Bioacoustics,
   joint to NIPS}, 2013:184--189.
 
+\bibitem[Narins et~al., 2007]{narins2007frogs}
+Narins, P.~M., Feng, A.~S., and Shen, J.-X. (2007).
+\newblock Frogs communicate with ultrasound in noisy environments.
+\newblock In {\em Hearing--From sensory processing to perception}, pages
+  185--190. Springer.
+
 \bibitem[Noda et~al., 2016]{Noda2016100}
 Noda, J.~J., Travieso, C.~M., and S?nchez-Rodr?guez, D. (2016).
 \newblock Methodology for automatic bioacoustic classification of anurans based
@@ -381,6 +399,13 @@ Potamitis, I. (2015).
 \newblock Unsupervised dictionary extraction of bird vocalisations and new
   tools on assessing and visualising bird activity.
 \newblock {\em Ecological Informatics}, 26:6--17.
+
+\bibitem[Razik et~al., 2015]{razik2015sparse}
+Razik, J., Hoeberechts, M., Doh, Y., et~al. (2015).
+\newblock Sparse coding for efficient bioacoustic data mining: Preliminary
+  application to analysis of whale songs.
+\newblock In {\em 2015 IEEE International Conference on Data Mining Workshop
+  (ICDMW)}, pages 780--787. IEEE.
 
 \bibitem[Ren et~al., 2008]{ren2008perceptually}
 Ren, Y., Johnson, M.~T., and Tao, J. (2008).
@@ -487,7 +512,7 @@ Wimmer, J., Towsey, M., Planitz, B., Williamson, I., and Roe, P. (2013).
 
 \bibitem[Xie, 2016]{songMeter}
 Xie, J. (2016).
-\newblock Widelife acoustic.
+\newblock Song meter (sm2) widelife acoustic.
 \newblock {\em http://www.wildlifeacoustics.com/products/song-meter-sm2-birds}.
 
 \bibitem[Xie et~al., 2015a]{jie2015escience}

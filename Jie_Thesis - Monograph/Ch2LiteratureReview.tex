@@ -15,7 +15,7 @@ To monitor the change of frog biodiversity and optimise frog protection policies
 
 Over the last few years, many researchers have described automated methods for detecting and classifying frog calls \citep{huang2008realization, huang2009frog, han2011acoustic,chen2012automatic, Gingras2013, camacho2013automatic, Huang20141}. However, there is no paper that summarises those methods. In this work, we present a comprehensive survey of frog call classification to provide other researchers with basic information, current methods and trends in this field. 
 
-Three parts play important roles in the performance and precision of frog call classification: signal pre-processing, feature extraction, and classification. In this survey, these three important parts of frog call classification are presented as shown in Fig.~\ref{fig:Ch1_flowchart}. 
+Three parts play important roles in the performance and precision of frog call classification: signal pre-processing, feature extraction, and classification. In this survey, these three important parts of frog call classification are presented as shown in Figure~\ref{fig:Ch1_flowchart}. 
 
 
 
@@ -153,9 +153,7 @@ Cepstral features are also popular for frog call classification. These features 
 
 \subsection{Other features for frog call classification}
 Besides time domain features, frequency domain features, time-frequency domain features and cepstral features, other features are also introduced to classify frog calls.
-\cite{wei2012distributed} proposed a distributed sparse approximation method based on $\ell 1$ minimization for frog call classification. \cite{dang2008lightweight} extracted the vocalisation waveform envelope as features, then classified calls by matching the extracted envelope with the original signal envelope. \cite{kular2015classifying} treated the sound signal of a frog call as a texture image. Then, texture visual words and MFCCs were calculated as the features for frog call classification. 
-
-
+\cite{wei2012distributed} proposed a distributed sparse approximation method based on $\ell 1$ minimization for frog call classification.  \cite{dang2008lightweight} extracted the vocalisation waveform envelope as features, then classified calls by matching the extracted envelope with the original signal envelope. \cite{kular2015classifying} treated the sound signal of a frog call as a texture image. Then, texture visual words and MFCCs were calculated as the features for frog call classification. 
 
 
 \begin{figure}[htb!]
@@ -365,10 +363,10 @@ For syllable segmentation, time domain features are more sensitive to background
 \subsection{Acoustic features}
 Most previous studies directly transplant features developed for speech recognition to analyse frog calls, which might not be suitable. For example, MFCCs, which are based on the calculation of a non-linear Mel-scale, are designed for studying speech. However, the Mel-scale is designed for the perceptual scale of pitches judged by listeners rather than frogs. The direct use of speech features will therefore restrict classification performance. 
 
-Most frequency domain features are calculated by directly calculating the statistics over frames, which leads to the loss of temporal information. To add the temporal information of the feature set, time domain features can be combined with frequency domain features to achieve higher classification accuracy. Transforming audio data into its two-dimensional representation (such as a spectrogram) for quick visual analysis, has led to increasing attention being given to image processing techniques for automatically analysing animal calls. Image features are worth investigating for frog call classification.
+Most frequency domain features are calculated by directly calculating the statistics over frames, which leads to the loss of temporal information. To add the temporal information of the feature set, time domain features can be combined with frequency domain features to achieve higher classification accuracy. Transforming audio data into its two-dimensional representation (such as a spectrogram) for quick visual analysis, has led to increasing attention being given to image processing techniques for automatically analysing animal calls. Image features are worth investigating for frog call classification. Sparse coding has been widely applied for feature extraction in other scaled bioacoustics studies \citep{glotin2013sparse, razik2015sparse}, which could be a potential direction for frog call classification.
 
 \subsection{Classifiers}
-Almost all previous studies assume that each recording has only one frog species, and then an SISL classification framework is adopted to classify frog calls. However, recent advances in acoustic sensor techniques have collected large volumes of acoustic data that have multiple simultaneously vocalising frog species, because different frog species tend to call together to make a frog chorus (Figure.~\ref{fig:label}). Based on this characteristic of frog call recordings, the classification problem can be naturally framed as an MIML classification or an ML classification problem rather than an SISL classification.
+Almost all previous studies assume that each recording has only one frog species, and then an SISL classification framework is adopted to classify frog calls. However, recent advances in acoustic sensor techniques have collected large volumes of acoustic data that have multiple simultaneously vocalising frog species, because different frog species tend to call together to make a frog chorus (Figure~\ref{fig:label}). Based on this characteristic of frog call recordings, the classification problem can be naturally framed as an MIML classification or an ML classification problem rather than an SISL classification.
 In previous studies, MIML learning and ML learning have been used to solve bioacoustic problems, but mainly focus on birds. In this thesis, MIML and ML learning will be investigated to study frog vocalisations.
 
 

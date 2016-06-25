@@ -61,6 +61,18 @@
   Keywords                 = {Band pass filters;Bandwidth;Channel bank filters;Discrete Fourier transforms;Filter bank;Frequency;Low pass filters;Signal analysis;Signal synthesis;Spectral analysis}
 }
 
+@Article{arch2008ultrasonic,
+  Title                    = {Ultrasonic signalling by a Bornean frog},
+  Author                   = {Arch, Victoria S and Grafe, T Ulmar and Narins, Peter M},
+  Journal                  = {Biology Letters},
+  Year                     = {2008},
+  Number                   = {1},
+  Pages                    = {19--22},
+  Volume                   = {4},
+
+  Publisher                = {The Royal Society}
+}
+
 @Article{bao2005prediction,
   Title                    = {Prediction of the phenotypic effects of non-synonymous single nucleotide polymorphisms using structural and evolutionary information},
   Author                   = {Bao, Lei and Cui, Yan},
@@ -400,6 +412,18 @@
   Number                   = {1},
   Pages                    = {547-559},
   Volume                   = {133}
+}
+
+@Article{glotin2013sparse,
+  Title                    = {Sparse coding for scaled bioacoustics: From Humpback whale songs evolution to forest soundscape analyses},
+  Author                   = {Glotin, Herve and Sueur, J{\'e}r{\^o}me and Arti{\`e}res, Thierry and Adam, Olivier and Razik, Joseph},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {2013},
+  Number                   = {5},
+  Pages                    = {3311--3311},
+  Volume                   = {133},
+
+  Publisher                = {Acoustical Society of America}
 }
 
 @Article{gordon2003sequence,
@@ -749,6 +773,15 @@
   Volume                   = {1}
 }
 
+@InCollection{narins2007frogs,
+  Title                    = {Frogs communicate with ultrasound in noisy environments},
+  Author                   = {Narins, Peter M and Feng, Albert S and Shen, Jun-Xian},
+  Booktitle                = {Hearing--From sensory processing to perception},
+  Publisher                = {Springer},
+  Year                     = {2007},
+  Pages                    = {185--190}
+}
+
 @Article{Noda2016100,
   Title                    = {Methodology for automatic bioacoustic classification of anurans based on feature fusion },
   Author                   = {Juan J. Noda and Carlos M. Travieso and David S?nchez-Rodr?guez},
@@ -801,6 +834,15 @@
   Volume                   = {1},
 
   Publisher                = {Springer}
+}
+
+@InProceedings{razik2015sparse,
+  Title                    = {Sparse coding for efficient bioacoustic data mining: Preliminary application to analysis of whale songs},
+  Author                   = {Razik, Joseph and Hoeberechts, Maia and Doh, Yann and others},
+  Booktitle                = {2015 IEEE International Conference on Data Mining Workshop (ICDMW)},
+  Year                     = {2015},
+  Organization             = {IEEE},
+  Pages                    = {780--787}
 }
 
 @Article{ren2008perceptually,

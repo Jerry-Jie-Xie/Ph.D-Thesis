@@ -20,11 +20,11 @@ However, most individual low SNR recordings have more than one frog species. In 
 
 
 \section{Method}
-The architecture of the proposed classification method consists of five modules: syllable segmentation, syllable feature extraction, adaptive frequency scale generation, WPD feature extraction and classification (see Figure.~\ref{fig:Ch5_flowchart}). Each module is described in the following sections. 
+The architecture of the proposed classification method consists of five modules: syllable segmentation, syllable feature extraction, adaptive frequency scale generation, WPD feature extraction and classification (see Figure~\ref{fig:Ch5_flowchart}). Each module is described in the following sections. 
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=1\linewidth]{image/Ch5/flowchart.pdf}}
-\caption[Block diagram of the frog call classification system for wavelet-based feature extraction]{Block diagram of the frog call classification system. The line of dashes indicates the extracted feature set. AWSCCs is the abbreviation of \textit{adaptive wavelet packet decomposition sub-band cepstral coefficients}. STFT is short-time Fourier transform. For STFT(1), the window function, size and overlap are Kaiser window, 512 samples and 25\%. For STFT(2), the window function, size and overlap are Hamming window, 128 samples and 90\%. In this diagram, two feature sets are extracted, the description of other feature sets is shown in Figure.~\ref{fig:featureExtraction}.}
+\caption[Block diagram of the frog call classification system for wavelet-based feature extraction]{Block diagram of the frog call classification system. The line of dashes indicates the extracted feature set. AWSCCs is the abbreviation of \textit{adaptive wavelet packet decomposition sub-band cepstral coefficients}. STFT is short-time Fourier transform. For STFT(1), the window function, size and overlap are Kaiser window, 512 samples and 25\%. For STFT(2), the window function, size and overlap are Hamming window, 128 samples and 90\%. In this diagram, two feature sets are extracted, the description of other feature sets is shown in Figure~\ref{fig:featureExtraction}.}
 \label{fig:Ch5_flowchart} 
 \end{figure}
 
@@ -32,7 +32,7 @@ The architecture of the proposed classification method consists of five modules:
 \subsection{Sound recording and pre-processing}
 
 Two datasets obtained from a commercial recording \citep{CD} and James Cook University (JCU) were selected for this chapter. 
-Recordings, which were collected from the CD, are two-channel, sampled at 44.10 kHz and saved in MP3 format. All recordings were obtained with a directional microphone and have a high signal to noise ratio (SNR). Each recording includes one frog species, and has a duration ranging from twenty-one to fifty-four seconds. The calls of eighteen frog species recorded in Queensland, Australia were used to develop the detailed methodology described in Figure.~\ref{fig:Ch5_flowchart}. To reduce the subsequent computational burden, all the recordings selected from the CD were re-sampled at 16 kHz per second, mixed to mono, and saved in WAV format. 
+Recordings, which were collected from the CD, are two-channel, sampled at 44.10 kHz and saved in MP3 format. All recordings were obtained with a directional microphone and have a high signal to noise ratio (SNR). Each recording includes one frog species, and has a duration ranging from twenty-one to fifty-four seconds. The calls of eighteen frog species recorded in Queensland, Australia were used to develop the detailed methodology described in Figure~\ref{fig:Ch5_flowchart}. To reduce the subsequent computational burden, all the recordings selected from the CD were re-sampled at 16 kHz per second, mixed to mono, and saved in WAV format. 
 
 The JCU recordings were obtained from Kiyomi dam (S $19^{\circ}$ $22^{'}$ $16.0^{''}$, E $146^{\circ}$ $27^{'}$ $31.3^{''}$)  BG Creek dam (S $19^{\circ}$ $27^{'}$ $1.23^{''}$, E $146^{\circ}$ $24^{'}$ $5.65^{''}$ ) and Stony Creek dam (S $19^{\circ}$ $24^{'}$ $07.0^{''}$, E $146^{\circ}$ $25’$ $51.3”$) in Townsville, using Song Meter (SM2) \citep{songMeter}. The recordings were stored on 16 GB SD cards in 64 kbps MP3 mono format and have a low SNR compared with the commercial recording. The sample rate is 16.00 kHz.
 All the JCU recordings started around sunset, finished around sunrise every day and have 12 hour duration. 
@@ -92,7 +92,7 @@ For the JCU recordings\footnote[2]{https://www.ecosounds.org/}, the correspondin
 \begin{table}[htb!]
 \centering
 \caption[Parameters of eight frog species obtained by averaging three
-randomly selected syllable samples from recordings of James Cook University]{Parameters of 8 frog species obtained by averaging three
+randomly selected syllable samples from recordings of James Cook University]{Parameters of eight frog species obtained by averaging three
 randomly selected syllable samples from recordings of James Cook University. NA indicates there is no oscillation structure in the spectrogram for the background noise and frog chorus. Since syllable durations of \textit{Rhinella marina} (Commom name: Canetoad) are very different from each other, we manually set the duration of Canetoad using the maximum duration of other frog species, which is 500 milliseconds.}
 \label{tab:JCU}
 \resizebox{0.85\textwidth}{!}{
@@ -118,7 +118,7 @@ randomly selected syllable samples from recordings of James Cook University. NA 
 For frog calls, an elementary acoustic unit for classification is the syllable, which is a continuous vocalisation emitted from an individual \citep{huang2009frog}. Each commercial recording consists of multiple continuous calls of one frog species. Therefore, it is necessary to segment each call into individual syllables. This syllable segmentation process is applied to the spectrogram, which is generated by applying short-time Fourier transform (STFT) to each recording. For STFT, the window function is the Hamming window with the size and overlap of 512 samples and 25\%, respectively. 
 
 
-To further improve the segmentation result, the averaged energy of which is less than 15\% of the maximum energy, are removed \citep{Gingras2013}. The distribution of syllable numbers after segmentation for all frog species is shown in Figure.~\ref{fig:Ch5_syllable}.
+To further improve the segmentation result, the averaged energy of which is less than 15\% of the maximum energy, are removed \citep{Gingras2013}. The distribution of syllable numbers after segmentation for all frog species is shown in Figure~\ref{fig:Ch5_syllable}.
 
 %For recordings from James cook university, syllable segmentation is not necessary, because 30 syllables of each frog species are manually selected.
 
@@ -142,7 +142,7 @@ F_{lower} = F_{peak} - \beta
 
 After bandpass filtering, noise reduction is essential for
 improving the segmentation result for the low
-signal to noise ratio in JCU recordings. Here, we use the method of \cite{towsey2012toolbox} for noise reduction. Finally, we use the H$\ddot{a}$rm$\ddot{a}$'s method to detect individual syllables (Figure.~\ref{fig:Ch5_segmentation}). 
+signal to noise ratio in JCU recordings. Here, we use the method of \cite{towsey2012toolbox} for noise reduction. Finally, we use the H$\ddot{a}$rm$\ddot{a}$'s method to detect individual syllables (Figure~\ref{fig:Ch5_segmentation}). 
 
 For \textit{Canetoad}, the durations of different calls are very different, therefore, we manually selected 30 syllables, the combined duration of which is 500 ms.
 
@@ -194,12 +194,12 @@ For the JCU recordings, eight frog species were used for the experiment. After s
 
 
 
-%In this study, smoothing spectrogram is optionally applied to the spectrogram before H$\ddot{a}$rm$\ddot{a}$'s algorithm, because some frog species have large temporal gap within one syllable (see in Figure.~\ref{fig:smooth}). Here, oscillation rate of the validation set is to used to decide which frog species need to be smoothed. Oscillation rate ($O_{r}$) represents the number of pulses within one second. The algorithm for extracting oscillation rate is introduced in our previous work \citep{Xie1504:Acoustic}, which is summarized as follows. Different from the previous work, the frequency boundary for calculating power vector is based on the peak frequency in Table.\ref{tab:parameter} rather than the dominant frequency, because the dominant frequency has not been calculated. Here, the low and high frequency boundary is 500 Hz and 4500 Hz.  After defining the frequency band, the power vector is calculated and normalized, and the first and last 20\% part of the vector is discarded, because of the unclear of the start and end of the syllables. Next, the autocorrelation with the length of the vector is calculated. Furthermore, a discrete cosine transform (DCT) is applied to the vector after subtracting the mean, and the position of the highest frequency ($P_{f}$) is achieved. Finally, the oscillation rate is defined as
+%In this study, smoothing spectrogram is optionally applied to the spectrogram before H$\ddot{a}$rm$\ddot{a}$'s algorithm, because some frog species have large temporal gap within one syllable (see in Figure~\ref{fig:smooth}). Here, oscillation rate of the validation set is to used to decide which frog species need to be smoothed. Oscillation rate ($O_{r}$) represents the number of pulses within one second. The algorithm for extracting oscillation rate is introduced in our previous work \citep{Xie1504:Acoustic}, which is summarized as follows. Different from the previous work, the frequency boundary for calculating power vector is based on the peak frequency in Table.\ref{tab:parameter} rather than the dominant frequency, because the dominant frequency has not been calculated. Here, the low and high frequency boundary is 500 Hz and 4500 Hz.  After defining the frequency band, the power vector is calculated and normalized, and the first and last 20\% part of the vector is discarded, because of the unclear of the start and end of the syllables. Next, the autocorrelation with the length of the vector is calculated. Furthermore, a discrete cosine transform (DCT) is applied to the vector after subtracting the mean, and the position of the highest frequency ($P_{f}$) is achieved. Finally, the oscillation rate is defined as
 %\begin{equation}
 %O_{r}= \frac{P_{f}}{L_{dct}}*r_{x}*\gamma
 %\end{equation}
-%\noindent where $P_{f}$ is the position of the highest frequency values of the DCT result, $L_{dct}$ is the length for applying DCT to the power vector, and is experientially set as 0.2 second in this study. The results of the oscillation rate is shown in Figure.~\ref{fig:osc}.  In the testing stage, the oscillation rate of one randomly selected syllables from continuous audio data is calculated, then compared to decide whether to smooth or not. When the oscillation rate is lower than 40 cycles/second, a Gaussian filter (7$\times$7) is applied to the spectrogram. Here, the filter size is set taking into account a trade-off between connecting gaps within one syllable and separating adjacent syllables.
-%The segmentation result after smoothing is shown in Figure.~\ref{fig:smooth}.
+%\noindent where $P_{f}$ is the position of the highest frequency values of the DCT result, $L_{dct}$ is the length for applying DCT to the power vector, and is experientially set as 0.2 second in this study. The results of the oscillation rate is shown in Figure~\ref{fig:osc}.  In the testing stage, the oscillation rate of one randomly selected syllables from continuous audio data is calculated, then compared to decide whether to smooth or not. When the oscillation rate is lower than 40 cycles/second, a Gaussian filter (7$\times$7) is applied to the spectrogram. Here, the filter size is set taking into account a trade-off between connecting gaps within one syllable and separating adjacent syllables.
+%The segmentation result after smoothing is shown in Figure~\ref{fig:smooth}.
 %
 %\begin{figure}[htb!] % Example image
 %\center{\includegraphics[width=0.65\linewidth]{image/thresh.pdf}}
@@ -262,9 +262,9 @@ f= at+b
 Based on $a$ and $b$, the predicted peak $\hat{p_{n}}$ of the following frame $t_{n}$ can be calculated. 
 Next, the time and frequency domain intervals between predicted peak ($\hat{p_{n}}$) and the real peak of the successive frame are recalculated. If the time and frequency intervals are smaller than $T_{c}$ and $f_{c}$ respectively, the real peak will be added to the initial track. After each peak is added to the initial track, linear regression is repeated to recalculate the next predicted peak using at most the last 10 included peaks. This iterative process continues until $T_{s}$ is no longer satisfied. 
 When no more peaks will be added to one track, the next step is to compare the duration and density of the track with $d_{min}$, $d_{max}$, and $\beta$. If all conditions are satisfied, then the track will be saved to the track list. The SPT results for \textit{Neobatrachus sudelli} are shown in
-Figure.~\ref{fig:track}. During the process of track extraction, time domain gaps  are generated where the intensity threshold $I$ is not reached.
+Figure~\ref{fig:track}. During the process of track extraction, time domain gaps  are generated where the intensity threshold $I$ is not reached.
 These gaps can be filled by predicting the correct frequency
-bin using linear regression, as illustrated in Figure.~\ref{fig:track}. 
+bin using linear regression, as illustrated in Figure~\ref{fig:track}. 
 
 \begin{figure}[htb!]
 \centering
@@ -318,7 +318,7 @@ Wavelet packet decomposition (WPD) is a powerful tool for the analysis of non-st
 To obtain robust features for frog call classification, the frequency scale used for WPD is crucial. In prior work \citep{barkWPDraey, Biswas20141111, Zhang2015108}, different frequency scales have already been proposed for WPD. Bark-scaled WPD was proposed by Litvin and Cohen to separate blind source from a single channel audio source \citep{barkWPDraey}. \cite{Biswas20141111} used features based on ERB-scaled (Equivalent rectangular bandwidth) WPD for Hindi consonant recognition.  \cite{Zhang2015108} developed a method based on Mel-scaled WPD for bird sound detection with the SVMs classifier. However, most frequency scales used for WPD are developed for studying speech rather than frogs. Therefore, finding a suitable frequency scale for frogs to perform the WPD is important for obtaining features with strong discriminatory power. In this chapter, an adaptive frequency scale for WPD for frog calls is proposed,  based on the dominant frequency of frog species to be classified. Specifically, the k-means clustering algorithm is used to cluster the dominant frequency of all syllables. Then, the centroids of the clustering result are used to generate the frequency scale. Here, the value of $k$ for the k-means clustering algorithm is the same as the number of frog species to be classified, the distance function used is \textit{city block} \citep{Melter1987235}. 
 
 
-%The k-means clustering result for the validation data set is shown in Figure.~\ref{fig:kmeans}.
+%The k-means clustering result for the validation data set is shown in Figure~\ref{fig:kmeans}.
 %
 %
 %\begin{figure}[htb!] % Example image
@@ -330,7 +330,7 @@ To obtain robust features for frog call classification, the frequency scale used
 
 
 
-Based on the obtained frequency scale, an adaptive frequency scaled WPD method is proposed, which is described in Algorithm 1. The wavelet packet tree used for classifying 18 frog species is shown in Figure.~\ref{fig:tree20}.
+Based on the obtained frequency scale, an adaptive frequency scaled WPD method is proposed, which is described in Algorithm 1. The wavelet packet tree used for classifying 18 frog species is shown in Figure~\ref{fig:tree20}.
 
 
 \begin{algorithm}
@@ -388,7 +388,7 @@ stop decomposition
 
 %The aim of feature extraction is to obtain a sequence of feature vectors that hidden in the original time domain \citep{yen2000wavelet}.
 In previous studies \citep{bedoya2014automatic, Xie1504:Acoustic}, Mel-frequency cepstral coefficients (MFCCs) have been used for studying bioacoustic data, and used as the baseline for feature comparison in this chapter. Besides MFCCs, another feature set called Mel-scaled wavelet packet decomposition sub-band cepstral coefficients (MWSCCs) is also included in the comparison experiment \citep{Zhang2015108}, because it shows better performance than MFCCs for bird detection in a complex environment. In this chapter, we propose a novel feature set named \textit{adaptive frequency scale wavelet packet decomposition sub-band cepstral coefficients} (AWSCCs) for frog call classification.
-The extraction procedure of AWSCCs is similar to MWSCCs. However, the frequency scale used for our AWSCCs is based on an adaptive frequency scale rather than the Mel-scale for MWSCCs. Meanwhile, after performing DCT, temporal feature integration is used for calculating the statistics of feature vectors which generates different statistical types of AWSCCs. (see in Figure.~\ref{fig:featureExtraction}). 
+The extraction procedure of AWSCCs is similar to MWSCCs. However, the frequency scale used for our AWSCCs is based on an adaptive frequency scale rather than the Mel-scale for MWSCCs. Meanwhile, after performing DCT, temporal feature integration is used for calculating the statistics of feature vectors which generates different statistical types of AWSCCs. (see in Figure~\ref{fig:featureExtraction}). 
 
 
 \begin{figure*}[htb!] % Example image
@@ -463,7 +463,7 @@ where $K(.,.)$ is the kernel function, $\alpha_{l}^{n}$ is the Lagrange multipli
 Several experiments are described for evaluating our proposed frog call classification system. First, the parameter tuning is discussed based on the reference data set. Then, the comparisons between all proposed features are studied. Finally, the classification results under different SNR are described.
 
 \subsection{Parameter tuning}
-There are five modules for parameter tuning: syllable segmentation, spectral peak track, feature extraction, and classification (Figure.~\ref{fig:flowchart}). 
+There are five modules for parameter tuning: syllable segmentation, spectral peak track, feature extraction, and classification (Figure~\ref{fig:flowchart}). 
 
 For syllable segmentation, the window size and overlap are 512 samples and 25\%, however, the intensity threshold is 10 dB and 5 dB for the commercial recordings and the JCU recordings respectively.
 
@@ -525,7 +525,7 @@ Delta-AWSCCs                          & 99.2 $\pm$   2.1    &      \textbf{99.6 
 }
 \end{table}
 
-In this experiment, the best classification accuracy is 99.6\%, which is achieved by the delta-AWSCCs with the SVM classifier. Compared with the average AWSCCs, the delta-AWSCCs achieved a slightly better performance. One may conjecture that the delta-AWSCCs can capture the dynamic information of the frog calls. For MWSCCs, the averaged classification accuracy of both classifiers is about 2\% lower than that of averaged AWSCCs and delta-AWSCCs with 96.3\%. The improvement shows that the proposed adaptive frequency scale can capture more information about frog calls than the Mel-scale (Figure.~\ref{fig:Ch5_feature}). 
+In this experiment, the best classification accuracy is 99.6\%, which is achieved by the delta-AWSCCs with the SVM classifier. Compared with the average AWSCCs, the delta-AWSCCs achieved a slightly better performance. One may conjecture that the delta-AWSCCs can capture the dynamic information of the frog calls. For MWSCCs, the averaged classification accuracy of both classifiers is about 2\% lower than that of averaged AWSCCs and delta-AWSCCs with 96.3\%. The improvement shows that the proposed adaptive frequency scale can capture more information about frog calls than the Mel-scale (Figure~\ref{fig:Ch5_feature}). 
 
 \begin{figure}[htb!]
 \centering
@@ -618,7 +618,7 @@ Delta-AWSCCs - SFs           & \multicolumn{2}{l}{t=5.52 (significant at p \text
 \end{table}
 
 
-Since our wavelet packet tree for feature extraction is obtained based on the frog species to be classified, two more experiments are used for further evaluation. The first experiment is to classify first ten frog species (No.1-10); the second is to classify the first fourteen frog species (No.1-14) (see Table \ref{tab:parameter}). The wavelet packet tree for classifying ten and fourteen frog species is shown in Figure.~\ref{fig:wpTree}, which is different from the tree for classifying eighteen frog species. However, the Mel-scaled wavelet packet tree is the same for all experiments (see Figure.~\ref{fig:melTree}). The classification results are shown in Table \ref{tab:manySpecies}. Since the classification accuracy with averaged AWSCCs is very high for classifying ten and fourteen frog species, the delta-AWSCCs is not included in this experiment. Table \ref{tab:manySpecies} shows that averaged AWSCCs can achieve the highest classification accuracy for classifying different numbers of frog species. Since the averaged AWSCCs is adaptively extracted based on the data, more frog species do not cause a large decrease in the classification accuracy.  
+Since our wavelet packet tree for feature extraction is obtained based on the frog species to be classified, two more experiments are used for further evaluation. The first experiment is to classify first ten frog species (No.1-10); the second is to classify the first fourteen frog species (No.1-14) (see Table \ref{tab:parameter}). The wavelet packet tree for classifying ten and fourteen frog species is shown in Figure~\ref{fig:wpTree}, which is different from the tree for classifying eighteen frog species. However, the Mel-scaled wavelet packet tree is the same for all experiments (see Figure~\ref{fig:melTree}). The classification results are shown in Table \ref{tab:manySpecies}. Since the classification accuracy with averaged AWSCCs is very high for classifying ten and fourteen frog species, the delta-AWSCCs is not included in this experiment. Table \ref{tab:manySpecies} shows that averaged AWSCCs can achieve the highest classification accuracy for classifying different numbers of frog species. Since the averaged AWSCCs is adaptively extracted based on the data, more frog species do not cause a large decrease in the classification accuracy.  
 
 
 
@@ -653,7 +653,7 @@ Since our wavelet packet tree for feature extraction is obtained based on the fr
 
 
 \subsection{Comparison under different SNRs}
-To further evaluate the robustness of the proposed feature, a Gaussian noise signal, with SNR of 40 dB, 30 dB, 20 dB, and 10 dB, is added to the original signal. The noise is added after syllable segmentation, because this chapter focuses on the development of novel features for classification rather than the segmentation method. The classification accuracy with five features under different SNRs is shown in Figure.~\ref{fig:snr}. Compared with MFCCs and MWSCCs, SFs has a stronger anti-noise performance, because the dominant frequency of SFs has a small variation under low SNR. Correspondingly, the adaptive frequency scale also has a small variation, because it is generated by means of applying the k-means clustering algorithm to the dominant frequency. Therefore, our proposed feature has a stronger anti-noise performance than other cepstral features (MFCCs and MWSCCs). 
+To further evaluate the robustness of the proposed feature, a Gaussian noise signal, with SNR of 40 dB, 30 dB, 20 dB, and 10 dB, is added to the original signal. The noise is added after syllable segmentation, because this chapter focuses on the development of novel features for classification rather than the segmentation method. The classification accuracy with five features under different SNRs is shown in Figure~\ref{fig:snr}. Compared with MFCCs and MWSCCs, SFs has a stronger anti-noise performance, because the dominant frequency of SFs has a small variation under low SNR. Correspondingly, the adaptive frequency scale also has a small variation, because it is generated by means of applying the k-means clustering algorithm to the dominant frequency. Therefore, our proposed feature has a stronger anti-noise performance than other cepstral features (MFCCs and MWSCCs). 
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=0.6\linewidth, height = 0.4\linewidth]{image/Ch5/snr.pdf}}
@@ -687,7 +687,7 @@ Delta-AWSCCs                       &         97.0   $\pm$ 5.2                &  
 
 
 \section{Summary and limitations}
-In this chapter, a novel feature extraction method for frog call classification is developed using the adaptive frequency scaled wavelet packet decomposition. With segmented syllables, spectral peak track is first extracted from each syllable. Then, track duration, dominant frequency, and oscillation rate are calculated based on each track. Next, a k-means clustering algorithm is applied to the dominant frequency, which generates the frequency scale for WPD. Finally, a new feature set, AWSCCs, is calculated. Since the feature extraction method is developed based on the data itself, the wavelet packet tree varies according to the frog species to be classified. Compared with the Mel-scaled WPD tree, the proposed adaptive wavelet packet tree can better fit the dominant frequency distribution of the frog species to be classified. With the proposed frequency scale, the call characteristics of those frog species to be classified can be enhanced, while the background noise and calls from other animals will be suppressed. Therefore, the proposed feature sets can achieve a higher accuracy for the classification of frog calls than others. Meanwhile, since the frequency scale is calculated based on the dominant frequency of those frog species to be classified, our proposed wavelet tree structure is more accurate and efficient in classifying the frog calls when compared with Mel-scale (Figure.~\ref{fig:wpTree} and Figure.~\ref{fig:melTree}).
+In this chapter, a novel feature extraction method for frog call classification is developed using the adaptive frequency scaled wavelet packet decomposition. With segmented syllables, spectral peak track is first extracted from each syllable. Then, track duration, dominant frequency, and oscillation rate are calculated based on each track. Next, a k-means clustering algorithm is applied to the dominant frequency, which generates the frequency scale for WPD. Finally, a new feature set, AWSCCs, is calculated. Since the feature extraction method is developed based on the data itself, the wavelet packet tree varies according to the frog species to be classified. Compared with the Mel-scaled WPD tree, the proposed adaptive wavelet packet tree can better fit the dominant frequency distribution of the frog species to be classified. With the proposed frequency scale, the call characteristics of those frog species to be classified can be enhanced, while the background noise and calls from other animals will be suppressed. Therefore, the proposed feature sets can achieve a higher accuracy for the classification of frog calls than others. Meanwhile, since the frequency scale is calculated based on the dominant frequency of those frog species to be classified, our proposed wavelet tree structure is more accurate and efficient in classifying the frog calls when compared with Mel-scale (Figure~\ref{fig:wpTree} and Figure~\ref{fig:melTree}).
 
 
 The feature extraction algorithm is designed for classifying frog calls. For frog calls, the typical structure in a spectrogram is frequency contour (named spectral peak track in this chapter) which is within a given frequency range starting at a given time \citep{mellinger2011method}. For other organisms that have similar frequency contour structures such as the whistles of dolphins, and chirps of birds \citep{chen2006semi}, spectral peak tracks can also be extracted from the spectrograms of their calls. Based on those spectral peak tracks, dominant frequency can be calculated. For the subsequent analysis, the features can be calculated using the same process as described in this chapter. For those organisms without clear frequency contour structure, this proposed method can also be used by enhancing the frequency contour structure, which can be realised by applying a small window size and a large window overlap to the recording waveform. 

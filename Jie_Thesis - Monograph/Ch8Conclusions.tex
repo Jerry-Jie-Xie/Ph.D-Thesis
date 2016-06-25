@@ -41,7 +41,7 @@ To improve the anti-noise ability of cepstral features, wavelet packet decomposi
 Since most frog field recordings consist of multiple simultaneously vocalising frog species, both MIML and ML classification frameworks are first introduced to study frog calls. For MIML learning, a novel acoustic event detection algorithm is designed to segment acoustic events by using event filtering. Then, different MIML classifiers are evaluated together with various acoustic features based on the content and shape of the segmented events. The results show that MIML-RBF achieves the best classification results. 
 
 
-\textbf{4)}  \textit{Design a ML classification framework for frog call classification in low SNR recordings.} 
+\textbf{4)}  \textit{Design a ML classification framework for long-term monitoring of frogs in low SNR recordings.} 
 \\
 For an ML classification framework, acoustic event detection is first used to filter all the recordings to find those that have frog calls. Meanwhile, frog abundance is detected based on the shape and content of segmented acoustic events. Then, those recordings with frog calls are classified via ML learning. The feature representation used is a modified \textit{adaptive WPD sub-band cepstral coefficients feature}. Compared with MIML learning, ML learning can achieve a better classification performance, because the MIML learning results are greatly affected by the syllable segmentation results. Lastly, the correlation between the frog calling activity (frog abundance and frog species richness) and weather variables (mean temperature and rainfall) are studied.
 
@@ -81,8 +81,6 @@ Therefore, the algorithms we developed for frog call classification can be evalu
 
 
 \item Our developed frog call classification system aims to help ecologists to study frogs over larger spatial and temporal scales. However, there is still no a generic platform for running the frog calls recordings. It is necessary to develop a toolbox with an easy user interface for frog call classification, and then ecologists can conduct the analysis on their own. 
-
-
 We focus on efficacy in this research, however efficiency is also very important in big data analysis. For this purpose, the MATLAB code corresponding to feature extractors and classifiers needs to be optimised to perform real-time frog call classification in the field.
 
 
