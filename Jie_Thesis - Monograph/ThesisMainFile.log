@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  15 JUN 2016 11:07
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  6 JUL 2016 15:14
 entering extended mode
 **ThesisMainFile.tex
 
@@ -1475,28 +1475,28 @@ Missing character: There is no ™ in font ptmr7t!
 ndance1075.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/im
 age/Ch7/abundance1078.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - M
 onograph/image/Ch7/abundance1079.pdf>]
-<image/Ch7/richness1075.pdf, id=2626, 350.30875pt x 286.06876pt>
+<image/Ch7/richness1075.pdf, id=2625, 350.30875pt x 286.06876pt>
 File: image/Ch7/richness1075.pdf Graphic file (type pdf)
 
 <use image/Ch7/richness1075.pdf>
 Package pdftex.def Info: image/Ch7/richness1075.pdf used on input line 291.
 (pdftex.def)             Requested size: 136.5746pt x 111.53143pt.
 
-<image/Ch7/richness1078.pdf, id=2627, 350.30875pt x 286.06876pt>
+<image/Ch7/richness1078.pdf, id=2626, 350.30875pt x 286.06876pt>
 File: image/Ch7/richness1078.pdf Graphic file (type pdf)
 
 <use image/Ch7/richness1078.pdf>
 Package pdftex.def Info: image/Ch7/richness1078.pdf used on input line 296.
 (pdftex.def)             Requested size: 136.5746pt x 111.53143pt.
 
-<image/Ch7/richness1079.pdf, id=2628, 350.30875pt x 286.06876pt>
+<image/Ch7/richness1079.pdf, id=2627, 350.30875pt x 286.06876pt>
 File: image/Ch7/richness1079.pdf Graphic file (type pdf)
 
 <use image/Ch7/richness1079.pdf>
 Package pdftex.def Info: image/Ch7/richness1079.pdf used on input line 301.
 (pdftex.def)             Requested size: 136.5746pt x 111.53143pt.
 
-<image/Ch7/richnessSite.pdf, id=2629, 350.30875pt x 285.065pt>
+<image/Ch7/richnessSite.pdf, id=2628, 350.30875pt x 285.065pt>
 File: image/Ch7/richnessSite.pdf Graphic file (type pdf)
 
 <use image/Ch7/richnessSite.pdf>
@@ -1520,84 +1520,84 @@ Chapter 7.
 ] [98] [99]) [100]
 ("C:\Users\Jie\Documents\GitHub\Thesis\Jie_Thesis - Monograph\Appendix.tex"
 Appendix A.
-<image/Ch1/toad_wave.png, id=2693, 477.28313pt x 258.9675pt>
+<image/Ch1/toad_wave.png, id=2692, 477.28313pt x 258.9675pt>
 File: image/Ch1/toad_wave.png Graphic file (type png)
 
 <use image/Ch1/toad_wave.png>
 Package pdftex.def Info: image/Ch1/toad_wave.png used on input line 15.
 (pdftex.def)             Requested size: 128.03064pt x 85.35678pt.
 
-<image/Ch1/toad_spec.png, id=2694, 135.342pt x 86.067pt>
+<image/Ch1/toad_spec.png, id=2693, 135.342pt x 86.067pt>
 File: image/Ch1/toad_spec.png Graphic file (type png)
 
 <use image/Ch1/toad_spec.png>
 Package pdftex.def Info: image/Ch1/toad_spec.png used on input line 15.
 (pdftex.def)             Requested size: 128.0496pt x 85.36154pt.
 
-<image/Ch1/caerulea_wav.png, id=2695, 620.3175pt x 213.79875pt>
+<image/Ch1/caerulea_wav.png, id=2694, 620.3175pt x 213.79875pt>
 File: image/Ch1/caerulea_wav.png Graphic file (type png)
 
 <use image/Ch1/caerulea_wav.png>
 Package pdftex.def Info: image/Ch1/caerulea_wav.png used on input line 16.
 (pdftex.def)             Requested size: 128.03671pt x 85.35812pt.
 
-<image/Ch1/caerulea_spec.png, id=2696, 135.342pt x 89.6805pt>
+<image/Ch1/caerulea_spec.png, id=2695, 135.342pt x 89.6805pt>
 File: image/Ch1/caerulea_spec.png Graphic file (type png)
 
 <use image/Ch1/caerulea_spec.png>
 Package pdftex.def Info: image/Ch1/caerulea_spec.png used on input line 16.
 (pdftex.def)             Requested size: 128.0496pt x 85.35745pt.
 
-<image/Ch1/fallax_wav.png, id=2697, 606.01407pt x 209.28188pt>
+<image/Ch1/fallax_wav.png, id=2696, 606.01407pt x 209.28188pt>
 File: image/Ch1/fallax_wav.png Graphic file (type png)
 
 <use image/Ch1/fallax_wav.png>
 Package pdftex.def Info: image/Ch1/fallax_wav.png used on input line 17.
 (pdftex.def)             Requested size: 128.03421pt x 85.35583pt.
 
-<image/Ch1/fallax_spec.png, id=2698, 602.25pt x 210.03468pt>
+<image/Ch1/fallax_spec.png, id=2697, 602.25pt x 210.03468pt>
 File: image/Ch1/fallax_spec.png Graphic file (type png)
 
 <use image/Ch1/fallax_spec.png>
 Package pdftex.def Info: image/Ch1/fallax_spec.png used on input line 17.
 (pdftex.def)             Requested size: 128.03845pt x 85.35841pt.
 
-<image/Ch1/graci_wav.png, id=2699, 472.76625pt x 171.64125pt>
+<image/Ch1/graci_wav.png, id=2698, 472.76625pt x 171.64125pt>
 File: image/Ch1/graci_wav.png Graphic file (type png)
 
 <use image/Ch1/graci_wav.png>
 Package pdftex.def Info: image/Ch1/graci_wav.png used on input line 28.
 (pdftex.def)             Requested size: 128.03813pt x 85.35683pt.
 
-<image/Ch1/graci_spec.png, id=2700, 469.00218pt x 173.89969pt>
+<image/Ch1/graci_spec.png, id=2699, 469.00218pt x 173.89969pt>
 File: image/Ch1/graci_spec.png Graphic file (type png)
 
 <use image/Ch1/graci_spec.png>
 Package pdftex.def Info: image/Ch1/graci_spec.png used on input line 28.
 (pdftex.def)             Requested size: 128.03493pt x 85.35751pt.
 
-<image/Ch1/latop_wav.png, id=2701, 542.025pt x 212.29312pt>
+<image/Ch1/latop_wav.png, id=2700, 542.025pt x 212.29312pt>
 File: image/Ch1/latop_wav.png Graphic file (type png)
 
 <use image/Ch1/latop_wav.png>
 Package pdftex.def Info: image/Ch1/latop_wav.png used on input line 29.
 (pdftex.def)             Requested size: 128.03754pt x 85.35953pt.
 
-<image/Ch1/latop_spec.png, id=2702, 536.75531pt x 210.7875pt>
+<image/Ch1/latop_spec.png, id=2701, 536.75531pt x 210.7875pt>
 File: image/Ch1/latop_spec.png Graphic file (type png)
 
 <use image/Ch1/latop_spec.png>
 Package pdftex.def Info: image/Ch1/latop_spec.png used on input line 29.
 (pdftex.def)             Requested size: 128.03764pt x 85.35881pt.
 
-<image/Ch1/rubella_wav.png, id=2703, 402.00188pt x 222.07968pt>
+<image/Ch1/rubella_wav.png, id=2702, 402.00188pt x 222.07968pt>
 File: image/Ch1/rubella_wav.png Graphic file (type png)
 
 <use image/Ch1/rubella_wav.png>
 Package pdftex.def Info: image/Ch1/rubella_wav.png used on input line 30.
 (pdftex.def)             Requested size: 128.03595pt x 85.35692pt.
 
-<image/Ch1/rubella_spec.png, id=2704, 137.6415pt x 93.951pt>
+<image/Ch1/rubella_spec.png, id=2703, 137.6415pt x 93.951pt>
 File: image/Ch1/rubella_spec.png Graphic file (type png)
 
 <use image/Ch1/rubella_spec.png>
@@ -1622,112 +1622,112 @@ spec.png> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch
 1/rubella_wav.png> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph
 /image/Ch1/rubella_spec.png>]
 Appendix B.
-<image/Ch1/toad_jcu_wav.png, id=2719, 362.85562pt x 195.73125pt>
+<image/Ch1/toad_jcu_wav.png, id=2718, 362.85562pt x 195.73125pt>
 File: image/Ch1/toad_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/toad_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/toad_jcu_wav.png used on input line 52.
 (pdftex.def)             Requested size: 128.03673pt x 85.35744pt.
 
-<image/Ch1/toad_jcu_spec.png, id=2720, 357.58594pt x 193.47281pt>
+<image/Ch1/toad_jcu_spec.png, id=2719, 357.58594pt x 193.47281pt>
 File: image/Ch1/toad_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/toad_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/toad_jcu_spec.png used on input line 52.
 (pdftex.def)             Requested size: 128.03787pt x 85.35857pt.
 
-<image/Ch1/cyc_jcu_wav.png, id=2721, 362.85562pt x 216.81pt>
+<image/Ch1/cyc_jcu_wav.png, id=2720, 362.85562pt x 216.81pt>
 File: image/Ch1/cyc_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/cyc_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/cyc_jcu_wav.png used on input line 52.
 (pdftex.def)             Requested size: 128.03673pt x 85.35945pt.
 
-<image/Ch1/cyc_jcu_spec.png, id=2722, 144.8685pt x 93.294pt>
+<image/Ch1/cyc_jcu_spec.png, id=2721, 144.8685pt x 93.294pt>
 File: image/Ch1/cyc_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/cyc_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/cyc_jcu_spec.png used on input line 52.
 (pdftex.def)             Requested size: 128.04391pt x 85.36174pt.
 
-<image/Ch1/ter_jcu_wav.png, id=2723, 362.85562pt x 171.64125pt>
+<image/Ch1/ter_jcu_wav.png, id=2722, 362.85562pt x 171.64125pt>
 File: image/Ch1/ter_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/ter_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/ter_jcu_wav.png used on input line 52.
 (pdftex.def)             Requested size: 128.03673pt x 85.35683pt.
 
-<image/Ch1/ter_jcu_spec.png, id=2724, 355.3275pt x 169.38281pt>
+<image/Ch1/ter_jcu_spec.png, id=2723, 355.3275pt x 169.38281pt>
 File: image/Ch1/ter_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/ter_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/ter_jcu_spec.png used on input line 52.
 (pdftex.def)             Requested size: 128.03706pt x 85.3606pt.
 
-<image/Ch1/fallax_jcu_wav.png, id=2725, 362.10281pt x 170.88844pt>
+<image/Ch1/fallax_jcu_wav.png, id=2724, 362.10281pt x 170.88844pt>
 File: image/Ch1/fallax_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/fallax_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/fallax_jcu_wav.png used on input line 52.
 (pdftex.def)             Requested size: 128.0363pt x 85.36057pt.
 
-<image/Ch1/fallax_jcu_spec.png, id=2726, 361.35pt x 170.88844pt>
+<image/Ch1/fallax_jcu_spec.png, id=2725, 361.35pt x 170.88844pt>
 File: image/Ch1/fallax_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/fallax_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/fallax_jcu_spec.png used on input line 52.
 (pdftex.def)             Requested size: 128.03477pt x 85.36057pt.
 
-<image/Ch1/nasuta_jcu_wav.png, id=2727, 365.11406pt x 170.88844pt>
+<image/Ch1/nasuta_jcu_wav.png, id=2726, 365.11406pt x 170.88844pt>
 File: image/Ch1/nasuta_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/nasuta_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/nasuta_jcu_wav.png used on input line 66.
 (pdftex.def)             Requested size: 128.03696pt x 85.36057pt.
 
-<image/Ch1/nasuta_jcu_spec.png, id=2728, 359.84438pt x 168.63pt>
+<image/Ch1/nasuta_jcu_spec.png, id=2727, 359.84438pt x 168.63pt>
 File: image/Ch1/nasuta_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/nasuta_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/nasuta_jcu_spec.png used on input line 66.
 (pdftex.def)             Requested size: 128.0394pt x 85.35945pt.
 
-<image/Ch1/rothii_jcu_wav.png, id=2729, 362.10281pt x 167.12437pt>
+<image/Ch1/rothii_jcu_wav.png, id=2728, 362.10281pt x 167.12437pt>
 File: image/Ch1/rothii_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/rothii_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/rothii_jcu_wav.png used on input line 66.
 (pdftex.def)             Requested size: 128.0363pt x 85.35979pt.
 
-<image/Ch1/rothii_jcu_spec.png, id=2730, 361.35pt x 168.63pt>
+<image/Ch1/rothii_jcu_spec.png, id=2729, 361.35pt x 168.63pt>
 File: image/Ch1/rothii_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/rothii_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/rothii_jcu_spec.png used on input line 66.
 (pdftex.def)             Requested size: 128.03477pt x 85.35945pt.
 
-<image/Ch1/rubella_jcu_wav.png, id=2731, 361.35pt x 169.38281pt>
+<image/Ch1/rubella_jcu_wav.png, id=2730, 361.35pt x 169.38281pt>
 File: image/Ch1/rubella_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/rubella_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/rubella_jcu_wav.png used on input line 66.
 (pdftex.def)             Requested size: 128.03477pt x 85.3606pt.
 
-<image/Ch1/rubella_jcu_spec.png, id=2732, 358.33875pt x 171.64125pt>
+<image/Ch1/rubella_jcu_spec.png, id=2731, 358.33875pt x 171.64125pt>
 File: image/Ch1/rubella_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/rubella_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/rubella_jcu_spec.png used on input line 66.
 (pdftex.def)             Requested size: 128.03952pt x 85.35683pt.
 
-<image/Ch1/mimula_jcu_wav.png, id=2733, 361.35pt x 176.15813pt>
+<image/Ch1/mimula_jcu_wav.png, id=2732, 361.35pt x 176.15813pt>
 File: image/Ch1/mimula_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/mimula_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/mimula_jcu_wav.png used on input line 66.
 (pdftex.def)             Requested size: 128.03477pt x 85.35863pt.
 
-<image/Ch1/mimula_jcu_spec.png, id=2734, 358.33875pt x 174.6525pt>
+<image/Ch1/mimula_jcu_spec.png, id=2733, 358.33875pt x 174.6525pt>
 File: image/Ch1/mimula_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/mimula_jcu_spec.png>
@@ -1755,63 +1755,63 @@ spec.png> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch
 1/mimula_jcu_wav.png> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monogr
 aph/image/Ch1/mimula_jcu_spec.png>]
 Appendix C.
-<image/Ch1/1_signal.png, id=2745, 359.54324pt x 283.0575pt>
+<image/Ch1/1_signal.png, id=2744, 359.54324pt x 283.0575pt>
 File: image/Ch1/1_signal.png Graphic file (type png)
 
 <use image/Ch1/1_signal.png>
 Package pdftex.def Info: image/Ch1/1_signal.png used on input line 85.
 (pdftex.def)             Requested size: 128.03648pt x 99.58125pt.
 
-<image/Ch1/1_noise.png, id=2746, 359.54324pt x 283.0575pt>
+<image/Ch1/1_noise.png, id=2745, 359.54324pt x 283.0575pt>
 File: image/Ch1/1_noise.png Graphic file (type png)
 
 <use image/Ch1/1_noise.png>
 Package pdftex.def Info: image/Ch1/1_noise.png used on input line 85.
 (pdftex.def)             Requested size: 128.03648pt x 99.58125pt.
 
-<image/Ch1/2_signal.png, id=2747, 353.52075pt x 283.0575pt>
+<image/Ch1/2_signal.png, id=2746, 353.52075pt x 283.0575pt>
 File: image/Ch1/2_signal.png Graphic file (type png)
 
 <use image/Ch1/2_signal.png>
 Package pdftex.def Info: image/Ch1/2_signal.png used on input line 85.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/2_noise.png, id=2748, 353.52075pt x 283.0575pt>
+<image/Ch1/2_noise.png, id=2747, 353.52075pt x 283.0575pt>
 File: image/Ch1/2_noise.png Graphic file (type png)
 
 <use image/Ch1/2_noise.png>
 Package pdftex.def Info: image/Ch1/2_noise.png used on input line 85.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/3_signal.png, id=2749, 359.54324pt x 283.0575pt>
+<image/Ch1/3_signal.png, id=2748, 359.54324pt x 283.0575pt>
 File: image/Ch1/3_signal.png Graphic file (type png)
 
 <use image/Ch1/3_signal.png>
 Package pdftex.def Info: image/Ch1/3_signal.png used on input line 102.
 (pdftex.def)             Requested size: 128.03648pt x 99.58125pt.
 
-<image/Ch1/3_noise.png, id=2750, 359.54324pt x 283.0575pt>
+<image/Ch1/3_noise.png, id=2749, 359.54324pt x 283.0575pt>
 File: image/Ch1/3_noise.png Graphic file (type png)
 
 <use image/Ch1/3_noise.png>
 Package pdftex.def Info: image/Ch1/3_noise.png used on input line 102.
 (pdftex.def)             Requested size: 128.03648pt x 99.58125pt.
 
-<image/Ch1/4_signal.png, id=2751, 353.52075pt x 283.0575pt>
+<image/Ch1/4_signal.png, id=2750, 353.52075pt x 283.0575pt>
 File: image/Ch1/4_signal.png Graphic file (type png)
 
 <use image/Ch1/4_signal.png>
 Package pdftex.def Info: image/Ch1/4_signal.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/4_noise.png, id=2752, 353.52075pt x 283.0575pt>
+<image/Ch1/4_noise.png, id=2751, 353.52075pt x 283.0575pt>
 File: image/Ch1/4_noise.png Graphic file (type png)
 
 <use image/Ch1/4_noise.png>
 Package pdftex.def Info: image/Ch1/4_noise.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/5_signal.png, id=2753, 353.52075pt x 283.0575pt>
+<image/Ch1/5_signal.png, id=2752, 353.52075pt x 283.0575pt>
 File: image/Ch1/5_signal.png Graphic file (type png)
 
 <use image/Ch1/5_signal.png>
@@ -1822,42 +1822,42 @@ File: image/Ch1/5_signal.png Graphic file (type png)
 Package pdftex.def Info: image/Ch1/5_signal.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/6_signal.png, id=2754, 359.54324pt x 283.0575pt>
+<image/Ch1/6_signal.png, id=2753, 359.54324pt x 283.0575pt>
 File: image/Ch1/6_signal.png Graphic file (type png)
 
 <use image/Ch1/6_signal.png>
 Package pdftex.def Info: image/Ch1/6_signal.png used on input line 102.
 (pdftex.def)             Requested size: 128.03648pt x 99.58125pt.
 
-<image/Ch1/6_noise.png, id=2755, 353.52075pt x 283.0575pt>
+<image/Ch1/6_noise.png, id=2754, 353.52075pt x 283.0575pt>
 File: image/Ch1/6_noise.png Graphic file (type png)
 
 <use image/Ch1/6_noise.png>
 Package pdftex.def Info: image/Ch1/6_noise.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/7_signal.png, id=2756, 353.52075pt x 283.0575pt>
+<image/Ch1/7_signal.png, id=2755, 353.52075pt x 283.0575pt>
 File: image/Ch1/7_signal.png Graphic file (type png)
 
 <use image/Ch1/7_signal.png>
 Package pdftex.def Info: image/Ch1/7_signal.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/7_noise.png, id=2757, 353.52075pt x 283.0575pt>
+<image/Ch1/7_noise.png, id=2756, 353.52075pt x 283.0575pt>
 File: image/Ch1/7_noise.png Graphic file (type png)
 
 <use image/Ch1/7_noise.png>
 Package pdftex.def Info: image/Ch1/7_noise.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/8_signal.png, id=2758, 353.52075pt x 283.0575pt>
+<image/Ch1/8_signal.png, id=2757, 353.52075pt x 283.0575pt>
 File: image/Ch1/8_signal.png Graphic file (type png)
 
 <use image/Ch1/8_signal.png>
 Package pdftex.def Info: image/Ch1/8_signal.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/8_noise.png, id=2759, 359.54324pt x 283.0575pt>
+<image/Ch1/8_noise.png, id=2758, 359.54324pt x 283.0575pt>
 File: image/Ch1/8_noise.png Graphic file (type png)
 
 <use image/Ch1/8_noise.png>
@@ -1970,9 +1970,9 @@ ftware/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Jie/software/MiKTeX/
 fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Jie/software/MiKTeX/fonts/t
 ype1/urw/times/utmb8a.pfb><C:/Jie/software/MiKTeX/fonts/type1/urw/times/utmr8a.
 pfb><C:/Jie/software/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ThesisMainFile.pdf (146 pages, 9282054 bytes).
+Output written on ThesisMainFile.pdf (146 pages, 9281063 bytes).
 PDF statistics:
- 2999 PDF objects out of 3580 (max. 8388607)
+ 2998 PDF objects out of 3580 (max. 8388607)
  529 named destinations out of 1000 (max. 500000)
  1378 words of extra memory for PDF output out of 10000 (max. 10000000)
 
