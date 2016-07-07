@@ -225,7 +225,7 @@ where $\Delta$ denotes the symmetric difference between two instances, $N$ is th
 \textbf{2)} Ranking loss evaluates the average fraction of label pairs that are reversely ordered for the particular instance given by
 \begin{equation}
 rankingLoss = \frac{1}{N}\sum_{i=1}^{N}\frac{|D_{i}|}{|y_{i}||\bar{y_{i}}|}
-\end{equation}}
+\end{equation}
 where $D_{i}={(\lambda_{m},\lambda_{n})| f(x_{i}, \lambda_{m}) \leq f(x_{i}, \lambda_{n}), (\lambda_{m}, \lambda_{n}) \in y_{i} \times \hat{y_{i}}}$,
 while $\bar{y}$ denotes the complementary set of $y$ in $L$, and $L={\lambda_{1}, \lambda_{2}, \lambda_{3},..., \lambda_{Q}}$, $\lambda$ represents the label.
 \\
@@ -235,21 +235,21 @@ precision = \frac{1}{N}\sum_{i=1}^{N}\frac{h(x_{i}) \cap y_{i}}{|y_{i}|}
 \end{equation}
 \\
 \textbf{4)} One error evaluates how many times the top-ranked label is
-not in the set of relevant labels of the example. This evaluation metric is defined as
+not in the set of relevant labels of the instance. This evaluation metric is defined as
 
 \begin{equation}
 oneError = \frac{1}{N}\sum_{i=1}^{N}[[argmax_{\lambda \in y} f(x_{i},\lambda)] \not \in y_{i} ]
 \end{equation}
 \\
 \textbf{5)}
-Exampled based F1 is the average of the harmonic mean of instance-precision and instance-recall for every instance. The instance-precision is defined for an instance as the size of the intersection of the set of its predicted labels and the set of its ground truth labels divided by the size of the set of its predicted labels. The instance-recall is defined for an instance as the size of the intersection of the set of its predicted labels and the set of its ground truth labels divided by the size of the set of its ground truth labels.
+Exampled based $F_{1}$ is the average of the harmonic mean of instance-precision and instance-recall for every instance. The instance-precision is defined for an instance as the size of the intersection of the set of its predicted labels and the set of its ground truth labels divided by the size of the set of its predicted labels. The instance-recall is defined for an instance as the size of the intersection of the set of its predicted labels and the set of its ground truth labels divided by the size of the set of its ground truth labels.
 \begin{equation}
 macroF_{1}=\frac{1}{Q}\sum_{j=1}^{Q}\frac{2 \times p_{j} \times r_{j}}{p_{j}+r_{j}}
 \end{equation}
 where $p_{j}$ and $r_{j}$ are the precision and recall for all $\lambda_{h} \in h(x_{i})$ from $\lambda_{j} \in y_{j}$.
 \\
 \textbf{6)}
-Micro F1 is the harmonic mean of micro-precision and micro-recall, where micro-precision and micro-recall are the precision and the recall which are averaged over all instances and label pairs. 
+Micro $F_{1}$ is the harmonic mean of micro-precision and micro-recall, where micro-precision and micro-recall are the precision and the recall which are averaged over all instances and label pairs. 
 \begin{equation}
 microF_{1} = \frac{2 \times microPrecision \times microRecall}{microPrecision + microRecall}
 \end{equation}
@@ -257,14 +257,14 @@ microF_{1} = \frac{2 \times microPrecision \times microRecall}{microPrecision + 
 The values for Hamming loss, rank loss, one-error, coverage, and micro-AUC range from 0 to 1. For Hamming loss, Rank loss, one-error and coverage, 0 denotes the perfect result, and 1 means the wrong prediction of all labels over every instance, whereas for micro-AUD, the values
 have the completely opposite meanings. 
 
-The $\frac{positive}{negative}$ is defined as $1-Hamming loss$ and it is 0.818 for MIML-RBF with Mask descriptors (MD). MD and profile statistical (PS), and all features (AF) are put into the three classifiers, respectively. The accuracy measure for each MIML classifier is shown in Table \ref{tab:accuracy}. Here, the best classification accuracy is achieved by MIML-RBF using MD. For each classifier, the classification accuracy of MD is higher than PS and AF, which shows that the event shape has higher discrimination power than the event content. To give a concrete view of predictions, the results of five randomly selected recordings using MIML-RBF are shown in Table \ref{tab:prediction}. Recordings of No.1 and No.3 are accurately predicted. 
+The $\frac{positive}{negative}$ is defined as $1-hammingLoss$ and it is 0.818 for MIML-RBF with Mask descriptors (MD). MD and profile statistical (PS), and all features (AF) are put into the three classifiers, respectively. The accuracy measure for each MIML classifier is shown in Table \ref{tab:accuracy}. Here, the best classification accuracy is achieved using MIML-RBF with MD. For each classifier, the classification accuracy of MD is higher than PS and AF, which indicates that the event shape has a better discriminability than the event content. To give a concrete view of predictions, the results of five randomly selected recordings using MIML-RBF are shown in Table~\ref{tab:prediction}. From the table, we can see that recordings of No.1 and No.3 are accurately predicted. 
 
 
 
 
 \begin{table}[htb!]
 \centering
-\caption[Accuracy measure for MIML classifiers with different feature representations]{Accuracy measure for MIML classifiers with different feature representations. Here, $\downarrow$ indicates ‘the smaller the better’, while ‘$\uparrow$’ indicates ‘the bigger the better’.}
+\caption[Accuracy measure for MIML classifiers with different feature representations]{Accuracy measures for MIML classifiers with different feature representations. Here, $\downarrow$ indicates ‘the smaller the better’, while ‘$\uparrow$’ indicates ‘the bigger the better’.}
 \label{tab:accuracy}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lllllll}
@@ -303,10 +303,10 @@ AF (MD+PS)              & MIML-RBF        & 0.191              & 0.142          
 
 
 \section{Discussion}
-Since most recordings used in this chapter consist of multiple simultaneously vocalising frog species, the traditional single-instance single-label classification framework is no longer suitable. A novel framework for the classification of multiple simultaneous vocalising frog species in environmental recordings is proposed, which is adapted from \cite{briggs2012acoustic}, a study on birds. Differently from that work, this research designed a new acoustic event detection method for syllable segmentation rather than using a supervised learning algorithm. This was because there is a lack of lots of annotated frog recordings. As for the classification results, our proposed framework can achieve an acceptable classification accuracy. However, the classification results are highly affected by the AED results. 
+Since most recordings used in this chapter consist of multiple simultaneously vocalising frog species, the traditional single-instance single-label classification framework is no longer suitable. A novel framework for the classification of multiple simultaneous vocalising frog species in environmental recordings is proposed, which is adopted from \cite{briggs2012acoustic}, a study on birds. Differently from that work, this research designs a new acoustic event detection method for syllable segmentation rather than using a supervised learning algorithm. It is because there is a lack of lots of annotated frog recordings. As for the classification results, our proposed framework can achieve an acceptable classification accuracy. All the features used in this study are calculated from the segmented syllables. The accuracy of the segmentation results will therefore directly affects the final classification performance.
 
 
 \section{Summary and limitations}
-In this chapter, we propose a novel framework for the classification of multiple simultaneous vocalising frog species in environmental recordings. To the best of our knowledge, this is the first study that applies the MIML algorithm to frog calls. Since frogs tend to call simultaneously, the MIML algorithm is more suitable for dealing with those recordings than single-instance single-label classification. After applying an acoustic event detection algorithm to each 10s recording, each frog syllable is segmented. Then, three feature representations are calculated based on those segmented syllables. Finally, three MIML classifiers are used for the classification of frog calls with the best accuracy (81.8\% true positive/negatives). Future work will focus on the study of novel features and MIML classifiers for further improving the classification performance. Since current classification results are highly affected by the syllable segmentation results, to further improve the classification performance, one solution is to prepare an annotated dataset and change using supervised learning algorithm. Another is to use a different classification framework, which does not need the AED process.  
+In this chapter, we propose a novel framework for the classification of multiple simultaneous vocalising frog species in environmental recordings. To the best of our knowledge, this is the first study that focuses on the frog recordings using the MIML algorithm. Since frogs tend to call simultaneously, the MIML algorithm is more suitable for dealing with those recordings than single-instance single-label classification. After applying an acoustic event detection algorithm to 10-second recordings, frog syllables are segmented. Then, three feature representations, MD, PS, and AF, are calculated from those segmented syllables. Finally, three MIML classifiers are used for the classification of frog calls with the best true positive/negatives of 81.8\%. Future work will focus on the study of novel features and MIML classifiers to further improve the classification performance. Current classification results are highly affected by the syllable segmentation results, and the use of AED can not accurately segment all the syllables. One solution is to prepare an annotated dataset and apply supervised learning algorithms for the segmentation task. Another is to use a different classification framework, which does not need the segmentation process.  
 
 

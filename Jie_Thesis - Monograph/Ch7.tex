@@ -252,7 +252,7 @@ Experiment results are shown in Table~\ref{tab:classificationResults}.
 %\vspace{-1em}
 \begin{table}[htb!]
 \centering
-\caption[Classification results based on four feature sets and four multi-label learning algorithms.]{Classification results based on four feature sets and four multi-label learning algorithms. Here the methods for multi-label algorithms are in accordance to the name in the Meka software. The base classifier of all methods is decision tree. For a metric, the best value is in bold. Here, $\downarrow$ indicates ‘the smaller the better’, while ‘$\uparrow$’ indicates ‘the bigger the better’.}
+\caption[Classification results based on four feature sets and four multi-label learning algorithms.]{Classification results based on four feature sets and four multi-label learning algorithms. Here the methods for multi-label algorithms are in accordance to the name in the \textit{Meka} software. The base classifier of all methods is decision tree. For a metric, the best value is in bold. Here, $\downarrow$ indicates ‘the smaller the better’, while ‘$\uparrow$’ indicates ‘the bigger the better’.}
 \label{tab:classificationResults}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{llllllll}
@@ -312,6 +312,16 @@ Figure~\ref{fig:frogRichness} shows the frog species richness of the three selec
 	\label{fig:richnessSite}
 	\end{centering}
 \end{figure}
+
+
+
+\subsection{Comparison with MIML}
+In this chapter, ML learning is used to classify frog calls without syllable segmentation. Compared with the MIML learning (Table~\ref{tab:accuracy} in chapter \ref{cha:cha6MIML}), the ML classification has a better classification performance. Although extracting global features for the ML classification will lose some detailed information, most frog vocalisations can still be successfully described when using cepstral features.
+Compared with other features, global cepstral features are often calculated from each windowed signal. Then, the statistical results, such as mean and standard deviation, of all the windowed signals are calculated, this process will compress the information in the time domain but keep the information of the frequency domain. Since most frogs tend to continuously make calls, the compression of the time domain information will not greatly affect the discriminability of the ceptral features. In contrast, MIML classification needs to conduct the syllable segmentation before feature extraction. However, the use of AED often cannot accurately segment frog calls with low energies, which greatly affects the performance.
+
+
+
+
 
 
 \subsection{Statistical analysis}

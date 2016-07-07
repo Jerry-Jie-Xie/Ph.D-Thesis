@@ -94,7 +94,7 @@
 \contentsline {subsection}{\numberline {5.3.1}Parameter tuning}{81}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Classification}{82}{subsection.5.3.2}
 \contentsline {section}{\numberline {5.4}Discussion}{84}{section.5.4}
-\contentsline {section}{\numberline {5.5}Summary and limitations}{84}{section.5.5}
+\contentsline {section}{\numberline {5.5}Summary and limitations}{85}{section.5.5}
 \contentsline {chapter}{\numberline {6}Detecting frog calling activity based on acoustic event detection and multi-label learning}{87}{chapter.6}
 \contentsline {section}{\numberline {6.1}Overview}{87}{section.6.1}
 \contentsline {section}{\numberline {6.2}Materials and methods}{88}{section.6.2}
@@ -106,8 +106,9 @@
 \contentsline {subsection}{\numberline {6.3.1}Experiment setup}{94}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Frog abundance detection}{95}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Frog species richness analysis}{95}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Statistical analysis}{97}{subsection.6.3.4}
-\contentsline {section}{\numberline {6.4}Summary and limitations}{97}{section.6.4}
+\contentsline {subsection}{\numberline {6.3.4}Comparison with MIML}{96}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Statistical analysis}{97}{subsection.6.3.5}
+\contentsline {section}{\numberline {6.4}Summary and limitations}{98}{section.6.4}
 \contentsline {chapter}{\numberline {7}Conclusion and future work}{99}{chapter.7}
 \contentsline {section}{\numberline {7.1}Summary of contributions}{99}{section.7.1}
 \contentsline {section}{\numberline {7.2}Limitations and future work}{101}{section.7.2}
