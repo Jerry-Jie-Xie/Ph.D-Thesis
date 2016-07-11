@@ -46,6 +46,8 @@ S_{tf} = 20*log_{10}(A_{tf})
 where $A$ denotes the amplitude value, $t=0,...,T-1$ and $f=0,...,F-1$ represent time and frequency index, $T$ and $F$ are 256 frequency bins and 625 frames, respectively. 
 
 \subsection{Acoustic event detection for syllable segmentation}
+\label{Ch5:AEDmethod}
+
 The aim of acoustic event detection (AED) is to detect a specified acoustic event in audio data. In this chapter, we use AED for frog syllable segmentation. Since all the recordings are collected from the field, there are many overlapping vocal activities from different sources. Traditional methods for frog syllable segmentation are based on time domain information \cite{somervuo2004classification,huang2009frog}, which cannot address those recordings. Here, we modified the AED method developed by Towsey et al. \cite{towsey2012toolbox} for syllable segmentation. The detail of our AED method is described as follows:
 \\
 \textbf{Step 1:} Wiener filtering 
@@ -213,42 +215,44 @@ There are three modules, the parameters of which need to be discussed: signal pr
  
 %Five measures including Hamming loss, rank loss, one-error, coverage, and micro-AUC are used to characterize the accuracy of each algorithm \cite{zhou2008miml, dimou2009empirical}. The definition of each measure can be found in \cite{briggs2012acoustic}
 \subsection{Classification}
+
+\label{ch6:eveluationMetric}
 In this chapter, all the algorithms were programmed in Matlab 2014b. Each MIML algorithm is evaluated with five-fold cross-validation on the collection of 342 species-labelled recordings. 
-Five evaluation rules are used for comparing the performance with the combination of three feature representations and three ML algorithms: Hamming loss, Rank loss, Average precision, One error, Exampled based F1, and Micro F1 \citep{Madjarov20123084, zhou2008miml}. The value range of all five evaluation rules is between 0 to 1. The definition of each evaluation rule is described as follows:
+Five evaluation rules are used for comparing the performance with the combination of three feature representations and three ML algorithms: Hamming loss, Rank loss, Average precision, One error, Exampled based $F_{1}$, and Micro $F_{1}$ \citep{Madjarov20123084, zhou2008miml}. The value range of all five evaluation rules is between 0 to 1. The definition of each evaluation rule is described as follows:
 \\
-\textbf{1)} Hamming loss is defined as the fraction of labels that are incorrectly predicted for an instance and the normalised Hamming loss which is normalised over instances is reported. This metric is defined as
+\textbf{(1)} Hamming loss is defined as the fraction of labels that are incorrectly predicted for an instance and the normalised Hamming loss which is normalised over instances is reported. This metric is defined as
 \begin{equation}
 hammingLoss = \frac{1}{N}\sum_{i=1}^{N}\frac{1}{Q}|h(x_{i})\Delta y_{i})|
 \end{equation}
 where $\Delta$ denotes the symmetric difference between two instances, $N$ is the number of instances and $Q$ is the total number of possible labels. $y_{i}$ denotes the ground truth of instance $x_{i}$, and $h(x_{i})$ denotes the predictions for the same instance. 
 \\
-\textbf{2)} Ranking loss evaluates the average fraction of label pairs that are reversely ordered for the particular instance given by
+\textbf{(2)} Ranking loss evaluates the average fraction of label pairs that are reversely ordered for the particular instance given by
 \begin{equation}
 rankingLoss = \frac{1}{N}\sum_{i=1}^{N}\frac{|D_{i}|}{|y_{i}||\bar{y_{i}}|}
 \end{equation}
 where $D_{i}={(\lambda_{m},\lambda_{n})| f(x_{i}, \lambda_{m}) \leq f(x_{i}, \lambda_{n}), (\lambda_{m}, \lambda_{n}) \in y_{i} \times \hat{y_{i}}}$,
 while $\bar{y}$ denotes the complementary set of $y$ in $L$, and $L={\lambda_{1}, \lambda_{2}, \lambda_{3},..., \lambda_{Q}}$, $\lambda$ represents the label.
 \\
-\textbf{3)} Average precision is the average fraction of labels that are ranked higher than an actual label belonging to an instance. 
+\textbf{(3)} Average precision is the average fraction of labels that are ranked higher than an actual label belonging to an instance. 
 \begin{equation}
 precision = \frac{1}{N}\sum_{i=1}^{N}\frac{h(x_{i}) \cap y_{i}}{|y_{i}|}
 \end{equation}
 \\
-\textbf{4)} One error evaluates how many times the top-ranked label is
+\textbf{(4)} One error evaluates how many times the top-ranked label is
 not in the set of relevant labels of the instance. This evaluation metric is defined as
 
 \begin{equation}
 oneError = \frac{1}{N}\sum_{i=1}^{N}[[argmax_{\lambda \in y} f(x_{i},\lambda)] \not \in y_{i} ]
 \end{equation}
 \\
-\textbf{5)}
+\textbf{(5)}
 Exampled based $F_{1}$ is the average of the harmonic mean of instance-precision and instance-recall for every instance. The instance-precision is defined for an instance as the size of the intersection of the set of its predicted labels and the set of its ground truth labels divided by the size of the set of its predicted labels. The instance-recall is defined for an instance as the size of the intersection of the set of its predicted labels and the set of its ground truth labels divided by the size of the set of its ground truth labels.
 \begin{equation}
 macroF_{1}=\frac{1}{Q}\sum_{j=1}^{Q}\frac{2 \times p_{j} \times r_{j}}{p_{j}+r_{j}}
 \end{equation}
 where $p_{j}$ and $r_{j}$ are the precision and recall for all $\lambda_{h} \in h(x_{i})$ from $\lambda_{j} \in y_{j}$.
 \\
-\textbf{6)}
+\textbf{(6)}
 Micro $F_{1}$ is the harmonic mean of micro-precision and micro-recall, where micro-precision and micro-recall are the precision and the recall which are averaged over all instances and label pairs. 
 \begin{equation}
 microF_{1} = \frac{2 \times microPrecision \times microRecall}{microPrecision + microRecall}

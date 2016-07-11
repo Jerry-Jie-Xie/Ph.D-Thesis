@@ -15,7 +15,7 @@
 
 %
 
-\submissiondate{April 2016}
+\submissiondate{July 2016}
 \copyrightyear{2016}
 %\informationcutoffdate{01 March 2010} %for cut of date of information in the thesis
 
@@ -39,28 +39,32 @@ To my family
 
 %============abstract
 \begin{abstract}
-Rapid decreases in frog populations, which are regarded as one of the most critical threats to global biodiversity, have been spotted from locations around the world. Causes of these declines can be summarised as follows: disease, habitat destruction and modification, exploitation, pollution, pesticide use, introduced species, and ultraviolet-B radiation (UV-B). On the one hand frogs play an important role in the whole ecosystem, but on the other frog populations are declining globally. To assess frog populations and optimise frog protection policies, monitoring frogs is becoming ever more necessary. Since frogs are much easier to be heard than seen, frog populations are often assessed by their vocalisations. In order to collect frog vocalisations, traditional manual methods require ecologists and volunteers to visit the field, which limits the        
-scale for acoustic data collection. In contrast, recent advances in acoustic sensors provide a novel method to survey vocalising animals such as frogs. After deploying acoustic sensors in the field, they can automatically collect acoustic data at large spatial and temporal scales. The large volumes of raw acoustic data collected must be analysed to gain insights about frogs and the environment from the data. It has become very important to enable automated species identification in acoustic data. Also, since the data is collected from the field, the acoustic data tend to be very noisy and very often the desired signal (frog call) is weak. Very often, there are also multiple signals overlapping the frog calls. These characteristics pose a big challenge to performing automatic classification of frog species in acoustic data.
+Rapid decreases in frog populations, which are regarded as one of the most critical threats to global biodiversity, have been spotted from locations around the world. Causes of these declines can be summarised as follows: disease, habitat destruction and modification, exploitation, pollution, pesticide use, introduced species, and ultraviolet-B radiation (UV-B). On the one hand, frogs play an important role in the whole ecosystem, but on the other frog populations are declining globally. To assess frog populations and optimise frog protection policies, monitoring frogs is becoming ever more necessary. Since frogs are much easier to be heard than seen, frog populations are often assessed by their vocalisations. In order to collect frog vocalisations, traditional manual methods require ecologists and volunteers to visit the field, which limits the        
+scale for acoustic data collection. In contrast, recent advances in acoustic sensors provide a novel method to survey vocalising animals such as frogs. After deploying acoustic sensors in the field, they can automatically collect acoustic data at large spatial and temporal scales. The large volumes of raw acoustic data collected must be analysed to gain insights about frogs and the environment. It has become very important to enable automated species identification in acoustic data. Also, since the data is collected from the field, the acoustic data tend to be very noisy and very often the desired signal (frog call) is weak. Very often, there are also multiple signals overlapping the frog calls. These characteristics pose a big challenge to performing automatic classification of frog species in acoustic data.
 
 
 
 The research presented in this dissertation aims to investigate methods to build a robust and accurate classification prototype system for frog species in acoustic data. Two important aspects of a classification prototype system are investigated: feature extraction and classification, which consist of contributions towards three main objectives.
 \begin{enumerate} 
-\item[(1)]	Develop an enhanced feature representation for frog call classification. Time-frequency information of frog calls can be effectively represented via the enhanced representation of temporal, perceptual and cepstral features. The classification performance of various machine learning techniques is compared with different feature representations. Our proposed enhanced feature representation achieves the best classification accuracy which outperforms most previous studies.
+\item[(1)]	Develop an enhanced feature representation for frog call classification (Chapter \ref{cha:cha4EnhancedFeature}). 
+\\
+Time-frequency information of frog calls can be effectively represented via the enhanced representation of temporal, perceptual and cepstral features. The classification performance of various machine learning techniques is compared with different feature representations. Our proposed enhanced feature representation achieves a satisfied classification accuracy.
  
-\item[(2)]	Propose a novel feature representation based on adaptive wavelet packet decomposition. To better capture the frequency domain information of frog calls with a good anti-noise ability, a novel feature representation, namely \textit{adaptive frequency scaled wavelet packet decomposition sub-band cepstral coefficients}, is proposed. Compared with other cepstral coefficients, the proposed feature representation shows the best classification performance and a good anti-noise ability.
+\item[(2)]	Propose a novel feature representation based on adaptive wavelet packet decomposition (Chapter \ref{cha:cha5WaveletFeature}). 
+\\
+To better capture the frequency domain information of frog calls with a good anti-noise ability, a novel feature representation, namely \textit{adaptive frequency scaled wavelet packet decomposition sub-band cepstral coefficients}, is proposed. Compared with other cepstral coefficients, the proposed feature representation shows the best classification performance and a good anti-noise ability.
 
 \item[(3)]	Design a robust classification system to study low signal-to-noise ratio (SNR) recordings with multiple simultaneously vocalising frog species. Two classification frameworks are employed to classify multiple simultaneously vocalising frog species. 
 
 
 \begin{enumerate}
-\item Multiple-instance Multiple-label (MIML) learning
+\item Multiple-instance Multiple-label (MIML) learning (Chapter \ref{cha:cha6MIML})
 \\
 To use MIML learning for classifying multiple simultaneously vocalising frog species, individual syllables are first segmented. Then, various features are calculated from each segmented syllable. Next, a bag generator is applied to those extracted features to construct a suitable bag-of-syllable representation. Finally, three MIML learning algorithms are employed for the classification of frog vocalisations: MIML-SVM, MIML-KNN, and MIML-RBF. 
 
-\item Multiple-label (ML) learning
+\item Multiple-label (ML) learning (Chapter \ref{cha:cha7ML})
 \\
-For the ML learning, acoustic features are first calculated without segmentation. Then, ML learning is used to classify simultaneously vocalising frog species using extracted features. Three main ML learning methods are compared: Binary relevance, Classifier Chains, Random k-labelsets, where the base classifier is a decision tree classifier. Furthermore, the frog abundance and species richness over three months are calculated based on the results of acoustic event detection and ML classification, respectively. 
+For the ML learning, acoustic features are first calculated without segmentation. Then, ML learning is used to classify simultaneously vocalising frog species using extracted features. Three main ML learning methods are compared: Binary relevance, Classifier Chains, Random k-labelsets, where the base classifier is a decision tree classifier. Furthermore, the frog abundance and species richness over three months are estimated based on the results of acoustic event detection and ML classification, respectively. 
 Lastly, the correlation analysis between frog calling activity (frog abundance and species richness) and weather variables (mean temperature and rainfall) are studied to demonstrate the application of our proposed ML classification framework.
 \end{enumerate}
 

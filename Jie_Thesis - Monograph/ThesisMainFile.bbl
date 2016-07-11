@@ -331,6 +331,11 @@ Lee, C.-H., Chou, C.-H., Han, C.-C., and Huang, R.-Z. (2006).
   linear discriminant analysis.
 \newblock {\em Pattern Recognition Letters}, 27(2):93--101.
 
+\bibitem[Lei et~al., 2014]{lei2014content}
+Lei, B., Rahman, S.~A., and Song, I. (2014).
+\newblock Content-based classification of breath sound with enhanced features.
+\newblock {\em Neurocomputing}, 141:139--147.
+
 \bibitem[Litvin and Cohen, 2011]{barkWPDraey}
 Litvin, Y. and Cohen, I. (2011).
 \newblock Single-channel source separation of audio signals using bark scale
@@ -535,14 +540,6 @@ Xie, J., Towsey, M., Zhang, J., Dong, X., and Roe, P. (2015c).
 \newblock Application of image processing techniques for frog call
   classification.
 \newblock {\em International Conference on Image Processing}.
-
-\bibitem[Xie et~al., 2015d]{emr2015Xie}
-Xie, J., Towsey, M., Zhang, J., and Roe, P. (2015d).
-\newblock Image processing and classification procedure for the analysis of
-  australian frog vocalisations.
-\newblock In {\em Proceedings of the 2Nd International Workshop on
-  Environmental Multimedia Retrieval}, EMR '15, pages 15--20, Shanghai, China.
-  ACM.
 
 \bibitem[Xie et~al., 2016]{Xie2016}
 Xie, J., Towsey, M., Zhang, J., and Roe, P. (2016).

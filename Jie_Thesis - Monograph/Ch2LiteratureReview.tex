@@ -99,7 +99,8 @@ For frog calls, the basic elementary acoustic unit is a syllable, which is a con
   
 \begin{table}[htb!]
 \centering
-\caption[Summary of related work]{Summary of related work for frog syllable segmentation. Here, E denotes energy, ZCR denotes zero-crossing rate.}
+\caption[Summary of related work]{Summary of related work for frog syllable segmentation. Here, E denotes energy, ZCR denotes zero-crossing rate.
+Sequential means that syllables are segmented using the same sequence in the recordings.}
 \label{tab:segmentation}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lll}
@@ -121,7 +122,7 @@ For frog calls, the basic elementary acoustic unit is a syllable, which is a con
 
 \section{Acoustic features for frog call classification}
 \label{features}
-Developing effective acoustic features that show greater variation between rather than within species is important for achieving robust classification results \citep{Fox20081187}. For frog call classification, acoustic features can be classified into four categories: time domain and frequency domain features, time-frequency domain features, cepstral features, and other features. 
+Developing effective acoustic features that show greater variation between rather than within species is important for achieving robust classification results \citep{Fox20081187}. For frog call classification, acoustic features can be classified into five categories: time domain features, frequency domain features, time-frequency domain features, cepstral features, and other features. 
 
 \subsection{Time domain and frequency domain features for frog call classification}
 
@@ -140,7 +141,7 @@ To classify anurans into four genera, a three-parameter model was proposed based
 \subsection{Time-frequency features for frog call classification}
 
 For frog call classification, we often transform the one-dimensional signal into its two-dimensional time-frequency representation. Then, features based on the time-frequency representation can be calculated for classification.
-\cite{acevedo2009automated} developed two feature sets for automated animal classification. The first was minimum and maximum frequencies, call duration, and maximum power; the second was minimum and maximum frequencies, call duration, and frequency of maximum power in eight segments of duration. With two feature sets, three classifiers were used for the classification: linear discriminant analysis(LDA), decision tree and SVM. \cite{brandes2008feature} proposed a method for classifying animals using duration, maximum frequency, and frequency bandwidth, and with Hidden Markov Model (HMM) used as the classifier.  \cite{yen2002automatic} combined wavelet packet feature extraction and two different dimensionality reduction algorithms to produce the final feature vectors. Then, they adopted a neural network classifier for classification. \cite{grigg1996monitoring} developed a system to monitor the effect of the introduced Cane Toad on the frog population of Queensland. The classification was based on the local peaks in the spectrogram using Quinlan's machine learning system, C4.5. \cite{Brandes2006} proposed a method to classify frogs using central frequency, duration, and bandwidth with a Bayesian classifier. \cite{croker2012using} introduced a feature vector for detecting frogs with a similarity measure based on Euclidean distance. The feature vector consisted of dominant frequency, frequency difference between the lowest and dominant frequencies, frequency difference between the highest and dominant frequencies, time from the start of the sound to the peak volume, and time from the peak volume to the end of the sound. 
+\cite{acevedo2009automated} developed two feature sets for automated animal classification. The first was minimum and maximum frequencies, call duration, and maximum power; the second was minimum and maximum frequencies, call duration, and frequency of maximum power in eight segments of duration. With two feature sets, three classifiers were used for the classification: linear discriminant analysis(LDA), decision tree and SVM. \cite{brandes2008feature} proposed a method for classifying animal calls using duration, maximum frequency, and frequency bandwidth, and with Hidden Markov Model (HMM) used as the classifier. \cite{yen2002automatic} combined wavelet packet feature extraction and two different dimensionality reduction algorithms to produce the final feature vectors. Then, they adopted a neural network classifier for classification. \cite{grigg1996monitoring} developed a system to monitor the effect of the introduced Cane Toad on the frog population of Queensland. The classification was based on the local peaks in the spectrogram using Quinlan's machine learning system, C4.5. \cite{Brandes2006} proposed a method to classify frogs using central frequency, duration, and bandwidth with a Bayesian classifier. \cite{croker2012using} introduced a feature vector for detecting frogs with a similarity measure based on Euclidean distance. The feature vector consisted of dominant frequency, frequency difference between the lowest and dominant frequencies, frequency difference between the highest and dominant frequencies, time from the start of the sound to the peak volume, and time from the peak volume to the end of the sound. 
  
 
 
@@ -156,18 +157,18 @@ Besides time domain features, frequency domain features, time-frequency domain f
 \cite{wei2012distributed} proposed a distributed sparse approximation method based on $\ell 1$ minimization for frog call classification.  \cite{dang2008lightweight} extracted the vocalisation waveform envelope as features, then classified calls by matching the extracted envelope with the original signal envelope. \cite{kular2015classifying} treated the sound signal of a frog call as a texture image. Then, texture visual words and MFCCs were calculated as the features for frog call classification. 
 
 
-\begin{figure}[htb!]
-\centering
-      \begin{subfigure}[b]{0.5\textwidth}
-           \includegraphics[width=1\textwidth,height=0.75\textwidth]{image/LR/spectrogram.png}
-    \end{subfigure}%
-	~~
-	      \begin{subfigure}[b]{0.5\textwidth}
-           \includegraphics[width=1\textwidth,height=0.75\textwidth]{image/LR/segmentEvents.png}
-    \end{subfigure}%
-\caption[Acoustic event detection]{Original spectrogram and segmented events after applying acoustic event detection to the original spectrogram image.}
-\label{fig:evenets}       % Give a unique label
-\end{figure}
+%\begin{figure}[htb!]
+%\centering
+%      \begin{subfigure}[b]{0.5\textwidth}
+%           \includegraphics[width=1\textwidth,height=0.75\textwidth]{image/LR/spectrogram.png}
+%    \end{subfigure}%
+%	~~
+%	      \begin{subfigure}[b]{0.5\textwidth}
+%           \includegraphics[width=1\textwidth,height=0.75\textwidth]{image/LR/segmentEvents.png}
+%    \end{subfigure}%
+%\caption[Acoustic event detection]{Original spectrogram and segmented events after applying acoustic event detection to the original spectrogram image.}
+%\label{fig:evenets}       % Give a unique label
+%\end{figure}
 
 
 
@@ -206,9 +207,9 @@ Reference                         & Classifier             & Reference          
 \end{table}
 
 \section{MIML or ML learning for bioacoustic classification}
-To the best of this research's knowledge, there is still no paper that uses MIML or ML learning to focus on frog call classification. In contrast, some previous research has applied MIML or ML learning to study bird calls.
+To the best of this author's knowledge, there is still no paper that uses MIML or ML learning to focus on frog call classification. In contrast, some previous research has applied MIML or ML learning to study bird calls.
 
-For MIML learning, \citep{briggs2012acoustic} introduced the MIML classifiers for acoustic classification of multiple simultaneous bird species. In their method, a supervised learning classifier (random forest) was first employed for segmenting acoustic events. Then features were extracted from each segmented acoustic event. Before putting features into classifiers, a bag generator was used to construct a bag-level feature. Lastly, three MIML classifiers were experimentally evaluated: MIML-SVM (support vector machines Based Multi-Instance Multi-Label Learning Algorithm), MIML-RBF(MIML Radial Basis Function), and MIML-kNN (k-Nearest Neighbor Based Multi-Instance Multi-Label Learning Algorithm).
+For MIML learning, \citep{briggs2012acoustic} introduced the MIML classifiers for acoustic classification of multiple simultaneous bird species. In their method, a supervised learning classifier (random forest) was first employed for segmenting acoustic events. Then features were extracted from each segmented acoustic event. Before putting features into classifiers, a bag generator was used to construct a bag-level feature. Lastly, three MIML classifiers were experimentally evaluated: MIML-SVM (support vector machines Based Multi-Instance Multi-Label Learning Algorithm), MIML-RBF (MIML Radial Basis Function), and MIML-kNN (k-Nearest Neighbor Based Multi-Instance Multi-Label Learning Algorithm).
 \citep{dufour2013multi} used Mel-filter cepstral coefficients and three MIML classifiers to classify birds. To be specific, Mel-filter cepstral coefficients were first calculated for each frame. Then two new feature vectors were computed to represent longer segments.
 Lastly, three MIML classifiers were experimentally evaluated: MIML-RBF, MIML-kNN, and M3MIML (Maximum Margin Method for Multi-instance Multi-label Learning). 
 
@@ -223,7 +224,7 @@ neural network were used.
 
 
 \section{Experiment results with state-of-the-art methods}
-\label{experiment}
+\label{ch2:experiment}
 
 
 \subsection{Evaluation criteria}
@@ -361,12 +362,12 @@ For syllable segmentation, time domain features are more sensitive to background
 
 
 \subsection{Acoustic features}
-Most previous studies directly transplant features developed for speech recognition to analyse frog calls, which might not be suitable. For example, MFCCs, which are based on the calculation of a non-linear Mel-scale, are designed for studying speech. However, the Mel-scale is designed for the perceptual scale of pitches judged by listeners rather than frogs. The direct use of speech features will therefore restrict classification performance. 
+Most previous studies directly transplant features developed for speech recognition to analyse frog calls, which might not be suitable. For example, MFCCs, which are based on the calculation of a non-linear Mel-scale, are designed for studying speech. However, the Mel-scale is designed for the perceptual scale of pitches judged by human listeners rather than frogs. The direct use of speech features will therefore restrict classification performance. 
 
-Most frequency domain features are calculated by directly calculating the statistics over frames, which leads to the loss of temporal information. To add the temporal information of the feature set, time domain features can be combined with frequency domain features to achieve higher classification accuracy. Transforming audio data into its two-dimensional representation (such as a spectrogram) for quick visual analysis, has led to increasing attention being given to image processing techniques for automatically analysing animal calls. Image features are worth investigating for frog call classification. Sparse coding has been widely applied for feature extraction in other scaled bioacoustics studies \citep{glotin2013sparse, razik2015sparse}, which could be a potential direction for frog call classification.
+Most frequency domain features are calculated by directly calculating the statistics over frames, which leads to the loss of temporal information. To add the temporal information of the feature set, time domain features can be combined with frequency domain features to achieve higher classification accuracy. Transforming audio data into its two-dimensional representation (such as a spectrogram) for quick visual analysis, has led to increasing attention being given to image processing techniques for automatically analysing animal calls. Image features derived from spectrograms are worth investigating for frog call classification. Sparse coding has been widely applied for feature extraction in other scaled bioacoustics studies \citep{glotin2013sparse, razik2015sparse}, which could be a potential direction for frog call classification.
 
 \subsection{Classifiers}
-Almost all previous studies assume that each recording has only one frog species, and then an SISL classification framework is adopted to classify frog calls. However, recent advances in acoustic sensor techniques have collected large volumes of acoustic data that have multiple simultaneously vocalising frog species, because different frog species tend to call together to make a frog chorus (Figure~\ref{fig:label}). Based on this characteristic of frog call recordings, the classification problem can be naturally framed as an MIML classification or an ML classification problem rather than an SISL classification.
+Almost all previous studies assume that each recording has only one frog species, and then a SISL classification framework is adopted to classify frog calls. However, recent advances in acoustic sensor techniques have collected large volumes of acoustic data that have multiple simultaneously vocalising frog species, because different frog species tend to call together to make a frog chorus (Figure~\ref{fig:label}). Based on this characteristic of frog call recordings, the classification problem can be naturally framed as an MIML classification or an ML classification problem rather than an SISL classification.
 In previous studies, MIML learning and ML learning have been used to solve bioacoustic problems, but mainly focus on birds. In this thesis, MIML and ML learning will be investigated to study frog vocalisations.
 
 

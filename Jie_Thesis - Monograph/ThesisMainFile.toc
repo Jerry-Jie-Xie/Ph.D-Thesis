@@ -29,37 +29,37 @@
 \contentsline {subsection}{\numberline {2.3.3}Cepstral features for frog call classification}{21}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Other features for frog call classification}{21}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Classifiers}{22}{section.2.4}
-\contentsline {section}{\numberline {2.5}MIML or ML learning for bioacoustic classification}{23}{section.2.5}
+\contentsline {section}{\numberline {2.5}MIML or ML learning for bioacoustic classification}{22}{section.2.5}
 \contentsline {section}{\numberline {2.6}Experiment results with state-of-the-art methods}{24}{section.2.6}
 \contentsline {subsection}{\numberline {2.6.1}Evaluation criteria}{24}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Previous experimental results}{25}{subsection.2.6.2}
 \contentsline {section}{\numberline {2.7}Research gap in current literature}{25}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Database}{25}{subsection.2.7.1}
-\contentsline {subsection}{\numberline {2.7.2}Signal pre-processing}{27}{subsection.2.7.2}
-\contentsline {subsection}{\numberline {2.7.3}Acoustic features}{28}{subsection.2.7.3}
+\contentsline {subsection}{\numberline {2.7.2}Signal pre-processing}{25}{subsection.2.7.2}
+\contentsline {subsection}{\numberline {2.7.3}Acoustic features}{27}{subsection.2.7.3}
 \contentsline {subsection}{\numberline {2.7.4}Classifiers}{28}{subsection.2.7.4}
-\contentsline {section}{\numberline {2.8}Summary}{29}{section.2.8}
+\contentsline {section}{\numberline {2.8}Summary}{28}{section.2.8}
 \contentsline {chapter}{\numberline {3}Frog call classification based on enhanced features and machine learning algorithms}{31}{chapter.3}
 \contentsline {section}{\numberline {3.1}Overview}{31}{section.3.1}
 \contentsline {section}{\numberline {3.2}Architecture of the classification system for frog calls}{32}{section.3.2}
 \contentsline {subsection}{\numberline {3.2.1}Data description}{32}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Syllable segmentation based on an adaptive end point detection}{32}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Pre-processing}{35}{subsection.3.2.3}
-\contentsline {subsubsection}{Pre-emphasise}{36}{section*.26}
-\contentsline {subsubsection}{Windowing}{36}{section*.27}
+\contentsline {subsubsection}{Pre-emphasise}{36}{section*.25}
+\contentsline {subsubsection}{Windowing}{36}{section*.26}
 \contentsline {subsection}{\numberline {3.2.4}Feature extraction}{37}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Classifier description}{41}{subsection.3.2.5}
-\contentsline {subsubsection}{Linear discriminant analysis}{41}{section*.28}
-\contentsline {subsubsection}{K-nearest neighbour}{42}{section*.29}
-\contentsline {subsubsection}{Support vector machines}{43}{section*.30}
-\contentsline {subsubsection}{Random forest}{43}{section*.31}
-\contentsline {subsubsection}{Artificial neural network}{44}{section*.32}
+\contentsline {subsubsection}{Linear discriminant analysis}{41}{section*.27}
+\contentsline {subsubsection}{K-nearest neighbour}{42}{section*.28}
+\contentsline {subsubsection}{Support vector machines}{43}{section*.29}
+\contentsline {subsubsection}{Random forest}{43}{section*.30}
+\contentsline {subsubsection}{Artificial neural network}{44}{section*.31}
 \contentsline {section}{\numberline {3.3}Experiment results}{45}{section.3.3}
-\contentsline {subsection}{\numberline {3.3.1}Effects of different machine learning techniques}{45}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Effects of different feature sets}{46}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.1}Effects of different feature sets}{45}{subsection.3.3.1}
+\contentsline {subsection}{\numberline {3.3.2}Effects of different machine learning techniques}{46}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Effects of different window size for MFCCs and perceptual features}{46}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Effects of noise}{47}{subsection.3.3.4}
-\contentsline {section}{\numberline {3.4}Discussion}{49}{section.3.4}
+\contentsline {section}{\numberline {3.4}Discussion}{48}{section.3.4}
 \contentsline {section}{\numberline {3.5}Summary and limitations}{49}{section.3.5}
 \contentsline {chapter}{\numberline {4}Adaptive frequency scaled wavelet packet decomposition for frog call classification}{51}{chapter.4}
 \contentsline {section}{\numberline {4.1}Overview}{51}{section.4.1}
@@ -67,53 +67,51 @@
 \contentsline {subsection}{\numberline {4.2.1}Sound recording and pre-processing}{52}{subsection.4.2.1}
 \contentsline {subsection}{\numberline {4.2.2}Spectrogram analysis for validation set}{53}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Syllable segmentation}{54}{subsection.4.2.3}
-\contentsline {subsection}{\numberline {4.2.4}Spectral peak track extraction}{56}{subsection.4.2.4}
+\contentsline {subsection}{\numberline {4.2.4}Spectral peak track extraction}{55}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}Syllable SPT features}{58}{subsection.4.2.5}
 \contentsline {subsection}{\numberline {4.2.6}Wavelet packet decomposition}{59}{subsection.4.2.6}
 \contentsline {subsection}{\numberline {4.2.7}WPD based on an adaptive frequency scale}{60}{subsection.4.2.7}
 \contentsline {subsection}{\numberline {4.2.8}Feature extraction based on adaptive frequency scaled WPD}{60}{subsection.4.2.8}
-\contentsline {subsection}{\numberline {4.2.9}Classification}{64}{subsection.4.2.9}
-\contentsline {subsubsection}{k-nearest neighbours}{64}{section*.49}
-\contentsline {subsubsection}{Support vector machines}{64}{section*.50}
-\contentsline {section}{\numberline {4.3}Experiment result and discussion}{65}{section.4.3}
-\contentsline {subsection}{\numberline {4.3.1}Parameter tuning}{65}{subsection.4.3.1}
-\contentsline {subsection}{\numberline {4.3.2}Feature evaluation}{66}{subsection.4.3.2}
-\contentsline {subsection}{\numberline {4.3.3}Comparison between different feature sets}{66}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Comparison under different SNRs}{70}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Feature evaluation using the real world recordings}{71}{subsection.4.3.5}
-\contentsline {section}{\numberline {4.4}Summary and limitations}{72}{section.4.4}
-\contentsline {chapter}{\numberline {5}Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}{75}{chapter.5}
-\contentsline {section}{\numberline {5.1}Overview}{75}{section.5.1}
-\contentsline {section}{\numberline {5.2}Materials and methods}{76}{section.5.2}
-\contentsline {subsection}{\numberline {5.2.1}Materials}{76}{subsection.5.2.1}
-\contentsline {subsection}{\numberline {5.2.2}Signal processing}{77}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Acoustic event detection for syllable segmentation}{77}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Feature extraction}{81}{subsection.5.2.4}
-\contentsline {subsection}{\numberline {5.2.5}Multiple-instance multiple-label classifiers}{81}{subsection.5.2.5}
-\contentsline {section}{\numberline {5.3}Experiment results}{81}{section.5.3}
-\contentsline {subsection}{\numberline {5.3.1}Parameter tuning}{81}{subsection.5.3.1}
-\contentsline {subsection}{\numberline {5.3.2}Classification}{82}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Discussion}{84}{section.5.4}
-\contentsline {section}{\numberline {5.5}Summary and limitations}{85}{section.5.5}
-\contentsline {chapter}{\numberline {6}Detecting frog calling activity based on acoustic event detection and multi-label learning}{87}{chapter.6}
-\contentsline {section}{\numberline {6.1}Overview}{87}{section.6.1}
-\contentsline {section}{\numberline {6.2}Materials and methods}{88}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Acquisition of frog call recordings}{88}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Frog abundance monitoring}{89}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Wavelet-based feature extraction for species richness analysis}{91}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Multi-label classification for species richness analysis}{94}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Experiment results}{94}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Experiment setup}{94}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Frog abundance detection}{95}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Frog species richness analysis}{95}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Comparison with MIML}{96}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Statistical analysis}{97}{subsection.6.3.5}
-\contentsline {section}{\numberline {6.4}Summary and limitations}{98}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusion and future work}{99}{chapter.7}
-\contentsline {section}{\numberline {7.1}Summary of contributions}{99}{section.7.1}
-\contentsline {section}{\numberline {7.2}Limitations and future work}{101}{section.7.2}
-\contentsline {chapter}{\numberline {A}Waveform, spectrogram and SNR of frog species from David Stewart's CD}{103}{appendix.H}
-\contentsline {chapter}{\numberline {B}Waveform, spectrogram and SNR of six frog species from JCU recordings}{105}{appendix.I}
-\contentsline {chapter}{\numberline {C}Power spectral density (PSD) estimate of signal and noise (JCU recordings)}{107}{appendix.J}
-\contentsline {chapter}{\numberline {D}Confidence interval of signal and noise}{109}{appendix.K}
-\contentsline {chapter}{References}{119}{appendix*.83}
+\contentsline {subsection}{\numberline {4.2.9}Classification}{63}{subsection.4.2.9}
+\contentsline {section}{\numberline {4.3}Experiment result and discussion}{64}{section.4.3}
+\contentsline {subsection}{\numberline {4.3.1}Parameter tuning}{64}{subsection.4.3.1}
+\contentsline {subsection}{\numberline {4.3.2}Feature evaluation}{65}{subsection.4.3.2}
+\contentsline {subsection}{\numberline {4.3.3}Comparison between different feature sets}{65}{subsection.4.3.3}
+\contentsline {subsection}{\numberline {4.3.4}Comparison under different SNRs}{68}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Feature evaluation using the real world recordings}{70}{subsection.4.3.5}
+\contentsline {section}{\numberline {4.4}Summary and limitations}{71}{section.4.4}
+\contentsline {chapter}{\numberline {5}Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}{73}{chapter.5}
+\contentsline {section}{\numberline {5.1}Overview}{73}{section.5.1}
+\contentsline {section}{\numberline {5.2}Materials and methods}{74}{section.5.2}
+\contentsline {subsection}{\numberline {5.2.1}Materials}{74}{subsection.5.2.1}
+\contentsline {subsection}{\numberline {5.2.2}Signal processing}{75}{subsection.5.2.2}
+\contentsline {subsection}{\numberline {5.2.3}Acoustic event detection for syllable segmentation}{75}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Feature extraction}{79}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Multiple-instance multiple-label classifiers}{79}{subsection.5.2.5}
+\contentsline {section}{\numberline {5.3}Experiment results}{79}{section.5.3}
+\contentsline {subsection}{\numberline {5.3.1}Parameter tuning}{79}{subsection.5.3.1}
+\contentsline {subsection}{\numberline {5.3.2}Classification}{80}{subsection.5.3.2}
+\contentsline {section}{\numberline {5.4}Discussion}{82}{section.5.4}
+\contentsline {section}{\numberline {5.5}Summary and limitations}{83}{section.5.5}
+\contentsline {chapter}{\numberline {6}Detecting frog calling activity based on acoustic event detection and multi-label learning}{85}{chapter.6}
+\contentsline {section}{\numberline {6.1}Overview}{85}{section.6.1}
+\contentsline {section}{\numberline {6.2}Materials and methods}{86}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Acquisition of frog call recordings}{86}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Frog abundance monitoring}{87}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Wavelet-based feature extraction for species richness analysis}{89}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Multi-label classification for species richness analysis}{90}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Experiment results}{91}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Experiment setup}{91}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Frog abundance detection}{91}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Frog species richness analysis}{92}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.4}Comparison with MIML}{93}{subsection.6.3.4}
+\contentsline {subsection}{\numberline {6.3.5}Statistical analysis}{94}{subsection.6.3.5}
+\contentsline {section}{\numberline {6.4}Summary and limitations}{94}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusion and future work}{97}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary of contributions}{97}{section.7.1}
+\contentsline {section}{\numberline {7.2}Limitations and future work}{99}{section.7.2}
+\contentsline {chapter}{\numberline {A}Waveform, spectrogram and SNR of frog species from David Stewart's CD}{101}{appendix.H}
+\contentsline {chapter}{\numberline {B}Waveform, spectrogram and SNR of six frog species from JCU recordings}{103}{appendix.I}
+\contentsline {chapter}{\numberline {C}Power spectral density (PSD) estimate of signal and noise (JCU recordings)}{105}{appendix.J}
+\contentsline {chapter}{\numberline {D}Confidence interval of signal and noise}{107}{appendix.K}
+\contentsline {chapter}{References}{117}{appendix*.80}
