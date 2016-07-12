@@ -77,9 +77,9 @@
 \contentsline {subsection}{\numberline {4.3.1}Parameter tuning}{64}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Feature evaluation}{65}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Comparison between different feature sets}{65}{subsection.4.3.3}
-\contentsline {subsection}{\numberline {4.3.4}Comparison under different SNRs}{68}{subsection.4.3.4}
-\contentsline {subsection}{\numberline {4.3.5}Feature evaluation using the real world recordings}{70}{subsection.4.3.5}
-\contentsline {section}{\numberline {4.4}Summary and limitations}{71}{section.4.4}
+\contentsline {subsection}{\numberline {4.3.4}Comparison under different SNRs}{69}{subsection.4.3.4}
+\contentsline {subsection}{\numberline {4.3.5}Feature evaluation using the real world recordings}{69}{subsection.4.3.5}
+\contentsline {section}{\numberline {4.4}Summary and limitations}{70}{section.4.4}
 \contentsline {chapter}{\numberline {5}Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}{73}{chapter.5}
 \contentsline {section}{\numberline {5.1}Overview}{73}{section.5.1}
 \contentsline {section}{\numberline {5.2}Materials and methods}{74}{section.5.2}
