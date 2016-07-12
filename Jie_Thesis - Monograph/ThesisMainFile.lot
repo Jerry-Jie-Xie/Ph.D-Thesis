@@ -17,18 +17,18 @@
 \contentsline {table}{\numberline {4.8}{\ignorespaces Classification accuracy (\%) for classifying different number of frog species with four feature sets.\relax }}{69}{table.caption.55}
 \contentsline {table}{\numberline {4.9}{\ignorespaces Classification accuracy using the JCU recordings.\relax }}{70}{table.caption.57}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Accuracy measure for MIML classifiers with different feature representations}}{82}{table.caption.63}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Example predictions with MIML-RBF.\relax }}{82}{table.caption.64}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Acoustic parameters of eight frog species averaged for ten randomly selected syllables}}{75}{table.caption.59}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Accuracy measure for MIML classifiers with different feature representations}}{81}{table.caption.64}
+\contentsline {table}{\numberline {5.3}{\ignorespaces Example predictions with MIML-RBF.\relax }}{82}{table.caption.65}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Acoustic parameters of eight frog species averaged for ten randomly selected syllables}}{87}{table.caption.66}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Classification results based on four feature sets and four multi-label learning algorithms.}}{93}{table.caption.69}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Classification results based on four feature sets and four multi-label learning algorithms.}}{92}{table.caption.69}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Waveform, spectrogram, and SNR of CD}}{101}{table.caption.72}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Waveform, spectrogram, and SNR of CD}}{99}{table.caption.72}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Waveform, spectrogram, and SNR of JCU recordings}}{103}{table.caption.74}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Waveform, spectrogram, and SNR of JCU recordings}}{101}{table.caption.74}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {C.1}{\ignorespaces PSD of JCU recordings}}{105}{table.caption.76}
+\contentsline {table}{\numberline {C.1}{\ignorespaces PSD of JCU recordings}}{103}{table.caption.76}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {D.1}{\ignorespaces Confidence interval for CD recordings}}{107}{table.caption.78}
-\contentsline {table}{\numberline {D.2}{\ignorespaces Confidence interval for JCU recordings}}{107}{table.caption.79}
+\contentsline {table}{\numberline {D.1}{\ignorespaces Confidence interval for CD recordings}}{105}{table.caption.78}
+\contentsline {table}{\numberline {D.2}{\ignorespaces Confidence interval for JCU recordings}}{105}{table.caption.79}

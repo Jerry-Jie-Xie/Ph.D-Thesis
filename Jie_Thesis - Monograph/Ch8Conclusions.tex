@@ -43,7 +43,7 @@ Since most frog field recordings consist of multiple simultaneously vocalising f
 
 \textbf{4)}  \textit{Design a ML classification framework for long-term monitoring of frogs in low SNR recordings.} 
 \\
-For an ML classification framework, acoustic event detection is first used to filter all the recordings to find those that have frog calls. Meanwhile, frog abundance is detected based on the shape and content of segmented acoustic events. Then, those recordings with frog calls are classified via ML learning. The feature representation used is a modified \textit{adaptive WPD sub-band cepstral coefficients feature}. Compared with MIML learning, ML learning can achieve a better classification performance, because the MIML learning results are greatly affected by the syllable segmentation results. Lastly, the correlation between the frog calling activity (frog abundance and frog species richness) and weather variables (mean temperature and rainfall) are studied.
+For an ML classification framework, acoustic event detection is first used to filter out those recordings without frog calls. Meanwhile, frog calling activity is estimated based on the shape and content of segmented acoustic events. Then, those recordings with frog calls are classified via ML learning. The feature representation used is a modified \textit{adaptive WPD sub-band cepstral coefficients feature}. Compared with MIML learning, ML learning can achieve better classification performance, because the MIML learning results are greatly affected by the syllable segmentation process. Lastly, the correlation between frog calling activity/species richness and weather variables (mean temperature and rainfall) are studied.
 
 % \end{itemize}
 

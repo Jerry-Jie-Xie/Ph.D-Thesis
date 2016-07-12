@@ -86,16 +86,16 @@
 \BOOKMARK [2][-]{subsection.5.3.2}{Classification}{section.5.3}% 86
 \BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 87
 \BOOKMARK [1][-]{section.5.5}{Summary and limitations}{chapter.5}% 88
-\BOOKMARK [0][-]{chapter.6}{Detecting frog calling activity based on acoustic event detection and multi-label learning}{}% 89
+\BOOKMARK [0][-]{chapter.6}{Estimating frog calling activity and species richness based on acoustic event detection and multi-label learning}{}% 89
 \BOOKMARK [1][-]{section.6.1}{Overview}{chapter.6}% 90
 \BOOKMARK [1][-]{section.6.2}{Materials and methods}{chapter.6}% 91
 \BOOKMARK [2][-]{subsection.6.2.1}{Acquisition of frog call recordings}{section.6.2}% 92
-\BOOKMARK [2][-]{subsection.6.2.2}{Frog abundance monitoring}{section.6.2}% 93
+\BOOKMARK [2][-]{subsection.6.2.2}{Frog calling activity estimation}{section.6.2}% 93
 \BOOKMARK [2][-]{subsection.6.2.3}{Wavelet-based feature extraction for species richness analysis}{section.6.2}% 94
-\BOOKMARK [2][-]{subsection.6.2.4}{Multi-label classification for species richness analysis}{section.6.2}% 95
+\BOOKMARK [2][-]{subsection.6.2.4}{Multi-label classification for species richness estimation}{section.6.2}% 95
 \BOOKMARK [1][-]{section.6.3}{Experiment results}{chapter.6}% 96
 \BOOKMARK [2][-]{subsection.6.3.1}{Experiment setup}{section.6.3}% 97
-\BOOKMARK [2][-]{subsection.6.3.2}{Frog abundance detection}{section.6.3}% 98
+\BOOKMARK [2][-]{subsection.6.3.2}{Frog calling activity detection}{section.6.3}% 98
 \BOOKMARK [2][-]{subsection.6.3.3}{Frog species richness analysis}{section.6.3}% 99
 \BOOKMARK [2][-]{subsection.6.3.4}{Comparison with MIML}{section.6.3}% 100
 \BOOKMARK [2][-]{subsection.6.3.5}{Statistical analysis}{section.6.3}% 101

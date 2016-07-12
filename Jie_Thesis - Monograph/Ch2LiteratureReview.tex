@@ -234,7 +234,7 @@ Accuracy is the most widely used statistical criterion for evaluating frog call 
 (2) TN: correctly recognised negatives;
 (3) FN: positives recognised as negatives;
 (4) FP: negatives recognised as positives.
-Then, accuracy, precision, recall (sensitivity), and specificity can be defined as follows.
+Then, accuracy, precision, recall (sensitivity), specificity, and false positive rate can be defined as follows.
 
 \begin{equation}
 Accuracy = \frac{TP+TN}{TP+TN+FP+FN}
@@ -252,6 +252,9 @@ Recall = \frac{TP}{TP+FN}
 Specificity = \frac{TN}{FP+TN}
 \end{equation}
 
+\begin{equation}
+FPR = \frac{FP}{FP+TN}
+\end{equation}
 
 \subsection{Previous experimental results}
 
