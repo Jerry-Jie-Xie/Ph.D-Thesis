@@ -51,7 +51,7 @@ The reasons for using those two datasets are listed as follows.
 
 
 Compared with audio data collected in the laboratories and quiet places (such as on David Stewart’s CD), environmental recordings are normally collected under unconstrained noisy conditions (such as JCU recordings). Consequently, the noise and variability issues need to be considered when coping with environmental audio data. 
-In terms of the background noise, there are a wide variety of non-biological noises and a variety of animal sounds in the environmental recordings. These non-biological noises often come from different sources: rain, wind, human activities (e.g. traffic noise). Besides non-biological noises, many competitive animal sounds (e.g. birds when we are interested in frogs) are also recorded in the environmental recordings. The signal-to-noise ratio (SNR) of CD recordings and JCU recordings are listed in 
+In terms of the background noise, there are a wide variety of non-biological noises and a variety of animal sounds in environmental recordings. These non-biological noises often come from different sources: rain, wind, human activities (e.g. traffic noise). Besides non-biological noises, many competitive animal sounds (e.g. birds when we are interested in frogs) are also recorded in the environmental recordings. The signal-to-noise ratio (SNR) of CD recordings and JCU recordings are listed in 
 Table~\ref{tab:wav_spec_cd} and Table~\ref{tab:JCU_para}. 
 
 
@@ -215,17 +215,17 @@ This thesis aims to investigate techniques for robust and effective classificati
 
 \item 	To develop robust feature extraction methods for frog call classification in low SNR recordings 
 
-\item   To investigate machine learning techniques (MIML learning and ML learning) to tackle the frog call classification problem in low SNR recordings
+\item   To investigate machine learning techniques (multiple-instance multiple-label (MIML) learning and multiple-label (ML) learning) to tackle the frog call classification problem in low SNR recordings
 
 \end{enumerate}
  
  
  
 \section{Significance and contributions}
-Due to the development of sensor techniques, acoustic sensors have been widely deployed in the field for surveying vocalising animals. Different from recordings collected in the constrained environment, recordings collected in the field often have low SNR and consist of multiple simultaneous vocalising frog species. In this dissertation, firstly the high SNR recordings are investigated to further improve the classification performance of frog recordings with high SNR. 
-Then, those features that can be used for studying frog calls in high SNR recordings are developed or adapted for analysing low SNR recordings for further analysis.
-Since field recordings often consist of multiple simultaneous vocalising frog species, both MIML and ML learning are used for the classification of those low SNR field recordings. Meanwhile, the frog calling activity can also be monitored based on the MIML and ML classification results.
-With the frog call classification framework developed, ecologists can then monitor frogs by collecting audio data. This will enable frog monitoring over large areas and long periods of time, and significantly reduce the expert labour cost for monitoring frog calling activity of a particular area. The monitoring result can also help reveal the importance of environmental protection, which can be achieved via studying the correlation between the frog calling activity and weather variables. 
+Due to the development of sensor techniques, acoustic sensors have been widely deployed in the field for surveying vocalising animals. Different from recordings collected in the constrained environment, recordings collected in the field often have a low SNR and contain multiple simultaneous vocalising frog species. In this dissertation, the performance of classifying frog species in high SNR recordings is investigated to be further improved.
+Then, features that can be used for studying frog calls in high SNR recordings are developed or adapted for analysing low SNR recordings.
+Since field recordings often consist of multiple simultaneous vocalising frog species, both MIML and ML learning are used for the classification of frog species in low SNR field recordings. Meanwhile, both frog calling activity and species can be monitored over long-term using our proposed classification framework.
+Further more, ecologists can monitor frogs by collecting audio data with the developed frog call classification framework, which will enable frog monitoring over large areas and long periods of time, and significantly reduce the expert labour cost for monitoring frog calling activity of a particular area. The monitoring results can also help reveal the importance of environmental protection, which can be achieved via studying the correlation between the frog calling activity/species richness and weather variables. 
 
 Below is a list of the publications arising from this PhD research.
 
@@ -239,8 +239,6 @@ Below is a list of the publications arising from this PhD research.
 \item  \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul, Frog call classification based on enhanced features and machine learning algorithms, Applied Acoustics, Volume 113, June 2016, pp. 193-201.
 
 This work corresponds to Chapter \ref{cha:cha4EnhancedFeature} in this thesis, which presented an enhanced feature representation for frog call classification using various machine learning algorithms.
-
-
 
 \item	\textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul (2016) Adaptive frequency scaled wavelet packet decomposition for frog call classification.  Ecological Informatics, Volume 32, pp. 134-144.
 
@@ -330,10 +328,12 @@ Detailed description of each chapter is shown below:
 \item  Chapter \ref{cha:cha5WaveletFeature} discusses wavelet analysis for frog call classification. According to the conclusion from Chapter \ref{cha:cha4EnhancedFeature}, it is found that a ceptral feature can achieve higher classification accuracy compared with temporal and perceptual features but it is very sensitive to the background noise. Consequently, in this research, a novel cepstral feature representation has been designed with wavelet packet decomposition that has both high classification performance and a good anti-noise ability. It is because this research will move to low SNR recordings from high SNR recordings, rather than only focusing on the low SNR recordings.
 
 
-\item  Chapter \ref{cha:cha6MIML} discusses the use of multiple-instance multiple-label framework for frog call classification. To cope with low SNR recordings with multiple simultaneously vocalising frog species, the traditional single-instance single-label classification framework is no longer suitable. Therefore, this research tries to adopt other classification frameworks such as MIML learning and ML learning. MIML learning is presented in this chapter. A MIML classification framework is adopted for studying frogs. Frog syllables are detected using a supervised learning algorithm, which needs lots of annotated data. However, in this study there is a lack of those annotated frog recordings. An unsupervised learning method is developed to segment syllables, which is named \textit{acoustic event detection (AED)}. Then, three MIML learning classifiers are evaluated with extracted features from each syllable after applying a bagging algorithm. The classification performance is highly affected by the results of AED. Although our AED methods achieves better results compared with previous AED methods, the results still need to be further improved.
+\item  Chapter \ref{cha:cha6MIML} discusses the use of multiple-instance multiple-label (MIML) framework for frog call classification. To cope with low SNR recordings with multiple simultaneously vocalising frog species, the traditional single-instance single-label classification framework is no longer suitable. Therefore, this research tries to adopt other classification frameworks such as MIML learning and ML learning. MIML learning is presented in this chapter. A MIML classification framework is adopted for studying frogs. A previous study of studying birds used a supervised learning algorithm to segment frog syllables, but needs lots of annotated data. However, there are few annotated frog recordings in this study. An unsupervised learning method is therefore developed to segment syllables, which is named \textit{acoustic event detection} (AED). Then, three MIML classifiers are evaluated with constructed features using a bagging generator. The proposed MIML classification framework can classify multiple frog species in low SNR recordings, but the classification performance is highly affected by the results of AED. Although our AED methods achieves better results compared with previous AED methods, the results still need to be further improved.
 
 
-\item  Chapter \ref{cha:cha7ML} discusses the multiple-label learning method for frog call classification. Since Chapter \ref{cha:cha6MIML} shows that classification performance is highly affected by the AED results, the AED results still need to be improved. This chapter uses ML learning to study low SNR recordings with multiple simultaneously vocalising frog species with the segmentation process. Here, AED is used to estimate the frog calling activity. The cepstral feature representation proposed in Chapter \ref{cha:cha5WaveletFeature} is used, where a simple but effective method is used to modify it. Both the results of AED and ML classification are applied to field recordings over three months. 
+\item  Chapter \ref{cha:cha7ML} discusses the use of multiple-label learning for frog call classification. Chapter \ref{cha:cha6MIML} demonstrates that classification performance is highly affected by AED results. In this chapter, we use ML learning to study low SNR recordings with multiple simultaneously vocalising frog species without the segmentation process. 
+Two experiments are conducted in this chapter. The first is to estimate the frog calling activity using the AED. The second is to estimate the frog species richness using the global feature sets, where the feature sets are modified from  those features used in Chapter \ref{cha:cha4EnhancedFeature}. Furthermore, both frog calling activity and species richness over three months are estimated using the field recordings.
+The correlation between frog calling activity/species richness and weather variables (mean temperature and rainfall) are studied.
 
 
 

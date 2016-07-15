@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  14 JUL 2016 10:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  15 JUL 2016 12:11
 entering extended mode
 **ThesisMainFile.tex
 
@@ -697,14 +697,14 @@ been already used, duplicate ignored
 <to be read again> 
                    \relax 
 l.18 
-      [1] <image/Ch1/unseen_frog_1.jpg, id=814, 323.2878pt x 236.082pt>
+      [1] <image/Ch1/unseen_frog_1.jpg, id=809, 323.2878pt x 236.082pt>
 File: image/Ch1/unseen_frog_1.jpg Graphic file (type jpg)
 
 <use image/Ch1/unseen_frog_1.jpg>
 Package pdftex.def Info: image/Ch1/unseen_frog_1.jpg used on input line 22.
 (pdftex.def)             Requested size: 227.62195pt x 170.71736pt.
 
-<image/Ch1/unseen_frog_2.jpg, id=815, 319.94531pt x 240.14719pt>
+<image/Ch1/unseen_frog_2.jpg, id=810, 319.94531pt x 240.14719pt>
 File: image/Ch1/unseen_frog_2.jpg Graphic file (type jpg)
 
 <use image/Ch1/unseen_frog_2.jpg>
@@ -727,7 +727,7 @@ Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
  [3]
-<image/Ch1/spectrogram_example.png, id=844, 340.326pt x 161.9505pt>
+<image/Ch1/spectrogram_example.png, id=839, 340.326pt x 161.9505pt>
 File: image/Ch1/spectrogram_example.png Graphic file (type png)
 
 <use image/Ch1/spectrogram_example.png>
@@ -735,7 +735,7 @@ Package pdftex.def Info: image/Ch1/spectrogram_example.png used on input line 9
 1.
 (pdftex.def)             Requested size: 455.24408pt x 216.64433pt.
 
-<image/Ch1/spectrogram_mark.pdf, id=848, 778.10701pt x 373.99725pt>
+<image/Ch1/spectrogram_mark.pdf, id=843, 778.10701pt x 373.99725pt>
 File: image/Ch1/spectrogram_mark.pdf Graphic file (type pdf)
 
 <use image/Ch1/spectrogram_mark.pdf>
@@ -753,7 +753,7 @@ Overfull \hbox (7.39813pt too wide) in paragraph at lines 161--162
  parts (Fig-ure []1.4[]): (1)sig-nal pre-processing,
  []
 
-<image/Ch1/flowchart.jpg, id=887, 535.40025pt x 326.4195pt>
+<image/Ch1/flowchart.jpg, id=882, 535.40025pt x 326.4195pt>
 File: image/Ch1/flowchart.jpg Graphic file (type jpg)
 
 <use image/Ch1/flowchart.jpg>
@@ -761,7 +761,7 @@ Package pdftex.def Info: image/Ch1/flowchart.jpg used on input line 167.
 (pdftex.def)             Requested size: 455.24408pt x 277.56247pt.
  [6 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch1/flow
 chart.jpg>]
-<image/LR/label.pdf, id=893, 849.1725pt x 514.32152pt>
+<image/LR/label.pdf, id=888, 849.1725pt x 514.32152pt>
 File: image/LR/label.pdf Graphic file (type pdf)
 
 <use image/LR/label.pdf>
@@ -773,7 +773,7 @@ Underfull \vbox (badness 4366) has occurred while \output is active []
  [7]
 [8 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/LR/label.
 pdf>] [9]
-Overfull \hbox (7.81787pt too wide) in paragraph at lines 273--274
+Overfull \hbox (7.81787pt too wide) in paragraph at lines 271--272
 []\OT1/ptm/m/n/12 This work cor-re-sponds to Chap-ter []6[] in this the-sis, wh
 ich ap-plied multiple-instance multiple-
  []
@@ -787,12 +787,12 @@ Missing character: There is no ú in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ù in font ptmr7t!
- <image/Ch1/structure_chapters.pdf, id=965, 1087.06125pt x 1347.2332pt>
+ <image/Ch1/structure_chapters.pdf, id=960, 1087.06125pt x 1347.2332pt>
 File: image/Ch1/structure_chapters.pdf Graphic file (type pdf)
 
 <use image/Ch1/structure_chapters.pdf>
 Package pdftex.def Info: image/Ch1/structure_chapters.pdf used on input line 31
-2.
+0.
 (pdftex.def)             Requested size: 455.24408pt x 564.21008pt.
  [11]
 Underfull \vbox (badness 10000) has occurred while \output is active []
@@ -813,21 +813,21 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 LaTeX Warning: Reference `experiment' on page 17 undefined on input line 42.
 
-[17] <image/LR/waveform.pdf, id=1169, 358.33875pt x 284.06125pt>
+[17] <image/LR/waveform.pdf, id=1164, 358.33875pt x 284.06125pt>
 File: image/LR/waveform.pdf Graphic file (type pdf)
 
 <use image/LR/waveform.pdf>
 Package pdftex.def Info: image/LR/waveform.pdf used on input line 64.
 (pdftex.def)             Requested size: 145.68411pt x 109.26204pt.
 
-<image/LR/spectrum.pdf, id=1170, 351.3125pt x 266.9975pt>
+<image/LR/spectrum.pdf, id=1165, 351.3125pt x 266.9975pt>
 File: image/LR/spectrum.pdf Graphic file (type pdf)
 
 <use image/LR/spectrum.pdf>
 Package pdftex.def Info: image/LR/spectrum.pdf used on input line 68.
 (pdftex.def)             Requested size: 145.68475pt x 109.26189pt.
 
-<image/LR/spectrogram.pdf, id=1171, 348.30125pt x 293.095pt>
+<image/LR/spectrogram.pdf, id=1166, 348.30125pt x 293.095pt>
 File: image/LR/spectrogram.pdf Graphic file (type pdf)
 
 <use image/LR/spectrogram.pdf>
@@ -873,7 +873,7 @@ Chapter 3.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [31]
-<image/Ch4/flowchart.pdf, id=1620, 412.54124pt x 107.80275pt>
+<image/Ch4/flowchart.pdf, id=1615, 412.54124pt x 107.80275pt>
 File: image/Ch4/flowchart.pdf Graphic file (type pdf)
 
 <use image/Ch4/flowchart.pdf>
@@ -881,7 +881,7 @@ Package pdftex.def Info: image/Ch4/flowchart.pdf used on input line 25.
 (pdftex.def)             Requested size: 455.24408pt x 118.96335pt.
  [32 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch4/flo
 wchart.pdf>]
-<image/Ch4/segmentation.pdf, id=1645, 387.24673pt x 291.489pt>
+<image/Ch4/segmentation.pdf, id=1640, 387.24673pt x 291.489pt>
 File: image/Ch4/segmentation.pdf Graphic file (type pdf)
 
 <use image/Ch4/segmentation.pdf>
@@ -891,20 +891,20 @@ Package pdftex.def Info: image/Ch4/segmentation.pdf used on input line 79.
 Underfull \vbox (badness 3396) has occurred while \output is active []
 
  [33]
-<image/Ch4/no.pdf, id=1653, 725.71124pt x 586.59152pt>
+<image/Ch4/no.pdf, id=1648, 725.71124pt x 586.59152pt>
 File: image/Ch4/no.pdf Graphic file (type pdf)
  <use image/Ch4/no.pdf>
 Package pdftex.def Info: image/Ch4/no.pdf used on input line 91.
 (pdftex.def)             Requested size: 273.14922pt x 220.78578pt.
 
-<image/Ch4/yes.pdf, id=1654, 725.71124pt x 586.59152pt>
+<image/Ch4/yes.pdf, id=1649, 725.71124pt x 586.59152pt>
 File: image/Ch4/yes.pdf Graphic file (type pdf)
 
 <use image/Ch4/yes.pdf>
 Package pdftex.def Info: image/Ch4/yes.pdf used on input line 96.
 (pdftex.def)             Requested size: 273.14922pt x 220.78578pt.
 
-<image/Ch4/syllable.pdf, id=1655, 358.33875pt x 280.04625pt>
+<image/Ch4/syllable.pdf, id=1650, 358.33875pt x 280.04625pt>
 File: image/Ch4/syllable.pdf Graphic file (type pdf)
 
 <use image/Ch4/syllable.pdf>
@@ -948,7 +948,7 @@ rop-er-ties, sup-port vec-tor ma-chines (SVM)
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [44]
-<image/Ch4/diffFeature.pdf, id=1825, 348.30125pt x 221.82875pt>
+<image/Ch4/diffFeature.pdf, id=1820, 348.30125pt x 221.82875pt>
 File: image/Ch4/diffFeature.pdf Graphic file (type pdf)
 
 <use image/Ch4/diffFeature.pdf>
@@ -958,7 +958,7 @@ Package pdftex.def Info: image/Ch4/diffFeature.pdf used on input line 369.
 Underfull \vbox (badness 6493) has occurred while \output is active []
 
  [45 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch4/dif
-fFeature.pdf>] <image/Ch4/diffClassifier.pdf, id=1837, 322.20375pt x 210.7875pt
+fFeature.pdf>] <image/Ch4/diffClassifier.pdf, id=1832, 322.20375pt x 210.7875pt
 >
 File: image/Ch4/diffClassifier.pdf Graphic file (type pdf)
 
@@ -966,7 +966,7 @@ File: image/Ch4/diffClassifier.pdf Graphic file (type pdf)
 Package pdftex.def Info: image/Ch4/diffClassifier.pdf used on input line 382.
 (pdftex.def)             Requested size: 273.14922pt x 178.70384pt.
 
-<image/Ch4/windowSizeMFCC.pdf, id=1840, 362.35374pt x 285.065pt>
+<image/Ch4/windowSizeMFCC.pdf, id=1835, 362.35374pt x 285.065pt>
 File: image/Ch4/windowSizeMFCC.pdf Graphic file (type pdf)
 
 <use image/Ch4/windowSizeMFCC.pdf>
@@ -974,7 +974,7 @@ Package pdftex.def Info: image/Ch4/windowSizeMFCC.pdf used on input line 395.
 (pdftex.def)             Requested size: 273.14922pt x 214.89pt.
  [46 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch4/dif
 fClassifier.pdf>]
-<image/Ch4/windowSizeTemPer.pdf, id=1850, 362.35374pt x 285.065pt>
+<image/Ch4/windowSizeTemPer.pdf, id=1845, 362.35374pt x 285.065pt>
 File: image/Ch4/windowSizeTemPer.pdf Graphic file (type pdf)
 
 <use image/Ch4/windowSizeTemPer.pdf>
@@ -984,7 +984,7 @@ Package pdftex.def Info: image/Ch4/windowSizeTemPer.pdf used on input line 401.
  [47 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch4/win
 dowSizeMFCC.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/i
 mage/Ch4/windowSizeTemPer.pdf>]
-<image/Ch4/affectNoise.pdf, id=1868, 355.3275pt x 285.065pt>
+<image/Ch4/affectNoise.pdf, id=1863, 355.3275pt x 285.065pt>
 File: image/Ch4/affectNoise.pdf Graphic file (type pdf)
 
 <use image/Ch4/affectNoise.pdf>
@@ -1002,7 +1002,7 @@ ctNoise.pdf>]) [49]
 
 ]
 Chapter 4.
-<image/Ch5/flowchart.pdf, id=1908, 671.50874pt x 421.575pt>
+<image/Ch5/flowchart.pdf, id=1903, 671.50874pt x 421.575pt>
 File: image/Ch5/flowchart.pdf Graphic file (type pdf)
 
 <use image/Ch5/flowchart.pdf>
@@ -1037,21 +1037,21 @@ Missing character: There is no Ä in font cmr12!
 Underfull \vbox (badness 1609) has occurred while \output is active []
 
  [54]
-<image/Ch5/syllable.pdf, id=1961, 351.3125pt x 285.065pt>
+<image/Ch5/syllable.pdf, id=1956, 351.3125pt x 285.065pt>
 File: image/Ch5/syllable.pdf Graphic file (type pdf)
 
 <use image/Ch5/syllable.pdf>
 Package pdftex.def Info: image/Ch5/syllable.pdf used on input line 155.
 (pdftex.def)             Requested size: 273.14922pt x 221.65819pt.
 
-<image/Ch5/spectrogram.png, id=1964, 365.56575pt x 283.0575pt>
+<image/Ch5/spectrogram.png, id=1959, 365.56575pt x 283.0575pt>
 File: image/Ch5/spectrogram.png Graphic file (type png)
 
 <use image/Ch5/spectrogram.png>
 Package pdftex.def Info: image/Ch5/spectrogram.png used on input line 167.
 (pdftex.def)             Requested size: 227.62204pt x 176.24535pt.
 
-<image/Ch5/segmentation.png, id=1965, 363.15675pt x 283.0575pt>
+<image/Ch5/segmentation.png, id=1960, 363.15675pt x 283.0575pt>
 File: image/Ch5/segmentation.png Graphic file (type png)
 
 <use image/Ch5/segmentation.png>
@@ -1064,13 +1064,13 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
  [56 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch5/spe
 ctrogram.png (PNG copy)> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Mon
 ograph/image/Ch5/segmentation.png (PNG copy)>]
-<image/Ch5/peak.pdf, id=1997, 349.305pt x 283.0575pt>
+<image/Ch5/peak.pdf, id=1992, 349.305pt x 283.0575pt>
 File: image/Ch5/peak.pdf Graphic file (type pdf)
  <use image/Ch5/peak.pdf>
 Package pdftex.def Info: image/Ch5/peak.pdf used on input line 274.
 (pdftex.def)             Requested size: 227.62204pt x 184.45596pt.
 
-<image/Ch5/track.pdf, id=1998, 348.30125pt x 283.0575pt>
+<image/Ch5/track.pdf, id=1993, 348.30125pt x 283.0575pt>
 File: image/Ch5/track.pdf Graphic file (type pdf)
 
 <use image/Ch5/track.pdf>
@@ -1088,14 +1088,14 @@ rack.pdf>]
 Underfull \vbox (badness 1715) has occurred while \output is active []
 
  [59]
-<image/Ch5/tree18.pdf, id=2056, 768.47098pt x 620.91972pt>
+<image/Ch5/tree18.pdf, id=2051, 768.47098pt x 620.91972pt>
 File: image/Ch5/tree18.pdf Graphic file (type pdf)
 
 <use image/Ch5/tree18.pdf>
 Package pdftex.def Info: image/Ch5/tree18.pdf used on input line 382.
 (pdftex.def)             Requested size: 295.90327pt x 295.90633pt.
  [60]
-<image/Ch5/featureExtraction.pdf, id=2074, 1041.8925pt x 502.27649pt>
+<image/Ch5/featureExtraction.pdf, id=2069, 1041.8925pt x 502.27649pt>
 File: image/Ch5/featureExtraction.pdf Graphic file (type pdf)
 
 <use image/Ch5/featureExtraction.pdf>
@@ -1115,14 +1115,14 @@ e18.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch5
 pdfTeX warning: pdflatex (file C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis 
 - Monograph/image/Ch5/featureExtraction.pdf): PDF inclusion: multiple pdfs with
  page group included in a single page
->] [63] [64] [65] <image/Ch5/MFCC.pdf, id=2217, 337.26pt x 270.00874pt>
+>] [63] [64] [65] <image/Ch5/MFCC.pdf, id=2212, 337.26pt x 270.00874pt>
 File: image/Ch5/MFCC.pdf Graphic file (type pdf)
 
 <use image/Ch5/MFCC.pdf>
 Package pdftex.def Info: image/Ch5/MFCC.pdf used on input line 538.
 (pdftex.def)             Requested size: 227.62204pt x 182.23567pt.
 
-<image/Ch5/MelCC.pdf, id=2218, 337.26pt x 270.00874pt>
+<image/Ch5/MelCC.pdf, id=2213, 337.26pt x 270.00874pt>
 File: image/Ch5/MelCC.pdf Graphic file (type pdf)
 
 <use image/Ch5/MelCC.pdf>
@@ -1133,14 +1133,14 @@ Overfull \hbox (4.56006pt too wide) in paragraph at lines 537--546
  [][]  [] 
  []
 
-<image/Ch5/avgPWSCC.pdf, id=2219, 337.26pt x 270.00874pt>
+<image/Ch5/avgPWSCC.pdf, id=2214, 337.26pt x 270.00874pt>
 File: image/Ch5/avgPWSCC.pdf Graphic file (type pdf)
 
 <use image/Ch5/avgPWSCC.pdf>
 Package pdftex.def Info: image/Ch5/avgPWSCC.pdf used on input line 548.
 (pdftex.def)             Requested size: 227.62204pt x 182.23567pt.
 
-<image/Ch5/deltaPWSCC.pdf, id=2220, 341.275pt x 270.00874pt>
+<image/Ch5/deltaPWSCC.pdf, id=2215, 341.275pt x 270.00874pt>
 File: image/Ch5/deltaPWSCC.pdf Graphic file (type pdf)
 
 <use image/Ch5/deltaPWSCC.pdf>
@@ -1167,14 +1167,14 @@ LaTeX Font Info:    Font shape `OML/ptm/m/n' in size <12> not available
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [67]
-<image/Ch5/tree15vs10.pdf, id=2264, 922.04472pt x 452.89201pt>
+<image/Ch5/tree15vs10.pdf, id=2259, 922.04472pt x 452.89201pt>
 File: image/Ch5/tree15vs10.pdf Graphic file (type pdf)
 
 <use image/Ch5/tree15vs10.pdf>
 Package pdftex.def Info: image/Ch5/tree15vs10.pdf used on input line 631.
 (pdftex.def)             Requested size: 432.47472pt x 227.62024pt.
 
-<image/Ch5/MelTree.pdf, id=2265, 708.24597pt x 308.95424pt>
+<image/Ch5/MelTree.pdf, id=2260, 708.24597pt x 308.95424pt>
 File: image/Ch5/MelTree.pdf Graphic file (type pdf)
 
 <use image/Ch5/MelTree.pdf>
@@ -1182,7 +1182,7 @@ Package pdftex.def Info: image/Ch5/MelTree.pdf used on input line 638.
 (pdftex.def)             Requested size: 364.20499pt x 182.09283pt.
  [68 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch5/tre
 e15vs10.pdf>]
-<image/Ch5/snr.pdf, id=2276, 351.3125pt x 284.06125pt>
+<image/Ch5/snr.pdf, id=2271, 351.3125pt x 284.06125pt>
 File: image/Ch5/snr.pdf Graphic file (type pdf)
  <use image/Ch5/snr.pdf>
 Package pdftex.def Info: image/Ch5/snr.pdf used on input line 664.
@@ -1204,7 +1204,7 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
 ]
-<image/Ch6/flowchart.pdf, id=2317, 671.50874pt x 216.20775pt>
+<image/Ch6/flowchart.pdf, id=2312, 671.50874pt x 216.20775pt>
 File: image/Ch6/flowchart.pdf Graphic file (type pdf)
 
 <use image/Ch6/flowchart.pdf>
@@ -1212,28 +1212,28 @@ Package pdftex.def Info: image/Ch6/flowchart.pdf used on input line 26.
 (pdftex.def)             Requested size: 455.24408pt x 146.57724pt.
  [74 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch6/flo
 wchart.pdf>] [75] [76] [77]
-<image/Ch6/AEoriginal.png, id=2374, 359.54324pt x 285.4665pt>
+<image/Ch6/AEoriginal.png, id=2369, 359.54324pt x 285.4665pt>
 File: image/Ch6/AEoriginal.png Graphic file (type png)
 
 <use image/Ch6/AEoriginal.png>
 Package pdftex.def Info: image/Ch6/AEoriginal.png used on input line 198.
 (pdftex.def)             Requested size: 204.85844pt x 162.65225pt.
 
-<image/Ch6/AEfinal.png, id=2375, 359.54324pt x 285.4665pt>
+<image/Ch6/AEfinal.png, id=2370, 359.54324pt x 285.4665pt>
 File: image/Ch6/AEfinal.png Graphic file (type png)
 
 <use image/Ch6/AEfinal.png>
 Package pdftex.def Info: image/Ch6/AEfinal.png used on input line 203.
 (pdftex.def)             Requested size: 204.85844pt x 162.65225pt.
 
-<image/Ch6/binary.png, id=2376, 359.54324pt x 285.4665pt>
+<image/Ch6/binary.png, id=2371, 359.54324pt x 285.4665pt>
 File: image/Ch6/binary.png Graphic file (type png)
 
 <use image/Ch6/binary.png>
 Package pdftex.def Info: image/Ch6/binary.png used on input line 214.
 (pdftex.def)             Requested size: 204.85844pt x 162.65225pt.
 
-<image/Ch6/segmentEvents.png, id=2377, 359.54324pt x 285.4665pt>
+<image/Ch6/segmentEvents.png, id=2372, 359.54324pt x 285.4665pt>
 File: image/Ch6/segmentEvents.png Graphic file (type png)
 
 <use image/Ch6/segmentEvents.png>
@@ -1270,11 +1270,11 @@ Missing character: There is no ô in font ptmr7t!
 
 ]
 Chapter 6.
-[85] <image/Ch7/flowchart.pdf, id=2440, 398.08725pt x 198.7425pt>
+[85] <image/Ch7/flowchart.pdf, id=2434, 398.08725pt x 198.7425pt>
 File: image/Ch7/flowchart.pdf Graphic file (type pdf)
 
 <use image/Ch7/flowchart.pdf>
-Package pdftex.def Info: image/Ch7/flowchart.pdf used on input line 34.
+Package pdftex.def Info: image/Ch7/flowchart.pdf used on input line 27.
 (pdftex.def)             Requested size: 455.24408pt x 227.29054pt.
 
 
@@ -1284,60 +1284,60 @@ Package Fancyhdr Warning: \headheight is too small (26.88991pt):
  This may cause the page layout to be inconsistent, however.
 
 [86 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch7/flow
-chart.pdf>] <image/Ch7/spectrogram1-m.png, id=2467, 359.54324pt x 285.4665pt>
+chart.pdf>] <image/Ch7/spectrogram1-m.png, id=2462, 359.54324pt x 285.4665pt>
 File: image/Ch7/spectrogram1-m.png Graphic file (type png)
 
 <use image/Ch7/spectrogram1-m.png>
-Package pdftex.def Info: image/Ch7/spectrogram1-m.png used on input line 102.
+Package pdftex.def Info: image/Ch7/spectrogram1-m.png used on input line 67.
 (pdftex.def)             Requested size: 159.3382pt x 126.51166pt.
 
-<image/Ch7/spectrogram2-m.png, id=2469, 359.54324pt x 285.4665pt>
+<image/Ch7/spectrogram2-m.png, id=2464, 359.54324pt x 285.4665pt>
 File: image/Ch7/spectrogram2-m.png Graphic file (type png)
 
 <use image/Ch7/spectrogram2-m.png>
-Package pdftex.def Info: image/Ch7/spectrogram2-m.png used on input line 107.
+Package pdftex.def Info: image/Ch7/spectrogram2-m.png used on input line 72.
 (pdftex.def)             Requested size: 159.3382pt x 126.51166pt.
 
-<image/Ch7/AEDFodor.pdf, id=2470, 362.35374pt x 286.06876pt>
+<image/Ch7/AEDFodor.pdf, id=2465, 362.35374pt x 286.06876pt>
 File: image/Ch7/AEDFodor.pdf Graphic file (type pdf)
 
 <use image/Ch7/AEDFodor.pdf>
-Package pdftex.def Info: image/Ch7/AEDFodor.pdf used on input line 112.
+Package pdftex.def Info: image/Ch7/AEDFodor.pdf used on input line 77.
 (pdftex.def)             Requested size: 159.3382pt x 125.79643pt.
 
-<image/Ch7/AEDFodor_2.pdf, id=2475, 362.35374pt x 286.06876pt>
+<image/Ch7/AEDFodor_2.pdf, id=2470, 362.35374pt x 286.06876pt>
 File: image/Ch7/AEDFodor_2.pdf Graphic file (type pdf)
 
 <use image/Ch7/AEDFodor_2.pdf>
-Package pdftex.def Info: image/Ch7/AEDFodor_2.pdf used on input line 117.
+Package pdftex.def Info: image/Ch7/AEDFodor_2.pdf used on input line 82.
 (pdftex.def)             Requested size: 159.3382pt x 125.79643pt.
 
-<image/Ch7/AED_Michael.pdf, id=2480, 362.35374pt x 286.06876pt>
+<image/Ch7/AED_Michael.pdf, id=2475, 362.35374pt x 286.06876pt>
 File: image/Ch7/AED_Michael.pdf Graphic file (type pdf)
 
 <use image/Ch7/AED_Michael.pdf>
-Package pdftex.def Info: image/Ch7/AED_Michael.pdf used on input line 123.
+Package pdftex.def Info: image/Ch7/AED_Michael.pdf used on input line 88.
 (pdftex.def)             Requested size: 159.3382pt x 125.79643pt.
 
-<image/Ch7/AED_Michael_2.pdf, id=2485, 362.35374pt x 286.06876pt>
+<image/Ch7/AED_Michael_2.pdf, id=2480, 362.35374pt x 286.06876pt>
 File: image/Ch7/AED_Michael_2.pdf Graphic file (type pdf)
 
 <use image/Ch7/AED_Michael_2.pdf>
-Package pdftex.def Info: image/Ch7/AED_Michael_2.pdf used on input line 128.
+Package pdftex.def Info: image/Ch7/AED_Michael_2.pdf used on input line 93.
 (pdftex.def)             Requested size: 159.3382pt x 125.79643pt.
 
-<image/Ch7/AED_Jie.pdf, id=2490, 362.35374pt x 286.06876pt>
+<image/Ch7/AED_Jie.pdf, id=2485, 362.35374pt x 286.06876pt>
 File: image/Ch7/AED_Jie.pdf Graphic file (type pdf)
 
 <use image/Ch7/AED_Jie.pdf>
-Package pdftex.def Info: image/Ch7/AED_Jie.pdf used on input line 133.
+Package pdftex.def Info: image/Ch7/AED_Jie.pdf used on input line 98.
 (pdftex.def)             Requested size: 159.3382pt x 125.79643pt.
 
-<image/Ch7/AED_Jie_2.pdf, id=2491, 362.35374pt x 286.06876pt>
+<image/Ch7/AED_Jie_2.pdf, id=2486, 362.35374pt x 286.06876pt>
 File: image/Ch7/AED_Jie_2.pdf Graphic file (type pdf)
 
 <use image/Ch7/AED_Jie_2.pdf>
-Package pdftex.def Info: image/Ch7/AED_Jie_2.pdf used on input line 138.
+Package pdftex.def Info: image/Ch7/AED_Jie_2.pdf used on input line 103.
 (pdftex.def)             Requested size: 159.3382pt x 125.79643pt.
  [87] [88 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch
 7/spectrogram1-m.png> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monogr
@@ -1349,31 +1349,34 @@ s/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch7/AED_Michael_2.pdf> <C:/Users/J
 ie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch7/AED_Jie.pdf> <C:/Us
 ers/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch7/AED_Jie_2.pdf>
 ]
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [89]
-<image/Ch7/abundance1075.pdf, id=2564, 350.30875pt x 286.06876pt>
+<image/Ch7/abundance1075.pdf, id=2538, 350.30875pt x 286.06876pt>
 File: image/Ch7/abundance1075.pdf Graphic file (type pdf)
 
 <use image/Ch7/abundance1075.pdf>
-Package pdftex.def Info: image/Ch7/abundance1075.pdf used on input line 217.
+Package pdftex.def Info: image/Ch7/abundance1075.pdf used on input line 118.
 (pdftex.def)             Requested size: 136.5746pt x 111.53143pt.
 
-<image/Ch7/abundance1078.pdf, id=2565, 353.32pt x 286.06876pt>
+<image/Ch7/abundance1078.pdf, id=2539, 353.32pt x 286.06876pt>
 File: image/Ch7/abundance1078.pdf Graphic file (type pdf)
 
 <use image/Ch7/abundance1078.pdf>
-Package pdftex.def Info: image/Ch7/abundance1078.pdf used on input line 222.
+Package pdftex.def Info: image/Ch7/abundance1078.pdf used on input line 123.
 (pdftex.def)             Requested size: 136.5746pt x 110.57986pt.
 
-<image/Ch7/abundance1079.pdf, id=2566, 353.32pt x 286.06876pt>
+<image/Ch7/abundance1079.pdf, id=2540, 353.32pt x 286.06876pt>
 File: image/Ch7/abundance1079.pdf Graphic file (type pdf)
 
 <use image/Ch7/abundance1079.pdf>
-Package pdftex.def Info: image/Ch7/abundance1079.pdf used on input line 227.
+Package pdftex.def Info: image/Ch7/abundance1079.pdf used on input line 128.
 (pdftex.def)             Requested size: 136.5746pt x 110.57986pt.
+ [89 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch7/abu
+ndance1075.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/im
+age/Ch7/abundance1078.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - M
+onograph/image/Ch7/abundance1079.pdf>]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [90]
-Overfull \hbox (4.11714pt too wide) in paragraph at lines 241--243
+Overfull \hbox (4.11714pt too wide) in paragraph at lines 172--174
 []\OT1/ptm/b/n/12 (1) \OT1/ptm/m/n/12 Ex-am-ple based $\OML/cmm/m/it/12 F[]$ \O
 T1/ptm/m/n/12 is the av-er-age of the har-monic mean of instance-precision and 
 instance-
@@ -1391,75 +1394,38 @@ Missing character: There is no ò in font ptmr7t!
 Missing character: There is no ‚ in font ptmr7t!
 Missing character: There is no Ä in font ptmr7t!
 Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ò in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ò in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ò in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ò in font ptmr7t!
-Missing character: There is no ‚ in font ptmr7t!
-Missing character: There is no Ä in font ptmr7t!
-Missing character: There is no ô in font ptmr7t!
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [91 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch7/abu
-ndance1075.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/im
-age/Ch7/abundance1078.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - M
-onograph/image/Ch7/abundance1079.pdf>]
-<image/Ch7/richness1075.pdf, id=2603, 350.30875pt x 286.06876pt>
+[91] <image/Ch7/richness1075.pdf, id=2597, 350.30875pt x 286.06876pt>
 File: image/Ch7/richness1075.pdf Graphic file (type pdf)
 
 <use image/Ch7/richness1075.pdf>
-Package pdftex.def Info: image/Ch7/richness1075.pdf used on input line 304.
+Package pdftex.def Info: image/Ch7/richness1075.pdf used on input line 235.
 (pdftex.def)             Requested size: 136.5746pt x 111.53143pt.
 
-<image/Ch7/richness1078.pdf, id=2604, 350.30875pt x 286.06876pt>
+<image/Ch7/richness1078.pdf, id=2598, 350.30875pt x 286.06876pt>
 File: image/Ch7/richness1078.pdf Graphic file (type pdf)
 
 <use image/Ch7/richness1078.pdf>
-Package pdftex.def Info: image/Ch7/richness1078.pdf used on input line 309.
+Package pdftex.def Info: image/Ch7/richness1078.pdf used on input line 240.
 (pdftex.def)             Requested size: 136.5746pt x 111.53143pt.
 
-<image/Ch7/richness1079.pdf, id=2605, 350.30875pt x 286.06876pt>
+<image/Ch7/richness1079.pdf, id=2599, 350.30875pt x 286.06876pt>
 File: image/Ch7/richness1079.pdf Graphic file (type pdf)
 
 <use image/Ch7/richness1079.pdf>
-Package pdftex.def Info: image/Ch7/richness1079.pdf used on input line 314.
+Package pdftex.def Info: image/Ch7/richness1079.pdf used on input line 245.
 (pdftex.def)             Requested size: 136.5746pt x 111.53143pt.
 
-<image/Ch7/richnessSite.pdf, id=2606, 350.30875pt x 285.065pt>
+<image/Ch7/richnessSite.pdf, id=2600, 350.30875pt x 285.065pt>
 File: image/Ch7/richnessSite.pdf Graphic file (type pdf)
 
 <use image/Ch7/richnessSite.pdf>
-Package pdftex.def Info: image/Ch7/richnessSite.pdf used on input line 323.
+Package pdftex.def Info: image/Ch7/richnessSite.pdf used on input line 254.
 (pdftex.def)             Requested size: 227.62204pt x 185.2335pt.
-
-Underfull \vbox (badness 3323) has occurred while \output is active []
-
  [92 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch7/ric
 hness1075.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/ima
 ge/Ch7/richness1078.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Mon
-ograph/image/Ch7/richness1079.pdf>]
-Underfull \vbox (badness 2181) has occurred while \output is active []
-
- [93 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch7/ric
-hnessSite.pdf>]) [94]
+ograph/image/Ch7/richness1079.pdf>] [93 <C:/Users/Jie/Documents/GitHub/Thesis/J
+ie_Thesis - Monograph/image/Ch7/richnessSite.pdf>]) [94]
 ("C:\Users\Jie\Documents\GitHub\Thesis\Jie_Thesis - Monograph\Ch8Conclusions.te
 x"
 Chapter 7.
@@ -1470,84 +1436,84 @@ Chapter 7.
 ] [96] [97]) [98]
 ("C:\Users\Jie\Documents\GitHub\Thesis\Jie_Thesis - Monograph\Appendix.tex"
 Appendix A.
-<image/Ch1/toad_wave.png, id=2672, 477.28313pt x 258.9675pt>
+<image/Ch1/toad_wave.png, id=2666, 477.28313pt x 258.9675pt>
 File: image/Ch1/toad_wave.png Graphic file (type png)
 
 <use image/Ch1/toad_wave.png>
 Package pdftex.def Info: image/Ch1/toad_wave.png used on input line 15.
 (pdftex.def)             Requested size: 128.03064pt x 85.35678pt.
 
-<image/Ch1/toad_spec.png, id=2673, 135.342pt x 86.067pt>
+<image/Ch1/toad_spec.png, id=2667, 135.342pt x 86.067pt>
 File: image/Ch1/toad_spec.png Graphic file (type png)
 
 <use image/Ch1/toad_spec.png>
 Package pdftex.def Info: image/Ch1/toad_spec.png used on input line 15.
 (pdftex.def)             Requested size: 128.0496pt x 85.36154pt.
 
-<image/Ch1/caerulea_wav.png, id=2674, 620.3175pt x 213.79875pt>
+<image/Ch1/caerulea_wav.png, id=2668, 620.3175pt x 213.79875pt>
 File: image/Ch1/caerulea_wav.png Graphic file (type png)
 
 <use image/Ch1/caerulea_wav.png>
 Package pdftex.def Info: image/Ch1/caerulea_wav.png used on input line 16.
 (pdftex.def)             Requested size: 128.03671pt x 85.35812pt.
 
-<image/Ch1/caerulea_spec.png, id=2675, 135.342pt x 89.6805pt>
+<image/Ch1/caerulea_spec.png, id=2669, 135.342pt x 89.6805pt>
 File: image/Ch1/caerulea_spec.png Graphic file (type png)
 
 <use image/Ch1/caerulea_spec.png>
 Package pdftex.def Info: image/Ch1/caerulea_spec.png used on input line 16.
 (pdftex.def)             Requested size: 128.0496pt x 85.35745pt.
 
-<image/Ch1/fallax_wav.png, id=2676, 606.01407pt x 209.28188pt>
+<image/Ch1/fallax_wav.png, id=2670, 606.01407pt x 209.28188pt>
 File: image/Ch1/fallax_wav.png Graphic file (type png)
 
 <use image/Ch1/fallax_wav.png>
 Package pdftex.def Info: image/Ch1/fallax_wav.png used on input line 17.
 (pdftex.def)             Requested size: 128.03421pt x 85.35583pt.
 
-<image/Ch1/fallax_spec.png, id=2677, 602.25pt x 210.03468pt>
+<image/Ch1/fallax_spec.png, id=2671, 602.25pt x 210.03468pt>
 File: image/Ch1/fallax_spec.png Graphic file (type png)
 
 <use image/Ch1/fallax_spec.png>
 Package pdftex.def Info: image/Ch1/fallax_spec.png used on input line 17.
 (pdftex.def)             Requested size: 128.03845pt x 85.35841pt.
 
-<image/Ch1/graci_wav.png, id=2678, 472.76625pt x 171.64125pt>
+<image/Ch1/graci_wav.png, id=2672, 472.76625pt x 171.64125pt>
 File: image/Ch1/graci_wav.png Graphic file (type png)
 
 <use image/Ch1/graci_wav.png>
 Package pdftex.def Info: image/Ch1/graci_wav.png used on input line 28.
 (pdftex.def)             Requested size: 128.03813pt x 85.35683pt.
 
-<image/Ch1/graci_spec.png, id=2679, 469.00218pt x 173.89969pt>
+<image/Ch1/graci_spec.png, id=2673, 469.00218pt x 173.89969pt>
 File: image/Ch1/graci_spec.png Graphic file (type png)
 
 <use image/Ch1/graci_spec.png>
 Package pdftex.def Info: image/Ch1/graci_spec.png used on input line 28.
 (pdftex.def)             Requested size: 128.03493pt x 85.35751pt.
 
-<image/Ch1/latop_wav.png, id=2680, 542.025pt x 212.29312pt>
+<image/Ch1/latop_wav.png, id=2674, 542.025pt x 212.29312pt>
 File: image/Ch1/latop_wav.png Graphic file (type png)
 
 <use image/Ch1/latop_wav.png>
 Package pdftex.def Info: image/Ch1/latop_wav.png used on input line 29.
 (pdftex.def)             Requested size: 128.03754pt x 85.35953pt.
 
-<image/Ch1/latop_spec.png, id=2681, 536.75531pt x 210.7875pt>
+<image/Ch1/latop_spec.png, id=2675, 536.75531pt x 210.7875pt>
 File: image/Ch1/latop_spec.png Graphic file (type png)
 
 <use image/Ch1/latop_spec.png>
 Package pdftex.def Info: image/Ch1/latop_spec.png used on input line 29.
 (pdftex.def)             Requested size: 128.03764pt x 85.35881pt.
 
-<image/Ch1/rubella_wav.png, id=2682, 402.00188pt x 222.07968pt>
+<image/Ch1/rubella_wav.png, id=2676, 402.00188pt x 222.07968pt>
 File: image/Ch1/rubella_wav.png Graphic file (type png)
 
 <use image/Ch1/rubella_wav.png>
 Package pdftex.def Info: image/Ch1/rubella_wav.png used on input line 30.
 (pdftex.def)             Requested size: 128.03595pt x 85.35692pt.
 
-<image/Ch1/rubella_spec.png, id=2683, 137.6415pt x 93.951pt>
+<image/Ch1/rubella_spec.png, id=2677, 137.6415pt x 93.951pt>
 File: image/Ch1/rubella_spec.png Graphic file (type png)
 
 <use image/Ch1/rubella_spec.png>
@@ -1572,112 +1538,112 @@ spec.png> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch
 1/rubella_wav.png> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph
 /image/Ch1/rubella_spec.png>]
 Appendix B.
-<image/Ch1/toad_jcu_wav.png, id=2697, 362.85562pt x 195.73125pt>
+<image/Ch1/toad_jcu_wav.png, id=2691, 362.85562pt x 195.73125pt>
 File: image/Ch1/toad_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/toad_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/toad_jcu_wav.png used on input line 52.
 (pdftex.def)             Requested size: 128.03673pt x 85.35744pt.
 
-<image/Ch1/toad_jcu_spec.png, id=2698, 357.58594pt x 193.47281pt>
+<image/Ch1/toad_jcu_spec.png, id=2692, 357.58594pt x 193.47281pt>
 File: image/Ch1/toad_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/toad_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/toad_jcu_spec.png used on input line 52.
 (pdftex.def)             Requested size: 128.03787pt x 85.35857pt.
 
-<image/Ch1/cyc_jcu_wav.png, id=2699, 362.85562pt x 216.81pt>
+<image/Ch1/cyc_jcu_wav.png, id=2693, 362.85562pt x 216.81pt>
 File: image/Ch1/cyc_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/cyc_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/cyc_jcu_wav.png used on input line 52.
 (pdftex.def)             Requested size: 128.03673pt x 85.35945pt.
 
-<image/Ch1/cyc_jcu_spec.png, id=2700, 144.8685pt x 93.294pt>
+<image/Ch1/cyc_jcu_spec.png, id=2694, 144.8685pt x 93.294pt>
 File: image/Ch1/cyc_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/cyc_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/cyc_jcu_spec.png used on input line 52.
 (pdftex.def)             Requested size: 128.04391pt x 85.36174pt.
 
-<image/Ch1/ter_jcu_wav.png, id=2701, 362.85562pt x 171.64125pt>
+<image/Ch1/ter_jcu_wav.png, id=2695, 362.85562pt x 171.64125pt>
 File: image/Ch1/ter_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/ter_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/ter_jcu_wav.png used on input line 52.
 (pdftex.def)             Requested size: 128.03673pt x 85.35683pt.
 
-<image/Ch1/ter_jcu_spec.png, id=2702, 355.3275pt x 169.38281pt>
+<image/Ch1/ter_jcu_spec.png, id=2696, 355.3275pt x 169.38281pt>
 File: image/Ch1/ter_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/ter_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/ter_jcu_spec.png used on input line 52.
 (pdftex.def)             Requested size: 128.03706pt x 85.3606pt.
 
-<image/Ch1/fallax_jcu_wav.png, id=2703, 362.10281pt x 170.88844pt>
+<image/Ch1/fallax_jcu_wav.png, id=2697, 362.10281pt x 170.88844pt>
 File: image/Ch1/fallax_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/fallax_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/fallax_jcu_wav.png used on input line 52.
 (pdftex.def)             Requested size: 128.0363pt x 85.36057pt.
 
-<image/Ch1/fallax_jcu_spec.png, id=2704, 361.35pt x 170.88844pt>
+<image/Ch1/fallax_jcu_spec.png, id=2698, 361.35pt x 170.88844pt>
 File: image/Ch1/fallax_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/fallax_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/fallax_jcu_spec.png used on input line 52.
 (pdftex.def)             Requested size: 128.03477pt x 85.36057pt.
 
-<image/Ch1/nasuta_jcu_wav.png, id=2705, 365.11406pt x 170.88844pt>
+<image/Ch1/nasuta_jcu_wav.png, id=2699, 365.11406pt x 170.88844pt>
 File: image/Ch1/nasuta_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/nasuta_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/nasuta_jcu_wav.png used on input line 66.
 (pdftex.def)             Requested size: 128.03696pt x 85.36057pt.
 
-<image/Ch1/nasuta_jcu_spec.png, id=2706, 359.84438pt x 168.63pt>
+<image/Ch1/nasuta_jcu_spec.png, id=2700, 359.84438pt x 168.63pt>
 File: image/Ch1/nasuta_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/nasuta_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/nasuta_jcu_spec.png used on input line 66.
 (pdftex.def)             Requested size: 128.0394pt x 85.35945pt.
 
-<image/Ch1/rothii_jcu_wav.png, id=2707, 362.10281pt x 167.12437pt>
+<image/Ch1/rothii_jcu_wav.png, id=2701, 362.10281pt x 167.12437pt>
 File: image/Ch1/rothii_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/rothii_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/rothii_jcu_wav.png used on input line 66.
 (pdftex.def)             Requested size: 128.0363pt x 85.35979pt.
 
-<image/Ch1/rothii_jcu_spec.png, id=2708, 361.35pt x 168.63pt>
+<image/Ch1/rothii_jcu_spec.png, id=2702, 361.35pt x 168.63pt>
 File: image/Ch1/rothii_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/rothii_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/rothii_jcu_spec.png used on input line 66.
 (pdftex.def)             Requested size: 128.03477pt x 85.35945pt.
 
-<image/Ch1/rubella_jcu_wav.png, id=2709, 361.35pt x 169.38281pt>
+<image/Ch1/rubella_jcu_wav.png, id=2703, 361.35pt x 169.38281pt>
 File: image/Ch1/rubella_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/rubella_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/rubella_jcu_wav.png used on input line 66.
 (pdftex.def)             Requested size: 128.03477pt x 85.3606pt.
 
-<image/Ch1/rubella_jcu_spec.png, id=2710, 358.33875pt x 171.64125pt>
+<image/Ch1/rubella_jcu_spec.png, id=2704, 358.33875pt x 171.64125pt>
 File: image/Ch1/rubella_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/rubella_jcu_spec.png>
 Package pdftex.def Info: image/Ch1/rubella_jcu_spec.png used on input line 66.
 (pdftex.def)             Requested size: 128.03952pt x 85.35683pt.
 
-<image/Ch1/mimula_jcu_wav.png, id=2711, 361.35pt x 176.15813pt>
+<image/Ch1/mimula_jcu_wav.png, id=2705, 361.35pt x 176.15813pt>
 File: image/Ch1/mimula_jcu_wav.png Graphic file (type png)
 
 <use image/Ch1/mimula_jcu_wav.png>
 Package pdftex.def Info: image/Ch1/mimula_jcu_wav.png used on input line 66.
 (pdftex.def)             Requested size: 128.03477pt x 85.35863pt.
 
-<image/Ch1/mimula_jcu_spec.png, id=2712, 358.33875pt x 174.6525pt>
+<image/Ch1/mimula_jcu_spec.png, id=2706, 358.33875pt x 174.6525pt>
 File: image/Ch1/mimula_jcu_spec.png Graphic file (type png)
 
 <use image/Ch1/mimula_jcu_spec.png>
@@ -1705,63 +1671,63 @@ spec.png> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph/image/Ch
 1/mimula_jcu_wav.png> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monogr
 aph/image/Ch1/mimula_jcu_spec.png>]
 Appendix C.
-<image/Ch1/1_signal.png, id=2724, 359.54324pt x 283.0575pt>
+<image/Ch1/1_signal.png, id=2718, 359.54324pt x 283.0575pt>
 File: image/Ch1/1_signal.png Graphic file (type png)
 
 <use image/Ch1/1_signal.png>
 Package pdftex.def Info: image/Ch1/1_signal.png used on input line 85.
 (pdftex.def)             Requested size: 128.03648pt x 99.58125pt.
 
-<image/Ch1/1_noise.png, id=2725, 359.54324pt x 283.0575pt>
+<image/Ch1/1_noise.png, id=2719, 359.54324pt x 283.0575pt>
 File: image/Ch1/1_noise.png Graphic file (type png)
 
 <use image/Ch1/1_noise.png>
 Package pdftex.def Info: image/Ch1/1_noise.png used on input line 85.
 (pdftex.def)             Requested size: 128.03648pt x 99.58125pt.
 
-<image/Ch1/2_signal.png, id=2726, 353.52075pt x 283.0575pt>
+<image/Ch1/2_signal.png, id=2720, 353.52075pt x 283.0575pt>
 File: image/Ch1/2_signal.png Graphic file (type png)
 
 <use image/Ch1/2_signal.png>
 Package pdftex.def Info: image/Ch1/2_signal.png used on input line 85.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/2_noise.png, id=2727, 353.52075pt x 283.0575pt>
+<image/Ch1/2_noise.png, id=2721, 353.52075pt x 283.0575pt>
 File: image/Ch1/2_noise.png Graphic file (type png)
 
 <use image/Ch1/2_noise.png>
 Package pdftex.def Info: image/Ch1/2_noise.png used on input line 85.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/3_signal.png, id=2728, 359.54324pt x 283.0575pt>
+<image/Ch1/3_signal.png, id=2722, 359.54324pt x 283.0575pt>
 File: image/Ch1/3_signal.png Graphic file (type png)
 
 <use image/Ch1/3_signal.png>
 Package pdftex.def Info: image/Ch1/3_signal.png used on input line 102.
 (pdftex.def)             Requested size: 128.03648pt x 99.58125pt.
 
-<image/Ch1/3_noise.png, id=2729, 359.54324pt x 283.0575pt>
+<image/Ch1/3_noise.png, id=2723, 359.54324pt x 283.0575pt>
 File: image/Ch1/3_noise.png Graphic file (type png)
 
 <use image/Ch1/3_noise.png>
 Package pdftex.def Info: image/Ch1/3_noise.png used on input line 102.
 (pdftex.def)             Requested size: 128.03648pt x 99.58125pt.
 
-<image/Ch1/4_signal.png, id=2730, 353.52075pt x 283.0575pt>
+<image/Ch1/4_signal.png, id=2724, 353.52075pt x 283.0575pt>
 File: image/Ch1/4_signal.png Graphic file (type png)
 
 <use image/Ch1/4_signal.png>
 Package pdftex.def Info: image/Ch1/4_signal.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/4_noise.png, id=2731, 353.52075pt x 283.0575pt>
+<image/Ch1/4_noise.png, id=2725, 353.52075pt x 283.0575pt>
 File: image/Ch1/4_noise.png Graphic file (type png)
 
 <use image/Ch1/4_noise.png>
 Package pdftex.def Info: image/Ch1/4_noise.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/5_signal.png, id=2732, 353.52075pt x 283.0575pt>
+<image/Ch1/5_signal.png, id=2726, 353.52075pt x 283.0575pt>
 File: image/Ch1/5_signal.png Graphic file (type png)
 
 <use image/Ch1/5_signal.png>
@@ -1772,42 +1738,42 @@ File: image/Ch1/5_signal.png Graphic file (type png)
 Package pdftex.def Info: image/Ch1/5_signal.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/6_signal.png, id=2733, 359.54324pt x 283.0575pt>
+<image/Ch1/6_signal.png, id=2727, 359.54324pt x 283.0575pt>
 File: image/Ch1/6_signal.png Graphic file (type png)
 
 <use image/Ch1/6_signal.png>
 Package pdftex.def Info: image/Ch1/6_signal.png used on input line 102.
 (pdftex.def)             Requested size: 128.03648pt x 99.58125pt.
 
-<image/Ch1/6_noise.png, id=2734, 353.52075pt x 283.0575pt>
+<image/Ch1/6_noise.png, id=2728, 353.52075pt x 283.0575pt>
 File: image/Ch1/6_noise.png Graphic file (type png)
 
 <use image/Ch1/6_noise.png>
 Package pdftex.def Info: image/Ch1/6_noise.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/7_signal.png, id=2735, 353.52075pt x 283.0575pt>
+<image/Ch1/7_signal.png, id=2729, 353.52075pt x 283.0575pt>
 File: image/Ch1/7_signal.png Graphic file (type png)
 
 <use image/Ch1/7_signal.png>
 Package pdftex.def Info: image/Ch1/7_signal.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/7_noise.png, id=2736, 353.52075pt x 283.0575pt>
+<image/Ch1/7_noise.png, id=2730, 353.52075pt x 283.0575pt>
 File: image/Ch1/7_noise.png Graphic file (type png)
 
 <use image/Ch1/7_noise.png>
 Package pdftex.def Info: image/Ch1/7_noise.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/8_signal.png, id=2737, 353.52075pt x 283.0575pt>
+<image/Ch1/8_signal.png, id=2731, 353.52075pt x 283.0575pt>
 File: image/Ch1/8_signal.png Graphic file (type png)
 
 <use image/Ch1/8_signal.png>
 Package pdftex.def Info: image/Ch1/8_signal.png used on input line 102.
 (pdftex.def)             Requested size: 128.03874pt x 99.58125pt.
 
-<image/Ch1/8_noise.png, id=2738, 359.54324pt x 283.0575pt>
+<image/Ch1/8_noise.png, id=2732, 359.54324pt x 283.0575pt>
 File: image/Ch1/8_noise.png Graphic file (type png)
 
 <use image/Ch1/8_noise.png>
@@ -1895,7 +1861,7 @@ x") ("C:\Users\Jie\Documents\GitHub\Thesis\Jie_Thesis - Monograph\Appendix.aux"
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 73.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 73.
 Package rerunfilecheck Info: File `ThesisMainFile.out' has not changed.
-(rerunfilecheck)             Checksum: 43B7E1D9C10CC5A29369BA57DED78A5D;8723.
+(rerunfilecheck)             Checksum: 676B2D511C36CAEB1CE8F9DFD180AAA5;8618.
 
 
 LaTeX Warning: There were undefined references.
@@ -1903,10 +1869,10 @@ LaTeX Warning: There were undefined references.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 73.
  ) 
 Here is how much of TeX's memory you used:
- 11812 strings out of 493921
- 183599 string characters out of 3149293
+ 11810 strings out of 493921
+ 183535 string characters out of 3149293
  398359 words of memory out of 3000000
- 14229 multiletter control sequences out of 15000+200000
+ 14228 multiletter control sequences out of 15000+200000
  34258 words of font info for 75 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
  42i,20n,77p,1751b,599s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1924,9 +1890,9 @@ ftware/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Jie/software/MiKTeX/
 fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Jie/software/MiKTeX/fonts/t
 ype1/urw/times/utmb8a.pfb><C:/Jie/software/MiKTeX/fonts/type1/urw/times/utmr8a.
 pfb><C:/Jie/software/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ThesisMainFile.pdf (144 pages, 9020070 bytes).
+Output written on ThesisMainFile.pdf (144 pages, 9019441 bytes).
 PDF statistics:
- 2975 PDF objects out of 2984 (max. 8388607)
- 519 named destinations out of 1000 (max. 500000)
- 1376 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 2969 PDF objects out of 2984 (max. 8388607)
+ 518 named destinations out of 1000 (max. 500000)
+ 1368 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -95,18 +95,17 @@
 \contentsline {section}{\numberline {5.5}Summary and limitations}{82}{section.5.5}
 \contentsline {chapter}{\numberline {6}Estimating frog calling activity and species richness based on acoustic event detection and multi-label learning}{85}{chapter.6}
 \contentsline {section}{\numberline {6.1}Overview}{85}{section.6.1}
-\contentsline {section}{\numberline {6.2}Materials and methods}{86}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Acquisition of frog call recordings}{86}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Frog calling activity estimation}{87}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Wavelet-based feature extraction for species richness analysis}{87}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Multi-label classification for species richness estimation}{89}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Experiment results}{90}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Experiment setup}{90}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Frog calling activity detection}{90}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Frog species richness analysis}{90}{subsection.6.3.3}
-\contentsline {subsection}{\numberline {6.3.4}Comparison with MIML}{93}{subsection.6.3.4}
-\contentsline {subsection}{\numberline {6.3.5}Statistical analysis}{93}{subsection.6.3.5}
-\contentsline {section}{\numberline {6.4}Summary and limitations}{94}{section.6.4}
+\contentsline {section}{\numberline {6.2}Acquisition of frog call recordings}{86}{section.6.2}
+\contentsline {section}{\numberline {6.3}Experiment setup}{87}{section.6.3}
+\contentsline {section}{\numberline {6.4}Frog calling activity}{87}{section.6.4}
+\contentsline {subsection}{\numberline {6.4.1}Frog calling activity of each 10-second recording}{87}{subsection.6.4.1}
+\contentsline {subsection}{\numberline {6.4.2}Long-term monitoring of frog calling activity}{87}{subsection.6.4.2}
+\contentsline {section}{\numberline {6.5}Frog species richness}{89}{section.6.5}
+\contentsline {subsection}{\numberline {6.5.1}Multi-label classification for species richness estimation}{90}{subsection.6.5.1}
+\contentsline {subsection}{\numberline {6.5.2}Frog species richness analysis}{91}{subsection.6.5.2}
+\contentsline {subsection}{\numberline {6.5.3}Comparison with MIML}{92}{subsection.6.5.3}
+\contentsline {section}{\numberline {6.6}Statistical analysis}{93}{section.6.6}
+\contentsline {section}{\numberline {6.7}Summary and limitations}{94}{section.6.7}
 \contentsline {chapter}{\numberline {7}Conclusion and future work}{95}{chapter.7}
 \contentsline {section}{\numberline {7.1}Summary of contributions}{95}{section.7.1}
 \contentsline {section}{\numberline {7.2}Limitations and future work}{97}{section.7.2}
