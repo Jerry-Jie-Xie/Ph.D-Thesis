@@ -309,7 +309,7 @@ First, the frequency domain boundary is defined based on the dominant frequency,
 \begin{equation}
 O_{r}= \frac{P_{f}}{L_{dct}}*r_{x}*\gamma
 \end{equation}
-\noindent where $P_{f}$ is the position of the highest frequency values of the DCT result, $L_{dct}$ is the length for applying DCT to the power vector, and is experientially set as 0.2 second in this chapter. 
+\noindent where $P_{f}$ is the position of the highest frequency values of the DCT result, $L_{dct}$ is the length for applying DCT to the power vector set as 0.2 second in this experiment. 
 
 
 
@@ -337,7 +337,7 @@ Based on the obtained frequency scale, an adaptive frequency scaled WPD method i
 
 \begin{algorithm}
 \DontPrintSemicolon
-\KwData{ $c_{i}(i=1,2,...,K)$, $f_{s}$, where $K$ is the number of frog species to be classified, $c_{i}$ is the centroid of the clustering results, $f_{s} = sr / 2$ where $sr$ is the sample rate of the audio recordings, which is 16 kHz here.}
+\KwData{ $c_{i}(i=1,2,...,K)$, $f_{s}$, where $K$ is the number of frog species to be classified, $c_{i}$ is the centroid of the clustering results, $f_{s} = S_{r} / 2$ where $S_{r}$ is the sample rate of the audio recordings, which is 16 kHz here.}
 \KwResult{Adaptive wavelet packet tree}
 
 \Begin{
@@ -389,7 +389,7 @@ stop decomposition
 \subsection{Feature extraction based on adaptive frequency scaled WPD}
 \label{Ch5:WPDfeature}
 %The aim of feature extraction is to obtain a sequence of feature vectors that hidden in the original time domain \citep{yen2000wavelet}.
-In previous studies \citep{bedoya2014automatic, Xie1504:Acoustic}, Mel-frequency cepstral coefficients (MFCCs) have been used for studying bioacoustic data, and used as the baseline for feature comparison in this chapter. Besides MFCCs, another feature set called Mel-scaled wavelet packet decomposition sub-band cepstral coefficients (MWSCCs) is also included in the comparison experiment \citep{Zhang2015108}, because it shows better performance than MFCCs for bird detection in a complex environment. In this chapter, we propose a novel feature set named \textit{adaptive frequency scale wavelet packet decomposition sub-band cepstral coefficients} (AWSCCs) for frog call classification.
+In previous studies \citep{bedoya2014automatic, Xie1504:Acoustic}, Mel-frequency cepstral coefficients (MFCCs) has been used for studying bioacoustic data, and it is used as the baseline for feature comparison in this chapter. Besides MFCCs, another feature set called Mel-scaled wavelet packet decomposition sub-band cepstral coefficients (MWSCCs) is also included in the comparison experiment \citep{Zhang2015108}, because it shows better performance than MFCCs for bird detection in a complex environment. In this chapter, we propose a novel feature set named \textit{adaptive frequency scale wavelet packet decomposition sub-band cepstral coefficients} (AWSCCs) for frog call classification.
 The extraction procedure of AWSCCs is similar to MWSCCs. However, the frequency scale used for our AWSCCs is based on an adaptive frequency scale rather than the Mel-scale for MWSCCs. Meanwhile, after performing DCT, temporal feature integration is used for calculating the statistics of feature vectors which generates different statistical types of AWSCCs. (see in Figure~\ref{fig:featureExtraction}). 
 
 
@@ -408,7 +408,7 @@ x(n) = w(n)y(n)
 \end{equation}
 \noindent where $w(L)$ is the Hamming window function and defined as $w(n)=0.54-0.46cos(\frac{2n\pi}{L-1}) $, $L$ is the length of Hamming window and set as 128 samples here.
 \\
-\textbf{2)}. Perform wavelet packet decomposition spaced in adaptive frequency scale as described in Section 2.7.
+\textbf{2)}. Perform wavelet packet decomposition spaced in adaptive frequency scale as described in Section 4.2.7.
 \begin{equation}
 WP(i,j)=\sum_{i=1}^{M}x(n)\psi_{(a,b)}(n) 
 \end{equation}
@@ -468,9 +468,9 @@ The descriptions of those two classifiers can be found in Chapter \ref{ch4:class
 Several experiments are described for evaluating our proposed frog call classification system. First, the parameter tuning is discussed based on the reference data set. Then, the comparisons between all proposed features are studied. Finally, the classification results under different SNR are described.
 
 \subsection{Parameter tuning}
-There are five modules for parameter tuning: syllable segmentation, spectral peak track, feature extraction, and classification (Figure~\ref{fig:flowchart}). 
+There are five modules that require parameter tuning: syllable segmentation, spectral peak track, feature extraction, and classification (Figure~\ref{fig:flowchart}). 
 
-For syllable segmentation, the window size and overlap are 512 samples and 25\%, however, the intensity threshold is 10 dB and 5 dB for the commercial recordings and the JCU recordings respectively.
+For syllable segmentation, the window size and overlap are 512 samples and 25\%, but the intensity thresholds are 10 dB and 5 dB for the commercial recordings and the JCU recordings, respectively.
 
 
 In the spectral peak track determination, there are seven parameters (see in Table \ref{tab:SPT}). The parameter settings are shown in Table \ref{tab:value}.

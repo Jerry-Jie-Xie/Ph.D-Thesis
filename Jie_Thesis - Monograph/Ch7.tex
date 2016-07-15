@@ -13,11 +13,11 @@ To reduce the bias introduced by AED, this research presents a global feature re
 
 
 
-Compared with that described in Chapter \ref{cha:cha6MIML}, three global feature representations are calculated to classify each 10-second recording: linear predictive coding (LPC), MFCCs and wavelet-based features. The wavelet-based features are similar with the features used in Chapter \ref{cha:cha5WaveletFeature}. The difference is that we divide \textit{adaptive WPD sub-band ceptral coefficients} into three equal stages to obtain more temporal information.
+Compared with that described in Chapter \ref{cha:cha6MIML}, three global feature representations are calculated to classify each 10-second recording: linear predictive coding (LPC), MFCCs and wavelet-based features. The wavelet-based features are similar to the features used in Chapter \ref{cha:cha5WaveletFeature}. The difference is that we divide \textit{adaptive WPD sub-band ceptral coefficients} into three equal intervals to obtain more temporal information.
 
 
  
-Furthermore, this proposed classification framework is conducted for a long-term analysis. Both frog calling activity and species richness during the breeding season are estimated. Also, the correlation between frog calling activity/species richness with weather variables is studied for reflecting the relationship between frog calls and the environment change. 
+Furthermore, this proposed classification framework is conducted for a long-term analysis. Both frog calling activity and species richness during the breeding season are estimated. Also, the correlation between frog calling activity/species richness with weather variables is studied for reflecting the relationship between them. 
 
   
 
@@ -258,7 +258,7 @@ Experiment results are shown in Table~\ref{tab:classificationResults}.
 %\vspace{-1em}
 \begin{table}[htb!]
 \centering
-\caption[Classification results based on four feature sets and four multi-label learning algorithms.]{Classification results based on four feature sets and four multi-label learning algorithms. Here the methods for multi-label algorithms are in accordance to the name in the \textit{Meka} software. The base classifier of all methods is decision tree. For a metric, the best value is in bold. Here, $\downarrow$ indicates ‘the smaller the better’, while ‘$\uparrow$’ indicates ‘the bigger the better’. The description of each evaluation metric can be found in Chapter \ref{ch6:eveluationMetric}.}
+\caption[Classification results based on four feature sets and four multi-label learning algorithms.]{Classification results based on four feature sets and four multi-label learning algorithms. Here the methods for multi-label algorithms are in accordance to the name in the \textit{Meka} software. The base classifier of all methods is decision tree. For a metric, the best value is in bold. Here, $\downarrow$ indicates that smaller values imply higher accuracy, while ‘$\uparrow$’ has the completely opposite meanings. The description of each evaluation metric can be found in Chapter \ref{ch6:eveluationMetric}.}
 \label{tab:classificationResults}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{llllllll}
@@ -360,6 +360,6 @@ Multiple regression analysis is used to explore the relationship between frog ca
 
 \section{Summary and limitations}
 Acoustic sensors are more widely used to monitor frog calling activity and species richness than the traditional field survey method. However, the use of acoustic sensors generates large volumes of audio data, which makes it necessary to develop automated methods. This paper proposes a novel method for detecting frog calling activity and species richness based on acoustic event detection and multi-label learning. Specifically,
-acoustic event detection is the first step to calculate frog calling activity. Meanwhile, those 10-second recordings without frog calls are filtered out. For those recordings with frog calls, multi-label learning is further used for estimating frog species richness with multi-stage WP-based features and LPCs. Finally, statistical analysis is utilised to reflect the relationship between frog calling activity/species richness with weather variables (mean temperature and rainfall). Experiment results show that our proposed method can accurately estimate frog calling activity/species richness and reflect their relationship with weather variables. Future work will focus on a wider frog call database, including a larger number of frog species, and frog calls collected over a longer period.
+acoustic event detection is the first step to calculate frog calling activity. Meanwhile, those 10-second recordings without frog calls are filtered out. For those recordings with frog calls, multi-label learning is further used for estimating frog species richness with multi-stage WP-based features and LPCs. Finally, statistical analysis is utilised to reflect the relationship between frog calling activity/species richness with weather variables (mean temperature and rainfall). Experimental results show that our proposed method can accurately estimate frog calling activity/species richness and reflect their relationship with weather variables. Future work will focus on a wider frog call database, including a larger number of frog species, and frog calls collected over a longer period.
 
 
