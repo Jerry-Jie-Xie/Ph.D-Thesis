@@ -1,0 +1,579 @@
+\begin{thebibliography}{}
+
+\bibitem[Acevedo et~al., 2009]{acevedo2009automated}
+Acevedo, M.~A., Corrada-Bravo, C.~J., Corrada-Bravo, H., Villanueva-Rivera,
+  L.~J., and Aide, T.~M. (2009).
+\newblock Automated classification of bird and amphibian calls using machine
+  learning: A comparison of methods.
+\newblock {\em Ecological Informatics}, 4(4):206--214.
+
+\bibitem[Akmentins et~al., 2015]{akmentins2015patterns}
+Akmentins, M., Pereyra, L., Sanabria, E., and Vaira, M. (2015).
+\newblock Patterns of daily and seasonal calling activity of a
+  direct-developing frog of the subtropical andean forests of argentina.
+\newblock {\em Bioacoustics}, 24(2):89--99.
+
+\bibitem[Allen, 1997]{allen1997short}
+Allen, J. (1997).
+\newblock Short term spectral analysis, synthesis, and modification by discrete
+  fourier transform.
+\newblock In {\em IEEE Trans. on Acoust., Speech, and Sig. Proc.}, volume~4,
+  pages 21--24.
+
+\bibitem[Arch et~al., 2008]{arch2008ultrasonic}
+Arch, V.~S., Grafe, T.~U., and Narins, P.~M. (2008).
+\newblock Ultrasonic signalling by a bornean frog.
+\newblock {\em Biology Letters}, 4(1):19--22.
+
+\bibitem[Bao and Cui, 2005]{bao2005prediction}
+Bao, L. and Cui, Y. (2005).
+\newblock Prediction of the phenotypic effects of non-synonymous single
+  nucleotide polymorphisms using structural and evolutionary information.
+\newblock {\em Bioinformatics}, 21(10):2185--2190.
+
+\bibitem[Bedoya et~al., 2014]{bedoya2014automatic}
+Bedoya, C., Isaza, C., Daza, J.~M., and L{\'o}pez, J.~D. (2014).
+\newblock Automatic recognition of anuran species based on syllable
+  identification.
+\newblock {\em Ecological Informatics}, 24:200--209.
+
+\bibitem[Biswas et~al., 2014]{Biswas20141111}
+Biswas, A., Sahu, P., and Chandra, M. (2014).
+\newblock Admissible wavelet packet features based on human inner ear frequency
+  response for hindi consonant recognition.
+\newblock {\em Computers \& Electrical Engineering}, 40(4):1111 -- 1122.
+
+\bibitem[Brandes, 2008]{brandes2008feature}
+Brandes, T.~S. (2008).
+\newblock Feature vector selection and use with hidden markov models to
+  identify frequency-modulated bioacoustic signals amidst noise.
+\newblock {\em Audio, Speech, and Language Processing, IEEE Transactions on},
+  16(6):1173--1180.
+
+\bibitem[Brandes et~al., 2006]{Brandes2006}
+Brandes, T.~S., Naskrecki, P., and Figueroa, H.~K. (2006).
+\newblock Using image processing to detect and classify narrow-band cricket and
+  frog calls.
+\newblock {\em The Journal of the Acoustical Society of America},
+  120(5):2950--2957.
+
+\bibitem[Briggs et~al., 2012]{briggs2012acoustic}
+Briggs, F., Lakshminarayanan, B., Neal, L., Fern, X.~Z., Raich, R., Hadley,
+  S.~J., Hadley, A.~S., and Betts, M.~G. (2012).
+\newblock Acoustic classification of multiple simultaneous bird species: A
+  multi-instance multi-label approach.
+\newblock {\em The Journal of the Acoustical Society of America},
+  131(6):4640--4650.
+
+\bibitem[Camacho et~al., 2011]{camacho2013automatic}
+Camacho, A., Garc{\'\i}a-Rodr{\'\i}guez, A., and Bola{\~n}os, F. (2011).
+\newblock Automatic detection of vocalizations of the frog diasporus
+  hylaeformis in audio recordings.
+\newblock In {\em Proceedings of Meetings on Acoustics}, volume~14, page
+  010003. Acoustical Society of America.
+
+\bibitem[Canavero et~al., 2008]{canavero2008calling}
+Canavero, A., Arim, M., Naya, D.~E., Camargo, A., Da~Rosa, I., and Maneyro, R.
+  (2008).
+\newblock Calling activity patterns in an anuran assemblage: the role of
+  seasonal trends and weather determinants.
+\newblock {\em North-Western Journal of Zoology}, 4(1):29--41.
+
+\bibitem[Chen et~al., 2013]{chen2013novel}
+Chen, W., Zhao, G., and Li, X. (2013).
+\newblock A novel approach based on ensemble learning to nips4b challenge.
+\newblock In {\em proc. of int. symp. Neural Information Scaled for
+  Bioacoustics, sabiod. org/nips4b, joint to NIPS, Nevada}.
+
+\bibitem[Chen et~al., 2012]{chen2012automatic}
+Chen, W.-P., Chen, S.-S., Lin, C.-C., Chen, Y.-Z., and Lin, W.-C. (2012).
+\newblock Automatic recognition of frog calls using a multi-stage average
+  spectrum.
+\newblock {\em Computers \& Mathematics with Applications}, 64(5):1270--1281.
+
+\bibitem[Chen and Maher, 2006]{chen2006semi}
+Chen, Z. and Maher, R.~C. (2006).
+\newblock Semi-automatic classification of bird vocalizations using spectral
+  peak tracks.
+\newblock {\em The Journal of the Acoustical Society of America},
+  120(5):2974--2984.
+
+\bibitem[Colombia and del Cauca, 2009]{colombia2009frogs}
+Colombia, C. and del Cauca, V. (2009).
+\newblock Frogs species classification using lpc and classification algorithms
+  on wireless sensor network platform.
+
+\bibitem[Colonna et~al., 2012a]{feature2012Colona}
+Colonna, J., Ribas, A., dos Santos, E., and Nakamura, E. (2012a).
+\newblock Feature subset selection for automatically classifying anuran calls
+  using sensor networks.
+\newblock In {\em Neural Networks (IJCNN), The 2012 International Joint
+  Conference on}, pages 1--8.
+
+\bibitem[Colonna et~al., 2015]{Colonna20157367}
+Colonna, J.~G., Cristo, M., Junior, M.~S., and Nakamura, E.~F. (2015).
+\newblock An incremental technique for real-time bioacoustic signal
+  segmentation.
+\newblock {\em Expert Systems with Applications}, 42(21):7367 -- 7374.
+
+\bibitem[Colonna et~al., 2012b]{colonna2012feature}
+Colonna, J.~G., Ribas, A.~D., dos Santos, E.~M., and Nakamura, E.~F. (2012b).
+\newblock Feature subset selection for automatically classifying anuran calls
+  using sensor networks.
+\newblock In {\em Neural Networks (IJCNN), The 2012 International Joint
+  Conference on}, pages 1--8. IEEE.
+
+\bibitem[Cortes and Vapnik, 1995]{cortes1995support}
+Cortes, C. and Vapnik, V. (1995).
+\newblock Support-vector networks.
+\newblock {\em Machine learning}, 20(3):273--297.
+
+\bibitem[Croker and Kottege, 2012]{croker2012using}
+Croker, B. and Kottege, N. (2012).
+\newblock Using feature vectors to detect frog calls in wireless sensor
+  networks.
+\newblock {\em The Journal of the Acoustical Society of America},
+  131(5):EL400--EL405.
+
+\bibitem[Dang et~al., 2008]{dang2008lightweight}
+Dang, T., Bulusu, N., and Hu, W. (2008).
+\newblock Lightweight acoustic classification for cane-toad monitoring.
+\newblock In {\em Signals, Systems and Computers, 2008 42nd Asilomar Conference
+  on}, pages 1601--1605. IEEE.
+
+\bibitem[Dayou et~al., 2011]{dayou2011classification}
+Dayou, J., Han, N.~C., Mun, H.~C., Ahmad, A.~H., Muniandy, S.~V., and Dalimin,
+  M.~N. (2011).
+\newblock Classification and identification of frog sound based on entropy
+  approach.
+\newblock In {\em International Conference on Life Science and Technology},
+  volume~3, pages 184--187.
+
+\bibitem[Deng and O'Shaughnessy, 2003]{deng2003speech}
+Deng, L. and O'Shaughnessy, D. (2003).
+\newblock {\em Speech processing: a dynamic and optimization-oriented
+  approach}.
+\newblock CRC Press.
+
+\bibitem[Dorcas et~al., 2009]{dorcas2009auditory}
+Dorcas, M.~E., Price, S.~J., Walls, S.~C., and Barichivich, W.~J. (2009).
+\newblock Auditory monitoring of anuran populations.
+\newblock {\em Amphibian ecology and conservation: a hand book of techniques.
+  Oxford University Press, Oxford}, pages 281--298.
+
+\bibitem[Dudgeon et~al., 2006]{dudgeon2006freshwater}
+Dudgeon, D., Arthington, A.~H., Gessner, M.~O., Kawabata, Z.-I., Knowler,
+  D.~J., L{\'e}v{\^e}que, C., Naiman, R.~J., Prieur-Richard, A.-H., Soto, D.,
+  Stiassny, M.~L., et~al. (2006).
+\newblock Freshwater biodiversity: importance, threats, status and conservation
+  challenges.
+\newblock {\em Biological reviews}, 81(02):163--182.
+
+\bibitem[Dufour et~al., 2013]{dufour2013multi}
+Dufour, O., Glotin, H., Artires, T., Bas, Y., and Giraudet, P. (2013).
+\newblock Multi-instance multi-label acoustic classification of plurality of
+  animals: birds, insects \& amphibian.
+\newblock {\em Workshop on Neural Information Processing Scaled for
+  Bioacoustics}, pages 164--174.
+
+\bibitem[Farooq and Datta, 2001]{farooq2001mel}
+Farooq, O. and Datta, S. (2001).
+\newblock Mel filter-like admissible wavelet packet structure for speech
+  recognition.
+\newblock {\em IEEE Signal Processing Letters}, 8(7):196--198.
+
+\bibitem[Fodor, 2013]{fodor2013ninth}
+Fodor, G. (2013).
+\newblock The ninth annual mlsp competition: first place.
+\newblock In {\em Machine Learning for Signal Processing (MLSP), 2013 IEEE
+  International Workshop on}, pages 1--2. IEEE.
+
+\bibitem[Fox, 2008]{Fox20081187}
+Fox, E.~J. (2008).
+\newblock A new perspective on acoustic individual recognition in animals with
+  limited call sharing or changing repertoires.
+\newblock {\em Animal Behaviour}, 75(3):1187 -- 1194.
+
+\bibitem[Gingras and Fitch, 2013]{Gingras2013}
+Gingras, B. and Fitch, W.~T. (2013).
+\newblock A three-parameter model for classifying anurans into four genera
+  based on advertisement calls.
+\newblock {\em The Journal of the Acoustical Society of America},
+  133(1):547--559.
+
+\bibitem[Glotin et~al., 2013]{glotin2013sparse}
+Glotin, H., Sueur, J., Arti{\`e}res, T., Adam, O., and Razik, J. (2013).
+\newblock Sparse coding for scaled bioacoustics: From humpback whale songs
+  evolution to forest soundscape analyses.
+\newblock {\em The Journal of the Acoustical Society of America},
+  133(5):3311--3311.
+
+\bibitem[Gordon et~al., 2003]{gordon2003sequence}
+Gordon, L., Chervonenkis, A.~Y., Gammerman, A.~J., Shahmuradov, I.~A., and
+  Solovyev, V.~V. (2003).
+\newblock Sequence alignment kernel for recognition of promoter regions.
+\newblock {\em Bioinformatics}, 19(15):1964--1971.
+
+\bibitem[Grigg et~al., 1996]{grigg1996monitoring}
+Grigg, G., Taylor, A., Mc~Callum, H., and Watson, G. (1996).
+\newblock Monitoring frog communities: an application of machine learning.
+\newblock In {\em Proceedings of Eighth Innovative Applications of Artificial
+  Intelligence Conference, Portland Oregon}, pages 1564--1569.
+
+\bibitem[Han et~al., 2011]{han2011acoustic}
+Han, N.~C., Muniandy, S.~V., and Dayou, J. (2011).
+\newblock Acoustic classification of australian anurans based on hybrid
+  spectral-entropy approach.
+\newblock {\em Applied Acoustics}, 72(9):639--645.
+
+\bibitem[Han et~al., 2006]{han2006efficient}
+Han, W., Chan, C.-F., Choy, C.-S., and Pun, K.-P. (2006).
+\newblock An efficient mfcc extraction method in speech recognition.
+\newblock In {\em Circuits and Systems, 2006. ISCAS 2006. Proceedings. 2006
+  IEEE International Symposium on}, pages 4--pp. IEEE.
+
+\bibitem[Harma, 2003]{harma2003automatic}
+Harma, A. (2003).
+\newblock Automatic identification of bird species based on sinusoidal modeling
+  of syllables.
+\newblock In {\em Acoustics, Speech, and Signal Processing, 2003.
+  Proceedings.(ICASSP'03). 2003 IEEE International Conference on}, volume~5,
+  pages V--545. IEEE.
+
+\bibitem[Heller and Pinezich, 2008]{jasaTrack}
+Heller, J.~R. and Pinezich, J.~D. (2008).
+\newblock Automatic recognition of harmonic bird sounds using a frequency track
+  extraction algorithm.
+\newblock {\em The Journal of the Acoustical Society of America},
+  124(3):1830--1837.
+
+\bibitem[Hsu et~al., 2003]{hsu2003practical}
+Hsu, C.-W., Chang, C.-C., Lin, C.-J., et~al. (2003).
+\newblock A practical guide to support vector classification.
+
+\bibitem[Huang et~al., 2014]{Huang20141}
+Huang, C.-J., Chen, Y.-J., Chen, H.-M., Jian, J.-J., Tseng, S.-C., Yang, Y.-J.,
+  and Hsu, P.-A. (2014).
+\newblock Intelligent feature extraction and classification of anuran
+  vocalizations.
+\newblock {\em Applied Soft Computing}, 19(0):1 -- 7.
+
+\bibitem[Huang et~al., 2009]{huang2009frog}
+Huang, C.-J., Yang, Y.-J., Yang, D.-X., and Chen, Y.-J. (2009).
+\newblock Frog classification using machine learning techniques.
+\newblock {\em Expert Systems with Applications}, 36(2):3737--3743.
+
+\bibitem[Huang et~al., 2008]{huang2008realization}
+Huang, C.-J., Yang, Y.-J., Yang, D.-X., Chen, Y.-J., and Wei, H.-Y. (2008).
+\newblock Realization of an intelligent frog call identification agent.
+\newblock In {\em Agent and Multi-Agent Systems: Technologies and
+  Applications}, pages 93--102. Springer.
+
+\bibitem[Jaafar and Ramli, 2013a]{jaafar2013}
+Jaafar, H. and Ramli, D. (2013a).
+\newblock Automatic syllables segmentation for frog identification system.
+\newblock In {\em Signal Processing and its Applications (CSPA), 2013 IEEE 9th
+  International Colloquium on}, pages 224--228.
+
+\bibitem[Jaafar and Ramli, 2013b]{jaafar2013automatic}
+Jaafar, H. and Ramli, D.~A. (2013b).
+\newblock Automatic syllables segmentation for frog identification system.
+\newblock In {\em Signal Processing and its Applications (CSPA), 2013 IEEE 9th
+  International Colloquium on}, pages 224--228. IEEE.
+
+\bibitem[Jaafar et~al., 2013a]{jaafarcomparative}
+Jaafar, H., Ramli, D.~A., and Shahrudin, S. (2013a).
+\newblock A comparative study of classification algorithms and feature
+  extractions for frog identification system.
+
+\bibitem[Jaafar et~al., 2013b]{jaafar2013mfcc}
+Jaafar, H., Ramli, D.~A., and Shahrudin, S. (2013b).
+\newblock Mfcc based frog identification system in noisy environment.
+\newblock In {\em Signal and Image Processing Applications (ICSIPA), 2013 IEEE
+  International Conference on}, pages 123--127. IEEE.
+
+\bibitem[Jancovic and Kokuer, 2015]{birdTrack}
+Jancovic, P. and Kokuer, M. (2015).
+\newblock Acoustic recognition of multiple bird species based on penalized
+  maximum likelihood.
+\newblock {\em Signal Processing Letters, IEEE}, 22(10):1585--1589.
+
+\bibitem[Jang et~al., 2011]{jang2011geographic}
+Jang, Y., Hahm, E.~H., Lee, H.-J., Park, S., Won, Y.-J., and Choe, J.~C.
+  (2011).
+\newblock Geographic variation in advertisement calls in a tree frog species:
+  gene flow and selection hypotheses.
+\newblock {\em PloS one}, 6(8):e23297.
+
+\bibitem[Juan~Mayor, 2009]{juan2009frogs}
+Juan~Mayor, L. M.~M. (2009).
+\newblock Frogs species classification using lpc and classification algorithms
+  on wireless sensor network platform.
+\newblock In {\em XVII General Assembly, Ibero-American Conference on Trends in
+  Engineering Education and Collaboration, ISTEC, 2009}.
+
+\bibitem[Kular et~al., 2015]{kular2015classifying}
+Kular, D., Hollowood, K., Ommojaro, O., Smart, K., Bush, M., and Ribeiro, E.
+  (2015).
+\newblock Classifying frog calls using gaussian mixture models.
+\newblock In {\em Advances in Visual Computing}, pages 347--354. Springer.
+
+\bibitem[Lasseck, 2013]{lasseck2013bird}
+Lasseck, M. (2013.).
+\newblock Bird song classification in field recordings: winning solution for
+  nips4b 2013 competition.
+\newblock In {\em Proc. of int. symp. Neural Information Scaled for
+  Bioacoustics, sabiod. org/nips4b, joint to NIPS, Nevada.}
+
+\bibitem[Lee et~al., 2006]{lee2006automatic}
+Lee, C.-H., Chou, C.-H., Han, C.-C., and Huang, R.-Z. (2006).
+\newblock Automatic recognition of animal vocalizations using averaged mfcc and
+  linear discriminant analysis.
+\newblock {\em Pattern Recognition Letters}, 27(2):93--101.
+
+\bibitem[Lei et~al., 2014]{lei2014content}
+Lei, B., Rahman, S.~A., and Song, I. (2014).
+\newblock Content-based classification of breath sound with enhanced features.
+\newblock {\em Neurocomputing}, 141:139--147.
+
+\bibitem[Litvin and Cohen, 2011]{barkWPDraey}
+Litvin, Y. and Cohen, I. (2011).
+\newblock Single-channel source separation of audio signals using bark scale
+  wavelet packet decomposition.
+\newblock {\em Journal of Signal Processing Systems}, 65(3):339--350.
+
+\bibitem[Madjarov et~al., 2012]{Madjarov20123084}
+Madjarov, G., Kocev, D., Gjorgjevikj, D., and D?eroski, S. (2012).
+\newblock An extensive experimental comparison of methods for multi-label
+  learning.
+\newblock {\em Pattern Recognition}, 45(9):3084 -- 3104.
+
+\bibitem[Mallawaarachchi et~al., 2008]{mallawaarachchi2008spectrogram}
+Mallawaarachchi, A., Ong, S., Chitre, M., and Taylor, E. (2008).
+\newblock Spectrogram denoising and automated extraction of the fundamental
+  frequency variation of dolphin whistles.
+\newblock {\em The Journal of the Acoustical Society of America},
+  124(2):1159--1170.
+
+\bibitem[Massaron, 2013]{massaronensemble}
+Massaron, L. (2013).
+\newblock Ensemble logistic regression and gradient boosting classifiers for
+  multilabel bird song classification in noise (nips4b challenge).
+\newblock {\em Proc of Neural Information Processing Scaled for Bioacoustics,
+  joint to NIPS}.
+
+\bibitem[Mellinger et~al., 2011]{mellinger2011method}
+Mellinger, D.~K., Martin, S.~W., Morrissey, R.~P., Thomas, L., and Yosco, J.~J.
+  (2011).
+\newblock A method for detecting whistles, moans, and other frequency contour
+  sounds.
+\newblock {\em The Journal of the Acoustical Society of America},
+  129(6):4055--4061.
+
+\bibitem[Melter, 1987]{Melter1987235}
+Melter, R.~A. (1987).
+\newblock Some characterizations of city block distance.
+\newblock {\em Pattern Recognition Letters}, 6(4):235 -- 240.
+
+\bibitem[Menc{\i}a et~al., 2013]{mencia2013learning}
+Menc{\i}a, E.~L., Nam, J., and Lee, D.-H. (2013).
+\newblock Learning multi-labeled bioacoustic samples with an unsupervised
+  feature learning approach.
+\newblock {\em Proc of Neural Information Processing Scaled for Bioacoustics,
+  joint to NIPS}, 2013:184--189.
+
+\bibitem[Narins et~al., 2007]{narins2007frogs}
+Narins, P.~M., Feng, A.~S., and Shen, J.-X. (2007).
+\newblock Frogs communicate with ultrasound in noisy environments.
+\newblock In {\em Hearing--From sensory processing to perception}, pages
+  185--190. Springer.
+
+\bibitem[Noda et~al., 2016]{Noda2016100}
+Noda, J.~J., Travieso, C.~M., and S?nchez-Rodr?guez, D. (2016).
+\newblock Methodology for automatic bioacoustic classification of anurans based
+  on feature fusion.
+\newblock {\em Expert Systems with Applications}, 50:100 -- 106.
+
+\bibitem[Otsu, 1975]{otsu1975threshold}
+Otsu, N. (1975).
+\newblock A threshold selection method from gray-level histograms.
+\newblock {\em Automatica}, 11(285-296):23--27.
+
+\bibitem[Potamitis, 2015]{potamitis2015unsupervised}
+Potamitis, I. (2015).
+\newblock Unsupervised dictionary extraction of bird vocalisations and new
+  tools on assessing and visualising bird activity.
+\newblock {\em Ecological Informatics}, 26:6--17.
+
+\bibitem[Razik et~al., 2015]{razik2015sparse}
+Razik, J., Hoeberechts, M., Doh, Y., et~al. (2015).
+\newblock Sparse coding for efficient bioacoustic data mining: Preliminary
+  application to analysis of whale songs.
+\newblock In {\em 2015 IEEE International Conference on Data Mining Workshop
+  (ICDMW)}, pages 780--787. IEEE.
+
+\bibitem[Ren et~al., 2008]{ren2008perceptually}
+Ren, Y., Johnson, M.~T., and Tao, J. (2008).
+\newblock Perceptually motivated wavelet packet transform for bioacoustic
+  signal enhancement.
+\newblock {\em The Journal of the Acoustical Society of America},
+  124(1):316--327.
+
+\bibitem[Rocchesso, 2003]{rocchesso2003introduction}
+Rocchesso, D. (2003).
+\newblock {\em Introduction to sound processing}.
+\newblock Mondo estremo.
+
+\bibitem[Roch et~al., 2011]{roch2011automated}
+Roch, M.~A., Brandes, T.~S., Patel, B., Barkley, Y., Baumann-Pickering, S., and
+  Soldevilla, M.~S. (2011).
+\newblock Automated extraction of odontocete whistle contours.
+\newblock {\em The Journal of the Acoustical Society of America},
+  130(4):2212--2223.
+
+\bibitem[Ruiz-Munoz et~al., 2015]{ruizmultiple2015}
+Ruiz-Munoz, J., Orozco-Alzate, M., and Castellanos-Dominguez, G. (2015).
+\newblock Multiple instance learning-based birdsong classification using
+  unsupervised recording segmentation.
+\newblock {\em Proceedings of the Twenty-Fourth International Joint Conference
+  On Artificial Intelligence (IJCAI 2015)}.
+
+\bibitem[Selin et~al., 2007]{selin2007wavelets}
+Selin, A., Turunen, J., and Tanttu, J.~T. (2007).
+\newblock Wavelets in recognition of bird sounds.
+\newblock {\em EURASIP Journal on Applied Signal Processing}, 2007(1):141--141.
+
+\bibitem[Somervuo et~al., 2004]{somervuo2004classification}
+Somervuo, P. et~al. (2004).
+\newblock Classification of the harmonic structure in bird vocalization.
+\newblock In {\em Acoustics, Speech, and Signal Processing, 2004.
+  Proceedings.(ICASSP'04). IEEE International Conference on}, volume~5, pages
+  V--701. IEEE.
+
+\bibitem[Somervuo et~al., 2006]{somervuo2006parametric}
+Somervuo, P., H{\"a}rm{\"a}, A., and Fagerlund, S. (2006).
+\newblock Parametric representations of bird sounds for automatic species
+  recognition.
+\newblock {\em Audio, Speech, and Language Processing, IEEE Transactions on},
+  14(6):2252--2263.
+
+\bibitem[Stewart, 1999]{CD}
+Stewart, D. (1999).
+\newblock Australian frog calls: subtropical east.
+\newblock Audio CD.
+
+\bibitem[Stowell and Plumbley, 2013]{stowell2013feature}
+Stowell, D. and Plumbley, M.~D. (2013).
+\newblock Feature design for multilabel bird song classification in noise
+  (nips4b challenge).
+\newblock {\em Proceedings of NIPS4b: neural information processing scaled for
+  bioacoustics, from neurons to big data}.
+
+\bibitem[Tan et~al., 2014]{tanintelligent2014}
+Tan, W., Jaafar, H., Ramli, D., Rosdi, B., and Shahrudin, S. (2014).
+\newblock Intelligent frog species identification on android operating system.
+\newblock {\em International journal of circuits, systems and signal
+  processing}.
+
+\bibitem[Tanton, 2005]{tanton2005encyclopedia}
+Tanton, J.~S. (2005).
+\newblock {\em Encyclopedia of mathematics}.
+\newblock Facts On File.
+
+\bibitem[Tjahja et~al., 2015]{tjahja2015supervised}
+Tjahja, T.~V., Fern, X.~Z., Raich, R., and Pham, A.~T. (2015).
+\newblock Supervised hierarchical segmentation for bird song recording.
+\newblock In {\em Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE
+  International Conference on}, pages 763--767. IEEE.
+
+\bibitem[Towsey et~al., 2012]{towsey2012toolbox}
+Towsey, M., Planitz, B., Nantes, A., Wimmer, J., and Roe, P. (2012).
+\newblock A toolbox for animal call recognition.
+\newblock {\em Bioacoustics}, 21(2):107--125.
+
+\bibitem[Towsey and Planitz, 2011]{Michael2011}
+Towsey, M.~W. and Planitz, B. (2011).
+\newblock Technical report : acoustic analysis of the natural environment.
+\newblock 2011.
+
+\bibitem[Vaca-Castano and Rodriguez, 2010]{vaca2010using}
+Vaca-Castano, G. and Rodriguez, D. (2010).
+\newblock Using syllabic mel cepstrum features and k-nearest neighbors to
+  identify anurans and birds species.
+\newblock In {\em Signal Processing Systems (SIPS), 2010 IEEE Workshop on},
+  pages 466--471. IEEE.
+
+\bibitem[Wei et~al., 2012]{wei2012distributed}
+Wei, B., Yang, M., Rana, R.~K., Chou, C.~T., and Hu, W. (2012).
+\newblock Distributed sparse approximation for frog sound classification.
+\newblock In {\em Proceedings of the 11th international conference on
+  Information Processing in Sensor Networks}, pages 105--106. ACM.
+
+\bibitem[Wimmer et~al., 2013]{wimmer2013analysing}
+Wimmer, J., Towsey, M., Planitz, B., Williamson, I., and Roe, P. (2013).
+\newblock Analysing environmental acoustic data through collaboration and
+  automation.
+\newblock {\em Future Generation Computer Systems}, 29(2):560--568.
+
+\bibitem[Xie, 2016]{songMeter}
+Xie, J. (2016).
+\newblock Song meter (sm2) widelife acoustic.
+\newblock {\em http://www.wildlifeacoustics.com/products/song-meter-sm2-birds}.
+
+\bibitem[Xie et~al., 2015a]{jie2015escience}
+Xie, J., Towsey, M., Eichinski, P., Zhang, J., and Roe, P. (2015a).
+\newblock Acoustic feature extraction using perceptual wavelet packet
+  decomposition for frog call classification.
+\newblock {\em 11th IEEE International Conference on eScience}.
+
+\bibitem[Xie et~al., 2015b]{Xie1504:Acoustic}
+Xie, J., Towsey, M., Truskinger, A., Eichinski, P., Zhang, J., and Roe, P.
+  (2015b).
+\newblock Acoustic classification of australian anurans using syllable
+  features.
+\newblock In {\em 2015 IEEE Tenth International Conference on Intelligent
+  Sensors, Sensor Networks and Information Processing (IEEE ISSNIP 2015)},
+  Singapore, Singapore.
+
+\bibitem[Xie et~al., 2015c]{jie2015ICIP}
+Xie, J., Towsey, M., Zhang, J., Dong, X., and Roe, P. (2015c).
+\newblock Application of image processing techniques for frog call
+  classification.
+\newblock {\em International Conference on Image Processing}.
+
+\bibitem[Xie et~al., 2016]{Xie2016}
+Xie, J., Towsey, M., Zhang, J., and Roe, P. (2016).
+\newblock Adaptive frequency scaled wavelet packet decomposition for frog call
+  classification.
+\newblock {\em Ecological Informatics}, pages~--.
+
+\bibitem[Yen and Fu, 2002]{yen2002automatic}
+Yen, G.~G. and Fu, Q. (2002).
+\newblock Automatic frog call monitoring system: a machine learning approach.
+\newblock In {\em AeroSense 2002}, pages 188--199. International Society for
+  Optics and Photonics.
+
+\bibitem[Yuan and Ramli, 2012]{yuan2012frog}
+Yuan, C. L.~T. and Ramli, D.~A. (2012).
+\newblock Frog sound identification system for frog species recognition.
+\newblock In {\em Context-Aware Systems and Applications}, pages 41--50.
+  Springer.
+
+\bibitem[Zhang and Zhou, 2014]{ZhangReview2014}
+Zhang, M.-L. and Zhou, Z.-H. (2014).
+\newblock A review on multi-label learning algorithms.
+\newblock {\em Knowledge and Data Engineering, IEEE Transactions on},
+  26(8):1819--1837.
+
+\bibitem[Zhang and Li, 2015]{Zhang2015108}
+Zhang, X. and Li, Y. (2015).
+\newblock Adaptive energy detection for bird sound detection in complex
+  environments.
+\newblock {\em Neurocomputing}, 155(0):108 -- 116.
+
+\bibitem[Zhou et~al., 2008]{zhou2008miml}
+Zhou, Z.-H., Zhang, M.-L., Huang, S.-J., and Li, Y.-F. (2008).
+\newblock Miml: a framework for learning with ambiguous objects.
+\newblock {\em CORR abs/0808.3231}.
+
+\end{thebibliography}

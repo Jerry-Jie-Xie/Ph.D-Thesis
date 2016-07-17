@@ -1,0 +1,1256 @@
+% This file was created with JabRef 2.10.
+% Encoding: GBK
+
+
+@Article{acevedo2009automated,
+  Title                    = {Automated classification of bird and amphibian calls using machine learning: A comparison of methods},
+  Author                   = {Acevedo, Miguel A and Corrada-Bravo, Carlos J and Corrada-Bravo, H{\'e}ctor and Villanueva-Rivera, Luis J and Aide, T Mitchell},
+  Journal                  = {Ecological Informatics},
+  Year                     = {2009},
+  Number                   = {4},
+  Pages                    = {206--214},
+  Volume                   = {4},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{aide2013real,
+  Title                    = {Real-time bioacoustics monitoring and automated species identification},
+  Author                   = {Aide, T Mitchell and Corrada-Bravo, Carlos and Campos-Cerqueira, Marconi and Milan, Carlos and Vega, Giovany and Alvarez, Rafael},
+  Journal                  = {PeerJ},
+  Year                     = {2013},
+  Pages                    = {e103},
+  Volume                   = {1},
+
+  Publisher                = {PeerJ Inc.}
+}
+
+@Article{akmentins2015patterns,
+  Title                    = {Patterns of daily and seasonal calling activity of a direct-developing frog of the subtropical Andean forests of Argentina},
+  Author                   = {Akmentins, MS and Pereyra, LC and Sanabria, EA and Vaira, M},
+  Journal                  = {Bioacoustics},
+  Year                     = {2015},
+  Number                   = {2},
+  Pages                    = {89--99},
+  Volume                   = {24},
+
+  Publisher                = {Taylor \& Francis}
+}
+
+@InProceedings{allen1997short,
+  Title                    = {Short term spectral analysis, synthesis, and modification by discrete Fourier transform},
+  Author                   = {Allen, JB},
+  Booktitle                = {IEEE Trans. on Acoust., Speech, and Sig. Proc.},
+  Year                     = {1997},
+  Pages                    = {21--24},
+  Volume                   = {4}
+}
+
+@Article{STFT1977,
+  Title                    = {Short term spectral analysis, synthesis, and modification by discrete Fourier transform},
+  Author                   = {Allen, J.B.},
+  Journal                  = {Acoustics, Speech and Signal Processing, IEEE Transactions on},
+  Year                     = {1977},
+
+  Month                    = {Jun},
+  Number                   = {3},
+  Pages                    = {235-238},
+  Volume                   = {25},
+
+  ISSN                     = {0096-3518},
+  Keywords                 = {Band pass filters;Bandwidth;Channel bank filters;Discrete Fourier transforms;Filter bank;Frequency;Low pass filters;Signal analysis;Signal synthesis;Spectral analysis}
+}
+
+@Article{arch2008ultrasonic,
+  Title                    = {Ultrasonic signalling by a Bornean frog},
+  Author                   = {Arch, Victoria S and Grafe, T Ulmar and Narins, Peter M},
+  Journal                  = {Biology Letters},
+  Year                     = {2008},
+  Number                   = {1},
+  Pages                    = {19--22},
+  Volume                   = {4},
+
+  Publisher                = {The Royal Society}
+}
+
+@Article{bao2005prediction,
+  Title                    = {Prediction of the phenotypic effects of non-synonymous single nucleotide polymorphisms using structural and evolutionary information},
+  Author                   = {Bao, Lei and Cui, Yan},
+  Journal                  = {Bioinformatics},
+  Year                     = {2005},
+  Number                   = {10},
+  Pages                    = {2185--2190},
+  Volume                   = {21},
+
+  Publisher                = {Oxford Univ Press}
+}
+
+@Article{bedoya2014automatic,
+  Title                    = {Automatic recognition of anuran species based on syllable identification},
+  Author                   = {Bedoya, Carol and Isaza, Claudia and Daza, Juan M and L{\'o}pez, Jos{\'e} D},
+  Journal                  = {Ecological Informatics},
+  Year                     = {2014},
+  Pages                    = {200--209},
+  Volume                   = {24},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{Biswas20141111,
+  Title                    = {Admissible wavelet packet features based on human inner ear frequency response for Hindi consonant recognition },
+  Author                   = {Astik Biswas and P.K. Sahu and Mahesh Chandra},
+  Journal                  = {Computers \& Electrical Engineering },
+  Year                     = {2014},
+  Number                   = {4},
+  Pages                    = {1111 - 1122},
+  Volume                   = {40},
+
+  ISSN                     = {0045-7906}
+}
+
+@Article{WV1987,
+  Title                    = {An efficient real-time implementation of the Wigner-Ville distribution},
+  Author                   = {Boashash, B. and Black, P.},
+  Journal                  = {Acoustics, Speech and Signal Processing, IEEE Transactions on},
+  Year                     = {1987},
+
+  Month                    = {Nov},
+  Number                   = {11},
+  Pages                    = {1611-1618},
+  Volume                   = {35},
+
+  Doi                      = {10.1109/TASSP.1987.1165070},
+  ISSN                     = {0096-3518},
+  Keywords                 = {Algorithm design and analysis;Computer architecture;Discrete Fourier transforms;Finite impulse response filter;Frequency domain analysis;Kernel;Signal analysis;Signal processing algorithms;Signal resolution;Time frequency analysis}
+}
+
+@Article{brandes2008feature,
+  Title                    = {Feature vector selection and use with hidden Markov models to identify frequency-modulated bioacoustic signals amidst noise},
+  Author                   = {Brandes, T Scott},
+  Journal                  = {Audio, Speech, and Language Processing, IEEE Transactions on},
+  Year                     = {2008},
+  Number                   = {6},
+  Pages                    = {1173--1180},
+  Volume                   = {16},
+
+  Publisher                = {IEEE}
+}
+
+@Article{Brandes2006,
+  Title                    = {Using image processing to detect and classify narrow-band cricket and frog calls},
+  Author                   = {Brandes, T. Scott and Naskrecki, Piotr and Figueroa, Harold K.},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {2006},
+  Number                   = {5},
+  Pages                    = {2950-2957},
+  Volume                   = {120}
+}
+
+@Article{breiman1996bagging,
+  Title                    = {Bagging predictors},
+  Author                   = {Breiman, Leo},
+  Journal                  = {Machine learning},
+  Year                     = {1996},
+  Number                   = {2},
+  Pages                    = {123--140},
+  Volume                   = {24},
+
+  Publisher                = {Springer}
+}
+
+@Article{briggs2012acoustic,
+  Title                    = {Acoustic classification of multiple simultaneous bird species: A multi-instance multi-label approach},
+  Author                   = {Briggs, Forrest and Lakshminarayanan, Balaji and Neal, Lawrence and Fern, Xiaoli Z and Raich, Raviv and Hadley, Sarah JK and Hadley, Adam S and Betts, Matthew G},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {2012},
+  Number                   = {6},
+  Pages                    = {4640--4650},
+  Volume                   = {131},
+
+  Publisher                = {Acoustical Society of America}
+}
+
+@Article{burges1998tutorial,
+  Title                    = {A tutorial on support vector machines for pattern recognition},
+  Author                   = {Burges, Christopher JC},
+  Journal                  = {Data mining and knowledge discovery},
+  Year                     = {1998},
+  Number                   = {2},
+  Pages                    = {121--167},
+  Volume                   = {2},
+
+  Publisher                = {Springer}
+}
+
+@InProceedings{camacho2013automatic,
+  Title                    = {Automatic detection of vocalizations of the frog Diasporus hylaeformis in audio recordings},
+  Author                   = {Camacho, Arturo and Garc{\'\i}a-Rodr{\'\i}guez, Adri{\'a}n and Bola{\~n}os, Federico},
+  Booktitle                = {Proceedings of Meetings on Acoustics},
+  Year                     = {2011},
+  Number                   = {1},
+  Organization             = {Acoustical Society of America},
+  Pages                    = {010003},
+  Volume                   = {14}
+}
+
+@Article{canavero2008calling,
+  Title                    = {Calling activity patterns in an anuran assemblage: the role of seasonal trends and weather determinants},
+  Author                   = {Canavero, Andr{\'e}s and Arim, Mat{\'\i}as and Naya, Daniel E and Camargo, Arley and Da Rosa, In{\'e}s and Maneyro, Ra{\'u}l},
+  Journal                  = {North-Western Journal of Zoology},
+  Year                     = {2008},
+  Number                   = {1},
+  Pages                    = {29--41},
+  Volume                   = {4}
+}
+
+@InProceedings{chen2013novel,
+  Title                    = {A Novel Approach Based on Ensemble Learning to NIPS4B Challenge},
+  Author                   = {Chen, Wei and Zhao, Gang and Li, Xiaohui},
+  Booktitle                = {proc. of int. symp. Neural Information Scaled for Bioacoustics, sabiod. org/nips4b, joint to NIPS, Nevada},
+  Year                     = {2013}
+}
+
+@Article{chen2012automatic,
+  Title                    = {Automatic recognition of frog calls using a multi-stage average spectrum},
+  Author                   = {Chen, Wen-Ping and Chen, Song-Shyong and Lin, Chun-Cheng and Chen, Ya-Zhung and Lin, Wen-Chih},
+  Journal                  = {Computers \& Mathematics with Applications},
+  Year                     = {2012},
+  Number                   = {5},
+  Pages                    = {1270--1281},
+  Volume                   = {64},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{chen2006semi,
+  Title                    = {Semi-automatic classification of bird vocalizations using spectral peak tracks},
+  Author                   = {Chen, Zhixin and Maher, Robert C},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {2006},
+  Number                   = {5},
+  Pages                    = {2974--2984},
+  Volume                   = {120},
+
+  Publisher                = {Acoustical Society of America}
+}
+
+@Article{colombia2009frogs,
+  Title                    = {Frogs species Classification using LPC and Classification Algorithms on Wireless Sensor Network Platform},
+  Author                   = {Colombia, Cali and del Cauca, Valle},
+  Year                     = {2009}
+}
+
+@InProceedings{feature2012Colona,
+  Title                    = {Feature subset selection for automatically classifying anuran calls using sensor networks},
+  Author                   = {Colonna, J.G. and Ribas, A.D. and dos Santos, E.M. and Nakamura, E.F.},
+  Booktitle                = {Neural Networks (IJCNN), The 2012 International Joint Conference on},
+  Year                     = {2012},
+  Month                    = {June},
+  Pages                    = {1-8},
+
+  ISSN                     = {2161-4393},
+  Keywords                 = {bioacoustics;biology computing;data acquisition;ecology;genetic algorithms;wireless sensor networks;animal monitoring;anuran calls;automatic classification;bioacoustic signals;biologists;ecological stress;ecosystem;genetic algorithm;nonintrusive data acquisition;wireless sensor networks;wrapper-based feature subset selection;Complexity theory;Databases;Discrete wavelet transforms;Feature extraction;Genetic algorithms;Wireless sensor networks}
+}
+
+@Article{Colonna20157367,
+  Title                    = {An incremental technique for real-time bioacoustic signal segmentation},
+  Author                   = {Juan Gabriel Colonna and Marco Cristo and Mario Salvatierra Junior and Eduardo Freire Nakamura},
+  Journal                  = {Expert Systems with Applications },
+  Year                     = {2015},
+  Number                   = {21},
+  Pages                    = {7367 - 7374},
+  Volume                   = {42},
+
+  ISSN                     = {0957-4174},
+  Keywords                 = {Bioacoustic signal segmentation}
+}
+
+@InProceedings{colonna2012feature,
+  Title                    = {Feature subset selection for automatically classifying anuran calls using sensor networks},
+  Author                   = {Colonna, Juan Gabriel and Ribas, Afonso D and dos Santos, Eulanda M and Nakamura, Eduardo F},
+  Booktitle                = {Neural Networks (IJCNN), The 2012 International Joint Conference on},
+  Year                     = {2012},
+  Organization             = {IEEE},
+  Pages                    = {1--8}
+}
+
+@Article{cortes1995support,
+  Title                    = {Support-vector networks},
+  Author                   = {Cortes, Corinna and Vapnik, Vladimir},
+  Journal                  = {Machine learning},
+  Year                     = {1995},
+  Number                   = {3},
+  Pages                    = {273--297},
+  Volume                   = {20},
+
+  Publisher                = {Springer}
+}
+
+@Article{croker2012using,
+  Title                    = {Using feature vectors to detect frog calls in wireless sensor networks},
+  Author                   = {Croker, Benjamin and Kottege, Navinda},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {2012},
+  Number                   = {5},
+  Pages                    = {EL400--EL405},
+  Volume                   = {131},
+
+  Publisher                = {Acoustical Society of America}
+}
+
+@InProceedings{dang2008lightweight,
+  Title                    = {Lightweight acoustic classification for cane-toad monitoring},
+  Author                   = {Dang, Thanh and Bulusu, Nirupama and Hu, Wen},
+  Booktitle                = {Signals, Systems and Computers, 2008 42nd Asilomar Conference on},
+  Year                     = {2008},
+  Organization             = {IEEE},
+  Pages                    = {1601--1605}
+}
+
+@InProceedings{dayou2011classification,
+  Title                    = {Classification and identification of frog sound based on entropy approach},
+  Author                   = {Dayou, Jedol and Han, Ng Chee and Mun, Ho Chong and Ahmad, Abdul Hamid and Muniandy, Sithi V and Dalimin, Mohd Noh},
+  Booktitle                = {International Conference on Life Science and Technology},
+  Year                     = {2011},
+  Pages                    = {184--187},
+  Volume                   = {3}
+}
+
+@Book{deng2003speech,
+  Title                    = {Speech processing: a dynamic and optimization-oriented approach},
+  Author                   = {Deng, Li and O'Shaughnessy, Douglas},
+  Publisher                = {CRC Press},
+  Year                     = {2003}
+}
+
+@InProceedings{dimou2009empirical,
+  Title                    = {An empirical study of multi-label learning methods for video annotation},
+  Author                   = {Dimou, Anastasios and Tsoumakas, Grigorios and Mezaris, Vasileios and Kompatsiaris, Ioannis and Vlahavas, Ioannis},
+  Booktitle                = {Content-Based Multimedia Indexing, 2009. CBMI'09. Seventh International Workshop on},
+  Year                     = {2009},
+  Organization             = {IEEE},
+  Pages                    = {19--24}
+}
+
+@Article{dorcas2009auditory,
+  Title                    = {Auditory monitoring of anuran populations},
+  Author                   = {Dorcas, Michael E and Price, Steven J and Walls, Susan C and Barichivich, William J},
+  Journal                  = {Amphibian ecology and conservation: a hand book of techniques. Oxford University Press, Oxford},
+  Year                     = {2009},
+  Pages                    = {281--298}
+}
+
+@Article{dudgeon2006freshwater,
+  Title                    = {Freshwater biodiversity: importance, threats, status and conservation challenges},
+  Author                   = {Dudgeon, David and Arthington, Angela H and Gessner, Mark O and Kawabata, Zen-Ichiro and Knowler, Duncan J and L{\'e}v{\^e}que, Christian and Naiman, Robert J and Prieur-Richard, Anne-H{\'e}l{\`e}ne and Soto, Doris and Stiassny, Melanie LJ and others},
+  Journal                  = {Biological reviews},
+  Year                     = {2006},
+  Number                   = {02},
+  Pages                    = {163--182},
+  Volume                   = {81},
+
+  Publisher                = {Cambridge Univ Press}
+}
+
+@Article{dufour2013multi,
+  Title                    = {Multi-Instance Multi-Label Acoustic Classification of Plurality of Animals: birds, insects \& amphibian},
+  Author                   = {Dufour, O and Glotin, H and Artires, T and Bas, Y and Giraudet, P},
+  Journal                  = {Workshop on Neural Information Processing Scaled for Bioacoustics},
+  Year                     = {2013},
+  Pages                    = {164--174}
+}
+
+@Article{farooq2001mel,
+  Title                    = {Mel filter-like admissible wavelet packet structure for speech recognition},
+  Author                   = {Farooq, O and Datta, S},
+  Journal                  = {IEEE Signal Processing Letters},
+  Year                     = {2001},
+  Number                   = {7},
+  Pages                    = {196--198},
+  Volume                   = {8}
+}
+
+@Article{fisher1936use,
+  Title                    = {The use of multiple measurements in taxonomic problems},
+  Author                   = {Fisher, Ronald A},
+  Journal                  = {Annals of eugenics},
+  Year                     = {1936},
+  Number                   = {2},
+  Pages                    = {179--188},
+  Volume                   = {7},
+
+  Publisher                = {Wiley Online Library}
+}
+
+@InProceedings{fodor2013ninth,
+  Title                    = {The ninth annual MLSP competition: first place},
+  Author                   = {Fodor, G{\'a}bor},
+  Booktitle                = {Machine Learning for Signal Processing (MLSP), 2013 IEEE International Workshop on},
+  Year                     = {2013},
+  Organization             = {IEEE},
+  Pages                    = {1--2}
+}
+
+@Article{Fox20081187,
+  Title                    = {A new perspective on acoustic individual recognition in animals with limited call sharing or changing repertoires },
+  Author                   = {Elizabeth J.S. Fox},
+  Journal                  = {Animal Behaviour },
+  Year                     = {2008},
+  Number                   = {3},
+  Pages                    = {1187 - 1194},
+  Volume                   = {75},
+
+  ISSN                     = {0003-3472},
+  Keywords                 = {acoustic individual recognition}
+}
+
+@Article{Gingras2013,
+  Title                    = {A three-parameter model for classifying anurans into four genera based on advertisement calls},
+  Author                   = {Gingras, Bruno and Fitch, William Tecumseh},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {2013},
+  Number                   = {1},
+  Pages                    = {547-559},
+  Volume                   = {133}
+}
+
+@Article{glotin2013sparse,
+  Title                    = {Sparse coding for scaled bioacoustics: From Humpback whale songs evolution to forest soundscape analyses},
+  Author                   = {Glotin, Herve and Sueur, J{\'e}r{\^o}me and Arti{\`e}res, Thierry and Adam, Olivier and Razik, Joseph},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {2013},
+  Number                   = {5},
+  Pages                    = {3311--3311},
+  Volume                   = {133},
+
+  Publisher                = {Acoustical Society of America}
+}
+
+@Article{gordon2003sequence,
+  Title                    = {Sequence alignment kernel for recognition of promoter regions},
+  Author                   = {Gordon, Leo and Chervonenkis, Alexey Ya and Gammerman, Alex J and Shahmuradov, Ilham A and Solovyev, Victor V},
+  Journal                  = {Bioinformatics},
+  Year                     = {2003},
+  Number                   = {15},
+  Pages                    = {1964--1971},
+  Volume                   = {19},
+
+  Publisher                = {Oxford Univ Press}
+}
+
+@InProceedings{grigg1996monitoring,
+  Title                    = {Monitoring frog communities: an application of machine learning},
+  Author                   = {Grigg, Gordon and Taylor, A and Mc Callum, H and Watson, Graeme},
+  Booktitle                = {Proceedings of Eighth Innovative Applications of Artificial Intelligence Conference, Portland Oregon},
+  Year                     = {1996},
+  Pages                    = {1564--1569}
+}
+
+@Article{han2011acoustic,
+  Title                    = {Acoustic classification of Australian anurans based on hybrid spectral-entropy approach},
+  Author                   = {Han, Ng Chee and Muniandy, Sithi V and Dayou, Jedol},
+  Journal                  = {Applied Acoustics},
+  Year                     = {2011},
+  Number                   = {9},
+  Pages                    = {639--645},
+  Volume                   = {72},
+
+  Publisher                = {Elsevier}
+}
+
+@InProceedings{han2006efficient,
+  Title                    = {An efficient MFCC extraction method in speech recognition},
+  Author                   = {Han, Wei and Chan, Cheong-Fat and Choy, Chiu-Sing and Pun, Kong-Pang},
+  Booktitle                = {Circuits and Systems, 2006. ISCAS 2006. Proceedings. 2006 IEEE International Symposium on},
+  Year                     = {2006},
+  Organization             = {IEEE},
+  Pages                    = {4--pp}
+}
+
+@InProceedings{harma2003automatic,
+  Title                    = {Automatic identification of bird species based on sinusoidal modeling of syllables},
+  Author                   = {Harma, Aki},
+  Booktitle                = {Acoustics, Speech, and Signal Processing, 2003. Proceedings.(ICASSP'03). 2003 IEEE International Conference on},
+  Year                     = {2003},
+  Organization             = {IEEE},
+  Pages                    = {V--545},
+  Volume                   = {5}
+}
+
+@Article{jasaTrack,
+  Title                    = {Automatic recognition of harmonic bird sounds using a frequency track extraction algorithm},
+  Author                   = {Heller, Jason R. and Pinezich, John D.},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {2008},
+  Number                   = {3},
+  Pages                    = {1830-1837},
+  Volume                   = {124},
+
+  Doi                      = {http://dx.doi.org/10.1121/1.2950085}
+}
+
+@InProceedings{ho1995random,
+  Title                    = {Random decision forests},
+  Author                   = {Ho, Tin Kam},
+  Booktitle                = {Document Analysis and Recognition, 1995., Proceedings of the Third International Conference on},
+  Year                     = {1995},
+  Organization             = {IEEE},
+  Pages                    = {278--282},
+  Volume                   = {1}
+}
+
+@Misc{hsu2003practical,
+  Title                    = {A practical guide to support vector classification},
+
+  Author                   = {Hsu, Chih-Wei and Chang, Chih-Chung and Lin, Chih-Jen and others},
+  Year                     = {2003}
+}
+
+@Article{Huang20141,
+  Title                    = {Intelligent feature extraction and classification of anuran vocalizations },
+  Author                   = {Chenn-Jung Huang and You-Jia Chen and Heng-Ming Chen and Jui-Jiun Jian and Sheng-Chieh Tseng and Yi-Ju Yang and Po-An Hsu},
+  Journal                  = {Applied Soft Computing },
+  Year                     = {2014},
+  Number                   = {0},
+  Pages                    = {1 - 7},
+  Volume                   = {19},
+
+  ISSN                     = {1568-4946},
+  Keywords                 = {Data mining}
+}
+
+@Article{huang2009frog,
+  Title                    = {Frog classification using machine learning techniques},
+  Author                   = {Huang, Chenn-Jung and Yang, Yi-Ju and Yang, Dian-Xiu and Chen, You-Jia},
+  Journal                  = {Expert Systems with Applications},
+  Year                     = {2009},
+  Number                   = {2},
+  Pages                    = {3737--3743},
+  Volume                   = {36},
+
+  Publisher                = {Elsevier}
+}
+
+@InCollection{huang2008realization,
+  Title                    = {Realization of an intelligent frog call identification agent},
+  Author                   = {Huang, Chenn-Jung and Yang, Yi-Ju and Yang, Dian-Xiu and Chen, You-Jia and Wei, Hsiang-Yu},
+  Booktitle                = {Agent and Multi-Agent Systems: Technologies and Applications},
+  Publisher                = {Springer},
+  Year                     = {2008},
+  Pages                    = {93--102}
+}
+
+@Article{itakura1975line,
+  Title                    = {Line spectrum representation of linear predictor coefficients of speech signals},
+  Author                   = {Itakura, Fumitada},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {1975},
+  Number                   = {S1},
+  Pages                    = {S35--S35},
+  Volume                   = {57},
+
+  Publisher                = {Acoustical Society of America}
+}
+
+@InProceedings{jaafar2013,
+  Title                    = {Automatic syllables segmentation for frog identification system},
+  Author                   = {Jaafar, H. and Ramli, D.A.},
+  Booktitle                = {Signal Processing and its Applications (CSPA), 2013 IEEE 9th International Colloquium on},
+  Year                     = {2013},
+  Month                    = {March},
+  Pages                    = {224-228},
+
+  Keywords                 = {acoustic signal processing;biology computing;feature extraction;learning (artificial intelligence);signal classification;Euclidean distance;Malaysia forest;Mel-Frequency cepstrum coefficient;automatic segmentation;automatic syllable segmentation;biological research;environmental monitoring;feature extraction method;frog sound identification system;frog sound recognition;manual segmentation;nonparametric k-nearest neighbor classifier;physical observation procedure;short time average zero crossing rate;short time energy;signal extraction;signal segmentation;Accuracy;Feature extraction;Manuals;Mel frequency cepstral coefficient;Noise;Noise measurement;Frog identification;Mel-Frequency Cepstrum Coefficients;automatic segmentation;short time energy and short time average zero crossing rate}
+}
+
+@InProceedings{jaafar2013automatic,
+  Title                    = {Automatic syllables segmentation for frog identification system},
+  Author                   = {Jaafar, Haslina and Ramli, Dzati Athiar},
+  Booktitle                = {Signal Processing and its Applications (CSPA), 2013 IEEE 9th International Colloquium on},
+  Year                     = {2013},
+  Organization             = {IEEE},
+  Pages                    = {224--228}
+}
+
+@InProceedings{jaafar2013mfcc,
+  Title                    = {MFCC based frog identification system in noisy environment},
+  Author                   = {Jaafar, Haslina and Ramli, Dzati Athiar and Shahrudin, Shahriza},
+  Booktitle                = {Signal and Image Processing Applications (ICSIPA), 2013 IEEE International Conference on},
+  Year                     = {2013},
+  Organization             = {IEEE},
+  Pages                    = {123--127}
+}
+
+@Article{jaafarcomparative,
+  Title                    = {A Comparative Study of Classification Algorithms and Feature Extractions for Frog Identification System},
+  Author                   = {Jaafar, Haryati and Ramli, Dzati Athiar and Shahrudin, Shahriza},
+  Year                     = {2013}
+}
+
+@Article{birdTrack,
+  Title                    = {Acoustic Recognition of Multiple Bird Species Based on Penalized Maximum Likelihood},
+  Author                   = {Jancovic, P. and Kokuer, M.},
+  Journal                  = {Signal Processing Letters, IEEE},
+  Year                     = {2015},
+
+  Month                    = {Oct},
+  Number                   = {10},
+  Pages                    = {1585-1589},
+  Volume                   = {22},
+
+  Doi                      = {10.1109/LSP.2015.2409173},
+  ISSN                     = {1070-9908},
+  Keywords                 = {Markov processes;acoustic signal processing;audio recording;bioacoustics;maximum likelihood estimation;time-frequency analysis;acoustic recognition;audio field recordings;frequency track;hidden Markov model;multiple bird species;multiple simultaneous bird vocalizations;penalized maximum likelihood;sinusoidal detection algorithm;time-frequency segmentation;Acoustics;Birds;Hidden Markov models;Maximum likelihood detection;Noise;Time-frequency analysis;BIC;bird species recognition;frequency track;hidden Markov models;maximum likelihood;multiple bird species;partition;penalization;sinusoid detection}
+}
+
+@InProceedings{jancovic2014bird,
+  Title                    = {Bird species recognition from field recordings using HMM-based modelling of frequency tracks},
+  Author                   = {Jancovic, Peter and Kokuer, Munevver and Russell, Martin},
+  Booktitle                = {Acoustics, Speech and Signal Processing (ICASSP), 2014 IEEE International Conference on},
+  Year                     = {2014},
+  Organization             = {IEEE},
+  Pages                    = {8252--8256}
+}
+
+@Article{jang2011geographic,
+  Title                    = {Geographic variation in advertisement calls in a tree frog species: gene flow and selection hypotheses},
+  Author                   = {Jang, Yikweon and Hahm, Eun Hye and Lee, Hyun-Jung and Park, Soyeon and Won, Yong-Jin and Choe, Jae C},
+  Journal                  = {PloS one},
+  Year                     = {2011},
+  Number                   = {8},
+  Pages                    = {e23297},
+  Volume                   = {6},
+
+  Publisher                = {Public Library of Science}
+}
+
+@InProceedings{juan2009frogs,
+  Title                    = {Frogs species Classification using lpc and Classification Algorithms on Wireless Sensor Network Platform},
+  Author                   = {Juan Mayor, L.T. Michael Martinez},
+  Booktitle                = {XVII General Assembly, Ibero-American Conference on Trends in Engineering Education and Collaboration, ISTEC, 2009},
+  Year                     = {2009},
+  Month                    = {October 27 - 28}
+}
+
+@InCollection{kular2015classifying,
+  Title                    = {Classifying Frog Calls Using Gaussian Mixture Models},
+  Author                   = {Kular, Dalwinderjeet and Hollowood, Kathryn and Ommojaro, Olatide and Smart, Katrina and Bush, Mark and Ribeiro, Eraldo},
+  Booktitle                = {Advances in Visual Computing},
+  Publisher                = {Springer},
+  Year                     = {2015},
+  Pages                    = {347--354}
+}
+
+@InProceedings{lasseck2013bird,
+  Title                    = {Bird song classification in field recordings: winning solution for NIPS4B 2013 competition},
+  Author                   = {Lasseck, Mario},
+  Booktitle                = {Proc. of int. symp. Neural Information Scaled for Bioacoustics, sabiod. org/nips4b, joint to NIPS, Nevada.},
+  Year                     = {2013.}
+}
+
+@Article{lee2006automatic,
+  Title                    = {Automatic recognition of animal vocalizations using averaged MFCC and linear discriminant analysis},
+  Author                   = {Lee, Chang-Hsing and Chou, Chih-Hsun and Han, Chin-Chuan and Huang, Ren-Zhuang},
+  Journal                  = {Pattern Recognition Letters},
+  Year                     = {2006},
+  Number                   = {2},
+  Pages                    = {93--101},
+  Volume                   = {27},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{lek1999artificial,
+  Title                    = {Artificial neural networks as a tool in ecological modelling, an introduction},
+  Author                   = {Lek, Sovan and Gu{\'e}gan, Jean-Fran{\c{c}}ois},
+  Journal                  = {Ecological modelling},
+  Year                     = {1999},
+  Number                   = {2},
+  Pages                    = {65--73},
+  Volume                   = {120},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{barkWPDraey,
+  Title                    = {Single-Channel Source Separation of Audio Signals Using Bark Scale Wavelet Packet Decomposition},
+  Author                   = {Litvin, Yevgeni and Cohen, Israel},
+  Journal                  = {Journal of Signal Processing Systems},
+  Year                     = {2011},
+  Number                   = {3},
+  Pages                    = {339-350},
+  Volume                   = {65},
+
+  ISSN                     = {1939-8018},
+  Keywords                 = {Audio source separation; BS-WPD; CSR-BS-WPD; GMM; CWT; Monaural source separation},
+  Language                 = {English},
+  Publisher                = {Springer US}
+}
+
+@Article{Madjarov20123084,
+  Title                    = {An extensive experimental comparison of methods for multi-label learning},
+  Author                   = {Gjorgji Madjarov and Dragi Kocev and Dejan Gjorgjevikj and Sa?o D?eroski},
+  Journal                  = {Pattern Recognition },
+  Year                     = {2012},
+  Number                   = {9},
+  Pages                    = {3084 - 3104},
+  Volume                   = {45},
+
+  ISSN                     = {0031-3203},
+  Keywords                 = {Multi-label ranking}
+}
+
+@Article{mallawaarachchi2008spectrogram,
+  Title                    = {Spectrogram denoising and automated extraction of the fundamental frequency variation of dolphin whistles},
+  Author                   = {Mallawaarachchi, Asitha and Ong, SH and Chitre, Mandar and Taylor, Elizabeth},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {2008},
+  Number                   = {2},
+  Pages                    = {1159--1170},
+  Volume                   = {124},
+
+  Publisher                = {Acoustical Society of America}
+}
+
+@Article{massaronensemble,
+  Title                    = {Ensemble logistic regression and gradient boosting classifiers for multilabel bird song classification in noise (NIPS4B challenge)},
+  Author                   = {Massaron, Luca},
+  Journal                  = {Proc of Neural Information Processing Scaled for Bioacoustics, joint to NIPS},
+  Year                     = {2013}
+}
+
+@Article{mccallum2007amphibian,
+  Title                    = {Amphibian decline or extinction? Current declines dwarf background extinction rate},
+  Author                   = {McCallum, Malcolm L},
+  Journal                  = {Journal of Herpetology},
+  Year                     = {2007},
+  Number                   = {3},
+  Pages                    = {483--491},
+  Volume                   = {41},
+
+  Publisher                = {BioOne}
+}
+
+@Article{mellinger2011method,
+  Title                    = {A method for detecting whistles, moans, and other frequency contour sounds},
+  Author                   = {Mellinger, David K and Martin, Stephen W and Morrissey, Ronald P and Thomas, Len and Yosco, James J},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {2011},
+  Number                   = {6},
+  Pages                    = {4055--4061},
+  Volume                   = {129},
+
+  Publisher                = {Acoustical Society of America}
+}
+
+@Article{Melter1987235,
+  Title                    = {Some characterizations of city block distance },
+  Author                   = {Robert A Melter},
+  Journal                  = {Pattern Recognition Letters },
+  Year                     = {1987},
+  Number                   = {4},
+  Pages                    = {235 - 240},
+  Volume                   = {6},
+
+  ISSN                     = {0167-8655},
+  Keywords                 = {City block distance}
+}
+
+@Article{mencia2013learning,
+  Title                    = {Learning multi-labeled bioacoustic samples with an unsupervised feature learning approach},
+  Author                   = {Menc{\i}a, Eneldo Loza and Nam, Jinseok and Lee, Dong-Hyun},
+  Journal                  = {Proc of Neural Information Processing Scaled for Bioacoustics, joint to NIPS},
+  Year                     = {2013},
+  Pages                    = {184--189},
+  Volume                   = {2013}
+}
+
+@Book{meyer1995wavelets,
+  Title                    = {Wavelets and operators},
+  Author                   = {Meyer, Yves and Salinger, David H},
+  Publisher                = {Cambridge university press},
+  Year                     = {1995},
+  Volume                   = {1}
+}
+
+@InCollection{narins2007frogs,
+  Title                    = {Frogs communicate with ultrasound in noisy environments},
+  Author                   = {Narins, Peter M and Feng, Albert S and Shen, Jun-Xian},
+  Booktitle                = {Hearing--From sensory processing to perception},
+  Publisher                = {Springer},
+  Year                     = {2007},
+  Pages                    = {185--190}
+}
+
+@Article{Noda2016100,
+  Title                    = {Methodology for automatic bioacoustic classification of anurans based on feature fusion },
+  Author                   = {Juan J. Noda and Carlos M. Travieso and David S?nchez-Rodr?guez},
+  Journal                  = {Expert Systems with Applications },
+  Year                     = {2016},
+  Pages                    = {100 - 106},
+  Volume                   = {50}
+}
+
+@Article{ospina2013variable,
+  Title                    = {Variable response of anuran calling activity to daily precipitation and temperature: implications for climate change},
+  Author                   = {Ospina, Oscar E and Villanueva-Rivera, Luis J and Corrada-Bravo, Carlos J and Aide, T Mitchell},
+  Journal                  = {Ecosphere},
+  Year                     = {2013},
+  Number                   = {4},
+  Pages                    = {art47},
+  Volume                   = {4},
+
+  Publisher                = {Eco Soc America}
+}
+
+@Article{otsu1975threshold,
+  Title                    = {A threshold selection method from gray-level histograms},
+  Author                   = {Otsu, Nobuyuki},
+  Journal                  = {Automatica},
+  Year                     = {1975},
+  Number                   = {285-296},
+  Pages                    = {23--27},
+  Volume                   = {11}
+}
+
+@Article{potamitis2015unsupervised,
+  Title                    = {Unsupervised dictionary extraction of bird vocalisations and new tools on assessing and visualising bird activity},
+  Author                   = {Potamitis, Ilyas},
+  Journal                  = {Ecological Informatics},
+  Year                     = {2015},
+  Pages                    = {6--17},
+  Volume                   = {26},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{quinlan1986induction,
+  Title                    = {Induction of decision trees},
+  Author                   = {Quinlan, J. Ross},
+  Journal                  = {Machine learning},
+  Year                     = {1986},
+  Number                   = {1},
+  Pages                    = {81--106},
+  Volume                   = {1},
+
+  Publisher                = {Springer}
+}
+
+@InProceedings{razik2015sparse,
+  Title                    = {Sparse coding for efficient bioacoustic data mining: Preliminary application to analysis of whale songs},
+  Author                   = {Razik, Joseph and Hoeberechts, Maia and Doh, Yann and others},
+  Booktitle                = {2015 IEEE International Conference on Data Mining Workshop (ICDMW)},
+  Year                     = {2015},
+  Organization             = {IEEE},
+  Pages                    = {780--787}
+}
+
+@Article{ren2008perceptually,
+  Title                    = {Perceptually motivated wavelet packet transform for bioacoustic signal enhancement},
+  Author                   = {Ren, Yao and Johnson, Michael T and Tao, Jidong},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {2008},
+  Number                   = {1},
+  Pages                    = {316--327},
+  Volume                   = {124},
+
+  Publisher                = {Acoustical Society of America}
+}
+
+@Book{rocchesso2003introduction,
+  Title                    = {Introduction to sound processing},
+  Author                   = {Rocchesso, Davide},
+  Publisher                = {Mondo estremo},
+  Year                     = {2003}
+}
+
+@Article{roch2011automated,
+  Title                    = {Automated extraction of odontocete whistle contours},
+  Author                   = {Roch, Marie A and Brandes, T Scott and Patel, Bhavesh and Barkley, Yvonne and Baumann-Pickering, Simone and Soldevilla, Melissa S},
+  Journal                  = {The Journal of the Acoustical Society of America},
+  Year                     = {2011},
+  Number                   = {4},
+  Pages                    = {2212--2223},
+  Volume                   = {130},
+
+  Publisher                = {Acoustical Society of America}
+}
+
+@Article{ruizmultiple2015,
+  Title                    = {Multiple Instance Learning-Based Birdsong Classification Using Unsupervised Recording Segmentation},
+  Author                   = {Ruiz-Munoz, JF and Orozco-Alzate, Mauricio and Castellanos-Dominguez, G},
+  Journal                  = {Proceedings of the Twenty-Fourth International Joint Conference On Artificial Intelligence (IJCAI 2015)},
+  Year                     = {2015}
+}
+
+@Article{Sahidullah2012Design,
+  Title                    = {Design, analysis and experimental evaluation of block based transformation in MFCC computation for speaker recognition},
+  Author                   = {Md. Sahidullah and Goutam Saha},
+  Journal                  = {Speech Communication},
+  Year                     = {2012},
+  Number                   = {4},
+  Pages                    = {543 - 565},
+  Volume                   = {54},
+
+  Doi                      = {http://dx.doi.org/10.1016/j.specom.2011.11.004},
+  ISSN                     = {0167-6393},
+  Keywords                 = {Speaker recognition}
+}
+
+@Book{samarasinghe2006neural,
+  Title                    = {Neural networks for applied sciences and engineering: from fundamentals to complex pattern recognition},
+  Author                   = {Samarasinghe, Sandhya},
+  Publisher                = {CRC Press},
+  Year                     = {2006}
+}
+
+@Article{selin2007wavelets,
+  Title                    = {Wavelets in recognition of bird sounds},
+  Author                   = {Selin, Arja and Turunen, Jari and Tanttu, Juha T},
+  Journal                  = {EURASIP Journal on Applied Signal Processing},
+  Year                     = {2007},
+  Number                   = {1},
+  Pages                    = {141--141},
+  Volume                   = {2007},
+
+  Publisher                = {Hindawi Publishing Corp.}
+}
+
+@Article{somervuo2006parametric,
+  Title                    = {Parametric representations of bird sounds for automatic species recognition},
+  Author                   = {Somervuo, Panu and H{\"a}rm{\"a}, Aki and Fagerlund, Seppo},
+  Journal                  = {Audio, Speech, and Language Processing, IEEE Transactions on},
+  Year                     = {2006},
+  Number                   = {6},
+  Pages                    = {2252--2263},
+  Volume                   = {14},
+
+  Publisher                = {IEEE}
+}
+
+@InProceedings{somervuo2004classification,
+  Title                    = {Classification of the harmonic structure in bird vocalization},
+  Author                   = {Somervuo, P and others},
+  Booktitle                = {Acoustics, Speech, and Signal Processing, 2004. Proceedings.(ICASSP'04). IEEE International Conference on},
+  Year                     = {2004},
+  Organization             = {IEEE},
+  Pages                    = {V--701},
+  Volume                   = {5}
+}
+
+@Misc{CD,
+  Title                    = {Australian frog calls: subtropical east},
+
+  Author                   = {David Stewart},
+  HowPublished             = {Audio CD},
+  Year                     = {1999},
+
+  Owner                    = {Jie},
+  Timestamp                = {2015.07.17},
+  Url                      = {http://www.naturesound.com.au/cd_frogsSE.htm}
+}
+
+@Article{stowell2013feature,
+  Title                    = {Feature design for multilabel bird song classification in noise (nips4b challenge)},
+  Author                   = {Stowell, Dan and Plumbley, Mark D},
+  Journal                  = {Proceedings of NIPS4b: neural information processing scaled for bioacoustics, from neurons to big data},
+  Year                     = {2013}
+}
+
+@Article{tanintelligent2014,
+  Title                    = {Intelligent frog species identification on android operating system},
+  Author                   = {Tan, WC and Jaafar, H and Ramli, DA and Rosdi, BA and Shahrudin, S},
+  Journal                  = {International journal of circuits, systems and signal processing},
+  Year                     = {2014}
+}
+
+@Book{tanton2005encyclopedia,
+  Title                    = {Encyclopedia of mathematics},
+  Author                   = {Tanton, James Stuart},
+  Publisher                = {Facts On File},
+  Year                     = {2005}
+}
+
+@InProceedings{tjahja2015supervised,
+  Title                    = {Supervised hierarchical segmentation for bird song recording},
+  Author                   = {Tjahja, Teresa V and Fern, Xiaoli Z and Raich, Raviv and Pham, Anh T},
+  Booktitle                = {Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE International Conference on},
+  Year                     = {2015},
+  Organization             = {IEEE},
+  Pages                    = {763--767}
+}
+
+@Article{towsey2012toolbox,
+  Title                    = {A toolbox for animal call recognition},
+  Author                   = {Towsey, Michael and Planitz, Birgit and Nantes, Alfredo and Wimmer, Jason and Roe, Paul},
+  Journal                  = {Bioacoustics},
+  Year                     = {2012},
+  Number                   = {2},
+  Pages                    = {107--125},
+  Volume                   = {21},
+
+  Publisher                = {Taylor \& Francis}
+}
+
+@Unpublished{Michael2011,
+  Title                    = {Technical report : acoustic analysis of the natural environment.},
+  Author                   = {Michael W. Towsey and Birgit Planitz},
+  Note                     = {2011},
+
+  Month                    = {April},
+  Year                     = {2011},
+
+  Abstract                 = {This technical report is concerned with one aspect of environmental monitoring{---}the detection and analysis of acoustic events in sound recordings of the environment. Sound recordings offer ecologists the advantage of cheaper and increased sampling but make available so much data that automated analysis becomes essential. The report describes a number of tools for automated analysis of recordings, including noise removal from spectrograms, acoustic event detection, event pattern recognition, spectral peak tracking, syntactic pattern recognition applied to call syllables, and oscillation detection. 
+
+These algorithms are applied to a number of animal call recognition tasks, chosen because they illustrate quite different modes of analysis: (1) the detection of diffuse events caused by wind and rain, which are frequent contaminants of recordings of the terrestrial environment; (2) the detection of bird and calls; and (3) the preparation of acoustic maps for whole ecosystem analysis. This last task utilises the temporal distribution of events over a daily, monthly or yearly cycle.
+},
+  Keywords                 = {Animal call recognition, Acoustic Pattern recognition}
+}
+
+@InProceedings{vaca2010using,
+  Title                    = {Using syllabic mel cepstrum features and k-nearest neighbors to identify anurans and birds species},
+  Author                   = {Vaca-Castano, Gonzalo and Rodriguez, Domingo},
+  Booktitle                = {Signal Processing Systems (SIPS), 2010 IEEE Workshop on},
+  Year                     = {2010},
+  Organization             = {IEEE},
+  Pages                    = {466--471}
+}
+
+@InProceedings{wei2012distributed,
+  Title                    = {Distributed sparse approximation for frog sound classification},
+  Author                   = {Wei, Bo and Yang, Mingrui and Rana, Rajib Kumar and Chou, Chun Tung and Hu, Wen},
+  Booktitle                = {Proceedings of the 11th international conference on Information Processing in Sensor Networks},
+  Year                     = {2012},
+  Organization             = {ACM},
+  Pages                    = {105--106}
+}
+
+@Article{wimmer2013analysing,
+  Title                    = {Analysing environmental acoustic data through collaboration and automation},
+  Author                   = {Wimmer, Jason and Towsey, Michael and Planitz, Birgit and Williamson, Ian and Roe, Paul},
+  Journal                  = {Future Generation Computer Systems},
+  Year                     = {2013},
+  Number                   = {2},
+  Pages                    = {560--568},
+  Volume                   = {29},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{songMeter,
+  Title                    = {Song Meter (SM2) Widelife Acoustic},
+  Author                   = {Jie Xie},
+  Journal                  = {http://www.wildlifeacoustics.com/products/song-meter-sm2-birds},
+  Year                     = {2016},
+
+  Month                    = {Jan},
+
+  Owner                    = {Jie},
+  Timestamp                = {2016.01.24}
+}
+
+@Article{jie2015escience,
+  Title                    = {Acoustic Feature Extraction using Perceptual Wavelet Packet Decomposition for Frog Call Classification},
+  Author                   = {Jie Xie and Michael Towsey and Philip Eichinski and Jinglan Zhang and Paul Roe},
+  Journal                  = {11th IEEE International Conference on eScience},
+  Year                     = {2015},
+
+  Owner                    = {Jie},
+  Timestamp                = {2015.09.15}
+}
+
+@InProceedings{Xie1504:Acoustic,
+  Title                    = {Acoustic classification of Australian anurans using syllable features},
+  Author                   = {Jie Xie and Michael Towsey and Anthony Truskinger and Philip Eichinski and
+Jinglan Zhang and Paul Roe},
+  Booktitle                = {2015 IEEE Tenth International Conference on Intelligent Sensors, Sensor
+Networks and Information Processing (IEEE ISSNIP 2015)},
+  Year                     = {2015},
+
+  Address                  = {Singapore, Singapore},
+  Month                    = apr,
+
+  Abstract                 = {Acoustic classification of anurans (frogs) has received increasing
+attention for its promising application in biological and environment
+studies. In this study, a novel feature extraction method for frog call
+classification is presented based on the analysis of spectrograms. The frog
+calls are first automatically segmented into syllables. Then, spectral peak
+tracks are extracted to separate desired signal (frog calls) from
+background noise. The spectral peak tracks are used to extract various
+syllable features, including: syllable duration, dominant frequency,
+oscillation rate, frequency modulation, and energy modulation. Finally, a
+k-nearest neighbor classifier is used for classifying frog calls based on
+the results of principal component analysis. The experiment results show
+that syllable features can achieve an average classification accuracy of
+90.5\% which outperforms Mel-frequency cepstral coefficients features
+(79.0\%).},
+  Days                     = {7},
+  Keywords                 = {audio classification; syllable feature; principal component analysis; k
+nearest neighbour; spectral peak track}
+}
+
+@InProceedings{Xie2015,
+  Title                    = {Acoustic classification of Australian anurans using syllable features},
+  Author                   = {Jie Xie and Michael Towsey and Anthony Truskinger and Philip Eichinski and
+Jinglan Zhang and Paul Roe},
+  Booktitle                = {2015 IEEE Tenth International Conference on Intelligent Sensors, Sensor
+Networks and Information Processing (IEEE ISSNIP 2015)},
+  Year                     = {2015},
+
+  Address                  = {Singapore, Singapore},
+  Month                    = apr,
+
+  Abstract                 = {Acoustic classification of anurans (frogs) has received increasing
+attention for its promising application in biological and environment
+studies. In this study, a novel feature extraction method for frog call
+classification is presented based on the analysis of spectrograms. The frog
+calls are first automatically segmented into syllables. Then, spectral peak
+tracks are extracted to separate desired signal (frog calls) from
+background noise. The spectral peak tracks are used to extract various
+syllable features, including: syllable duration, dominant frequency,
+oscillation rate, frequency modulation, and energy modulation. Finally, a
+k-nearest neighbor classifier is used for classifying frog calls based on
+the results of principal component analysis. The experiment results show
+that syllable features can achieve an average classification accuracy of
+90.5\% which outperforms Mel-frequency cepstral coefficients features
+(79.0\%).},
+  Days                     = {7},
+  Keywords                 = {audio classification; syllable feature; principal component analysis; k
+nearest neighbour; spectral peak track}
+}
+
+@Article{jie2015ICIP,
+  Title                    = {Application of image processing techniques for frog call classification},
+  Author                   = {Jie Xie and Michael Towsey and Jinglan Zhang and Xueyan Dong and Paul Roe},
+  Journal                  = {International Conference on Image Processing},
+  Year                     = {2015},
+
+  Owner                    = {Jie},
+  Timestamp                = {2015.09.15}
+}
+
+@Article{Xie2016,
+  Title                    = {Adaptive frequency scaled wavelet packet decomposition for frog call classification },
+  Author                   = {Jie Xie and Michael Towsey and Jinglan Zhang and Paul Roe},
+  Journal                  = {Ecological Informatics },
+  Year                     = {2016},
+  Pages                    = { - }
+}
+
+@InProceedings{emr2015Xie,
+  Title                    = {Image Processing and Classification Procedure for the Analysis of Australian Frog Vocalisations},
+  Author                   = {Xie, Jie and Towsey, Michael and Zhang, Jinglan and Roe, Paul},
+  Booktitle                = {Proceedings of the 2Nd International Workshop on Environmental Multimedia Retrieval},
+  Year                     = {2015},
+
+  Address                  = {Shanghai, China},
+  Pages                    = {15--20},
+  Publisher                = {ACM},
+  Series                   = {EMR '15},
+
+  Acmid                    = {2764878},
+  ISBN                     = {978-1-4503-3558-4},
+  Keywords                 = {audio data classification, image processing, k-nearest neighbor classifier, region growing, spectral peak track},
+  Location                 = {Shanghai, China},
+  Numpages                 = {6}
+}
+
+@InProceedings{yen2002automatic,
+  Title                    = {Automatic frog call monitoring system: a machine learning approach},
+  Author                   = {Yen, Gary G and Fu, Qiang},
+  Booktitle                = {AeroSense 2002},
+  Year                     = {2002},
+  Organization             = {International Society for Optics and Photonics},
+  Pages                    = {188--199}
+}
+
+@Article{yen2000wavelet,
+  Title                    = {Wavelet packet feature extraction for vibration monitoring},
+  Author                   = {Yen, Gary G and Lin, Kuo-Chung},
+  Journal                  = {Industrial Electronics, IEEE Transactions on},
+  Year                     = {2000},
+  Number                   = {3},
+  Pages                    = {650--667},
+  Volume                   = {47},
+
+  Publisher                = {IEEE}
+}
+
+@InCollection{yuan2012frog,
+  Title                    = {Frog sound identification system for frog species recognition},
+  Author                   = {Yuan, Clifford Loh Ting and Ramli, Dzati Athiar},
+  Booktitle                = {Context-Aware Systems and Applications},
+  Publisher                = {Springer},
+  Year                     = {2012},
+  Pages                    = {41--50}
+}
+
+@InProceedings{zhang2010k,
+  Title                    = {A k-nearest neighbor based multi-instance multi-label learning algorithm},
+  Author                   = {Zhang, Min-Ling},
+  Booktitle                = {Tools with Artificial Intelligence (ICTAI), 2010 22nd IEEE International Conference on},
+  Year                     = {2010},
+  Organization             = {IEEE},
+  Pages                    = {207--212},
+  Volume                   = {2}
+}
+
+@Article{zhang2009mimlrbf,
+  Title                    = {MIMLRBF: RBF neural networks for multi-instance multi-label learning},
+  Author                   = {Zhang, Min-Ling and Wang, Zhi-Jian},
+  Journal                  = {Neurocomputing},
+  Year                     = {2009},
+  Number                   = {16},
+  Pages                    = {3951--3956},
+  Volume                   = {72},
+
+  Publisher                = {Elsevier}
+}
+
+@Article{ZhangReview2014,
+  Title                    = {A Review on Multi-Label Learning Algorithms},
+  Author                   = {Min-Ling Zhang and Zhi-Hua Zhou},
+  Journal                  = {Knowledge and Data Engineering, IEEE Transactions on},
+  Year                     = {2014},
+
+  Month                    = {Aug},
+  Number                   = {8},
+  Pages                    = {1819-1837},
+  Volume                   = {26},
+
+  Doi                      = {10.1109/TKDE.2013.39},
+  ISSN                     = {1041-4347},
+  Keywords                 = {learning (artificial intelligence);evaluation metrics;formal definition;instance learning;learning settings;machine learning paradigm;multilabel learning algorithms;Algorithm design and analysis;Correlation;Machine learning algorithms;Semantics;Supervised learning;Training;Vectors;Artificial Intelligence;Computing Methodologies;Data mining;Database Applications;Database Management;Information Technology and Systems;Learning;Multi-label learning;algorithm adaptation;label correlations;problem transformation}
+}
+
+@Article{Zhang2015108,
+  Title                    = {Adaptive energy detection for bird sound detection in complex environments },
+  Author                   = {Xiaoxia Zhang and Ying Li},
+  Journal                  = {Neurocomputing },
+  Year                     = {2015},
+  Number                   = {0},
+  Pages                    = {108 - 116},
+  Volume                   = {155},
+
+  ISSN                     = {0925-2312},
+  Keywords                 = {Adaptive energy detection}
+}
+
+@Article{zhou2008miml,
+  Title                    = {MIML: a framework for learning with ambiguous objects},
+  Author                   = {Zhou, Zhi-Hua and Zhang, Min-Ling and Huang, Sheng-Jun and Li, Yu-Feng},
+  Journal                  = {CORR abs/0808.3231},
+  Year                     = {2008},
+
+  Publisher                = {Citeseer}
+}
+
+@Article{zhou2007,
+  Title                    = {Multi-Instance Multi-Label Learning with Application to Scene Classification},
+  Author                   = {Zhou, Zhi-Hua Zhou Min-Ling},
+  Journal                  = {Advances
+in Neural Information Processing Systems},
+  Year                     = {2007},
+  Pages                    = {1609:1616}
+}
+
