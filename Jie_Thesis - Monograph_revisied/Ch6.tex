@@ -7,7 +7,7 @@
 \section{Overview}
 \label{sec:intro}
 
-This chapter presents a method for the classification of simultaneously vocalising frog species in low signal-to-noise ratio (SNR) recordings. In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, frog call classification is solved using a single-instance single-label (SISL) framework, which cannot reflect the nature of automatically collected environmental recordings. Most automatically collected field recordings have low SNR and consist of multiple simultaneous animal vocal activities including frogs, birds, crickets, and so on. This character of environmental acoustic recordings makes the multiple-instance multiple-label (MIML) learning a suitable classification framework. To be specific, individual frog syllables in one audio clip are regarded as \textit{multiple instance}, and the frog species included in that audio clip denote \textit{multiple labels}. 
+This chapter presents a method for the classification of simultaneously vocalising frog species in low signal-to-noise ratio (SNR) recordings. In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, frog call classification is solved using a SISL framework, which cannot reflect the nature of automatically collected environmental recordings. Most automatically collected field recordings have low SNR and consist of multiple simultaneous animal vocal activities including frogs, birds, crickets, and so on. This character of environmental acoustic recordings makes the MIML learning a suitable classification framework. To be specific, individual frog syllables in one audio clip are regarded as \textit{multiple instance}, and the frog species included in that audio clip denote \textit{multiple labels}. 
 The key part of this MIML classification framework for studying frog calls is to detect individual syllables in environmental recordings with multiple simultaneously vocalising frog species. After syllable detection, standard acoustic features and MIML classifiers can be used to perform the MIML classification.
 
 
@@ -76,7 +76,7 @@ where $A$ denotes the amplitude value, $t=0,...,T-1$ and $f=0,...,F-1$ represent
 \subsection{Acoustic event detection for syllable segmentation}
 \label{Ch5:AEDmethod}
 
-The aim of acoustic event detection (AED) is to detect a specified acoustic event in audio data. In this chapter, we use AED for frog syllable segmentation. Since all the recordings are collected from the field, there are many overlapping vocal activities from different sources. Traditional methods for frog syllable segmentation are based on time domain information \citep{somervuo2004classification,huang2009frog}, which cannot address those recordings. Here, we modified the AED method developed by Towsey et al. \citep{towsey2012toolbox} for syllable segmentation. The detail of our AED method is described as follows:
+The aim of AED is to detect a specified acoustic event in audio data. In this chapter, we use AED for frog syllable segmentation. Since all the recordings are collected from the field, there are many overlapping vocal activities from different sources. Traditional methods for frog syllable segmentation are based on time domain information \citep{somervuo2004classification,huang2009frog}, which cannot address those recordings. Here, we modified the AED method developed by Towsey et al. \citep{towsey2012toolbox} for syllable segmentation. The detail of our AED method is described as follows:
 \\
 \textbf{Step 1:} Wiener filtering 
 
@@ -225,7 +225,7 @@ A region growing algorithm is used to obtain the contour of the particular acous
 
 
 \subsection{Feature extraction}
-Based on acoustic event detection results, two feature representations are first calculated to describe each event (syllable): mask descriptors and profile statistics \citep{briggs2012acoustic}. Here, we exclude \textit{histogram of orientation (HOG)} from our feature set, because the previous studies have already demonstrated its poor classification accuracy \citep{briggs2012acoustic, ruizmultiple2015}. For mask descriptors, it is used to describe the syllable shape including minimum frequency, maximum frequency, bandwidth, duration, area, perimeter, non-compactness, rectangularity. For profile statistics, there are time-Gini, frequency-Gini, frequency-mean, frequency-variance, frequency-skewness, frequency-kurtosis, frequency-max, time-max, mask-mean, and mask standard deviation. A third feature set consists of all features.
+Based on acoustic event detection results, two feature sets are first calculated to describe each event (syllable): mask descriptors and profile statistics \citep{briggs2012acoustic}. Here, we exclude \textit{histogram of orientation (HOG)} from our feature set, because the previous studies have already demonstrated its poor classification accuracy \citep{briggs2012acoustic, ruizmultiple2015}. For mask descriptors, it is used to describe the syllable shape including minimum frequency, maximum frequency, bandwidth, duration, area, perimeter, non-compactness, rectangularity. For profile statistics, there are time-Gini, frequency-Gini, frequency-mean, frequency-variance, frequency-skewness, frequency-kurtosis, frequency-max, time-max, mask-mean, and mask standard deviation. A third feature set consists of all features.
 
 
 
@@ -234,7 +234,7 @@ Based on acoustic event detection results, two feature representations are first
 
 
 \subsection{Multiple-instance multiple-label classifiers}
-After feature extraction, three MIML algorithms are evaluated for the classification of multiple simultaneous vocalising frog species: MIML-SVM, MIML-RBF, and MIML-kNN. With the form of event-level distance measure, the MIML problem can be reduced to a single-instance multiple-label problem by associating each event with an event-level feature \citep{briggs2012acoustic}. Here, the maximal and average Hausdorff distances between two syllables are used by MIML-SVM and MIML-RBF, respectively. For MIML-kNN, the nearest neighbour is used to assign syllable-level features. 
+After feature extraction, three MIML learning algorithms are evaluated for the classification of multiple simultaneous vocalising frog species: MIML-SVM, MIML-RBF, and MIML-kNN. With the form of event-level distance measure, the MIML problem can be reduced to a single-instance multiple-label problem by associating each event with an event-level feature \citep{briggs2012acoustic}. Here, the maximal and average Hausdorff distances between two syllables are used by MIML-SVM and MIML-RBF, respectively. For MIML-kNN, the nearest neighbour is used to assign syllable-level features. 
 
 
 \section{Experiment results}
@@ -247,7 +247,7 @@ There are three modules, the parameters of which need to be discussed: signal pr
 
 \label{ch6:eveluationMetric}
 In this chapter, all the algorithms were programmed in Matlab 2014b. Each MIML algorithm is evaluated with five-fold cross-validation on the collection of 342 species-labelled recordings. 
-Five evaluation rules are used for comparing the performance with the combination of three feature representations and three ML algorithms: Hamming loss, Rank loss, Average precision, One error, Exampled based $F_{1}$, and Micro $F_{1}$ \citep{Madjarov20123084, zhou2008miml}. The value range of all five evaluation rules is between 0 to 1. The definition of each evaluation rule is described as follows:
+Five evaluation rules are used for comparing the performance with the combination of three feature sets and three ML algorithms: Hamming loss, Rank loss, Average precision, One error, Exampled based $F_{1}$, and Micro $F_{1}$ \citep{Madjarov20123084, zhou2008miml}. The value range of all five evaluation rules is between 0 to 1. The definition of each evaluation rule is described as follows:
 \\
 \textbf{(1)} Hamming loss is defined as the fraction of labels that are incorrectly predicted for an instance and the normalised Hamming loss which is normalised over instances is reported. This metric is defined as
 \begin{equation}
@@ -299,7 +299,7 @@ The $\frac{positive}{negative}$ is defined as $1-hammingLoss$ and it is 0.818 fo
 
 \begin{table}[htb!]
 \centering
-\caption[Accuracy measure for MIML classifiers with different feature representations]{Accuracy measures for MIML classifiers with different feature representations. Here, $\downarrow$ indicates that smaller values imply higher accuracy, while ‘$\uparrow$’ has the completely opposite meanings.}
+\caption[Accuracy measure for MIML classifiers with different feature sets]{Accuracy measures for MIML classifiers with different feature sets. Here, $\downarrow$ indicates that smaller values imply higher accuracy, while ‘$\uparrow$’ has the completely opposite meanings.}
 \label{tab:accuracy}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lllllll}
@@ -344,6 +344,6 @@ Since most recordings used in this chapter contain multiple simultaneously vocal
 
 
 \section{Summary and limitations}
-In this chapter, we propose a novel framework for the classification of multiple simultaneous vocalising frog species in environmental recordings. To the best of our knowledge, this is the first study that focuses on the frog recordings using the MIML algorithm. Since multiple frog species tend to call simultaneously, the MIML algorithm is more suitable for dealing with those recordings than single-instance single-label classification. Individual frog syllables are first segmented using AED. Then, three feature representations, MD, PS, and AF, are calculated from those segmented syllables. Next, a bag generator is used to construct a feature representation with extracted features from each syllables. Finally, three MIML classifiers are used for the classification of frog calls with the best true positive/negatives of 81.8\%. Future work will focus on the study of novel features and MIML classifiers to further improve the classification performance. Current classification results are highly affected by the syllable segmentation results, and the use of AED cannot accurately segment all the syllables. One solution is to prepare an annotated dataset and apply supervised learning algorithms for the segmentation task. Another is to use a different classification framework, which does not need the segmentation process, and we examine this option in the next chapter
+In this chapter, we propose a novel framework for the classification of multiple simultaneous vocalising frog species in environmental recordings. To the best of our knowledge, this is the first study that focuses on the frog recordings using the MIML algorithm. Since multiple frog species tend to call simultaneously, the MIML algorithm is more suitable for dealing with those recordings than single-instance single-label classification. Individual frog syllables are first segmented using AED. Then, three feature sets, MD, PS, and AF, are calculated from those segmented syllables. Next, a bag generator is used to construct a feature set with extracted features from each syllables. Finally, three MIML classifiers are used for the classification of frog calls with the best true positive/negatives of 81.8\%. Future work will focus on the study of novel features and MIML classifiers to further improve the classification performance. Current classification results are highly affected by the syllable segmentation results, and the use of AED cannot accurately segment all the syllables. One solution is to prepare an annotated dataset and apply supervised learning algorithms for the segmentation task. Another is to use a different classification framework, which does not need the segmentation process, and we examine this option in the next chapter
 
 

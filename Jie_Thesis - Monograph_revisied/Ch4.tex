@@ -8,13 +8,13 @@
 \section{Overview}
 \label{S:1}
 
-This chapter presents an enhanced feature representation for frog call classification using various machine learning algorithms and explores whether a combination of three types of features discriminate a wider variety of species that may share similar characteristics in either temporal, perceptual or cepstral information but not all. In the literature, various feature representations have been developed for frog call classification. However, most features used in the prior work are based on either temporal features such as averaged energy and zero-crossing rate, perceptual features such spectral centroid and spectral flux, or cepstral features such as MFCCs. 
+This chapter presents an enhanced feature set for frog call classification using various machine learning algorithms and explores whether a combination of three types of features discriminate a wider variety of species that may share similar characteristics in either temporal, perceptual or cepstral information but not all. In the literature, various feature sets have been developed for frog call classification. However, most features used in the prior work are based on either temporal features such as averaged energy and zero-crossing rate, perceptual features such spectral centroid and spectral flux, or cepstral features such as MFCCs. 
 
 
 
-This chapter aims to compare various feature representations with different machine learning techniques. Based on the classification performance, suggested features can then be adapted to study low-SNR recordings. This chapter directly addresses sub-research question (1): How to improve the classification performance when addressing high SNR recordings. In particular, we want to know which of those features can be adapted from high SNR recordings to low SNR recordings, since our final goal of this thesis is to classify low SNR recordings.
+This chapter aims to compare various feature sets with different machine learning techniques. Based on the classification performance, suggested features can then be adapted to study low-SNR recordings. This chapter directly addresses sub-research question (1): How to improve the classification performance when addressing high SNR recordings. In particular, we want to know which of those features can be adapted from high SNR recordings to low SNR recordings, since our final goal of this thesis is to classify low SNR recordings.
 
-The performance of the proposed method is evaluated based on twenty-four frog species, which are geographically well distributed through Queensland, Australia. Five feature representations are compared via five machine learning algorithms. Classification results demonstrate that a combination of temporal, spectral and cepstral features can achieve the best performance. Compared with temporal and spectral features, cepstral features can achieve a robust classification accuracy, but are sensitive to the background noise. Therefore, in the next chapter, we aim to develop robust cepstral features that are not sensitive to the background noise.
+The performance of the proposed method is evaluated based on twenty-four frog species, which are geographically well distributed through Queensland, Australia. Five feature sets are compared via five machine learning algorithms. Classification results demonstrate that a combination of temporal, spectral and cepstral features can achieve the best performance. Compared with temporal and spectral features, cepstral features can achieve a robust classification accuracy, but are sensitive to the background noise. Therefore, in the next chapter, we aim to develop robust cepstral features that are not sensitive to the background noise.
 
 
 
@@ -114,7 +114,7 @@ line for \textit{Neobatrachus sudelli} (one syllable).}
 Since features play an important role in the classification performance, pre-processing is applied to each syllable to improve the accuracy of feature extraction. The pre-processing of each syllable consists of the following steps:
 
 \subsubsection{Pre-emphasise}
-Some collected frog calls have low amplitude but in the high frequency, which will have an effect on feature extraction of the spectrum at the high frequency end. To enhance those high-frequency components and reduce the low-frequency components, a first-order high-pass filter with finite impulse response (FIR) is introduced and defined as follows:
+Some collected frog calls have low amplitude but in the high frequency, which will have an effect on feature extraction of the spectrum at the high frequency end. To enhance those high-frequency components and reduce the low-frequency components, a first-order high-pass filter with finite impulse response (FIR) is introduced and defined as
 
 \begin{align}
 y(n) = s(n)-\alpha s(n-1)
@@ -134,12 +134,12 @@ x(n) = w(n)y(n)
 \end{equation}
 
 \subsection{Feature extraction}
-After pre-processing of each syllable, various parametric representations are used to represent the syllable. In the literature, a variety of parametric representations of frog calls can be found, such as LPC and MFCCs \citep{yuan2012frog, jaafar2013automatic, bedoya2014automatic}.
-MFCCs achieved a better performance than LPC \citep{yuan2012frog}. Different from the hybrid features used \citep{huang2009frog, han2011acoustic, Gingras2013}, our enhanced  feature consists of more features, such as oscillation rate \citep{Xie1504:Acoustic}, to further improve the classification accuracy. In this study, temporal features include syllable duration, Shannon entropy, r$\acute{e}$nyi entropy, zero-crossing rate, averaged energy, and oscillation rate. Perceptual features contains spectral centroid, spectral flatness, spectral roll-off, signal bandwidth, spectral flux, and fundamental frequency. Here the word \textit{perceptual} is defined according to \citep{lei2014content}. The MFCCs feature is used as a cepstral feature. The description of each feature is listed below.
+After pre-processing of each syllable, various parametric representations are used to represent the syllable. In the literature, a variety of parametric representations of frog calls can be found, such as LPCs and MFCCs \citep{yuan2012frog, jaafar2013automatic, bedoya2014automatic}.
+MFCCs achieved a better performance than LPCs \citep{yuan2012frog}. Different from the hybrid features used \citep{huang2009frog, han2011acoustic, Gingras2013}, our enhanced  feature consists of more features, such as oscillation rate \citep{Xie1504:Acoustic}, to further improve the classification accuracy. In this study, temporal features include syllable duration, Shannon entropy, r$\acute{e}$nyi entropy, zero-crossing rate, averaged energy, and oscillation rate. Perceptual features contains spectral centroid, spectral flatness, spectral roll-off, signal bandwidth, spectral flux, and fundamental frequency. Here the word \textit{perceptual} is defined according to \citep{lei2014content}. MFCCs are used as a cepstral feature. The description of each feature is listed below.
 
 \vspace{3mm}
 
-\noindent(1) Syllable duration: Syllable duration \citep{Xie1504:Acoustic} is directly obtained from the bounds (time domain) of the segmentation results,
+\noindent(1) Syllable duration: Syllable duration \citep{Xie1504:Acoustic} is directly obtained from the bounds (time domain) of the segmentation results.
 \begin{equation}
 Dr = x(n_{e}) - x(n_{s})
 \end{equation}
@@ -200,7 +200,7 @@ Sf = \frac{exp(\frac{1}{N}\sum_{k=0}^{N-1}InX(k))}{\frac{1}{N}\sum_{k=0}^{N-1}X(
 
 \vspace{3mm}
 
-\noindent(8) Spectral roll-off: spectral roll-off is often used to measure the spectral shape, and defined as the frequency $H$. Here $H$ is the value below which the $\theta$ of the magnitude distribution is concentrated,
+\noindent(8) Spectral roll-off: spectral roll-off is often used to measure the spectral shape, and defined as the frequency $H$. Here $H$ is the value below which the $\theta$ of the magnitude distribution is concentrated.
 
 \begin{equation}
 \sum_{k}^{H}X(k)=\theta \sum_{k=1}^{N-1}X(k)
@@ -245,7 +245,7 @@ C_{m}^{j} = \sum_{j=0}^{J-1}\cos(m \frac{\pi}{J}(j+0.5))log_{10}(E_{j}), 0 \leq 
 \end{equation}
 where $L$ is the number of MFCCs.
 
-In this study, the filter bank consists of 40 triangular filters, that is  $J=40$. The length of MFCCs of each frame is 12 (L=12). After calculating MFCCs from each frame, the averaged MFCCs of all frames within one syllable are calculated.
+In this study, the filter bank consists of 40 triangular filters, that is  $J=40$. The length of MFCCs of each frame is 12 (L=12). After calculating MFCCs from each frame, the averaged MFCCs of all frames within one syllable are calculated as
 \begin{equation}
 f_{m}= \frac{\sum_{i=1}^{K}(C_{m}^{l})}{K}, 0\leq m \leq L-1
 \end{equation}
@@ -253,7 +253,7 @@ where $f_{m}$ is the $m^{th}$ MFCCs, $K$ is the number of frames within the syll
 
 For all perceptual features and $Zcr$, the mean values are calculated to characterise the frog syllable. Then, the L-dimensional MFCC vectors are fused with the other 11 feature vectors to form the enhanced temporal, perceptual and cepstral (TemPerCep) features.
 
-After the formulation of feature vectors, normalisation is conducted as follows
+After the formulation of feature vectors, normalisation is conducted as 
 \begin{equation}
 v_{i} = \frac{v_{i}-\mu_{i}}{\sigma_{i}}
 \end{equation} 
@@ -269,10 +269,10 @@ where $w_{1}$, $w_{2}$, and $w_{3}$ are the weights, $\oplus$ is the concatenati
 \subsection{Classifier description}
 
 \label{ch4:classifierDesign}
-In this chapter we report the results for five classification algorithms: 1) Linear discriminant analysis (LDA), 2) K-nearest neighbour, 3) Support vector machines, 4) Random forest, 5) Artificial neural network. Five feature vectors, linear predictive coding, MFCCs, enhanced temporal feature and MFCC (\textit{TemCep}), enhanced temporal and perceptual features (\textit{TemPer}), enhanced temporal, perceptual features, and MFCC (\textit{TemCepPer}), are fed into each classifier respectively to test their classification performance.
+In this chapter we report the results for five classification algorithms: 1) Linear discriminant analysis (LDA), 2) K-nearest neighbour, 3) Support vector machines, 4) Random forest, 5) Artificial neural network. Five feature vectors, LPCs, MFCCs, enhanced temporal feature and MFCCs (\textit{TemCep}), enhanced temporal and perceptual features (\textit{TemPer}), enhanced temporal, perceptual features, and MFCCs (\textit{TemCepPer}), are fed into each classifier respectively to test their classification performance.
 
 \subsubsection{Linear discriminant analysis}
-After transforming the feature vector into low-dimensional space, the classification accuracy can be improved for linear discriminant analysis (LDA). In LDA, the goal is to find an optimal transformation matrix to transform the feature vector from an n-dimensional space to a d-dimensional space. A linear mapping, which maximises the Fisher criterion $J_{F}$, is used to obtain the transformation matrix as follows.
+After transforming the feature vector into low-dimensional space, the classification accuracy can be improved for linear discriminant analysis (LDA). In LDA, the goal is to find an optimal transformation matrix to transform the feature vector from an n-dimensional space to a d-dimensional space. A linear mapping, which maximises the Fisher criterion $J_{F}$, is used to obtain the transformation matrix as
 \begin{equation}
 J_{F}(A)=tr((A^{T}S_{w}A)^{-1}(A^{T}S_{B}A))
 \end{equation}
@@ -296,7 +296,7 @@ A_{opt}= argmax \frac{tr(A^{T}S_{B}A)}{A^{T}S_{W}A}
 In the recognition stage, the feature vector is first transformed into a lower-dimensional space via $A_{opt}$ derived by LDA. Then, the distance between the feature vector of the test syllable and the feature vector representing this species is calculated. The one with minimum distance is regarded as the identified species.
 
 \subsubsection{K-nearest neighbour}
-For the K-NN classifier, the distance between an input frog feature vector and all stored feature vectors is first calculated. Then $K$ closest vectors are selected to determine the species of the input feature vector by majority voting. For example, the Euclidean distance between an input instance $i$ (frog feature vector) and one stored instance $j$ is calculated as 
+For the kNN classifier, the distance between an input frog feature vector and all stored feature vectors is first calculated. Then $K$ closest vectors are selected to determine the species of the input feature vector by majority voting. For example, the Euclidean distance between an input instance $i$ (frog feature vector) and one stored instance $j$ is calculated as 
 \begin{equation}
 d(i,j)=\sqrt{\sum_{c=1}^{n}(F_{i,c} - F_{j,c})^{2}}
 \end{equation}
@@ -306,10 +306,10 @@ d(i,j)=\sqrt{\sum_{c=1}^{n}(F_{i,c} - F_{j,c})^{2}}
 \begin{equation}
 \frac{1}{k_{1}}\sum_{j\epsilon S_{1}}d(i,j(S_{1})) \leq \frac{2}{k_{2}}\sum_{j\epsilon S_{2}}d(i,j(S_{2}))
 \end{equation}
-where $k = k_{1}+k_{2}$, $k_{1}$ is the number of frog species $S_{1}$, $k_{2}$ is the number of frog species $S_{2}$. Here the input instance $i$ will be classified as frog species $S_{2}$. Following prior work (\citep{han2011acoustic, Xie1504:Acoustic}), the distance function used for K-NN is the Euclidean function, and $k$ is set at 1.
+where $k = k_{1}+k_{2}$, $k_{1}$ is the number of frog species $S_{1}$, $k_{2}$ is the number of frog species $S_{2}$. Here the input instance $i$ will be classified as frog species $S_{2}$. Following prior work (\citep{han2011acoustic, Xie1504:Acoustic}), the distance function used for kNN is the Euclidean function, and $k$ is set at 1.
 
 \subsubsection{Support vector machines}
-Due to the high accuracy and superior generalisation properties, support vector machines (SVM) have been widely used for classifying animal sounds \citep{huang2009frog} \citep{acevedo2009automated}. In this study, the feature set obtained is first selected as training data. Then, the pairs $(F_{l}^{n},L_{l}^{n}), l=1,2,..., C_{l}$ are constructed using the selected training data, where $C_{l}$ is the number of frog instances in the training data, $F_{l}^{n}$ is the feature vector obtained from the $l$-$th$ frog instance in the training data, $L_{l}^{n}$ is the frog species label. Furthermore, the decision function for the classification problem based on SVM \citep{cortes1995support} is defined by the training data as follows.
+Due to the high accuracy and superior generalisation properties, support vector machines (SVM) have been widely used for classifying animal sounds \citep{huang2009frog} \citep{acevedo2009automated}. In this study, the feature set obtained is first selected as training data. Then, the pairs $(F_{l}^{n},L_{l}^{n}), l=1,2,..., C_{l}$ are constructed using the selected training data, where $C_{l}$ is the number of frog instances in the training data, $F_{l}^{n}$ is the feature vector obtained from the $l$-$th$ frog instance in the training data, $L_{l}^{n}$ is the frog species label. Furthermore, the decision function for the classification problem based on SVM \citep{cortes1995support} is defined by the training data as 
 \begin{equation}
 f(v) = sgn(\sum_{sv}\alpha_{l}^{n}L_{l}^{n}K(v,v_{l}^{n})+b_{l}^{n})
 \end{equation}
@@ -319,14 +319,14 @@ where $K(.,.)$ is the kernel function, $\alpha_{l}^{n}$ is the Lagrange multipli
 
 \subsubsection{Random forest}
 Random forest (RF) is a tree-based algorithm, which builds a specified number of classification trees without pruning. The nodes are split on a random drawing of $m$ features
-from the entire feature set $M$. A bootstrapped random sample from the training set is used to build each tree. The advantage of RF is its ability to generate a metric to rank predictors based on their relative contribution to the model's predictive accuracy \citep{bao2005prediction}. The prediction is defined as follows.
+from the entire feature set $M$. A bootstrapped random sample from the training set is used to build each tree. The advantage of RF is its ability to generate a metric to rank predictors based on their relative contribution to the model's predictive accuracy \citep{bao2005prediction}. The prediction is defined as
 \begin{equation}
 Pred = \frac{1}{K}\sum_{n=1}^{K}T_{i}
 \end{equation}
 where $T_{i}$ is the n-th tree response of the RF. In this work, the number of trees $K$ is set at 300 trees to characterise frog calls. As for the predictor variables $m$, it is set at $\sqrt{N}$, where $N$ is the feature dimension in a syllable. 
 
 \subsubsection{Artificial neural network}
-Artificial neural network (ANN) is a non-linear, adaptive, machine learning tool with great capabilities for learning, generalisation, non-linear approximation, and classification. An ANN architecture often consists of many interconnected neurons organised in successive layers: pattern layer, summation layer, and decision layer. The neuron in class is often computed by a Gaussian function. Then, the summation layer uses summation units to memorise the class conditional probability density functions of each class through a combination of Gaussian densities. Lastly, the decision layer unit classifies the pattern in accordance with the Bayesian decision rule based on the output of all summation layer neurons as follows.
+Artificial neural network (ANN) is a non-linear, adaptive, machine learning tool with great capabilities for learning, generalisation, non-linear approximation, and classification. An ANN architecture often consists of many interconnected neurons organised in successive layers: pattern layer, summation layer, and decision layer. The neuron in class is often computed by a Gaussian function. Then, the summation layer uses summation units to memorise the class conditional probability density functions of each class through a combination of Gaussian densities. Lastly, the decision layer unit classifies the pattern in accordance with the Bayesian decision rule based on the output of all summation layer neurons as 
 \begin{equation}
 D(F)=argmax{p_{i}(F)}, i =1,...,N
 \end{equation}
@@ -334,7 +334,7 @@ where $i$ is the species index, $N$ is the total number of frog species.
 \begin{equation}
 p_{i}(F)=\sum_{j=1}^{m_{i}}\beta_{ij}\phi_{ij}(F)
 \end{equation}
-where $m_{i}$ is the number of Gaussian components, $\beta_{ij}$ and $\phi_{ij}(F)$ can be represented as follows.
+where $m_{i}$ is the number of Gaussian components, $\beta_{ij}$ and $\phi_{ij}(F)$ can be represented as
 
 \begin{equation}
 \sum_{j=1}^{m_{i}}\beta_{ij}=1
@@ -362,7 +362,7 @@ In this experiment, performance statistics is evaluated using 5-fold cross-valid
 %where $TP$ is true positive, $FP$ is true positive, $TN$ is true negative, and $FN$ is false negative.
 
 \subsection{Effects of different feature sets}
-Figure~\ref{diffFeature} illustrates the classification accuracy with different feature sets: LPC feature, MFCCs (\textit{Cep}), temporal features and MFCCs (\textit{TempCep}), temporal features and perceptual features (\textit{TemPer}), and temporal features, perceptual features and MFCCs (\textit{TemPerCep}). It can be seen that cepstral features (\textit{Cep}, \textit{TempCep}, \textit{TemPerCep}) have a more stable performance than LPC and perceptual features. It is evident that our proposed enhanced feature (\textit{TemPerCep}) shows outstanding performance of all proposed feature representations of all the machine learning techniques. The reason for the high classification accuracy is that frog calls are of short duration and cover a small spectral band. Our proposed enhanced feature, \textit{TemPerCep}, can better characterise the content of frog calls. Although the classification performance of \textit{TemPerCep} is not significantly higher than other feature representations, the difference does show that our proposed feature set is suitable and effective for the classification of frog calls.   
+Figure~\ref{diffFeature} illustrates the classification accuracy with different feature sets: LPCs, MFCCs (\textit{Cep}), temporal features and MFCCs (\textit{TempCep}), temporal features and perceptual features (\textit{TemPer}), and temporal features, perceptual features and MFCCs (\textit{TemPerCep}). It can be seen that cepstral features (\textit{Cep}, \textit{TempCep}, \textit{TemPerCep}) have a more stable performance than LPCs and perceptual features. It is evident that our proposed enhanced feature (\textit{TemPerCep}) shows outstanding performance of all proposed feature sets of all the machine learning techniques. The reason for the high classification accuracy is that frog calls are of short duration and cover a small spectral band. Our proposed enhanced feature, \textit{TemPerCep}, can better characterise the content of frog calls. Although the classification performance of \textit{TemPerCep} is not significantly higher than other feature sets, the difference does show that our proposed feature set is suitable and effective for the classification of frog calls.   
 
 
 \begin{figure}[htb!] % Example image
@@ -374,7 +374,7 @@ Figure~\ref{diffFeature} illustrates the classification accuracy with different 
 
 \subsection{Effects of different machine learning techniques}
 Figure~\ref{diffClassifier} shows the frog call classification performance of 
-$TemPerCep$ with different machine learning techniques. The high classification results in term of the accuracy, sensitivity and specificity measure of different classifiers indicates good classification performance. It can be observed that RF achieves the best classification performance, while the classification performance of LDA is the lowest. Meanwhile, the classification performances of SVM and MLP are very good, which might be that the features and classifiers are quite suitable. It can be seen from Figure~\ref{diffClassifier} that frog call classification with different machine learning techniques can achieve good performance with our enhanced feature representation, because the classification accuracy is very high. It can also be noted that RF can be highly recommended for classification of frog calls due to the highest classification accuracy.
+$TemPerCep$ with different machine learning techniques. The high classification results in term of the accuracy, sensitivity and specificity measure of different classifiers indicates good classification performance. It can be observed that RF achieves the best classification performance, while the classification performance of LDA is the lowest. Meanwhile, the classification performances of SVM and MLP are very good, which might be that the features and classifiers are quite suitable. It can be seen from Figure~\ref{diffClassifier} that frog call classification with different machine learning techniques can achieve good performance with our enhanced feature set, because the classification accuracy is very high. It can also be noted that RF can be highly recommended for classification of frog calls due to the highest classification accuracy.
 
 
 
@@ -404,22 +404,22 @@ It also can be observed that SVM and RF achieve the best classification performa
 \end{figure}
 
 \subsection{Effects of noise}
-To further evaluate the robustness of our proposed feature set, white noise with different signal-to-noise (SNR) of 40 dB, 30 dB, 20 dB, 10 dB, 0dB, and -10 dB is added to the frog calls. Because this chapter focuses on the evaluation of features rather than the segmentation method, the artificial noise is added after syllable segmentation. Since SVM has shown a good performance for frog call classification in 3.3.1, we only use SVM to test the effects of different levels of artificial noise. The classification results of different levels of noise contamination are shown in Figure~\ref{diffNoise}. It is found from Figure~\ref{diffNoise}, that MFCCs (Cep) are very sensitive to background noise, compared with other feature representations. Comparing \textit{TemCep} with \textit{TemPer}, it can be observed that perceptual features have a better anti-noise ability than the cepstral feature. It is also found that LPC has a good anti-noise ability when SNR is larger than 10, but the classification accuracy quickly decreases when SNR is smaller than 10. 
+To further evaluate the robustness of our proposed feature set, white noise with different signal-to-noise (SNR) of 40 dB, 30 dB, 20 dB, 10 dB, 0dB, and -10 dB is added to the frog calls. Because this chapter focuses on the evaluation of features rather than the segmentation method, the artificial noise is added after syllable segmentation. Since SVM has shown a good performance for frog call classification in 3.3.1, we only use SVM to test the effects of different levels of artificial noise. The classification results of different levels of noise contamination are shown in Figure~\ref{diffNoise}. It is found from Figure~\ref{diffNoise}, that MFCCs (Cep) are very sensitive to background noise, compared with other feature sets. Comparing \textit{TemCep} with \textit{TemPer}, it can be observed that perceptual features have a better anti-noise ability than the cepstral feature. It is also found that LPCs have a good anti-noise ability when SNR is larger than 10, but the classification accuracy quickly decreases when SNR is smaller than 10. 
 
 
 \begin{figure}[htb!] % Example image
-\center{\includegraphics[width=0.6\linewidth]{image/Ch4/affectNoise.pdf}}
+\center{\includegraphics[width=0.6\linewidth]{image/Ch4/affectNoise.png}}
 \caption{Sensitivity for different features for different levels of noise contamination}
 \label{diffNoise} 
 \end{figure}
 
 
 \section{Discussion}
-Table~\ref{my-label} shows the classification performance of previous methods. Since previous studies often used different datasets to perform the classification task, this research implemented all those features and applied them to the used dataset with the same classifier (SVM). Compared with those previous methods, this proposed enhanced feature representation significantly outperforms other methods. Therefore, it can be concluded that the results of this research stand above the current classification performance. From the table, we can also observe that MFCCs is the most popular feature that has been used for frog call classification. Among all used machine learning techniques, SVM shows the superior performance and is widely used for the classification task. It can be found that the classification accuracy of \textit{TemPerCep} does not show significant improvement when compared with MFCCs. However, combining temporal and perceptual features with cepstral features greatly improves the anti-noise ability of MFCCs.
+Table~\ref{my-label} shows the classification performance of previous methods. Since previous studies often used different datasets to perform the classification task, this research implemented all those features and applied them to the used dataset with the same classifier (SVM). Compared with those previous methods, this proposed enhanced feature set significantly outperforms other methods. Therefore, it can be concluded that the results of this research stand above the current classification performance. From the table, we can also observe that MFCCs are the most popular feature that has been used for frog call classification. Among all used machine learning techniques, SVM shows the superior performance and is widely used for the classification task. It can be found that the classification accuracy of \textit{TemPerCep} does not show significant improvement when compared with MFCCs. However, combining temporal and perceptual features with cepstral features greatly improves the anti-noise ability of MFCCs.
 
 \begin{table}[h]
 \centering
-\caption{Comparision with previous used feature representations}
+\caption{Comparision with previous used feature sets}
 \label{my-label}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lll}
@@ -430,7 +430,7 @@ Ref. & Feature                                                                  
 \citep{han2011acoustic}     & \begin{tabular}[c]{@{}l@{}} Spectral centroid, Shannon entropy, \\ R$\acute{e}$nyi entropy \end{tabular}  &    75.6\%      \\ 
 \citep{Xie1504:Acoustic}    & \begin{tabular}[c]{@{}l@{}}Syllable duration, dominant frequency, \\ oscillation rate, frequency modulation, \\ energy modulation     \end{tabular}                        &    92.3\%      \\ 
  \citep{Huang20141}    & \begin{tabular}[c]{@{}l@{}}Spectral centroid, signal bandwidth, \\  spectral roll-off,  threshold-crossing rate, \\ spectral flatness, and average energy\end{tabular} &  95.8\%        \\  
- Our feature representation    &                                                                                                                                        \textit{TemPerCep} &    99.1\%      \\ \hline\hline
+ Our feature set    &                                                                                                                                        \textit{TemPerCep} &    99.1\%      \\ \hline\hline
 \end{tabular}
 }
 \end{table}
@@ -438,7 +438,7 @@ Ref. & Feature                                                                  
 
 
 \section{Summary and limitations}
-In this chapter, a novel enhanced feature representation was proposed to classify frog calls with various machine learning techniques. After segmenting continuous recordings into individual syllables, a variety of acoustic features are extracted from each syllable. Then, different features are combined to form different feature representations. Finally, various machine learning techniques are used to classify frog calls with different feature representations.
-Our proposed enhanced feature representation shows the best classification accuracy and has good anti-noise ability. Meanwhile, the SVM and RF outperform the traditional LDA and K-NN classifiers. Therefore, it is suitable to combine \textit{TemPerCep} with SVM or RF to build a frog call classification system. Ecologists can apply the proposed classification system to long-term frog recordings. Then, the long-term change of frog species richness can be reflected by the classification results. 
+In this chapter, a novel enhanced feature set was proposed to classify frog calls with various machine learning techniques. After segmenting continuous recordings into individual syllables, a variety of acoustic features are extracted from each syllable. Then, different features are combined to form different feature sets. Finally, various machine learning techniques are used to classify frog calls with different feature sets.
+Our proposed enhanced feature set shows the best classification accuracy and has good anti-noise ability. Meanwhile, the SVM and RF outperform the traditional LDA and kNN classifiers. Therefore, it is suitable to combine \textit{TemPerCep} with SVM or RF to build a frog call classification system. Ecologists can apply the proposed classification system to long-term frog recordings. Then, the long-term change of frog species richness can be reflected by the classification results. 
 
 Since the MFCCs feature shows a good classification performance, but a bad anti-noise ability, we can modify MFCCs to improve the anti-noise ability. After transforming frog audio data into its spectrogram representation, the visual inspection motivates us to use image processing techniques for studying frog calls. Also, a wider variety of frog audio data from different geographical and environmental conditions will be tested in future experiments.

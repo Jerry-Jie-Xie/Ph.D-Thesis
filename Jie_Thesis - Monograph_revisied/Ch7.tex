@@ -7,32 +7,31 @@
 \section{Overview}
 \label{sect:introduction}
 
-This chapter describes the research conducted for estimating frog calling activity and species richness. Different from Chapter \ref{cha:cha6MIML} that use acoustic event detection (AED) for estimating frog species richness, AED is used to estimate the frog calling activity in this chapter.
-In Chapter \ref{cha:cha6MIML}, acoustic features are calculated based on the results of AED to estimate frog species richness, but the accuracy of AED results directly affect the multiple-label multiple-instance (MIML) classification performance.
-To reduce the bias introduced by AED, this research presents global feature representations for the classification of recordings with multiple frog species. The feature representation is extracted from the whole recording without the syllable segmentation. Therefore, the classification process can be framed as a multiple-label (ML) learning task.  
+This chapter describes the research conducted for estimating frog calling activity and species richness. Different from Chapter \ref{cha:cha6MIML} that use AED for estimating frog species richness, AED is used to estimate the frog calling activity in this chapter.
+In Chapter \ref{cha:cha6MIML}, acoustic features are calculated based on the results of AED to estimate frog species richness, but the accuracy of AED results directly affect the MIML classification performance.
+To reduce the bias introduced by AED, this research presents global feature representations for the classification of recordings with multiple frog species. The feature representation is extracted from the whole recording without the syllable segmentation. Therefore, the classification process can be framed as a ML learning task.  
 
 
 
-Three global feature representations are calculated to classify each 10-second recording: linear predictive coding (LPC), MFCCs and wavelet-based features. Both MFCCs and wavelet-based features are similar to the features used in Chapter \ref{cha:cha5WaveletFeature}. The difference is that we divide \textit{adaptive WPD sub-band ceptral coefficients} into three equal intervals to obtain more temporal information.
+Three global feature representations are calculated to classify each 10-second recording: LPCs, MFCCs, and PWSCCs. Both MFCCs and PWSCCs are similar to the features used in Chapter \ref{cha:cha5WaveletFeature}. The difference is that each 10-second recording is divided into three equal parts, and both MFCCs and PWSCCs are calculated from each part and combined as the final feature, which can obtain more temporal information.
 
 
- 
 Furthermore, this proposed classification framework is conducted for a long-term analysis. Both frog calling activity and species richness during the breeding season are estimated. Also, the correlations between frog calling activity/species richness with weather variables are studied to reflect the relationship between them. 
 
   
-The architecture of this frog calling activity and species richness estimation system is shown in Figure \ref{fig:Ch7_flowchart}. The system consists of three parts: frog calling activity estimation, frog species richness estimation, and correlation analysis. Each part is discussed in detail in the following subsections.
+The architecture of this frog calling activity and species richness estimation system is shown in Figure \ref{fig:Ch7_flowchart}. The system contains three parts: frog calling activity estimation, frog species richness estimation, and correlation analysis. Each part is discussed in detail in the following subsections.
 
 \begin{figure}[htb!]
 \centering
 \includegraphics[width=\textwidth]{image/Ch7/flowchart.pdf}
-\caption{Flowchart of a frog call classification system using AED and multi-label learning}
+\caption{Flowchart of a frog call classification system using AED and ML learning}
 \label{fig:Ch7_flowchart}
 \end{figure}
 
 
 \section{Acquisition of frog call recordings}
 
-To evaluate the proposed algorithm, the same dataset with Chapter~\ref{cha:cha6MIML} is used. The description of this dataset can be found in Chapter~\ref{chap5:Materials}. Besides the representative dataset, this study  sampled 10-second recordings every 10 minutes from continuous recordings over three months. Finally, there are 4170, 4908, and 1544 10-second recordings for \textit{Kiyomi dam}, \textit{Stony Creek dam} and \textit{BG Creek dam} respectively, which are used for long-term acoustic monitoring. Here, the number of recordings of there sites is different due to the data loss in some days.
+To evaluate the proposed algorithm, the same dataset with Chapter~\ref{cha:cha6MIML} is used. The description of this dataset can be found in Chapter~\ref{chap5:Materials}. Besides the representative dataset, this study  sampled 10-second recordings every 10 minutes from continuous recordings over three months. Finally, there are 4170, 4908, and 1544 10-second recordings for \textit{Kiyomi dam}, \textit{Stony Creek dam} and \textit{BG Creek dam}, respectively, which are used for long-term acoustic monitoring. Here, the number of recordings of there sites is different due to the data loss in some days.
 
 
 
@@ -42,7 +41,7 @@ We first manually inspect spectrograms of ten randomly selected call examples fo
 
 
 \section{Experiment setup}
-Each 10-second recording is divided into frames of 512 samples and 50\% frame overlap for STFT. $A_{large}$ and $A_{small}$, which are used for area filtering in acoustic event detection, are empirically set at 3000 pixels and 300 pixels, respectively. Allowed fluctuations in both sides of dominant frequency are 300 Hz for dominant frequency filtering. For WP-based feature, window size and overlap are 512 samples and 50\%, the window function is a Hamming window. All algorithms were programmed in Matlab 2014b except multi-label learning, which was implemented in Meka 1.7.7\footnote[4]{http://meka.sourceforge.net/}. 
+Each 10-second recording is divided into frames of 512 samples and 50\% frame overlap for STFT. $A_{large}$ and $A_{small}$, which are used for area filtering in AED, are empirically set at 3000 pixels and 300 pixels, respectively. Allowed fluctuations in both sides of dominant frequency are 300 Hz for dominant frequency filtering. For WP-based feature, window size and overlap are 512 samples and 50\%, the window function is a Hamming window. All algorithms were programmed in Matlab 2014b except ML learning, which was implemented in Meka 1.7.7\footnote[4]{http://meka.sourceforge.net/}. 
 
 
 
@@ -54,7 +53,7 @@ Frog calling activity is estimated through the detection of acoustic events in a
 
 
 
-The frog calling activity of each 10-second recording is estimated as follows.
+The frog calling activity of each 10-second recording is estimated as 
 
 \begin{equation}
 F_{abun} = \sum_{n=1}^{N}\sum_{i=1}^{I}\sum_{j=1}^{J} A_{i,j}(n)^2
@@ -103,7 +102,7 @@ Here, $A_{i,j}$ represents the decibel value of location $(i,j)$ within each aco
        \includegraphics[width=\textwidth]{image/Ch7/AED_Jie_2.pdf}
                 \caption{Proposed method}
         \end{subfigure}                
-        \caption[Acoustic event detection for frog abundance monitoring using different methods]{Acoustic event detection for frog calling activity estimation using different methods. For each row, different methods are applied to the same recordings. The baseline of the detection results is shown in the first row; detected frog calls are drawn using a blue rectangle. For each column, different methods are used for the same recording.}        
+        \caption[AED for frog abundance monitoring using different methods]{AED for frog calling activity estimation using different methods. For each row, different methods are applied to the same recordings. The baseline of the detection results is shown in the first row; detected frog calls are drawn using a blue rectangle. For each column, different methods are used for the same recording.}        
         \label{fig:Ch7_AED}
 \end{figure}
 
@@ -138,34 +137,34 @@ Figure~\ref{fig:frogAbundance} shows the frog calling activity results of three 
 \section{Frog species richness}
 
 
-Frog species richness is estimated by predicting the species presence/absence of each sampled recording. Since many sampled recordings consist of multiple frog species, one direct solution is to assign each recording with a set of labels (frog species) for explicitly expressing its semantics \citep{ZhangReview2014}. Therefore, multi-label learning is adopted to classify each sampled recording. 
+Frog species richness is estimated by predicting the species presence/absence of each sampled recording. Since many sampled recordings consist of multiple frog species, one direct solution is to assign each recording with a set of labels (frog species) for explicitly expressing its semantics \citep{ZhangReview2014}. Therefore, ML learning is adopted to classify each sampled recording. 
 
 Extracting discriminating features, which maximise between-group (inter-specie) dissimilarity
-and minimise within-group (intra-specie) dissimilarity, is very important for achieving high classification performance \citep{huang2009frog, bedoya2014automatic}. In this chapter, feature extraction is performed based on wavelet packet decomposition using a modified version of the method introduced in Chapter \ref{cha:cha5WaveletFeature} and detailed below. 
+and minimise within-group (intra-specie) dissimilarity, is very important for achieving high classification performance \citep{huang2009frog, bedoya2014automatic}. In this chapter, feature extraction is performed based on WPD using a modified version of the method introduced in Chapter \ref{cha:cha5WaveletFeature} and detailed below. 
 
-For feature extraction, constructing a suitable frequency scale for a wavelet packet (WP) tree based on the dominant frequency of each frog species is the first step, because different frog species tend to have different dominant frequencies \citep{Gingras2013}. In Chapter \ref{cha:cha5WaveletFeature}, k-means clustering was first applied to the extracted dominant frequencies of training data. Then, the frequency scale was built by sorting clustering centroids to construct the WP tree. In this chapter, the prior information on dominant frequency  ($F_{0}$) obtained from Table \ref{tab:Ch7_parameters} is directly used to construct the WP tree. We iteratively detect each WP tree sub-band node until the frequency range of each node includes more than one dominant frequency $F_{0}$. Then, the WP tree of that particular sub-band node will be further split until each sub-band node has only one dominant frequency value or none. After constructing the frequency scale, adaptive frequency scaled wavelet packet decomposition is applied to each sampled recording for feature extraction. The detailed description for extracting the features is shown in Chapter~\ref{Ch5:WPDfeature}.
+For feature extraction, constructing a suitable frequency scale for a WP tree based on the dominant frequency of each frog species is the first step, because different frog species tend to have different dominant frequencies \citep{Gingras2013}. In Chapter \ref{cha:cha5WaveletFeature}, k-means clustering was first applied to the extracted dominant frequencies of training data. Then, the frequency scale was built by sorting clustering centroids to construct the WP tree. In this chapter, the prior information on dominant frequency  ($F_{0}$) obtained from Table \ref{tab:Ch7_parameters} is directly used to construct the WP tree. We iteratively detect each WP tree sub-band node until the frequency range of each node includes more than one dominant frequency $F_{0}$. Then, the WP tree of that particular sub-band node will be further split until each sub-band node has only one dominant frequency value or none. After constructing the frequency scale, adaptive frequency scaled WPD is applied to each sampled recording for feature extraction. The detailed description for extracting the features is shown in Chapter~\ref{Ch5:WPDfeature}.
 
 
 
-The difference is that the recording is first split into frames using a Hamming window. Then, all frames are divided into three equal parts, and the WP-feature within each part is averaged, respectively, because different frog species within similar frequency bands may exist in one 10-second recording, splitting each recording into small parts might be able to keep the information of different frog species in the same frequency band. Besides the WP-based feature, two other acoustic features, linear predictive coefficients (LPCs) and Mel-frequency Cepstral coefficients (MFCCs), are calculated for the comparison.
+The difference is that the recording is first split into frames using a Hamming window. Then, all frames are divided into three equal parts, and the WP-feature within each part is averaged, respectively, because different frog species within similar frequency bands may exist in one 10-second recording, splitting each recording into small parts might be able to keep the information of different frog species in the same frequency band. Besides the WP-based feature, two other acoustic features, LPCs and MFCCs, are calculated for the comparison.
 
 
 
 
 \subsection{Multi-label classification for species richness estimation} 
-Since many sampled recordings consist of calls from multiple frog species, frog call classification can be framed as a multi-label classification problem. However, previous studies have not adopted multi-label learning to classify frog calls. Therefore, it is worth investigating different multi-label learning algorithms for the classification of multiple vocalising frog species. In this chapter, four multi-label learning algorithms, whose base classifier is a C4.5 decision tree, are employed: binary relevance (BR), classifier chains (CC), random k-labEL Pruned Sets (RAKEL and RAKEL1) \citep{ZhangReview2014}. The default parameter settings of those four multi-label learning algorithms are used. The trained classifier, which achieves the best classification performance, is then used to predict the presence/absence of the rest recordings. Lastly, frog species richness can be estimated as follows.
+Since many sampled recordings consist of calls from multiple frog species, frog call classification can be framed as a ML learning problem. However, previous studies have not adopted ML learning to classify frog calls. Therefore, it is worth investigating different ML learning algorithms for the classification of multiple vocalising frog species. In this chapter, four ML learning algorithms, whose base classifier is a C4.5 decision tree, are employed: binary relevance (BR), classifier chains (CC), random k-label sets (RAKEL and RAKEL1) \citep{ZhangReview2014}. The default parameter settings of those four ML learning algorithms are used. The trained classifier, which achieves the best classification performance, is then used to predict the presence/absence of the rest recordings. Lastly, frog species richness can be estimated as
 
 \begin{equation}
 F_{rich} = \frac{\sum_{k=1}^{K}f_{rich}(k)}{K}
 \end{equation} 
-where $f_{rich}(k)$ is the number of frog species of each tagged 10-second recording, $K$ is the number of 10-second recording for each day.
+where $f_{rich}(k)$ is the number of frog species of each 10-second recording with predicted labels, $K$ is the number of 10-second recording for each day.
 
 
 
 
 
 \subsection{Frog species richness analysis}
-Different multi-label learning algorithms are applied on 342 selected recordings to compare different feature sets. Then, five evaluation rules are used to compare the performance with the combination of four feature sets and four multi-label algorithms: Hamming loss, Rank loss, One error, Example based F1, and Micro F1 \citep{Madjarov20123084, ZhangReview2014}. The descriptions of Hamming loss, Rank loss, and One error can be found in Chapter~\ref{ch6:eveluationMetric}. The descriptions of Example based F1  and Micro F1 are shown as follows.
+Different ML learning algorithms are applied on 342 selected recordings to compare different feature sets. Then, five evaluation rules are used to compare the performance with the combination of four feature sets and four ML learning algorithms: hamming loss, rank loss, one error, example based F1, and micro F1 \citep{Madjarov20123084, ZhangReview2014}. The descriptions of hamming loss, rank loss, and one error can be found in Chapter~\ref{ch6:eveluationMetric}. The descriptions of example based F1  and micro F1 are shown as follows.
 
 
 
@@ -186,10 +185,9 @@ microF_{1} = \frac{2 \times microPrecision \times microRecall}{microPrecision + 
 
 Experiment results are shown in Table~\ref{tab:classificationResults}.
 
-%\vspace{-1em}
 \begin{table}[htb!]
 \centering
-\caption[Classification results based on four feature sets and four multi-label learning algorithms.]{Classification results based on four feature sets and four multi-label learning algorithms. Here the methods for multi-label algorithms are in accordance to the name in the \textit{Meka} software. The base classifier of all methods is decision tree. For a metric, the best value is in bold. Here, $\downarrow$ indicates that smaller values imply higher accuracy, while ‘$\uparrow$’ has the completely opposite meanings. The description of each evaluation metric can be found in Chapter \ref{ch6:eveluationMetric}.}
+\caption[Classification results based on four feature sets and four ML learning algorithms.]{Classification results based on four feature sets and four ML learning algorithms. Here the methods for ML learning algorithms are in accordance to the name in the \textit{Meka} software. The base classifier of all methods is decision tree. For a metric, the best value is in bold. Here, $\downarrow$ indicates that smaller values imply higher accuracy, while ‘$\uparrow$’ has the completely opposite meanings. The description of each evaluation metric can be found in Chapter \ref{ch6:eveluationMetric}.}
 \label{tab:classificationResults}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{llllllll}
@@ -203,11 +201,11 @@ Multi-stage MFCCs + LPCs  & BR              & 0.155 $\pm$ 0.016           & 0.16
                           & CC              & 0.147 $\pm$ 0.018           & 0.147 $\pm$ 0.021         & 0.199 $\pm$ 0.042        & 0.722 $\pm$ 0.034                & 0.756 $\pm$ 0.028       \\ 
                           & RAKEL           & 0.166 $\pm$ 0.035           & 0.124 $\pm$ 0.027         & 0.194 $\pm$ 0.069        & 0.724 $\pm$ 0.048                & 0.754 $\pm$ 0.04        \\ 
                           & RAKEL1           & 0.134 $\pm$ 0.013           & 0.101 $\pm$ 0.026        & 0.15 $\pm$ 0.063         & 0.737 $\pm$ 0.05                 & 0.783 $\pm$ 0.023       \\ 
-WP-based feature + LPCs             & BR              & 0.148 $\pm$ 0.025           & 0.139 $\pm$ 0.033      & 0.254 $\pm$ 0.063        & 0.708 $\pm$ 0.046                & 0.762 $\pm$ 0.036       \\ 
+PWSCCs + LPCs             & BR              & 0.148 $\pm$ 0.025           & 0.139 $\pm$ 0.033      & 0.254 $\pm$ 0.063        & 0.708 $\pm$ 0.046                & 0.762 $\pm$ 0.036       \\ 
                           & CC              & 0.168 $\pm$ 0.031           & 0.168 $\pm$ 0.045        & 0.272 $\pm$ 0.061        & 0.684 $\pm$ 0.054                & 0.723 $\pm$ 0.048       \\ 
                           & RAKEL           & 0.155 $\pm$ 0.023           & 0.103 $\pm$ 0.022        & 0.178 $\pm$ 0.031        & 0.729 $\pm$ 0.032                & 0.763 $\pm$ 0.030       \\ 
                           & RAKEL1           & 0.14 $\pm$ 0.027            & 0.094 $\pm$ 0.018         & 0.193 $\pm$ 0.063        & 0.727 $\pm$ 0.053                & 0.773 $\pm$ 0.042       \\ 
-Multi-stage WP-based feature + LPCs & BR              & 0.153 $\pm$ 0.014           & 0.147 $\pm$ 0.022      & 0.266 $\pm$ 0.037        & 0.689 $\pm$ 0.035                & 0.75 $\pm$ 0.025        \\ 
+Multi-stage PWSCCs + LPCs & BR              & 0.153 $\pm$ 0.014           & 0.147 $\pm$ 0.022      & 0.266 $\pm$ 0.037        & 0.689 $\pm$ 0.035                & 0.75 $\pm$ 0.025        \\ 
                           & CC              & 0.142 $\pm$ 0.029           & 0.146 $\pm$ 0.023        & 0.254 $\pm$ 0.094        & 0.714 $\pm$ 0042                 & 0.764 $\pm$ 0.045       \\ 
                           & RAKEL           & 0.154 $\pm$ 0.022           & 0.11 $\pm$ 0.012         & 0.196 $\pm$ 0.062        & 0.739 $\pm$ 0.022                & 0.768 $\pm$ 0.025       \\ 
                           & RAKEL1           & \textbf{0.131 $\pm$ 0.012          } & \textbf{0.09 $\pm$ 0.014}                       & 0.173 $\pm$ 0.03         & \textbf{0.743 $\pm$ 0.026}               & \textbf{0.787 $\pm$ 0.018}      
@@ -225,7 +223,7 @@ MIML & &    0.182           & 0.132      & 0.223        & NA                & NA
 
 
 
-The combination of multi-stage WP-based feature+LPCs and the RAKEL1 method achieves the best performance. Therefore, this combination is used for the testing data. 
+The combination of multi-stage PWSCCs $+$ LPCs and the RAKEL1 method achieves the best performance. Therefore, this combination is used for the testing data. 
 Figure~\ref{fig:frogRichness} shows the frog species richness of the three selected sites. For all the three sites, the variation of species richness is not high, which shows that species richness of the same area is relatively stable. However, frog species richness of \textit{BG Creek dam} has a smaller variation over the time than \textit{Kiyomi dam} and \textit{Stony Creek dam}. The comparison of the species richness for the three sites is shown in Figure~\ref{fig:richnessSite}. In contrast to other sites, the species richness in \textit{BG Creek dam} is the highest. This might be that \textit{BG Creek dam} is closer to a river and farther away from the human community.
 
 
@@ -278,7 +276,7 @@ Multiple regression analysis is used to explore the relationship between frog ca
 
 
 \section{Summary and limitations}
-Acoustic sensors are more widely used to monitor frog calling activity and species richness than the traditional field survey method. However, the use of acoustic sensors generates large volumes of audio data, which makes it necessary to develop automated methods. This paper proposes a novel method for detecting frog calling activity and species richness based on acoustic event detection and multi-label learning. Specifically,
-acoustic event detection is the first step to calculate frog calling activity. Meanwhile, those 10-second recordings without frog calls are filtered out. For those recordings with frog calls, multi-label learning is further used for estimating frog species richness with multi-stage WP-based features and LPCs. Finally, statistical analysis is utilised to reflect the relationship between frog calling activity/species richness with weather variables (mean temperature and rainfall). Experimental results show that our proposed method can accurately estimate frog calling activity/species richness and reflect their relationship with weather variables. Future work will focus on a wider frog call database, including a larger number of frog species, and frog calls collected over a longer period.
+Acoustic sensors are more widely used to monitor frog calling activity and species richness than the traditional field survey method. However, the use of acoustic sensors generates large volumes of audio data, which makes it necessary to develop automated methods. This paper proposes a novel method for detecting frog calling activity and species richness based on AED and ML learning. Specifically,
+AED is the first step to calculate frog calling activity. Meanwhile, those 10-second recordings without frog calls are filtered out. For those recordings with frog calls, ML learning is further used for estimating frog species richness with multi-stage PWSCCs and LPCs. Finally, statistical analysis is utilised to reflect the relationship between frog calling activity/species richness with weather variables (mean temperature and rainfall). Experimental results show that our proposed method can accurately estimate frog calling activity/species richness and reflect their relationship with weather variables. Future work will focus on a wider frog call database, including a larger number of frog species, and frog calls collected over a longer period.
 
 

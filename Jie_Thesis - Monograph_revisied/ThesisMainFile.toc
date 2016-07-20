@@ -54,13 +54,13 @@
 \contentsline {subsubsection}{Support vector machines}{43}{section*.29}
 \contentsline {subsubsection}{Random forest}{43}{section*.30}
 \contentsline {subsubsection}{Artificial neural network}{44}{section*.31}
-\contentsline {section}{\numberline {3.3}Experiment results}{45}{section.3.3}
+\contentsline {section}{\numberline {3.3}Experiment results}{44}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Effects of different feature sets}{45}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Effects of different machine learning techniques}{46}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.2}Effects of different machine learning techniques}{45}{subsection.3.3.2}
 \contentsline {subsection}{\numberline {3.3.3}Effects of different window size for MFCCs and perceptual features}{46}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Effects of noise}{47}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.4}Effects of noise}{46}{subsection.3.3.4}
 \contentsline {section}{\numberline {3.4}Discussion}{48}{section.3.4}
-\contentsline {section}{\numberline {3.5}Summary and limitations}{49}{section.3.5}
+\contentsline {section}{\numberline {3.5}Summary and limitations}{48}{section.3.5}
 \contentsline {chapter}{\numberline {4}Adaptive frequency scaled wavelet packet decomposition for frog call classification}{51}{chapter.4}
 \contentsline {section}{\numberline {4.1}Overview}{51}{section.4.1}
 \contentsline {section}{\numberline {4.2}Method}{52}{section.4.2}

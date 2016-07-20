@@ -5,11 +5,11 @@
 
 
 \section{Overview}
-This chapter presents a novel cepstral feature representation based on adaptive frequency scaled wavelet packet decomposition. Following the conclusion of Chapter \ref{cha:cha4EnhancedFeature} that cepstral features can achieve a good classification accuracy, but are sensitive to background noise, the goal of this chapter is to develop a novel ceptral feature representation with a good anti-noise ability.
+This chapter presents a novel cepstral feature based on adaptive frequency scaled wavelet packet decomposition. Following the conclusion of Chapter \ref{cha:cha4EnhancedFeature} that cepstral features can achieve a good classification accuracy, but are sensitive to background noise, the goal of this chapter is to develop a novel ceptral feature with a good anti-noise ability.
 
 
 
-Since both high and low SNR recordings are studied in this research, developing feature representations with a good anti-noise ability is important for dealing with low SNR recordings. Different from most previous studies that extracted features via the Fourier transform, wavelet packet decomposition is employed in this chapter for feature extraction. The classification performance is evaluated with two different datasets from Queensland, Australia (18 frog species from commercial recordings (high SNR) and field recordings of eight frog species from James Cook University recordings (low SNR)). This chapter answers research question 2: How to improve the performance of developed features for frog call classification in low SNR recordings? 
+Since both high and low SNR recordings are studied in this research, developing features with a good anti-noise ability is important for dealing with low SNR recordings. Different from most previous studies that extracted features via the Fourier transform, wavelet packet decomposition is employed in this chapter for feature extraction. The classification performance is evaluated with two different datasets from Queensland, Australia (18 frog species from commercial recordings (high SNR) and field recordings of eight frog species from James Cook University recordings (low SNR)). This chapter answers research question 2: How to improve the performance of developed features for frog call classification in low SNR recordings? 
 
 
 Although low SNR recordings are used in this research, the classification task is regarded as a single-instance single-label learning problem.
@@ -389,7 +389,7 @@ stop decomposition
 \subsection{Feature extraction based on adaptive frequency scaled WPD}
 \label{Ch5:WPDfeature}
 %The aim of feature extraction is to obtain a sequence of feature vectors that hidden in the original time domain \citep{yen2000wavelet}.
-In previous studies \citep{bedoya2014automatic, Xie1504:Acoustic}, Mel-frequency cepstral coefficients (MFCCs) has been used for studying bioacoustic data, and it is used as the baseline for feature comparison in this chapter. Besides MFCCs, another feature set called Mel-scaled wavelet packet decomposition sub-band cepstral coefficients (MWSCCs) is also included in the comparison experiment \citep{Zhang2015108}, because it shows better performance than MFCCs for bird detection in a complex environment. In this chapter, we propose a novel feature set named \textit{adaptive frequency scale wavelet packet decomposition sub-band cepstral coefficients} (AWSCCs) for frog call classification.
+In previous studies \citep{bedoya2014automatic, Xie1504:Acoustic}, MFCCs have been used for studying bioacoustic data, and it is used as the baseline for feature comparison in this chapter. Besides MFCCs, another feature set called Mel-scaled wavelet packet decomposition sub-band cepstral coefficients (MWSCCs) is also included in the comparison experiment \citep{Zhang2015108}, because it shows better performance than MFCCs for bird detection in a complex environment. In this chapter, we propose a novel feature set named \textit{adaptive frequency scale wavelet packet decomposition sub-band cepstral coefficients} (AWSCCs) for frog call classification.
 The extraction procedure of AWSCCs is similar to MWSCCs. However, the frequency scale used for our AWSCCs is based on an adaptive frequency scale rather than the Mel-scale for MWSCCs. Meanwhile, after performing DCT, temporal feature integration is used for calculating the statistics of feature vectors which generates different statistical types of AWSCCs. (see in Figure~\ref{fig:featureExtraction}). 
 
 
@@ -440,7 +440,7 @@ Here, the statistics of all feature vectors over each windowed signal are calcul
 
 
 \subsection{Classification}
-In this chapter, the k-nearest neighbour (k-NN) and support vector machine (SVM) classification algorithms are used for frog call classification. The input parameters for each classifier are syllable features (SFs), MFCCs, MWSCCs, and different AWSCCs, and the output is the frog species.
+In this chapter, the k-nearest neighbour (kNN) and support vector machine (SVM) classification algorithms are used for frog call classification. The input parameters for each classifier are syllable features (SFs), MFCCs, MWSCCs, and different AWSCCs, and the output is the frog species.
 The descriptions of those two classifiers can be found in Chapter \ref{ch4:classifierDesign}.
 
 %\subsubsection{k-nearest neighbours}
@@ -496,10 +496,10 @@ With a random parameter setting start, an iterative loop is performed for a fixe
 
 For feature extraction, the window size and overlap are the same for MFCCs, MWSCCs, and AWSCCs using Hamming window, which are 128 samples and 90\%, respectively. The dimensions of MFCCs, MWSCCs and AWSCCs are 12. For SFs and delta-AWSCCs, the dimensions are 3 and 24, respectively.
 
-Following prior work \citep{huang2009frog, han2011acoustic, Xie1504:Acoustic}, the distance function used for k-NN is the Euclidean distance, and $k$ is set as 3. As for the SVM classifier, the Gaussian kernel is used. Parameters $\alpha$ and $v$ are selected independently for each feature set by grid-search using cross validation \citep{hsu2003practical}. 
+Following prior work \citep{huang2009frog, han2011acoustic, Xie1504:Acoustic}, the distance function used for kNN is the Euclidean distance, and $k$ is set as 3. As for the SVM classifier, the Gaussian kernel is used. Parameters $\alpha$ and $v$ are selected independently for each feature set by grid-search using cross validation \citep{hsu2003practical}. 
 
 \subsection{Feature evaluation}
-All experiments are carried out in Matlab R2014b. Performance statistics are estimated with ten-fold cross validation. Totally, five feature sets including SFs, MFCCs, MWSCCs, and averaged AWSCCs, and delta-AWSCCs, are fed to two classifiers, which are the k-NN and SVM classifiers. Due to the non-uniform distribution of the number of syllables for different frog species in the commercial recordings, a weighted classification accuracy is define as follows
+All experiments are carried out in Matlab R2014b. Performance statistics are estimated with ten-fold cross validation. Totally, five feature sets including SFs, MFCCs, MWSCCs, and averaged AWSCCs, and delta-AWSCCs, are fed to two classifiers, which are the kNN and SVM classifiers. Due to the non-uniform distribution of the number of syllables for different frog species in the commercial recordings, a weighted classification accuracy is define as 
 \begin{equation}
 weighted \, Acc=\sum_{i=1}^{N}Acc(i)*\frac{n_{i}}{N}
 \end{equation}
@@ -519,7 +519,7 @@ The classification accuracy comparison for 18 frog species using five feature se
 \begin{tabular}{lll}
 \hline\hline
 \multirow{2}{*}{{\bf Feature set}} & \multicolumn{2}{l}{{\bf Classification accuracy (\%)}} \\ \cline{2-3} 
-                                & {\bf k-NN}               & {\bf SVM}               \\ \hline
+                                & {\bf kNN}               & {\bf SVM}               \\ \hline
 SFs                             & 82.2 $\pm$ 11.2      &                        84.2 $\pm$ 10.5  \\ 
 MFCCs                           &   90.8 $\pm$ 8.6     &  92.8  $\pm$  11.0                        \\ 
 MWSCCs                          & 95.0  $\pm$ 7.7    &  97.6  $\pm$ 5.7                        \\ 
@@ -559,7 +559,7 @@ is the feature value. Note that the feature vectors for averaged AWSCCs (c) and 
 \end{figure}
 
 
-As for SFs and MFCCs, the averaged classification accuracy is much lower than AWSCCs, which is 83.2\% and 91.8\%, respectively. To explore the reason for the improvement of the proposed feature, the frog call classification accuracy of all frog species is shown in Table \ref{tab:featureComp}. However, only the features that use the SVM classifier are shown, because averaged accuracy of the k-NN classifier (93.2\%) is lower than the SVM classifier (94.64\%). 
+As for SFs and MFCCs, the averaged classification accuracy is much lower than AWSCCs, which is 83.2\% and 91.8\%, respectively. To explore the reason for the improvement of the proposed feature, the frog call classification accuracy of all frog species is shown in Table \ref{tab:featureComp}. However, only the features that use the SVM classifier are shown, because averaged accuracy of the kNN classifier (93.2\%) is lower than the SVM classifier (94.64\%). 
 
 
 \begin{table}[htb!]
@@ -649,7 +649,7 @@ Since our wavelet packet tree for feature extraction is obtained based on the fr
 \begin{tabular}{lllll}
 \hline\hline
 {\bf Features} & {\bf SFs} & {\bf MFCCs} & {\bf MWSCCs} & {\bf Averaged AWSCCs} \\ \hline
-18 frog species  & 84.2 $\pm$ 10.5 & 92.8 $\pm$ 11.0  &             97.6 $\pm$ 5.7 &  99.0 $\pm$ 4.6                     \\ 
+18 frog species  & 84.2 $\pm$ 10.5 & 92.8 $\pm$ 11.0  &             97.6 $\pm$ 5.7 &  99.0 $\pm$ 3.6                     \\ 
 14 frog species  & 89.6 $\pm$ 9.7  & 94.4 $\pm$ 8.5   &             99.2 $\pm$ 2.6 &     100.0 $\pm$ 0.0                 \\ 
 10 frog species  & 94.6 $\pm$ 8.7   &  95.8 $\pm$ 8.6     &             100.0 $\pm$ 0.0 &   100.0 $\pm$ 0.0                   \\ \hline\hline
 \end{tabular}
@@ -681,7 +681,7 @@ Since the JCU recordings often have multiple calls from different frog species, 
 \begin{tabular}{lll}
 \hline\hline
 \multirow{2}{*}{\textbf{Feature set}} & \multicolumn{2}{l}{\textbf{Classification accuracy (\%)}} \\ \cline{2-3} 
-                                   & \textbf{k-NN}             & \textbf{SVM}             \\ \hline
+                                   & \textbf{kNN}             & \textbf{SVM}             \\ \hline
 MFCCs                              &       67.5 $\pm$ 13.2                    &    70.8 $\pm$ 14.1                     \\ 
 MWSCCs                             &       90.4  $\pm$ 9.2                   &   91.6 $\pm$ 8.7                    \\ 
 Averaged AWSCCs                    &    94.1  $\pm$  6.3 &                         94.5 $\pm$ 5.8  \\ 

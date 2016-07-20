@@ -5,7 +5,7 @@
 \contentsline {table}{\numberline {2.3}{\ignorespaces Overview of frog call classification performance}}{26}{table.caption.19}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {3.1}{\ignorespaces Summary of scientific name, common name, and corresponding code}}{33}{table.caption.21}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Comparision with previous used feature representations\relax }}{49}{table.caption.37}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparision with previous used feature sets\relax }}{49}{table.caption.37}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {4.1}{\ignorespaces Parameters of 18 frog species averaged of three randomly selected syllable samples in the commercial recording}}{53}{table.caption.39}
 \contentsline {table}{\numberline {4.2}{\ignorespaces Parameters of eight frog species obtained by averaging three randomly selected syllable samples from recordings of James Cook University}}{54}{table.caption.40}
@@ -18,10 +18,10 @@
 \contentsline {table}{\numberline {4.9}{\ignorespaces Classification accuracy using the JCU recordings.\relax }}{70}{table.caption.57}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Acoustic parameters of eight frog species averaged for ten randomly selected syllables}}{75}{table.caption.59}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Accuracy measure for MIML classifiers with different feature representations}}{81}{table.caption.64}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Accuracy measure for MIML classifiers with different feature sets}}{81}{table.caption.64}
 \contentsline {table}{\numberline {5.3}{\ignorespaces Example predictions with MIML-RBF.\relax }}{82}{table.caption.65}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Classification results based on four feature sets and four multi-label learning algorithms.}}{92}{table.caption.69}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Classification results based on four feature sets and four ML learning algorithms.}}{92}{table.caption.69}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {A.1}{\ignorespaces Waveform, spectrogram, and SNR of CD}}{99}{table.caption.72}
