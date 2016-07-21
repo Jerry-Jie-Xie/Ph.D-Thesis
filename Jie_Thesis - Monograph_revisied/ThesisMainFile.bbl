@@ -43,6 +43,13 @@ Biswas, A., Sahu, P., and Chandra, M. (2014).
   response for hindi consonant recognition.
 \newblock {\em Computers \& Electrical Engineering}, 40(4):1111 -- 1122.
 
+\bibitem[B{\"o}ll et~al., 2013]{boll2013amphibians}
+B{\"o}ll, S., Schmidt, B., Veith, M., Wagner, N., R{\"o}dder, D., Weinmann, C.,
+  Kirschey, T., and Loetters, S. (2013).
+\newblock Amphibians as indicators of changes in aquatic and terrestrial
+  ecosystems following gm crop cultivation: a monitoring guideline.
+\newblock {\em BioRisk}, 8:39.
+
 \bibitem[Brandes, 2008]{brandes2008feature}
 Brandes, T.~S. (2008).
 \newblock Feature vector selection and use with hidden markov models to
@@ -78,6 +85,11 @@ Canavero, A., Arim, M., Naya, D.~E., Camargo, A., Da~Rosa, I., and Maneyro, R.
 \newblock Calling activity patterns in an anuran assemblage: the role of
   seasonal trends and weather determinants.
 \newblock {\em North-Western Journal of Zoology}, 4(1):29--41.
+
+\bibitem[Carey and Alexander, 2003]{carey2003climate}
+Carey, C. and Alexander, M.~A. (2003).
+\newblock Climate change and amphibian declines: is there a link?
+\newblock {\em Diversity and distributions}, 9(2):111--121.
 
 \bibitem[Chen et~al., 2013]{chen2013novel}
 Chen, W., Zhao, G., and Li, X. (2013).
@@ -382,6 +394,11 @@ Menc{\i}a, E.~L., Nam, J., and Lee, D.-H. (2013).
 \newblock {\em Proc of Neural Information Processing Scaled for Bioacoustics,
   joint to NIPS}, 2013:184--189.
 
+\bibitem[Mutschmann, 2015]{mutschmann2015chytridiomycosis}
+Mutschmann, F. (2015).
+\newblock Chytridiomycosis in amphibians.
+\newblock {\em Journal of Exotic Pet Medicine}, 24(3):276--282.
+
 \bibitem[Narins et~al., 2007]{narins2007frogs}
 Narins, P.~M., Feng, A.~S., and Shen, J.-X. (2007).
 \newblock Frogs communicate with ultrasound in noisy environments.
@@ -540,12 +557,6 @@ Xie, J., Towsey, M., Zhang, J., Dong, X., and Roe, P. (2015c).
 \newblock Application of image processing techniques for frog call
   classification.
 \newblock {\em International Conference on Image Processing}.
-
-\bibitem[Xie et~al., 2016]{Xie2016}
-Xie, J., Towsey, M., Zhang, J., and Roe, P. (2016).
-\newblock Adaptive frequency scaled wavelet packet decomposition for frog call
-  classification.
-\newblock {\em Ecological Informatics}, pages~--.
 
 \bibitem[Yen and Fu, 2002]{yen2002automatic}
 Yen, G.~G. and Fu, Q. (2002).

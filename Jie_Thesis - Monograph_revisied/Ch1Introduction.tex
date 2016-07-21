@@ -4,17 +4,10 @@
 \label{cha:cha1Introduction}
 \pagenumbering{arabic}
 %=============
-\section{Motivation and background}
-During the past decades, rapid decreases in frog populations, which are regarded as one of the most critical threats to the global biodiversity, have been spotted from locations around the world. Many environment problems are regarded as the reasons for these declines: disease, habitat destruction and modification, exploitation, pollution, pesticide use, introduced species, and ultraviolet-B radiation (UV-B). 
-On one hand frog populations are declining rapidly worldwide, and on the other, frogs are greatly important to the global ecosystem. 
-\begin{enumerate}
-\item[(1)] Frogs are an integral part of the food web
-\item[(2)] Frogs are often used as environment indicators 
-\item[(3)] Frogs are important in medical research that benefits humans 
-\end{enumerate}
+\section{Motivation and Overview}
+Over the last two decades, rapid decline in frog populations, which is regarded as one of the most critical threats to the global biodiversity, has been spotted from locations around the world. The causes for this decline are many, but an emerging disease called \textit{chytridiomycosis}   \citep{mutschmann2015chytridiomycosis} and global climate change \citep{carey2003climate} are thought as the biggest threats. On the one hand frog populations are declining rapidly, but on the other, frogs are greatly important to the Earth's ecosystem. Frogs are an integral part of the food web, and are often considered as a valuable indicator for their sensitivity to the environmental change \citep{boll2013amphibians}. 
+Those aforementioned reasons necessitate the development of better tools to monitor frogs. Frogs are often much easier to be heard than seen (Figure~\ref{fig:Ch1_frogs}). 
 
-For those aforementioned reasons, increasing frog populations and optimising protection policies necessitates monitoring of frogs. Frogs are often much easier to be heard than to be seen (Figure~\ref{fig:Ch1_frogs}). Also frog vocalisations are often employed for most communication; this offers a possible way to study and evaluate frog populations by detecting species-specific calls \citep{dorcas2009auditory}. Therefore, frogs are often monitored via their vocalisations. Traditional manual monitoring methods require ecologists and volunteers to spend extensive time in the field for  acoustic data collection. Although traditional methods can provide an accurate measure of daytime species and richness, it has a scale limitation in both spatial and temporal domains for this measurement.
-To address this limitation, recent advances in acoustic sensors provide a way to automatically survey vocal animals (such as frogs). Deploying acoustic sensors in the field, frog vocalisations can then be automatically collected. Compared with the manual point-counting method, sensors can greatly extend the survey into larger spatial and temporal scales, and generate large volumes of acoustic data that needs to be analysed. Consequently, enabling automatic species identification in acoustic data has become important. However, since the recordings are automatically collected from the field, the audio data tends to be very noisy. Very often the desired signal (frog call) is weak, and there are multiple overlapping signals over the frog call. Furthermore, different frog species tend to call together to make a chorus. All those characteristics pose a big challenge in monitoring frog vocalisations automatically.
 
 \begin{figure*}[htb!]
 \centering
@@ -30,29 +23,56 @@ To address this limitation, recent advances in acoustic sensors provide a way to
 \end{figure*}
 
 
+Also frog vocalisations are often employed for most communications, which offer a possible way to study and evaluate frog populations by detecting species-specific calls \citep{dorcas2009auditory}. Traditional methods require ecologists and volunteers to physically visit sites for acoustic data analysis, which are costly and time-consuming. 
+Although traditional methods can provide an accurate measure of daytime species and richness, the scale limitation in both spatial and temporal domains is unavoidable.
+
+%In contrast, recent advances in acoustic sensors provide a novel method to survey vocalising animals such as frogs. Once acoustic sensors are successfully installed in the field, acoustic data can be automatically collected at large spatial and temporal scales. For each acoustic sensor, 
+%several gigabytes of compressed audio data can be generated per day, and large volumes of raw acoustic data have been collected. Enabling automated species classification in acoustic data has become very important to gain insights about frogs.
+
+To address this limitation, recent advances in acoustic sensors provide a way to automatically survey vocal animals (such as frogs). Deploying acoustic sensors in the field, frog vocalisations can then be automatically collected. Compared to the manual point-counting method, sensors can greatly extend the survey into larger spatial and temporal scales, and generate large volumes of acoustic data that needs to be analysed. Consequently, enabling automatic species identification in acoustic data has become important. However, audio data, which are collected using acoustic sensors in the field, tends to be noisy. Very often the desired signal (frog call) is weak, and there are other overlapping signals such as bird calls/insect calls over frog calls. Furthermore, different frog species tend to call together to make a chorus. All those characteristics pose a big challenge to performing automatic classification of frog species in audio data collected by sensors. 
+
+
+\section{Scope of PhD}
+
+
+
+
+
+
 
 %===============
-\section{Basic concepts} 
-In this section, some basic concepts are given to better describe the research problem and questions, aims and objectives, significance and contributions that are presented in the thesis.
+%\section{Basic concepts} 
+%This section presents some basic concepts to better describe the research problem and questions, aims and objectives, significance and contributions.
 
-\subsection{Environmental audio data}
-The audio data used in this study are mainly derived from two sources: David Stewart's CD \citep{CD} and recordings collected by James Cook University (JCU) \footnote{All the recordings can be obtained from our group website: https://www.ecosounds.org/}. 
-%David Stewart's CD is employed for the preliminary testing, and used for the experiments in Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}. 
-%Recordings collected by JCU are used for Chapters \ref{cha:cha6MIML} and \ref{cha:cha7ML}. 
-The reasons for using those two datasets are listed as follows.
-\begin{itemize}
-\item  Almost all prior work studied frog recordings with an assumption that only one frog species exists in each individual recording; first, those previous methods are reviewed and a frog call classification system is developed to outperform the state-of-the-art, whereas the CD recordings are used for testing. In this thesis, CD recordings are used in Chapter \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}.
+\section{Commercial recordings VS Environmental recordings}
+In this thesis, recordings are derived from two sources: David Stewart's commercial recordings \citep{CD} (high SNR and one species per recording) and James Cook University's environmental recordings (JCU) \footnote{All the recordings can be requested and obtained from our group website: https://www.ecosounds.org/} (low SNR and multiple species per recording). Here, commercial recordings often have a high SNR and each individual recording has only one frog species. In contrast, JCU recordings often have a low SNR, and most of them contain multiple frog species. 
+The SNR of commercial recordings and environmental recordings are listed in Table~\ref{tab:wav_spec_cd} and Table~\ref{tab:JCU_para}. 
+%Since the power of signal and background noise in this study varies from recording to recording and call to call within the recording, Tables~\ref{tab:CI_CD} and \ref{tab:CI_JCU} show the confidence intervals of high and low SNR recordings for the power of signal and noise. 
 
 
-\item  Compared with the CD recordings, most JCU recordings have multiple simultaneously vocalising frog species, which is in accord with the real environment. Chapters \ref{cha:cha6MIML} and \ref{cha:cha7ML} focus on the investigation of JCU recordings, which is the real situation for most environmental recordings. 
+Since almost all prior work for frog call classification has an assumption that each individual recording contains only one frog species. To make a direct comparison with those previous studies, two experiments are designed using high SNR recordings. 
+However, most field recordings contain multiple simultaneously vocalising frog species, we therefore propose two classification frameworks to study environmental recordings (JCU recordings): MIML classification and ML classification. 
 
 
-\end{itemize}
 
 
-Compared with audio data collected in the laboratories and quiet places (such as on David Stewart’s CD), environmental recordings are normally collected under unconstrained noisy conditions (such as JCU recordings). Consequently, the noise and variability issues need to be considered when coping with environmental audio data. 
-In terms of the background noise, there are a wide variety of non-biological noises and a variety of animal sounds in environmental recordings. These non-biological noises often come from different sources: rain, wind, human activities (e.g. traffic noise). Besides non-biological noises, many competitive animal sounds (e.g. birds when we are interested in frogs) are also recorded in the environmental recordings. The signal-to-noise ratio (SNR) of CD recordings and JCU recordings are listed in 
-Table~\ref{tab:wav_spec_cd} and Table~\ref{tab:JCU_para}. 
+
+%First, a fused feature set is developed for classifying frog species in high SNR recordings, and the performance of this fused feature set outperforms other compared features sets. The second is to develop a novel cepstral feature to classify frog species in high SNR recordings. The classification results show that our proposed feature not only achieves the best classification accuracy but also has a good anti-noise ability compared with other cepstral features.
+
+%First, MIML learning is used to classify frog species in low SNR recordings with AED. Experimental results indicate that the use of MIML learning can successfully classify multiple frog species in low SNR recordings. 
+%
+%To ease the limitaion of AED,
+%
+%
+%
+% Chapters \ref{cha:cha6MIML} and \ref{cha:cha7ML} focus on the investigation of JCU recordings, which is the real situation for most environmental recordings. 
+
+%
+%\end{itemize}
+
+
+%Compared to audio data collected using a directional microphone to record a single frog's calls (David Stewart$’$s CD), environmental recordings are normally collected under unconstrained noisy conditions (such as JCU recordings). Consequently, the noise and variability issues need to be considered when coping with environmental audio data. 
+%In terms of the background noise, there are a wide variety of non-biological noises and a variety of animal sounds in environmental recordings. These non-biological noises often come from different sources: rain, wind, human activities (e.g. traffic noise). Besides non-biological noises, many competitive animal sounds (e.g. birds when we are interested in frogs) are also recorded in the environmental recordings. 
 
 
 %The SNR is calculated as follows:
@@ -64,7 +84,7 @@ Table~\ref{tab:wav_spec_cd} and Table~\ref{tab:JCU_para}.
 
 
 
-Since the power of signal and background noise in this study varies from recording to recording and call to call within the recording, Table~\ref{tab:CI_CD} and Table~\ref{tab:CI_JCU} (Appendix D) show the confidence intervals of high and low SNR recordings for the power of signal and noise. 
+
 
 %The calculation of confidence interval is defined as follows:
 %
@@ -75,7 +95,7 @@ Since the power of signal and background noise in this study varies from recordi
 
 
 
-In the case of variability, it is produced in many aspects: call structure between species, population of one specific species, time and season changes. All those noises and variabilities make it challenging to develop a robust frog call classification system. 
+%In the case of variability, it is produced in many aspects: call structure between species, population of one specific species, time and season changes. All those noises and variabilities make it challenging to develop a robust frog call classification system. 
 
 
 

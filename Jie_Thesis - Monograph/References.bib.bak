@@ -660,6 +660,17 @@
   Publisher                = {Elsevier}
 }
 
+@Article{lei2014content,
+  Title                    = {Content-based classification of breath sound with enhanced features},
+  Author                   = {Lei, Baiying and Rahman, Shah Atiqur and Song, Insu},
+  Journal                  = {Neurocomputing},
+  Year                     = {2014},
+  Pages                    = {139--147},
+  Volume                   = {141},
+
+  Publisher                = {Elsevier}
+}
+
 @Article{lek1999artificial,
   Title                    = {Artificial neural networks as a tool in ecological modelling, an introduction},
   Author                   = {Lek, Sovan and Gu{\'e}gan, Jean-Fran{\c{c}}ois},
