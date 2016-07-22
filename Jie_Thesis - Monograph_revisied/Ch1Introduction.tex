@@ -36,7 +36,7 @@ To build an accurate and robust frog call classification system for environmenta
 \item  Compared to commercial recordings which are collected in constrained environment with a directional microphone, environmental recordings tend to be noisy. Very often the desired signal (frog call) is weak, and there are other overlapping signals such as bird calls and insect calls over frog calls. Therefore, features used for classifying frogs in environment recordings must have a good anti-noise ability.
 
 
-\item  Most environmental recordings contain multiple frog species in an individual recording, which is different from recordings used in previous studies (one species per recording). The classification framework used for classifying frog species in environmental recordings must be able to predict multiple labels for one individual recording.
+\item  Most environmental recordings contain multiple frog species in an individual recording (Figure.~\ref{fig:label}), which is different from recordings used in previous studies (one species per recording). The classification framework used for classifying frog species in environmental recordings must be able to predict multiple labels for one individual recording.
 
 
 
@@ -44,7 +44,14 @@ To build an accurate and robust frog call classification system for environmenta
  
 
 
-
+\begin{figure}[htb!]
+\centering
+    \begin{subfigure}[b]{\textwidth}
+           \includegraphics[width=1\textwidth]{image/LR/label.pdf}
+    \end{subfigure}%
+\caption[An example of collected recording]{An example of collected recording with multiple simultaneously vocalising frog species. Five frog species exist in this 10-second recording: \textit{Cyclorana novaehollandiae}, \textit{Litoria rubella}, \textit{Litoria nasuta}, \textit{Litoria rothii}, and \textit{Litoria fallax}.}
+\label{fig:label}       
+\end{figure}
 
 
 
@@ -372,14 +379,7 @@ This work corresponds to Chapter \ref{cha:cha7ML} in this thesis, which applies 
 %\noindent \textbf{Challenge 3}: Since most previous work assumed that each individual recording consists of only one frog species, a single-instance single-label (SISL) framework is suitable for classifying frog calls in those high SNR recordings Figure~\ref{fig:label}. However, as low SNR recordings often have different characteristics containing more than one frog species, the SISL framework is no longer suitable. Therefore, the last challenge of this thesis is to design a novel classification framework for studying frog vocalisations in low SNR recordings with overlapping vocalising frog species. 
 %
 %
-%\begin{figure}[htb!]
-%\centering
-%    \begin{subfigure}[b]{\textwidth}
-%           \includegraphics[width=1\textwidth]{image/LR/label.pdf}
-%    \end{subfigure}%
-%\caption[An example of collected recording]{An example of collected recording with multiple simultaneously vocalising frog species. Five frog species exist in this 10-second recording: \textit{Cyclorana novaehollandiae}, \textit{Litoria rubella}, \textit{Litoria nasuta}, \textit{Litoria rothii}, and \textit{Litoria fallax}.}
-%\label{fig:label}       
-%\end{figure}
+
 %
 %\section{Research questions}
 %The research questions are developed in order to solve the aforementioned challenges, which can be categorised into three parts. 

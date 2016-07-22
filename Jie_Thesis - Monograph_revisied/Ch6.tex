@@ -1,13 +1,25 @@
 % Ch5.tex
-
 \chapter{Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}
 \label{cha:cha6MIML}
+
+
+
+\textbf{Research problem}
+\\
+In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, all the recordings are assumed to have only one frog species per recording. While most collected environmental recordings often have multiple frog species per recording.
+
+\\
+\textbf{Research sub-question}
+\\
+How to classify multiple frog species in low SNR recordings?
+
+
 
 
 \section{Overview}
 \label{sec:intro}
 
-This chapter presents a method for the classification of simultaneously vocalising frog species in low signal-to-noise ratio (SNR) recordings. In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, frog call classification is solved using a SISL framework, which cannot reflect the nature of automatically collected environmental recordings. Most automatically collected field recordings have low SNR and consist of multiple simultaneous animal vocal activities including frogs, birds, crickets, and so on. This character of environmental acoustic recordings makes the MIML learning a suitable classification framework. To be specific, individual frog syllables in one audio clip are regarded as \textit{multiple instance}, and the frog species included in that audio clip denote \textit{multiple labels}. 
+This chapter presents a method for the classification of simultaneously vocalising frog species in low SNR recordings. In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, frog call classification is solved using a SISL framework, which cannot reflect the nature of automatically collected environmental recordings. Most automatically collected field recordings have low SNR and consist of multiple simultaneous animal vocal activities including frogs, birds, crickets, and so on. This character of environmental acoustic recordings makes the MIML learning a suitable classification framework. To be specific, individual frog syllables in one audio clip are regarded as \textit{multiple instance}, and the frog species included in that audio clip denote \textit{multiple labels}. 
 The key part of this MIML classification framework for studying frog calls is to detect individual syllables in environmental recordings with multiple simultaneously vocalising frog species. After syllable detection, standard acoustic features and MIML classifiers can be used to perform the MIML classification.
 
 
@@ -33,7 +45,7 @@ extraction, and classification (Fig.~\ref{fig:flowchart}). Detailed description 
 \subsection{Materials}
 \label{chap5:Materials}
 
-All recordings selected for this chapter were obtained from three sites in Queensland, Australia: \textit{Kiyomi dam}, \textit{Stony creek dam} and  \textit{BG creek dam}, using a battery-powered acoustic sensor (stored in a weather proof metal box) with an external microphone. The recordings were stored on 16 GB SD cards in 64 kbps MP3 mono format. All recordings were collected from February, 2014 to April, 2014, because it is the breeding season in Queensland when male frogs make calls to attract females for the purpose of reproducing. All recordings started around sunset, finished around sunrise every day and have a duration of 12 hours. In this chapter, a representative sample of 342 10-second recordings was selected to train and test our proposed algorithm for predicting which frog species are present in a 10-second recording. All the 10-second recordings were manually labelled by an ecologist with eight frog species. The acoustic parameters of eight frog species averaged for ten randomly selected syllables of each frog species are shown in table~\ref{tab:Ch7_parameters}. It is worth noting that the parameters of table~\ref{tab:Ch7_parameters} are slightly different from table~\ref{tab:JCU} with an acceptable variation. 
+All recordings selected for this chapter were obtained from three sites in Queensland, Australia: \textit{Kiyomi dam}, \textit{Stony creek dam} and  \textit{BG creek dam}, using a battery-powered acoustic sensor (stored in a weather proof metal box) with an external microphone. The recordings were stored on 16 GB SD cards in 64 kbps MP3 mono format. All recordings were collected from February, 2014 to April, 2014, because it is the breeding season in Queensland when male frogs make calls to attract females for the purpose of reproducing. All recordings started around sunset, finished around sunrise every day and have a duration of 12 hours. In this chapter, a representative sample of 342 10-second recordings was selected to train and test our proposed algorithm for predicting which frog species are present in a 10-second recording. All the 10-second recordings were manually labelled by an ecologist with eight frog species. The acoustic parameters of eight frog species averaged for ten randomly selected syllables of each frog species are shown in table~\ref{tab:Ch7_parameters}. It is worth noting that the parameters of table~\ref{tab:Ch7_parameters} are slightly different from table~\ref{tab:JCU} with a variation. 
 
 \begin{table}[htb!]
 \centering

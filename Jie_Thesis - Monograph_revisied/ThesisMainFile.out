@@ -17,7 +17,7 @@
 \BOOKMARK [2][-]{subsection.2.2.2}{Noise reduction}{section.2.2}% 17
 \BOOKMARK [2][-]{subsection.2.2.3}{Syllable segmentation}{section.2.2}% 18
 \BOOKMARK [1][-]{section.2.3}{Acoustic features for frog call classification}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.3.1}{Time domain and frequency domain features for frog call classification}{section.2.3}% 20
+\BOOKMARK [2][-]{subsection.2.3.1}{Temporal and perceptual features for frog call classification}{section.2.3}% 20
 \BOOKMARK [2][-]{subsection.2.3.2}{Time-frequency features for frog call classification}{section.2.3}% 21
 \BOOKMARK [2][-]{subsection.2.3.3}{Cepstral features for frog call classification}{section.2.3}% 22
 \BOOKMARK [2][-]{subsection.2.3.4}{Other features for frog call classification}{section.2.3}% 23
@@ -98,4 +98,4 @@
 \BOOKMARK [1][-]{section.8.2}{Limitations and future work}{chapter.8}% 98
 \BOOKMARK [0][-]{appendix.I}{Waveform, spectrogram and SNR of frog species from David Stewart's CD}{}% 99
 \BOOKMARK [0][-]{appendix.J}{Waveform, spectrogram and SNR of six frog species from JCU recordings}{}% 100
-\BOOKMARK [0][-]{appendix*.72}{References}{}% 101
+\BOOKMARK [0][-]{appendix*.74}{References}{}% 101

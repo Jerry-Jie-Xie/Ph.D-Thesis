@@ -4,17 +4,25 @@
 \label{cha:cha4EnhancedFeature}
 
 
+\textbf{Research problem}
+\\
+Previous studies classified frog calls in SNR recordings using one or two types of features from temporal, perceptual, and cepstral features. However, the fused feature set using one or two types of features cannot classify frog species that share similar characteristics in one or two domains.
+\\
+\textbf{Research sub-question}
+\\
+How to build a feature set for further improving frog call classification performance in high SNR recordings?
+
+
 
 \section{Overview}
 \label{S:1}
 
-This chapter presents an enhanced feature set for frog call classification using various machine learning algorithms and explores whether a combination of three types of features discriminate a wider variety of species that may share similar characteristics in either temporal, perceptual or cepstral information but not all. In the literature, various feature sets have been developed for frog call classification. However, most features used in the prior work are based on either temporal features such as averaged energy and zero-crossing rate, perceptual features such spectral centroid and spectral flux, or cepstral features such as MFCCs. 
 
 
+This chapter aims to compare various feature sets using different machine learning techniques, and finds the best feature set for classifying frogs in high SNR recordings. 
+Based on the classification performance, suggested features can then be adapted to study low SNR recordings. In particular, we want to know which of those features can be adapted from high SNR recordings to low SNR recordings, because the final goal of this thesis is to classify low SNR recordings with multiple frog species.
 
-This chapter aims to compare various feature sets with different machine learning techniques. Based on the classification performance, suggested features can then be adapted to study low-SNR recordings. This chapter directly addresses sub-research question (1): How to improve the classification performance when addressing high SNR recordings. In particular, we want to know which of those features can be adapted from high SNR recordings to low SNR recordings, since our final goal of this thesis is to classify low SNR recordings.
-
-The performance of the proposed method is evaluated based on twenty-four frog species, which are geographically well distributed through Queensland, Australia. Five feature sets are compared via five machine learning algorithms. Classification results demonstrate that a combination of temporal, spectral and cepstral features can achieve the best performance. Compared with temporal and spectral features, cepstral features can achieve a robust classification accuracy, but are sensitive to the background noise. Therefore, in the next chapter, we aim to develop robust cepstral features that are not sensitive to the background noise.
+The performance of the proposed method is evaluated based on twenty-four frog species, which are geographically well distributed through Queensland, Australia. Five feature sets are constructed and evaluated using five machine learning algorithms. 
 
 
 
@@ -419,18 +427,18 @@ Table~\ref{my-label} shows the classification performance of previous methods. S
 
 \begin{table}[h]
 \centering
-\caption{Comparision with previous used feature sets}
+\caption{Comparison with previous used feature sets}
 \label{my-label}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lll}
 \hline\hline
-Ref. & Feature                                                                                                                                                           & Accuracy \\ \hline
- \citep{juan2009frogs, yuan2012frog}    & LPCs                                                                                                                                                              &     93.5\%     \\ 
-\citep{lee2006automatic, Xie1504:Acoustic, jaafar2013automatic, bedoya2014automatic}  & MFCCs                                                                                                                                                             &     94.9\%     \\ 
-\citep{han2011acoustic}     & \begin{tabular}[c]{@{}l@{}} Spectral centroid, Shannon entropy, \\ R$\acute{e}$nyi entropy \end{tabular}  &    75.6\%      \\ 
-\citep{Xie1504:Acoustic}    & \begin{tabular}[c]{@{}l@{}}Syllable duration, dominant frequency, \\ oscillation rate, frequency modulation, \\ energy modulation     \end{tabular}                        &    92.3\%      \\ 
- \citep{Huang20141}    & \begin{tabular}[c]{@{}l@{}}Spectral centroid, signal bandwidth, \\  spectral roll-off,  threshold-crossing rate, \\ spectral flatness, and average energy\end{tabular} &  95.8\%        \\  
- Our feature set    &                                                                                                                                        \textit{TemPerCep} &    99.1\%      \\ \hline\hline
+Ref. & Feature                                                                                                                                                           & Accuracy (\%) \\ \hline
+ \citep{juan2009frogs, yuan2012frog}    & LPCs                                                                                                                                                              &     93.5     \\ 
+\citep{lee2006automatic, Xie1504:Acoustic, jaafar2013automatic, bedoya2014automatic}  & MFCCs                                                                                                                                                             &     94.9     \\ 
+\citep{han2011acoustic}     & \begin{tabular}[c]{@{}l@{}} Spectral centroid, Shannon entropy, \\ R$\acute{e}$nyi entropy \end{tabular}  &    75.6      \\ 
+\citep{Xie1504:Acoustic}    & \begin{tabular}[c]{@{}l@{}}Syllable duration, dominant frequency, \\ oscillation rate, frequency modulation, \\ energy modulation     \end{tabular}                        &    92.3    \\ 
+ \citep{Huang20141}    & \begin{tabular}[c]{@{}l@{}}Spectral centroid, signal bandwidth, \\  spectral roll-off,  threshold-crossing rate, \\ spectral flatness, and average energy\end{tabular} &  95.8        \\  
+ Our feature set    &                                                                                                                                        \textit{TemPerCep} &    99.1     \\ \hline\hline
 \end{tabular}
 }
 \end{table}
@@ -438,7 +446,12 @@ Ref. & Feature                                                                  
 
 
 \section{Summary and limitations}
-In this chapter, a novel enhanced feature set was proposed to classify frog calls with various machine learning techniques. After segmenting continuous recordings into individual syllables, a variety of acoustic features are extracted from each syllable. Then, different features are combined to form different feature sets. Finally, various machine learning techniques are used to classify frog calls with different feature sets.
-Our proposed enhanced feature set shows the best classification accuracy and has good anti-noise ability. Meanwhile, the SVM and RF outperform the traditional LDA and kNN classifiers. Therefore, it is suitable to combine \textit{TemPerCep} with SVM or RF to build a frog call classification system. Ecologists can apply the proposed classification system to long-term frog recordings. Then, the long-term change of frog species richness can be reflected by the classification results. 
 
-Since the MFCCs feature shows a good classification performance, but a bad anti-noise ability, we can modify MFCCs to improve the anti-noise ability. After transforming frog audio data into its spectrogram representation, the visual inspection motivates us to use image processing techniques for studying frog calls. Also, a wider variety of frog audio data from different geographical and environmental conditions will be tested in future experiments.
+In this chapter, a novel fused feature set was proposed to classify frog calls in high SNR recordings with five machine learning techniques.
+After segmenting continuous recordings into individual syllables, a variety of acoustic features are extracted from each syllable. Then, different features are combined to construct different feature sets. Finally, five machine learning techniques are used to classify frog calls in high SNR recordings with different feature sets. Classification results demonstrate that a fusion of temporal, spectral and cepstral features can achieve the best performance. Compared to temporal and spectral features, cepstral features can achieve a robust classification accuracy when used individually, but are sensitive to the background noise. Therefore, in the next chapter, we aim to develop robust cepstral features that are not sensitive to the background noise.
+
+
+%In this chapter, a novel enhanced feature set was proposed to classify frog calls with various machine learning techniques. 
+%Our proposed enhanced feature set shows the best classification accuracy and has good anti-noise ability. Meanwhile, the SVM and RF outperform the traditional LDA and kNN classifiers. Therefore, it is suitable to combine \textit{TemPerCep} with SVM or RF to build a frog call classification system. Ecologists can apply the proposed classification system to long-term frog recordings. Then, the long-term change of frog species richness can be reflected by the classification results. 
+%
+%Since the MFCCs feature shows a good classification performance, but a bad anti-noise ability, we can modify MFCCs to improve the anti-noise ability. After transforming frog audio data into its spectrogram representation, the visual inspection motivates us to use image processing techniques for studying frog calls. Also, a wider variety of frog audio data from different geographical and environmental conditions will be tested in future experiments.

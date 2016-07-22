@@ -155,14 +155,6 @@ Dorcas, M.~E., Price, S.~J., Walls, S.~C., and Barichivich, W.~J. (2009).
 \newblock {\em Amphibian ecology and conservation: a hand book of techniques.
   Oxford University Press, Oxford}, pages 281--298.
 
-\bibitem[Dudgeon et~al., 2006]{dudgeon2006freshwater}
-Dudgeon, D., Arthington, A.~H., Gessner, M.~O., Kawabata, Z.-I., Knowler,
-  D.~J., L{\'e}v{\^e}que, C., Naiman, R.~J., Prieur-Richard, A.-H., Soto, D.,
-  Stiassny, M.~L., et~al. (2006).
-\newblock Freshwater biodiversity: importance, threats, status and conservation
-  challenges.
-\newblock {\em Biological reviews}, 81(02):163--182.
-
 \bibitem[Dufour et~al., 2013]{dufour2013multi}
 Dufour, O., Glotin, H., Artires, T., Bas, Y., and Giraudet, P. (2013).
 \newblock Multi-instance multi-label acoustic classification of plurality of
@@ -291,13 +283,6 @@ Jancovic, P. and Kokuer, M. (2015).
 \newblock Acoustic recognition of multiple bird species based on penalized
   maximum likelihood.
 \newblock {\em Signal Processing Letters, IEEE}, 22(10):1585--1589.
-
-\bibitem[Jang et~al., 2011]{jang2011geographic}
-Jang, Y., Hahm, E.~H., Lee, H.-J., Park, S., Won, Y.-J., and Choe, J.~C.
-  (2011).
-\newblock Geographic variation in advertisement calls in a tree frog species:
-  gene flow and selection hypotheses.
-\newblock {\em PloS one}, 6(8):e23297.
 
 \bibitem[Juan~Mayor, 2009]{juan2009frogs}
 Juan~Mayor, L. M.~M. (2009).
@@ -489,12 +474,6 @@ Wei, B., Yang, M., Rana, R.~K., Chou, C.~T., and Hu, W. (2012).
 \newblock Distributed sparse approximation for frog sound classification.
 \newblock In {\em Proceedings of the 11th international conference on
   Information Processing in Sensor Networks}, pages 105--106. ACM.
-
-\bibitem[Wimmer et~al., 2013]{wimmer2013analysing}
-Wimmer, J., Towsey, M., Planitz, B., Williamson, I., and Roe, P. (2013).
-\newblock Analysing environmental acoustic data through collaboration and
-  automation.
-\newblock {\em Future Generation Computer Systems}, 29(2):560--568.
 
 \bibitem[Xie, 2016]{songMeter}
 Xie, J. (2016).

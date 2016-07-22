@@ -4,16 +4,24 @@
 \label{cha:cha5WaveletFeature}
 
 
+\textbf{Research problem}
+\\
+Following the conclusion of Chapter \ref{cha:cha4EnhancedFeature}, it is found that cepstral feature has been widely used for calssifying frog species in high SNR recordings, and achieves a good classification, but is very sensitive to background noise.
+\\
+\textbf{Research sub-question}
+\\
+How to develop robust cepstral features to classify frog species in low SNR recordings?
+
+
+
+
 \section{Overview}
-This chapter presents a novel cepstral feature based on adaptive frequency scaled wavelet packet decomposition. Following the conclusion of Chapter \ref{cha:cha4EnhancedFeature} that cepstral features can achieve a good classification accuracy, but are sensitive to background noise, the goal of this chapter is to develop a novel ceptral feature with a good anti-noise ability.
 
+This chapter presents a novel cepstral feature based on adaptive frequency scaled wavelet packet decomposition, whose goal is to develop a novel ceptral feature with a good anti-noise ability.
 
-
-Since both high and low SNR recordings are studied in this research, developing features with a good anti-noise ability is important for dealing with low SNR recordings. Different from most previous studies that extracted features via the Fourier transform, wavelet packet decomposition is employed in this chapter for feature extraction. The classification performance is evaluated with two different datasets from Queensland, Australia (18 frog species from commercial recordings (high SNR) and field recordings of eight frog species from James Cook University recordings (low SNR)). This chapter answers research question 2: How to improve the performance of developed features for frog call classification in low SNR recordings? 
-
-
-Although low SNR recordings are used in this research, the classification task is regarded as a single-instance single-label learning problem.
-However, most individual low SNR recordings have more than one frog species. In the next two chapters, we will focus on the classification of multiple simultaneously vocalising frog species in one individual recording.
+Since both high and low SNR recordings are studied in this chapter, developing features with a good anti-noise ability is important for dealing with low SNR recordings. Different from most previous studies that extracted features via the Fourier transform, WPD is employed in this chapter for feature extraction. The classification performance is evaluated with two different datasets from Queensland, Australia (18 frog species from commercial recordings (high SNR) and field recordings of eight frog species from James Cook University recordings (low SNR)).  
+Although low SNR recordings are used in this research, the classification task is regarded as a SISL classification problem.
+%However, most low SNR recordings have more than one frog species. In the next two chapters, we will focus on the classification of multiple simultaneously vocalising frog species in one individual recording.
 
 
 
@@ -648,7 +656,7 @@ Since our wavelet packet tree for feature extraction is obtained based on the fr
 \resizebox{0.85\textwidth}{!}{
 \begin{tabular}{lllll}
 \hline\hline
-{\bf Features} & {\bf SFs} & {\bf MFCCs} & {\bf MWSCCs} & {\bf Averaged AWSCCs} \\ \hline
+{\bf Number of frog species} & {\bf SFs} & {\bf MFCCs} & {\bf MWSCCs} & {\bf Averaged AWSCCs} \\ \hline
 18 frog species  & 84.2 $\pm$ 10.5 & 92.8 $\pm$ 11.0  &             97.6 $\pm$ 5.7 &  99.0 $\pm$ 3.6                     \\ 
 14 frog species  & 89.6 $\pm$ 9.7  & 94.4 $\pm$ 8.5   &             99.2 $\pm$ 2.6 &     100.0 $\pm$ 0.0                 \\ 
 10 frog species  & 94.6 $\pm$ 8.7   &  95.8 $\pm$ 8.6     &             100.0 $\pm$ 0.0 &   100.0 $\pm$ 0.0                   \\ \hline\hline
@@ -692,13 +700,16 @@ Delta-AWSCCs                       &         97.0   $\pm$ 5.2                &  
 
 
 \section{Summary and limitations}
-In this chapter, a novel feature extraction method for frog call classification is developed using the adaptive frequency scaled wavelet packet decomposition. With segmented syllables, spectral peak track is first extracted from each syllable. Then, track duration, dominant frequency, and oscillation rate are calculated based on each track. Next, a k-means clustering algorithm is applied to the dominant frequency, which generates the frequency scale for WPD. Finally, a new feature set, AWSCCs, is calculated. Since the feature extraction method is developed based on the data itself, the wavelet packet tree varies according to the frog species to be classified. Compared with the Mel-scaled WPD tree, the proposed adaptive wavelet packet tree can better fit the dominant frequency distribution of the frog species to be classified. With the proposed frequency scale, the call characteristics of those frog species to be classified can be enhanced, while the background noise and calls from other animals will be suppressed. Therefore, the proposed feature sets can achieve a higher accuracy for the classification of frog calls than others. Meanwhile, since the frequency scale is calculated based on the dominant frequency of those frog species to be classified, our proposed wavelet tree structure is more accurate and efficient in classifying the frog calls when compared with Mel-scale (Figure~\ref{fig:wpTree} and Figure~\ref{fig:melTree}).
+In this chapter, a novel feature extraction method for frog call classification is developed using the adaptive frequency scaled WPD. With segmented syllables, spectral peak track is first extracted from each syllable. Then, track duration, dominant frequency, and oscillation rate are calculated based on each track. Next, a k-means clustering algorithm is applied to the dominant frequency, which generates the frequency scale for WPD. Finally, a new feature, AWSCCs, is calculated. Since the feature extraction method is developed based on the data itself, the wavelet packet tree varies according to the frog species to be classified. Compared with the Mel-scaled WPD tree, the proposed adaptive wavelet packet tree can better fit the dominant frequency distribution of the frog species to be classified. With the proposed frequency scale, the call characteristics of those frog species to be classified can be enhanced, while the background noise and calls from other animals will be suppressed. Therefore, the proposed feature sets can achieve a higher accuracy for the classification of frog calls than others. Meanwhile, since the frequency scale is calculated based on the dominant frequency of those frog species to be classified, our proposed wavelet tree structure is more accurate and efficient in classifying the frog calls when compared with Mel-scale (Figure~\ref{fig:wpTree} and Figure~\ref{fig:melTree}).
 
 
-The feature extraction algorithm is designed for classifying frog calls. For frog calls, the typical structure in a spectrogram is frequency contour (named spectral peak track in this chapter) which is within a given frequency range starting at a given time \citep{mellinger2011method}. For other organisms that have similar frequency contour structures such as the whistles of dolphins, and chirps of birds \citep{chen2006semi}, spectral peak tracks can also be extracted from the spectrograms of their calls. Based on those spectral peak tracks, dominant frequency can be calculated. For the subsequent analysis, the features can be calculated using the same process as described in this chapter. For those organisms without clear frequency contour structure, this proposed method can also be used by enhancing the frequency contour structure, which can be realised by applying a small window size and a large window overlap to the recording waveform. 
+Although both high and low SNR recordings are used in this chapter, all the recordings are assumed to have only one frog species per recording. In the next chapter, this limitation will be solved.
 
 
-The oscillation rate is calculated based on the spectrogram, which is generated by applying STFT to the waveform. However, when the temporal gap is smaller than the window size used for STFT, the oscillation structure will disappear. Therefore, finding new techniques for translating the 1-D signal to 2-D signal is our future direction. Since the frequency scale is generated based on the dominant frequency, this technique can be applied to other organisms that have clear frequency contour structure. Modifying this algorithm to those organisms without a clear frequency contour structure needs to be solved. 
-This research also plans to include additional experiments that test a wider variety of audio data from different geographical and environment conditions. Other animal calls such as birds, insects, and whales can also be studied. Furthermore, the idea of developing new features based on the data itself will be explored.
+%The feature extraction algorithm is designed for classifying frog calls. For frog calls, the typical structure in a spectrogram is frequency contour (named spectral peak track in this chapter) which is within a given frequency range starting at a given time \citep{mellinger2011method}. For other organisms that have similar frequency contour structures such as the whistles of dolphins, and chirps of birds \citep{chen2006semi}, spectral peak tracks can also be extracted from the spectrograms of their calls. Based on those spectral peak tracks, dominant frequency can be calculated. For the subsequent analysis, the features can be calculated using the same process as described in this chapter. For those organisms without clear frequency contour structure, this proposed method can also be used by enhancing the frequency contour structure, which can be realised by applying a small window size and a large window overlap to the recording waveform. 
+%
+%
+%The oscillation rate is calculated based on the spectrogram, which is generated by applying STFT to the waveform. However, when the temporal gap is smaller than the window size used for STFT, the oscillation structure will disappear. Therefore, finding new techniques for translating the 1-D signal to 2-D signal is our future direction. Since the frequency scale is generated based on the dominant frequency, this technique can be applied to other organisms that have clear frequency contour structure. Modifying this algorithm to those organisms without a clear frequency contour structure needs to be solved. 
+%This research also plans to include additional experiments that test a wider variety of audio data from different geographical and environment conditions. Other animal calls such as birds, insects, and whales can also be studied. Furthermore, the idea of developing new features based on the data itself will be explored.
 
 
