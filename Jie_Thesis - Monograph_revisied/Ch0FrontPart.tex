@@ -42,7 +42,7 @@ To my family
 Frogs play an important role in the Earth's ecosystem, 
 but the decline of their population has been spotted from locations around the world. Monitoring frog activity can assist conservation efforts, and improve our understanding of their interactions with the environment and other organisms. Traditional observation methods require ecologists and volunteers to visit the field, which limit the scale for acoustic data collection. Recent advances in acoustic sensors provide a novel method to survey vocalising animals such as frogs. Once sensors are successfully installed in the field, acoustic data can be automatically collected at large spatial and temporal scales. For each acoustic sensor, 
 several gigabytes of compressed audio data can be generated per day, and large volumes of raw acoustic data have been collected. Enabling automated species identification in acoustic data has become very important to gain insights about frogs and the environment.
-Most previous studies on machine learning for frog calls often have two limitations: (1) frog recordings often have a higher SNR ($\geq 15dB$); (2) each individual recording contains only a frog species. However, most recordings typically have a low SNR and contain multiple simultaneously vocalising frogs. 
+Most previous studies on machine learning for frog calls often have two limitations: (1) frog recordings often have a higher SNR ($\geq 15dB$); (2) each individual recording contains only a frog species. However, most environmental recordings typically have a low SNR and contain multiple simultaneously vocalising frogs. 
 This thesis aims to address those two limitations, and has the following contributions.
 
 \begin{enumerate} 
@@ -67,6 +67,13 @@ One individual recording contain only one frog species is an assumption that wid
 \\
 The weakness of the MIML classification framework is that the classification performance is highly affected by AED results. One solution is to prepare large volumes of annotated acoustic data and apply supervised learning algorithms for improving segmentation results. Another is to used a different framework without the need of syllable segmentation. This thesis examines the latter option and proposes a ML classification framework to classify multiple simultaneously vocalising frog species.
 A novel feature set using LPCs and multi-stage AWSCCs is proposed for the ML classification. Experimental results show that ML classification results outperform MIML classification results. 
+
+\item[(5)] Apply the designed ML framework to sampled frog recordings over three months. \ref{cha:cha8Application}).
+\\
+Both frog calling activity and species richness are estimated. The correlations between frog calling activity/species richness 
+and mean temperature/rainfall are reflected. Experimental results is in accordance with previous studies. Meanwhile, frog species richness of different sites is compared.
+
+
 \end{enumerate}
 
 
