@@ -304,17 +304,24 @@ A_{opt}= argmax \frac{tr(A^{T}S_{B}A)}{A^{T}S_{W}A}
 In the recognition stage, the feature vector is first transformed into a lower-dimensional space via $A_{opt}$ derived by LDA. Then, the distance between the feature vector of the test syllable and the feature vector representing this species is calculated. The one with minimum distance is regarded as the identified species.
 
 \subsubsection{K-nearest neighbour}
-For the kNN classifier, the distance between an input frog feature vector and all stored feature vectors is first calculated. Then $K$ closest vectors are selected to determine the species of the input feature vector by majority voting. For example, the Euclidean distance between an input instance $i$ (frog feature vector) and one stored instance $j$ is calculated as 
-\begin{equation}
-d(i,j)=\sqrt{\sum_{c=1}^{n}(F_{i,c} - F_{j,c})^{2}}
-\end{equation}
+For the k-NN classifier, an object is classified to the majority class of its $k$ nearest neighbours \citep{huang2009frog}. Specifically, in the training phase, frog feature vectors are stored with species labels. For the test phase, the simplest classification combination method is the voting method. The $k$ closet vectors are selected for voting, then the classification for the input feature vector $f_{i,c}$ is assigned with the majority class.
 
-\noindent Then the species of this input instance $i$ can be predicted from the selected $k$ nearest neighbours. If 
+The second classification combination method is to calculate the average distance between an input frog feature vector and $k$ closest vectors. For example, the Euclidean distance between an input feature vector $f_{i,c}$ and one stored feature vector $f_{j,c}$ is calculated as
+\begin{equation}
+d(i,j) = \sqrt{\sum_{c=1}^{n}(f_{i,c}-f_{j,c})^2}
+\end{equation}
+\noindent where $i$ and $j$ are indices of the feature vector, $n$ means the dimension of the feature vector. Next, \textit{k} nearest neighbours of feature vector $i$ are selected based on the Euclidean distance for voting. If the following equation is satisfied
+\begin{equation}
+\frac{1}{k_{1}}\sum_{j \in s_{1}} d(i,j(s_{1})) < \frac{1}{k_{2}}\sum_{j \in s_{2}}d(i,j(s_{2})) 
+\end{equation}
+\noindent where $k=k_{1}+k_{2}$, $k_{1}$ is the number of frog species $s_{1}$, $k_{2}$ is the number of frog species $s_{2}$. Here, the input feature vector $i$ will be classified as frog species $s_{2}$.
+
+The third classification combination method is to calculate the sum of similarity of $k$ closest feature vectors. For a binary classification task with two classes: $k_{1}$ and $k_{2}$. If
 
 \begin{equation}
-\frac{1}{k_{1}}\sum_{j\epsilon S_{1}}d(i,j(S_{1})) \leq \frac{2}{k_{2}}\sum_{j\epsilon S_{2}}d(i,j(S_{2}))
+\sum_{j \in s_{1}} d(i,j(s_{1})) < \sum_{j \in s_{2}}d(i,j(s_{2}))
 \end{equation}
-where $k = k_{1}+k_{2}$, $k_{1}$ is the number of frog species $S_{1}$, $k_{2}$ is the number of frog species $S_{2}$. Here the input instance $i$ will be classified as frog species $S_{2}$. Following prior work (\citep{han2011acoustic, Xie1504:Acoustic}), the distance function used for kNN is the Euclidean function, and $k$ is set at 1.
+Then the input feature vector $i$ will be classified as belonging to class $s_{2}$. Following prior work (\citep{han2011acoustic, Xie1504:Acoustic}), the distance function used for kNN is the Euclidean function, and $k$ is set at 1.
 
 \subsubsection{Support vector machines}
 Due to the high accuracy and superior generalisation properties, support vector machines (SVM) have been widely used for classifying animal sounds \citep{huang2009frog} \citep{acevedo2009automated}. In this study, the feature set obtained is first selected as training data. Then, the pairs $(F_{l}^{n},L_{l}^{n}), l=1,2,..., C_{l}$ are constructed using the selected training data, where $C_{l}$ is the number of frog instances in the training data, $F_{l}^{n}$ is the feature vector obtained from the $l$-$th$ frog instance in the training data, $L_{l}^{n}$ is the frog species label. Furthermore, the decision function for the classification problem based on SVM \citep{cortes1995support} is defined by the training data as 

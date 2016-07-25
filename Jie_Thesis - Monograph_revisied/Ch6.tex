@@ -6,21 +6,19 @@
 
 \textbf{Research problem}
 \\
-In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, all the recordings are assumed to have only one frog species per recording. While most collected environmental recordings often have multiple frog species per recording.
-
+In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, each individual recording is assumed to have only one frog species. While most collected environmental recordings often have multiple frog species.
 \\
 \textbf{Research sub-question}
 \\
-How to classify multiple frog species in low SNR recordings?
-
-
+How to classify frog calls in low SNR recordings with multiple simultaneously vocalising frog species?
 
 
 \section{Overview}
 \label{sec:intro}
 
-This chapter presents a method for the classification of simultaneously vocalising frog species in low SNR recordings. In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, frog call classification is solved using a SISL framework, which cannot reflect the nature of automatically collected environmental recordings. Most automatically collected field recordings have low SNR and consist of multiple simultaneous animal vocal activities including frogs, birds, crickets, and so on. This character of environmental acoustic recordings makes the MIML learning a suitable classification framework. To be specific, individual frog syllables in one audio clip are regarded as \textit{multiple instance}, and the frog species included in that audio clip denote \textit{multiple labels}. 
-The key part of this MIML classification framework for studying frog calls is to detect individual syllables in environmental recordings with multiple simultaneously vocalising frog species. After syllable detection, standard acoustic features and MIML classifiers can be used to perform the MIML classification.
+This chapter presents a method for the classification of simultaneously vocalising frog species in low SNR recordings. In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, frog call classification is solved using a SISL framework, which cannot reflect the nature of automatically collected environmental recordings. Most automatically collected field recordings have low SNR and contain multiple simultaneous animal vocal activities including frogs, birds, insects, and so on. This attribute of environmental recordings makes MIML learning a suitable classification framework. Specifically, frog syllables in one audio clip (such as 10-second) are regarded as \textit{multiple instance}, and the frog species included in that audio clip denotes \textit{multiple labels}. 
+The key part of this MIML classification framework for studying frog recordings is to detect individual syllables in environmental recordings with multiple simultaneously vocalising frog species. 
+After syllable detection, acoustic features are extracted from each individual syllable. Then, three MIML classifiers are used for classifying each 10-second recording.
 
 
 To evaluate our proposed MIML classification framework, a representative sample of 342 10-second recordings was exported from the database and split into training and testing sets. The performance is evaluated based on the MIML learning measures. A validation dataset of 10 10-second recordings for each frog species is constructed for parameter tuning.
@@ -31,7 +29,7 @@ Experimental results demonstrate that the MIML classification framework can be s
 \section{Materials and methods}
 Our frog call classification system consists of
 four steps: signal processing, acoustic event detection, feature
-extraction, and classification (Fig.~\ref{fig:flowchart}). Detailed description of each step is listed in the following sections. 
+extraction, and classification (Figure~\ref{fig:flowchart}). Detailed description of each step is listed in the following sections. 
 
 \begin{figure}[htb!]
 \centering
@@ -45,7 +43,9 @@ extraction, and classification (Fig.~\ref{fig:flowchart}). Detailed description 
 \subsection{Materials}
 \label{chap5:Materials}
 
-All recordings selected for this chapter were obtained from three sites in Queensland, Australia: \textit{Kiyomi dam}, \textit{Stony creek dam} and  \textit{BG creek dam}, using a battery-powered acoustic sensor (stored in a weather proof metal box) with an external microphone. The recordings were stored on 16 GB SD cards in 64 kbps MP3 mono format. All recordings were collected from February, 2014 to April, 2014, because it is the breeding season in Queensland when male frogs make calls to attract females for the purpose of reproducing. All recordings started around sunset, finished around sunrise every day and have a duration of 12 hours. In this chapter, a representative sample of 342 10-second recordings was selected to train and test our proposed algorithm for predicting which frog species are present in a 10-second recording. All the 10-second recordings were manually labelled by an ecologist with eight frog species. The acoustic parameters of eight frog species averaged for ten randomly selected syllables of each frog species are shown in table~\ref{tab:Ch7_parameters}. It is worth noting that the parameters of table~\ref{tab:Ch7_parameters} are slightly different from table~\ref{tab:JCU} with a variation. 
+All recordings selected for this chapter were obtained from three sites in Queensland, Australia: \textit{Kiyomi dam}, \textit{Stony creek dam} and  \textit{BG creek dam}, using a battery-powered acoustic sensor (stored in a weather proof metal box) with an external microphone. The recordings were stored on 16 GB SD cards in 64 kbps MP3 mono format. All recordings were collected from February, 2014 to April, 2014, because it is the breeding season in Queensland when male frogs make calls to attract females for the purpose of reproducing. All recordings started around sunset, finished around sunrise every day and have a duration of 12 hours. In this chapter, a representative sample of 342 10-second recordings was selected to train and test our proposed algorithm for predicting which frog species are present in a 10-second recording. All the 10-second recordings were manually labelled by an ecologist with eight frog species. The acoustic parameters of nine frog species averaged for ten randomly selected syllables of each frog species are shown in Table~\ref{tab:Ch7_parameters}. 
+
+%It is worth noting that the parameters of table~\ref{tab:Ch7_parameters} are slightly different from Table~\ref{tab:JCU} with a variation. 
 
 \begin{table}[htb!]
 \centering
@@ -58,7 +58,9 @@ All recordings selected for this chapter were obtained from three sites in Queen
 \textit{Canetoad}                    & CAD           & 560                                                          &       NA                     \\ 
 \textit{Cyclorana novaehollandiae}   & CNE           & 610                                                          &       400                     \\ 
 \textit{Limnodynastes terraereginae} & LTE           & 610                                                          &          100                  \\ 
-\textit{Litoria fallax}              & LFX           & 4000                                                         &        280                   \\ 
+\textit{Litoria fallax}              & LFX           & 4000                                                        &
+\textit{Litoria latopalmata}              & LLA           & 4000                                                        &
+         280                   \\ 
 \textit{Litoria nasuta}              & LNA           & 2800                                                         &       160                      \\ 
 \textit{Litoria rothii}             & LRI           & 1800                                                         &        500                    \\ 
 \textit{Litoria rubella}             & LRA           & 2300                                                         &       580                     \\ 
@@ -76,10 +78,8 @@ Each recording includes between one and five frog species. Following the prior w
 
 
 \subsection{Signal processing}
-All the recordings were first re-sampled at 16 kHz. A spectrogram was then generated by applying short-time Fourier transform (STFT) to each recording. Specifically, each recording was
-divided into frames of 512 samples with 50\% frame overlap.
-A fast Fourier transform was then performed on each frame with a Hamming window, which yielded amplitude values for 256 frequency bins, each spanning 31.25 Hz. The final
-decibel values (S) were generated as 
+All the recordings were re-sampled at 16 kHz for generating a spectrogram using STFT. Specifically, each recording was divided into frames of 512 samples with 50\% frame overlap.
+A fast Fourier transform was then performed on each frame with a Hamming window, which yielded amplitude values for 256 frequency bins, each spanning 31.25 Hz. The final decibel values (S) were calculated as 
 \begin{equation}
 S_{tf} = 20*log_{10}(A_{tf})
 \end{equation}
@@ -88,25 +88,21 @@ where $A$ denotes the amplitude value, $t=0,...,T-1$ and $f=0,...,F-1$ represent
 \subsection{Acoustic event detection for syllable segmentation}
 \label{Ch5:AEDmethod}
 
-The aim of AED is to detect a specified acoustic event in audio data. In this chapter, we use AED for frog syllable segmentation. Since all the recordings are collected from the field, there are many overlapping vocal activities from different sources. Traditional methods for frog syllable segmentation are based on time domain information \citep{somervuo2004classification,huang2009frog}, which cannot address those recordings. Here, we modified the AED method developed by Towsey et al. \citep{towsey2012toolbox} for syllable segmentation. The detail of our AED method is described as follows:
+The aim of AED is to detect a specified acoustic event in audio data. In this chapter, we use AED for frog syllable segmentation. Since all the recordings are collected from the field, there are many simultaneously vocalising frog species. Traditional methods for frog syllable segmentation are based on time domain information \citep{somervuo2004classification,huang2009frog}, which cannot address those low SNR recordings. Here, we modified the AED method developed by  \cite{towsey2012toolbox} for syllable segmentation. The detail of our AED method is described as follows.
 \\
 \textbf{Step 1:} Wiener filtering 
-
-\noindent A 2-dimensional Wiener filter is applied to the spectrogram image over a $5 \times 5$ time-frequency grid to reduce the background graininess, where the filter size is selected after the consideration of trade-off between removing the background graininess and blurring the acoustic events.
-\begin{equation}
-\hat{S_{tf}} = \mu + \frac{(\sigma^{2}-\nu^{2})}{\sigma^{2}}(S_{tf}-\nu)
-\end{equation}
-where $\mu$ and $\sigma^{2}$ are local mean and variance, respectively; $\nu^{2}$ is the noise variance estimated by averaging all local variances. 
+\noindent To reduce the graininess and remove small gaps within
+each individual acoustic event, a spectrogram image is convolved
+with a Gaussian kernel. The size of the Gaussian kernel is experimentally set at 15 after the consideration of the trade-off between removing the background graininess and blurring different acoustic events.
 \\
 \textbf{Step 2:} Spectral subtraction
 
-\noindent Wiener filtering can successfully remove the graininess, but some noises, such as wind,
-insect, motor engine that cover the whole recording can not be addressed using Wiener filtering. Here, a modified spectral subtraction method is employed to deal with those noises. 
+\noindent Gaussian filtering can successfully remove the graininess, but some noises, such as wind, insect, motor engine that cover the whole recording, can not be addressed using Gaussian filtering. Here, spectral subtraction is used to deal with those noises. 
 
 
 \begin{algorithm}
 \DontPrintSemicolon
-\KwData{$\hat{S_{tf}}$, spectrogram after Wiener filtering.}
+\KwData{$\hat{S_{tf}}$, spectrogram after Gaussian filtering.}
 \KwResult{$\hat{S^{'}_{tf}}=\hat{S_{tf}}$, noise reduced spectrogram.}
 
 \Begin{
@@ -298,6 +294,8 @@ $f(x_{i}, \lambda_{m}) \leq f(x_{i}, \lambda_{n})$ implies
 $rank_{f}(x_{i}, \lambda_{m}) \leq rank_{f}(x_{i}, \lambda_{n})$ 
 \\
 \textbf{(5)} 
+Average precision
+
 Micro-AUC is defined as each point on the ROC curve corresponds to a pair (TPR, FPR) for one threshold. The area under this ROC curve is called Micro-AUC. Here, the definition of TPR and FPR can be found in Equation (2.3) and (2.6)
 
 
@@ -356,6 +354,6 @@ Since most recordings used in this chapter contain multiple simultaneously vocal
 
 
 \section{Summary and limitations}
-In this chapter, we propose a novel framework for the classification of multiple simultaneous vocalising frog species in environmental recordings. To the best of our knowledge, this is the first study that focuses on the frog recordings using the MIML algorithm. Since multiple frog species tend to call simultaneously, the MIML algorithm is more suitable for dealing with those recordings than single-instance single-label classification. Individual frog syllables are first segmented using AED. Then, three feature sets, MD, PS, and AF, are calculated from those segmented syllables. Next, a bag generator is used to construct a feature set with extracted features from each syllables. Finally, three MIML classifiers are used for the classification of frog calls with the best true positive/negatives of 81.8\%. Future work will focus on the study of novel features and MIML classifiers to further improve the classification performance. Current classification results are highly affected by the syllable segmentation results, and the use of AED cannot accurately segment all the syllables. One solution is to prepare an annotated dataset and apply supervised learning algorithms for the segmentation task. Another is to use a different classification framework, which does not need the segmentation process, and we examine this option in the next chapter
+In this chapter, we propose a novel framework for the classification of multiple simultaneous vocalising frog species in environmental recordings. To the best of our knowledge, this is the first study that focuses on the frog recordings using the MIML algorithm. Since multiple frog species tend to call simultaneously, the MIML algorithm is more suitable for dealing with those recordings than SISL classification. Individual frog syllables are first segmented using AED. Then, three feature sets, MD, PS, and AF, are calculated from each segmented syllable. Next, a bag generator is used to construct a bag-level feature for each 10-second recording with extracted features from each syllable. Finally, three MIML classifiers are used for the classification of frog calls. Future work will focus on the study of novel features and MIML classifiers to further improve the classification performance. Current classification results are highly affected by the syllable segmentation results, and the use of AED cannot accurately segment all the syllables. One solution is to prepare an annotated dataset and apply supervised learning algorithms for the segmentation task. Another is to use a different classification framework, which does not need the segmentation process, and we examine this option in the next chapter
 
 

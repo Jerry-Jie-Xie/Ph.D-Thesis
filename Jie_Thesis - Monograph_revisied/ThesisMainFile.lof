@@ -10,10 +10,10 @@
 \contentsline {figure}{\numberline {3.2}{\ignorespaces H$\mathaccentV {ddot}07F{a}$rm$\mathaccentV {ddot}07F{a}$'s segmentation algorithm}}{28}{figure.caption.20}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Syllable segmentation results}}{29}{figure.caption.21}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution of syllable number for all frog species}}{30}{figure.caption.22}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Classification results with different feature sets using the window size of 64 samples\relax }}{39}{figure.caption.30}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Classification results with different feature sets using the window size of 64 samples\relax }}{40}{figure.caption.30}
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Results of different classifiers\relax }}{40}{figure.caption.31}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Classification results of MFCCs with different window sizes\relax }}{41}{figure.caption.32}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Classification results of TemPer with different window sizes\relax }}{41}{figure.caption.33}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Classification results of TemPer with different window sizes\relax }}{42}{figure.caption.33}
 \contentsline {figure}{\numberline {3.9}{\ignorespaces Sensitivity for different features for different levels of noise contamination\relax }}{42}{figure.caption.34}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Block diagram of the frog call classification system for wavelet-based feature extraction}}{46}{figure.caption.36}

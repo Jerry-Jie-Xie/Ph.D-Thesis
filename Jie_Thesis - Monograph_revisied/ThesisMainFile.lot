@@ -18,7 +18,7 @@
 \contentsline {table}{\numberline {4.9}{\ignorespaces Classification accuracy using the JCU recordings.\relax }}{64}{table.caption.55}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {5.1}{\ignorespaces Acoustic parameters of eight frog species averaged for ten randomly selected syllables}}{69}{table.caption.57}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Accuracy measure for MIML classifiers with different feature sets}}{75}{table.caption.62}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Accuracy measure for MIML classifiers with different feature sets}}{76}{table.caption.62}
 \contentsline {table}{\numberline {5.3}{\ignorespaces Example predictions with MIML-RBF.\relax }}{76}{table.caption.63}
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {6.1}{\ignorespaces Classification results based on four feature sets and four ML learning algorithms.}}{86}{table.caption.67}

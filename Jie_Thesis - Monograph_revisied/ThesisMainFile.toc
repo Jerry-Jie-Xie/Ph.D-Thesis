@@ -45,15 +45,15 @@
 \contentsline {subsubsection}{Linear discriminant analysis}{35}{section*.25}
 \contentsline {subsubsection}{K-nearest neighbour}{36}{section*.26}
 \contentsline {subsubsection}{Support vector machines}{37}{section*.27}
-\contentsline {subsubsection}{Random forest}{37}{section*.28}
+\contentsline {subsubsection}{Random forest}{38}{section*.28}
 \contentsline {subsubsection}{Artificial neural network}{38}{section*.29}
-\contentsline {section}{\numberline {3.3}Experiment results}{38}{section.3.3}
+\contentsline {section}{\numberline {3.3}Experiment results}{39}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Effects of different feature sets}{39}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Effects of different machine learning techniques}{39}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Effects of different window size for MFCCs and perceptual features}{40}{subsection.3.3.3}
-\contentsline {subsection}{\numberline {3.3.4}Effects of noise}{40}{subsection.3.3.4}
+\contentsline {subsection}{\numberline {3.3.2}Effects of different machine learning techniques}{40}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Effects of different window size for MFCCs and perceptual features}{41}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.4}Effects of noise}{41}{subsection.3.3.4}
 \contentsline {section}{\numberline {3.4}Discussion}{42}{section.3.4}
-\contentsline {section}{\numberline {3.5}Summary and limitations}{42}{section.3.5}
+\contentsline {section}{\numberline {3.5}Summary and limitations}{43}{section.3.5}
 \contentsline {chapter}{\numberline {4}Adaptive frequency scaled wavelet packet decomposition for frog call classification}{45}{chapter.4}
 \contentsline {section}{\numberline {4.1}Overview}{45}{section.4.1}
 \contentsline {section}{\numberline {4.2}Method}{46}{section.4.2}
@@ -78,13 +78,13 @@
 \contentsline {section}{\numberline {5.2}Materials and methods}{68}{section.5.2}
 \contentsline {subsection}{\numberline {5.2.1}Materials}{68}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Signal processing}{69}{subsection.5.2.2}
-\contentsline {subsection}{\numberline {5.2.3}Acoustic event detection for syllable segmentation}{69}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Feature extraction}{72}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.3}Acoustic event detection for syllable segmentation}{70}{subsection.5.2.3}
+\contentsline {subsection}{\numberline {5.2.4}Feature extraction}{73}{subsection.5.2.4}
 \contentsline {subsection}{\numberline {5.2.5}Multiple-instance multiple-label classifiers}{73}{subsection.5.2.5}
 \contentsline {section}{\numberline {5.3}Experiment results}{73}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Parameter tuning}{73}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Classification}{74}{subsection.5.3.2}
-\contentsline {section}{\numberline {5.4}Discussion}{76}{section.5.4}
+\contentsline {section}{\numberline {5.4}Discussion}{75}{section.5.4}
 \contentsline {section}{\numberline {5.5}Summary and limitations}{76}{section.5.5}
 \contentsline {chapter}{\numberline {6}Estimating frog calling activity and species richness based on acoustic event detection and multi-label learning}{79}{chapter.6}
 \contentsline {section}{\numberline {6.1}Overview}{79}{section.6.1}
@@ -92,11 +92,11 @@
 \contentsline {section}{\numberline {6.3}Experiment setup}{81}{section.6.3}
 \contentsline {section}{\numberline {6.4}Frog calling activity}{81}{section.6.4}
 \contentsline {subsection}{\numberline {6.4.1}Frog calling activity of each 10-second recording}{81}{subsection.6.4.1}
-\contentsline {subsection}{\numberline {6.4.2}Long-term monitoring of frog calling activity}{81}{subsection.6.4.2}
+\contentsline {subsection}{\numberline {6.4.2}Long-term monitoring of frog calling activity}{83}{subsection.6.4.2}
 \contentsline {section}{\numberline {6.5}Frog species richness}{83}{section.6.5}
 \contentsline {subsection}{\numberline {6.5.1}Multi-label classification for species richness estimation}{84}{subsection.6.5.1}
 \contentsline {subsection}{\numberline {6.5.2}Frog species richness analysis}{85}{subsection.6.5.2}
-\contentsline {subsection}{\numberline {6.5.3}Comparison with MIML}{86}{subsection.6.5.3}
+\contentsline {subsection}{\numberline {6.5.3}Comparison with MIML}{87}{subsection.6.5.3}
 \contentsline {section}{\numberline {6.6}Statistical analysis}{87}{section.6.6}
 \contentsline {section}{\numberline {6.7}Summary and limitations}{88}{section.6.7}
 \contentsline {chapter}{\numberline {7}Acoustic monitoring of frog calling activity and species richness over long term}{89}{chapter.7}
