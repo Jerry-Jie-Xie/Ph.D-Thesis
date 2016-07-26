@@ -77,25 +77,30 @@
 \BOOKMARK [1][-]{section.5.3}{Experiment results}{chapter.5}% 77
 \BOOKMARK [2][-]{subsection.5.3.1}{Parameter tuning}{section.5.3}% 78
 \BOOKMARK [2][-]{subsection.5.3.2}{Classification}{section.5.3}% 79
-\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 80
-\BOOKMARK [1][-]{section.5.5}{Summary and limitations}{chapter.5}% 81
-\BOOKMARK [0][-]{chapter.6}{Estimating frog calling activity and species richness based on acoustic event detection and multi-label learning}{}% 82
-\BOOKMARK [1][-]{section.6.1}{Overview}{chapter.6}% 83
-\BOOKMARK [1][-]{section.6.2}{Acquisition of frog call recordings}{chapter.6}% 84
-\BOOKMARK [1][-]{section.6.3}{Experiment setup}{chapter.6}% 85
-\BOOKMARK [1][-]{section.6.4}{Frog calling activity}{chapter.6}% 86
-\BOOKMARK [2][-]{subsection.6.4.1}{Frog calling activity of each 10-second recording}{section.6.4}% 87
-\BOOKMARK [2][-]{subsection.6.4.2}{Long-term monitoring of frog calling activity}{section.6.4}% 88
-\BOOKMARK [1][-]{section.6.5}{Frog species richness}{chapter.6}% 89
-\BOOKMARK [2][-]{subsection.6.5.1}{Multi-label classification for species richness estimation}{section.6.5}% 90
-\BOOKMARK [2][-]{subsection.6.5.2}{Frog species richness analysis}{section.6.5}% 91
-\BOOKMARK [2][-]{subsection.6.5.3}{Comparison with MIML}{section.6.5}% 92
-\BOOKMARK [1][-]{section.6.6}{Statistical analysis}{chapter.6}% 93
-\BOOKMARK [1][-]{section.6.7}{Summary and limitations}{chapter.6}% 94
-\BOOKMARK [0][-]{chapter.7}{Acoustic monitoring of frog calling activity and species richness over long term}{}% 95
-\BOOKMARK [0][-]{chapter.8}{Conclusion and future work}{}% 96
-\BOOKMARK [1][-]{section.8.1}{Summary of contributions}{chapter.8}% 97
-\BOOKMARK [1][-]{section.8.2}{Limitations and future work}{chapter.8}% 98
-\BOOKMARK [0][-]{appendix.I}{Waveform, spectrogram and SNR of frog species from David Stewart's CD}{}% 99
-\BOOKMARK [0][-]{appendix.J}{Waveform, spectrogram and SNR of six frog species from JCU recordings}{}% 100
-\BOOKMARK [0][-]{appendix*.74}{References}{}% 101
+\BOOKMARK [2][-]{subsection.5.3.3}{Results}{section.5.3}% 80
+\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 81
+\BOOKMARK [1][-]{section.5.5}{Summary and limitations}{chapter.5}% 82
+\BOOKMARK [0][-]{chapter.6}{Frog call classification based on multi-label learning}{}% 83
+\BOOKMARK [1][-]{section.6.1}{Overview}{chapter.6}% 84
+\BOOKMARK [1][-]{section.6.2}{Acquisition of frog call recordings}{chapter.6}% 85
+\BOOKMARK [1][-]{section.6.3}{Feature extraction}{chapter.6}% 86
+\BOOKMARK [2][-]{subsection.6.3.1}{LPCs}{section.6.3}% 87
+\BOOKMARK [2][-]{subsection.6.3.2}{MFCCs}{section.6.3}% 88
+\BOOKMARK [2][-]{subsection.6.3.3}{PWSCCs}{section.6.3}% 89
+\BOOKMARK [1][-]{section.6.4}{Experiment setup}{chapter.6}% 90
+\BOOKMARK [2][-]{subsection.6.4.1}{Multi-label classification}{section.6.4}% 91
+\BOOKMARK [2][-]{subsection.6.4.2}{Evaluation metrics}{section.6.4}% 92
+\BOOKMARK [2][-]{subsection.6.4.3}{Classification results}{section.6.4}% 93
+\BOOKMARK [2][-]{subsection.6.4.4}{Comparison with MIML}{section.6.4}% 94
+\BOOKMARK [1][-]{section.6.5}{Summary and limitations}{chapter.6}% 95
+\BOOKMARK [0][-]{chapter.7}{Long-term estimation of frog calling activity and species richness}{}% 96
+\BOOKMARK [1][-]{section.7.1}{Long-term monitoring of frog calling activity}{chapter.7}% 97
+\BOOKMARK [1][-]{section.7.2}{Long-term estimation of frog species richness}{chapter.7}% 98
+\BOOKMARK [1][-]{section.7.3}{Statistical analysis}{chapter.7}% 99
+\BOOKMARK [1][-]{section.7.4}{Summary and limitations}{chapter.7}% 100
+\BOOKMARK [0][-]{chapter.8}{Conclusion and future work}{}% 101
+\BOOKMARK [1][-]{section.8.1}{Summary of contributions}{chapter.8}% 102
+\BOOKMARK [1][-]{section.8.2}{Limitations and future work}{chapter.8}% 103
+\BOOKMARK [0][-]{appendix.I}{Waveform, spectrogram and SNR of frog species from David Stewart's CD}{}% 104
+\BOOKMARK [0][-]{appendix.J}{Waveform, spectrogram and SNR of six frog species from JCU recordings}{}% 105
+\BOOKMARK [0][-]{appendix*.75}{References}{}% 106

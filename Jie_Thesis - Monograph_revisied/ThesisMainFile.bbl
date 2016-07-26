@@ -91,13 +91,6 @@ Chen, W.-P., Chen, S.-S., Lin, C.-C., Chen, Y.-Z., and Lin, W.-C. (2012).
   spectrum.
 \newblock {\em Computers \& Mathematics with Applications}, 64(5):1270--1281.
 
-\bibitem[Chen and Maher, 2006]{chen2006semi}
-Chen, Z. and Maher, R.~C. (2006).
-\newblock Semi-automatic classification of bird vocalizations using spectral
-  peak tracks.
-\newblock {\em The Journal of the Acoustical Society of America},
-  120(5):2974--2984.
-
 \bibitem[Colombia and del Cauca, 2009]{colombia2009frogs}
 Colombia, C. and del Cauca, V. (2009).
 \newblock Frogs species classification using lpc and classification algorithms
@@ -255,6 +248,13 @@ Huang, C.-J., Yang, Y.-J., Yang, D.-X., Chen, Y.-J., and Wei, H.-Y. (2008).
 \newblock In {\em Agent and Multi-Agent Systems: Technologies and
   Applications}, pages 93--102. Springer.
 
+\bibitem[Itakura, 1975]{itakura1975line}
+Itakura, F. (1975).
+\newblock Line spectrum representation of linear predictor coefficients of
+  speech signals.
+\newblock {\em The Journal of the Acoustical Society of America},
+  57(S1):S35--S35.
+
 \bibitem[Jaafar and Ramli, 2013a]{jaafar2013}
 Jaafar, H. and Ramli, D. (2013a).
 \newblock Automatic syllables segmentation for frog identification system.
@@ -266,6 +266,12 @@ Jaafar, H. and Ramli, D.~A. (2013b).
 \newblock Automatic syllables segmentation for frog identification system.
 \newblock In {\em Signal Processing and its Applications (CSPA), 2013 IEEE 9th
   International Colloquium on}, pages 224--228. IEEE.
+
+\bibitem[Jaafar and Ramli, 2015]{jaafar2015effect}
+Jaafar, H. and Ramli, D.~A. (2015).
+\newblock Effect of natural background noise and man-made noise on automated
+  frog calls identification system.
+\newblock {\em J. Trop. Resour. Sustain. Sci}, 3:208--213.
 
 \bibitem[Jaafar et~al., 2013a]{jaafarcomparative}
 Jaafar, H., Ramli, D.~A., and Shahrudin, S. (2013a).
@@ -321,11 +327,17 @@ Litvin, Y. and Cohen, I. (2011).
   wavelet packet decomposition.
 \newblock {\em Journal of Signal Processing Systems}, 65(3):339--350.
 
-\bibitem[Madjarov et~al., 2012]{Madjarov20123084}
-Madjarov, G., Kocev, D., Gjorgjevikj, D., and D?eroski, S. (2012).
+\bibitem[Madjarov et~al., 2012a]{Madjarov20123084}
+Madjarov, G., Kocev, D., Gjorgjevikj, D., and D?eroski, S. (2012a).
 \newblock An extensive experimental comparison of methods for multi-label
   learning.
 \newblock {\em Pattern Recognition}, 45(9):3084 -- 3104.
+
+\bibitem[Madjarov et~al., 2012b]{madjarov2012extensive}
+Madjarov, G., Kocev, D., Gjorgjevikj, D., and D{\v{z}}eroski, S. (2012b).
+\newblock An extensive experimental comparison of methods for multi-label
+  learning.
+\newblock {\em Pattern Recognition}, 45(9):3084--3104.
 
 \bibitem[Mallawaarachchi et~al., 2008]{mallawaarachchi2008spectrogram}
 Mallawaarachchi, A., Ong, S., Chitre, M., and Taylor, E. (2008).
@@ -340,14 +352,6 @@ Massaron, L. (2013).
   multilabel bird song classification in noise (nips4b challenge).
 \newblock {\em Proc of Neural Information Processing Scaled for Bioacoustics,
   joint to NIPS}.
-
-\bibitem[Mellinger et~al., 2011]{mellinger2011method}
-Mellinger, D.~K., Martin, S.~W., Morrissey, R.~P., Thomas, L., and Yosco, J.~J.
-  (2011).
-\newblock A method for detecting whistles, moans, and other frequency contour
-  sounds.
-\newblock {\em The Journal of the Acoustical Society of America},
-  129(6):4055--4061.
 
 \bibitem[Melter, 1987]{Melter1987235}
 Melter, R.~A. (1987).
@@ -389,6 +393,11 @@ Razik, J., Hoeberechts, M., Doh, Y., et~al. (2015).
   application to analysis of whale songs.
 \newblock In {\em 2015 IEEE International Conference on Data Mining Workshop
   (ICDMW)}, pages 780--787. IEEE.
+
+\bibitem[Read et~al., 2011]{read2011classifier}
+Read, J., Pfahringer, B., Holmes, G., and Frank, E. (2011).
+\newblock Classifier chains for multi-label classification.
+\newblock {\em Machine learning}, 85(3):333--359.
 
 \bibitem[Ren et~al., 2008]{ren2008perceptually}
 Ren, Y., Johnson, M.~T., and Tao, J. (2008).
@@ -446,12 +455,6 @@ Tanton, J.~S. (2005).
 \newblock {\em Encyclopedia of mathematics}.
 \newblock Facts On File.
 
-\bibitem[Tjahja et~al., 2015]{tjahja2015supervised}
-Tjahja, T.~V., Fern, X.~Z., Raich, R., and Pham, A.~T. (2015).
-\newblock Supervised hierarchical segmentation for bird song recording.
-\newblock In {\em Acoustics, Speech and Signal Processing (ICASSP), 2015 IEEE
-  International Conference on}, pages 763--767. IEEE.
-
 \bibitem[Towsey et~al., 2012]{towsey2012toolbox}
 Towsey, M., Planitz, B., Nantes, A., Wimmer, J., and Roe, P. (2012).
 \newblock A toolbox for animal call recognition.
@@ -475,11 +478,6 @@ Wei, B., Yang, M., Rana, R.~K., Chou, C.~T., and Hu, W. (2012).
 \newblock In {\em Proceedings of the 11th international conference on
   Information Processing in Sensor Networks}, pages 105--106. ACM.
 
-\bibitem[Xie, 2016]{songMeter}
-Xie, J. (2016).
-\newblock Song meter (sm2) widelife acoustic.
-\newblock {\em http://www.wildlifeacoustics.com/products/song-meter-sm2-birds}.
-
 \bibitem[Xie et~al., 2015a]{jie2015escience}
 Xie, J., Towsey, M., Eichinski, P., Zhang, J., and Roe, P. (2015a).
 \newblock Acoustic feature extraction using perceptual wavelet packet
@@ -501,6 +499,12 @@ Xie, J., Towsey, M., Zhang, J., Dong, X., and Roe, P. (2015c).
   classification.
 \newblock {\em International Conference on Image Processing}.
 
+\bibitem[Xie et~al., 2016]{xie2016acoustic}
+Xie, J., Towsey, M., Zhang, J., and Roe, P. (2016).
+\newblock Acoustic classification of australian frogs based on enhanced
+  features and machine learning algorithms.
+\newblock {\em Applied Acoustics}, 113:193--201.
+
 \bibitem[Yen and Fu, 2002]{yen2002automatic}
 Yen, G.~G. and Fu, Q. (2002).
 \newblock Automatic frog call monitoring system: a machine learning approach.
@@ -513,11 +517,11 @@ Yuan, C. L.~T. and Ramli, D.~A. (2012).
 \newblock In {\em Context-Aware Systems and Applications}, pages 41--50.
   Springer.
 
-\bibitem[Zhang and Zhou, 2014]{ZhangReview2014}
-Zhang, M.-L. and Zhou, Z.-H. (2014).
-\newblock A review on multi-label learning algorithms.
-\newblock {\em Knowledge and Data Engineering, IEEE Transactions on},
-  26(8):1819--1837.
+\bibitem[Zhang et~al., 2016]{zhang2016using}
+Zhang, L., Towsey, M., Xie, J., Zhang, J., and Roe, P. (2016).
+\newblock Using multi-label classification for acoustic pattern detection and
+  assisting bird species surveys.
+\newblock {\em Applied Acoustics}, 110:91--98.
 
 \bibitem[Zhang and Li, 2015]{Zhang2015108}
 Zhang, X. and Li, Y. (2015).

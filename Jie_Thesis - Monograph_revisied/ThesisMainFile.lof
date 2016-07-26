@@ -30,13 +30,14 @@
 \contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart of a frog call classification system using MIML learning\relax }}{68}{figure.caption.56}
 \contentsline {figure}{\numberline {5.2}{\ignorespaces Acoustic event detection results before (Left) and after (Right) event filtering based on dominant frequency}}{72}{figure.caption.60}
 \contentsline {figure}{\numberline {5.3}{\ignorespaces Acoustic event detection results after region growing}}{72}{figure.caption.61}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces Evaluation metrics for MIML classifiers with three different feature sets.\relax }}{78}{figure.caption.62}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Flowchart of a frog call classification system using AED and ML learning\relax }}{80}{figure.caption.64}
-\contentsline {figure}{\numberline {6.2}{\ignorespaces AED for frog abundance monitoring using different methods}}{82}{figure.caption.65}
-\contentsline {figure}{\numberline {6.3}{\ignorespaces Frog calling activity detection of different sites}}{83}{figure.caption.66}
-\contentsline {figure}{\numberline {6.4}{\ignorespaces Frog species richness distribution of three selected sites}}{86}{figure.caption.68}
-\contentsline {figure}{\numberline {6.5}{\ignorespaces Averaged frog species richness of different sites.\relax }}{87}{figure.caption.69}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {7.1}{\ignorespaces Flowchart of a frog call classification system using AED and ML learning\relax }}{88}{figure.caption.66}
+\contentsline {figure}{\numberline {7.2}{\ignorespaces AED for frog abundance monitoring using different methods}}{89}{figure.caption.67}
+\contentsline {figure}{\numberline {7.3}{\ignorespaces Frog calling activity detection of different sites}}{90}{figure.caption.68}
+\contentsline {figure}{\numberline {7.4}{\ignorespaces Frog species richness distribution of three selected sites}}{90}{figure.caption.69}
+\contentsline {figure}{\numberline {7.5}{\ignorespaces Averaged frog species richness of different sites.\relax }}{91}{figure.caption.70}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
