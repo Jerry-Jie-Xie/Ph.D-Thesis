@@ -79,13 +79,13 @@
 \contentsline {subsection}{\numberline {5.2.1}Materials}{68}{subsection.5.2.1}
 \contentsline {subsection}{\numberline {5.2.2}Signal processing}{69}{subsection.5.2.2}
 \contentsline {subsection}{\numberline {5.2.3}Acoustic event detection for syllable segmentation}{69}{subsection.5.2.3}
-\contentsline {subsection}{\numberline {5.2.4}Feature extraction}{73}{subsection.5.2.4}
-\contentsline {subsection}{\numberline {5.2.5}Multiple-instance multiple-label classifiers}{74}{subsection.5.2.5}
+\contentsline {subsection}{\numberline {5.2.4}Feature extraction}{72}{subsection.5.2.4}
+\contentsline {subsection}{\numberline {5.2.5}Multiple-instance multiple-label classifiers}{75}{subsection.5.2.5}
 \contentsline {section}{\numberline {5.3}Experiment results}{75}{section.5.3}
 \contentsline {subsection}{\numberline {5.3.1}Parameter tuning}{75}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Classification}{75}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}Results}{77}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Discussion}{77}{section.5.4}
+\contentsline {section}{\numberline {5.4}Discussion}{78}{section.5.4}
 \contentsline {section}{\numberline {5.5}Summary and limitations}{79}{section.5.5}
 \contentsline {chapter}{\numberline {6}Frog call classification based on multi-label learning}{81}{chapter.6}
 \contentsline {section}{\numberline {6.1}Overview}{81}{section.6.1}
@@ -98,16 +98,11 @@
 \contentsline {subsection}{\numberline {6.4.1}Multi-label classification}{83}{subsection.6.4.1}
 \contentsline {subsection}{\numberline {6.4.2}Evaluation metrics}{84}{subsection.6.4.2}
 \contentsline {subsection}{\numberline {6.4.3}Classification results}{85}{subsection.6.4.3}
-\contentsline {subsection}{\numberline {6.4.4}Comparison with MIML}{86}{subsection.6.4.4}
+\contentsline {subsection}{\numberline {6.4.4}Comparison with MIML}{85}{subsection.6.4.4}
 \contentsline {section}{\numberline {6.5}Summary and limitations}{86}{section.6.5}
-\contentsline {chapter}{\numberline {7}Long-term estimation of frog calling activity and species richness}{87}{chapter.7}
-\contentsline {section}{\numberline {7.1}Long-term monitoring of frog calling activity}{87}{section.7.1}
-\contentsline {section}{\numberline {7.2}Long-term estimation of frog species richness}{88}{section.7.2}
-\contentsline {section}{\numberline {7.3}Statistical analysis}{90}{section.7.3}
-\contentsline {section}{\numberline {7.4}Summary and limitations}{91}{section.7.4}
-\contentsline {chapter}{\numberline {8}Conclusion and future work}{93}{chapter.8}
-\contentsline {section}{\numberline {8.1}Summary of contributions}{93}{section.8.1}
-\contentsline {section}{\numberline {8.2}Limitations and future work}{95}{section.8.2}
-\contentsline {chapter}{\numberline {A}Waveform, spectrogram and SNR of frog species from David Stewart's CD}{97}{appendix.I}
-\contentsline {chapter}{\numberline {B}Waveform, spectrogram and SNR of six frog species from JCU recordings}{99}{appendix.J}
-\contentsline {chapter}{References}{109}{appendix*.75}
+\contentsline {chapter}{\numberline {7}Conclusion and future work}{87}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary of contributions}{87}{section.7.1}
+\contentsline {section}{\numberline {7.2}Limitations and future work}{89}{section.7.2}
+\contentsline {chapter}{\numberline {A}Waveform, spectrogram and SNR of frog species from David Stewart's CD}{91}{appendix.H}
+\contentsline {chapter}{\numberline {B}Waveform, spectrogram and SNR of six frog species from JCU recordings}{93}{appendix.I}
+\contentsline {chapter}{References}{102}{appendix*.71}

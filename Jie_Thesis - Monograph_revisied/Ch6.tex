@@ -45,7 +45,7 @@ The recordings were collected from February, 2014 to April, 2014, because it is 
 
 \begin{table}[htb!]
 \centering
-\caption[Acoustic parameters of eight frog species averaged for ten randomly selected syllables]{Dominant frequency ($F_{0}$) and syllable duration ($T_{s}$) of eight frog species averaged for ten randomly selected syllables.}
+\caption[Acoustic parameters]{Dominant frequency ($F_{0}$) and syllable duration ($T_{s}$) of eight frog species averaged for ten randomly selected syllables.}
 \label{tab:Ch7_parameters}
 \resizebox{0.8\textwidth}{!}{
 \begin{tabular}{llcc}
@@ -194,16 +194,16 @@ A region growing algorithm is used to obtain the contour of the particular acous
 \centering
 
         \begin{subfigure}[b]{0.45\textwidth}
-                \includegraphics[width=\textwidth]{image/Ch6/AEoriginal.png}
+                \includegraphics[width=\textwidth, height =0.8 \textwidth]{image/Ch6/AEoriginal.png}
                 %\caption{ }
         \end{subfigure}
        ~
               \begin{subfigure}[b]{0.45\textwidth}
-                \includegraphics[width=\textwidth]{image/Ch6/AEfinal.png}
+                \includegraphics[width=\textwidth,height = 0.8 \textwidth]{image/Ch6/AEfinal.png}
                 
         \end{subfigure}  
      
-\caption[Acoustic event detection results before (Left) and after (Right) event filtering based on dominant frequency]{Acoustic event detection results before (Left) and after (Right) event filtering based on dominant frequency. Here, blue rectangle means the time and frequency boundary of each detected event.}
+\caption[Acoustic event detection results]{Acoustic event detection results before (Left) and after (Right) event filtering based on dominant frequency. Here, blue rectangle means the time and frequency boundary of each detected event.}
         \label{fig:feature}
 \end{figure}
 
@@ -223,7 +223,7 @@ A region growing algorithm is used to obtain the contour of the particular acous
 
 \begin{figure}[htb!]
 \centering
-\includegraphics[width=0.75\textwidth]{image/Ch6/contentShape.pdf}
+\includegraphics[width=0.75\textwidth, height = 0.9\textwidth]{image/Ch6/contentShape.pdf}
 \caption[Acoustic event detection results after region growing]{Acoustic event detection results after region growing. (a) binary segmentation results, (b) segmented frog syllables. (c) The masked and cropped spectrogram corresponding to the highlighted segment. (d) A cropped mask of the highlighted segment.}
 \label{fig:Ch6_AED}
 \end{figure}
@@ -252,7 +252,7 @@ Mask descriptors for a segment are based on only the mask, and describe the shap
 \\
 \noindent (3) bandwidth = max-frequency - min-frequency
 \\
-\noindent (4) duration = T
+\noindent (4) duration = $T$
 \\
 \noindent (5) area = $\sum_{tf}M_{tf}$
 \\
@@ -406,7 +406,7 @@ The $positive/negative$ is defined as $1-hammingLoss$ and it is 88.64\% for MIML
                 \includegraphics[width=\textwidth]{image/Ch6/avgPrecision.pdf}  
                      \caption{Average precision}         
         \end{subfigure}      
-\caption{Evaluation metrics for MIML classifiers with three different feature sets.}
+\caption[MIML classification results]{Evaluation metrics for MIML classifiers with three different feature sets.}
         \label{fig:classificationResults}
 \end{figure}
 
@@ -433,18 +433,34 @@ It is obviously that different AED results will lead to a different classificati
 A comparison of three AED methods is shown in Table~\ref{Ch6:AEDCompare}, where features and classifier used are the same. The results show that our proposed AED method can achieve the best classification performance.
 
 
+%\begin{table}[htb!]
+%\centering
+%\caption{Effects of AED for the MIML classification results. Here, $\downarrow$ indicates that smaller values imply higher accuracy, while ‘$\uparrow$’ has the completely opposite meanings.}
+%\label{Ch6:AEDCompare}
+%\begin{tabular}{llllll}
+%\hline\hline
+%AED     & Feature & Classifier & Hamming loss $\downarrow$ & Coverage $\downarrow$     & Average Precision  $\uparrow$\\ \hline
+%Ours    &       &    & 0.1136 $\pm$ 0.0145 & 2.4873 $\pm$ 0.2460 & 0.8739 $\pm$ 0.0272     \\ 
+%Michael & AF      & MIML-RBF   & 0.1231 $\pm$ 0.0116 & 2.6820 $\pm$ 0.1622 & 0.8313 $\pm$ 0.0250     \\ 
+%Fodor   &       &   & 0.1657 $\pm$ 0.0053 & 2.9563 $\pm$ 0.2137 & 0.8074 $\pm$ 0.0122     \\ \hline\hline
+%\end{tabular}
+%\end{table}
+
+
 \begin{table}[htb!]
 \centering
-\caption{Effects of AED for the MIML classification results. Here, $\downarrow$ indicates that smaller values imply higher accuracy, while ‘$\uparrow$’ has the completely opposite meanings.}
+\caption[Effects of AED for the MIML classification results]{Effects of AED for the MIML classification results. Here, $\downarrow$ indicates that smaller values imply higher accuracy, while ‘$\uparrow$’ has the completely opposite meanings.}
 \label{Ch6:AEDCompare}
 \begin{tabular}{llllll}
 \hline\hline
 AED     & Feature & Classifier & Hamming loss $\downarrow$ & Coverage $\downarrow$     & Average Precision  $\uparrow$\\ \hline
-Ours    &       &    & 0.1136 $\pm$ 0.0145 & 2.4873 $\pm$ 0.2460 & 0.8739 $\pm$ 0.0272     \\ 
-Michael & AF      & MIML-RBF   & 0.1231 $\pm$ 0.0116 & 2.6820 $\pm$ 0.1622 & 0.8313 $\pm$ 0.0250     \\ 
-Fodor   &       &   & 0.1657 $\pm$ 0.0053 & 2.9563 $\pm$ 0.2137 & 0.8074 $\pm$ 0.0122     \\ \hline\hline
+Ours    & AF      & MIML-RBF   & 0.1123+0.0102 & 2.1757+0.1272 & 0.8855+0.0182     \\ 
+Michael & AF      & MIML-RBF   & 0.1253+0.0079 & 2.2627+0.2557 & 0.8514+0.0407     \\ 
+Fodor   & AF      & MIML-RBF   & 0.1827+0.0103 & 2.6076+0.1723 & 0.8052+0.0246     \\ \hline\hline
 \end{tabular}
 \end{table}
+
+
 
 
 \section{Discussion}

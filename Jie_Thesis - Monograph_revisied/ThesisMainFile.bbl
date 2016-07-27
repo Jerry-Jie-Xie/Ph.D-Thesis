@@ -7,12 +7,6 @@ Acevedo, M.~A., Corrada-Bravo, C.~J., Corrada-Bravo, H., Villanueva-Rivera,
   learning: A comparison of methods.
 \newblock {\em Ecological Informatics}, 4(4):206--214.
 
-\bibitem[Akmentins et~al., 2015]{akmentins2015patterns}
-Akmentins, M., Pereyra, L., Sanabria, E., and Vaira, M. (2015).
-\newblock Patterns of daily and seasonal calling activity of a
-  direct-developing frog of the subtropical andean forests of argentina.
-\newblock {\em Bioacoustics}, 24(2):89--99.
-
 \bibitem[Bao and Cui, 2005]{bao2005prediction}
 Bao, L. and Cui, Y. (2005).
 \newblock Prediction of the phenotypic effects of non-synonymous single
@@ -67,13 +61,6 @@ Camacho, A., Garc{\'\i}a-Rodr{\'\i}guez, A., and Bola{\~n}os, F. (2011).
 \newblock In {\em Proceedings of Meetings on Acoustics}, volume~14, page
   010003. Acoustical Society of America.
 
-\bibitem[Canavero et~al., 2008]{canavero2008calling}
-Canavero, A., Arim, M., Naya, D.~E., Camargo, A., Da~Rosa, I., and Maneyro, R.
-  (2008).
-\newblock Calling activity patterns in an anuran assemblage: the role of
-  seasonal trends and weather determinants.
-\newblock {\em North-Western Journal of Zoology}, 4(1):29--41.
-
 \bibitem[Carey and Alexander, 2003]{carey2003climate}
 Carey, C. and Alexander, M.~A. (2003).
 \newblock Climate change and amphibian declines: is there a link?
@@ -95,6 +82,7 @@ Chen, W.-P., Chen, S.-S., Lin, C.-C., Chen, Y.-Z., and Lin, W.-C. (2012).
 Colombia, C. and del Cauca, V. (2009).
 \newblock Frogs species classification using lpc and classification algorithms
   on wireless sensor network platform.
+\newblock {\em International Science and Technology Conference}.
 
 \bibitem[Colonna et~al., 2012a]{feature2012Colona}
 Colonna, J., Ribas, A., dos Santos, E., and Nakamura, E. (2012a).
@@ -161,12 +149,6 @@ Farooq, O. and Datta, S. (2001).
   recognition.
 \newblock {\em IEEE Signal Processing Letters}, 8(7):196--198.
 
-\bibitem[Fodor, 2013]{fodor2013ninth}
-Fodor, G. (2013).
-\newblock The ninth annual mlsp competition: first place.
-\newblock In {\em Machine Learning for Signal Processing (MLSP), 2013 IEEE
-  International Workshop on}, pages 1--2. IEEE.
-
 \bibitem[Fox, 2008]{Fox20081187}
 Fox, E.~J. (2008).
 \newblock A new perspective on acoustic individual recognition in animals with
@@ -211,8 +193,8 @@ Han, W., Chan, C.-F., Choy, C.-S., and Pun, K.-P. (2006).
 \newblock In {\em Circuits and Systems, 2006. ISCAS 2006. Proceedings. 2006
   IEEE International Symposium on}, pages 4--pp. IEEE.
 
-\bibitem[Harma, 2003]{harma2003automatic}
-Harma, A. (2003).
+\bibitem[H{\"a}rm{\"a}, 2003]{harma2003automatic}
+H{\"a}rm{\"a}, A. (2003).
 \newblock Automatic identification of bird species based on sinusoidal modeling
   of syllables.
 \newblock In {\em Acoustics, Speech, and Signal Processing, 2003.
@@ -255,14 +237,8 @@ Itakura, F. (1975).
 \newblock {\em The Journal of the Acoustical Society of America},
   57(S1):S35--S35.
 
-\bibitem[Jaafar and Ramli, 2013a]{jaafar2013}
-Jaafar, H. and Ramli, D. (2013a).
-\newblock Automatic syllables segmentation for frog identification system.
-\newblock In {\em Signal Processing and its Applications (CSPA), 2013 IEEE 9th
-  International Colloquium on}, pages 224--228.
-
-\bibitem[Jaafar and Ramli, 2013b]{jaafar2013automatic}
-Jaafar, H. and Ramli, D.~A. (2013b).
+\bibitem[Jaafar and Ramli, 2013]{jaafar2013automatic}
+Jaafar, H. and Ramli, D.~A. (2013).
 \newblock Automatic syllables segmentation for frog identification system.
 \newblock In {\em Signal Processing and its Applications (CSPA), 2013 IEEE 9th
   International Colloquium on}, pages 224--228. IEEE.
@@ -460,11 +436,6 @@ Towsey, M., Planitz, B., Nantes, A., Wimmer, J., and Roe, P. (2012).
 \newblock A toolbox for animal call recognition.
 \newblock {\em Bioacoustics}, 21(2):107--125.
 
-\bibitem[Towsey and Planitz, 2011]{Michael2011}
-Towsey, M.~W. and Planitz, B. (2011).
-\newblock Technical report : acoustic analysis of the natural environment.
-\newblock 2011.
-
 \bibitem[Vaca-Castano and Rodriguez, 2010]{vaca2010using}
 Vaca-Castano, G. and Rodriguez, D. (2010).
 \newblock Using syllabic mel cepstrum features and k-nearest neighbors to
@@ -482,7 +453,7 @@ Wei, B., Yang, M., Rana, R.~K., Chou, C.~T., and Hu, W. (2012).
 Xie, J., Towsey, M., Eichinski, P., Zhang, J., and Roe, P. (2015a).
 \newblock Acoustic feature extraction using perceptual wavelet packet
   decomposition for frog call classification.
-\newblock {\em 11th IEEE International Conference on eScience}.
+\newblock pages 237--242.
 
 \bibitem[Xie et~al., 2015b]{Xie1504:Acoustic}
 Xie, J., Towsey, M., Truskinger, A., Eichinski, P., Zhang, J., and Roe, P.
@@ -497,7 +468,7 @@ Xie, J., Towsey, M., Truskinger, A., Eichinski, P., Zhang, J., and Roe, P.
 Xie, J., Towsey, M., Zhang, J., Dong, X., and Roe, P. (2015c).
 \newblock Application of image processing techniques for frog call
   classification.
-\newblock {\em International Conference on Image Processing}.
+\newblock pages 4190--4194.
 
 \bibitem[Xie et~al., 2016]{xie2016acoustic}
 Xie, J., Towsey, M., Zhang, J., and Roe, P. (2016).

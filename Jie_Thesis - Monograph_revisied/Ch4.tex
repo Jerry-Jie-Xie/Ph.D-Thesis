@@ -84,7 +84,7 @@ Each recording is made up of multiple continuous calls of one frog species. For 
 
 
 \begin{figure}[htb!] % Example image
-\center{\includegraphics[width=1\linewidth]{image/Ch4/segmentation.pdf}}
+\center{\includegraphics[width=0.8\linewidth]{image/Ch4/segmentation.pdf}}
 \caption[H$\ddot{a}$rm$\ddot{a}$'s segmentation algorithm]{Segmentation method based on H$\ddot{a}$rm$\ddot{a}$'s algorithm. Here, $D$ is the amplitude threshold for stopping criteria which is set at 20 dB experimentally, and the segmentation result is sensitive with this value. $A$ is the maximum amplitude value of the spectrogram and we save the first maximum amplitude as $A(1)$, $B(t)$ is the amplitude of frame $t$. An asterisk denotes the optional processing step.}
 \label{fig:segmentation} 
 \end{figure}
@@ -122,7 +122,7 @@ line for \textit{Neobatrachus sudelli} (one syllable).}
 Since features play an important role in the classification performance, pre-processing is applied to each syllable to improve the accuracy of feature extraction. The pre-processing of each syllable consists of the following steps:
 
 \subsubsection{Pre-emphasise}
-Some collected frog calls have low amplitude but in the high frequency, which will have an effect on feature extraction of the spectrum at the high frequency end. To enhance those high-frequency components and reduce the low-frequency components, a first-order high-pass filter with finite impulse response (FIR) is introduced and defined as
+Some collected frog calls have low amplitude but in the high frequency, which will have an effect on feature extraction of the spectrum at the high frequency end. To enhance those high-frequency components and reduce the low-frequency components, a first-order high-pass filter with finite impulse response is introduced and defined as
 
 \begin{align}
 y(n) = s(n)-\alpha s(n-1)

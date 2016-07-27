@@ -45,8 +45,7 @@ where $p$ is the order of the polynomial $a_{i}$. In the proposed study, the val
 
 
 \subsection{MFCCs}
-The description for calculating MFCCs can be found in Chapter~\ref{cha:cha4EnhancedFeature}. The difference is that each 10-second recording is first split into frames using a Hamming window. Then, all frames are divided into three equal parts, and MFCCs is averaged over each part. Finally, MFCCs of each part are concatenated into a final feature named as \textit{multi-stage MFCCs}. 
-The reason for dividing the recording into three equal parts is to keep the information of different frog species in the same frequency band, 
+The description for calculating MFCCs can be found in Chapter~\ref{cha:cha4EnhancedFeature}. The difference is that each 10-second recording is first split into frames using a Hamming window. Then, all frames are divided into three equal parts, and MFCCs is averaged over each part. Finally, MFCCs of each part are concatenated into a final feature named as \textit{multi-stage MFCCs}. The reason for dividing the recording into three equal parts is to keep the information of different frog species in the same frequency band, 
 because different frog species may exist in different temporal locations of one 10-second recording. 
 
 
@@ -101,57 +100,63 @@ The values for hamming loss, accuracy, and subset accuracy range from 0 to 1. Fo
 
 \subsection{Classification results}
 
-Experiment results are shown in Table~\ref{tab:classificationResults}.
-The combination of multi-stage PWSCCs $+$ LPCs and the RAKEL1 method achieves the best performance. Therefore, this combination is used for the testing data. 
-Figure~\ref{fig:frogRichness} shows the frog species richness of the three selected sites. For all the three sites, the variation of species richness is not high, which shows that species richness of the same area is relatively stable. However, frog species richness of \textit{BG Creek dam} has a smaller variation over the time than \textit{Kiyomi dam} and \textit{Stony Creek dam}. The comparison of the species richness for the three sites is shown in Figure~\ref{fig:richnessSite}. In contrast to other sites, the species richness in \textit{BG Creek dam} is the highest. This might be that \textit{BG Creek dam} is closer to a river and farther away from the human community.
+Experiment results are shown in Table~\ref{tab:classificationResults}. The combination of LPCs, MFCCs, and PWSCCs, can achieve the best performance with ML-MLP. 
+
 
 
 \begin{table}[htb!]
 \centering
-\caption[Classification results based on four feature sets and four ML learning algorithms.]{Classification results based on four feature sets and four ML learning algorithms. Here the methods for ML learning algorithms are in accordance to the name in the \textit{Meka} software. The base classifier of all methods is decision tree. For a metric, the best value is in bold. Here, $\downarrow$ indicates that smaller values imply higher accuracy, while ‘$\uparrow$’ has the completely opposite meanings. The description of each evaluation metric can be found in Chapter \ref{ch6:eveluationMetric}.}
+\caption{Comparison of different feature sets for ML classification}
 \label{tab:classificationResults}
 \resizebox{\textwidth}{!}{
-\begin{tabular}{llllllll}
-\hhline{========}
-\textbf{Features}                  & \textbf{Method} & \textbf{Hamming loss} $\downarrow$ & \textbf{Rank loss} $\downarrow$ & \textbf{One error} $\downarrow$& \textbf{Example based F1} $\uparrow$ & \textbf{Micro F1} $\uparrow$ \\ \hline
-MFCCs+LPCs                & BR              & 0.155 $\pm$ 0.015           & 0.171 $\pm$ 0.037        &  0.246 $\pm$ 0.063        & 0.699 $\pm$ 0.03                 & 0.749 $\pm$ 0.024       \\ 
-                          & CC              & 0.147 $\pm$ 0.018           & 0.147 $\pm$ 0.02          & 0.199 $\pm$ 0.042        & 0.722 $\pm$ 0.035                & 0.756 $\pm$ 0.029       \\ 
-                          & RAKEL           & 0.167 $\pm$ 0.038           & 0.122 $\pm$ 0.026                    & 0.194 $\pm$ 0.063        & 0.721 $\pm$ 0.044                & 0.752 $\pm$ 0.041       \\ 
-                          & RAKEL1           & 0.134 $\pm$ 0.012           & 0.099 $\pm$ 0.025       & \textbf{0.147 $\pm$ 0.056}        & 0.74 $\pm$ 0.044                 & 0.783 $\pm$ 0.022       \\ 
-Multi-stage MFCCs + LPCs  & BR              & 0.155 $\pm$ 0.016           & 0.169 $\pm$ 0.035         & 0.249 $\pm$ 0.064        & 0.7 $\pm$ 0.03                   & 0.75 $\pm$ 0.024        \\ 
-                          & CC              & 0.147 $\pm$ 0.018           & 0.147 $\pm$ 0.021         & 0.199 $\pm$ 0.042        & 0.722 $\pm$ 0.034                & 0.756 $\pm$ 0.028       \\ 
-                          & RAKEL           & 0.166 $\pm$ 0.035           & 0.124 $\pm$ 0.027         & 0.194 $\pm$ 0.069        & 0.724 $\pm$ 0.048                & 0.754 $\pm$ 0.04        \\ 
-                          & RAKEL1           & 0.134 $\pm$ 0.013           & 0.101 $\pm$ 0.026        & 0.15 $\pm$ 0.063         & 0.737 $\pm$ 0.05                 & 0.783 $\pm$ 0.023       \\ 
-PWSCCs + LPCs             & BR              & 0.148 $\pm$ 0.025           & 0.139 $\pm$ 0.033      & 0.254 $\pm$ 0.063        & 0.708 $\pm$ 0.046                & 0.762 $\pm$ 0.036       \\ 
-                          & CC              & 0.168 $\pm$ 0.031           & 0.168 $\pm$ 0.045        & 0.272 $\pm$ 0.061        & 0.684 $\pm$ 0.054                & 0.723 $\pm$ 0.048       \\ 
-                          & RAKEL           & 0.155 $\pm$ 0.023           & 0.103 $\pm$ 0.022        & 0.178 $\pm$ 0.031        & 0.729 $\pm$ 0.032                & 0.763 $\pm$ 0.030       \\ 
-                          & RAKEL1           & 0.14 $\pm$ 0.027            & 0.094 $\pm$ 0.018         & 0.193 $\pm$ 0.063        & 0.727 $\pm$ 0.053                & 0.773 $\pm$ 0.042       \\ 
-Multi-stage PWSCCs + LPCs & BR              & 0.153 $\pm$ 0.014           & 0.147 $\pm$ 0.022      & 0.266 $\pm$ 0.037        & 0.689 $\pm$ 0.035                & 0.75 $\pm$ 0.025        \\ 
-                          & CC              & 0.142 $\pm$ 0.029           & 0.146 $\pm$ 0.023        & 0.254 $\pm$ 0.094        & 0.714 $\pm$ 0042                 & 0.764 $\pm$ 0.045       \\ 
-                          & RAKEL           & 0.154 $\pm$ 0.022           & 0.11 $\pm$ 0.012         & 0.196 $\pm$ 0.062        & 0.739 $\pm$ 0.022                & 0.768 $\pm$ 0.025       \\ 
-                          & RAKEL1           & \textbf{0.131 $\pm$ 0.012          } & \textbf{0.09 $\pm$ 0.014}                       & 0.173 $\pm$ 0.03         & \textbf{0.743 $\pm$ 0.026}               & \textbf{0.787 $\pm$ 0.018}      
-\\ \hline
-Baseline &               & 0.313           & 0.500      & 0.687        & NA                & NA
-\\ \hline
-MIML & &    0.182           & 0.132      & 0.223        & NA                & NA                        
-                          
-                          
-                           \\ \hhline{========}
+\begin{tabular}{lllll}
+\hline\hline
+Feature set           & Classifier                             & Hamming loss & Accuracy    & Subset accuracy \\ \hline
+MFCCs                 & \multirow{4}{*}{Multilayer Perceptron} & 0.155 $\pm$ 0.019  & 0.613 $\pm$ 0.059 & 0.292 $\pm$ 0.071     \\ \cline{1-1} \cline{3-5} 
+PWSCCs                &                                        & 0.143 $\pm$ 0.013  & 0.661 $\pm$ 0.013 & 0.374 $\pm$ 0.017     \\ \cline{1-1} \cline{3-5} 
+MFCCs + PWSCCs        &                                        & 0.125 $\pm$ 0.007  & 0.702 $\pm$ 0.029 & 0.403 $\pm$ 0.051     \\ \cline{1-1} \cline{3-5} 
+MFCCs + PWSCCs + LPCs &                                        & 0.111 $\pm$ 0.009  & 0.727 $\pm$ 0.017 & 0.444 $\pm$ 0.028     \\ \hline\hline
 \end{tabular}
 }
 \end{table}
 
 
 
+
+\begin{table}[htb!]
+\centering
+\caption{Comparison of different ML classifiers}
+\label{my-label}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lllll}
+\hline\hline
+Feature set           & Classifier            & Hamming loss & Accuracy    & Subset accuracy \\ \hline
+MFCCs + PWSCCs + LPCs & ML-kNN                   & 0.137 $\pm$ 0.013  & 0.698 $\pm$ 0.027 & 0.397 $\pm$ 0.066     \\ 
+MFCCs + PWSCCs + LPCs & ML-Decision Tree         & 0.155 $\pm$ 0.011  & 0.608 $\pm$ 0.037 & 0.263 $\pm$ 0.049     \\ 
+MFCCs + PWSCCs + LPCs & ML-Multilayer Perceptron & 0.111 $\pm$ 0.009  & 0.727 $\pm$ 0.017 & 0.444 $\pm$ 0.028     \\ \hline\hline
+\end{tabular}
+}
+\end{table}
+
+
+
+
 \subsection{Comparison with MIML}
-In this chapter, ML learning is used to classify frog calls without syllable segmentation. Compared with the MIML learning (Table~\ref{tab:accuracy} in chapter \ref{cha:cha6MIML}), the ML classification has a better classification performance. Although extracting global features for the ML classification will lose some detailed information, most frog vocalisations can still be successfully described when using cepstral features.
-Compared with other features, global cepstral features are often calculated from each windowed signal. Then, the statistical results, such as mean and standard deviation, of all the windowed signals are calculated, this process will compress the information in the time domain but keep the information of the frequency domain. Since most frogs tend to continuously make calls, the compression of the time domain information will not greatly affect the discriminability of the ceptral features. In contrast, MIML classification needs to conduct the syllable segmentation before feature extraction. However, the use of AED often cannot accurately segment frog calls with low energies, which greatly affects the performance.
+In this chapter, ML learning is used to classify frog calls without syllable segmentation. Compared with the MIML learning (Figure~\ref{fig:classificationResults} in Chapter~\ref{cha:cha6MIML}), the ML classification has a slightly better classification performance. For ML classification, LPCs, MFCCs, and PWSCCs are combined for the classification. MFCCs and PWSCCs are calculated by averaging cepstral features in the temporal direction. Although this process will compress the information in the temporal direction, the information of the cepstral domain is obtained. Since most frog species tend to continuously make calls, the compression of the temporal information will not greatly affect the discriminability of the ceptral features.
+LPCs are added to get the temporal information. In contrast, features used for MIML classification are calculated from each segmented syllable. However, current AED often cannot accurately segment frog calls with low energies, which greatly affects the classification performance.
 
 
 
 
 \section{Summary and limitations}
-Acoustic sensors are more widely used to monitor frog calling activity and species richness than the traditional field survey method. However, the use of acoustic sensors generates large volumes of audio data, which makes it necessary to develop automated methods. This paper proposes a novel method for detecting frog calling activity and species richness based on AED and ML learning. Specifically,
-AED is the first step to calculate frog calling activity. Meanwhile, those 10-second recordings without frog calls are filtered out. For those recordings with frog calls, ML learning is further used for estimating frog species richness with multi-stage PWSCCs and LPCs. Finally, statistical analysis is utilised to reflect the relationship between frog calling activity/species richness with weather variables (mean temperature and rainfall). Experimental results show that our proposed method can accurately estimate frog calling activity/species richness and reflect their relationship with weather variables. Future work will focus on a wider frog call database, including a larger number of frog species, and frog calls collected over a longer period.
+In this chapter, ML learning is used to classify multiple simultaneously vocalising frog species in low SNR recordings. Three global feature are combined together for the classification: LPCs, MFCCs, and PWSCCs. For the ML classification, three classifiers are compared: ML-kNN, ML-DT, and ML-MLP. ML-MLP can achieve the best classification performance over ML-kNN and ML-DT.
+
+
+
+
+
+
+%Acoustic sensors are more widely used to monitor frog calling activity and species richness than the traditional field survey method. However, the use of acoustic sensors generates large volumes of audio data, which makes it necessary to develop automated methods. This paper proposes a novel method for detecting frog calling activity and species richness based on AED and ML learning. Specifically,
+%AED is the first step to calculate frog calling activity. Meanwhile, those 10-second recordings without frog calls are filtered out. For those recordings with frog calls, ML learning is further used for estimating frog species richness with multi-stage PWSCCs and LPCs. Finally, statistical analysis is utilised to reflect the relationship between frog calling activity/species richness with weather variables (mean temperature and rainfall). Experimental results show that our proposed method can accurately estimate frog calling activity/species richness and reflect their relationship with weather variables. Future work will focus on a wider frog call database, including a larger number of frog species, and frog calls collected over a longer period.
 
 

@@ -260,6 +260,7 @@
 @Article{colombia2009frogs,
   Title                    = {Frogs species Classification using LPC and Classification Algorithms on Wireless Sensor Network Platform},
   Author                   = {Colombia, Cali and del Cauca, Valle},
+  Journal                  = {International Science and Technology Conference},
   Year                     = {2009}
 }
 
@@ -469,6 +470,16 @@
   Pages                    = {1564--1569}
 }
 
+@InProceedings{harma2003automatic,
+  Title                    = {Automatic identification of bird species based on sinusoidal modeling of syllables},
+  Author                   = {H{\"a}rm{\"a}, Aki},
+  Booktitle                = {Acoustics, Speech, and Signal Processing, 2003. Proceedings.(ICASSP'03). 2003 IEEE International Conference on},
+  Year                     = {2003},
+  Organization             = {IEEE},
+  Pages                    = {V--545},
+  Volume                   = {5}
+}
+
 @Article{han2011acoustic,
   Title                    = {Acoustic classification of Australian anurans based on hybrid spectral-entropy approach},
   Author                   = {Han, Ng Chee and Muniandy, Sithi V and Dayou, Jedol},
@@ -488,16 +499,6 @@
   Year                     = {2006},
   Organization             = {IEEE},
   Pages                    = {4--pp}
-}
-
-@InProceedings{harma2003automatic,
-  Title                    = {Automatic identification of bird species based on sinusoidal modeling of syllables},
-  Author                   = {Harma, Aki},
-  Booktitle                = {Acoustics, Speech, and Signal Processing, 2003. Proceedings.(ICASSP'03). 2003 IEEE International Conference on},
-  Year                     = {2003},
-  Organization             = {IEEE},
-  Pages                    = {V--545},
-  Volume                   = {5}
 }
 
 @Article{jasaTrack,
@@ -585,17 +586,6 @@
   Volume                   = {57},
 
   Publisher                = {Acoustical Society of America}
-}
-
-@InProceedings{jaafar2013,
-  Title                    = {Automatic syllables segmentation for frog identification system},
-  Author                   = {Jaafar, H. and Ramli, D.A.},
-  Booktitle                = {Signal Processing and its Applications (CSPA), 2013 IEEE 9th International Colloquium on},
-  Year                     = {2013},
-  Month                    = {March},
-  Pages                    = {224-228},
-
-  Keywords                 = {acoustic signal processing;biology computing;feature extraction;learning (artificial intelligence);signal classification;Euclidean distance;Malaysia forest;Mel-Frequency cepstrum coefficient;automatic segmentation;automatic syllable segmentation;biological research;environmental monitoring;feature extraction method;frog sound identification system;frog sound recognition;manual segmentation;nonparametric k-nearest neighbor classifier;physical observation procedure;short time average zero crossing rate;short time energy;signal extraction;signal segmentation;Accuracy;Feature extraction;Manuals;Mel frequency cepstral coefficient;Noise;Noise measurement;Frog identification;Mel-Frequency Cepstrum Coefficients;automatic segmentation;short time energy and short time average zero crossing rate}
 }
 
 @Article{jaafar2015effect,
@@ -1129,13 +1119,13 @@ These algorithms are applied to a number of animal call recognition tasks, chose
 }
 
 @Article{jie2015escience,
-  Title                    = {Acoustic Feature Extraction using Perceptual Wavelet Packet Decomposition for Frog Call Classification},
-  Author                   = {Jie Xie and Michael Towsey and Philip Eichinski and Jinglan Zhang and Paul Roe},
-  Journal                  = {11th IEEE International Conference on eScience},
+  Title                    = {Acoustic feature extraction using perceptual wavelet packet decomposition for frog call classification},
+  Author                   = {Xie, Jie and Towsey, Michael and Eichinski, Philip and Zhang, Jinglan and Roe, Paul},
   Year                     = {2015},
+  Pages                    = {237--242},
 
-  Owner                    = {Jie},
-  Timestamp                = {2015.09.15}
+  Booktitle                = {e-Science (e-Science), 2015 IEEE 11th International Conference on},
+  Organization             = {IEEE}
 }
 
 @InProceedings{Xie1504:Acoustic,
@@ -1168,44 +1158,14 @@ that syllable features can achieve an average classification accuracy of
 nearest neighbour; spectral peak track}
 }
 
-@InProceedings{Xie2015,
-  Title                    = {Acoustic classification of Australian anurans using syllable features},
-  Author                   = {Jie Xie and Michael Towsey and Anthony Truskinger and Philip Eichinski and
-Jinglan Zhang and Paul Roe},
-  Booktitle                = {2015 IEEE Tenth International Conference on Intelligent Sensors, Sensor
-Networks and Information Processing (IEEE ISSNIP 2015)},
-  Year                     = {2015},
-
-  Address                  = {Singapore, Singapore},
-  Month                    = apr,
-
-  Abstract                 = {Acoustic classification of anurans (frogs) has received increasing
-attention for its promising application in biological and environment
-studies. In this study, a novel feature extraction method for frog call
-classification is presented based on the analysis of spectrograms. The frog
-calls are first automatically segmented into syllables. Then, spectral peak
-tracks are extracted to separate desired signal (frog calls) from
-background noise. The spectral peak tracks are used to extract various
-syllable features, including: syllable duration, dominant frequency,
-oscillation rate, frequency modulation, and energy modulation. Finally, a
-k-nearest neighbor classifier is used for classifying frog calls based on
-the results of principal component analysis. The experiment results show
-that syllable features can achieve an average classification accuracy of
-90.5\% which outperforms Mel-frequency cepstral coefficients features
-(79.0\%).},
-  Days                     = {7},
-  Keywords                 = {audio classification; syllable feature; principal component analysis; k
-nearest neighbour; spectral peak track}
-}
-
 @Article{jie2015ICIP,
   Title                    = {Application of image processing techniques for frog call classification},
-  Author                   = {Jie Xie and Michael Towsey and Jinglan Zhang and Xueyan Dong and Paul Roe},
-  Journal                  = {International Conference on Image Processing},
+  Author                   = {Xie, Jie and Towsey, Michael and Zhang, Jinglan and Dong, Xueyan and Roe, Paul},
   Year                     = {2015},
+  Pages                    = {4190--4194},
 
-  Owner                    = {Jie},
-  Timestamp                = {2015.09.15}
+  Booktitle                = {Image Processing (ICIP), 2015 IEEE International Conference on},
+  Organization             = {IEEE}
 }
 
 @Article{Xie2016,

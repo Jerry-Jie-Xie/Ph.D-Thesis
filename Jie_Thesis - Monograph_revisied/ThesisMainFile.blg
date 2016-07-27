@@ -7,13 +7,14 @@ A level-1 auxiliary file: ./Ch4.aux
 A level-1 auxiliary file: ./Ch5.aux
 A level-1 auxiliary file: ./Ch6.aux
 A level-1 auxiliary file: ./Ch7.aux
-A level-1 auxiliary file: ./Ch8Application.aux
 A level-1 auxiliary file: ./Ch8Conclusions.aux
 A level-1 auxiliary file: ./Appendix.aux
 The style file: apalike.bst
 Database file #1: ./References.bib
+Warning--I didn't find a database entry for "jaafar2013"
 Warning--I didn't find a database entry for "songMeter"
 Warning--can't use both volume and number fields in camacho2013automatic
-Warning--empty journal in colombia2009frogs
 Warning--empty journal in jaafarcomparative
-(There were 4 warnings)
+Warning--empty journal in jie2015escience
+Warning--empty journal in jie2015ICIP
+(There were 6 warnings)
