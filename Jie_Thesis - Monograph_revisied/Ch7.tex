@@ -21,13 +21,17 @@ To be specific, three features are calculated: LPCs, MFCCs, and PWSCCs. Here, ea
 
   
 
-\section{Acquisition of frog call recordings}
+
+
+\section{Methods}
+
+\subsection{Acquisition of frog call recordings}
 
 To evaluate the proposed algorithm, the same dataset with Chapter~\ref{cha:cha6MIML} is used. The description of this dataset can be found in Chapter~\ref{chap5:Materials}. We first manually inspect spectrograms of ten randomly selected call examples for each frog species. Two parameters, dominant frequency and syllable duration, are measured and averaged, as listed in Table~\ref{tab:Ch7_parameters}, which are used as prior information for subsequent analysis.
 
-\section{Feature extraction}
 
 
+\subsection{Feature extraction}
 Extracting discriminating features, which maximise between-group (inter-specie) dissimilarity
 and minimise within-group (intra-specie) dissimilarity, is very important for achieving high classification performance \citep{huang2009frog, bedoya2014automatic}. In this chapter, three global features are calculated to classify multiple simultaneously vocalising frog species in each 10-second recording: LPCs, MFCCs, and PWSCCs. 
 
@@ -35,7 +39,7 @@ and minimise within-group (intra-specie) dissimilarity, is very important for ac
 
 
 
-\subsection{LPCs}
+\textit{LPCs}
 Linear prediction coding (LPCs) is often used to represent the spectral envelope of speech sounds \citep{itakura1975line}. LPCs coefficients can be calculated using a linear predictive filter.
 
 \begin{equation}
@@ -43,25 +47,24 @@ X(n) = \sum_{i}^{p}a_{i}x(n-i)
 \end{equation}
 where $p$ is the order of the polynomial $a_{i}$. In the proposed study, the value of $p$ is set at 12 (12th-order polynomial), and 13 LPCs coefficients are calculated. For those frog vocalizations with different spectral envelopes, LPCs can obtain a high classification accuracy, and has been widely used in previous studies \cite{yuan2012frog, jaafarcomparative, jaafar2015effect}.
 
-
-\subsection{MFCCs}
+\textit{MFCC}
 The description for calculating MFCCs can be found in Chapter~\ref{cha:cha4EnhancedFeature}. The difference is that each 10-second recording is first split into frames using a Hamming window. Then, all frames are divided into three equal parts, and MFCCs is averaged over each part. Finally, MFCCs of each part are concatenated into a final feature named as \textit{multi-stage MFCCs}. The reason for dividing the recording into three equal parts is to keep the information of different frog species in the same frequency band, 
 because different frog species may exist in different temporal locations of one 10-second recording. 
 
 
-\subsection{PWSCCs}
+\textit{PWSCCs}
 To calculate PWSCCs, constructing a suitable frequency scale for a WP tree based on the dominant frequency of each frog species is the first step, because different frog species tend to have different dominant frequencies \citep{Gingras2013}. In Chapter \ref{cha:cha5WaveletFeature}, k-means clustering was first applied to the extracted dominant frequencies of training data. Then, the frequency scale was built by sorting clustering centroids to construct the WP tree. In this chapter, the prior information for dominant frequency ($F_{0}$) (Table~\ref{tab:Ch7_parameters}) is directly used to construct the WP tree. Then, the steps for calculating PWSCCs are the same with Chapter~\ref{cha:cha5WaveletFeature}. Similar with MFCCs, PWSCCs are also calculated by dividing the recording into three equal parts. The final feature is named as \textit{multi-stage PWSCCs}.
-
-
-
-\section{Experiment setup}
-Each 10-second recording is divided into frames of 512 samples and 50\% frame overlap for STFT. For MFCCs and PWSCCs, window size and overlap are 512 samples and 50\%, the window function is a Hamming window. All algorithms were programmed in Matlab 2014b except ML learning, which was implemented in Meka 1.7.7\footnote[4]{http://meka.sourceforge.net/}. 
-
 
 
 \subsection{Multi-label classification} 
 Since many sampled recordings consist of calls from multiple frog species, frog call classification can be framed as a ML learning problem. However, previous studies have not adopted ML learning to classify frog calls. Therefore, it is worth investigating different ML learning algorithms for the classification of multiple vocalising frog species in low SNR recordings. for its scalability and flexibility \citep{read2011classifier}. The principle of the BR method is to solve a multi-label classification problem using multiple binary classifiers respectively. Similar to our previous work \citep{zhang2016using}, 
 three classic single-label learning algorithms: decision tree, and multi-layer perceptron, and random forest. Here, random forest is selected as the base classifier, since our previous study of classifying frog species has already demonstrated its comparable performance \citep{xie2016acoustic}. 
+
+\section{Experiment results}
+Each 10-second recording is divided into frames of 512 samples and 50\% frame overlap for STFT. For MFCCs and PWSCCs, window size and overlap are 512 samples and 50\%, the window function is a Hamming window. All algorithms were programmed in Matlab 2014b except ML learning, which was implemented in Meka 1.7.7\footnote[4]{http://meka.sourceforge.net/}. 
+
+
+
 
 
 

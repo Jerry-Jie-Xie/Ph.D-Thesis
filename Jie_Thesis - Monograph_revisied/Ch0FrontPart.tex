@@ -15,7 +15,7 @@
 
 %
 
-\submissiondate{July 2016}
+\submissiondate{August 2016}
 \copyrightyear{2016}
 %\informationcutoffdate{01 March 2010} %for cut of date of information in the thesis
 
@@ -41,32 +41,33 @@ To my family
 \begin{abstract}
 Frogs play an important role in the Earth's ecosystem, 
 but the decline of their population has been spotted from locations around the world. Monitoring frog activity can assist conservation efforts, and improve our understanding of their interactions with the environment and other organisms. Traditional observation methods require ecologists and volunteers to visit the field, which limit the scale for acoustic data collection. Recent advances in acoustic sensors provide a novel method to survey vocalising animals such as frogs. Once sensors are successfully installed in the field, acoustic data can be automatically collected at large spatial and temporal scales. For each acoustic sensor, 
-several gigabytes of compressed audio data can be generated per day, and large volumes of raw acoustic data have been collected. Enabling automated species identification in acoustic data has become very important to gain insights about frogs and the environment.
-Most previous studies on machine learning for frog calls often have two limitations: (1) frog recordings often have a higher SNR ($\geq 15dB$); (2) each individual recording contains only a frog species. However, most environmental recordings typically have a low SNR and contain multiple simultaneously vocalising frogs. 
+several gigabytes of compressed audio data can be generated per day, and thus large volumes of raw acoustic data have been collected. To gain insights about frogs and the environment, classifying frog species in acoustic data is necessary. However, manual species identification is  unfeasible due to the amount of collected data, and enabling automated species classification has become very important. Most previous studies on machine learning for frog calls often have two limitations: (1) frog recordings often have a higher SNR ($\geq$ 15 dB); (2) each individual recording contains only one frog species. However, most environmental recordings typically have a low SNR ($\leq$ 15 dB) and contain multiple simultaneously vocalising frogs. 
 This thesis aims to address those two limitations, and has the following contributions.
 
 \begin{enumerate} 
-\item[(1)] Develop a fused feature set from temporal, perceptual, and  cepstral domains for improving the performance of state-of-the-art frog call classification methods using high SNR recordings (Chapter \ref{cha:cha4EnhancedFeature}). 
+\item[(1)] Develop a fused feature set from temporal, perceptual, and  cepstral domains for improving the state-of-the-art performance of frog call classification using high SNR recordings (Chapter~ \ref{cha:cha4EnhancedFeature}). 
 \\
-Various acoustic features have been developed to classify frog calls, and most features can be categorised into three types: temporal feature, perceptual feature, and cepstral feature. Most previous studies only use features from one domain or two domains, which cannot effectively classify 
-those frog species that share similar acoustic attributes in those one or two domains. In this thesis, a novel fusion of temporal, perceptual, and cepstral features is proposed, so that those frog species share similar acoustic attributes in one or two domains can be successfully classified.
-An intensive analysis shows that our fused feature set consistently outperforms the state-of-the-art classification system using high SNR recordings.
+Various acoustic features have been developed to classify frog calls, and  can be generally categorised into three types: temporal feature, perceptual feature, and cepstral feature. Most previous studies often use features from one domain or two domains, which cannot effectively classify 
+those frog species that share similar acoustic attributes in one or two domains. In this chapter, a novel fusion of temporal, perceptual, and cepstral features is proposed, so that those frog species share similar acoustic attributes in one or two domains can be successfully classified.
+An intensive analysis shows that our fused feature set consistently outperforms the state-of-the-art features for frog call classification using high SNR recordings.
 
 
-\item[(2)]	Propose a novel cepstral feature based on adaptive frequency scaled WPD to classify frog calls using both low and high SNR recordings (Chapter \ref{cha:cha5WaveletFeature}). 
+\item[(2)]	Propose a novel cepstral feature based on adaptive frequency scaled WPD to classify frog calls using both low and high SNR recordings (Chapter~\ref{cha:cha5WaveletFeature}). 
 \\
-Existing approaches have widely used cepstral features (MFCCs) for frog call classification, and have demonstrated high performance. However, cepstral features are also found to be very sensitive to the background noise. This thesis proposes a novel cepstral feature using adaptive frequency scaled WPD, and the scale is adaptively generated by applying k-means clustering to dominant frequencies of all the frog species to be classified. Compared to Mel-scale, the adaptive scale can better reflect the frequency distribution of those frog species to be classified. Therefore, cepstral features calculated from adaptive frequency scaled WPD  can capture more frequency information than Mel-scale.
-Experimental results demonstrate that the proposed cepstral feature outperforms existing cepstral features that have been used for animal call classification.
+Cepstral features (MFCCs) have been widely used for frog call classification, and have demonstrated high performance. However, cepstral features are found to be very sensitive to the background noise. This chapter proposes a novel cepstral feature using adaptive frequency scaled WPD. The scale is adaptively generated by applying k-means clustering to dominant frequencies of all the frog species to be classified. Compared to Mel-scale, the adaptive frequency scale can better reflect the frequency distribution of those frog species to be classified. Therefore, cepstral features calculated by adaptive frequency scaled WPD can capture more frequency information than Mel-scale.
+Experimental results demonstrate that our proposed cepstral feature outperforms existing cepstral features that have been used for animal call classification.
 
 \item[(3)]	Design a novel MIML framework to classify multiple simultaneously vocalising frog species in low SNR recordings (Chapter \ref{cha:cha6MIML}).
 \\
-One individual recording contain only one frog species is an assumption that widely existed in the previous studies, but most recordings collected using acoustic sensors contain multiple frog species. This thesis proposes to use MIML learning to classify multiple simultaneously vocalising frog species with AED. A novel frog syllable segmentation method using AED is proposed with limited annotated frog recordings. Compared to other AED methods, our proposed AED can achieve a better syllable segmentation results. With segmented syllables, frog call classification is realised using three MIML classifiers and low-level features extracted from segmented syllables. Experimental results show that the proposed MIML classification framework can achieve a better performance compared to the SISL classification.
+For frog call classification, almost all previous studies assume that one individual recording contain only one frog species. However, environmental recordings collected using acoustic sensors typically contain multiple frog species. This chapter proposes to use MIML learning to classify multiple simultaneously vocalising frog species with AED. A novel frog syllable segmentation method using AED is developed with limited annotated frog recordings. Compared to other AED methods, our proposed AED can achieve a better syllable segmentation results. After syllable segmentation, event-based features are independently computed from each syllable. Then, three MIML classifiers are used for classifying multiple simultaneously vocalising frog species in low SNR recordings. Compared to the non-informative classifier, our classification results for hamming loss is *** times better.
+
+
+ Experimental results show that the proposed MIML classification framework can achieve a better performance compared to the SISL classification.
 
 
 \item[(4)]	Design a novel ML framework to classify multiple simultaneously vocalising frog species in low SNR recordings (Chapter \ref{cha:cha7ML}).
 \\
-The weakness of the MIML classification framework is that the classification performance is highly affected by AED results. One solution is to prepare large volumes of annotated acoustic data and apply supervised learning algorithms for improving segmentation results. Another is to used a different framework without the need of syllable segmentation. This thesis examines the latter option and proposes a ML classification framework to classify multiple simultaneously vocalising frog species.
-A novel feature set using LPCs and multi-stage AWSCCs is proposed for the ML classification. Experimental results show that ML classification results outperform MIML classification results. 
+The weakness of the MIML classification framework is that the classification performance is highly affected by AED results. One solution is to prepare large volumes of annotated acoustic data and apply a supervised learning algorithm for syllable segmentation. Another is to use a different classification framework without the need of syllable segmentation. This chapter examines the latter option and proposes a ML classification framework to classify multiple simultaneously vocalising frog species in low SNR recordings. A feature combination of LPCs and AWSCCs is proposed for the ML classification. Experimental results show that ML classification can achieve similar performance with MIML classification. 
 
 %\item[(5)] Apply the designed ML framework to sampled frog recordings over three months. \ref{cha:cha8Application}).
 %\\
@@ -132,7 +133,7 @@ Multiple-label learning \\
 %============acknowledgement
 \begin{ack}
 First, I would like to express my sincere gratitude and thanks to Dr. Jinglan Zhang (principal supervisor), for giving me an opportunity to study in Australia. During the entirety of this PhD study, I have learnt so much from her about having passion for work, combined with high motivation, which will benefit me throughout my life. 
-I would also like to express my gratitude to Prof. Paul Roe (associate supervisor), for his consistent instructions and supports through the last three years.  
+I would also like to express my gratitude to Prof. Paul Roe (associate supervisor), for his consistent instructions and financial supports through the last three years.  
 
 I would also like to thank Dr. Michael Towsey (associate supervisor) for his provision of consistent guidance, discussions, and encouragement during my PhD study. Michael's attitude towards scientific research keeps motivating me go deeper into research.  
 
@@ -142,7 +143,7 @@ I want to thank Prof. Vinod Chandran (associate supervisor) for his support in w
 I would also like to express my gratitude to my family, especially my grandparents, parents and my wife. They have always supported my overseas study. Without their support, I could not give my full attention to PhD study and  the completion of this thesis. 
 My sincere thanks also go to all my friends for their love, attention and support to my PhD study. 
 
-Finally, I extend my thanks to the China Scholarship Council (CSC), Queensland University of Technology and the Wet Tropics Management Authority for their financial support. 
+Finally, I extend my thanks to the China Scholarship Council (CSC), Queensland University of Technology, and Wet Tropics Management Authority for their financial support. 
 
 \end{ack}
 
