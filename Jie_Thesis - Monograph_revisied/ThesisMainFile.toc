@@ -16,22 +16,21 @@
 \contentsline {subsection}{\numberline {2.2.1}Signal processing}{12}{subsection.2.2.1}
 \contentsline {subsection}{\numberline {2.2.2}Noise reduction}{13}{subsection.2.2.2}
 \contentsline {subsection}{\numberline {2.2.3}Syllable segmentation}{13}{subsection.2.2.3}
-\contentsline {section}{\numberline {2.3}Acoustic features for frog call classification}{14}{section.2.3}
+\contentsline {section}{\numberline {2.3}Acoustic features for frog call classification}{13}{section.2.3}
 \contentsline {subsection}{\numberline {2.3.1}Temporal and perceptual features for frog call classification}{14}{subsection.2.3.1}
 \contentsline {subsection}{\numberline {2.3.2}Time-frequency features for frog call classification}{15}{subsection.2.3.2}
-\contentsline {subsection}{\numberline {2.3.3}Cepstral features for frog call classification}{16}{subsection.2.3.3}
+\contentsline {subsection}{\numberline {2.3.3}Cepstral features for frog call classification}{15}{subsection.2.3.3}
 \contentsline {subsection}{\numberline {2.3.4}Other features for frog call classification}{16}{subsection.2.3.4}
 \contentsline {section}{\numberline {2.4}Classifiers}{16}{section.2.4}
 \contentsline {section}{\numberline {2.5}MIML or ML learning for bioacoustic signal classification}{17}{section.2.5}
-\contentsline {section}{\numberline {2.6}Experiment results of state-of-the-art frog call classification}{19}{section.2.6}
-\contentsline {subsection}{\numberline {2.6.1}Evaluation criteria}{19}{subsection.2.6.1}
+\contentsline {section}{\numberline {2.6}Experiment results of state-of-the-art frog call classification}{18}{section.2.6}
+\contentsline {subsection}{\numberline {2.6.1}Evaluation criteria}{18}{subsection.2.6.1}
 \contentsline {subsection}{\numberline {2.6.2}Previous experimental results}{19}{subsection.2.6.2}
-\contentsline {section}{\numberline {2.7}Research gap in current literature}{21}{section.2.7}
+\contentsline {section}{\numberline {2.7}Summary}{19}{section.2.7}
 \contentsline {subsection}{\numberline {2.7.1}Database}{21}{subsection.2.7.1}
 \contentsline {subsection}{\numberline {2.7.2}Signal pre-processing}{21}{subsection.2.7.2}
 \contentsline {subsection}{\numberline {2.7.3}Acoustic features}{22}{subsection.2.7.3}
 \contentsline {subsection}{\numberline {2.7.4}Classifiers}{22}{subsection.2.7.4}
-\contentsline {section}{\numberline {2.8}Summary}{23}{section.2.8}
 \contentsline {chapter}{\numberline {3}Frog call classification based on feature fusion and machine learning algorithms}{25}{chapter.3}
 \contentsline {section}{\numberline {3.1}Overview}{25}{section.3.1}
 \contentsline {section}{\numberline {3.2}Methods}{26}{section.3.2}
