@@ -17,14 +17,13 @@
 \contentsline {table}{\numberline {4.8}{\ignorespaces Classification accuracy (\%) for classifying different number of frog species with four feature sets.\relax }}{63}{table.caption.53}
 \contentsline {table}{\numberline {4.9}{\ignorespaces Classification accuracy using the JCU recordings.\relax }}{64}{table.caption.55}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Acoustic parameters}}{69}{table.caption.57}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Example predictions with MIML-RBF using AF.\relax }}{77}{table.caption.63}
-\contentsline {table}{\numberline {5.3}{\ignorespaces Effects of AED for the MIML classification results}}{79}{table.caption.64}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Example predictions with MIML-RBF using AF.\relax }}{77}{table.caption.62}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Effects of AED for the MIML classification results}}{78}{table.caption.63}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Comparison of different feature sets for ML classification\relax }}{85}{table.caption.65}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of different ML classifiers\relax }}{85}{table.caption.66}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Comparison of different feature sets for ML classification\relax }}{85}{table.caption.64}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of different ML classifiers\relax }}{85}{table.caption.65}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Waveform, spectrogram, and SNR of CD}}{91}{table.caption.67}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Waveform, spectrogram, and SNR of CD}}{91}{table.caption.66}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Waveform, spectrogram, and SNR of JCU recordings}}{93}{table.caption.69}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Waveform, spectrogram, and SNR of JCU recordings}}{93}{table.caption.68}

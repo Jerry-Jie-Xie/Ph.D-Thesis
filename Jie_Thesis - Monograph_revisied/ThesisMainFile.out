@@ -50,7 +50,7 @@
 \BOOKMARK [1][-]{section.4.1}{Overview}{chapter.4}% 50
 \BOOKMARK [1][-]{section.4.2}{Methods}{chapter.4}% 51
 \BOOKMARK [2][-]{subsection.4.2.1}{Sound recording and pre-processing}{section.4.2}% 52
-\BOOKMARK [2][-]{subsection.4.2.2}{Spectrogram analysis for validation set}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.2}{Spectrogram analysis for validation dataset}{section.4.2}% 53
 \BOOKMARK [2][-]{subsection.4.2.3}{Syllable segmentation}{section.4.2}% 54
 \BOOKMARK [2][-]{subsection.4.2.4}{Spectral peak track extraction}{section.4.2}% 55
 \BOOKMARK [2][-]{subsection.4.2.5}{Syllable SPT features}{section.4.2}% 56
@@ -84,15 +84,16 @@
 \BOOKMARK [1][-]{section.6.2}{Methods}{chapter.6}% 84
 \BOOKMARK [2][-]{subsection.6.2.1}{Acquisition of frog call recordings}{section.6.2}% 85
 \BOOKMARK [2][-]{subsection.6.2.2}{Feature extraction}{section.6.2}% 86
-\BOOKMARK [2][-]{subsection.6.2.3}{Multi-label classification}{section.6.2}% 87
-\BOOKMARK [1][-]{section.6.3}{Experiment results}{chapter.6}% 88
-\BOOKMARK [2][-]{subsection.6.3.1}{Evaluation metrics}{section.6.3}% 89
-\BOOKMARK [2][-]{subsection.6.3.2}{Classification results}{section.6.3}% 90
-\BOOKMARK [2][-]{subsection.6.3.3}{Comparison with MIML}{section.6.3}% 91
-\BOOKMARK [1][-]{section.6.4}{Summary and limitations}{chapter.6}% 92
-\BOOKMARK [0][-]{chapter.7}{Conclusion and future work}{}% 93
-\BOOKMARK [1][-]{section.7.1}{Summary of contributions}{chapter.7}% 94
-\BOOKMARK [1][-]{section.7.2}{Limitations and future work}{chapter.7}% 95
-\BOOKMARK [0][-]{appendix.H}{Waveform, spectrogram and SNR of frog species from David Stewart's CD}{}% 96
-\BOOKMARK [0][-]{appendix.I}{Waveform, spectrogram and SNR of six frog species from JCU recordings}{}% 97
-\BOOKMARK [0][-]{appendix*.71}{References}{}% 98
+\BOOKMARK [2][-]{subsection.6.2.3}{Feature construction}{section.6.2}% 87
+\BOOKMARK [2][-]{subsection.6.2.4}{Multi-label classification}{section.6.2}% 88
+\BOOKMARK [1][-]{section.6.3}{Experiment results}{chapter.6}% 89
+\BOOKMARK [2][-]{subsection.6.3.1}{Evaluation metrics}{section.6.3}% 90
+\BOOKMARK [2][-]{subsection.6.3.2}{Classification results}{section.6.3}% 91
+\BOOKMARK [2][-]{subsection.6.3.3}{Comparison with MIML}{section.6.3}% 92
+\BOOKMARK [1][-]{section.6.4}{Summary and limitations}{chapter.6}% 93
+\BOOKMARK [0][-]{chapter.7}{Conclusion and future work}{}% 94
+\BOOKMARK [1][-]{section.7.1}{Summary of contributions}{chapter.7}% 95
+\BOOKMARK [1][-]{section.7.2}{Limitations and future work}{chapter.7}% 96
+\BOOKMARK [0][-]{appendix.H}{Waveform, spectrogram and SNR of frog species from David Stewart's CD}{}% 97
+\BOOKMARK [0][-]{appendix.I}{Waveform, spectrogram and SNR of six frog species from JCU recordings}{}% 98
+\BOOKMARK [0][-]{appendix*.70}{References}{}% 99

@@ -55,6 +55,12 @@ because different frog species may exist in different temporal locations of one 
 \textit{PWSCCs}
 To calculate PWSCCs, constructing a suitable frequency scale for a WP tree based on the dominant frequency of each frog species is the first step, because different frog species tend to have different dominant frequencies \citep{Gingras2013}. In Chapter \ref{cha:cha5WaveletFeature}, k-means clustering was first applied to the extracted dominant frequencies of training data. Then, the frequency scale was built by sorting clustering centroids to construct the WP tree. In this chapter, the prior information for dominant frequency ($F_{0}$) (Table~\ref{tab:Ch7_parameters}) is directly used to construct the WP tree. Then, the steps for calculating PWSCCs are the same with Chapter~\ref{cha:cha5WaveletFeature}. Similar with MFCCs, PWSCCs are also calculated by dividing the recording into three equal parts. The final feature is named as \textit{multi-stage PWSCCs}.
 
+\subsection{Feature construction}
+
+Cepstral features are calculated of each frame. Then, two methods are used to construct the final feature set.
+
+
+
 
 \subsection{Multi-label classification} 
 Since many sampled recordings consist of calls from multiple frog species, frog call classification can be framed as a ML learning problem. However, previous studies have not adopted ML learning to classify frog calls. Therefore, it is worth investigating different ML learning algorithms for the classification of multiple vocalising frog species in low SNR recordings. for its scalability and flexibility \citep{read2011classifier}. The principle of the BR method is to solve a multi-label classification problem using multiple binary classifiers respectively. Similar to our previous work \citep{zhang2016using}, 

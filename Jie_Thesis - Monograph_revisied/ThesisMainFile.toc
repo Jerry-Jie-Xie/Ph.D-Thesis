@@ -44,12 +44,12 @@
 \contentsline {subsubsection}{Linear discriminant analysis}{35}{section*.25}
 \contentsline {subsubsection}{K-nearest neighbour}{36}{section*.26}
 \contentsline {subsubsection}{Support vector machines}{37}{section*.27}
-\contentsline {subsubsection}{Random forest}{38}{section*.28}
+\contentsline {subsubsection}{Random forest}{37}{section*.28}
 \contentsline {subsubsection}{Artificial neural network}{38}{section*.29}
 \contentsline {section}{\numberline {3.3}Experiment results}{39}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Effects of different feature sets}{39}{subsection.3.3.1}
-\contentsline {subsection}{\numberline {3.3.2}Effects of different machine learning techniques}{40}{subsection.3.3.2}
-\contentsline {subsection}{\numberline {3.3.3}Effects of different window size for MFCCs and perceptual features}{41}{subsection.3.3.3}
+\contentsline {subsection}{\numberline {3.3.2}Effects of different machine learning techniques}{39}{subsection.3.3.2}
+\contentsline {subsection}{\numberline {3.3.3}Effects of different window size for MFCCs and perceptual features}{40}{subsection.3.3.3}
 \contentsline {subsection}{\numberline {3.3.4}Effects of noise}{41}{subsection.3.3.4}
 \contentsline {section}{\numberline {3.4}Discussion}{42}{section.3.4}
 \contentsline {section}{\numberline {3.5}Summary and limitations}{43}{section.3.5}
@@ -57,7 +57,7 @@
 \contentsline {section}{\numberline {4.1}Overview}{45}{section.4.1}
 \contentsline {section}{\numberline {4.2}Methods}{46}{section.4.2}
 \contentsline {subsection}{\numberline {4.2.1}Sound recording and pre-processing}{46}{subsection.4.2.1}
-\contentsline {subsection}{\numberline {4.2.2}Spectrogram analysis for validation set}{47}{subsection.4.2.2}
+\contentsline {subsection}{\numberline {4.2.2}Spectrogram analysis for validation dataset}{47}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Syllable segmentation}{48}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Spectral peak track extraction}{49}{subsection.4.2.4}
 \contentsline {subsection}{\numberline {4.2.5}Syllable SPT features}{52}{subsection.4.2.5}
@@ -84,22 +84,23 @@
 \contentsline {subsection}{\numberline {5.3.1}Parameter tuning}{75}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Classification}{75}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}Results}{77}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Discussion}{78}{section.5.4}
+\contentsline {section}{\numberline {5.4}Discussion}{79}{section.5.4}
 \contentsline {section}{\numberline {5.5}Summary and limitations}{79}{section.5.5}
 \contentsline {chapter}{\numberline {6}Frog call classification based on multi-label learning}{81}{chapter.6}
 \contentsline {section}{\numberline {6.1}Overview}{81}{section.6.1}
 \contentsline {section}{\numberline {6.2}Methods}{82}{section.6.2}
 \contentsline {subsection}{\numberline {6.2.1}Acquisition of frog call recordings}{82}{subsection.6.2.1}
 \contentsline {subsection}{\numberline {6.2.2}Feature extraction}{82}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Multi-label classification}{83}{subsection.6.2.3}
-\contentsline {section}{\numberline {6.3}Experiment results}{83}{section.6.3}
+\contentsline {subsection}{\numberline {6.2.3}Feature construction}{83}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Multi-label classification}{83}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Experiment results}{84}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Evaluation metrics}{84}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Classification results}{84}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.2}Classification results}{85}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Comparison with MIML}{85}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Summary and limitations}{85}{section.6.4}
+\contentsline {section}{\numberline {6.4}Summary and limitations}{86}{section.6.4}
 \contentsline {chapter}{\numberline {7}Conclusion and future work}{87}{chapter.7}
 \contentsline {section}{\numberline {7.1}Summary of contributions}{87}{section.7.1}
 \contentsline {section}{\numberline {7.2}Limitations and future work}{89}{section.7.2}
 \contentsline {chapter}{\numberline {A}Waveform, spectrogram and SNR of frog species from David Stewart's CD}{91}{appendix.H}
 \contentsline {chapter}{\numberline {B}Waveform, spectrogram and SNR of six frog species from JCU recordings}{93}{appendix.I}
-\contentsline {chapter}{References}{102}{appendix*.71}
+\contentsline {chapter}{References}{102}{appendix*.70}
