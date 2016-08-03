@@ -4,7 +4,7 @@
 
 \textbf{Research problem}
 \\
-In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, each individual recording is assumed to have only one frog species. However, most environmental recordings collected by acoustic sensors often have multiple frog species and a low SNR.
+In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, each individual recording is assumed to contain only one frog species. However, most environmental recordings collected by acoustic sensors have multiple frog species and a low SNR.
 \\
 \textbf{Research sub-question}
 \\
@@ -14,16 +14,16 @@ How to classify multiple simultaneously vocalising frog species in low SNR recor
 \section{Overview}
 \label{sec:intro}
 
-This chapter proposes a method for the classification of multiple simultaneously vocalising frog species in low SNR recordings. In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, frog call classification is solved using a SISL framework, which cannot reflect the nature of automatically collected environmental recordings. Most environmental recordings have a low SNR and contain multiple simultaneously vocalising animals including frogs, birds, insects, and so on. This attribute makes MIML learning a natural fit for environmental recordings of frogs. Specifically, frog syllables in one audio clip (such as 10-second) are regarded as \textit{multiple instance}, and frog species included in that audio clip denotes \textit{multiple labels}. 
-First, AED is used to segment frog syllables in each audio clip.
-Then, acoustic features are extracted from each individual syllable. Lastly, three MIML classifiers are used for classifying each 10-second recording.
+This chapter proposes a method for the classification of multiple simultaneously vocalising frog species in low SNR recordings. In Chapters \ref{cha:cha4EnhancedFeature} and \ref{cha:cha5WaveletFeature}, frog call classification is solved using a SISL classification framework, which cannot reflect the nature of automatically collected environmental recordings. Most environmental recordings have a low SNR and contain multiple simultaneously vocalising animals including frogs, birds, insects, and so on. This attribute makes MIML learning a natural fit for studying environmental recordings. Specifically, frog syllables in one audio clip (such as 10-second) are regarded as \textit{multiple instance}, and frog species included in that audio clip denotes \textit{multiple labels}. 
+First, AED is used to segment frog syllables of each audio clip.
+Then, acoustic features are extracted from each segmented syllable. Lastly, three MIML classifiers are used for classifying each 10-second recording.
 
 
 %To evaluate our proposed MIML classification framework, a representative sample of 342 10-second recordings was derived from the database. The performance is evaluated based on the MIML learning measures. A validation dataset is constructed for parameter tuning, where each frog species has ten 10-second recordings.
 %Experimental results demonstrate that the proposed MIML classification framework can be successfully adopted to classify multiple simultaneously vocalising frog species in low SNR recordings.
 
 \section{Methods}
-Our MIML frog call classification system contains four modules: signal processing, acoustic event detection, feature
+Our MIML frog call classification framework contains four modules: signal processing, acoustic event detection, feature
 extraction, and classification (Figure~\ref{fig:flowchart}). Detailed description of each module is listed in the following sections. 
 
 \begin{figure}[htb!]
@@ -39,7 +39,7 @@ extraction, and classification (Figure~\ref{fig:flowchart}). Detailed descriptio
 
 All recordings were obtained from three sites in Queensland, Australia: \textit{Kiyomi dam}, \textit{Stony creek dam} and  \textit{BG creek dam}.
 A battery-powered acoustic sensor (stored in a weather proof metal box) with an external microphone is used for the data collection. Collected recordings were stored on 16 GB SD cards in 64 kbps MP3 mono format. 
-The recordings were collected from February, 2014 to April, 2014, because it is the breeding season in Queensland when male frogs make calls to attract females for the purpose of reproducing. The recordings started around sunset, finished around sunrise every day and have a duration of 12 hours. To evaluate our proposed MIML classification framework, a representative sample of 342 10-second recordings was derived from the database. All the 10-second recordings were manually labelled by an ecologist with eight frog species. The acoustic parameters of eight frog species averaged for three randomly selected syllables of each frog species are shown in Chapter~\ref{cha:cha5WaveletFeature} Table~\ref{tab:JCU}. 
+The recordings were collected from February, 2014 to April, 2014, because it is the breeding season in Queensland when male frogs make calls to attract females for the purpose of reproducing. Each recording starts around sunset, finishes around sunrise every day and has a duration of 12 hours. To evaluate our proposed MIML classification framework, a representative sample of 342 10-second recordings was prepared. The prepared recordings were manually labelled by an ecologist with eight frog species. Acoustic parameters of eight frog species averaged over three randomly selected syllables are shown in Table~\ref{tab:JCU} of Chapter~\ref{cha:cha5WaveletFeature} . 
 
 
 %\begin{table}[htb!]
@@ -69,8 +69,8 @@ The recordings were collected from February, 2014 to April, 2014, because it is 
 Each recording includes between one and six frog species. Following the prior work of \citep{briggs2012acoustic}, we assume that recordings without frog vocalisations can be filtered out during the segmentation process.
 
 \subsection{Signal processing}
-All the recordings were re-sampled at 16 kHz for generating a spectrogram using STFT. Specifically, each recording was divided into frames of 512 samples with 50\% frame overlap.
-A fast Fourier transform was then performed on each frame with a Hamming window, which yielded amplitude values for 256 frequency bins, each spanning 31.25 Hz. The final decibel values (S) were calculated as 
+Each recording was re-sampled at 16 kHz for generating a spectrogram using STFT. Specifically, each recording was divided into frames of 512 samples with 50\% frame overlap.
+A fast Fourier transform was performed on each frame with a Hamming window, which yielded amplitude values for 256 frequency bins, each spanning 31.25 Hz. The final decibel values (S) were calculated as 
 \begin{equation}
 S_{tf} = 20*log_{10}(A_{tf})
 \end{equation}
@@ -79,7 +79,7 @@ where $A$ denotes the amplitude value, $t=0,...,T-1$ and $f=0,...,F-1$ represent
 \subsection{Acoustic event detection for syllable segmentation}
 \label{Ch5:AEDmethod}
 
-The aim of AED is to detect a specified acoustic event in audio data. In this chapter, we use AED for frog syllable segmentation. Since all the recordings are collected from the field, there are many simultaneously vocalising frog species. Traditional methods for frog syllable segmentation are based on time domain information \citep{somervuo2004classification,huang2009frog}, which cannot address those low SNR recordings. Here, we modified the AED method developed by  \cite{towsey2012toolbox} for syllable segmentation. The detail of our AED method is described as follows.
+The aim of AED is to detect a specified acoustic event in audio data. In this chapter, we use AED for frog syllable segmentation. Since all recordings are collected from the field, there are many simultaneously vocalising frog species. Traditional methods for frog syllable segmentation are based on temporal information \citep{somervuo2004classification,huang2009frog}, which cannot address those low SNR recordings. Here, we modified the AED method developed by  \cite{towsey2012toolbox} for syllable segmentation. The detail of our AED method is described as follows.
 \\
 \textbf{Step 1:} Wiener filtering 
 \noindent
@@ -89,7 +89,7 @@ A 2-Dimensional Wiener filter is applied to the spectrogram image. A $5\times5$ 
 \textbf{Step 2:} Spectral subtraction
 \noindent 
 \\
-Wiener filtering can successfully remove the graininess, but some noises, such as wind, insect, motor engine that cover the whole recording, can not be addressed. Here, spectral subtraction is used to deal with those noises. 
+Wiener filtering can successfully remove the graininess, but some noises, such as wind, insect, motor engine that cover the whole recording, cannot be addressed. Here, spectral subtraction is used to deal with those noises (see Algorithm 2). 
 
 
 \begin{algorithm}
@@ -130,7 +130,7 @@ Wiener filtering can successfully remove the graininess, but some noises, such a
 \begin{equation}
 \phi_{b}^{2}(k)=w_{1}(k)w_{2}(k)[\mu_{1}(k)-\mu_{2}(k)]^{2}
 \end{equation}
-\noindent where $w_{1}(k)=\sum_{0}^{k}p(j)$ is calculated from the histogram as $k$, $p(j)=n(j)/N$ are the values of the normalised gray level histogram, $n(j)$ is the number of values in level $j$, $N$ is the total number of values over the whole spectrogram image, $\mu_{1}(k)=[\sum_{0}^{k}p(j)x(j)]/w_{1}$, $x(j)$ is the value at the center of the $j$th histogram bin. Then, the threshold, $T_{0}$, is calculated as
+\noindent where $w_{1}(k)=\sum_{0}^{k}p(j)$ is calculated from the histogram as $k$, $p(j)=n(j)/N$ are the values of the normalised gray level histogram, $n(j)$ is the number of values in level $j$, $N$ is the total number of values over the whole spectrogram image, $\mu_{1}(k)=[\sum_{0}^{k}p(j)x(j)]/w_{1}$, $x(j)$ is the value at the center of the $j$-th histogram bin. Then, the threshold, $T_{0}$, is calculated as
 
 \begin{equation}
 T_{0}= (\phi_{b1}^{2}(k) + \phi_{b2}^{2}(k)) / 2
@@ -138,7 +138,7 @@ T_{0}= (\phi_{b1}^{2}(k) + \phi_{b2}^{2}(k)) / 2
 
 
 \noindent \textbf{Step 4:} Events filtering using dominant frequency and event area \\
-Since not all detected events correspond to frog vocalisations, to further remove those events that are not from the listed frog species in section \ref{chap5:Materials}, dominant frequency ($F_{0}$) and area of the event ($Ar$) are used for filtering.
+Since not all detected events correspond to frog vocalisations, those events that are not from the listed frog species in Table~\ref{tab:JCU} of Chapter~\ref{chap5:Materials}, dominant frequency ($F_{0}$) and area of the event ($Ar$) are used for filtering.
 
 
 \begin{algorithm}
@@ -179,14 +179,14 @@ where $\theta$ is frequency range and set as 300 Hz.
 remove event $n$
 }
 } 
-where $Ar_{s}$ is set as 200 pixels, $\theta_{l}$ and $\theta_{h}$ are set as 300 Hz and 800 Hz, respectively. Because the area of LTE is smaller than $Ar_{s}$.
+where $Ar_{s}$ is set as 200 pixels, $\theta_{l}$ and $\theta_{h}$ are set as 300 Hz and 800 Hz, respectively. Because the area of \textit{LTE} is smaller than $Ar_{s}$.
 }
 \caption{Event filtering based on dominant frequency and event area}
 \end{algorithm}
 
 \noindent \textbf{Step 5:} Region growing
 \\
-A region growing algorithm is used to obtain the contour of the particular acoustic event \citep{mallawaarachchi2008spectrogram}. To get the accurate boundary of each acoustic event and improve the discrimination of extracted features, a 2-dimensional region growing algorithm is applied to obtain the accurate event shape within each segmented event. First, the point having the maximal intensity value within the event area is selected as the seed. Then, the neighbourhood pixels of the seed(s) above the threshold are located and assigned to the output image, and new added pixels are used as seeds for further processing. Finally, when all the pixels that satisfy the criteria are added to the output image, the recursive algorithm will stop and get the final results (Figure~\ref{fig:Ch6_AED}). Here, the threshold value is empirically set as 5 dB.
+A region growing algorithm is to obtain the contour of each segmented acoustic event \citep{mallawaarachchi2008spectrogram}. To get the accurate boundary of each acoustic event and improve the discrimination of extracted features, a 2-dimensional region growing algorithm is used to obtain the accurate event shape for each segmented event. First, the point with the maximal intensity value within the event area is selected as the seed. Then, the neighbourhood pixels of the seed(s) above the threshold are located and assigned to the output image, and new added pixels are used as seeds for further processing. Finally, when all the pixels that satisfy the criteria are added to the output image, the recursive algorithm will stop and get the final results (Figure~\ref{fig:Ch6_AED}). Here, the threshold value is empirically set as 5 dB.
 
 \begin{figure}[htb!]
 \centering
@@ -197,10 +197,8 @@ A region growing algorithm is used to obtain the contour of the particular acous
         \end{subfigure}
        ~
               \begin{subfigure}[b]{0.45\textwidth}
-                \includegraphics[width=\textwidth,height = 0.8 \textwidth]{image/Ch6/AEfinal.png}
-                
-        \end{subfigure}  
-     
+                \includegraphics[width=\textwidth,height = 0.8 \textwidth]{image/Ch6/AEfinal.png}                
+        \end{subfigure}     
 \caption[Acoustic event detection results]{Acoustic event detection results before (Left) and after (Right) event filtering based on dominant frequency. Here, blue rectangle denotes the time and frequency boundary of each detected event.}
         \label{fig:feature}
 \end{figure}
@@ -232,13 +230,13 @@ A region growing algorithm is used to obtain the contour of the particular acous
 
 
 \subsection{Feature extraction}
-To compute features for each segment, the mask and spectrogram will be first cropped to contain just one segment. Figure~\ref{fig:Ch6_AED}(c) and \ref{fig:Ch6_AED}(d) show a cropped image of the spectrogram and mask based on the highlighted segment.
+To compute features for each segment, the spectrogram and mask will be first cropped to contain just one segment. Figure~\ref{fig:Ch6_AED}(c) and \ref{fig:Ch6_AED}(d) show a cropped image of the spectrogram and mask based on the highlighted segment.
 To describe the segment features, notation will be used as follows:
-Let $M_{t,f}$ be the cropped, binary mask for a segment and let $\hat{S}_{t,f}$ be the cropped, original spectrogram. Note that $t$ ranges from 1 to the duration of the segment in frames, $T$.
+Let $M_{t,f}$ be the cropped, binary mask for a segment, and let $\bar{S}_{t,f}$ be the cropped, original spectrogram. Note that $t$ ranges from 1 to the duration of the segment in frames, $T$.
 
 
 
-Two feature sets are calculated to describe each event (syllable): mask descriptors and profile statistics \citep{briggs2012acoustic}. Here, we exclude \textit{histogram of orientation (HOG)} from our feature set, because the previous studies have already demonstrated its poor classification accuracy \citep{briggs2012acoustic, ruizmultiple2015}. 
+Two feature sets are calculated to describe each segment (syllable): mask descriptors and profile statistics \citep{briggs2012acoustic}. Here, we exclude \textit{histogram of orientation (HOG)} from our feature set for its poor classification performance in previous studies \citep{briggs2012acoustic, ruizmultiple2015}. 
 
 \noindent \textbf{Mask descriptors}
 \\
@@ -265,7 +263,7 @@ Mask descriptors for a segment are based on only the mask, and describe the shap
 \noindent \textbf{Profile statistics}
 \\
 Profile statistics are calculated based on statistical properties of the time and frequency profiles of each segment. 
-To compute the time or frequency file, the columns or rows of the spectrogram is first summed.
+To compute the time or frequency file, the columns or rows of the spectrogram are first summed.
 The time profile is $p_{t}(t) = \sum_{f}\hat{S}_{t,f}$ and the frequency profile is $p_{f}(f) = \sum_{t}\hat{S}_{t,f}$. The profiles are normalised to sum to 1, and are further interpreted as probability mass functions. The normalised profile densities are $\hat{p}_{t}$ and $\hat{p}_{f}$.
 Two features measure the uniformity of the densities according the Gini index are
 \\
@@ -273,7 +271,7 @@ Two features measure the uniformity of the densities according the Gini index ar
 \\
 (2) Time-gini = 1 - $\sum_{t}\hat{p}_{t}(t)^{2}$
 
-Several more features are calculated by computing the $k-th$ moments of the time and frequency profiles. Since different segments have different duration, all those features are calculated in a re-scaled coordinate system, where time is from 0 to 1 over the duration of the segment, and frequency is from 0 to 1.
+Several more features are calculated by computing the $k$-th moments of the time and frequency profiles. Since different segments have different durations, all those features are calculated in a re-scaled coordinate system, where time is from 0 to 1 over the duration of the segment, and frequency is from 0 to 1.
 \\
 (3) Freq-mean = $\mu_{f}$ = $\sum_{f=1}^{f_{max}}\hat{p}_{f}(f)(f/f_{max})$
 \\
@@ -312,13 +310,13 @@ All of the features used to describe the segment are concatenated to form a sing
 
 \subsection{Multiple-instance multiple-label classifiers}
 After feature extraction, three MIML algorithms are evaluated for the classification of multiple simultaneous vocalising frog species: MIML-SVM, MIML-RBF, and MIML-kNN. 
-These algorithms reduce the MIML problem to single-instance multiple-label problem by associating each bag with a bag-level feature, which aggregates information from the instances in the bag  \citep{briggs2012acoustic}. Each algorithm constructs a different bag-level feature, but all use some form of bag-level distance measure. Here, the maximal and average Hausdorff distances between two syllables are used by MIML-SVM and MIML-RBF, respectively. For MIML-kNN, the nearest neighbour is used to assign bag-level features. 
+These algorithms reduce the MIML problem to single-instance multiple-label problem by associating each bag (10-second recording) with a bag-level feature, which aggregates information from the instances in the bag  \citep{briggs2012acoustic}. Each algorithm constructs different bag-level features, but all use some form of bag-level distance measure. Here, the maximal and average Hausdorff distances between two syllables are used by MIML-SVM and MIML-RBF, respectively. For MIML-kNN, the nearest neighbour is used to assign bag-level features. 
 
 
 \section{Experiment results}
 
 \subsection{Parameter tuning}
-There are three modules, the parameters of which need to be discussed: signal processing, acoustic event detection, and classification. For signal processing, the window size and overlap are 512 samples and 50\%, respectively. During the process of acoustic event detection, four thresholds for event filtering need to be determined, which are small and large area threshold, and frequency boundary for events filtering. All those thresholds were determined empirically by applying various combinations of thresholds to the constructed validation dataset. For MIML-SVM classifiers, the parameters used are ($C,\gamma,r$) and set as (0.1, 0.6, 0.2) experimentally. For MIML-RBF, the parameters are ($ r, \mu$) and set as (0.1,0.6). For MIML-kNN, the number of references (k) and citers ($k^{'}$) are 10 and 20, respectively.
+There are three modules, the parameters of which need to be discussed: signal processing, acoustic event detection, and classification. For signal processing, the window size and overlap are 512 samples and 50\%, respectively. During the process of acoustic event detection, four thresholds for event filtering need to be determined, which are small and large area threshold, and frequency boundary for events filtering. All those thresholds were determined empirically by applying various combinations of thresholds to the constructed validation dataset. For MIML-SVM classifiers, the parameters used are ($C,\gamma,r$) and set as (0.1, 0.6, 0.2) experimentally. For MIML-RBF, the parameters are ($ r, \mu$) and set as (0.1,0.6). For MIML-kNN, the number of references (k) and citers ($k^{'}$) are 10 and 20, respectively. Note that the dataset used for parameter setting is excluded from the testing dataset.
  
 %Five measures including Hamming loss, rank loss, one-error, coverage, and micro-AUC are used to characterize the accuracy of each algorithm \cite{zhou2008miml, dimou2009empirical}. The definition of each measure can be found in \cite{briggs2012acoustic}
 
@@ -326,8 +324,8 @@ There are three modules, the parameters of which need to be discussed: signal pr
 \subsection{Classification}
 
 \label{ch6:eveluationMetric}
-In this chapter, all the algorithms were programmed in Matlab 2014b. Each MIML algorithm is evaluated with five-fold cross-validation on the collection of 342 species-labelled recordings. 
-Five evaluation rules are used for comparing the performance with the combination of three feature sets and three MIML algorithms: Hamming loss, Rank loss, One error, coverage, and  average precision \citep{Madjarov20123084, zhou2008miml}. The value range of all five evaluation rules is between 0 to 1. The definition of each evaluation rule is described as follows:
+In this chapter, all the algorithms are programmed in Matlab 2014b. Each MIML algorithm is evaluated with five-fold cross-validation on the collection of 342 species-labelled recordings. 
+Five evaluation metrics are used for comparing the performance with the combination of three feature sets and three MIML algorithms: Hamming loss, Rank loss, One error, coverage, and  average precision \citep{Madjarov20123084, zhou2008miml}. The value range of all five evaluation rules is between 0 to 1. The definition of each evaluation rule is described as follows:
 \\
 \textbf{(1)} Hamming loss is defined as the fraction of labels that are incorrectly predicted for an instance and the normalised Hamming loss which is normalised over instances is reported. This metric is defined as
 \begin{equation}
@@ -372,8 +370,8 @@ The values for hamming loss, rank loss, one-error, coverage, and average precisi
 
 \subsection{Results}
 
-The classification results is shown in Figure~\ref{fig:classificationResults}. To obtain a base line for hamming loss, a non-informative classifier is always considered to predict the empty set. The baseline of hamming loss is thus calculate as $m/c$, where $c$ is the number of frog species to be classified, $m$ is calculated as $(1/n)\sum_{i=1}^{n}|Y_{i}|$. Here, the value of baseline of hamming loss is 0.2209. It can be found that the hamming loss for MIML-RBF with AF is 1.99 times lower than non-informative. With a rank loss of 0.0817, MIML-RBF with AF is 6.12 times better than the non-informative classifier. A one error of 0.1286 means that if we only predict the highest scoring species in each recording, it will truly be present 87.14\% of th time. 
-The $positive/negative$ is defined as $1-hammingLoss$ and it is 88.64\% for MIML-RBF with AF. Compared with MIML-kNN and MIML-SVM,  MIML-RBF is found to achieve the best classification performance. For the three feature sets,  the hamming loss for AF is always better than PS and MD. 
+The classification results are shown in Figure~\ref{fig:classificationResults}. To obtain a base line for hamming loss, a non-informative classifier is always considered to predict the empty set. The baseline of hamming loss is thus calculate as $m/c$, where $c$ is the number of frog species to be classified, $m$ is calculated as $(1/n)\sum_{i=1}^{n}|Y_{i}|$. Here, the value of baseline of hamming loss is 0.3220. It can be found that the hamming loss for MIML-RBF with AF is 2.70 times better than the non-informative classifier. With a rank loss of 0.0831, MIML-RBF with AF is 6.01 times better than the non-informative classifier. A one error of 0.1438 means that if we only predict the highest scoring species in each recording, it will truly be present 85.62\% of the time. 
+The $positive/negative$ is defined as $1-hammingLoss$ and it is 88.08\% for MIML-RBF with AF. Compared with MIML-kNN and MIML-SVM,  MIML-RBF is found to achieve the best classification performance. For those three feature sets, the hamming loss for AF is always better than PS and MD. 
 
 
 
@@ -408,7 +406,7 @@ The $positive/negative$ is defined as $1-hammingLoss$ and it is 88.64\% for MIML
         \label{fig:classificationResults}
 \end{figure}
 
-To give a concrete view of predictions, the results of five randomly selected recordings using MIML-RBF are shown in Table~\ref{tab:prediction}. From the table, we can see that recordings of No.1 and No.3 are accurately predicted. 
+To give a concrete view of predictions, the results of five randomly selected recordings using MIML-RBF are shown in Table~\ref{tab:prediction}. From the table, we can see that recordings of No.4 are accurately predicted. Recordings of No.1, No.2, and No.3 are partially accurate. Recording of No.5 is wrongly predicted.
 
 \begin{table}[htb!]
 \centering
@@ -426,8 +424,8 @@ To give a concrete view of predictions, the results of five randomly selected re
 \end{table}
 
 
-In this study, all the features are directly calculate based on AED results.
-It is obviously that different AED results will lead to a different classification results. 
+In this chapter, all the features are directly calculate based on AED results.
+It is obviously that different AED results will lead to different classification results. 
 A comparison of three AED methods is shown in Table~\ref{Ch6:AEDCompare}, where features and classifier used are the same. The results show that our proposed AED method can achieve the best classification performance.
 
 
@@ -462,19 +460,35 @@ Fodor   & AF      & MIML-RBF   & 0.1777 $\pm$ 0.0131 & 2.5471 $\pm$ 0.1339 & 0.8
 
 
 \section{Discussion}
-Since most recordings used in this chapter contain multiple simultaneously vocalising frog species, the traditional SISL classification framework is no longer suitable. A novel framework for the classification of multiple simultaneous vocalising frog species in environmental recordings is proposed, which is adopted from \citep{briggs2012acoustic}, a study on birds. Differently from their work, this research designs a new AED method for frog syllable segmentation rather than using a supervised learning algorithm. It is because that there are few annotated frog recordings. Since all the features used in this study are calculated from the segmented syllables, the accuracy of the segmentation results directly affects the final classification performance. Compared with other two AED methods, extracting features based on our AED results can achieve a better classification performance.
+Since most recordings in this chapter contain multiple simultaneously vocalising frog species, the traditional SISL classification framework is no longer suitable. A novel framework for the classification of multiple simultaneous vocalising frog species in environmental recordings is proposed, which is adopted from \citep{briggs2012acoustic}, a study on birds. Different from their work, this research designs a new AED method for frog syllable segmentation rather than using a supervised learning algorithm. It is because that there are few annotated frog recordings. Since all the features in this study are calculated from the segmented syllables, the accuracy of the segmentation results directly affects the final classification performance. Compared with other two AED methods, extracting features based on our AED results can achieve better classification performance (Table~\ref{Ch6:AEDCompare}).
 
-We also compared MIML classification results with SISL classification results using a small dataset. For SISL classification, RF is used with averaged MFCCs. The MIML classification results are achieved using the combination of AF and MIML-RBF.
-The precision and recall for MIML and SISL classification are shown in Figure~\ref{}.
-
-
+We also investigate SISL classification results using a small dataset. Total 176 10-second recordings are annotated using eight frog species. On the average, each 10-second recording has 19.5 frog syllables. For SISL classification, MFCCs and AWSCCs are used as the features, respectively. The window size and overlap for calculating MFCCs and AWSCCs are 128 samples and 50\%, which are selected according to Chapter~\ref{cha:cha4EnhancedFeature}. RF is used as the classifier for its best classification performance in Chapter~\ref{cha:cha4EnhancedFeature}. 
+The MIML classification results are achieved using the combination of AF and MIML-RBF. The precision and recall for MIML and SISL classification are shown in Figure~\ref{fig:comparisonofSISLandMIML}. Generally, MIML can achieve better performance than SISL for all frog species except for \textit{RMA}. The high classification performance for \textit{RMA} using SISL might be that frequency structure of \textit{RMA} is much clearer than other frog species. Among all frog species, precision and recall are higher than 0.6 for MIML. Both precision and recall of \textit{LNA} and \textit{UMA} are 1, which are much higher than other frog species. The reasons for this high classification performance might be that the cepstral domain information of \textit{LNA} and \textit{UMA} can be better described by MFCCs. For SISL, \textit{LUA} and \textit{LFX} has the poorest classification performance. The reasons for poor classification accuracy of \textit{LFX} might be insufficient training instances and inappropriate features for this frog species. Compared with MFCCs, our propose AWSCCs in Chapter~\ref{cha:cha5WaveletFeature}.
 
 
+\begin{figure}[htb!]
+\centering
+        \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth]{image/Ch6/Precision_MIML_SISL_2.pdf}
+                %\caption{ }
+        \end{subfigure}
+       ~
+              \begin{subfigure}[b]{0.48\textwidth}
+                \includegraphics[width=\textwidth]{image/Ch6/Recall_MIML_SISL_2.pdf}                
+        \end{subfigure}     
+\caption[Comparisons between SISL and MIML]{Comparisons of precisions and recalls between SISL and MIML classification for eight frog species.}
+        \label{fig:comparisonofSISLandMIML}
+\end{figure}
 
 
 
+\begin{figure}[htb!] % Example image
+\center{\includegraphics[width=0.6\linewidth]{image/Ch6/FrogSyllable.pdf}}
+\caption[Distribution of syllable number for all frog species]{Distribution of syllable number for all frog species. The x-axis is the abbreviation of each frog species, and the corresponding scientific name can be found in Table \ref{tab:JCU}.}
+\label{fig:Ch6_syllable} 
+\end{figure}
 
 \section{Summary and limitations}
-In this chapter, we propose a novel MIML classification framework for classifying multiple simultaneously vocalising frog species in environmental recordings. To the best of this author's knowledge, this is the first study that focuses on frog recordings using MIML learning. Since multiple frog species tend to call simultaneously, MIML learning is a natural fit for dealing with those recordings than SISL learning. Individual frog syllables are first segmented using AED. Then, three feature sets, MD, PS, and AF, are calculated from each segmented syllable. Next, a bag generator is used to construct a bag-level feature for each 10-second recording with extracted features from each syllable. Finally, three MIML classifiers are used for the classification of frog calls. Current classification results are found to be highly affected by the syllable segmentation results, and the use of AED cannot accurately segment all the syllables. One solution is to prepare an annotated dataset and apply supervised learning algorithms for the segmentation task. Another is to use a different classification framework, which does not need the segmentation process, and we examine this option in the next chapter.
+In this chapter, we propose a novel MIML classification framework for classifying multiple simultaneously vocalising frog species in environmental recordings. To the best of this author's knowledge, this is the first study that focuses on frog recordings using MIML learning. Since multiple frog species tend to call simultaneously, MIML learning is a natural fit for dealing with those recordings than SISL learning. For frog syllable segmentation, our propose AED method can achieve the best performance, which can be reflected by the classification results. Compared with SISL classification, MIML classification can achieve higher classification performance. Current classification results are found to be highly affected by the syllable segmentation results, and the use of AED cannot accurately segment all the syllables. One solution is to prepare an annotated dataset and apply supervised learning algorithms for the segmentation task. Another is to use a different classification framework, which does not need the segmentation process, and we examine this option in the next chapter.
 
 

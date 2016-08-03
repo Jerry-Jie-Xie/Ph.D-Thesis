@@ -39,26 +39,63 @@ and minimise within-group (intra-specie) dissimilarity, is very important for ac
 
 
 
-\textit{LPCs}
-Linear prediction coding (LPCs) is often used to represent the spectral envelope of speech sounds \citep{itakura1975line}. LPCs coefficients can be calculated using a linear predictive filter.
+\textit{LPCs}: Linear prediction coding (LPCs) is often used to represent the spectral envelope of speech sounds \citep{itakura1975line}. LPCs coefficients can be calculated using a linear predictive filter.
 
 \begin{equation}
 X(n) = \sum_{i}^{p}a_{i}x(n-i)
 \end{equation}
 where $p$ is the order of the polynomial $a_{i}$. In the proposed study, the value of $p$ is set at 12 (12th-order polynomial), and 13 LPCs coefficients are calculated. For those frog vocalizations with different spectral envelopes, LPCs can obtain a high classification accuracy, and has been widely used in previous studies \cite{yuan2012frog, jaafarcomparative, jaafar2015effect}.
 
-\textit{MFCC}
-The description for calculating MFCCs can be found in Chapter~\ref{cha:cha4EnhancedFeature}. The difference is that each 10-second recording is first split into frames using a Hamming window. Then, all frames are divided into three equal parts, and MFCCs is averaged over each part. Finally, MFCCs of each part are concatenated into a final feature named as \textit{multi-stage MFCCs}. The reason for dividing the recording into three equal parts is to keep the information of different frog species in the same frequency band, 
-because different frog species may exist in different temporal locations of one 10-second recording. 
+\textit{MFCC}: The description for calculating MFCCs can be found in Chapter~\ref{cha:cha4EnhancedFeature}. 
 
 
-\textit{PWSCCs}
-To calculate PWSCCs, constructing a suitable frequency scale for a WP tree based on the dominant frequency of each frog species is the first step, because different frog species tend to have different dominant frequencies \citep{Gingras2013}. In Chapter \ref{cha:cha5WaveletFeature}, k-means clustering was first applied to the extracted dominant frequencies of training data. Then, the frequency scale was built by sorting clustering centroids to construct the WP tree. In this chapter, the prior information for dominant frequency ($F_{0}$) (Table~\ref{tab:Ch7_parameters}) is directly used to construct the WP tree. Then, the steps for calculating PWSCCs are the same with Chapter~\ref{cha:cha5WaveletFeature}. Similar with MFCCs, PWSCCs are also calculated by dividing the recording into three equal parts. The final feature is named as \textit{multi-stage PWSCCs}.
+\textit{PWSCCs}: To calculate PWSCCs, constructing a suitable frequency scale for a WP tree based on the dominant frequency of each frog species is the first step, because different frog species tend to have different dominant frequencies \citep{Gingras2013}. In Chapter \ref{cha:cha5WaveletFeature}, k-means clustering was first applied to the extracted dominant frequencies of training data. Then, the frequency scale was built by sorting clustering centroids to construct the WP tree. In this chapter, the prior information for dominant frequency ($F_{0}$) (Table~\ref{tab:Ch7_parameters}) is directly used to construct the WP tree. Then, the steps for calculating PWSCCs are the same with Chapter~\ref{cha:cha5WaveletFeature}. 
 
 \subsection{Feature construction}
 
-Cepstral features are calculated of each frame. Then, two methods are used to construct the final feature set.
+Cepstral features are calculated of each frame, where each windowed signal contains $n$ 12-dimensional feature vectors. Then, two methods are used to compute a reduced set of features. 
 
+The first method is to compute six statistical values for representing $n$ 12-dimensional MFCCs \citep{dufour2013clusterized}. Let MFCCs of each windowed signal be $V_{i}{i=1,...,12}$, $d$ and $D$ are used to represent the velocity and acceleration of $V$.
+
+
+then the six statistical values are calculated as follows:
+
+\begin{equation}
+f_{1} = \frac{\sum_{i=1}^{n}V_{i}}{n}
+\end{equation}
+
+ 
+ \begin{equation}
+ f_{2} = \sqrt{\frac{1}{n-1}\sum_{i=1}^{n}(V_{i}-f_{1})^{2}}
+ \end{equation}
+
+
+\begin{equation}
+f_{3} = \sqrt{\frac{1}{n-2}\sum_{i=1}^{n}(d-d_{i}^{2}}
+\end{equation}
+
+
+\begin{equation}
+f_{4} = \sqrt{\frac{1}{n-3}\sum_{i=1}^{n}(D-D_{i})^{2}}
+\end{equation}
+
+
+
+\begin{equation}
+f_{5} = \frac{\sum_{i=1}^{n-1}|d_{i}|}{n-1}
+\end{equation}
+
+
+\begin{equation}
+f_{6} = \frac{\sum_{i=1}^{n-2}D_{i}}{n-2}
+\end{equation}
+
+
+Finally, each windowed signal is represented as the concatenation of the six above features for the 12 cepstral coefficients, where the dimension of a new feature set is 72.
+
+
+The second method first clusters the 12 cepstral coefficients of all the windowed signal. Here, k-means clustering is used to reduce the preliminary dimension of all 12 cepstral coefficients. 
+Then, dynamic time warping is used to calculate the distance between each clustered cepstral coefficients. Finally, spectral clustering is applied for further dimension reduction and getting the final feature vector.
 
 
 

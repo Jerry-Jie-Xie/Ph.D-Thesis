@@ -136,8 +136,14 @@ Dorcas, M.~E., Price, S.~J., Walls, S.~C., and Barichivich, W.~J. (2009).
 \newblock {\em Amphibian ecology and conservation: a hand book of techniques.
   Oxford University Press, Oxford}, pages 281--298.
 
-\bibitem[Dufour et~al., 2013]{dufour2013multi}
-Dufour, O., Glotin, H., Artires, T., Bas, Y., and Giraudet, P. (2013).
+\bibitem[Dufour et~al., 2013a]{dufour2013clusterized}
+Dufour, O., Artieres, T., Glotin, H., and Giraudet, P. (2013a).
+\newblock Clusterized mel filter cepstral coefficients and support vector
+  machines for bird song identification.
+\newblock volume 951, pages 89--93.
+
+\bibitem[Dufour et~al., 2013b]{dufour2013multi}
+Dufour, O., Glotin, H., Artires, T., Bas, Y., and Giraudet, P. (2013b).
 \newblock Multi-instance multi-label acoustic classification of plurality of
   animals: birds, insects \& amphibian.
 \newblock {\em Workshop on Neural Information Processing Scaled for
@@ -346,12 +352,6 @@ Mutschmann, F. (2015).
 \newblock Chytridiomycosis in amphibians.
 \newblock {\em Journal of Exotic Pet Medicine}, 24(3):276--282.
 
-\bibitem[Noda et~al., 2016]{Noda2016100}
-Noda, J.~J., Travieso, C.~M., and S?nchez-Rodr?guez, D. (2016).
-\newblock Methodology for automatic bioacoustic classification of anurans based
-  on feature fusion.
-\newblock {\em Expert Systems with Applications}, 50:100 -- 106.
-
 \bibitem[Otsu, 1975]{otsu1975threshold}
 Otsu, N. (1975).
 \newblock A threshold selection method from gray-level histograms.
@@ -469,6 +469,14 @@ Xie, J., Towsey, M., Zhang, J., Dong, X., and Roe, P. (2015c).
 \newblock Application of image processing techniques for frog call
   classification.
 \newblock pages 4190--4194.
+
+\bibitem[Xie et~al., 2015d]{emr2015Xie}
+Xie, J., Towsey, M., Zhang, J., and Roe, P. (2015d).
+\newblock Image processing and classification procedure for the analysis of
+  australian frog vocalisations.
+\newblock In {\em Proceedings of the 2Nd International Workshop on
+  Environmental Multimedia Retrieval}, EMR '15, pages 15--20, Shanghai, China.
+  ACM.
 
 \bibitem[Xie et~al., 2016]{xie2016acoustic}
 Xie, J., Towsey, M., Zhang, J., and Roe, P. (2016).
