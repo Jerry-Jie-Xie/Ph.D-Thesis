@@ -15,28 +15,19 @@ How to reduce the effect of AED results and classify multiple simultaneously voc
 \label{sect:introduction}
 
 This chapter describes the research conducted for classifying multiple simultaneously vocalising frog species. In Chapter \ref{cha:cha6MIML}, acoustic features are calculated based on AED results, and the MIML classification performance is highly affected by the accuracy of AED results. To reduce the bias introduced by AED, this chapter uses global feature sets for classifying multiple frog species in low-SNR recordings.
-To be specific, three features are calculated: LPCs, MFCCs, and PWSCCs. Here, each feature is extracted from the whole 10-second recording without  syllable segmentation. Therefore, the classification process can be naturally framed as a ML learning framework.  
-
-
-
-  
-
+To be specific, three features are calculated: LPCs, MFCCs, and AWSCCs. Here, each feature is extracted from the whole 10-second recording without  syllable segmentation. Therefore, the classification process can be naturally framed as a ML learning framework.  
 
 
 \section{Methods}
 
 \subsection{Acquisition of frog call recordings}
 
-To evaluate the proposed algorithm, the same dataset with Chapter~\ref{cha:cha6MIML} is used. The description of this dataset can be found in Chapter~\ref{chap5:Materials}. We first manually inspect spectrograms of ten randomly selected call examples for each frog species. Two parameters, dominant frequency and syllable duration, are measured and averaged, as listed in Table~\ref{tab:Ch7_parameters}, which are used as prior information for subsequent analysis.
+To evaluate the proposed algorithm, the same dataset with Chapter~\ref{cha:cha6MIML} is used. The description of this dataset can be found in Chapter~\ref{chap5:Materials}. We first manually inspect spectrograms of ten randomly selected call examples for each frog species. Dominant frequency of each frog species as listed in Table~\ref{tab:JCU} is used as prior information for subsequent analysis.
 
 
 
 \subsection{Feature extraction}
-Extracting discriminating features, which maximise between-group (inter-specie) dissimilarity
-and minimise within-group (intra-specie) dissimilarity, is very important for achieving high classification performance \citep{huang2009frog, bedoya2014automatic}. In this chapter, three global features are calculated to classify multiple simultaneously vocalising frog species in each 10-second recording: LPCs, MFCCs, and PWSCCs. 
-
-
-
+Extracting discriminating features, which maximise between-group (inter-specie) dissimilarity and minimise within-group (intra-specie) dissimilarity, is very important for achieving high classification performance \citep{huang2009frog, bedoya2014automatic}. In this chapter, three global features are calculated to classify multiple simultaneously vocalising frog species in each 10-second recording: LPCs, MFCCs, and AWSCCs. 
 
 
 \textit{LPCs}: Linear prediction coding (LPCs) is often used to represent the spectral envelope of speech sounds \citep{itakura1975line}. LPCs coefficients can be calculated using a linear predictive filter.
@@ -49,7 +40,7 @@ where $p$ is the order of the polynomial $a_{i}$. In the proposed study, the val
 \textit{MFCC}: The description for calculating MFCCs can be found in Chapter~\ref{cha:cha4EnhancedFeature}. 
 
 
-\textit{PWSCCs}: To calculate PWSCCs, constructing a suitable frequency scale for a WP tree based on the dominant frequency of each frog species is the first step, because different frog species tend to have different dominant frequencies \citep{Gingras2013}. In Chapter \ref{cha:cha5WaveletFeature}, k-means clustering was first applied to the extracted dominant frequencies of training data. Then, the frequency scale was built by sorting clustering centroids to construct the WP tree. In this chapter, the prior information for dominant frequency ($F_{0}$) (Table~\ref{tab:Ch7_parameters}) is directly used to construct the WP tree. Then, the steps for calculating PWSCCs are the same with Chapter~\ref{cha:cha5WaveletFeature}. 
+\textit{AWSCCs}: To calculate AWSCCs, constructing a suitable frequency scale for a WP tree based on the dominant frequency of each frog species is the first step, because different frog species tend to have different dominant frequencies \citep{Gingras2013}. In Chapter \ref{cha:cha5WaveletFeature}, k-means clustering was first applied to the extracted dominant frequencies of training data. Then, the frequency scale was built by sorting clustering centroids to construct the WP tree. In this chapter, the prior information for dominant frequency ($F_{0}$) (Table~\ref{tab:Ch7_parameters}) is directly used to construct the WP tree. Then, the steps for calculating AWSCCs are the same with Chapter~\ref{cha:cha5WaveletFeature}. 
 
 \subsection{Feature construction}
 
@@ -95,7 +86,7 @@ Finally, each windowed signal is represented as the concatenation of the six abo
 
 
 The second method first clusters the 12 cepstral coefficients of all the windowed signal. Here, k-means clustering is used to reduce the preliminary dimension of all 12 cepstral coefficients. 
-Then, dynamic time warping is used to calculate the distance between each clustered cepstral coefficients. Finally, spectral clustering is applied for further dimension reduction and getting the final feature vector.
+Then, dynamic time warping is used to calculate the distance between each clustered cepstral coefficients. Finally, spectral clustering is applied for further dimension reduction and getting the final feature vector. In this chapter, the value of $k$ for k-means clustering is 50, and the number of clusters for spectral clustering is experimentally set at 2.
 
 
 
@@ -104,7 +95,7 @@ Since many sampled recordings consist of calls from multiple frog species, frog 
 three classic single-label learning algorithms: decision tree, and multi-layer perceptron, and random forest. Here, random forest is selected as the base classifier, since our previous study of classifying frog species has already demonstrated its comparable performance \citep{xie2016acoustic}. 
 
 \section{Experiment results}
-Each 10-second recording is divided into frames of 512 samples and 50\% frame overlap for STFT. For MFCCs and PWSCCs, window size and overlap are 512 samples and 50\%, the window function is a Hamming window. All algorithms were programmed in Matlab 2014b except ML learning, which was implemented in Meka 1.7.7\footnote[4]{http://meka.sourceforge.net/}. 
+Each 10-second recording is divided into frames of 512 samples and 50\% frame overlap for STFT. For MFCCs and AWSCCs, window size and overlap are 512 samples and 50\%, the window function is a Hamming window. All algorithms were programmed in Matlab 2014b except ML learning, which was implemented in Meka 1.7.7\footnote[4]{http://meka.sourceforge.net/}. 
 
 
 
@@ -146,7 +137,7 @@ The values for hamming loss, accuracy, and subset accuracy range from 0 to 1. Fo
 
 \subsection{Classification results}
 
-Experiment results are shown in Table~\ref{tab:classificationResults}. The combination of LPCs, MFCCs, and PWSCCs, can achieve the best performance with ML-MLP. 
+Experiment results are shown in Table~\ref{tab:classificationResults}. The combination of LPCs, MFCCs, and AWSCCs, can achieve the best performance with ML-random forest. 
 
 
 
@@ -157,11 +148,12 @@ Experiment results are shown in Table~\ref{tab:classificationResults}. The combi
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lllll}
 \hline\hline
-Feature set           & Classifier                             & Hamming loss & Accuracy    & Subset accuracy \\ \hline
-MFCCs                 & \multirow{4}{*}{Multilayer Perceptron} & 0.155 $\pm$ 0.019  & 0.613 $\pm$ 0.059 & 0.292 $\pm$ 0.071     \\ \cline{1-1} \cline{3-5} 
-PWSCCs                &                                        & 0.143 $\pm$ 0.013  & 0.661 $\pm$ 0.013 & 0.374 $\pm$ 0.017     \\ \cline{1-1} \cline{3-5} 
-MFCCs + PWSCCs        &                                        & 0.125 $\pm$ 0.007  & 0.702 $\pm$ 0.029 & 0.403 $\pm$ 0.051     \\ \cline{1-1} \cline{3-5} 
-MFCCs + PWSCCs + LPCs &                                        & 0.111 $\pm$ 0.009  & 0.727 $\pm$ 0.017 & 0.444 $\pm$ 0.028     \\ \hline\hline
+Feature set           & Base Classifier                             & Hamming loss & Accuracy    & Subset accuracy \\ \hline
+MFCCs(1)                 & \multirow{5}{*}{Random forest} & 0.143 $\pm$ 0.015  & 0.64 $\pm$ 0.035 & 0.354 $\pm$ 0.052     \\ \cline{1-1} \cline{3-5} 
+MFCCs(2)                &            & 0.139 $\pm$ 0.01  & 0.659 $\pm$ 0.019 & 0.362 $\pm$ 0.036     \\ \cline{1-1} \cline{3-5} 
+AWSCCs(1)        &                                        & 0.13 $\pm$ 0.011  & 0.656 $\pm$ 0.009 & 0.371 $\pm$ 0.038     \\ \cline{1-1} \cline{3-5} 
+AWSCCs(2) &                                        & 0.138 $\pm$ 0.012  & 0.662 $\pm$ 0.01 & 0.38 $\pm$ 0.031     \\ \cline{1-1} \cline{3-5} 
+AWSCCs(1) + LPCs &                                        & \textbf{0.117 $\pm$ 0.011}  & \textbf{0.694 $\pm$ 0.027} & \textbf{0.424 $\pm$ 0.027}     \\ \hline\hline
 \end{tabular}
 }
 \end{table}
@@ -176,10 +168,10 @@ MFCCs + PWSCCs + LPCs &                                        & 0.111 $\pm$ 0.0
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lllll}
 \hline\hline
-Feature set           & Classifier            & Hamming loss & Accuracy    & Subset accuracy \\ \hline
-MFCCs + PWSCCs + LPCs & ML-kNN                   & 0.137 $\pm$ 0.013  & 0.698 $\pm$ 0.027 & 0.397 $\pm$ 0.066     \\ 
-MFCCs + PWSCCs + LPCs & ML-Decision Tree         & 0.155 $\pm$ 0.011  & 0.608 $\pm$ 0.037 & 0.263 $\pm$ 0.049     \\ 
-MFCCs + PWSCCs + LPCs & ML-Multilayer Perceptron & 0.111 $\pm$ 0.009  & 0.727 $\pm$ 0.017 & 0.444 $\pm$ 0.028     \\ \hline\hline
+Feature set           & Base classifier            & Hamming loss & Accuracy    & Subset accuracy \\ \hline
+AWSCCs(1) + LPCs & ML-kNN                   & 0.139 $\pm$ 0.023  & 0.679 $\pm$ 0.039 & 0.362 $\pm$ 0.065     \\ 
+AWSCCs(1) + LPCs & ML-Decision Tree         & 0.171 $\pm$ 0.012  & 0.593 $\pm$ 0.018 & 0.272 $\pm$ 0.036     \\ 
+AWSCCs(1) + LPCs & ML-Random forest & 0.117 $\pm$ 0.011  & 0.694 $\pm$ 0.027 & 0.424 $\pm$ 0.027     \\ \hline\hline
 \end{tabular}
 }
 \end{table}
@@ -188,21 +180,14 @@ MFCCs + PWSCCs + LPCs & ML-Multilayer Perceptron & 0.111 $\pm$ 0.009  & 0.727 $\
 
 
 \subsection{Comparison with MIML}
-In this chapter, ML learning is used to classify frog calls without syllable segmentation. Compared with the MIML learning (Figure~\ref{fig:classificationResults} in Chapter~\ref{cha:cha6MIML}), the ML classification has a slightly better classification performance. For ML classification, LPCs, MFCCs, and PWSCCs are combined for the classification. MFCCs and PWSCCs are calculated by averaging cepstral features in the temporal direction. Although this process will compress the information in the temporal direction, the information of the cepstral domain is obtained. Since most frog species tend to continuously make calls, the compression of the temporal information will not greatly affect the discriminability of the ceptral features.
+In this chapter, ML learning is used to classify frog calls without syllable segmentation. Compared with the MIML learning (Figure~\ref{fig:classificationResults} in Chapter~\ref{cha:cha6MIML}), the ML classification has a slightly better classification performance. For ML classification, LPCs, MFCCs, and AWSCCs are combined for the classification. MFCCs and AWSCCs are calculated by averaging cepstral features in the temporal direction. Although this process will compress the information in the temporal direction, the information of the cepstral domain is obtained. Since most frog species tend to continuously make calls, the compression of the temporal information will not greatly affect the discriminability of the ceptral features.
 LPCs are added to get the temporal information. In contrast, features used for MIML classification are calculated from each segmented syllable. However, current AED often cannot accurately segment frog calls with low energies, which greatly affects the classification performance.
 
 
-
-
 \section{Summary and limitations}
-In this chapter, ML learning is used to classify multiple simultaneously vocalising frog species in low SNR recordings. Three global feature are combined together for the classification: LPCs, MFCCs, and PWSCCs. For the ML classification, three classifiers are compared: ML-kNN, ML-DT, and ML-MLP. ML-MLP can achieve the best classification performance over ML-kNN and ML-DT.
+In this chapter, ML learning is used to classify multiple simultaneously vocalising frog species in low SNR recordings. A combination of AWSCCs(1) and LPCs can achieve the best classification performance, which is similar with MIML classification results. To construct the final feature set, a novel method is proposed based on spectral clustering. Although the classification performance is similar with the first method, the feature dimension is greatly decreased from 72 to 24. Compared to MIML learning, ML learning does not need to segment frog syllables, which can increase the robustness of the classification results. Compared to other classifiers, ML-random forest can achieve the best classification performance with a hamming loss of 0.117. 
 
 
 
-
-
-
-%Acoustic sensors are more widely used to monitor frog calling activity and species richness than the traditional field survey method. However, the use of acoustic sensors generates large volumes of audio data, which makes it necessary to develop automated methods. This paper proposes a novel method for detecting frog calling activity and species richness based on AED and ML learning. Specifically,
-%AED is the first step to calculate frog calling activity. Meanwhile, those 10-second recordings without frog calls are filtered out. For those recordings with frog calls, ML learning is further used for estimating frog species richness with multi-stage PWSCCs and LPCs. Finally, statistical analysis is utilised to reflect the relationship between frog calling activity/species richness with weather variables (mean temperature and rainfall). Experimental results show that our proposed method can accurately estimate frog calling activity/species richness and reflect their relationship with weather variables. Future work will focus on a wider frog call database, including a larger number of frog species, and frog calls collected over a longer period.
 
 

@@ -9,7 +9,7 @@
 \contentsline {section}{\numberline {1.2}Scope of PhD}{2}{section.1.2}
 \contentsline {section}{\numberline {1.3}Thesis structure}{3}{section.1.3}
 \contentsline {section}{\numberline {1.4}Original contributions}{5}{section.1.4}
-\contentsline {section}{\numberline {1.5}Publications}{6}{section.1.5}
+\contentsline {section}{\numberline {1.5}Publications}{7}{section.1.5}
 \contentsline {chapter}{\numberline {2}An overview of frog call classification}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Overview}{11}{section.2.1}
 \contentsline {section}{\numberline {2.2}Signal pre-processing}{11}{section.2.2}
@@ -96,7 +96,7 @@
 \contentsline {section}{\numberline {6.3}Experiment results}{84}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Evaluation metrics}{84}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Classification results}{85}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Comparison with MIML}{86}{subsection.6.3.3}
+\contentsline {subsection}{\numberline {6.3.3}Comparison with MIML}{85}{subsection.6.3.3}
 \contentsline {section}{\numberline {6.4}Summary and limitations}{86}{section.6.4}
 \contentsline {chapter}{\numberline {7}Conclusion and future work}{87}{chapter.7}
 \contentsline {section}{\numberline {7.1}Summary of contributions}{87}{section.7.1}
