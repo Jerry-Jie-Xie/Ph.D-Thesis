@@ -3,7 +3,7 @@
 \chapter[Literature review]{An overview of frog call classification}
 \label{cha:cha2LiteratureReview}
 
-This chapter reviews the extant literature on frog call classification using machine learning algorithms. To the best of our knowledge, no previous studies focus on frog call classification using MIML or ML learning. Therefore, this chapter will mainly review the SISL  classification of frog calls. For MIML and ML learning, some prior work on bird call classification is reviewed. This review mainly aims to give a quantitative and detailed analysis of related techniques for frog call classification. 
+This chapter reviews the extant literature on frog call classification using machine learning algorithms. To the best of our knowledge, no previous studies focus on frog call classification using MIML or ML learning. Therefore, this chapter will mainly review the SISL learning for frog call classification. For MIML and ML learning, some prior work on bird call classification is reviewed. This review mainly aims to give a quantitative and detailed analysis of related techniques for frog call classification. 
 Then, several major challenges that have not been addressed in prior work are identified, and hence the advances in this thesis are necessary and significant. Detailed information of each part will be described in following sub-section.
 
 \section{Overview}
@@ -54,7 +54,7 @@ Three parts play important roles in the performance of frog call classification:
 \label{pre-processing}
 
 %Frog recordings are often collected using a battery-powered acoustic sensor (stored in a weather proof metal box) with an external microphone. After signal acquisition, signal preprocessing is the first step for a frog call classification system.
-Signal pre-processing often contains signal processing, noise reduction, and syllable segmentation. 
+Signal pre-processing contains signal processing, noise reduction, and syllable segmentation. 
 
 
 \subsection{Signal processing}
@@ -90,8 +90,7 @@ where $X(k)$ is the frequency domain signal (spectrum) and denotes each frame of
 
 \subsection{Noise reduction}
 Noise reduction is an optional process for frog call classification. 
-\cite{Huang20141} applied a de-noise filter for noise reduction. A wavelet threshold function in the one-dimensional signal was used as the filter kernel function.
-\cite{bedoya2014automatic} introduced a spectral noise gating method for noise reduction. Specifically, the selected frequency band spectrum of the frogs' call to be detected was estimated and suppressed. Although the aforementioned noise reduction methods can reduce the background noise, some of the desired signals will be suppressed. Noise reduction are thus selectively used based on the SNR of acoustic data and the research problem.
+\cite{Huang20141} applied a de-noise filter for noise reduction. A wavelet threshold function in the one-dimensional signal was used as the filter kernel function. \cite{bedoya2014automatic} introduced a spectral noise gating method for noise reduction. Specifically, the selected frequency band spectrum of the frogs' call to be detected was estimated and suppressed. Although the aforementioned noise reduction methods can reduce the background noise, some of the desired signals will be suppressed. Noise reduction are thus selectively used based on the SNR of acoustic data and the research problem.
 
 
 
@@ -153,7 +152,7 @@ For frog call classification, one-dimensional recording waveform is often transf
 \subsection{Cepstral features for frog call classification}
 
 Cepstral features (MFCCs) are popular for frog call classification. 
- \cite{jaafarcomparative} introduced MFCCs and LPCs as features. Then kNN and SVM were used as classifiers for frog call identification. \cite{yuan2012frog} also used MFCCs and LPCs as features. Then kNN was used as the classifier for frog sound identification.
+ \cite{jaafarcomparative} introduced MFCCs and LPCs as features. Then kNN and SVM were used as classifiers for frog call identification. \cite{yuan2013frog} also used MFCCs and LPCs as features. Then kNN was used as the classifier for frog sound identification.
 \cite{lee2006automatic} used the averaged MFCCs and LDA for the automatic recognition of animal sounds. \cite{bedoya2014automatic} combined MFCCs and LAMDA for frog call recognition. \cite{vaca2010using} proposed a method to identify animal species, which consisted of MFCCs, PCA and kNN. \cite{jaafar2013mfcc, tanintelligent2014} published three papers about frog call classification using MFCCs, $\Delta$ MFCC and $\Delta \Delta$ MFCC calculated as features. Then kNN and SVM were used for classification. \cite{feature2012Colona} introduced MFCCs for classifying anurans with kNN. 
 
 
@@ -179,7 +178,7 @@ Besides temporal features, perceptual features, time-frequency features, and cep
 
 \section{Classifiers}
 \label{classifiers}
-For frog call classification, numerous pattern recognition methods have been used to construct the classifier, such as Bayesian classifier \citep{Brandes2006}, kNN \citep{ huang2008realization,huang2009frog, han2011acoustic, dayou2011classification, jaafar2013mfcc, Gingras2013, jaafar2013mfcc,jaafarcomparative, yuan2012frog, vaca2010using, feature2012Colona}, SVM \citep{huang2008realization,acevedo2009automated, huang2009frog, tanintelligent2014, Gingras2013,jaafarcomparative}, HMM \citep{brandes2008feature}, GMM \citep{huang2008realization, Gingras2013}, NN \citep{Huang20141, yen2002automatic}, DT \citep{grigg1996monitoring, acevedo2009automated}, one-way multivariate ANOVA \citep{camacho2013automatic}, and LDA \citep{acevedo2009automated,lee2006automatic}. Besides classifiers, other methods for classifying frog species included those based on the similarity measure \citep{croker2012using, dang2008lightweight, chen2012automatic} and those based on the clustering technique \citep{colombia2009frogs, wei2012distributed, bedoya2014automatic}. The summary of classifiers for frog call classification is listed in Table~\ref{tab:classifierscomp}.
+For frog call classification, numerous pattern recognition methods have been used to construct the classifier, such as Bayesian classifier \citep{Brandes2006}, kNN \citep{ huang2008realization,huang2009frog, han2011acoustic, dayou2011classification, jaafar2013mfcc, Gingras2013, jaafar2013mfcc,jaafarcomparative, yuan2013frog, vaca2010using, feature2012Colona}, SVM \citep{huang2008realization,acevedo2009automated, huang2009frog, tanintelligent2014, Gingras2013,jaafarcomparative}, HMM \citep{brandes2008feature}, GMM \citep{huang2008realization, Gingras2013}, NN \citep{Huang20141, yen2002automatic}, DT \citep{grigg1996monitoring, acevedo2009automated}, one-way multivariate ANOVA \citep{camacho2013automatic}, and LDA \citep{acevedo2009automated,lee2006automatic}. Besides classifiers, other methods for classifying frog species included those based on the similarity measure \citep{croker2012using, dang2008lightweight, chen2012automatic} and those based on the clustering technique \citep{colombia2009frogs, wei2012distributed, bedoya2014automatic}. The summary of classifiers for frog call classification is listed in Table~\ref{tab:classifierscomp}.
 kNN is the most commonly used classifier for its simplicity and easy application. However, kNN is sensitive to the local structure of the data, as well as to the distance and distance function. Therefore, kNN is often run multiple times based on different initial points. 
 SVM is another widely used classifier for its good generalisation ability. However, the performance of SVM is quite sensitive to the selection of the regularisation and kernel parameters, and it is possible to over-fit when tuning these hyper-parameters. Since selecting suitable parameters for SVM is very important, most previous studies conducted the parameter setting by grid search  \citep{hsu2003practical}.
 
@@ -201,7 +200,7 @@ Reference                         & Classifier             & Reference          
 \citet{jaafar2013mfcc}          & K-nearest neighbour    & \citet{huang2008realization} & Gaussian mixture model       \\ 
 \citet{jaafarcomparative}       & K-nearest neighbour    & \citet{Gingras2013}          & Gaussian mixture model       \\ 
 \citet{yuan2013frog}            & K-nearest neighbour    & \citet{Huang20141}           & Neural networks              \\ 
-\citet{jaafar2013}           & K-nearest neighbour    & \citet{yen2002automatic}     & Neural networks              \\ 
+\citet{jaafar2013automatic}           & K-nearest neighbour    & \citet{yen2002automatic}     & Neural networks              \\ 
 \citet{Xie1504:Acoustic}        & K-nearest neighbour    & \citet{grigg1996monitoring}  & Decision tree                \\ 
 \citet{emr2015Xie}              & K-nearest neighbour    & \citet{acevedo2009automated} & Decision tree                \\ 
 \citet{jie2015escience}         & K-nearest neighbour    & \citet{camacho2013automatic} & One-way multivariate ANOVA   \\ 
@@ -218,7 +217,7 @@ For MIML learning, \citet{briggs2012acoustic} introduced the MIML classifiers fo
 \citet{dufour2013multi} used MFCCs and three MIML classifiers to classify birds. To be specific, MFCCs were first calculated for each frame. Then two new feature vectors were computed to represent longer segments.
 Lastly, three MIML classifiers were experimentally evaluated: MIML-RBF, MIML-kNN, and M3MIML (Maximum Margin Method for Multi-instance Multi-label Learning). 
 
-For ML learning, several papers have been published in the Neural Information Processing Scaled for Bioacoustics (NIPS4B challenge), which classified birds, insects, and amphibians recordings, followed by pre-processing and segmentation, feature extraction, feature selection, and classification \citep{lasseck2013bird, stowell2013feature, mencia2013learning, massaronensemble, chen2013novel}. \citet{lasseck2013bird} first processed the recordings via the application of STFT, noise reduction and segmentation. Then, file-statistics, segment-statistics and segment-probabilities were calculated as  features. Finally, an ensemble of randomised decision trees was used for the classification of each sound class. \citet{stowell2013feature} used either MFCC statistics (52 dimensions), chirplet histograms (up to 20,000 dimensions), or both, as  features. Then, RF was used for ML classification. \citep{mencia2013learning} proposed a new feature extraction method via an unsupervised generation of an aleatory number of features, which included random patching, a de-noising auto-encoder unit and subsequent convolution. For the classification, a pairwise ensemble of SVMs, random decision trees and a single layer NN were used. \citet{massaronensemble} described an approach that involved building an ensemble of generalised linear models and a classification model by hinge loss and program based on stochastic gradient descent optimisation, and boosted trees ensembles. 
+For ML learning, several papers have been published in the Neural Information Processing Scaled for Bioacoustics (NIPS4B challenge), which classified birds, insects, and amphibians recordings, followed by pre-processing and segmentation, feature extraction, feature selection, and classification \citep{lasseck2013bird, stowell2013feature, mencia2013learning, massaronensemble, chen2013novel}. \citet{lasseck2013bird} first processed the recordings via the application of STFT, noise reduction and segmentation. Then, file-statistics, segment-statistics and segment-probabilities were calculated as  features. Finally, an ensemble of randomised decision trees was used for the classification of each sound class. \citet{stowell2013feature} used either MFCC statistics (52 dimensions), chirplet histograms (up to 20,000 dimensions), or both, as  features. Then, RF was used for ML classification. \citet{mencia2013learning} proposed a new feature extraction method via an unsupervised generation of an aleatory number of features, which included random patching, a de-noising auto-encoder unit and subsequent convolution. For the classification, a pairwise ensemble of SVMs, random decision trees and a single layer NN were used. \citet{massaronensemble} described an approach that involved building an ensemble of generalised linear models and a classification model by hinge loss and program based on stochastic gradient descent optimisation, and boosted trees ensembles. 
 \citet{chen2013novel} first calculated prominent features from windowed MFCCs, and leveraged them to build an ensemble classifier which was a blend of different classifiers (Gradient Boosting Tree models, RF, Lasso and elastic-net regularized generalised linear model).
 
 
@@ -328,7 +327,7 @@ and Kulim, Kedah, Malaysia (unavailable)
 
 10 frog species with 250 syllables   &       Averaged classification accuracy of 98.8\%   &  \citet{jaafarcomparative} & \begin{tabular}[c]{@{}l@{}} Internet database (http://learning.froghome.org/) \\ and IBM,USM (http://www.frogwatch.org.au/?action=animal.list) (available) \end{tabular}  \\ 
 
-12 frog species with 291 syllables &   Averaged classification accuracy of 97\%   & \citet{jaafar2013}  & Recorded from locations around Baling
+12 frog species with 291 syllables &   Averaged classification accuracy of 97\%   & \citet{jaafar2013automatic}  & Recorded from locations around Baling
 and Kulim, Kedah, Malaysia (unavailable)
 \\  
 
@@ -376,7 +375,7 @@ Currently, STFT is the most widely used technique for frog call classification. 
 
 Noise reduction is an optional processing step for frog call classification. For some databases used as shown in Table~\ref{tab:classificationPerformance}, frog recordings have a high SNR, where noise reduction is unnecessary. However, when studying recordings of low SNR, noise reduction is essential for improving the classification performance \citep{bedoya2014automatic, Huang20141}. After noise reduction, both the accuracy of syllable segmentation and feature extraction can be relatively improved.
 
-Frog syllable segmentation based on energy and zero-crossing rate cannot address low SNR recordings. Meanwhile, this method cannot segment frog syllables in low SNR recordings with multiple frog species. Recent use of unsupervised learning algorithms opens a path for segmenting frog syllables in low SNR recordings with multiple frog species. However, like other unsupervised algorithms, this method has a disadvantage that not all segmented syllables are frog vocalisations \citep{potamitis2015unsupervised}. \citep{briggs2012acoustic} used a supervised RF for bird call segmentation. However, this method required lots of tagged acoustic data to train the classifier.
+Frog syllable segmentation based on energy and zero-crossing rate cannot address low SNR recordings. Meanwhile, this method cannot segment frog syllables in low SNR recordings with multiple frog species. Recent use of unsupervised learning algorithms opens a path for segmenting frog syllables in low SNR recordings with multiple frog species. However, like other unsupervised algorithms, this method has a disadvantage that not all segmented syllables are frog vocalisations \citep{potamitis2015unsupervised}. \citet{briggs2012acoustic} used a supervised RF for bird call segmentation. However, this method required lots of tagged acoustic data to train the classifier.
 
 For syllable segmentation, temporal features are more sensitive to  the background noise than perceptual features, because different frequency components can be separated by transforming the signal from temporal domain to perceptual domain. However, temporal features cannot segment  frog syllables in low SNR recordings with multiple frog species, because temporal features have no ability to separate different frequency components. Compared to temporal features, the use of amplitude-frequency information provides a robust method to segment low SNR recordings. 
 
@@ -394,7 +393,7 @@ Almost all previous studies assume that each recording has only one frog species
 
 
 
-In the following chapters, we aims to address the identified research gap. Four experiments are designed and organised in the manner outlined in Figure.~\ref{fig:mainchapters}.
+In the following chapters, we aims to address the identified research gap. Four experiments are designed and organised in the manner outlined in Figure~\ref{fig:mainchapters}.
 
 
 \begin{figure}[htb!]

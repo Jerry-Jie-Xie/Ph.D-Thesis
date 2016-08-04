@@ -38,7 +38,7 @@ Our frog call classification system contains six modules (Figure~ \ref{fig:Ch4_f
 
 
 \subsection{Data description}
-In this study, twenty-four frog species, which are widespread in Queensland, Australia, are selected for experiments (Table~\ref{tab:Ch4_frogName}). 
+In this chapter, twenty-four frog species, which are widespread in Queensland, Australia, are selected for experiments (Table~\ref{tab:Ch4_frogName}). 
 All those frog species are collected from commercial recordings \citep{CD}. All the recordings are two-channel, sampled at 44.10 kHz and saved in MP3 format. All recordings were obtained with a directional microphone and have a high SNR. Each recording includes one frog species with the duration ranging from eight to fifty-five seconds.
 
 \begin{table}[htb!]
@@ -93,7 +93,7 @@ Each recording is made up of multiple continuous calls of one frog species. For 
 
 
 
-In this study, smoothing spectrogram is optionally applied to the spectrogram before the H$\ddot{a}$rm$\ddot{a}$'s algorithm, because some frog species have a large temporal gap within one syllable (see in Figure~\ref{fig:smooth}). As for the smoothing, a Gaussian filter (7$\times$7) is applied to the spectrogram, where the size is set, taking into account a trade-off between connecting gaps within one syllable and separating adjacent syllables. The segmentation result after smoothing is shown in Figure~\ref{fig:smooth}. The distribution of syllable numbers after segmentation for all frog species is shown in Figure~\ref{fig:Ch4_syllable}.
+In this chapter, smoothing spectrogram is optionally applied to the spectrogram before the H$\ddot{a}$rm$\ddot{a}$'s algorithm, because some frog species have a large temporal gap within one syllable (see in Figure~\ref{fig:smooth}). As for the smoothing, a Gaussian filter (7$\times$7) is applied to the spectrogram, where the size is set, taking into account a trade-off between connecting gaps within one syllable and separating adjacent syllables. The segmentation result after smoothing is shown in Figure~\ref{fig:smooth}. The distribution of syllable numbers after segmentation for all frog species is shown in Figure~\ref{fig:Ch4_syllable}.
 
 \begin{figure}[htb!]
 \centering
@@ -138,14 +138,14 @@ After pre-emphasis, each syllable is segmented into overlapping frames with fixe
 \begin{equation}
 w(n)=0.54-0.46cos(\frac{2n\pi}{L-1}), 0 \leq n \leq L-1
 \end{equation}
-where $L$ is the length of the frame. Because window sizes have an effect on the classification results, different window sizes are optimised for different features in this study. The signal after windowing process is expressed as
+where $L$ is the length of the frame. Because window sizes have an effect on the classification results, different window sizes are optimised for different features in this chapter. The signal after windowing process is expressed as
 \begin{equation}
 x(n) = w(n)y(n)
 \end{equation}
 
 \subsection{Feature extraction}
-After pre-processing of each syllable, various parametric representations are used to represent the syllable. In the literature, a variety of parametric representations of frog calls can be found, such as LPCs and MFCCs \citep{yuan2012frog, jaafar2013automatic, bedoya2014automatic}.
-MFCCs achieved better performance than LPCs \citep{yuan2012frog}. Different from the hybrid features used \citep{huang2009frog, han2011acoustic, Gingras2013}, our enhanced  feature consists of more features, such as oscillation rate \citep{Xie1504:Acoustic}, to further improve the classification accuracy. In this chapter, temporal features include syllable duration, Shannon entropy, r$\acute{e}$nyi entropy, zero-crossing rate, averaged energy, and oscillation rate. Perceptual features contains spectral centroid, spectral flatness, spectral roll-off, signal bandwidth, spectral flux, and fundamental frequency. Here the word \textit{perceptual} is defined according to \citep{lei2014content}. MFCCs are used as a cepstral feature. The description of each feature is listed below.
+After pre-processing of each syllable, various parametric representations are used to represent the syllable. In the literature, a variety of parametric representations of frog calls can be found, such as LPCs and MFCCs \citep{yuan2013frog, jaafar2013automatic, bedoya2014automatic}.
+MFCCs achieved better performance than LPCs \citep{yuan2013frog}. Different from the hybrid features used \citep{huang2009frog, han2011acoustic, Gingras2013}, our enhanced  feature consists of more features, such as oscillation rate \citep{Xie1504:Acoustic}, to further improve the classification accuracy. In this chapter, temporal features include syllable duration, Shannon entropy, r$\acute{e}$nyi entropy, zero-crossing rate, averaged energy, and oscillation rate. Perceptual features contains spectral centroid, spectral flatness, spectral roll-off, signal bandwidth, spectral flux, and fundamental frequency. Here the word \textit{perceptual} is defined according to \citep{lei2014content}. MFCCs are used as a cepstral feature. The description of each feature is listed below.
 
 \vspace{3mm}
 
@@ -239,7 +239,7 @@ where $H(x)=(x+|x|)/2$ is a half-wave rectifier function.
 
 \vspace{3mm}
 
-\noindent(12) Mel-frequency cepstral coefficients (MFCCs): MFCCs, which are obtained by applying cosine transform to a sub-band Mel-frequency spectrum within a short time, have been widely used in bird classification \citep{lee2006automatic}, speech/speaker recognition \citep{han2006efficient}, and frog identification \citep{bedoya2014automatic}. In this study, MFCCs are calculated based on the method of \citep{lee2006automatic}. 
+\noindent(12) Mel-frequency cepstral coefficients (MFCCs): MFCCs, which are obtained by applying cosine transform to a sub-band Mel-frequency spectrum within a short time, have been widely used in bird classification \citep{lee2006automatic}, speech/speaker recognition \citep{han2006efficient}, and frog identification \citep{bedoya2014automatic}. In this chapter, MFCCs are calculated based on the method of \citep{lee2006automatic}. 
 
 \noindent  \textbf{Step 1}: Band-pass filtering: The amplitude spectrum is then filtered using a set of triangular band-pass filters.
 \begin{equation}
@@ -326,7 +326,7 @@ The third classification combination method is to calculate the sum of similarit
 Then the input feature vector $i$ will be classified as belonging to class $s_{2}$. Following prior work (\citep{han2011acoustic, Xie1504:Acoustic}), the distance function used for kNN is the Euclidean function, and $k$ is set at 1.
 
 \subsubsection{Support vector machines}
-Due to the high accuracy and superior generalisation properties, SVM has been widely used for classifying animal sounds \citep{huang2009frog} \citep{acevedo2009automated}. In this study, the feature set obtained is first selected as training data. Then, the pairs $(F_{l}^{n},L_{l}^{n}), l=1,2,..., C_{l}$ are constructed using the selected training data, where $C_{l}$ is the number of frog instances in the training data, $F_{l}^{n}$ is the feature vector obtained from the $l$-$th$ frog instance in the training data, $L_{l}^{n}$ is the frog species label. Furthermore, the decision function for the classification problem based on SVM \citep{cortes1995support} is defined by the training data as 
+Due to the high accuracy and superior generalisation properties, SVM has been widely used for classifying animal sounds \citep{huang2009frog} \citep{acevedo2009automated}. In this chapter, the feature set obtained is first selected as training data. Then, the pairs $(F_{l}^{n},L_{l}^{n}), l=1,2,..., C_{l}$ are constructed using the selected training data, where $C_{l}$ is the number of frog instances in the training data, $F_{l}^{n}$ is the feature vector obtained from the $l$-$th$ frog instance in the training data, $L_{l}^{n}$ is the frog species label. Furthermore, the decision function for the classification problem based on SVM \citep{cortes1995support} is defined by the training data as 
 \begin{equation}
 f(v) = sgn(\sum_{sv}\alpha_{l}^{n}L_{l}^{n}K(v,v_{l}^{n})+b_{l}^{n})
 \end{equation}
@@ -360,10 +360,10 @@ where $m_{i}$ is the number of Gaussian components, $\beta_{ij}$ and $\phi_{ij}(
 \begin{equation}
 \phi_{ij}(F)=\frac{1}{(2\pi)^(d/2)\sigma^{d}}exp[-\frac{(F-\mu_{ij})^{T}(F-\mu_{ij})}{2\sigma^2}]
 \end{equation}
-where $i=1,...,N$, $j=1,...,m_{i}$, $d$ denotes the dimension of the input vector $F$, $\sigma$ is the smoothing parameter, $\mu_{ij}$ is the mean vector and the central of the classification. In this study, one ANN classifier named MLP is used to classify frog calls.
+where $i=1,...,N$, $j=1,...,m_{i}$, $d$ denotes the dimension of the input vector $F$, $\sigma$ is the smoothing parameter, $\mu_{ij}$ is the mean vector and the central of the classification. In this chapter, one ANN classifier named MLP is used to classify frog calls.
 
 \section{Experiment results}
-In this experiment, performance statistics is evaluated using 5-fold cross-validation. The performance of the proposed frog call classification system is evaluated by quantitatively expressed detection metrics, such as average accuracy, precision, and specificity. The definition of accuracy, precision, and specificity can be found in Chapter \ref{ch2:experiment}.
+In this experiment, performance statistics is evaluated using 5-fold cross-validation. The performance of the proposed frog call classification system is evaluated by quantitatively expressed detection metrics, such as average accuracy, precision, and specificity. The definition of accuracy, precision, and specificity can be found in Chapter~\ref{ch2:experiment}.
 
 %\begin{equation}
 %Sensitivity = \frac{TP}{TP+FN}
@@ -384,7 +384,7 @@ Figure~\ref{diffFeature} illustrates the classification accuracy with different 
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=0.6\linewidth]{image/Ch4/diffFeature.pdf}}
-\caption{Classification results with different feature sets using the window size of 64 samples}
+\caption[Classification results with different feature sets]{Classification results with different feature sets using the window size of 64 samples}
 \label{diffFeature} 
 \end{figure}
 
@@ -404,7 +404,7 @@ $TemPerCep$ with different machine learning techniques. The high classification 
 
 
 \subsection{Effects of different window size for MFCCs and perceptual features}
-As we know, the window size has an effect on the MFCCs and perceptual features. Therefore, a different window size will lead to different classification performance (Figure~\ref{diffWinSize1} and Figure~\ref{diffWinSize2}). The window size used for the test is 32, 64, 128, 256, because the syllable length of some frog species is less than 512 samples.
+As we know, the window size has an effect on the MFCCs and perceptual features. Therefore, a different window size will lead to different classification performance (Figures~\ref{diffWinSize1} and \ref{diffWinSize2}). The window size used for the test is 32, 64, 128, 256, because the syllable length of some frog species is less than 512 samples.
 It is found that the best classification performance for MFCCs is achieved with window size of 64 samples. For \textit{TemPer}, the window size of 64 obtains the best classification performance. 
 It also can be observed that SVM and RF achieve the best classification performance. Moreover, different window sizes of MFCCs have a larger variation than \textit{TemPer} features, which might be because temporal features have a high weight in \textit{TemPer} for the classification task.
 
@@ -442,7 +442,7 @@ Table~\ref{my-label} shows the classification performance of previous methods. S
 \begin{tabular}{lll}
 \hline\hline
 Ref. & Feature                                                                                                                                                           & Accuracy (\%) \\ \hline
- \citep{juan2009frogs, yuan2012frog}    & LPCs                                                                                                                                                              &     93.5     \\ 
+ \citep{juan2009frogs, yuan2013frog}    & LPCs                                                                                                                                                              &     93.5     \\ 
 \citep{lee2006automatic, Xie1504:Acoustic, jaafar2013automatic, bedoya2014automatic}  & MFCCs                                                                                                                                                             &     94.9     \\ 
 \citep{han2011acoustic}     & \begin{tabular}[c]{@{}l@{}} Spectral centroid, Shannon entropy, \\ R$\acute{e}$nyi entropy \end{tabular}  &    75.6      \\ 
 \citep{Xie1504:Acoustic}    & \begin{tabular}[c]{@{}l@{}}Syllable duration, dominant frequency, \\ oscillation rate, frequency modulation, \\ energy modulation     \end{tabular}                        &    92.3    \\ 

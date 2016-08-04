@@ -96,11 +96,11 @@
 \contentsline {section}{\numberline {6.3}Experiment results}{84}{section.6.3}
 \contentsline {subsection}{\numberline {6.3.1}Evaluation metrics}{84}{subsection.6.3.1}
 \contentsline {subsection}{\numberline {6.3.2}Classification results}{85}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Comparison with MIML}{85}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Summary and limitations}{86}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusion and future work}{87}{chapter.7}
-\contentsline {section}{\numberline {7.1}Summary of contributions}{87}{section.7.1}
-\contentsline {section}{\numberline {7.2}Limitations and future work}{89}{section.7.2}
-\contentsline {chapter}{\numberline {A}Waveform, spectrogram and SNR of frog species from David Stewart's CD}{91}{appendix.H}
-\contentsline {chapter}{\numberline {B}Waveform, spectrogram and SNR of six frog species from JCU recordings}{93}{appendix.I}
-\contentsline {chapter}{References}{102}{appendix*.72}
+\contentsline {subsection}{\numberline {6.3.3}Comparison with MIML}{86}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Summary and limitations}{87}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusion and future work}{89}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary of contributions}{89}{section.7.1}
+\contentsline {section}{\numberline {7.2}Limitations and future work}{91}{section.7.2}
+\contentsline {chapter}{\numberline {A}Waveform, spectrogram and SNR of frog species from David Stewart's CD}{93}{appendix.H}
+\contentsline {chapter}{\numberline {B}Waveform, spectrogram and SNR of six frog species from JCU recordings}{95}{appendix.I}
+\contentsline {chapter}{References}{104}{appendix*.73}

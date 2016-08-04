@@ -11,13 +11,14 @@ Challenges of this thesis lie in designing effective feature extraction algorith
 
 \section{Summary of contributions}
 	
-The contributions of this research are mainly two folds.
+In Table~\ref{tab:contribution}, the contributions of this thesis are mainly three folds.
 
 \begin{enumerate}
+\item Syllable segmentation: Segmenting individual frog syllables from the background noise.
+
 \item Feature representation: Identifying characteristics of Australian frog vocalisations and developing novel feature extraction algorithms.
 
 \item System integration: Designing novel classification frameworks that combine signal processing and machine learning algorithms into a unified and effective system to classify frog vocalisations.
-
 
 \end{enumerate}
 
@@ -46,6 +47,28 @@ Compared to SISL learning, MIML learning shows a better performance for classify
 However, MIML classification performance is highly affected by the AED method.
 To reduce the effect of AED, a novel ML classification framework is adopted.
 A new method for constructing cepstral features is proposed. Evaluations of the ML classification framework are based on the same dataset with MIML learning. The ML classification performance is slightly better than MIML learning, but non-use of the segmentation process can greatly increase the classification efficiency.
+
+
+
+
+\begin{table}[htb!]
+\centering
+\caption{The list of proposed algorithms}
+\label{tab:contribution}
+\resizebox{\textwidth}{!}{
+\begin{tabular}{lllllll}
+\hline\hline
+\textbf{Algorithm ID} & \textbf{Data}                                                           & \textbf{Segmentation}                                                     & \textbf{Fature}         & \textbf{Classifier}                                                            & \textbf{Contribution}                                                   & \textbf{Chapter} \\ \hline
+1                     & \begin{tabular}[c]{@{}l@{}}High SNR \\ recordings\end{tabular}          & \begin{tabular}[c]{@{}l@{}}Amplitude frequency\\ information\end{tabular} & Various                 & \begin{tabular}[c]{@{}l@{}}kNN, SVM, \\ RF, and NN\end{tabular}                & \begin{tabular}[c]{@{}l@{}}feature and \\ integration\end{tabular}      & 3                \\ 
+2                     & \begin{tabular}[c]{@{}l@{}}High and low \\ SNR  recordings\end{tabular} & \begin{tabular}[c]{@{}l@{}}Amplitude frequency\\ information\end{tabular}                                         & AWSCCs                  & kNN and SVM                                                                    & feature                                                                 & 4                \\ 
+3                     & Low SNR recordings                                                      & AED                                                                       & Various                 & \begin{tabular}[c]{@{}l@{}}MIML-kNN, \\ MIML-SVM,\\  and MIML-RBF\end{tabular} & \begin{tabular}[c]{@{}l@{}}segmentation \\ and integration\end{tabular} & 5                \\ 
+4                     & Low SNR recordings                                                      & No segmentation                                                           & \begin{tabular}[c]{@{}l@{}}LPCs, MFCCs,\\ and AWSCCs \end{tabular} & \begin{tabular}[c]{@{}l@{}}ML-kNN, ML-DT, \\ and ML-RF\end{tabular}            & feature and integration                                                 & 6                \\ \hline\hline
+\end{tabular}
+}
+\end{table}
+
+
+
 
 
 \section{Limitations and future work}

@@ -35,12 +35,12 @@ Extracting discriminating features, which maximise between-group (inter-specie) 
 \begin{equation}
 X(n) = \sum_{i}^{p}a_{i}x(n-i)
 \end{equation}
-where $p$ is the order of the polynomial $a_{i}$. In the proposed study, the value of $p$ is set at 12 (12th-order polynomial), and 13 LPCs coefficients are calculated. For those frog vocalizations with different spectral envelopes, LPCs can obtain a high classification accuracy, and has been widely used in previous studies \cite{yuan2012frog, jaafarcomparative, jaafar2015effect}.
+where $p$ is the order of the polynomial $a_{i}$. In the proposed study, the value of $p$ is set at 12 (12th-order polynomial), and 13 LPCs coefficients are calculated. For those frog vocalizations with different spectral envelopes, LPCs can obtain a high classification accuracy, and has been widely used in previous studies \cite{yuan2013frog, jaafarcomparative, jaafar2015effect}.
 
 \textit{MFCC}: The description for calculating MFCCs can be found in Chapter~\ref{cha:cha4EnhancedFeature}. 
 
 
-\textit{AWSCCs}: To calculate AWSCCs, constructing a suitable frequency scale for a WP tree based on the dominant frequency of each frog species is the first step, because different frog species tend to have different dominant frequencies \citep{Gingras2013}. In Chapter \ref{cha:cha5WaveletFeature}, k-means clustering was first applied to the extracted dominant frequencies of training data. Then, the frequency scale was built by sorting clustering centroids to construct the WP tree. In this chapter, the prior information for dominant frequency ($F_{0}$) (Table~\ref{tab:Ch7_parameters}) is directly used to construct the WP tree. Then, the steps for calculating AWSCCs are the same with Chapter~\ref{cha:cha5WaveletFeature}. 
+\textit{AWSCCs}: To calculate AWSCCs, constructing a suitable frequency scale for a WP tree based on the dominant frequency of each frog species is the first step, because different frog species tend to have different dominant frequencies \citep{Gingras2013}. In Chapter \ref{cha:cha5WaveletFeature}, k-means clustering was first applied to the extracted dominant frequencies of training data. Then, the frequency scale was built by sorting clustering centroids to construct the WP tree. In this chapter, the prior information for dominant frequency ($F_{0}$) (see Table~\ref{tab:JCU}) is directly used to construct the WP tree. Then, the steps for calculating AWSCCs are the same with Chapter~\ref{cha:cha5WaveletFeature}. 
 
 \subsection{Feature construction}
 
@@ -137,7 +137,7 @@ The values for hamming loss, accuracy, and subset accuracy range from 0 to 1. Fo
 
 \subsection{Classification results}
 
-Experiment results are shown in Table~\ref{tab:classificationResults}. The combination of LPCs, MFCCs, and AWSCCs, can achieve the best performance with ML-random forest. 
+Experiment results are shown in Table~\ref{tab:classificationResults}. The combination of LPCs, MFCCs, and AWSCCs, can achieve the best performance with ML-random forest. Using only cepstral coefficients, the best classification performance is achieve by AWSCCs(2), of which the accuracy is 0.662. After adding the temporal feature (LPCs), the accuracy is improved to 0.694. The reason for this improvement might be that this combination can achieve both temporal and frequency information of the recording. Compare to other classifiers, the classification performance of ML-RF is better than both ML-kNN and ML-DT (Table~\ref{tab:MLclassifierComparision}).
 
 
 
@@ -151,9 +151,9 @@ Experiment results are shown in Table~\ref{tab:classificationResults}. The combi
 Feature set           & Base Classifier                             & Hamming loss & Accuracy    & Subset accuracy \\ \hline
 MFCCs(1)                 & \multirow{5}{*}{Random forest} & 0.143 $\pm$ 0.015  & 0.64 $\pm$ 0.035 & 0.354 $\pm$ 0.052     \\ \cline{1-1} \cline{3-5} 
 MFCCs(2)                &            & 0.139 $\pm$ 0.01  & 0.659 $\pm$ 0.019 & 0.362 $\pm$ 0.036     \\ \cline{1-1} \cline{3-5} 
-AWSCCs(1)        &                                        & 0.13 $\pm$ 0.011  & 0.656 $\pm$ 0.009 & 0.371 $\pm$ 0.038     \\ \cline{1-1} \cline{3-5} 
+AWSCCs(1)        &                                        & 0.139 $\pm$ 0.011  & 0.656 $\pm$ 0.009 & 0.371 $\pm$ 0.038     \\ \cline{1-1} \cline{3-5} 
 AWSCCs(2) &                                        & 0.138 $\pm$ 0.012  & 0.662 $\pm$ 0.01 & 0.38 $\pm$ 0.031     \\ \cline{1-1} \cline{3-5} 
-AWSCCs(1) + LPCs &                                        & \textbf{0.117 $\pm$ 0.011}  & \textbf{0.694 $\pm$ 0.027} & \textbf{0.424 $\pm$ 0.027}     \\ \hline\hline
+AWSCCs(2) + LPCs &                                        & \textbf{0.117 $\pm$ 0.011}  & \textbf{0.694 $\pm$ 0.027} & \textbf{0.424 $\pm$ 0.027}     \\ \hline\hline
 \end{tabular}
 }
 \end{table}
@@ -164,14 +164,14 @@ AWSCCs(1) + LPCs &                                        & \textbf{0.117 $\pm$ 
 \begin{table}[htb!]
 \centering
 \caption{Comparison of different ML classifiers}
-\label{my-label}
+\label{tab:MLclassifierComparision}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lllll}
 \hline\hline
 Feature set           & Base classifier            & Hamming loss & Accuracy    & Subset accuracy \\ \hline
-AWSCCs(1) + LPCs & ML-kNN                   & 0.139 $\pm$ 0.023  & 0.679 $\pm$ 0.039 & 0.362 $\pm$ 0.065     \\ 
-AWSCCs(1) + LPCs & ML-Decision Tree         & 0.171 $\pm$ 0.012  & 0.593 $\pm$ 0.018 & 0.272 $\pm$ 0.036     \\ 
-AWSCCs(1) + LPCs & ML-Random forest & 0.117 $\pm$ 0.011  & 0.694 $\pm$ 0.027 & 0.424 $\pm$ 0.027     \\ \hline\hline
+AWSCCs(2) + LPCs & ML-kNN                   & 0.139 $\pm$ 0.023  & 0.679 $\pm$ 0.039 & 0.362 $\pm$ 0.065     \\ 
+AWSCCs(2) + LPCs & ML-Decision Tree         & 0.171 $\pm$ 0.012  & 0.593 $\pm$ 0.018 & 0.272 $\pm$ 0.036     \\ 
+AWSCCs(2) + LPCs & ML-Random forest & 0.117 $\pm$ 0.011  & 0.694 $\pm$ 0.027 & 0.424 $\pm$ 0.027     \\ \hline\hline
 \end{tabular}
 }
 \end{table}
