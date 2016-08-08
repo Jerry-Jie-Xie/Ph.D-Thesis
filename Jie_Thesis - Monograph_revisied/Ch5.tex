@@ -19,7 +19,7 @@ How to develop robust cepstral features to classify frog species in both trophy 
 
 This chapter presents a novel cepstral feature based on adaptive frequency scaled WPD, whose goal is to develop a novel ceptral feature with a good anti-noise ability.
 Since both trophy and field recordings are studied in this chapter, developing features with a good anti-noise ability is important for dealing with field recordings. Different from most previous studies that extracted features via Fourier transform, WPD is employed for feature extraction. The classification performance is evaluated with two different datasets from Queensland, Australia (high SNR: 18 frog species from trophy recordings and low SNR: field recordings of eight frog species from James Cook University recordings).  
-Although low SNR recordings are used in this chapter, each recording is assumed to have only one frog species and the classification task is regarded as a SISL classification problem.
+Although trophy recordings are used in this chapter, each recording is assumed to have only one frog species and the classification task is regarded as a SISL classification problem.
 
 
 %However, most low SNR recordings have more than one frog species. In the next two chapters, we will focus on the classification of multiple simultaneously vocalising frog species in one individual recording.
@@ -474,7 +474,7 @@ The descriptions of those two classifiers can be found in Chapter \ref{ch4:class
 
 
 \section{Experiment result and discussion}
-Several experiments are described for evaluating our proposed frog call classification system. First, the parameter tuning is discussed based on the reference data set. Then, the comparisons between all proposed features are studied. Finally, the classification results under different SNR are described.
+Several experiments are described for evaluating our proposed frog call classification system. First, the parameter tuning is discussed based on the reference data set. Then, the comparisons between all proposed features are studied. Finally, the classification results under different SNRs are described.
 
 \subsection{Parameter tuning}
 There are five modules that require parameter tuning: syllable segmentation, spectral peak track, feature extraction, and classification (Figure~\ref{fig:flowchart}). 

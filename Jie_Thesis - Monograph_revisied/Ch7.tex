@@ -14,8 +14,8 @@ How to reduce the effect of AED results and classify multiple simultaneously voc
 \section{Overview}
 \label{sect:introduction}
 
-This chapter describes the research conducted for classifying multiple simultaneously vocalising frog species. In Chapter \ref{cha:cha6MIML}, acoustic features are calculated based on AED results, and the MIML classification performance is highly affected by the accuracy of AED results. To reduce the bias introduced by AED, this chapter uses global feature sets for classifying multiple frog species in field recordings.
-To be specific, three features are calculated: LPCs, MFCCs, and AWSCCs. Here, each feature is extracted from the whole 10-second recording without  syllable segmentation. Therefore, the classification process can be naturally framed as a ML learning framework.  
+This chapter describes the research conducted for classifying multiple simultaneously vocalising frog species. In Chapter \ref{cha:cha6MIML}, acoustic features are calculated based on AED results, but the MIML classification performance is highly affected by the accuracy of AED results. To reduce the bias introduced by AED, this chapter uses global feature sets for classifying multiple frog species in field recordings.
+To be specific, three features are calculated: LPCs, MFCCs, and AWSCCs. Here, each feature is extracted from the whole 10-second recording without syllable segmentation. Two cepstral feature sets are constructed by statistical analysis and spectral clustering. Since each 10-second recording is represented by a whole feature set and has multiple frog species, the classification process can be naturally framed as a ML learning framework.  
 
 
 \section{Methods}
@@ -82,11 +82,11 @@ f_{6} = \frac{\sum_{i=1}^{n-2}D_{i}}{n-2}
 \end{equation}
 
 
-Finally, each windowed signal is represented as the concatenation of the six above features for the 12 cepstral coefficients, where the dimension of a new feature set is 72.
+Finally, each windowed signal is represented as the concatenation of the six above features for the 12 cepstral coefficients, where the dimension of our feature set is 72.
 
 
 The second method first clusters the 12 cepstral coefficients of all the windowed signal. Here, k-means clustering is used to reduce the preliminary dimension of all 12 cepstral coefficients. 
-Then, dynamic time warping is used to calculate the distance between each clustered cepstral coefficients. Finally, spectral clustering is applied for further dimension reduction and getting the final feature vector. In this chapter, the value of $k$ for k-means clustering is 50, and the number of clusters for spectral clustering is experimentally set at 2.
+Then, dynamic time warping is used to calculate the distance between each clustered cepstral coefficients. Finally, spectral clustering is applied for further dimension reduction and getting the final feature vector. In this chapter, the value of $k$ for k-means clustering is 50, and the number of clusters for spectral clustering is experimentally set at 2. Finally, the dimension of our constructed feature set is 24.
 
 
 

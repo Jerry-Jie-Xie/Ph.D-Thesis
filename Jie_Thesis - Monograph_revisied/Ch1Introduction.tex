@@ -5,7 +5,8 @@
 \pagenumbering{arabic}
 %=============
 \section{Motivation}
-Over the last two decades, rapid decline in frog populations, which is regarded as one of the most critical danger to the global biodiversity, has been spotted worldwide. The causes for this decline are many, but an emerging disease called \textit{chytridiomycosis} \citep{mutschmann2015chytridiomycosis} and global climate change \citep{carey2003climate} are thought as the biggest threats. On the one hand frog populations are rapidly declining, but on the other frogs are greatly important for the Earth's ecosystem. For instance, frogs are an integral part of the food web, and are an excellent indicator for their sensitivity to the environmental change \citep{boll2013amphibians}. To gain insights about frogs and the environment, developing tools for monitoring frogs is becoming ever more important. Since frogs are often much easier to be heard than seen in the field (Figure~\ref{fig:Ch1_frogs}) and their vocalisations are  employed for most communications, it offers a possible way to study and evaluate frogs by detecting species-specific calls \citep{dorcas2009auditory}.
+Over the last two decades, rapid decline in frog populations, which is regarded as one of the most critical danger to the global biodiversity, has been spotted worldwide. The causes for this decline are many, but an emerging disease called \textit{chytridiomycosis} \citep{mutschmann2015chytridiomycosis} and global climate change \citep{carey2003climate} are thought as the biggest threats. On the one hand frog populations are rapidly declining, but on the other frogs are greatly important for the Earth's ecosystem. For instance, frogs are an integral part of the food web, and are an excellent indicator for their sensitivity to the environmental change \citep{boll2013amphibians}. To gain insights about frogs and the environment, developing tools for monitoring frogs is becoming ever more important. Since frogs are often much easier to be heard than seen in the field (Figure~\ref{fig:Ch1_frogs}) and their vocalisations are employed for most communications, it offers a possible way to study and evaluate frogs by detecting species-specific calls \citep{dorcas2009auditory}. For frog vocalizations, \cite{duellman1994biology} classified them into six categories based on the context in which they occur: (1) advertisement calls, (2) reciprocation calls, (3) release calls, (4) distress calls. Among them, mating calls are now widely termed as advertisement calls. For those studies that using signal processing and machine learning to classify frog species, only advertisement calls are used for the experiment.
+
 
 
 
@@ -51,12 +52,10 @@ Short recordings                                                                
 Based on those differences, two major challenges must be faced for building an accurate and robust frog call classification framework for field recordings:
 
 \begin{enumerate}
-\item  Compared to trophy recordings which are collected in constrained environment with a directional microphone, field recordings tend to be noisy. Very often the desired signal (frog call) is weak, and there are other overlapping signals such as bird calls and insect calls over frog calls. Therefore, features used for classifying frogs in environment recordings must have a good anti-noise ability.
+\item  Compared to trophy recordings which are collected in constrained environment with a directional microphone, field recordings tend to be noisy. Very often the desired signal (frog call) is weak, and there are other overlapping signals such as bird calls and insect calls over frog calls. Therefore, features used for classifying frogs in field recordings must have a good anti-noise ability.
 
 
 \item  Most field recordings contain multiple frog species in an individual recording (Figure~\ref{fig:label}), which are different from recordings used in previous studies (one species per recording). The classification framework for studying frogs in field recordings must be able to classify multiple frog species for each individual recording.
-
-
 
 \end{enumerate}
  
@@ -78,7 +77,7 @@ Based on those differences, two major challenges must be faced for building an a
 
 
 \section{Scope of PhD}
-The broad scope of this PhD research is to address two aforementioned challenges, which could pave a way to successful classification of multiple simultaneously vocalising frog species in field recordings. The outcome of the research is of benefit to many applications of bioacoustics. Recordings used for the experiment of this thesis have two types: (1) Trophy recordings, (2) Environment recordings. The use of trophy recordings allows our proposed methods to be easily compared with other published techniques. Successfully classifying frog species in field recordings can extend our proposed classification framework to address those recordings collected by acoustic sensors.
+The broad scope of this PhD research is to address two aforementioned challenges, which could pave a way to successful classification of multiple simultaneously vocalising frog species in field recordings. The outcome of the research is of benefit to many applications of bioacoustics. Recordings used for the experiment of this thesis have two types: (1) trophy recordings, (2) field recordings. The use of trophy recordings allows our proposed methods to be easily compared with other published techniques. Successfully classifying frog species in field recordings can extend our proposed classification framework to address those recordings collected by acoustic sensors.
 
 
 
@@ -145,7 +144,7 @@ This research makes important contributions to the domains of syllable segmentat
 
 \begin{enumerate}
 
-\item Most previous studies test the proposed frog call classification methods using high SNR recordings, and each individual recording has only one frog species. The first experiment of this thesis aims to further improve the classification performance using trophy recordings. A novel feature fusion using temporal, perceptual, and cepstral features is proposed for frog call classification. To reduce the bias of syllable segmentation, Gaussian filtering is selectively used to remove the temporal gap within one syllable. Five feature sets are constructed using different fusions of temporal, perceptual, and cepstral features. Five machine learning algorithms are used for the classification. Experimental results on trophy recordings show that our proposed feature set outperforms other widely used feature sets for classifying frog calls. 
+\item Most previous studies test the proposed frog call classification methods using trophy recordings, and each individual recording is assumed to have only one frog species. The first experiment of this thesis aims to further improve the classification performance using trophy recordings. A novel feature fusion using temporal, perceptual, and cepstral features is proposed for frog call classification. To reduce the bias of syllable segmentation, Gaussian filtering is selectively used to remove the temporal gap within one syllable. Five feature sets are constructed using different fusions of temporal, perceptual, and cepstral features. Five machine learning algorithms are used for the classification. Experimental results on trophy recordings show that our proposed feature set outperforms other widely used feature sets for classifying frog calls. 
 
 This research has led to one ISSNIP conference paper, one Applied Acoustic  journal article.
 
@@ -182,7 +181,7 @@ This work corresponds to Chapter \ref{cha:cha4EnhancedFeature} in this thesis, w
 
 \item	\textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul (2016) Adaptive frequency scaled wavelet packet decomposition for frog call classification.  Ecological Informatics, Volume 32, pp. 134-144.
 
-This work corresponds to Chapter \ref{cha:cha5WaveletFeature} in this thesis, which develops a novel cepstral feature for frog call classification in low SNR recordings.
+This work corresponds to Chapter \ref{cha:cha5WaveletFeature} in this thesis, which develops a novel cepstral feature for frog call classification in both trophy and field recordings.
 
 
 
@@ -242,6 +241,9 @@ This work corresponds to Chapter \ref{cha:cha7ML} in this thesis, which applies 
 \item	Dong, Xueyan, \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul (2015)Generalised features for bird vocalisation retrieval in acoustic recordings. In IEEE International Workshop on Multimedia Signal Processing, 19-21 October 2015, Xiamen, China.
 
 \end{enumerate} 
+
+
+
 %===============
 %\section{Basic concepts} 
 %This section presents some basic concepts to better describe the research problem and questions, aims and objectives, significance and contributions.

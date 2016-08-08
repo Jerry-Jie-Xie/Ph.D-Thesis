@@ -1243,15 +1243,6 @@ nearest neighbour; spectral peak track}
   Pages                    = {41--50}
 }
 
-@InCollection{yuan2012frog,
-  Title                    = {Frog sound identification system for frog species recognition},
-  Author                   = {Yuan, Clifford Loh Ting and Ramli, Dzati Athiar},
-  Booktitle                = {Context-Aware Systems and Applications},
-  Publisher                = {Springer},
-  Year                     = {2012},
-  Pages                    = {41--50}
-}
-
 @Article{zhang2016using,
   Title                    = {Using multi-label classification for acoustic pattern detection and assisting bird species surveys},
   Author                   = {Zhang, Liang and Towsey, Michael and Xie, Jie and Zhang, Jinglan and Roe, Paul},
