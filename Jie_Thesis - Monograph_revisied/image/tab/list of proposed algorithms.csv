@@ -1,0 +1,5 @@
+Algorithm ID,Data,Segmentation,Fature,Classifier,Contribution,Chapter
+1,High SNR recordings,Amplitude frequency  information,Various ,"kNN, SVM, RF, and NN",feature and integration,3
+2,High and low SNR  recordings,Amplitude frequency  information,AWSCCs,kNN and SVM,feature,4
+3,Low SNR recordings,AED,Various,"MIML-kNN, MIML-SVM, and MIML-RBF",segmentation and integration,5
+4,Low SNR recordings,No segmentation,"LPCs, MFCCs, and AWSCCs","ML-kNN, ML-DT, and ML-RF",feature and integration,6

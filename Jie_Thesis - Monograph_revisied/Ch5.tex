@@ -6,11 +6,11 @@
 
 \textbf{Research problem}
 \\
-Following the summary of Chapter~\ref{cha:cha4EnhancedFeature}, cepstral features have been widely used for classifying frog species in high SNR recordings with a high classification accuracy, but are very sensitive to background noise.
+Following the summary of Chapter~\ref{cha:cha4EnhancedFeature}, cepstral features have been widely used for classifying frog species in trophy recordings with a high classification accuracy, but are very sensitive to background noise.
 \\
 \textbf{Research sub-question}
 \\
-How to develop robust cepstral features to classify frog species in low SNR recordings?
+How to develop robust cepstral features to classify frog species in both trophy and field recordings?
 
 
 
@@ -18,7 +18,7 @@ How to develop robust cepstral features to classify frog species in low SNR reco
 \section{Overview}
 
 This chapter presents a novel cepstral feature based on adaptive frequency scaled WPD, whose goal is to develop a novel ceptral feature with a good anti-noise ability.
-Since both high and low SNR recordings are studied in this chapter, developing features with a good anti-noise ability is important for dealing with low SNR recordings. Different from most previous studies that extracted features via Fourier transform, WPD is employed for feature extraction. The classification performance is evaluated with two different datasets from Queensland, Australia (high SNR: 18 frog species from commercial recordings and low SNR: field recordings of eight frog species from James Cook University recordings).  
+Since both trophy and field recordings are studied in this chapter, developing features with a good anti-noise ability is important for dealing with field recordings. Different from most previous studies that extracted features via Fourier transform, WPD is employed for feature extraction. The classification performance is evaluated with two different datasets from Queensland, Australia (high SNR: 18 frog species from trophy recordings and low SNR: field recordings of eight frog species from James Cook University recordings).  
 Although low SNR recordings are used in this chapter, each recording is assumed to have only one frog species and the classification task is regarded as a SISL classification problem.
 
 
@@ -40,10 +40,10 @@ The architecture of the proposed classification method contains five modules: sy
 
 \subsection{Sound recording and pre-processing}
 
-Two datasets obtained from a commercial recording \citep{CD} and James Cook University (JCU) were selected for this chapter. 
+Two datasets obtained from a trophy recording \citep{CD} and James Cook University (JCU) were selected for this chapter. 
 Recordings, which were collected from the CD, are two-channel, sampled at 44.10 kHz and saved in MP3 format. All recordings were obtained with a directional microphone and have a high SNR. Each recording includes one frog species, and has a duration ranging from twenty-one to fifty-four seconds. The calls of eighteen frog species recorded in Queensland, Australia were used to develop the detailed methodology described in Figure~\ref{fig:Ch5_flowchart}. To reduce the subsequent computational burden, all the recordings selected from the CD were re-sampled at 16 kHz per second, mixed down to mono, and saved in WAV format. 
 
-The JCU recordings were obtained from Kiyomi dam (S $19^{\circ}$ $22^{'}$ $16.0^{''}$, E $146^{\circ}$ $27^{'}$ $31.3^{''}$)  BG Creek dam (S $19^{\circ}$ $27^{'}$ $1.23^{''}$, E $146^{\circ}$ $24^{'}$ $5.65^{''}$ ) and Stony Creek dam (S $19^{\circ}$ $24^{'}$ $07.0^{''}$, E $146^{\circ}$ $25’$ $51.3”$) in Townsville, using acoustic sensors. The recordings were stored on 16 GB SD cards in 64 kbps MP3 mono format and have a low SNR compared with the commercial recording. The sample rate is 16.00 kHz.
+The JCU recordings were obtained from Kiyomi dam (S $19^{\circ}$ $22^{'}$ $16.0^{''}$, E $146^{\circ}$ $27^{'}$ $31.3^{''}$)  BG Creek dam (S $19^{\circ}$ $27^{'}$ $1.23^{''}$, E $146^{\circ}$ $24^{'}$ $5.65^{''}$ ) and Stony Creek dam (S $19^{\circ}$ $24^{'}$ $07.0^{''}$, E $146^{\circ}$ $25’$ $51.3”$) in Townsville, using acoustic sensors. The recordings were stored on 16 GB SD cards in 64 kbps MP3 mono format and have a low SNR compared with the trophy recording. The sample rate is 16.00 kHz.
 All the JCU recordings started around sunset, finished around sunrise every day and have 12 hour duration. 
 
 
@@ -54,13 +54,13 @@ All the JCU recordings started around sunset, finished around sunrise every day 
 
 
 \subsection{Spectrogram analysis for validation dataset}
-In this chapter, three syllables for each frog species are set aside and used as a \textit{reference data set}. For the commercial recording, three parameters including syllable duration, dominant frequency, and oscillation rate, are manually calculated for those three syllables of each species and averaged, as listed in Table \ref{tab:parameter}. The reference data set is excluded from the data used in the testing stage. 
+In this chapter, three syllables for each frog species are set aside and used as a \textit{reference data set}. For the trophy recording, three parameters including syllable duration, dominant frequency, and oscillation rate, are manually calculated for those three syllables of each species and averaged, as listed in Table \ref{tab:parameter}. The reference data set is excluded from the data used in the testing stage. 
 
 \begin{table}[htb!]
 \centering
 \caption[Parameters of 18 frog species averaged of three
-randomly selected syllable samples in the commercial recording]{Parameters of 18 frog species averaged of three
-randomly selected syllable samples in the commercial recording. These selected samples make the \textit{reference data set}.}
+randomly selected syllable samples in the trophy recording]{Parameters of 18 frog species averaged of three
+randomly selected syllable samples in the trophy recording. These selected samples make the \textit{reference data set}.}
 \label{tab:parameter}
 \resizebox{0.85\textwidth}{!}{
 \begin{tabular}{llllll}
@@ -95,7 +95,7 @@ randomly selected syllable samples in the commercial recording. These selected s
 \end{table}
 
 
-For the JCU recordings\footnote[2]{https://www.ecosounds.org/}, the corresponding parameters are described in Table \ref{tab:JCU}. Compared with the commercial recordings from the CD, peak frequency shows a smaller variation than syllable duration and oscillation rate.
+For the JCU recordings\footnote[2]{https://www.ecosounds.org/}, the corresponding parameters are described in Table \ref{tab:JCU}. Compared with the trophy recordings from the CD, peak frequency shows a smaller variation than syllable duration and oscillation rate.
 
 
 \begin{table}[htb!]
@@ -294,7 +294,7 @@ bin using linear regression, as illustrated in Figure~\ref{fig:track}.
         \label{fig:track}
 \end{figure}
 
-\subsection{Syllable SPT features}
+\subsection{SPT features}
 
 After SPT extraction, each SPT is expressed in the following format: (1) track start time $t_{s}$; (2) track stop time $t_{e}$; (3) frequency bin index for each of the peaks within the track $f_{t}$ ($t_{s} \leq t \leq t_{e}$).  Then, syllable features including track duration, dominant frequency, and oscillation rate are calculated based on the SPT.
 
@@ -314,7 +314,7 @@ where $r_{y}$ is the frequency domain resolution with unit frequency per bin, $f
 
 \noindent  \textbf{c)} Oscillation rate (Hz):  
 Oscillation rate ($O_{r}$) represents the number of pulses per second. The algorithm for extracting oscillation rate is introduced and summarised as follows.
-First, the frequency domain boundary is defined based on the dominant frequency, and the power within the boundary is calculated. Then, the power vector is normalised, and the first and last 20\% part of the vector is discarded, because of the uncertainty in the start and end of the syllables. Next, the autocorrelation with the length of the vector is calculated. Furthermore, a discrete cosine transform (DCT) is applied to the vector after subtracting the mean, and the position of the highest frequency ($P_{f}$) is achieved. Finally, the oscillation rate is defined as
+First, the frequency domain boundary is defined based on the dominant frequency, and the power within the boundary is calculated. Then, the power vector is normalised, and the first and last 20\% part of the vector is discarded, because of the uncertainty in the start and end of the syllables. Next, the autocorrelation with the length of the vector is calculated. Furthermore, a DCT is applied to the vector after subtracting the mean, and the position of the highest frequency ($P_{f}$) is achieved. Finally, the oscillation rate is defined as
 \begin{equation}
 O_{r}= \frac{P_{f}}{L_{dct}}*r_{x}*\gamma
 \end{equation}
@@ -323,7 +323,7 @@ O_{r}= \frac{P_{f}}{L_{dct}}*r_{x}*\gamma
 
 
 \subsection{Wavelet packet decomposition}
-Wavelet packet decomposition (WPD) is a powerful tool for the analysis of non-stationary signals, which includes multiple bases and different basis \citep{selin2007wavelets}. With WPD, an original acoustic signal can be split into two frequency bands such as lower and higher frequency band. Then, both lower and higher frequency bands can be further continuously decomposed into two sub-bands, which produce a complete wavelet packet tree \citep{farooq2001mel}. Due to its ability for analysing a non-stationary signal, WPD has been used to analyse acoustic signals \citep{selin2007wavelets, ren2008perceptually}. Here, WPD is used to obtain features for frog call classification. 
+WPD is a powerful tool for the analysis of non-stationary signals, which includes multiple bases and different basis \citep{selin2007wavelets}. With WPD, an original acoustic signal can be split into two frequency bands such as lower and higher frequency band. Then, both lower and higher frequency bands can be further continuously decomposed into two sub-bands, which produce a complete wavelet packet tree \citep{farooq2001mel}. Due to its ability for analysing a non-stationary signal, WPD has been used to analyse acoustic signals \citep{selin2007wavelets, ren2008perceptually}. Here, WPD is used to obtain features for frog call classification. 
 
 \subsection{WPD based on an adaptive frequency scale}
 To obtain robust features for frog call classification, the frequency scale used for WPD is crucial. In prior work \citep{barkWPDraey, Biswas20141111, Zhang2015108}, different frequency scales have already been proposed for WPD. Bark-scaled WPD was proposed by Litvin and Cohen to separate blind source from a single channel audio source \citep{barkWPDraey}. \cite{Biswas20141111} used features based on ERB-scaled (Equivalent rectangular bandwidth) WPD for Hindi consonant recognition.  \cite{Zhang2015108} developed a method based on Mel-scaled WPD for bird sound detection with the SVMs classifier. However, most frequency scales used for WPD are developed for studying speech rather than frogs. Therefore, finding a suitable frequency scale for frogs to perform the WPD is important for obtaining features with strong discriminatory power. In this chapter, an adaptive frequency scale for WPD for frog calls is proposed,  based on the dominant frequency of frog species to be classified. Specifically, the k-means clustering algorithm is used to cluster the dominant frequency of all syllables. Then, the centroids of the clustering result are used to generate the frequency scale. Here, the value of $k$ for the k-means clustering algorithm is the same as the number of frog species to be classified, the distance function used is \textit{city block} \citep{Melter1987235}. 
@@ -449,7 +449,7 @@ Here, the statistics of all feature vectors over each windowed signal are calcul
 
 
 \subsection{Classification}
-In this chapter, the k-nearest neighbour (kNN) and support vector machine (SVM) classification algorithms are used for frog call classification. The input parameters for each classifier are syllable features (SFs), MFCCs, MWSCCs, and different AWSCCs, and the output is the frog species.
+In this chapter, kNN and SVM classification algorithms are used for frog call classification. The input parameters for each classifier are syllable features (SFs), MFCCs, MWSCCs, and different AWSCCs, and the output is the frog species.
 The descriptions of those two classifiers can be found in Chapter \ref{ch4:classifierDesign}.
 
 %\subsubsection{k-nearest neighbours}
@@ -479,7 +479,7 @@ Several experiments are described for evaluating our proposed frog call classifi
 \subsection{Parameter tuning}
 There are five modules that require parameter tuning: syllable segmentation, spectral peak track, feature extraction, and classification (Figure~\ref{fig:flowchart}). 
 
-For syllable segmentation, the window size and overlap are 512 samples and 25\%, but the intensity thresholds are 10 dB and 5 dB for the commercial recordings and the JCU recordings, respectively.
+For syllable segmentation, the window size and overlap are 512 samples and 25\%, but the intensity thresholds are 10 dB and 5 dB for the trophy recordings and the JCU recordings, respectively.
 
 
 In the spectral peak track determination, there are seven parameters (see in Table \ref{tab:SPT}). The parameter settings are shown in Table \ref{tab:value}.
@@ -489,7 +489,7 @@ In the spectral peak track determination, there are seven parameters (see in Tab
 \label{tab:value}
 \begin{tabular}{lll}
 \hline
-\textbf{Parameter} & \textbf{Commercial recordings} & \textbf{JCU recordings} \\ \hline\hline
+\textbf{Parameter} & \textbf{Trophy recordings} & \textbf{JCU recordings} \\ \hline\hline
    $I$ (dB)        & 3             & 3             \\ 
     $T_{c}$ (s)        & 0.005         & 0.1           \\ 
   $T_{s}$ (s)        & 0.05          & 0.2           \\ 
@@ -508,7 +508,7 @@ For feature extraction, the window size and overlap are the same for MFCCs, MWSC
 Following prior work \citep{huang2009frog, han2011acoustic, Xie1504:Acoustic}, the distance function used for kNN is the Euclidean distance, and $k$ is set as 3. As for the SVM classifier, the Gaussian kernel is used. Parameters $\alpha$ and $v$ are selected independently for each feature set by grid-search using cross validation \citep{hsu2003practical}. 
 
 \subsection{Feature evaluation}
-All experiments are carried out in Matlab R2014b. Performance statistics are estimated with ten-fold cross validation. Totally, five feature sets including SFs, MFCCs, MWSCCs, and averaged AWSCCs, and delta-AWSCCs, are fed to two classifiers, which are the kNN and SVM classifiers. Due to the non-uniform distribution of the number of syllables for different frog species in the commercial recordings, a weighted classification accuracy is define as 
+All experiments are carried out in Matlab R2014b. Performance statistics are estimated with ten-fold cross validation. Totally, five feature sets including SFs, MFCCs, MWSCCs, and averaged AWSCCs, and delta-AWSCCs, are fed to two classifiers, which are the kNN and SVM classifiers. Due to the non-uniform distribution of the number of syllables for different frog species in the trophy recordings, a weighted classification accuracy is define as 
 \begin{equation}
 weighted \, Acc=\sum_{i=1}^{N}Acc(i)*\frac{n_{i}}{N}
 \end{equation}
@@ -704,7 +704,7 @@ Delta-AWSCCs                       &         97.0   $\pm$ 5.2                &  
 In this chapter, a novel feature extraction method for frog call classification is developed using the adaptive frequency scaled WPD. With segmented syllables, spectral peak track is first extracted from each syllable. Then, track duration, dominant frequency, and oscillation rate are calculated based on each track. Next, a k-means clustering algorithm is applied to the dominant frequency, which generates the frequency scale for WPD. Finally, a new feature, AWSCCs, is calculated. Since the feature extraction method is developed based on the data itself, the wavelet packet tree varies according to the frog species to be classified. Compared with the Mel-scaled WPD tree, the proposed adaptive wavelet packet tree can better fit the dominant frequency distribution of the frog species to be classified. With the proposed frequency scale, the call characteristics of those frog species to be classified can be enhanced, while the background noise and calls from other animals will be suppressed. Therefore, the proposed feature sets can achieve a higher accuracy for the classification of frog calls than others. Meanwhile, since the frequency scale is calculated based on the dominant frequency of those frog species to be classified, our proposed wavelet tree structure is more accurate and efficient in classifying the frog calls when compared with Mel-scale (Figures~\ref{fig:wpTree} and \ref{fig:melTree}).
 
 
-Although both high and low SNR recordings are used in this chapter, all the recordings are assumed to contain only one frog species per recording. In the next chapter, this limitation will be solved.
+Although both trophy and field recordings are used in this chapter, all the recordings are assumed to contain only one frog species per recording. In the next chapter, this limitation will be solved.
 
 
 %The feature extraction algorithm is designed for classifying frog calls. For frog calls, the typical structure in a spectrogram is frequency contour (named spectral peak track in this chapter) which is within a given frequency range starting at a given time \citep{mellinger2011method}. For other organisms that have similar frequency contour structures such as the whistles of dolphins, and chirps of birds \citep{chen2006semi}, spectral peak tracks can also be extracted from the spectrograms of their calls. Based on those spectral peak tracks, dominant frequency can be calculated. For the subsequent analysis, the features can be calculated using the same process as described in this chapter. For those organisms without clear frequency contour structure, this proposed method can also be used by enhancing the frequency contour structure, which can be realised by applying a small window size and a large window overlap to the recording waveform. 

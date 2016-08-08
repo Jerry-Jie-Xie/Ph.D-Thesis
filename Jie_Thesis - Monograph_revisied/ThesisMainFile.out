@@ -6,94 +6,95 @@
 \BOOKMARK [0][-]{chapter*.9}{Abbreviations}{}% 6
 \BOOKMARK [0][-]{chapter.1}{Introduction}{}% 7
 \BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 8
-\BOOKMARK [1][-]{section.1.2}{Scope of PhD}{chapter.1}% 9
-\BOOKMARK [1][-]{section.1.3}{Thesis structure}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.4}{Original contributions}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.5}{Publications}{chapter.1}% 12
-\BOOKMARK [0][-]{chapter.2}{An overview of frog call classification}{}% 13
-\BOOKMARK [1][-]{section.2.1}{Overview}{chapter.2}% 14
-\BOOKMARK [1][-]{section.2.2}{Signal pre-processing}{chapter.2}% 15
-\BOOKMARK [2][-]{subsection.2.2.1}{Signal processing}{section.2.2}% 16
-\BOOKMARK [2][-]{subsection.2.2.2}{Noise reduction}{section.2.2}% 17
-\BOOKMARK [2][-]{subsection.2.2.3}{Syllable segmentation}{section.2.2}% 18
-\BOOKMARK [1][-]{section.2.3}{Acoustic features for frog call classification}{chapter.2}% 19
-\BOOKMARK [2][-]{subsection.2.3.1}{Temporal and perceptual features for frog call classification}{section.2.3}% 20
-\BOOKMARK [2][-]{subsection.2.3.2}{Time-frequency features for frog call classification}{section.2.3}% 21
-\BOOKMARK [2][-]{subsection.2.3.3}{Cepstral features for frog call classification}{section.2.3}% 22
-\BOOKMARK [2][-]{subsection.2.3.4}{Other features for frog call classification}{section.2.3}% 23
-\BOOKMARK [1][-]{section.2.4}{Classifiers}{chapter.2}% 24
-\BOOKMARK [1][-]{section.2.5}{MIML or ML learning for bioacoustic signal classification}{chapter.2}% 25
-\BOOKMARK [1][-]{section.2.6}{Experiment results of state-of-the-art frog call classification}{chapter.2}% 26
-\BOOKMARK [2][-]{subsection.2.6.1}{Evaluation criteria}{section.2.6}% 27
-\BOOKMARK [2][-]{subsection.2.6.2}{Previous experimental results}{section.2.6}% 28
-\BOOKMARK [1][-]{section.2.7}{Summary}{chapter.2}% 29
-\BOOKMARK [2][-]{subsection.2.7.1}{Database}{section.2.7}% 30
-\BOOKMARK [2][-]{subsection.2.7.2}{Signal pre-processing}{section.2.7}% 31
-\BOOKMARK [2][-]{subsection.2.7.3}{Acoustic features}{section.2.7}% 32
-\BOOKMARK [2][-]{subsection.2.7.4}{Classifiers}{section.2.7}% 33
-\BOOKMARK [0][-]{chapter.3}{Frog call classification based on feature fusion and machine learning algorithms}{}% 34
-\BOOKMARK [1][-]{section.3.1}{Overview}{chapter.3}% 35
-\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 36
-\BOOKMARK [2][-]{subsection.3.2.1}{Data description}{section.3.2}% 37
-\BOOKMARK [2][-]{subsection.3.2.2}{Syllable segmentation based on an adaptive end point detection}{section.3.2}% 38
-\BOOKMARK [2][-]{subsection.3.2.3}{Pre-processing}{section.3.2}% 39
-\BOOKMARK [2][-]{subsection.3.2.4}{Feature extraction}{section.3.2}% 40
-\BOOKMARK [2][-]{subsection.3.2.5}{Classifier description}{section.3.2}% 41
-\BOOKMARK [1][-]{section.3.3}{Experiment results}{chapter.3}% 42
-\BOOKMARK [2][-]{subsection.3.3.1}{Effects of different feature sets}{section.3.3}% 43
-\BOOKMARK [2][-]{subsection.3.3.2}{Effects of different machine learning techniques}{section.3.3}% 44
-\BOOKMARK [2][-]{subsection.3.3.3}{Effects of different window size for MFCCs and perceptual features}{section.3.3}% 45
-\BOOKMARK [2][-]{subsection.3.3.4}{Effects of noise}{section.3.3}% 46
-\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 47
-\BOOKMARK [1][-]{section.3.5}{Summary and limitations}{chapter.3}% 48
-\BOOKMARK [0][-]{chapter.4}{Adaptive frequency scaled wavelet packet decomposition for frog call classification}{}% 49
-\BOOKMARK [1][-]{section.4.1}{Overview}{chapter.4}% 50
-\BOOKMARK [1][-]{section.4.2}{Methods}{chapter.4}% 51
-\BOOKMARK [2][-]{subsection.4.2.1}{Sound recording and pre-processing}{section.4.2}% 52
-\BOOKMARK [2][-]{subsection.4.2.2}{Spectrogram analysis for validation dataset}{section.4.2}% 53
-\BOOKMARK [2][-]{subsection.4.2.3}{Syllable segmentation}{section.4.2}% 54
-\BOOKMARK [2][-]{subsection.4.2.4}{Spectral peak track extraction}{section.4.2}% 55
-\BOOKMARK [2][-]{subsection.4.2.5}{Syllable SPT features}{section.4.2}% 56
-\BOOKMARK [2][-]{subsection.4.2.6}{Wavelet packet decomposition}{section.4.2}% 57
-\BOOKMARK [2][-]{subsection.4.2.7}{WPD based on an adaptive frequency scale}{section.4.2}% 58
-\BOOKMARK [2][-]{subsection.4.2.8}{Feature extraction based on adaptive frequency scaled WPD}{section.4.2}% 59
-\BOOKMARK [2][-]{subsection.4.2.9}{Classification}{section.4.2}% 60
-\BOOKMARK [1][-]{section.4.3}{Experiment result and discussion}{chapter.4}% 61
-\BOOKMARK [2][-]{subsection.4.3.1}{Parameter tuning}{section.4.3}% 62
-\BOOKMARK [2][-]{subsection.4.3.2}{Feature evaluation}{section.4.3}% 63
-\BOOKMARK [2][-]{subsection.4.3.3}{Comparison between different feature sets}{section.4.3}% 64
-\BOOKMARK [2][-]{subsection.4.3.4}{Comparison under different SNRs}{section.4.3}% 65
-\BOOKMARK [2][-]{subsection.4.3.5}{Feature evaluation using the real world recordings}{section.4.3}% 66
-\BOOKMARK [1][-]{section.4.4}{Summary and limitations}{chapter.4}% 67
-\BOOKMARK [0][-]{chapter.5}{Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}{}% 68
-\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 69
-\BOOKMARK [1][-]{section.5.2}{Methods}{chapter.5}% 70
-\BOOKMARK [2][-]{subsection.5.2.1}{Materials}{section.5.2}% 71
-\BOOKMARK [2][-]{subsection.5.2.2}{Signal processing}{section.5.2}% 72
-\BOOKMARK [2][-]{subsection.5.2.3}{Acoustic event detection for syllable segmentation}{section.5.2}% 73
-\BOOKMARK [2][-]{subsection.5.2.4}{Feature extraction}{section.5.2}% 74
-\BOOKMARK [2][-]{subsection.5.2.5}{Multiple-instance multiple-label classifiers}{section.5.2}% 75
-\BOOKMARK [1][-]{section.5.3}{Experiment results}{chapter.5}% 76
-\BOOKMARK [2][-]{subsection.5.3.1}{Parameter tuning}{section.5.3}% 77
-\BOOKMARK [2][-]{subsection.5.3.2}{Classification}{section.5.3}% 78
-\BOOKMARK [2][-]{subsection.5.3.3}{Results}{section.5.3}% 79
-\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 80
-\BOOKMARK [1][-]{section.5.5}{Summary and limitations}{chapter.5}% 81
-\BOOKMARK [0][-]{chapter.6}{Frog call classification based on multi-label learning}{}% 82
-\BOOKMARK [1][-]{section.6.1}{Overview}{chapter.6}% 83
-\BOOKMARK [1][-]{section.6.2}{Methods}{chapter.6}% 84
-\BOOKMARK [2][-]{subsection.6.2.1}{Acquisition of frog call recordings}{section.6.2}% 85
-\BOOKMARK [2][-]{subsection.6.2.2}{Feature extraction}{section.6.2}% 86
-\BOOKMARK [2][-]{subsection.6.2.3}{Feature construction}{section.6.2}% 87
-\BOOKMARK [2][-]{subsection.6.2.4}{Multi-label classification}{section.6.2}% 88
-\BOOKMARK [1][-]{section.6.3}{Experiment results}{chapter.6}% 89
-\BOOKMARK [2][-]{subsection.6.3.1}{Evaluation metrics}{section.6.3}% 90
-\BOOKMARK [2][-]{subsection.6.3.2}{Classification results}{section.6.3}% 91
-\BOOKMARK [2][-]{subsection.6.3.3}{Comparison with MIML}{section.6.3}% 92
-\BOOKMARK [1][-]{section.6.4}{Summary and limitations}{chapter.6}% 93
-\BOOKMARK [0][-]{chapter.7}{Conclusion and future work}{}% 94
-\BOOKMARK [1][-]{section.7.1}{Summary of contributions}{chapter.7}% 95
-\BOOKMARK [1][-]{section.7.2}{Limitations and future work}{chapter.7}% 96
-\BOOKMARK [0][-]{appendix.H}{Waveform, spectrogram and SNR of frog species from David Stewart's CD}{}% 97
-\BOOKMARK [0][-]{appendix.I}{Waveform, spectrogram and SNR of six frog species from JCU recordings}{}% 98
-\BOOKMARK [0][-]{appendix*.73}{References}{}% 99
+\BOOKMARK [1][-]{section.1.2}{Research challenge}{chapter.1}% 9
+\BOOKMARK [1][-]{section.1.3}{Scope of PhD}{chapter.1}% 10
+\BOOKMARK [1][-]{section.1.4}{Thesis structure}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.5}{Original contributions}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.6}{Publications}{chapter.1}% 13
+\BOOKMARK [0][-]{chapter.2}{An overview of frog call classification}{}% 14
+\BOOKMARK [1][-]{section.2.1}{Overview}{chapter.2}% 15
+\BOOKMARK [1][-]{section.2.2}{Signal pre-processing}{chapter.2}% 16
+\BOOKMARK [2][-]{subsection.2.2.1}{Signal processing}{section.2.2}% 17
+\BOOKMARK [2][-]{subsection.2.2.2}{Noise reduction}{section.2.2}% 18
+\BOOKMARK [2][-]{subsection.2.2.3}{Syllable segmentation}{section.2.2}% 19
+\BOOKMARK [1][-]{section.2.3}{Acoustic features for frog call classification}{chapter.2}% 20
+\BOOKMARK [2][-]{subsection.2.3.1}{Temporal and perceptual features for frog call classification}{section.2.3}% 21
+\BOOKMARK [2][-]{subsection.2.3.2}{Time-frequency features for frog call classification}{section.2.3}% 22
+\BOOKMARK [2][-]{subsection.2.3.3}{Cepstral features for frog call classification}{section.2.3}% 23
+\BOOKMARK [2][-]{subsection.2.3.4}{Other features for frog call classification}{section.2.3}% 24
+\BOOKMARK [1][-]{section.2.4}{Classifiers}{chapter.2}% 25
+\BOOKMARK [1][-]{section.2.5}{MIML or ML learning for bioacoustic signal classification}{chapter.2}% 26
+\BOOKMARK [1][-]{section.2.6}{Experiment results of state-of-the-art frog call classification}{chapter.2}% 27
+\BOOKMARK [2][-]{subsection.2.6.1}{Evaluation criteria}{section.2.6}% 28
+\BOOKMARK [2][-]{subsection.2.6.2}{Previous experimental results}{section.2.6}% 29
+\BOOKMARK [1][-]{section.2.7}{Summary}{chapter.2}% 30
+\BOOKMARK [2][-]{subsection.2.7.1}{Database}{section.2.7}% 31
+\BOOKMARK [2][-]{subsection.2.7.2}{Signal pre-processing}{section.2.7}% 32
+\BOOKMARK [2][-]{subsection.2.7.3}{Acoustic features}{section.2.7}% 33
+\BOOKMARK [2][-]{subsection.2.7.4}{Classifiers}{section.2.7}% 34
+\BOOKMARK [0][-]{chapter.3}{Frog call classification based on feature fusion and machine learning algorithms}{}% 35
+\BOOKMARK [1][-]{section.3.1}{Overview}{chapter.3}% 36
+\BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 37
+\BOOKMARK [2][-]{subsection.3.2.1}{Data description}{section.3.2}% 38
+\BOOKMARK [2][-]{subsection.3.2.2}{Syllable segmentation based on an adaptive end point detection}{section.3.2}% 39
+\BOOKMARK [2][-]{subsection.3.2.3}{Pre-processing}{section.3.2}% 40
+\BOOKMARK [2][-]{subsection.3.2.4}{Feature extraction}{section.3.2}% 41
+\BOOKMARK [2][-]{subsection.3.2.5}{Classifier description}{section.3.2}% 42
+\BOOKMARK [1][-]{section.3.3}{Experiment results}{chapter.3}% 43
+\BOOKMARK [2][-]{subsection.3.3.1}{Effects of different feature sets}{section.3.3}% 44
+\BOOKMARK [2][-]{subsection.3.3.2}{Effects of different machine learning techniques}{section.3.3}% 45
+\BOOKMARK [2][-]{subsection.3.3.3}{Effects of different window size for MFCCs and perceptual features}{section.3.3}% 46
+\BOOKMARK [2][-]{subsection.3.3.4}{Effects of noise}{section.3.3}% 47
+\BOOKMARK [1][-]{section.3.4}{Discussion}{chapter.3}% 48
+\BOOKMARK [1][-]{section.3.5}{Summary and limitations}{chapter.3}% 49
+\BOOKMARK [0][-]{chapter.4}{Adaptive frequency scaled wavelet packet decomposition for frog call classification}{}% 50
+\BOOKMARK [1][-]{section.4.1}{Overview}{chapter.4}% 51
+\BOOKMARK [1][-]{section.4.2}{Methods}{chapter.4}% 52
+\BOOKMARK [2][-]{subsection.4.2.1}{Sound recording and pre-processing}{section.4.2}% 53
+\BOOKMARK [2][-]{subsection.4.2.2}{Spectrogram analysis for validation dataset}{section.4.2}% 54
+\BOOKMARK [2][-]{subsection.4.2.3}{Syllable segmentation}{section.4.2}% 55
+\BOOKMARK [2][-]{subsection.4.2.4}{Spectral peak track extraction}{section.4.2}% 56
+\BOOKMARK [2][-]{subsection.4.2.5}{SPT features}{section.4.2}% 57
+\BOOKMARK [2][-]{subsection.4.2.6}{Wavelet packet decomposition}{section.4.2}% 58
+\BOOKMARK [2][-]{subsection.4.2.7}{WPD based on an adaptive frequency scale}{section.4.2}% 59
+\BOOKMARK [2][-]{subsection.4.2.8}{Feature extraction based on adaptive frequency scaled WPD}{section.4.2}% 60
+\BOOKMARK [2][-]{subsection.4.2.9}{Classification}{section.4.2}% 61
+\BOOKMARK [1][-]{section.4.3}{Experiment result and discussion}{chapter.4}% 62
+\BOOKMARK [2][-]{subsection.4.3.1}{Parameter tuning}{section.4.3}% 63
+\BOOKMARK [2][-]{subsection.4.3.2}{Feature evaluation}{section.4.3}% 64
+\BOOKMARK [2][-]{subsection.4.3.3}{Comparison between different feature sets}{section.4.3}% 65
+\BOOKMARK [2][-]{subsection.4.3.4}{Comparison under different SNRs}{section.4.3}% 66
+\BOOKMARK [2][-]{subsection.4.3.5}{Feature evaluation using the real world recordings}{section.4.3}% 67
+\BOOKMARK [1][-]{section.4.4}{Summary and limitations}{chapter.4}% 68
+\BOOKMARK [0][-]{chapter.5}{Multiple-instance multiple-label learning for the classification of frog calls with acoustic event detection}{}% 69
+\BOOKMARK [1][-]{section.5.1}{Overview}{chapter.5}% 70
+\BOOKMARK [1][-]{section.5.2}{Methods}{chapter.5}% 71
+\BOOKMARK [2][-]{subsection.5.2.1}{Materials}{section.5.2}% 72
+\BOOKMARK [2][-]{subsection.5.2.2}{Signal processing}{section.5.2}% 73
+\BOOKMARK [2][-]{subsection.5.2.3}{Acoustic event detection for syllable segmentation}{section.5.2}% 74
+\BOOKMARK [2][-]{subsection.5.2.4}{Feature extraction}{section.5.2}% 75
+\BOOKMARK [2][-]{subsection.5.2.5}{Multiple-instance multiple-label classifiers}{section.5.2}% 76
+\BOOKMARK [1][-]{section.5.3}{Experiment results}{chapter.5}% 77
+\BOOKMARK [2][-]{subsection.5.3.1}{Parameter tuning}{section.5.3}% 78
+\BOOKMARK [2][-]{subsection.5.3.2}{Classification}{section.5.3}% 79
+\BOOKMARK [2][-]{subsection.5.3.3}{Results}{section.5.3}% 80
+\BOOKMARK [1][-]{section.5.4}{Discussion}{chapter.5}% 81
+\BOOKMARK [1][-]{section.5.5}{Summary and limitations}{chapter.5}% 82
+\BOOKMARK [0][-]{chapter.6}{Frog call classification based on multi-label learning}{}% 83
+\BOOKMARK [1][-]{section.6.1}{Overview}{chapter.6}% 84
+\BOOKMARK [1][-]{section.6.2}{Methods}{chapter.6}% 85
+\BOOKMARK [2][-]{subsection.6.2.1}{Acquisition of frog call recordings}{section.6.2}% 86
+\BOOKMARK [2][-]{subsection.6.2.2}{Feature extraction}{section.6.2}% 87
+\BOOKMARK [2][-]{subsection.6.2.3}{Feature construction}{section.6.2}% 88
+\BOOKMARK [2][-]{subsection.6.2.4}{Multi-label classification}{section.6.2}% 89
+\BOOKMARK [1][-]{section.6.3}{Experiment results}{chapter.6}% 90
+\BOOKMARK [2][-]{subsection.6.3.1}{Evaluation metrics}{section.6.3}% 91
+\BOOKMARK [2][-]{subsection.6.3.2}{Classification results}{section.6.3}% 92
+\BOOKMARK [2][-]{subsection.6.3.3}{Comparison with MIML}{section.6.3}% 93
+\BOOKMARK [1][-]{section.6.4}{Summary and limitations}{chapter.6}% 94
+\BOOKMARK [0][-]{chapter.7}{Conclusion and future work}{}% 95
+\BOOKMARK [1][-]{section.7.1}{Summary of contributions}{chapter.7}% 96
+\BOOKMARK [1][-]{section.7.2}{Limitations and future work}{chapter.7}% 97
+\BOOKMARK [0][-]{appendix.H}{Waveform, spectrogram and SNR of frog species from David Stewart's CD}{}% 98
+\BOOKMARK [0][-]{appendix.I}{Waveform, spectrogram and SNR of six frog species from JCU recordings}{}% 99
+\BOOKMARK [0][-]{appendix*.74}{References}{}% 100

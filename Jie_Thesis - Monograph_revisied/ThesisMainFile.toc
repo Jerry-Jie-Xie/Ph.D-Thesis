@@ -6,10 +6,11 @@
 \contentsline {chapter}{Abbreviations}{}{chapter*.9}
 \contentsline {chapter}{\numberline {1}Introduction}{1}{chapter.1}
 \contentsline {section}{\numberline {1.1}Motivation}{1}{section.1.1}
-\contentsline {section}{\numberline {1.2}Scope of PhD}{2}{section.1.2}
-\contentsline {section}{\numberline {1.3}Thesis structure}{3}{section.1.3}
-\contentsline {section}{\numberline {1.4}Original contributions}{5}{section.1.4}
-\contentsline {section}{\numberline {1.5}Publications}{7}{section.1.5}
+\contentsline {section}{\numberline {1.2}Research challenge}{2}{section.1.2}
+\contentsline {section}{\numberline {1.3}Scope of PhD}{3}{section.1.3}
+\contentsline {section}{\numberline {1.4}Thesis structure}{4}{section.1.4}
+\contentsline {section}{\numberline {1.5}Original contributions}{5}{section.1.5}
+\contentsline {section}{\numberline {1.6}Publications}{7}{section.1.6}
 \contentsline {chapter}{\numberline {2}An overview of frog call classification}{11}{chapter.2}
 \contentsline {section}{\numberline {2.1}Overview}{11}{section.2.1}
 \contentsline {section}{\numberline {2.2}Signal pre-processing}{11}{section.2.2}
@@ -37,15 +38,15 @@
 \contentsline {subsection}{\numberline {3.2.1}Data description}{26}{subsection.3.2.1}
 \contentsline {subsection}{\numberline {3.2.2}Syllable segmentation based on an adaptive end point detection}{26}{subsection.3.2.2}
 \contentsline {subsection}{\numberline {3.2.3}Pre-processing}{28}{subsection.3.2.3}
-\contentsline {subsubsection}{Pre-emphasise}{29}{section*.23}
-\contentsline {subsubsection}{Windowing}{30}{section*.24}
+\contentsline {subsubsection}{Pre-emphasise}{29}{section*.24}
+\contentsline {subsubsection}{Windowing}{30}{section*.25}
 \contentsline {subsection}{\numberline {3.2.4}Feature extraction}{31}{subsection.3.2.4}
 \contentsline {subsection}{\numberline {3.2.5}Classifier description}{35}{subsection.3.2.5}
-\contentsline {subsubsection}{Linear discriminant analysis}{35}{section*.25}
-\contentsline {subsubsection}{K-nearest neighbour}{36}{section*.26}
-\contentsline {subsubsection}{Support vector machines}{37}{section*.27}
-\contentsline {subsubsection}{Random forest}{37}{section*.28}
-\contentsline {subsubsection}{Artificial neural network}{38}{section*.29}
+\contentsline {subsubsection}{Linear discriminant analysis}{35}{section*.26}
+\contentsline {subsubsection}{K-nearest neighbour}{36}{section*.27}
+\contentsline {subsubsection}{Support vector machines}{37}{section*.28}
+\contentsline {subsubsection}{Random forest}{37}{section*.29}
+\contentsline {subsubsection}{Artificial neural network}{38}{section*.30}
 \contentsline {section}{\numberline {3.3}Experiment results}{39}{section.3.3}
 \contentsline {subsection}{\numberline {3.3.1}Effects of different feature sets}{39}{subsection.3.3.1}
 \contentsline {subsection}{\numberline {3.3.2}Effects of different machine learning techniques}{39}{subsection.3.3.2}
@@ -60,12 +61,12 @@
 \contentsline {subsection}{\numberline {4.2.2}Spectrogram analysis for validation dataset}{47}{subsection.4.2.2}
 \contentsline {subsection}{\numberline {4.2.3}Syllable segmentation}{48}{subsection.4.2.3}
 \contentsline {subsection}{\numberline {4.2.4}Spectral peak track extraction}{49}{subsection.4.2.4}
-\contentsline {subsection}{\numberline {4.2.5}Syllable SPT features}{52}{subsection.4.2.5}
+\contentsline {subsection}{\numberline {4.2.5}SPT features}{51}{subsection.4.2.5}
 \contentsline {subsection}{\numberline {4.2.6}Wavelet packet decomposition}{53}{subsection.4.2.6}
-\contentsline {subsection}{\numberline {4.2.7}WPD based on an adaptive frequency scale}{54}{subsection.4.2.7}
+\contentsline {subsection}{\numberline {4.2.7}WPD based on an adaptive frequency scale}{53}{subsection.4.2.7}
 \contentsline {subsection}{\numberline {4.2.8}Feature extraction based on adaptive frequency scaled WPD}{54}{subsection.4.2.8}
 \contentsline {subsection}{\numberline {4.2.9}Classification}{57}{subsection.4.2.9}
-\contentsline {section}{\numberline {4.3}Experiment result and discussion}{58}{section.4.3}
+\contentsline {section}{\numberline {4.3}Experiment result and discussion}{57}{section.4.3}
 \contentsline {subsection}{\numberline {4.3.1}Parameter tuning}{58}{subsection.4.3.1}
 \contentsline {subsection}{\numberline {4.3.2}Feature evaluation}{59}{subsection.4.3.2}
 \contentsline {subsection}{\numberline {4.3.3}Comparison between different feature sets}{59}{subsection.4.3.3}
@@ -84,23 +85,23 @@
 \contentsline {subsection}{\numberline {5.3.1}Parameter tuning}{75}{subsection.5.3.1}
 \contentsline {subsection}{\numberline {5.3.2}Classification}{75}{subsection.5.3.2}
 \contentsline {subsection}{\numberline {5.3.3}Results}{77}{subsection.5.3.3}
-\contentsline {section}{\numberline {5.4}Discussion}{78}{section.5.4}
-\contentsline {section}{\numberline {5.5}Summary and limitations}{79}{section.5.5}
-\contentsline {chapter}{\numberline {6}Frog call classification based on multi-label learning}{81}{chapter.6}
-\contentsline {section}{\numberline {6.1}Overview}{81}{section.6.1}
-\contentsline {section}{\numberline {6.2}Methods}{82}{section.6.2}
-\contentsline {subsection}{\numberline {6.2.1}Acquisition of frog call recordings}{82}{subsection.6.2.1}
-\contentsline {subsection}{\numberline {6.2.2}Feature extraction}{82}{subsection.6.2.2}
-\contentsline {subsection}{\numberline {6.2.3}Feature construction}{83}{subsection.6.2.3}
-\contentsline {subsection}{\numberline {6.2.4}Multi-label classification}{84}{subsection.6.2.4}
-\contentsline {section}{\numberline {6.3}Experiment results}{84}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Evaluation metrics}{84}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Classification results}{85}{subsection.6.3.2}
-\contentsline {subsection}{\numberline {6.3.3}Comparison with MIML}{86}{subsection.6.3.3}
-\contentsline {section}{\numberline {6.4}Summary and limitations}{87}{section.6.4}
-\contentsline {chapter}{\numberline {7}Conclusion and future work}{89}{chapter.7}
-\contentsline {section}{\numberline {7.1}Summary of contributions}{89}{section.7.1}
-\contentsline {section}{\numberline {7.2}Limitations and future work}{91}{section.7.2}
-\contentsline {chapter}{\numberline {A}Waveform, spectrogram and SNR of frog species from David Stewart's CD}{93}{appendix.H}
-\contentsline {chapter}{\numberline {B}Waveform, spectrogram and SNR of six frog species from JCU recordings}{95}{appendix.I}
-\contentsline {chapter}{References}{104}{appendix*.73}
+\contentsline {section}{\numberline {5.4}Discussion}{79}{section.5.4}
+\contentsline {section}{\numberline {5.5}Summary and limitations}{80}{section.5.5}
+\contentsline {chapter}{\numberline {6}Frog call classification based on multi-label learning}{83}{chapter.6}
+\contentsline {section}{\numberline {6.1}Overview}{83}{section.6.1}
+\contentsline {section}{\numberline {6.2}Methods}{84}{section.6.2}
+\contentsline {subsection}{\numberline {6.2.1}Acquisition of frog call recordings}{84}{subsection.6.2.1}
+\contentsline {subsection}{\numberline {6.2.2}Feature extraction}{84}{subsection.6.2.2}
+\contentsline {subsection}{\numberline {6.2.3}Feature construction}{85}{subsection.6.2.3}
+\contentsline {subsection}{\numberline {6.2.4}Multi-label classification}{86}{subsection.6.2.4}
+\contentsline {section}{\numberline {6.3}Experiment results}{86}{section.6.3}
+\contentsline {subsection}{\numberline {6.3.1}Evaluation metrics}{86}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Classification results}{87}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.3}Comparison with MIML}{88}{subsection.6.3.3}
+\contentsline {section}{\numberline {6.4}Summary and limitations}{88}{section.6.4}
+\contentsline {chapter}{\numberline {7}Conclusion and future work}{91}{chapter.7}
+\contentsline {section}{\numberline {7.1}Summary of contributions}{91}{section.7.1}
+\contentsline {section}{\numberline {7.2}Limitations and future work}{93}{section.7.2}
+\contentsline {chapter}{\numberline {A}Waveform, spectrogram and SNR of frog species from David Stewart's CD}{95}{appendix.H}
+\contentsline {chapter}{\numberline {B}Waveform, spectrogram and SNR of six frog species from JCU recordings}{97}{appendix.I}
+\contentsline {chapter}{References}{106}{appendix*.74}

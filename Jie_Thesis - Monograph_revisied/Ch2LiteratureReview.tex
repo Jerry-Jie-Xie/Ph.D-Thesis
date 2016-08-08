@@ -96,7 +96,7 @@ Noise reduction is an optional process for frog call classification.
 
 
 \subsection{Syllable segmentation}
-For frog calls, the basic elementary acoustic unit is a syllable, which is a continuous frog vocalisation emitted by an individual frog \citep{huang2009frog}. The accuracy of syllable segmentation will directly affect the classification performance, because features for frog call classification are calculated from each segmented syllable. Frog syllable segmentation methods in previous studies are summarised and listed in Table~\ref{tab:segmentation}. However, all previous methods cannot address recordings with multiple simultaneously vocalising frog species. Meanwhile, those methods, which use temporal features for segmentation, cannot address low SNR recordings. 
+For frog calls, the basic elementary acoustic unit is a syllable, which is a continuous frog vocalisation emitted by an individual frog \citep{huang2009frog}. The accuracy of syllable segmentation will directly affect the classification performance, because features for frog call classification are calculated from each segmented syllable. Frog syllable segmentation methods in previous studies are summarised and listed in Table~\ref{tab:segmentation}. However, all previous methods cannot address recordings with multiple simultaneously vocalising frog species. Meanwhile, those methods, which use temporal features for segmentation, cannot address field recordings. 
 
 %\cite{jie2015ICIP} introduced an unsupervised learning method, which included multiple image processing techniques for syllable segmentation. However, the downside of this unsupervised process was that not all segmented syllables correspond to frog vocalisations.
 
@@ -228,7 +228,7 @@ For ML learning, several papers have been published in the Neural Information Pr
 
 
 \subsection{Evaluation criteria}
-
+\label{ch2:experimentEC}
 Accuracy is the most widely used statistical criterion for evaluating frog call classification. Other evaluation criteria such as precision, recall, sensitivity, specificity, F-measure, and ROC curves are also used. Before defining these evaluation criteria, we first define true positives (TP), true negatives (TN), false negatives (FN), and false positives (FP) as described by  \citep{gordon2003sequence} 
 (1) TP: correctly recognised positives;
 (2) TN: correctly recognised negatives;
@@ -373,11 +373,11 @@ One major problem for frog call classification is the lack of a universal databa
 \subsection{Signal pre-processing}
 Currently, STFT is the most widely used technique for frog call classification. However, STFT has a trade-off between time and frequency resolution, which restricts the discriminability of features extracted from the spectrogram. 
 
-Noise reduction is an optional processing step for frog call classification. For some databases used as shown in Table~\ref{tab:classificationPerformance}, frog recordings have a high SNR, where noise reduction is unnecessary. However, when studying recordings of low SNR, noise reduction is essential for improving the classification performance \citep{bedoya2014automatic, Huang20141}. After noise reduction, both the accuracy of syllable segmentation and feature extraction can be relatively improved.
+Noise reduction is an optional processing step for frog call classification. For some databases used as shown in Table~\ref{tab:classificationPerformance}, frog recordings have a high SNR, where noise reduction is unnecessary. However, when studying field recordings, noise reduction is essential for improving the classification performance \citep{bedoya2014automatic, Huang20141}. After noise reduction, both the accuracy of syllable segmentation and feature extraction can be relatively improved.
 
-Frog syllable segmentation based on energy and zero-crossing rate cannot address low SNR recordings. Meanwhile, this method cannot segment frog syllables in low SNR recordings with multiple frog species. Recent use of unsupervised learning algorithms opens a path for segmenting frog syllables in low SNR recordings with multiple frog species. However, like other unsupervised algorithms, this method has a disadvantage that not all segmented syllables are frog vocalisations \citep{potamitis2015unsupervised}. \citet{briggs2012acoustic} used a supervised RF for bird call segmentation. However, this method required lots of tagged acoustic data to train the classifier.
+Frog syllable segmentation based on energy and zero-crossing rate cannot address field recordings. Meanwhile, this method cannot segment frog syllables in field recordings with multiple frog species. Recent use of unsupervised learning algorithms opens a path for segmenting frog syllables in field recordings with multiple frog species. However, like other unsupervised algorithms, this method has a disadvantage that not all segmented syllables are frog vocalisations \citep{potamitis2015unsupervised}. \citet{briggs2012acoustic} used a supervised RF for bird call segmentation. However, this method required lots of tagged acoustic data to train the classifier.
 
-For syllable segmentation, temporal features are more sensitive to  the background noise than perceptual features, because different frequency components can be separated by transforming the signal from temporal domain to perceptual domain. However, temporal features cannot segment  frog syllables in low SNR recordings with multiple frog species, because temporal features have no ability to separate different frequency components. Compared to temporal features, the use of amplitude-frequency information provides a robust method to segment low SNR recordings. 
+For syllable segmentation, temporal features are more sensitive to  the background noise than perceptual features, because different frequency components can be separated by transforming the signal from temporal domain to perceptual domain. However, temporal features cannot segment  frog syllables in field recordings with multiple frog species, because temporal features have no ability to separate different frequency components. Compared to temporal features, the use of amplitude-frequency information provides a robust method to segment field recordings. 
 
 
 
