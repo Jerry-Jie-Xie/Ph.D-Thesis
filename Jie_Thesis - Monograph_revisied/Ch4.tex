@@ -1,12 +1,12 @@
 % Ch4.tex
 
-\chapter[Frog call classification based on enhanced features]{Frog call classification based on feature fusion and machine learning algorithms}
+\chapter[Frog call classification based on fused feature sets]{Frog call classification based on feature fusion and machine learning algorithms}
 \label{cha:cha4EnhancedFeature}
 
 
 \textbf{Research problem}
 \\
-Previous studies classified frog calls in trophy recordings using one or two types of features from temporal, perceptual, and cepstral features. However, the fused feature set using one or two types of features cannot classify frog species that share similar characteristics in one or two domains (temporal domain, perceptual domain, and cepstral domain).
+Previous studies classified frog calls in trophy recordings using one or two types of features from temporal, perceptual, and cepstral features. However, a fused feature set using one or two types of features cannot classify frog species that share similar characteristics in one or two domains (temporal domain, perceptual domain, and cepstral domain).
 \\
 \textbf{Research sub-question}
 \\
@@ -17,29 +17,26 @@ How to build a feature set for further improving frog call classification perfor
 \section{Overview}
 \label{S:1}
 
-
-
-This chapter aims to compare various feature sets using different machine learning techniques, and finds the best feature set for classifying frogs in trophy recordings. 
-Based on the classification performance, suggested features can then be adapted to study field recordings. In particular, we want to know which features can be adopted from classifying frog species in trophy recordings to field recordings, because the final goal of this thesis is to classify  multiple simultaneously vocalising frog species in field recordings.
+This chapter aims to compare various feature sets using different machine learning algorithms, and finds the best feature set for classifying frogs in trophy recordings. 
+Based on the classification performance, suggested features can be adapted to study field recordings. In particular, we want to know which feature can be adopted from classifying frog species in trophy recordings to field recordings, because the final goal of this thesis is to classify multiple simultaneously vocalising frog species in field recordings.
 
 The proposed method is evaluated using twenty-four frog species, which are geographically well distributed through Queensland, Australia. Five feature sets are constructed and evaluated using five machine learning algorithms. 
 
 
 
 \section{Methods}
-
-Our frog call classification system contains six modules (Figure~ \ref{fig:Ch4_flowchart}): data description, syllable segmentation, pre-processing,  feature extraction, feature fusion, and classification. Detailed information of each module is described in following subsections. Different from \citep{huang2009frog}, pre-processing is directly applied to segmented syllables rather than continuous recordings.
+Our frog call classification system contains six modules (Figure~ \ref{fig:Ch4_flowchart}): data description, syllable segmentation, pre-processing, feature extraction, feature fusion, and classification. Detailed information of each module is described in following subsections. Different from \citep{huang2009frog}, pre-processing is directly applied to segmented syllables rather than continuous recordings.
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=1\linewidth]{image/Ch4/flowchart.pdf}}
-\caption{Flowchart of frog call classification system using enhanced features}
+\caption{Flowchart of frog call classification system using the fused feature set}
 \label{fig:Ch4_flowchart} 
 \end{figure}
 
 
 \subsection{Data description}
 In this chapter, twenty-four frog species, which are widespread in Queensland, Australia, are selected for experiments (Table~\ref{tab:Ch4_frogName}). 
-All those frog species are collected from trophy recordings \citep{CD}. All the recordings are two-channel, sampled at 44.10 kHz and saved in MP3 format. Similar with other trophy recordings, used recordings were obtained with a directional microphone and have a high SNR. Each recording includes one frog species with the duration ranging from eight to fifty-five seconds.
+All those frog species are collected from trophy recordings \citep{CD}. All the recordings are two-channel, sampled at 44.10 kHz and saved in MP3 format. Similar with other trophy recordings, used recordings are obtained with a directional microphone and have a high SNR. Each recording includes one frog species with the duration ranging from eight to fifty-five seconds.
 
 \begin{table}[htb!]
 \centering
@@ -82,7 +79,7 @@ All those frog species are collected from trophy recordings \citep{CD}. All the 
 \subsection{Syllable segmentation based on an adaptive end point detection}
 \label{Ch3:segmentationProcess}
 
-Each recording is made up of multiple continuous calls of one frog species. For frogs, one syllable is an elementary acoustic unit for classification, which is a continuous vocalisation emitted from an individual \citep{huang2009frog}. In this chapter, one method built on the H$\ddot{a}$rm$\ddot{a}$'s method is used to perform syllable segmentation for frog calls \citep{harma2003automatic}. The syllable segmentation process is based on the spectrogram, which is generated by applying STFT to each recording waveform. For STFT, the window function used is Hamming window with the size and overlap being 512 samples and 25\%, respectively. The detail of the segmentation method is described in Figure~\ref{fig:segmentation}, which is based on the iterative frequency-amplitude information of the spectrogram. This chapter focuses on the evaluation of fused features, but the accuracy of segmentation results can greatly affect the classification performance. To reduce the bias introduced by syllable segmentation, the segmented syllables are further filtered. First, those syllables whose length are smaller than 300 samples are removed. Then, those syllables whose averaged energy is smaller than 15\% of the maximum energy and larger than 1.5 times the averaged energy are removed for each frog species experimentally \citep{Gingras2013}.
+Each recording is made up of multiple continuous calls of one frog species. For frogs, one syllable is an elementary acoustic unit for classification, which is a continuous vocalisation emitted from an individual \citep{huang2009frog}. In this chapter, one approach built on the H$\ddot{a}$rm$\ddot{a}$'s method is used to perform syllable segmentation for frog calls \citep{harma2003automatic}. The syllable segmentation process is based on the spectrogram, which is generated by applying STFT to each recording waveform. For STFT, the window function used is Hamming window with the size and overlap being 512 samples and 25\%, respectively. The detail of the segmentation method is described in Figure~\ref{fig:segmentation}, which is based on the iterative frequency-amplitude information of the spectrogram. This chapter focuses on the evaluation of fused features, but the accuracy of segmentation results can greatly affect the classification performance. To reduce the bias introduced by syllable segmentation, the segmented syllables are further filtered. First, those syllables whose length are smaller than 300 samples are removed. Then, those syllables whose averaged energy is smaller than 15\% of the maximum energy and larger than 1.5 times the averaged energy are removed for each frog species experimentally \citep{Gingras2013}.
 
 
 \begin{figure}[htb!] % Example image
@@ -379,7 +376,7 @@ In this experiment, performance statistics is evaluated using 5-fold cross-valid
 %where $TP$ is true positive, $FP$ is true positive, $TN$ is true negative, and $FN$ is false negative.
 
 \subsection{Effects of different feature sets}
-Figure~\ref{diffFeature} illustrates the classification accuracy with different feature sets: LPCs, MFCCs (\textit{Cep}), temporal features and MFCCs (\textit{TempCep}), temporal features and perceptual features (\textit{TemPer}), and temporal features, perceptual features and MFCCs (\textit{TemPerCep}). It can be seen that cepstral features (\textit{Cep}, \textit{TempCep}, \textit{TemPerCep}) have more stable performance than LPCs and perceptual features. It is evident that our proposed enhanced feature (\textit{TemPerCep}) shows outstanding performance of all proposed feature sets of all the machine learning techniques. The reason for the high classification accuracy is that frog calls are of short duration and cover a small spectral band. Our proposed enhanced feature, \textit{TemPerCep}, can better characterise the content of frog calls. Although the classification performance of \textit{TemPerCep} is not significantly higher than other feature sets, the difference does show that our proposed feature set is suitable and effective for the classification of frog calls.   
+Figure~\ref{diffFeature} illustrates the classification accuracy with different feature sets: LPCs, MFCCs (\textit{Cep}), temporal features and MFCCs (\textit{TempCep}), temporal features and perceptual features (\textit{TemPer}), and temporal features, perceptual features and MFCCs (\textit{TemPerCep}). It can be seen that cepstral features (\textit{Cep}, \textit{TempCep}, \textit{TemPerCep}) have more stable performance than LPCs and perceptual features. It is evident that our proposed fused feature set (\textit{TemPerCep}) shows outstanding performance of all proposed feature sets of all the machine learning techniques. The reason for the high classification accuracy is that frog calls are of short duration and cover a small spectral band. Our proposed fused feature set, \textit{TemPerCep}, can better characterise the content of frog calls. Although the classification performance of \textit{TemPerCep} is not significantly higher than other feature sets, the difference does show that our proposed feature set is suitable and effective for the classification of frog calls.   
 
 
 \begin{figure}[htb!] % Example image
@@ -391,7 +388,7 @@ Figure~\ref{diffFeature} illustrates the classification accuracy with different 
 
 \subsection{Effects of different machine learning techniques}
 Figure~\ref{diffClassifier} shows the frog call classification performance of 
-$TemPerCep$ with different machine learning techniques. The high classification results in term of the accuracy, sensitivity and specificity measure of different classifiers indicates good classification performance. It can be observed that RF achieves the best classification performance, while the classification performance of LDA is the lowest. Meanwhile, the classification performance of SVM and MLP is very good, which might be that the features and classifiers are quite suitable. It can be seen from Figure~\ref{diffClassifier} that frog call classification with different machine learning techniques can achieve good performance with our enhanced feature set, because the classification accuracy is very high. It can also be noted that RF can be highly recommended for classification of frog calls due to the highest classification accuracy.
+$TemPerCep$ with different machine learning techniques. The high classification results in term of the accuracy, sensitivity and specificity measure of different classifiers indicates good classification performance. It can be observed that RF achieves the best classification performance, while the classification performance of LDA is the lowest. Meanwhile, the classification performance of SVM and MLP is very good, which might be that the features and classifiers are quite suitable. It can be seen from Figure~\ref{diffClassifier} that frog call classification with different machine learning techniques can achieve good performance with our fused feature set, because the classification accuracy is very high. It can also be noted that RF can be highly recommended for classification of frog calls due to the highest classification accuracy.
 
 
 
@@ -426,13 +423,13 @@ To further evaluate the robustness of our proposed feature set, white noise with
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=0.6\linewidth]{image/Ch4/affectNoise.png}}
-\caption{Sensitivity for different features for different levels of noise contamination}
+\caption{Sensitivity of different feature sets for different levels of noise contamination}
 \label{diffNoise} 
 \end{figure}
 
 
 \section{Discussion}
-Table~\ref{my-label} shows the classification performance of previous methods. Since previous studies often used different datasets to perform the classification task, this research implemented all those features and applied them to the used dataset with the same classifier (SVM). Compared with those previous methods, this proposed enhanced feature set significantly outperforms other methods. Therefore, it can be concluded that the results of this research stand above the current classification performance. From the table, we can also observe that MFCCs are the most popular feature that has been used for frog call classification. Among all used machine learning techniques, SVM shows the superior performance and is widely used for the classification task. It can be found that the classification accuracy of \textit{TemPerCep} does not show significant improvement when compared with MFCCs. However, combining temporal and perceptual features with cepstral features greatly improves the anti-noise ability of MFCCs.
+Table~\ref{my-label} shows the classification performance of previous methods. Since previous studies often used different datasets to perform the classification task, this research implements all those features and apples them to the used dataset with the same classifier (SVM). Compared with those previous methods, this proposed fused feature set significantly outperforms other methods. Therefore, it can be concluded that the results of this research stand above the current classification performance. From the table, we can also observe that MFCCs are the most popular feature that has been used for frog call classification. Among all used machine learning techniques, SVM shows the superior performance and is widely used for the classification task. It can be found that the classification accuracy of \textit{TemPerCep} does not show significant improvement when compared with MFCCs. However, combining temporal and perceptual features with cepstral features greatly improves the anti-noise ability of MFCCs.
 
 \begin{table}[h]
 \centering

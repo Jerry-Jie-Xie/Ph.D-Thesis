@@ -6,7 +6,7 @@
 \contentsline {figure}{\numberline {2.2}{\ignorespaces Waveform, spectrum and spectrogram of one frog syllable}}{13}{figure.caption.14}
 \contentsline {figure}{\numberline {2.3}{\ignorespaces Structure of the four main chapters of this thesis}}{23}{figure.caption.18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Flowchart of frog call classification system using enhanced features\relax }}{26}{figure.caption.19}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Flowchart of frog call classification system using the fused feature set\relax }}{26}{figure.caption.19}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces H$\mathaccentV {ddot}07F{a}$rm$\mathaccentV {ddot}07F{a}$'s segmentation algorithm}}{28}{figure.caption.21}
 \contentsline {figure}{\numberline {3.3}{\ignorespaces Syllable segmentation results}}{29}{figure.caption.22}
 \contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution of syllable number for all frog species}}{30}{figure.caption.23}
@@ -14,7 +14,7 @@
 \contentsline {figure}{\numberline {3.6}{\ignorespaces Results of different classifiers\relax }}{40}{figure.caption.32}
 \contentsline {figure}{\numberline {3.7}{\ignorespaces Classification results of MFCCs with different window sizes\relax }}{41}{figure.caption.33}
 \contentsline {figure}{\numberline {3.8}{\ignorespaces Classification results of TemPer with different window sizes\relax }}{41}{figure.caption.34}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Sensitivity for different features for different levels of noise contamination\relax }}{42}{figure.caption.35}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Sensitivity of different feature sets for different levels of noise contamination\relax }}{42}{figure.caption.35}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {4.1}{\ignorespaces Block diagram of the frog call classification system for wavelet-based feature extraction}}{46}{figure.caption.37}
 \contentsline {figure}{\numberline {4.2}{\ignorespaces Distribution of number of syllables for all frog species}}{49}{figure.caption.40}
@@ -34,6 +34,7 @@
 \contentsline {figure}{\numberline {5.5}{\ignorespaces Comparisons between SISL and MIML}}{80}{figure.caption.65}
 \contentsline {figure}{\numberline {5.6}{\ignorespaces Distribution of syllable number for all frog species}}{80}{figure.caption.66}
 \addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Spectral clustering for cepstral feature extraction}}{86}{figure.caption.67}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }

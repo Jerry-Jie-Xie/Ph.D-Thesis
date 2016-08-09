@@ -95,8 +95,8 @@
 \contentsline {subsection}{\numberline {6.2.3}Feature construction}{85}{subsection.6.2.3}
 \contentsline {subsection}{\numberline {6.2.4}Multi-label classification}{86}{subsection.6.2.4}
 \contentsline {section}{\numberline {6.3}Experiment results}{86}{section.6.3}
-\contentsline {subsection}{\numberline {6.3.1}Evaluation metrics}{86}{subsection.6.3.1}
-\contentsline {subsection}{\numberline {6.3.2}Classification results}{87}{subsection.6.3.2}
+\contentsline {subsection}{\numberline {6.3.1}Evaluation metrics}{87}{subsection.6.3.1}
+\contentsline {subsection}{\numberline {6.3.2}Classification results}{88}{subsection.6.3.2}
 \contentsline {subsection}{\numberline {6.3.3}Comparison with MIML}{88}{subsection.6.3.3}
 \contentsline {section}{\numberline {6.4}Summary and limitations}{89}{section.6.4}
 \contentsline {chapter}{\numberline {7}Conclusion and future work}{91}{chapter.7}
@@ -104,4 +104,4 @@
 \contentsline {section}{\numberline {7.2}Limitations and future work}{93}{section.7.2}
 \contentsline {chapter}{\numberline {A}Waveform, spectrogram and SNR of frog species from David Stewart's CD}{95}{appendix.H}
 \contentsline {chapter}{\numberline {B}Waveform, spectrogram and SNR of six frog species from JCU recordings}{97}{appendix.I}
-\contentsline {chapter}{References}{106}{appendix*.74}
+\contentsline {chapter}{References}{106}{appendix*.75}

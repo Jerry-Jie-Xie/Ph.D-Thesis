@@ -89,6 +89,15 @@ The second method first clusters the 12 cepstral coefficients of all the windowe
 Then, dynamic time warping is used to calculate the distance between each clustered cepstral coefficients. Finally, spectral clustering is applied for further dimension reduction and getting the final feature vector. In this chapter, the value of $k$ for k-means clustering is 50, and the number of clusters for spectral clustering is experimentally set at 2. Finally, the dimension of our constructed feature set is 24.
 
 
+\begin{figure}[htb!] % Example image
+\center{\includegraphics[width=\linewidth]{image/spectralClustering.pdf}}
+\caption[Spectral clustering for cepstral feature extraction]{Procedure for extracting cepstral based feature vectors.}
+\label{fig:spectralClustering} 
+\end{figure}
+
+
+
+
 
 \subsection{Multi-label classification} 
 Since many sampled recordings consist of calls from multiple frog species, frog call classification can be framed as a ML learning problem. However, previous studies have not adopted ML learning to classify frog calls. Therefore, it is worth investigating different ML learning algorithms for the classification of multiple vocalising frog species in field recordings for its scalability and flexibility \citep{read2011classifier}. The principle of the BR method is to solve a multi-label classification problem using multiple binary classifiers respectively. Similar to our previous work \citep{zhang2016using}, 
