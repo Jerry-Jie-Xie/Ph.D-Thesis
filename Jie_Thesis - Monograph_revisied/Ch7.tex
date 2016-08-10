@@ -146,7 +146,7 @@ The values for hamming loss, accuracy, and subset accuracy range from 0 to 1. Fo
 
 \subsection{Classification results}
 
-Experiment results are shown in Table~\ref{tab:classificationResults}. The combination of LPCs, MFCCs, and AWSCCs, can achieve the best performance with ML-random forest. Using only cepstral coefficients, the best classification performance is achieve by AWSCCs(2), of which the accuracy is 0.662. After adding the temporal feature (LPCs), the accuracy is improved to 0.694. The reason for this improvement might be that this combination can achieve both temporal and frequency information of the recording. Compare to other classifiers, the classification performance of ML-RF is better than both ML-kNN and ML-DT (Table~\ref{tab:MLclassifierComparision}).
+Experiment results are shown in Table~\ref{tab:classificationResults}. The combination of LPCs, MFCCs, and AWSCCs, can achieve the best performance with ML-random forest. Using only cepstral coefficients, the best classification performance is achieve by AWSCCs(2), of which the accuracy is 0.662. After adding the temporal feature (LPCs), the accuracy is improved to 0.694. The reason for this improvement might be that this combination can achieve both temporal and frequency information of the recording. Compared to other classifiers, the classification performance of ML-RF is better than both ML-kNN and ML-DT (Table~\ref{tab:MLclassifierComparision}).
 
 
 
@@ -189,7 +189,7 @@ AWSCCs(2) + LPCs & ML-Random forest & 0.117 $\pm$ 0.011  & 0.694 $\pm$ 0.027 & 0
 
 
 \subsection{Comparison with MIML}
-In this chapter, ML learning is used to classify frog calls without syllable segmentation. Compared with the MIML learning (Figure~\ref{fig:classificationResults} in Chapter~\ref{cha:cha6MIML}), the ML classification has a slightly better classification performance. For ML classification, LPCs, MFCCs, and AWSCCs are combined for the classification. MFCCs and AWSCCs are calculated by averaging cepstral features in the temporal direction. Although this process will compress the information in the temporal direction, the information of the cepstral domain is obtained. Since most frog species tend to continuously make calls, the compression of the temporal information will not greatly affect the discriminability of the ceptral features.
+In this chapter, ML learning is used to classify frog calls without syllable segmentation. Compared to the MIML learning (Figure~\ref{fig:classificationResults} in Chapter~\ref{cha:cha6MIML}), the ML classification has a slightly better classification performance. For ML classification, LPCs, MFCCs, and AWSCCs are combined for the classification. MFCCs and AWSCCs are calculated by averaging cepstral features in the temporal direction. Although this process will compress the information in the temporal direction, the information of the cepstral domain is obtained. Since most frog species tend to continuously make calls, the compression of the temporal information will not greatly affect the discriminability of the ceptral features.
 LPCs are added to get the temporal information. In contrast, features used for MIML classification are calculated from each segmented syllable. However, current AED often cannot accurately segment frog calls with low energies, which greatly affects the classification performance.
 
 

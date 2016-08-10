@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  9 AUG 2016 11:06
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  9 AUG 2016 15:49
 entering extended mode
 **ThesisMainFile.tex
 
@@ -697,14 +697,14 @@ duction.tex"
 Chapter 1.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.4> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 7.
-<image/Ch1/unseen_frog_1.jpg, id=751, 323.2878pt x 236.082pt>
+<image/Ch1/unseen_frog_1.jpg, id=749, 323.2878pt x 236.082pt>
 File: image/Ch1/unseen_frog_1.jpg Graphic file (type jpg)
 
 <use image/Ch1/unseen_frog_1.jpg>
 Package pdftex.def Info: image/Ch1/unseen_frog_1.jpg used on input line 17.
 (pdftex.def)             Requested size: 227.62195pt x 170.71736pt.
 
-<image/Ch1/unseen_frog_2.jpg, id=752, 319.94531pt x 240.14719pt>
+<image/Ch1/unseen_frog_2.jpg, id=750, 319.94531pt x 240.14719pt>
 File: image/Ch1/unseen_frog_2.jpg Graphic file (type jpg)
 
 <use image/Ch1/unseen_frog_2.jpg>
@@ -722,8 +722,9 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.30 
-      [1
+l.32 F
+      or frog calls, \cite{duellman1994biology} classified them into six cat...
+[1
 
 
 
@@ -731,11 +732,11 @@ l.30
  been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.56 
+l.62 
       [2 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph_revisied/
 image/Ch1/unseen_frog_1.jpg> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis -
  Monograph_revisied/image/Ch1/unseen_frog_2.jpg>]
-Overfull \hbox (0.47455pt too wide) in paragraph at lines 58--59
+Overfull \hbox (0.47455pt too wide) in paragraph at lines 64--65
 []\OT1/ptm/m/n/12 Most field record-ings con-tain mul-ti-ple frog species in an
  in-di-vid-ual record-ing (Fig-ure []1.2[]),
  []
@@ -744,7 +745,7 @@ Overfull \hbox (0.47455pt too wide) in paragraph at lines 58--59
 File: image/LR/label.pdf Graphic file (type pdf)
 
 <use image/LR/label.pdf>
-Package pdftex.def Info: image/LR/label.pdf used on input line 67.
+Package pdftex.def Info: image/LR/label.pdf used on input line 74.
 (pdftex.def)             Requested size: 455.24408pt x 275.72827pt.
  [3 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph_revisied/image
 /LR/label.pdf>] [4] [5] [6] [7] [8]
@@ -936,10 +937,13 @@ File: image/Ch4/windowSizeTemPer.pdf Graphic file (type pdf)
 Package pdftex.def Info: image/Ch4/windowSizeTemPer.pdf used on input line 415.
 
 (pdftex.def)             Requested size: 273.14922pt x 214.89pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [41 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph_revisied/imag
 e/Ch4/windowSizeMFCC.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Mo
-nograph_revisied/image/Ch4/windowSizeTemPer.pdf>] <image/Ch4/affectNoise.png, i
-d=1692, 230.0595pt x 174.6525pt>
+nograph_revisied/image/Ch4/windowSizeTemPer.pdf>]
+<image/Ch4/affectNoise.png, id=1692, 230.0595pt x 174.6525pt>
 File: image/Ch4/affectNoise.png Graphic file (type png)
 
 <use image/Ch4/affectNoise.png>
@@ -1150,7 +1154,7 @@ Package pdftex.def Info: image/Ch6/flowchart.pdf used on input line 31.
 (pdftex.def)             Requested size: 455.24408pt x 146.57724pt.
  [68 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph_revisied/imag
 e/Ch6/flowchart.pdf>] [69]
-Overfull \hbox (35.131pt too wide) in paragraph at lines 187--190
+Overfull \hbox (35.131pt too wide) in paragraph at lines 188--191
 \OT1/ptm/m/n/12 A re-gion grow-ing al-go-rithm is to ob-tain the con-tour of ea
 ch seg-mented acous-tic event [[]Mallawaarachchi
  []
@@ -1163,33 +1167,35 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: image/Ch6/AEoriginal.png Graphic file (type png)
 
 <use image/Ch6/AEoriginal.png>
-Package pdftex.def Info: image/Ch6/AEoriginal.png used on input line 195.
+Package pdftex.def Info: image/Ch6/AEoriginal.png used on input line 196.
 (pdftex.def)             Requested size: 204.86386pt x 163.88863pt.
 
 <image/Ch6/AEfinal.png, id=2186, 425.1885pt x 315.579pt>
 File: image/Ch6/AEfinal.png Graphic file (type png)
 
 <use image/Ch6/AEfinal.png>
-Package pdftex.def Info: image/Ch6/AEfinal.png used on input line 200.
+Package pdftex.def Info: image/Ch6/AEfinal.png used on input line 201.
 (pdftex.def)             Requested size: 204.86021pt x 163.88533pt.
 
 <image/Ch6/contentShape.pdf, id=2187, 521.54848pt x 616.10173pt>
 File: image/Ch6/contentShape.pdf Graphic file (type pdf)
 
 <use image/Ch6/contentShape.pdf>
-Package pdftex.def Info: image/Ch6/contentShape.pdf used on input line 222.
+Package pdftex.def Info: image/Ch6/contentShape.pdf used on input line 223.
 (pdftex.def)             Requested size: 341.43768pt x 409.71191pt.
  [72 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph_revisied/imag
 e/Ch6/AEoriginal.png> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monogr
 aph_revisied/image/Ch6/AEfinal.png>]
-Underfull \vbox (badness 1852) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [73 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph_revisied/imag
 e/Ch6/contentShape.pdf>]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [74]
-[75]
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [75]
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [76]
@@ -1197,36 +1203,37 @@ Underfull \vbox (badness 10000) has occurred while \output is active []
 File: image/Ch6/hammingLoss.pdf Graphic file (type pdf)
 
 <use image/Ch6/hammingLoss.pdf>
-Package pdftex.def Info: image/Ch6/hammingLoss.pdf used on input line 382.
+Package pdftex.def Info: image/Ch6/hammingLoss.pdf used on input line 383.
 (pdftex.def)             Requested size: 204.85844pt x 101.55905pt.
 
 <image/Ch6/rankingLoss.pdf, id=2245, 354.32375pt x 175.65625pt>
 File: image/Ch6/rankingLoss.pdf Graphic file (type pdf)
 
 <use image/Ch6/rankingLoss.pdf>
-Package pdftex.def Info: image/Ch6/rankingLoss.pdf used on input line 387.
+Package pdftex.def Info: image/Ch6/rankingLoss.pdf used on input line 388.
 (pdftex.def)             Requested size: 204.85844pt x 101.55905pt.
 
 <image/Ch6/oneError.pdf, id=2246, 348.30125pt x 175.65625pt>
 File: image/Ch6/oneError.pdf Graphic file (type pdf)
 
 <use image/Ch6/oneError.pdf>
-Package pdftex.def Info: image/Ch6/oneError.pdf used on input line 392.
+Package pdftex.def Info: image/Ch6/oneError.pdf used on input line 393.
 (pdftex.def)             Requested size: 204.85844pt x 103.31464pt.
 
 <image/Ch6/coverage.pdf, id=2247, 340.27126pt x 175.65625pt>
 File: image/Ch6/coverage.pdf Graphic file (type pdf)
 
 <use image/Ch6/coverage.pdf>
-Package pdftex.def Info: image/Ch6/coverage.pdf used on input line 397.
+Package pdftex.def Info: image/Ch6/coverage.pdf used on input line 398.
 (pdftex.def)             Requested size: 204.85844pt x 105.75371pt.
 
 <image/Ch6/avgPrecision.pdf, id=2248, 348.30125pt x 175.65625pt>
 File: image/Ch6/avgPrecision.pdf Graphic file (type pdf)
 
 <use image/Ch6/avgPrecision.pdf>
-Package pdftex.def Info: image/Ch6/avgPrecision.pdf used on input line 402.
+Package pdftex.def Info: image/Ch6/avgPrecision.pdf used on input line 403.
 (pdftex.def)             Requested size: 204.85844pt x 103.31464pt.
+ [77]
 Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ˜ in font ptmr7t!
@@ -1240,52 +1247,45 @@ Missing character: There is no â in font ptmr7t!
 Missing character: There is no € in font ptmr7t!
 Missing character: There is no ™ in font ptmr7t!
 
-Overfull \hbox (10.31224pt too wide) in paragraph at lines 450--457
+Overfull \hbox (10.31224pt too wide) in paragraph at lines 451--458
  [][] 
  []
 
 
-Underfull \vbox (badness 5711) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [77]
+ [78 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph_revisied/imag
+e/Ch6/hammingLoss.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monog
+raph_revisied/image/Ch6/rankingLoss.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/
+Jie_Thesis - Monograph_revisied/image/Ch6/oneError.pdf> <C:/Users/Jie/Documents
+/GitHub/Thesis/Jie_Thesis - Monograph_revisied/image/Ch6/coverage.pdf> <C:/User
+s/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph_revisied/image/Ch6/avgPrec
+ision.pdf>]
+Underfull \vbox (badness 1383) has occurred while \output is active []
 
-LaTeX Warning: Text page 78 contains only floats.
-
-[78 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph_revisied/image
-/Ch6/hammingLoss.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monogr
-aph_revisied/image/Ch6/rankingLoss.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/J
-ie_Thesis - Monograph_revisied/image/Ch6/oneError.pdf> <C:/Users/Jie/Documents/
-GitHub/Thesis/Jie_Thesis - Monograph_revisied/image/Ch6/coverage.pdf> <C:/Users
-/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph_revisied/image/Ch6/avgPreci
-sion.pdf>]
-<image/Ch6/Precision_MIML_SISL_2.pdf, id=2293, 348.30125pt x 285.065pt>
+ [79]
+<image/Ch6/Precision_MIML_SISL_2.pdf, id=2297, 348.30125pt x 285.065pt>
 File: image/Ch6/Precision_MIML_SISL_2.pdf Graphic file (type pdf)
 
 <use image/Ch6/Precision_MIML_SISL_2.pdf>
 Package pdftex.def Info: image/Ch6/Precision_MIML_SISL_2.pdf used on input line
- 472.
+ 473.
 (pdftex.def)             Requested size: 218.51521pt x 178.84373pt.
 
-<image/Ch6/Recall_MIML_SISL_2.pdf, id=2294, 348.30125pt x 285.065pt>
+<image/Ch6/Recall_MIML_SISL_2.pdf, id=2298, 348.30125pt x 285.065pt>
 File: image/Ch6/Recall_MIML_SISL_2.pdf Graphic file (type pdf)
 
 <use image/Ch6/Recall_MIML_SISL_2.pdf>
 Package pdftex.def Info: image/Ch6/Recall_MIML_SISL_2.pdf used on input line 47
-7.
+8.
 (pdftex.def)             Requested size: 218.51521pt x 178.84373pt.
 
-<image/Ch6/FrogSyllable.pdf, id=2295, 357.335pt x 255.95625pt>
+<image/Ch6/FrogSyllable.pdf, id=2299, 357.335pt x 255.95625pt>
 File: image/Ch6/FrogSyllable.pdf Graphic file (type pdf)
 
 <use image/Ch6/FrogSyllable.pdf>
-Package pdftex.def Info: image/Ch6/FrogSyllable.pdf used on input line 486.
+Package pdftex.def Info: image/Ch6/FrogSyllable.pdf used on input line 487.
 (pdftex.def)             Requested size: 273.14922pt x 195.66528pt.
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [79]
-Underfull \vbox (badness 1803) has occurred while \output is active []
-
  [80 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph_revisied/imag
 e/Ch6/Precision_MIML_SISL_2.pdf> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thes
 is - Monograph_revisied/image/Ch6/Recall_MIML_SISL_2.pdf> <C:/Users/Jie/Documen
@@ -1614,11 +1614,11 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 74.
 Here is how much of TeX's memory you used:
  11610 strings out of 493921
  180077 string characters out of 3149293
- 396319 words of memory out of 3000000
+ 396308 words of memory out of 3000000
  14085 multiletter control sequences out of 15000+200000
  32574 words of font info for 73 fonts, out of 3000000 for 9000
  844 hyphenation exceptions out of 8191
- 42i,20n,77p,1676b,595s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 42i,20n,77p,1655b,595s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C:/Jie/software/MiKTeX/fonts/enc/dvips/fontname/8r.enc}<C:/Jie/software/MiKT
 eX/fonts/type1/public/amsfonts/cm/cmex10.pfb><C:/Jie/software/MiKTeX/fonts/type
 1/public/amsfonts/cm/cmmi10.pfb><C:/Jie/software/MiKTeX/fonts/type1/public/amsf
@@ -1632,7 +1632,7 @@ C:/Jie/software/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Jie/softwar
 e/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Jie/software/MiKTe
 X/fonts/type1/urw/times/utmb8a.pfb><C:/Jie/software/MiKTeX/fonts/type1/urw/time
 s/utmr8a.pfb><C:/Jie/software/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ThesisMainFile.pdf (134 pages, 6072379 bytes).
+Output written on ThesisMainFile.pdf (134 pages, 6073069 bytes).
 PDF statistics:
  2695 PDF objects out of 2984 (max. 8388607)
  486 named destinations out of 1000 (max. 500000)
