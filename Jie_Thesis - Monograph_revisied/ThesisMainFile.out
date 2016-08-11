@@ -32,7 +32,7 @@
 \BOOKMARK [2][-]{subsection.2.7.2}{Signal pre-processing}{section.2.7}% 32
 \BOOKMARK [2][-]{subsection.2.7.3}{Acoustic features}{section.2.7}% 33
 \BOOKMARK [2][-]{subsection.2.7.4}{Classifiers}{section.2.7}% 34
-\BOOKMARK [0][-]{chapter.3}{Frog call classification based on feature fusion and machine learning algorithms}{}% 35
+\BOOKMARK [0][-]{chapter.3}{Frog call classification based on feature combination and machine learning algorithms}{}% 35
 \BOOKMARK [1][-]{section.3.1}{Overview}{chapter.3}% 36
 \BOOKMARK [1][-]{section.3.2}{Methods}{chapter.3}% 37
 \BOOKMARK [2][-]{subsection.3.2.1}{Data description}{section.3.2}% 38
@@ -96,5 +96,5 @@
 \BOOKMARK [1][-]{section.7.1}{Summary of contributions}{chapter.7}% 96
 \BOOKMARK [1][-]{section.7.2}{Limitations and future work}{chapter.7}% 97
 \BOOKMARK [0][-]{appendix.H}{Waveform, spectrogram and SNR of frog species from David Stewart's CD}{}% 98
-\BOOKMARK [0][-]{appendix.I}{Waveform, spectrogram and SNR of six frog species from JCU recordings}{}% 99
+\BOOKMARK [0][-]{appendix.I}{Waveform, spectrogram and SNR of six frog species from field recordings}{}% 99
 \BOOKMARK [0][-]{appendix*.75}{References}{}% 100

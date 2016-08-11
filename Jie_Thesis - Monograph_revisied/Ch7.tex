@@ -91,7 +91,7 @@ Then, dynamic time warping is used to calculate the distance between each cluste
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=\linewidth]{image/spectralClustering.pdf}}
-\caption[Spectral clustering for cepstral feature extraction]{Procedure for extracting cepstral based feature vectors.}
+\caption[Spectral clustering for cepstral feature extraction]{Procedure for extracting cepstral based feature vectors}
 \label{fig:spectralClustering} 
 \end{figure}
 
@@ -152,17 +152,17 @@ Experiment results are shown in Table~\ref{tab:classificationResults}. The combi
 
 \begin{table}[htb!]
 \centering
-\caption{Comparison of different feature sets for ML classification}
+\caption{Comparison of different feature sets for ML classification. Here, MFCCs-1 and MFCCs-2 denote cepstral features are calculated via first and second methods, respectively}
 \label{tab:classificationResults}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lllll}
 \hline\hline
 Feature set           & Base Classifier                             & Hamming loss & Accuracy    & Subset accuracy \\ \hline
-MFCCs(1)                 & \multirow{5}{*}{Random forest} & 0.143 $\pm$ 0.015  & 0.64 $\pm$ 0.035 & 0.354 $\pm$ 0.052     \\ \cline{1-1} \cline{3-5} 
-MFCCs(2)                &            & 0.139 $\pm$ 0.01  & 0.659 $\pm$ 0.019 & 0.362 $\pm$ 0.036     \\ \cline{1-1} \cline{3-5} 
-AWSCCs(1)        &                                        & 0.139 $\pm$ 0.011  & 0.656 $\pm$ 0.009 & 0.371 $\pm$ 0.038     \\ \cline{1-1} \cline{3-5} 
-AWSCCs(2) &                                        & 0.138 $\pm$ 0.012  & 0.662 $\pm$ 0.01 & 0.38 $\pm$ 0.031     \\ \cline{1-1} \cline{3-5} 
-AWSCCs(2) + LPCs &                                        & \textbf{0.117 $\pm$ 0.011}  & \textbf{0.694 $\pm$ 0.027} & \textbf{0.424 $\pm$ 0.027}     \\ \hline\hline
+MFCCs-1                 & \multirow{5}{*}{Random forest} & 0.143 $\pm$ 0.015  & 0.64 $\pm$ 0.035 & 0.354 $\pm$ 0.052     \\ \cline{1-1} \cline{3-5} 
+MFCCs-2                &            & 0.139 $\pm$ 0.01  & 0.659 $\pm$ 0.019 & 0.362 $\pm$ 0.036     \\ \cline{1-1} \cline{3-5} 
+AWSCCs-1        &                                        & 0.139 $\pm$ 0.011  & 0.656 $\pm$ 0.009 & 0.371 $\pm$ 0.038     \\ \cline{1-1} \cline{3-5} 
+AWSCCs-2 &                                        & 0.138 $\pm$ 0.012  & 0.662 $\pm$ 0.01 & 0.38 $\pm$ 0.031     \\ \cline{1-1} \cline{3-5} 
+AWSCCs-2 + LPCs &                                        & \textbf{0.117 $\pm$ 0.011}  & \textbf{0.694 $\pm$ 0.027} & \textbf{0.424 $\pm$ 0.027}     \\ \hline\hline
 \end{tabular}
 }
 \end{table}
@@ -178,9 +178,9 @@ AWSCCs(2) + LPCs &                                        & \textbf{0.117 $\pm$ 
 \begin{tabular}{lllll}
 \hline\hline
 Feature set           & Base classifier            & Hamming loss & Accuracy    & Subset accuracy \\ \hline
-AWSCCs(2) + LPCs & ML-kNN                   & 0.139 $\pm$ 0.023  & 0.679 $\pm$ 0.039 & 0.362 $\pm$ 0.065     \\ 
-AWSCCs(2) + LPCs & ML-Decision Tree         & 0.171 $\pm$ 0.012  & 0.593 $\pm$ 0.018 & 0.272 $\pm$ 0.036     \\ 
-AWSCCs(2) + LPCs & ML-Random forest & 0.117 $\pm$ 0.011  & 0.694 $\pm$ 0.027 & 0.424 $\pm$ 0.027     \\ \hline\hline
+AWSCCs-2 + LPCs & ML-kNN                   & 0.139 $\pm$ 0.023  & 0.679 $\pm$ 0.039 & 0.362 $\pm$ 0.065     \\ 
+AWSCCs-2 + LPCs & ML-Decision Tree         & 0.171 $\pm$ 0.012  & 0.593 $\pm$ 0.018 & 0.272 $\pm$ 0.036     \\ 
+AWSCCs-2 + LPCs & ML-Random forest & 0.117 $\pm$ 0.011  & 0.694 $\pm$ 0.027 & 0.424 $\pm$ 0.027     \\ \hline\hline
 \end{tabular}
 }
 \end{table}

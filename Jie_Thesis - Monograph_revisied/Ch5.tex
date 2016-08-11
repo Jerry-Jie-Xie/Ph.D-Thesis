@@ -32,7 +32,7 @@ The architecture of the proposed classification method contains five modules: sy
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=1\linewidth]{image/Ch5/flowchart.pdf}}
-\caption[Block diagram of the frog call classification system for wavelet-based feature extraction]{Block diagram of the frog call classification system. The line of dashes indicates the extracted feature set. AWSCCs is the abbreviation of \textit{adaptive wavelet packet decomposition sub-band cepstral coefficients}. STFT is short-time Fourier transform. For STFT(1), the window function, size and overlap are Kaiser window, 512 samples and 25\%. For STFT(2), the window function, size and overlap are Hamming window, 128 samples and 90\%. In this diagram, two feature sets are extracted, the description of other feature sets is shown in Figure~\ref{fig:featureExtraction}.}
+\caption[Block diagram of the frog call classification system for wavelet-based feature extraction]{Block diagram of the frog call classification system. The line of dashes indicates the extracted feature set. AWSCCs is the abbreviation of \textit{adaptive wavelet packet decomposition sub-band cepstral coefficients}. STFT is short-time Fourier transform. For STFT(1), the window function, size and overlap are Kaiser window, 512 samples and 25\%. For STFT(2), the window function, size and overlap are Hamming window, 128 samples and 90\%. In this diagram, two feature sets are extracted, the description of other feature sets is shown in Figure~\ref{fig:featureExtraction}}
 \label{fig:Ch5_flowchart} 
 \end{figure}
 
@@ -59,7 +59,7 @@ In this chapter, three syllables for each frog species are set aside and used as
 \centering
 \caption[Parameters of 18 frog species averaged of three
 randomly selected syllable samples in the trophy recording]{Parameters of 18 frog species averaged of three
-randomly selected syllable samples in the trophy recording. These selected samples make the \textit{reference data set}.}
+randomly selected syllable samples in the trophy recording. These selected samples make the \textit{reference data set}}
 \label{tab:parameter}
 \resizebox{0.85\textwidth}{!}{
 \begin{tabular}{llllll}
@@ -100,8 +100,8 @@ For the JCU recordings\footnote[2]{https://www.ecosounds.org/}, the correspondin
 \begin{table}[htb!]
 \centering
 \caption[Parameters of eight frog species obtained by averaging three
-randomly selected syllable samples from recordings of James Cook University]{Parameters of eight frog species obtained by averaging three
-randomly selected syllable samples from recordings of James Cook University. NA indicates there is no oscillation structure in the spectrogram for the background noise and frog chorus. Since syllable durations of \textit{Rhinella marina} (Commom name: Canetoad) are very different from each other, we manually set the duration of Canetoad using the maximum duration of other frog species, which is 500 milliseconds.}
+randomly selected syllable samples from recordings of JCU]{Parameters of eight frog species obtained by averaging three
+randomly selected syllable samples from recordings of James Cook University. NA indicates there is no oscillation structure in the spectrogram for the background noise and frog chorus. Since syllable durations of \textit{Rhinella marina} (Commom name: Canetoad) are very different from each other, we manually set the duration of Canetoad using the maximum duration of other frog species, which is 500 milliseconds}
 \label{tab:JCU}
 \resizebox{0.85\textwidth}{!}{
 \begin{tabular}{llllll}
@@ -161,7 +161,7 @@ For the JCU recordings, eight frog species were used for the experiment. After s
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=0.6\linewidth]{image/Ch5/syllable.pdf}}
-\caption[Distribution of number of syllables for all frog species]{Distribution of syllable number for all frog species. The x-axis is the abbreviation of each frog species, and the corresponding scientific name can be found in Table \ref{tab:parameter}.}
+\caption[Distribution of number of syllables for all frog species]{Distribution of syllable number for all frog species. The x-axis is the abbreviation of each frog species, and the corresponding scientific name can be found in Table \ref{tab:parameter}}
 \label{fig:Ch5_syllable} 
 \end{figure}
 
@@ -190,7 +190,7 @@ For the JCU recordings, eight frog species were used for the experiment. After s
 %                \includegraphics[width=\textwidth]{image/segmentationResult.png}
 %                \caption{Segmentation results}
 %        \end{subfigure}
-        \caption[Segmentation results based on bandpass filtering]{Segmentation results  for \textit{Uperolela mimula} using bandpass filtering, noise reduction and H$\ddot{a}$rm$\ddot{a}$'s method. The red line in (b) indicates the start and stop location of each segmented syllable.}       
+        \caption[Segmentation results based on bandpass filtering]{Segmentation results  for \textit{Uperolela mimula} using bandpass filtering, noise reduction and H$\ddot{a}$rm$\ddot{a}$'s method. The red line in (b) indicates the start and stop location of each segmented syllable}       
         \label{fig:Ch5_segmentation}
 \end{figure}
 
@@ -289,7 +289,7 @@ bin using linear regression, as illustrated in Figure~\ref{fig:track}.
                 \includegraphics[width=\textwidth]{image/Ch5/track.pdf}
                 \caption{spectral peak track with predicted peaks using linear regression.}
         \end{subfigure}
-        \caption[Spectral peak track extraction results]{Spectral peak track extraction results for \textit{Neobatrachus sudelli}. By filling the gaps within the track, the dominant frequency can be more accurately calculated.}       
+        \caption[Spectral peak track extraction results]{Spectral peak track extraction results for \textit{Neobatrachus sudelli}. By filling the gaps within the track, the dominant frequency can be more accurately calculated}       
         \label{fig:track}
 \end{figure}
 
@@ -388,7 +388,7 @@ stop decomposition
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=0.65\linewidth, height = 0.65\linewidth]{image/Ch5/tree18.pdf}}
-\caption[Adaptive wavelet packet tree for classifying twenty frog species]{Adaptive wavelet packet tree for classifying twenty frog species. The upper image is the wavelet packet tree; the lower image is the histogram of dominant frequency for twenty frog species.}
+\caption[Adaptive wavelet packet tree for classifying twenty frog species]{Adaptive wavelet packet tree for classifying twenty frog species. The upper image is the wavelet packet tree; the lower image is the histogram of dominant frequency for twenty frog species}
 \label{fig:tree20} 
 \end{figure}
 
@@ -403,7 +403,7 @@ The extraction procedure of AWSCCs is similar to MWSCCs. However, the frequency 
 
 \begin{figure*}[htb!] % Example image
 \center{\includegraphics[width=1\linewidth, height=0.45\linewidth]{image/Ch5/featureExtraction.pdf}}
-\caption[Process for extraction MFCCs, MWSCCs, and different statistical types of AWSCCs]{Description of three feature extraction methods including MFCCs, MWSCCs, and different statistical types of AWSCCs.}
+\caption[Process for extraction MFCCs, MWSCCs, and AWSCCs]{Description of three feature extraction methods including MFCCs, MWSCCs, and different statistical types of AWSCCs}
 \label{fig:featureExtraction} 
 \end{figure*}
 
@@ -484,7 +484,7 @@ For syllable segmentation, the window size and overlap are 512 samples and 25\%,
 In the spectral peak track determination, there are seven parameters (see in Table \ref{tab:SPT}). The parameter settings are shown in Table \ref{tab:value}.
 \begin{table}[htb!]
 \centering
-\caption{Parameter setting for calculating spectral peak track.}
+\caption{Parameter setting for calculating spectral peak track}
 \label{tab:value}
 \begin{tabular}{lll}
 \hline
@@ -521,7 +521,7 @@ The classification accuracy comparison for 18 frog species using five feature se
 % Please add the following required packages to your document preamble:
 \begin{table}[htb!]
 \centering
-\caption{Weighted classification accuracy (mean and standard deviation) comparison for five feature sets with two classifiers.}
+\caption{Weighted classification accuracy (mean and standard deviation) comparison for five feature sets with two classifiers}
 \label{tab:accuracyfor24}
 \resizebox{0.65\textwidth}{!}{
 \begin{tabular}{lll}
@@ -561,8 +561,8 @@ In this experiment, the best classification accuracy is 99.6\%, which is achieve
                 \includegraphics[width=\textwidth]{image/Ch5/deltaPWSCC.pdf}
                 \caption{Delta-AWSCCs}
         \end{subfigure}
-        \caption[The feature vectors for 31 syllables of the single species, \textit{Assa darlingtoni}]{The feature vectors for 31 syllables of the single species, \textit{Assa darlingtoni}. The x-axis is the feature index and y-axis
-is the feature value. Note that the feature vectors for averaged AWSCCs (c) and delta-AWSCCs (d) are more highly correlated than for the other two methods (a) and (b).}       
+        \caption[Feature vectors for 31 syllables of the single species, \textit{Assa darlingtoni}]{The feature vectors for 31 syllables of the single species, \textit{Assa darlingtoni}. The x-axis is the feature index and y-axis
+is the feature value. Note that the feature vectors for averaged AWSCCs (c) and delta-AWSCCs (d) are more highly correlated than for the other two methods (a) and (b)}       
         \label{fig:Ch5_feature}
 \end{figure}
 
@@ -572,7 +572,7 @@ As for SFs and MFCCs, the averaged classification accuracy is much lower than AW
 
 \begin{table}[htb!]
 \centering
-\caption[Classification accuracy of five features for the classification of twenty-four frog species using the SVM classifier]{Classification accuracy of five features for the classification of twenty-four frog species using the SVM classifier. Here, Avg AWSCCs means the averaged AWSCCs.}
+\caption[Classification accuracy of five features for the classification of twenty-four frog species using the SVM classifier]{Classification accuracy of five features for the classification of twenty-four frog species using the SVM classifier. Here, Avg AWSCCs means the averaged AWSCCs}
 \label{tab:featureComp}
 \resizebox{0.8\textwidth}{!}{
 \begin{tabular}{llllll}
@@ -607,7 +607,7 @@ Table \ref{tab:featureComp} lists the classification accuracy of all 18 frog spe
 The statistical significance of the results is shown in Table \ref{tab:t-test}. The classification accuracy of average AWSCCs is not significantly lower than the delta-AWSCCs. However, the classification accuracy of MWSCCs, MFCCs and SFs is significantly lower than delta-AWSCCs. 
 
 \begin{table}[htb!]
-\caption[Paired statistical analysis of the results in Table~\ref{tab:featureComp}]{Paired statistical analysis of the results in Table~\ref{tab:featureComp}. For the classification accuracy of each frog species, the paired Student t-test was conducted \citep{tanton2005encyclopedia}.}
+\caption[Paired statistical analysis of the results in Table~\ref{tab:featureComp}]{Paired statistical analysis of the results in Table~\ref{tab:featureComp}. For the classification accuracy of each frog species, the paired Student t-test was conducted \citep{tanton2005encyclopedia}}
 %McNemar's test \citep{mcnemar1947note} was adopted for comparing the classification results based on the binary results of 340 syllables (0 = incorrect classified, 1 = corrected classified)
 
 \centering
@@ -637,21 +637,21 @@ Since our wavelet packet tree for feature extraction is obtained based on the fr
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=0.95\linewidth, height= 0.5\linewidth]{image/Ch5/tree15vs10.pdf}}
-\caption[WP tree for classifying different number of frog species]{Wavelet packet tree based on adaptive frequency scale for classifying ten and fifteen frog species.}
+\caption[WP tree for classifying different number of frog species]{Wavelet packet tree based on adaptive frequency scale for classifying ten and fifteen frog species}
 \label{fig:wpTree} 
 \end{figure}
 
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=0.6\linewidth, height= 0.4\linewidth]{image/Ch5/MelTree.pdf}}
-\caption{Mel-scaled wavelet packet tree for frog call classification.}
+\caption{Mel-scaled wavelet packet tree for frog call classification}
 \label{fig:melTree} 
 \end{figure}
 
 
 \begin{table}[htb!]
 \centering
-\caption{Classification accuracy (\%) for classifying different number of frog species with four feature sets.}
+\caption{Classification accuracy (\%) for different number of frog species with four feature sets}
 \label{tab:manySpecies}
 \resizebox{0.85\textwidth}{!}{
 \begin{tabular}{lllll}
@@ -670,8 +670,7 @@ To further evaluate the robustness of the proposed feature, a Gaussian noise sig
 
 \begin{figure}[htb!] % Example image
 \center{\includegraphics[width=0.6\linewidth, height = 0.4\linewidth]{image/Ch5/snr.pdf}}
-\caption{Sensitivity of five features for
-different levels of noise contamination.}
+\caption{Sensitivity of five features for different levels of noise contamination}
 \label{fig:snr} 
 \end{figure}
 
@@ -683,7 +682,7 @@ Since the JCU recordings often have multiple calls from different frog species, 
 % \usepackage{multirow}
 \begin{table}[htb!]
 \centering
-\caption{Classification accuracy using the JCU recordings.}
+\caption{Classification accuracy using the JCU recordings}
 \label{tab:realField}
 \resizebox{0.6\textwidth}{!}{
 \begin{tabular}{lll}

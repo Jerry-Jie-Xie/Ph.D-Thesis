@@ -4,14 +4,14 @@
 \label{cha:cha8Conclusions}
 
 %===============================
-This thesis has addressed frog call classification using both trophy and field recordings. For trophy recordings, a fused feature set using temporal, perceptual and cepstral features is proposed. A novel cepstral feature with good anti-noise performance is proposed using WPD. 
+This thesis has addressed frog call classification using both trophy and field recordings. For trophy recordings, a combined feature set using temporal, perceptual and cepstral features is proposed. A novel cepstral feature with good anti-noise performance is proposed using WPD. 
 To classify multiple simultaneously vocalising frog species in field recordings, two classification frameworks are adopted: MIML learning and ML learning. 
 
 Challenges of this thesis lie in designing effective feature extraction algorithms and adopting classification frameworks. Key contributions of this research to the challenges are summarised, and useful avenues of inquiry for improving the methods described in this thesis are explored.
 
 \section{Summary of contributions}
 	
-In Table~\ref{tab:contribution}, the contributions of this thesis are mainly three folds.
+In Table~\ref{tab:contribution}, the contributions of this thesis are summarised and mainly include three folds.
 
 \begin{enumerate}
 \item Syllable segmentation: Segmenting individual frog syllables from the background noise.
@@ -28,7 +28,7 @@ Below is the summary of the contributions of this thesis:
 	
 \textbf{(1)} \textit{An enhanced acoustic feature set for frog call classification in trophy recordings.} 
 \\
-Effectively modelling frog vocalisations has significant impact on the performance of frog call classification systems. A novel feature set is proposed to represent frog calls using temporal, perceptual, and cepstral information. A fusion of temporal, perceptual, and cepstral features can greatly increase the discriminability of the fused feature set. Evaluations of the propose feature set are based on 24 frog species from trophy recordings. Five machine learning algorithms are compared to the proposed feature set. Background noise with SNR from -10 dB to 40 dB is added to test the anti-noise ability of the proposed feature set. Experimental results show that (1) Compared to previous feature sets, an enhanced feature set including  can achieve the best classification performance. (2) The best classification performance is achieved by SVM and RF, in comparison with LDA, K-NN, and MLP. (3) The cepstral feature is very sensitive to the background noise, but can achieve high classification accuracy for high SNR recordings. 
+Effectively modelling frog vocalisations has significant impact on the performance of frog call classification systems. A novel feature set is proposed to represent frog calls using temporal, perceptual, and cepstral information. A combination of temporal, perceptual, and cepstral features can greatly increase the discriminability of the combined feature set. Evaluations of the propose feature set are based on 24 frog species from trophy recordings. Five machine learning algorithms are compared to the proposed feature set. Background noise with SNR from -10 dB to 40 dB is added to test the anti-noise ability of the proposed feature set. Experimental results show that (1) Compared to previous feature sets, an enhanced feature set including  can achieve the best classification performance. (2) The best classification performance is achieved by SVM and RF, in comparison with LDA, K-NN, and MLP. (3) The cepstral feature is very sensitive to the background noise, but can achieve high classification accuracy for high SNR recordings. 
 
 \textbf{2)} \textit{A novel feature via adaptive WPD for frog call classification in both trophy and field recordings.}
 \\
@@ -52,7 +52,7 @@ A new method for constructing cepstral features is proposed. Evaluations of the 
 
 \begin{table}[htb!]
 \centering
-\caption{The list of proposed algorithms}
+\caption{The list of algorithms used in this thesis}
 \label{tab:contribution}
 \resizebox{\textwidth}{!}{
 \begin{tabular}{lllllll}
