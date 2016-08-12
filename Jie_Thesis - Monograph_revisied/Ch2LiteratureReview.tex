@@ -9,16 +9,6 @@ Then, several major challenges that have not been addressed in prior work are id
 \section{Overview}
 Three parts play important roles in the performance of frog call classification: signal pre-processing, feature extraction, and classification. Figure~\ref{ch2:fig:flowchart} depicts the common structure of frog call classification.
 
-\begin{figure*}[htb!]
-\centering
-    \begin{subfigure}[b]{\textwidth}
-           \includegraphics[width=\textwidth]{image/Ch1/flowchart.jpg}
-    \end{subfigure}%
-\caption[Flowchart of frog call classification]{Flowchart of frog call classification: pre-processing, feature extraction, and classification}
-\label{ch2:fig:flowchart}       
-\end{figure*}
-
-
 %\section{Overview}
 %\label{intro}
 %Over the past decade, frog biodiversity has rapidly declined because of frogs' sensitivity to habitat loss and degradation, introduced invasive species, and environmental pollution \citep{dudgeon2006freshwater}. On the one hand, frog biodiversity is rapidly declining, and on the other hand frogs are greatly valuable to the environment. Firstly, frogs are an integral part of the food web, and the decline of their population can result in negative impacts through the whole ecosystem. Secondly, frogs are famous indicator species for environment health. Finally, frogs are very useful in medical research that benefits humans \footnote{http://www.savethefrogs.com/why-frogs}. The rapid biodiversity decline and great importance of frogs make it necessary for frog biodiversity monitoring to increase. 
@@ -263,99 +253,7 @@ Table~\ref{tab:classificationPerformance} shows the list of summarised frog call
 
 
 
-\begin{table}[p]
-\centering
-\caption{A brief overview of frog call classification performance}
-\label{tab:classificationPerformance}
-\resizebox{\textwidth}{!}{
-\Rotatebox{90}{%
-\begin{tabular}{llll}
-\hline\hline
-\textbf{Database}                   & \textbf{Performance}                   & \textbf{Reference} & \textbf{Data source} \\ \hline
 
-22 frog species &  NA  & \citet{grigg1996monitoring} & Collected from Queensland, Australia (unavailable) \\ 
-
-4 frog species with 66 samples & \begin{tabular}[c]{@{}l@{}}  Best performance with averaged classification \\ Accuracy of 72.18\% and 0.76\% for standard \\ deviation.  \end{tabular}  &  \citet{yen2002automatic} & Unknown \\
-
-17 animal types & \begin{tabular}[c]{@{}l@{}}  50\% true positive accuracy, \\ over 50\ false-negative for 4 animal types \end{tabular}  & \citet{Brandes2006} & Collected from NE Costa Rica (unavailable) 
-\\  
-
-
-30 frog species and 19 cricket calls  &  \begin{tabular}[c]{@{}l@{}}  Averaged classification accuracy of 96.8\% \\ and 98.1\% \end{tabular}  & \citet{lee2006automatic}*  & Derived from compact disk (unavailable) \\ 
-
-3 frog species with 50 samples &  Averaged  classification accuracy of 90\%       &           \citet{dang2008lightweight} & Unknown \\
-
-5 frog species with 727 syllables & Averaged classification accuracy of 95.86\%     &   \citet{huang2008realization}  & Unknown  \\ 
-
-\begin{tabular}[c]{@{}l@{}} 10 frog species, 9 bird species, \\ and 8 cricket species \end{tabular} & Accuracy of 88\% for frogs    & \citet{brandes2008feature}* & Collected from NE Costa Rica (unavailable) \\ 
-
-\begin{tabular}[c]{@{}l@{}} 9 frog species and 3 bird species \\ with 10061 samples \end{tabular} & \begin{tabular}[c]{@{}l@{}} Best true positive rate of 94.95\% and \\ 0.94\% for false positive rate \end{tabular} &  \citet{acevedo2009automated}* &   Collected from 14 montane sites in Puerto Rico
- \\  
- 
-5 frog species with 959 samples      &   Averaged classification accuracy of 90.03\%       &    \citet{huang2009frog}  &   Unknown        \\  
- 
-\begin{tabular}[c]{@{}l@{}} 12 frog species with 379 samples,  \end{tabular}  \\ 10 bird species with 193 samples &  Averaged classification accuracy of 86.6\%    &   \citet{vaca2010using}* &   \begin{tabular}[c]{@{}l@{}} Recorded in Puerto Rico  (http://www.amazon.com/Los\\-Anfibios-Reptiles-Puerto-Rico/dp/084770243X) (available) \end{tabular} 
- \\  
- 
- 
-9 frog species with 90 syllables &  Averaged classification accuracy of 90.00\%      &  \citet{dayou2011classification}  &   Obtained from http://www.Frogsaustralia.
-net.au/frogs \\  
- 
- 
-  9 frog species with 54 syllables   & Averaged classification accuracy of 98.00\%  &   \citet{han2011acoustic} &   Obtained from http://www.Frogsaustralia.
-net.au/frogs \\  
- 
-1 frog species with 100 samples   & \begin{tabular}[c]{@{}l@{}}Sensitivity of 0.85 with specificity of 0.92  \\ when distinguishing \textit{Mixophyes iteratus} calls from \\ other species' call. Sensitivity of 0.88 with \\ specificity   of 0.82 against background noise \end{tabular}  & \citet{croker2012using} &  Recorded next to a running stream (unavailable) \\ 
-
-  9 frog species with 49 samples            &    Averaged classification accuracy of 97.60\%  & \citet{feature2012Colona} &  \begin{tabular}[c]{@{}l@{}} Collected on the campus of the Federal
-University of Amazonas in \\ Manaus, Brazil (unavailable) \end{tabular} 
-\\ 
-
-18 frog species with 960 syllables & Classification accuracy of 94.3\%   &   \citet{chen2012automatic} & \begin{tabular}[c]{@{}l@{}} Recorded in a wild field located in \\ the Shan-Ping forest ecological garden in Kaohsiung city, \\ Taiwan (unavailable) \end{tabular} \\ 
-
-3 frog species with 635 calls & Precision of 99\%, recall of 92\% & \citet{camacho2013automatic} &  Collected from Costa Rica (unavailable)     \\ 
-
-
- 142 species belonging to four genera   &  Genus classification accuracy above 70\%    &     \citet{Gingras2013} & obtained from
-commercially available compact discs (CDs) (available)  \\ 
-
-8 frog species with 160 samples & averaged classification accuracy of 98.1\%        &  \citet{yuan2013frog} &  Obtained from AmphibiaWeb (http://amphibiaweb.org/)(available)
-\\ 
-15 frog species with 386 syllables  &    Averaged classification accuracy of 85.78\%   &   \citet{jaafar2013mfcc} & Recorded from locations around Baling
-and Kulim, Kedah, Malaysia (unavailable)
- \\ 
-
-10 frog species with 250 syllables   &       Averaged classification accuracy of 98.8\%   &  \citet{jaafarcomparative} & \begin{tabular}[c]{@{}l@{}} Internet database (http://learning.froghome.org/) \\ and IBM,USM (http://www.frogwatch.org.au/?action=animal.list) (available) \end{tabular}  \\ 
-
-12 frog species with 291 syllables &   Averaged classification accuracy of 97\%   & \citet{jaafar2013automatic}  & Recorded from locations around Baling
-and Kulim, Kedah, Malaysia (unavailable)
-\\  
-
-13 frog species with 1514 samples &  Averaged recognition rate of 93.4\%    &    \citet{Huang20141}  &   Unknown \\ 
-
-
-15 frog species with 286 samples &       Averaged classification accuracy of 95.67\%   &  \citet{tanintelligent2014} & recorded at Sungai Sedim, in Kulim, Kedah, Malaysia   \\ 
-
-
-13 frog species with 916 calls & \begin{tabular}[c]{@{}l@{}} Averaged classification accuracy of 100\%, \\ and 99.61\% respectively for two database \end{tabular}  &  \citet{bedoya2014automatic}  &  \begin{tabular}[c]{@{}l@{}} Provided
-by the Smithsonian Tropical Research Institute (STRI) \\ and the Grupo Herpetológico de Antioquia (GHA) (unavailable) \end{tabular}   \\ 
-
-
-
-15 frog species with 896 syllables   & Precision of 99.00\%  &   \citet{Colonna20157367} & Obtained from Internet(http://
-bit.ly/1b8bvyE) (available)  \\ 
-
-10 frog species with 516 syllables & Averaged classification accuracy of 97.45\%    & \citet{jie2015escience}  &  Collected from compact disk (http://www.naturesound.com.au/) (available) \\
-
-  15 frog species with 436 syllables             &        Averaged classification accuracy of 74.73\%         &      \citet{jie2015ICIP}  &  Collected from compact disk (http://www.naturesound.com.au/) (available)  \\ 
-
-16 frog species with 898 syllables    & Averaged classification accuracy of 90.5\%   &    \citet{Xie1504:Acoustic}  &  Collected from compact disk (http://www.naturesound.com.au/) (available)       \\ 
-\\  
- \hline\hline
-\end{tabular}
-}
-}
-\end{table}
 
 
 
@@ -367,7 +265,7 @@ bit.ly/1b8bvyE) (available)  \\
 This chapter reviews three main parts of a frog call classification system: signal pre-processing, feature extraction, and classification. The review also points out the research gap in current literature as follows:
 
 \subsection{Database}
-One major problem for frog call classification is the lack of a universal database. The databases used in prior work are often related to geographical regions, because researchers from different countries focus on particular frog species in their specific area (Table \ref{tab:classificationPerformance}). Therefore, it is difficult for researchers to compare their particular classification methods. 
+One major problem for frog call classification is the lack of a universal database. The databases used in prior work are often related to geographical regions, because researchers from different countries focus on particular frog species in their specific area (Table~\ref{tab:classificationPerformance}). Therefore, it is difficult for researchers to compare their particular classification frameworks. More data is needed to compare the performance and to improve the robustness of the classification frameworks.
 
 %Current studies often focus on the study of limited number of frog species (less than 100), but the number of known amphibian species is above 7000. To reach a high quality resolution, there still is a long way to go.
 
@@ -392,7 +290,14 @@ Most perceptual features are extracted by directly calculating the statistics ov
 \subsection{Classifiers}
 Almost all previous studies assume that each recording has only one frog species, and then a SISL classification framework is adopted to classify frog calls. However, recent advances in acoustic sensor techniques have collected large volumes of acoustic data that have multiple simultaneously vocalising frog species, because different frog species tend to call together to make a frog chorus (Figure~\ref{fig:label}). Based on this attribute of frog call recordings, the classification problem can be naturally framed as a MIML classification or a ML classification problem rather than SISL classification. In previous studies, MIML and ML learning have been used to solve bioacoustic problems, but mainly focus on birds. 
 
-
+\begin{figure}[htb!]
+\centering
+    \begin{subfigure}[b]{\textwidth}
+           \includegraphics[width=1\textwidth]{image/LR/label.pdf}
+    \end{subfigure}%
+\caption[An example of collected recording]{An example of collected recording with multiple simultaneously vocalising frog species. Five frog species exist in this 10-second recording: \textit{Cyclorana novaehollandiae}, \textit{Litoria rubella}, \textit{Litoria nasuta}, \textit{Litoria rothii}, and \textit{Litoria fallax}}
+\label{fig:label}       
+\end{figure}
 
 
 In the following chapters, we aims to address some of the above identified research gaps. Four experiments are designed and organised in the manner outlined in Figure~\ref{fig:mainchapters}.

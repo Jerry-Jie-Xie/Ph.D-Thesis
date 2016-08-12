@@ -1,31 +1,32 @@
 \addvspace {10\p@ }
 \contentsline {table}{\numberline {1.1}{\ignorespaces Comparison between trophy and field recordings\relax }}{2}{table.caption.11}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {2.1}{\ignorespaces Summary of related work}}{14}{table.caption.15}
-\contentsline {table}{\numberline {2.2}{\ignorespaces A brief summary of classifiers in the literature\relax }}{17}{table.caption.16}
-\contentsline {table}{\numberline {2.3}{\ignorespaces A brief overview of frog call classification performance\relax }}{20}{table.caption.17}
+\contentsline {table}{\numberline {2.1}{\ignorespaces Summary of related work}}{13}{table.caption.14}
+\contentsline {table}{\numberline {2.2}{\ignorespaces A brief summary of classifiers in the literature\relax }}{17}{table.caption.15}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {3.1}{\ignorespaces Summary of scientific name, common name, and corresponding code}}{27}{table.caption.20}
-\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison with previous used feature sets\relax }}{43}{table.caption.36}
+\contentsline {table}{\numberline {3.1}{\ignorespaces Summary of scientific name, common name, and corresponding code}}{25}{table.caption.19}
+\contentsline {table}{\numberline {3.2}{\ignorespaces Comparison with previous used feature sets\relax }}{41}{table.caption.35}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {4.1}{\ignorespaces Parameters of 18 frog species averaged of three randomly selected syllable samples in the trophy recording}}{47}{table.caption.38}
-\contentsline {table}{\numberline {4.2}{\ignorespaces Parameters of eight frog species obtained by averaging three randomly selected syllable samples from recordings of JCU}}{48}{table.caption.39}
-\contentsline {table}{\numberline {4.3}{\ignorespaces Parameters used for spectral peak extraction\relax }}{50}{table.caption.42}
-\contentsline {table}{\numberline {4.4}{\ignorespaces Parameter setting for calculating spectral peak track\relax }}{58}{table.caption.47}
-\contentsline {table}{\numberline {4.5}{\ignorespaces Weighted classification accuracy (mean and standard deviation) comparison for five feature sets with two classifiers\relax }}{59}{table.caption.48}
-\contentsline {table}{\numberline {4.6}{\ignorespaces Classification accuracy of five features for the classification of twenty-four frog species using the SVM classifier}}{61}{table.caption.50}
-\contentsline {table}{\numberline {4.7}{\ignorespaces Paired statistical analysis of the results in Table\nobreakspace {}\ref {tab:featureComp}}}{62}{table.caption.51}
-\contentsline {table}{\numberline {4.8}{\ignorespaces Classification accuracy (\%) for different number of frog species with four feature sets\relax }}{63}{table.caption.54}
-\contentsline {table}{\numberline {4.9}{\ignorespaces Classification accuracy using the JCU recordings\relax }}{64}{table.caption.56}
+\contentsline {table}{\numberline {4.1}{\ignorespaces Parameters of 18 frog species averaged of three randomly selected syllable samples in the trophy recording}}{45}{table.caption.37}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Parameters of eight frog species obtained by averaging three randomly selected syllable samples from recordings of JCU}}{46}{table.caption.38}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Parameters used for spectral peak extraction\relax }}{48}{table.caption.41}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Parameter setting for calculating spectral peak track\relax }}{56}{table.caption.46}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Weighted classification accuracy (mean and standard deviation) comparison for five feature sets with two classifiers\relax }}{57}{table.caption.47}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Classification accuracy of five features for the classification of twenty-four frog species using the SVM classifier}}{59}{table.caption.49}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Paired statistical analysis of the results in Table\nobreakspace {}\ref {tab:featureComp}}}{60}{table.caption.50}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Classification accuracy (\%) for different number of frog species with four feature sets\relax }}{61}{table.caption.53}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Classification accuracy using the JCU recordings\relax }}{62}{table.caption.55}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {5.1}{\ignorespaces Example predictions with MIML-RBF using AF\relax }}{78}{table.caption.63}
-\contentsline {table}{\numberline {5.2}{\ignorespaces Effects of AED on the MIML classification results}}{79}{table.caption.64}
+\contentsline {table}{\numberline {5.1}{\ignorespaces Example predictions with MIML-RBF using AF\relax }}{76}{table.caption.62}
+\contentsline {table}{\numberline {5.2}{\ignorespaces Effects of AED on the MIML classification results}}{77}{table.caption.63}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {6.1}{\ignorespaces Comparison of different feature sets for ML classification. Here, MFCCs-1 and MFCCs-2 denote cepstral features are calculated via first and second methods, respectively\relax }}{88}{table.caption.68}
-\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of different ML classifiers\relax }}{89}{table.caption.69}
+\contentsline {table}{\numberline {6.1}{\ignorespaces Comparison of different feature sets for ML classification. Here, MFCCs-1 and MFCCs-2 denote cepstral features are calculated via first and second methods, respectively\relax }}{86}{table.caption.67}
+\contentsline {table}{\numberline {6.2}{\ignorespaces Comparison of different ML classifiers\relax }}{87}{table.caption.68}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {7.1}{\ignorespaces The list of algorithms used in this thesis\relax }}{93}{table.caption.70}
+\contentsline {table}{\numberline {7.1}{\ignorespaces The list of algorithms used in this thesis\relax }}{89}{table.caption.69}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {A.1}{\ignorespaces Waveform, spectrogram, and SNR of trophy recordings}}{95}{table.caption.71}
+\contentsline {table}{\numberline {A.1}{\ignorespaces Waveform, spectrogram, and SNR of trophy recordings}}{93}{table.caption.70}
 \addvspace {10\p@ }
-\contentsline {table}{\numberline {B.1}{\ignorespaces Waveform, spectrogram, and SNR of field recordings}}{97}{table.caption.73}
+\contentsline {table}{\numberline {B.1}{\ignorespaces Waveform, spectrogram, and SNR of field recordings}}{95}{table.caption.72}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {C.1}{\ignorespaces A brief overview of frog call classification performance\relax }}{98}{table.caption.74}

@@ -8,9 +8,9 @@
 \BOOKMARK [1][-]{section.1.1}{Motivation}{chapter.1}% 8
 \BOOKMARK [1][-]{section.1.2}{Research challenge}{chapter.1}% 9
 \BOOKMARK [1][-]{section.1.3}{Scope of PhD}{chapter.1}% 10
-\BOOKMARK [1][-]{section.1.4}{Thesis structure}{chapter.1}% 11
-\BOOKMARK [1][-]{section.1.5}{Original contributions}{chapter.1}% 12
-\BOOKMARK [1][-]{section.1.6}{Publications}{chapter.1}% 13
+\BOOKMARK [1][-]{section.1.4}{Original contributions}{chapter.1}% 11
+\BOOKMARK [1][-]{section.1.5}{Associated publications}{chapter.1}% 12
+\BOOKMARK [1][-]{section.1.6}{Thesis structure}{chapter.1}% 13
 \BOOKMARK [0][-]{chapter.2}{An overview of frog call classification}{}% 14
 \BOOKMARK [1][-]{section.2.1}{Overview}{chapter.2}% 15
 \BOOKMARK [1][-]{section.2.2}{Signal pre-processing}{chapter.2}% 16
@@ -95,6 +95,7 @@
 \BOOKMARK [0][-]{chapter.7}{Conclusion and future work}{}% 95
 \BOOKMARK [1][-]{section.7.1}{Summary of contributions}{chapter.7}% 96
 \BOOKMARK [1][-]{section.7.2}{Limitations and future work}{chapter.7}% 97
-\BOOKMARK [0][-]{appendix.H}{Waveform, spectrogram and SNR of frog species from David Stewart's CD}{}% 98
+\BOOKMARK [0][-]{appendix.H}{Waveform, spectrogram and SNR of frog species from trophy recordings}{}% 98
 \BOOKMARK [0][-]{appendix.I}{Waveform, spectrogram and SNR of six frog species from field recordings}{}% 99
-\BOOKMARK [0][-]{appendix*.75}{References}{}% 100
+\BOOKMARK [0][-]{appendix.J}{An overview of frog call classification performance}{}% 100
+\BOOKMARK [0][-]{appendix*.75}{References}{}% 101
