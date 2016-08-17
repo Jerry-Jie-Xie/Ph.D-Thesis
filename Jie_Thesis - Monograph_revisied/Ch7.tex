@@ -4,7 +4,7 @@
 \label{cha:cha7ML}
 \textbf{Research problem}
 \\
-In Chapter \ref{cha:cha6MIML}, the classification performance is highly affected by the syllable segmentation results, which is realised by AED. 
+In Chapter \ref{cha:cha6MIML}, the classification performance is highly affected by the syllable segmentation results, which is realised by acoustic event detection (AED). 
 \\
 \textbf{Research sub-question}
 \\
@@ -14,8 +14,8 @@ How to reduce the effect of AED results and classify multiple simultaneously voc
 \section{Overview}
 \label{sect:introduction}
 
-This chapter describes the research conducted for classifying multiple simultaneously vocalising frog species. In Chapter \ref{cha:cha6MIML}, acoustic features are calculated based on AED results, but the MIML classification performance is highly affected by the accuracy of AED results. To reduce the bias introduced by AED, this chapter uses global feature sets for classifying multiple frog species in field recordings.
-To be specific, three features are calculated: LPCs, MFCCs, and AWSCCs. Here, each feature is extracted from the whole 10-second recording without syllable segmentation. Two cepstral feature sets are constructed by statistical analysis and spectral clustering. Since each 10-second recording is represented by a whole feature set and has multiple frog species, the classification process can be naturally framed as a ML learning framework.  
+This chapter describes the research conducted for classifying multiple simultaneously vocalising frog species. In Chapter \ref{cha:cha6MIML}, acoustic features are calculated based on acoustic event detection (AED) results, but the multiple-instance multiple-label (MIML) classification performance is highly affected by the accuracy of AED results. To reduce the bias introduced by AED, this chapter uses global feature sets for classifying multiple frog species in field recordings.
+To be specific, three features are calculated: linear prediction coefficients (LPCs), Mel-frequency cepstral coefficients (MFCCs), and adaptive-frequency scaled wavelet packet decomposition sub-band cepstral coefficients (AWSCCs). Here, each feature is extracted from the whole 10-second recording without syllable segmentation. Two cepstral feature sets are constructed by statistical analysis and spectral clustering. Since each 10-second recording is represented by a whole feature set and has multiple frog species, the classification process can be naturally framed as a multiple-label (ML) learning framework.  
 
 
 \section{Methods}
@@ -193,8 +193,8 @@ In this chapter, ML learning is used to classify frog calls without syllable seg
 LPCs are added to get the temporal information. In contrast, features used for MIML classification are calculated from each segmented syllable. However, current AED often cannot accurately segment frog calls with low energies, which greatly affects the classification performance.
 
 
-\section{Summary and limitations}
-In this chapter, ML learning is used to classify multiple simultaneously vocalising frog species in field recordings. A combination of AWSCCs(1) and LPCs can achieve the best classification performance, which is similar with MIML classification results. To construct the final feature set, a novel method is proposed based on spectral clustering. Although the classification performance is similar with the first method, the feature dimension is greatly decreased from 72 to 24. Compared to MIML learning, ML learning does not need to segment frog syllables, which can increase the robustness of the classification results. Compared to other classifiers, ML-random forest can achieve the best classification performance with a hamming loss of 0.117. 
+\section{Summary}
+In this chapter, ML learning is used to classify multiple simultaneously vocalising frog species in field recordings. A combination of AWSCCs-1 and LPCs can achieve the best classification performance, which is similar with MIML classification results reported in Chapter~\ref{cha:cha6MIML}. To construct the final feature set, a novel method is proposed based on spectral clustering. Although the classification performance is similar with the statistical method, the feature dimension is greatly decreased from 72 to 24. Compared to MIML learning, ML learning does not need to segment frog syllables, which can increase the robustness of the classification results. Compared to other classifiers, ML-random forest can achieve the best classification performance with a hamming loss of 0.117. 
 
 
 

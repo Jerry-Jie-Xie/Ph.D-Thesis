@@ -6,7 +6,7 @@
 
 \textbf{Research problem}
 \\
-Following the summary of Chapter~\ref{cha:cha4EnhancedFeature}, cepstral features have been widely used for classifying frog species in trophy recordings with a high classification accuracy, but are very sensitive to background noise.
+Following the summary of Chapter~\ref{cha:cha4EnhancedFeature}, cepstral features have been widely used for classifying frog species in trophy recordings with a high classification accuracy. However, they are very sensitive to background noise.
 \\
 \textbf{Research sub-question}
 \\
@@ -17,7 +17,7 @@ How to develop robust cepstral features to classify frog species in both trophy 
 
 \section{Overview}
 
-This chapter presents a novel cepstral feature based on adaptive frequency scaled WPD, whose goal is to develop a novel feature with a good anti-noise ability. Since both trophy and field recordings are studied in this chapter, developing features with a good anti-noise ability is important for dealing with field recordings. Different from most previous studies that extracted features via Fourier transform, WPD is employed for feature extraction. The classification performance is evaluated with two different datasets from Queensland, Australia (high SNR: 18 frog species from trophy recordings and low SNR: field recordings of eight frog species from James Cook University recordings).  
+This chapter presents a novel cepstral feature based on adaptive frequency scaled wavelet packet decomposition (WPD), whose goal is to develop a novel feature with a good anti-noise ability. Since both trophy and field recordings are studied in this chapter, developing features with a good anti-noise ability is important for dealing with field recordings. Different from most previous studies that extracted features via Fourier transform, WPD is employed for feature extraction. The classification performance is evaluated with two different datasets from Queensland, Australia (high SNR: 18 frog species from trophy recordings and low SNR: field recordings of eight frog species from James Cook University recordings).  
 Although trophy recordings are used in this chapter, each recording is assumed to have only one frog species and the classification framework is regarded as a SISL classification problem.
 
 
@@ -43,7 +43,7 @@ Two datasets obtained from a trophy recording \citep{CD} and James Cook Universi
 Recordings, which were collected from the CD, are two-channel, sampled at 44.10 kHz and saved in MP3 format. All recordings were obtained with a directional microphone and have a high SNR. Each recording includes one frog species, and has a duration ranging from twenty-one to fifty-four seconds. The calls of eighteen frog species recorded in Queensland, Australia were used to develop the detailed methodology described in Figure~\ref{fig:Ch5_flowchart}. To reduce the subsequent computational burden, all the recordings selected from the CD were re-sampled at 16 kHz per second, mixed down to mono, and saved in WAV format. 
 
 The JCU recordings were obtained from Kiyomi dam (S $19^{\circ}$ $22^{'}$ $16.0^{''}$, E $146^{\circ}$ $27^{'}$ $31.3^{''}$)  BG Creek dam (S $19^{\circ}$ $27^{'}$ $1.23^{''}$, E $146^{\circ}$ $24^{'}$ $5.65^{''}$ ) and Stony Creek dam (S $19^{\circ}$ $24^{'}$ $07.0^{''}$, E $146^{\circ}$ $25’$ $51.3”$) in Townsville, using acoustic sensors. The recordings were stored on 16 GB SD cards in 64 kbps MP3 mono format and have a low SNR compared to the trophy recording. The sample rate is 16.00 kHz.
-All the JCU recordings started around sunset, finished around sunrise every day and have 12 hour duration. 
+All the JCU recordings started around sunset, finished around sunrise every day and have 12 hour duration. In this chapter, JCU recordings are field recordings.
 
 
 
@@ -61,7 +61,7 @@ In this chapter, three syllables for each frog species are set aside and used as
 randomly selected syllable samples in the trophy recording]{Parameters of 18 frog species averaged of three
 randomly selected syllable samples in the trophy recording. These selected samples make the \textit{reference data set}}
 \label{tab:parameter}
-\resizebox{0.85\textwidth}{!}{
+\resizebox{\textwidth}{!}{
 \begin{tabular}{llllll}
 \hline\hline
 {\bf No.} & {\bf Scientific name}         & {\bf Abbreviation} & {\bf \begin{tabular}[c]{@{}l@{}}Syllable duration\\  (millisecond)\end{tabular}} & {\bf \begin{tabular}[c]{@{}l@{}}Peak \\ frequency (Hz)\end{tabular}} & {\bf \begin{tabular}[c]{@{}l@{}}Oscillation rate \\ (cycle/second)\end{tabular}} \\ \hline
@@ -103,7 +103,7 @@ For the JCU recordings\footnote[2]{https://www.ecosounds.org/}, the correspondin
 randomly selected syllable samples from recordings of JCU]{Parameters of eight frog species obtained by averaging three
 randomly selected syllable samples from recordings of James Cook University. NA indicates there is no oscillation structure in the spectrogram for the background noise and frog chorus. Since syllable durations of \textit{Rhinella marina} (Commom name: Canetoad) are very different from each other, we manually set the duration of Canetoad using the maximum duration of other frog species, which is 500 milliseconds}
 \label{tab:JCU}
-\resizebox{0.85\textwidth}{!}{
+\resizebox{\textwidth}{!}{
 \begin{tabular}{llllll}
 \hline\hline
 \textbf{No.} & \textbf{Scientific name}    & \textbf{Abbreviation} & \textbf{\begin{tabular}[c]{@{}l@{}}Syllable duration\\  (millisecond)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Peak\\ frequency (Hz)\end{tabular}} & \textbf{\begin{tabular}[c]{@{}l@{}}Oscillation rate \\ (cycles/second)\end{tabular}} \\ \hline
@@ -574,7 +574,7 @@ As for SFs and MFCCs, the averaged classification accuracy is much lower than AW
 \centering
 \caption[Classification accuracy of five features for the classification of twenty-four frog species using the SVM classifier]{Classification accuracy of five features for the classification of twenty-four frog species using the SVM classifier. Here, Avg AWSCCs means the averaged AWSCCs}
 \label{tab:featureComp}
-\resizebox{0.8\textwidth}{!}{
+\resizebox{\textwidth}{!}{
 \begin{tabular}{llllll}
 \hline\hline
 \multirow{2}{*}{{\bf Code}} & \multicolumn{5}{c}{{\bf Classification accuracy (\%)}}                         \\ \cline{2-6} 
@@ -653,7 +653,7 @@ Since our wavelet packet tree for feature extraction is obtained based on the fr
 \centering
 \caption{Classification accuracy (\%) for different number of frog species with four feature sets}
 \label{tab:manySpecies}
-\resizebox{0.85\textwidth}{!}{
+\resizebox{\textwidth}{!}{
 \begin{tabular}{lllll}
 \hline\hline
 {\bf Number of frog species} & {\bf SFs} & {\bf MFCCs} & {\bf MWSCCs} & {\bf Averaged AWSCCs} \\ \hline
@@ -698,7 +698,7 @@ Delta-AWSCCs                       &         97.0   $\pm$ 5.2                &  
 \end{table}
 
 
-\section{Summary and limitations}
+\section{Summary}
 In this chapter, a novel feature extraction method for frog call classification is developed using the adaptive frequency scaled WPD. With segmented syllables, spectral peak track is first extracted from each syllable. Then, track duration, dominant frequency, and oscillation rate are calculated based on each track. Next, a k-means clustering algorithm is applied to the dominant frequency, which generates the frequency scale for WPD. Finally, a new feature, AWSCCs, is calculated. Since the feature extraction method is developed based on the data itself, the wavelet packet tree varies according to the frog species to be classified. Compared to the Mel-scaled WPD tree, the proposed adaptive wavelet packet tree can better fit the dominant frequency distribution of the frog species to be classified. With the proposed frequency scale, the call characteristics of those frog species to be classified can be enhanced, while the background noise and calls from other animals will be suppressed. Therefore, the proposed feature sets can achieve a higher accuracy for the classification of frog calls than others. Meanwhile, since the frequency scale is calculated based on the dominant frequency of those frog species to be classified, our proposed wavelet tree structure is more accurate and efficient in classifying the frog calls when compared to Mel-scale (Figures~\ref{fig:wpTree} and \ref{fig:melTree}).
 
 

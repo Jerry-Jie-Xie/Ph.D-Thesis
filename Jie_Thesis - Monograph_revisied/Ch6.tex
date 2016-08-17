@@ -142,6 +142,11 @@ T_{0}= (\phi_{b1}^{2}(k) + \phi_{b2}^{2}(k)) / 2
 Since not all detected events correspond to frog vocalisations, those events that are not from the listed frog species in Table~\ref{tab:JCU} of Chapter~\ref{chap5:Materials}, dominant frequency ($F_{0}$) and area of the event ($Ar$) are used for filtering.
 
 
+\noindent \textbf{Step 5:} Region growing
+\\
+A region growing algorithm is to obtain the contour of each segmented acoustic event \citep{mallawaarachchi2008spectrogram}. To get the accurate boundary of each acoustic event and improve the discrimination of extracted features, a 2-dimensional region growing algorithm is used to obtain the accurate event shape for each segmented event. First, the point with the maximal intensity value within the event area is selected as the seed. Then, the neighbourhood pixels of the seed(s) above the threshold are located and assigned to the output image, and new added pixels are used as seeds for further processing. Finally, when all the pixels that satisfy the criteria are added to the output image, the recursive algorithm will stop and get the final results (Figure~\ref{fig:Ch6_AED}). Here, the threshold value is empirically set as 5 dB.
+
+
 \begin{algorithm}
 \DontPrintSemicolon
 \KwData{ $S^{b}_{tf}$, spectrogram; $t_{s}(n)$, $t_{e}(n)$, $f_{l}(n)$, $f_{h}(n)$, location of each acoustic event $n$; $F_{0}(i)$, dominant frequency of frog species $i$.}
@@ -185,9 +190,10 @@ where $Ar_{s}$ is set as 200 pixels, $\theta_{l}$ and $\theta_{h}$ are set as 30
 \caption{Event filtering based on dominant frequency and event area}
 \end{algorithm}
 
-\noindent \textbf{Step 5:} Region growing
-\\
-A region growing algorithm is to obtain the contour of each segmented acoustic event \citep{mallawaarachchi2008spectrogram}. To get the accurate boundary of each acoustic event and improve the discrimination of extracted features, a 2-dimensional region growing algorithm is used to obtain the accurate event shape for each segmented event. First, the point with the maximal intensity value within the event area is selected as the seed. Then, the neighbourhood pixels of the seed(s) above the threshold are located and assigned to the output image, and new added pixels are used as seeds for further processing. Finally, when all the pixels that satisfy the criteria are added to the output image, the recursive algorithm will stop and get the final results (Figure~\ref{fig:Ch6_AED}). Here, the threshold value is empirically set as 5 dB.
+
+
+
+
 
 \begin{figure}[htb!]
 \centering
@@ -489,7 +495,7 @@ The MIML classification results are achieved using the combination of AF and MIM
 \label{fig:Ch6_syllable} 
 \end{figure}
 
-\section{Summary and limitations}
+\section{Summary}
 In this chapter, we propose a novel MIML classification framework for classifying multiple simultaneously vocalising frog species in field recordings. To the best of this author's knowledge, this is the first study that focuses on frog recordings using MIML learning. Since multiple frog species tend to call simultaneously, MIML learning is a natural fit for dealing with those recordings than SISL learning. For frog syllable segmentation, our propose AED method can achieve the best performance, which can be reflected by the classification results. Compared to SISL classification, MIML classification can achieve higher classification performance. Current classification results are found to be highly affected by the syllable segmentation results, and the use of AED cannot accurately segment all the syllables. One solution is to prepare an annotated dataset and apply supervised learning algorithms for the segmentation task. Another is to use a different classification framework, which does not need the segmentation process, and we examine this option in the next chapter.
 
 

@@ -34,7 +34,8 @@ Traditional methods for classifying frog species, which require ecologists and v
 
 \section{Research challenge}
 
-Most previous studies classify frog calls with trophy recordings, which are different from field recordings. Table~\ref{tab:recordings} summarises the differences between trophy recordings and field recordings. 
+Most previous studies classify frog calls with trophy recordings, which are different from field recordings. Table~\ref{tab:recordings} summarises the differences between trophy recordings and field recordings. Trophy recordings are collected in constrained environments with a directional microphone. In contrast, field recordings are collected in unconstrained environments with an omnidirectional microphone.
+
 
 \begin{table}[htb!]
 \centering
@@ -59,7 +60,7 @@ Based on these differences, two major challenges must be faced for building an a
 \item  Compared to trophy recordings which are collected in constrained environment with a directional microphone, field recordings tend to be noisy. Very often the desired signal (frog call) is weak, and there are other overlapping signals such as bird calls and insect calls over frog calls. Therefore, features used for classifying frogs in field recordings must have a good anti-noise ability.
 
 
-\item  Most field recordings contain multiple frog species in an individual recording (Figure~\ref{fig:label}), which are different from recordings used in previous studies (one species per recording). The classification framework for studying frogs in field recordings must be able to classify multiple frog species for each individual recording.
+\item  Most field recordings contain multiple frog species in an individual recording, which are different from recordings used in previous studies (one species per recording). The classification framework for studying frogs in field recordings must be able to classify multiple frog species for each individual recording.
 
 
 \end{enumerate}
@@ -81,16 +82,21 @@ The broad scope of this PhD research is to address the two aforementioned challe
 
 
 \section{Original contributions}
-Figure~\ref{ch2:fig:flowchart} depicts the common structure of frog call classification. This research makes important contributions to the domains of syllable segmentation (one step in pre-processing), feature extraction, and classification. Specifically, this research proposes a novel AED method to segment frog syllables in field recordings. To further improve the classification performance using trophy recordings, a combined feature set using temporal, perceptual, and cepstral features is constructed. To increase the anti-noise ability of cepstral features, a novel cepstral feature via adaptive frequency scaled WPD is developed. Moreover, two classification frameworks, MIML classification and ML classification, are adopted to cope with field recordings including multiple frog species. The detailed description of the contribution for each experiment is shown as follows:
+Figure~\ref{ch2:fig:flowchart} depicts the system structure of frog call classification, which includes pre-processing, feature extraction, and classification. 
 
 \begin{figure*}[htb!]
 \centering
     \begin{subfigure}[b]{\textwidth}
-           \includegraphics[width=\textwidth]{image/Ch1/flowchart.jpg}
+           \includegraphics[width=\textwidth]{image/Ch1/flowchart.pdf}
     \end{subfigure}%
 \caption[Flowchart of frog call classification]{Flowchart of frog call classification: pre-processing, feature extraction, and classification}
 \label{ch2:fig:flowchart}       
 \end{figure*}
+
+
+This research makes important contributions to the domains of syllable segmentation (one step in pre-processing), feature extraction, and classification. Specifically, this research proposes a novel acoustic event detection (AED) method to segment frog syllables in field recordings. To further improve the classification performance using trophy recordings, a combined feature set using temporal, perceptual, and cepstral features is constructed. To increase the anti-noise ability of cepstral features, a novel cepstral feature via adaptive frequency scaled wavelet packet decomposition (WPD) is developed. Moreover, two classification frameworks, multiple-instance multiple-label (MIML) classification and multiple-label (ML) classification, are adopted to cope with field recordings including multiple frog species. The detailed description of the contribution for each experiment is shown as follows:
+
+
 
 
 
@@ -110,7 +116,7 @@ Experimental results demonstrate that MIML learning can classify multiple frog s
 \\
 This research has led to one ICISP conference paper.
 
-\item For the MIML classification, the results are highly affected by the AED results. To further improve the classification performance, one solution is to prepare large volumes of annotated acoustic data and apply supervised learning algorithms for improving segmentation results. Another is to use a different framework without the need of syllable segmentation. This thesis examines the latter option and adopts ML learning to classify multiple simultaneously vocalising frog species in field recordings. Three global features are first extracted from each individual recordings: LPCs, MFCCs, and AWSCCs. Two cepstral features are constructed using statistical analysis and spectral clustering. 
+\item For the MIML classification, the results are highly affected by the AED results. To further improve the classification performance, one solution is to prepare large volumes of annotated acoustic data and apply supervised learning algorithms for improving segmentation results. Another is to use a different framework without the need of syllable segmentation. This thesis examines the latter option and adopts ML learning to classify multiple simultaneously vocalising frog species in field recordings. Three global features are first extracted from each individual recordings: linear prediction coefficients (LPCs), Mel-frequency cepstral coefficients (MFCCs), and adaptive-frequency scaled wavelet packet decomposition sub-band cepstral coefficients (AWSCCs). Two cepstral features are constructed using statistical analysis and spectral clustering. 
 A novel feature set of LPCs and AWSCCs is used for the ML classification.  Experimental results show that ML classification can achieve similar performance with MIML classification. 
 
 This research has led to a ICCS conference paper.
@@ -144,7 +150,7 @@ This work corresponds to Chapter \ref{cha:cha2LiteratureReview} in this thesis, 
 
 
 
-\item \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul, Classification of Frog Vocalizations using Acoustic and Visual Features, Journal of Signal Processing Systems  (Under review with small revision)
+\item \textbf{Xie, Jie}, Towsey, Michael, Zhang, Jinglan, and Roe, Paul, Classification of Frog Vocalizations using Acoustic and Visual Features, Journal of Signal Processing Systems  (Under review with minor revision)
 
 
 
@@ -198,35 +204,35 @@ This work corresponds to Chapter \ref{cha:cha7ML} in this thesis, which applies 
 This thesis is organised in the manner outlined as follows:
 
 
-\begin{itemize}
 
 
-\item  Chapter \ref{cha:cha1Introduction} provides a brief introduction to the problem of "Frog call classification using machine learning algorithms".
+
+ Chapter \ref{cha:cha1Introduction} provides a brief introduction to the problem of "Frog call classification using machine learning algorithms".
 The ecological significance of studying frogs is first illustrated. Then, two methods for frog monitoring are compared, and two challenges are identified. In the following chapters, we will see that the methods proposed in this thesis are driven by the motivation of solving those two challenges.
 
 % The background and motivation are first discussed. Then five basic concepts related to frog call classification are presented to lay the foundation for this research: environmental audio data, audio data analysis, frog call structure, acoustic event and background noise, and frog call classification system. Next, research problems and questions, aims and objectives, significance and contributions are presented based on those five basic concepts. To be specific, there are three main objectives in this thesis. The remaining chapters are organised in the order of addressing those three objectives.
 
-\item Chapter \ref{cha:cha2LiteratureReview} reviews the significant and latest literature of frog call classification using machine learning techniques. Three main parts of a frog call classification framework are discussed: signal pre-processing, feature extraction, and classification. 
+ Chapter \ref{cha:cha2LiteratureReview} reviews the significant and latest literature of frog call classification using machine learning techniques. Three main parts of a frog call classification framework are discussed: signal pre-processing, feature extraction, and classification. 
 In addition, evaluation metrics and previous experimental results are presented. This chapter provides a foundation for the research problem and necessary information about the state-of-the-art frog call classification methods. Meanwhile, the research gap is identified, which points out the potential research direction.
 
 
-\item Chapter \ref{cha:cha4EnhancedFeature} develops a combined feature set for frog call classification using trophy recordings. A combination of temporal, perceptual, and cepstral features is used for frog call classification. Classification results of five machine learning algorithms are compared to our combined feature set. 
+ Chapter \ref{cha:cha4EnhancedFeature} develops a combined feature set for frog call classification using trophy recordings. A combination of temporal, perceptual, and cepstral features is used for frog call classification. Classification results of five machine learning algorithms are compared to our combined feature set. 
 
 %This chapter aims to (1) review previous features used for frog call classification and develop a better feature set; (2) explore those previous features and study which can be adapted from high SNR recordings to low SNR recordings.
 
 
-\item  Chapter \ref{cha:cha5WaveletFeature} investigates WPD for extracting a novel cepstral feature. An adaptive frequency scale is first generated by applying k-means clustering to dominant frequencies of those frog species to be classified. Then, \textit{adaptive frequency scaled WPD} is used for calculating a novel cepstral feature. Two machine learning algorithms are used for the classification. The propose cepstral feature will be used in Chapter~\ref{cha:cha7ML} as well.
+  Chapter \ref{cha:cha5WaveletFeature} investigates WPD for extracting a novel cepstral feature. An adaptive frequency scale is first generated by applying k-means clustering to dominant frequencies of those frog species to be classified. Then, \textit{adaptive frequency scaled WPD} is used for calculating a novel cepstral feature. Two machine learning algorithms are used for the classification. The propose cepstral feature will be used in Chapter~\ref{cha:cha7ML} as well.
 
 
 %discusses wavelet analysis for frog call classification. According to the conclusion from Chapter \ref{cha:cha4EnhancedFeature}, it is found that a ceptral feature can achieve higher classification accuracy compared with temporal and perceptual features but it is very sensitive to the background noise. Consequently, in this research, a novel cepstral feature has been designed with wavelet packet decomposition that has both high classification performance and a good anti-noise ability. It is because this research will move to low SNR recordings from high SNR recordings, rather than only focusing on the low SNR recordings.
 
 
-\item  Chapter \ref{cha:cha6MIML} discusses the limitations of traditional SISL classification framework for classifying multiple simultaneously vocalising frog species in field recordings, and adopts the MIML classification framework to classify frog species in those recordings. A novel AED method is developed for frog syllable segmentation. Various event based features are extracted from each individual syllable. A bag generator is used for constructing a bag-level feature. Finally, three MIML classifiers are used for the classification.
+  Chapter \ref{cha:cha6MIML} discusses the limitations of traditional SISL classification framework for classifying multiple simultaneously vocalising frog species in field recordings, and adopts the MIML classification framework to classify frog species in those recordings. A novel AED method is developed for frog syllable segmentation. Various event based features are extracted from each individual syllable. A bag generator is used for constructing a bag-level feature. Finally, three MIML classifiers are used for the classification.
 
  
 
 
-\item  Chapter \ref{cha:cha7ML} investigates the shortcomings of the MIML classification framework, and introduces ML learning for classifying multiple frog species in field recordings. Three global features are calculated without the segmentation process: LPCs, MFCCs, and AWSCCs. Two cepstral-feature sets are constructed using statistical analysis and spectral clustering.
+  Chapter \ref{cha:cha7ML} investigates the shortcomings of the MIML classification framework, and introduces ML learning for classifying multiple frog species in field recordings. Three global features are calculated without the segmentation process: LPCs, MFCCs, and AWSCCs. Two cepstral-feature sets are constructed using statistical analysis and spectral clustering.
 Three ML classifiers are used for the classification with constructed feature sets.
 
 
@@ -240,10 +246,9 @@ Three ML classifiers are used for the classification with constructed feature se
 %Two experiments are conducted in this chapter. The first is to estimate the frog calling activity using the AED. The second is to estimate the frog species richness using the global feature sets, where the feature sets are modified from  those features used in Chapter \ref{cha:cha4EnhancedFeature}. Furthermore, both frog calling activity and species richness over three months are estimated using the field recordings.
 %The correlation between frog calling activity/species richness and weather variables (mean temperature and rainfall) are studied.
 
+Chapter~\ref{cha:cha8Conclusions} summarises the major achievements of this thesis and analyses the limitations of developed approaches. Some directions of future work are also pointed out.
 
-\item  Chapter \ref{cha:cha8Conclusions} summarises and concludes the thesis, and identifies the achievements.
 
-\end{itemize}
 
 
 %===============

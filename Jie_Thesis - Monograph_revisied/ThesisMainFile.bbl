@@ -54,8 +54,8 @@ Briggs, F., Lakshminarayanan, B., Neal, L., Fern, X.~Z., Raich, R., Hadley,
 \newblock {\em The Journal of the Acoustical Society of America},
   131(6):4640--4650.
 
-\bibitem[Camacho et~al., 2011]{camacho2013automatic}
-Camacho, A., Garc{\'\i}a-Rodr{\'\i}guez, A., and Bola{\~n}os, F. (2011).
+\bibitem[Camacho et~al., 2013]{camacho2013automatic}
+Camacho, A., Garc{\'\i}a-Rodr{\'\i}guez, A., and Bola{\~n}os, F. (2013).
 \newblock Automatic detection of vocalizations of the frog diasporus
   hylaeformis in audio recordings.
 \newblock In {\em Proceedings of Meetings on Acoustics}, volume~14, page
@@ -145,7 +145,8 @@ Duellman, W.~E. and Trueb, L. (1994).
 Dufour, O., Artieres, T., Glotin, H., and Giraudet, P. (2013a).
 \newblock Clusterized mel filter cepstral coefficients and support vector
   machines for bird song identification.
-\newblock volume 951, pages 89--93.
+\newblock In {\em In Proc of 1st workshop on Machine Learning for
+  Bioacoustics}, volume 951, pages 89--93.
 
 \bibitem[Dufour et~al., 2013b]{dufour2013multi}
 Dufour, O., Glotin, H., Artires, T., Bas, Y., and Giraudet, P. (2013b).
@@ -173,8 +174,15 @@ Gingras, B. and Fitch, W.~T. (2013).
 \newblock {\em The Journal of the Acoustical Society of America},
   133(1):547--559.
 
-\bibitem[Glotin et~al., 2013]{glotin2013sparse}
-Glotin, H., Sueur, J., Arti{\`e}res, T., Adam, O., and Razik, J. (2013).
+\bibitem[Glotin et~al., 2013a]{glotinneural}
+Glotin, H., LeCun, Y., Artieres, T., Mallat, S., Tchernichovski, O., and
+  Halkias, X. (2013a).
+\newblock Neural information processing scaled for bioacoustics, from neurons
+  to big data. usa (2013).
+\newblock {\em URL: http://sabiod. org/NIPS4B2013\_book. pdf}.
+
+\bibitem[Glotin et~al., 2013b]{glotin2013sparse}
+Glotin, H., Sueur, J., Arti{\`e}res, T., Adam, O., and Razik, J. (2013b).
 \newblock Sparse coding for scaled bioacoustics: From humpback whale songs
   evolution to forest soundscape analyses.
 \newblock {\em The Journal of the Acoustical Society of America},
@@ -264,6 +272,8 @@ Jaafar, H. and Ramli, D.~A. (2015).
 Jaafar, H., Ramli, D.~A., and Shahrudin, S. (2013a).
 \newblock A comparative study of classification algorithms and feature
   extractions for frog identification system.
+\newblock {\em School of Electrical and Electronic 4th Postgraduate
+  Colloquium}, 4.
 
 \bibitem[Jaafar et~al., 2013b]{jaafar2013mfcc}
 Jaafar, H., Ramli, D.~A., and Shahrudin, S. (2013b).
@@ -458,7 +468,8 @@ Wei, B., Yang, M., Rana, R.~K., Chou, C.~T., and Hu, W. (2012).
 Xie, J., Towsey, M., Eichinski, P., Zhang, J., and Roe, P. (2015a).
 \newblock Acoustic feature extraction using perceptual wavelet packet
   decomposition for frog call classification.
-\newblock pages 237--242.
+\newblock {\em e-Science (e-Science), 2015 IEEE 11th International Conference
+  on}, pages 237--242.
 
 \bibitem[Xie et~al., 2015b]{Xie1504:Acoustic}
 Xie, J., Towsey, M., Truskinger, A., Eichinski, P., Zhang, J., and Roe, P.
@@ -473,7 +484,8 @@ Xie, J., Towsey, M., Truskinger, A., Eichinski, P., Zhang, J., and Roe, P.
 Xie, J., Towsey, M., Zhang, J., Dong, X., and Roe, P. (2015c).
 \newblock Application of image processing techniques for frog call
   classification.
-\newblock pages 4190--4194.
+\newblock {\em Image Processing (ICIP), 2015 IEEE International Conference on},
+  pages 4190--4194.
 
 \bibitem[Xie et~al., 2015d]{emr2015Xie}
 Xie, J., Towsey, M., Zhang, J., and Roe, P. (2015d).

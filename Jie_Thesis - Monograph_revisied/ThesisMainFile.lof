@@ -3,39 +3,38 @@
 \contentsline {figure}{\numberline {1.2}{\ignorespaces Flowchart of frog call classification}}{4}{figure.caption.12}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {2.1}{\ignorespaces Waveform, spectrum and spectrogram of one frog syllable}}{12}{figure.caption.13}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces An example of collected recording}}{21}{figure.caption.16}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Logic structure of the four experimental chapters of this thesis}}{22}{figure.caption.17}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces An example of field recording}}{22}{figure.caption.17}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Logic structure of the four experimental chapters of this thesis}}{23}{figure.caption.18}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces Flowchart of frog call classification system using the combined feature set\relax }}{24}{figure.caption.18}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces H$\mathaccentV {ddot}07F{a}$rm$\mathaccentV {ddot}07F{a}$'s segmentation algorithm}}{26}{figure.caption.20}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Syllable segmentation results}}{27}{figure.caption.21}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution of number of syllable for all frog species}}{28}{figure.caption.22}
-\contentsline {figure}{\numberline {3.5}{\ignorespaces Classification results with different feature sets}}{38}{figure.caption.30}
-\contentsline {figure}{\numberline {3.6}{\ignorespaces Results of different classifiers\relax }}{38}{figure.caption.31}
-\contentsline {figure}{\numberline {3.7}{\ignorespaces Classification results of MFCCs with different window sizes\relax }}{39}{figure.caption.32}
-\contentsline {figure}{\numberline {3.8}{\ignorespaces Classification results of TemPer with different window sizes\relax }}{39}{figure.caption.33}
-\contentsline {figure}{\numberline {3.9}{\ignorespaces Sensitivity of different feature sets for different levels of noise contamination\relax }}{40}{figure.caption.34}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Flowchart of frog call classification system using the combined feature set\relax }}{26}{figure.caption.19}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces H$\mathaccentV {ddot}07F{a}$rm$\mathaccentV {ddot}07F{a}$'s segmentation algorithm}}{28}{figure.caption.21}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Syllable segmentation results}}{29}{figure.caption.22}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Distribution of number of syllable for all frog species}}{30}{figure.caption.23}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Classification results with different feature sets}}{40}{figure.caption.31}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Results of different classifiers\relax }}{40}{figure.caption.32}
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Classification results of MFCCs with different window sizes\relax }}{41}{figure.caption.33}
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Classification results of TemPer with different window sizes\relax }}{41}{figure.caption.34}
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Sensitivity of different feature sets for different levels of noise contamination\relax }}{42}{figure.caption.35}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {4.1}{\ignorespaces Block diagram of the frog call classification system for wavelet-based feature extraction}}{44}{figure.caption.36}
-\contentsline {figure}{\numberline {4.2}{\ignorespaces Distribution of number of syllables for all frog species}}{47}{figure.caption.39}
-\contentsline {figure}{\numberline {4.3}{\ignorespaces Segmentation results based on bandpass filtering}}{48}{figure.caption.40}
-\contentsline {figure}{\numberline {4.4}{\ignorespaces Spectral peak track extraction results}}{50}{figure.caption.42}
-\contentsline {figure}{\numberline {4.5}{\ignorespaces Adaptive wavelet packet tree for classifying twenty frog species}}{53}{figure.caption.44}
-\contentsline {figure}{\numberline {4.6}{\ignorespaces Process for extraction MFCCs, MWSCCs, and AWSCCs}}{54}{figure.caption.45}
-\contentsline {figure}{\numberline {4.7}{\ignorespaces Feature vectors for 31 syllables of the single species, \textit {Assa darlingtoni}}}{58}{figure.caption.48}
-\contentsline {figure}{\numberline {4.8}{\ignorespaces WP tree for classifying different number of frog species}}{60}{figure.caption.51}
-\contentsline {figure}{\numberline {4.9}{\ignorespaces Mel-scaled wavelet packet tree for frog call classification\relax }}{61}{figure.caption.52}
-\contentsline {figure}{\numberline {4.10}{\ignorespaces Sensitivity of five features for different levels of noise contamination\relax }}{62}{figure.caption.54}
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Block diagram of the frog call classification system for wavelet-based feature extraction}}{46}{figure.caption.37}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Distribution of number of syllables for all frog species}}{49}{figure.caption.40}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Segmentation results based on bandpass filtering}}{50}{figure.caption.41}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Spectral peak track extraction results}}{52}{figure.caption.43}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Adaptive wavelet packet tree for classifying twenty frog species}}{56}{figure.caption.45}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Process for extraction MFCCs, MWSCCs, and AWSCCs}}{56}{figure.caption.46}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Feature vectors for 31 syllables of the single species, \textit {Assa darlingtoni}}}{60}{figure.caption.49}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces WP tree for classifying different number of frog species}}{63}{figure.caption.52}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Mel-scaled wavelet packet tree for frog call classification\relax }}{63}{figure.caption.53}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Sensitivity of five features for different levels of noise contamination\relax }}{64}{figure.caption.55}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart of a frog call classification system using MIML learning\relax }}{66}{figure.caption.56}
-\contentsline {figure}{\numberline {5.2}{\ignorespaces Acoustic event detection results}}{70}{figure.caption.59}
-\contentsline {figure}{\numberline {5.3}{\ignorespaces Acoustic event detection results after region growing}}{71}{figure.caption.60}
-\contentsline {figure}{\numberline {5.4}{\ignorespaces MIML classification results}}{76}{figure.caption.61}
-\contentsline {figure}{\numberline {5.5}{\ignorespaces Comparisons between SISL and MIML}}{78}{figure.caption.64}
-\contentsline {figure}{\numberline {5.6}{\ignorespaces Distribution of syllable number for all frog species}}{78}{figure.caption.65}
+\contentsline {figure}{\numberline {5.1}{\ignorespaces Flowchart of a frog call classification system using MIML learning\relax }}{68}{figure.caption.57}
+\contentsline {figure}{\numberline {5.2}{\ignorespaces Acoustic event detection results}}{72}{figure.caption.60}
+\contentsline {figure}{\numberline {5.3}{\ignorespaces Acoustic event detection results after region growing}}{73}{figure.caption.61}
+\contentsline {figure}{\numberline {5.4}{\ignorespaces MIML classification results}}{77}{figure.caption.62}
+\contentsline {figure}{\numberline {5.5}{\ignorespaces Comparisons between SISL and MIML}}{79}{figure.caption.65}
+\contentsline {figure}{\numberline {5.6}{\ignorespaces Distribution of syllable number for all frog species}}{80}{figure.caption.66}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {6.1}{\ignorespaces Spectral clustering for cepstral feature extraction}}{84}{figure.caption.66}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {6.1}{\ignorespaces Spectral clustering for cepstral feature extraction}}{84}{figure.caption.67}
 \addvspace {10\p@ }
 \addvspace {10\p@ }
 \addvspace {10\p@ }
