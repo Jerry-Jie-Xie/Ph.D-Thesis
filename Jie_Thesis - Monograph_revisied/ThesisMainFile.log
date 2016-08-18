@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  17 AUG 2016 09:32
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.31)  18 AUG 2016 16:43
 entering extended mode
 **ThesisMainFile.tex
 
@@ -635,7 +635,7 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 44.
 (C:\Jie\software\MiKTeX\tex\latex\amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [5] [6]
-Underfull \hbox (badness 10000) in paragraph at lines 107--116
+Underfull \hbox (badness 10000) in paragraph at lines 112--121
 
  []
 
@@ -754,6 +754,11 @@ l.61
       [2 <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis - Monograph_revisied/
 image/Ch1/unseen_frog_1.jpg> <C:/Users/Jie/Documents/GitHub/Thesis/Jie_Thesis -
  Monograph_revisied/image/Ch1/unseen_frog_2.jpg>]
+Overfull \hbox (11.3939pt too wide) in paragraph at lines 85--86
+\OT1/ptm/m/n/12 A frog call clas-si-fi-ca-tion sys-tem of-ten con-sists of thre
+e parts (Fig-ure []1.2[]): (1)sig-nal pre-processing,
+ []
+
 <image/Ch1/flowchart.pdf, id=780, 582.97798pt x 355.3275pt>
 File: image/Ch1/flowchart.pdf Graphic file (type pdf)
 
@@ -1636,7 +1641,7 @@ usions.aux")
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 78.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 78.
 Package rerunfilecheck Info: File `ThesisMainFile.out' has not changed.
-(rerunfilecheck)             Checksum: 812165A256DA03A8C36620BCFF736610;7613.
+(rerunfilecheck)             Checksum: 47FE9E827A744FFB79602B36D61A8FC7;7614.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 78.
  ) 
 Here is how much of TeX's memory you used:
@@ -1659,7 +1664,7 @@ m/cmsy10.pfb><C:/Jie/software/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><
 C:/Jie/software/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Jie/softwar
 e/MiKTeX/fonts/type1/urw/times/utmb8a.pfb><C:/Jie/software/MiKTeX/fonts/type1/u
 rw/times/utmr8a.pfb><C:/Jie/software/MiKTeX/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ThesisMainFile.pdf (132 pages, 6222826 bytes).
+Output written on ThesisMainFile.pdf (132 pages, 6223061 bytes).
 PDF statistics:
  2723 PDF objects out of 2984 (max. 8388607)
  482 named destinations out of 1000 (max. 500000)
