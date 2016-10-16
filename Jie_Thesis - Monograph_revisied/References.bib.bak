@@ -217,7 +217,7 @@
 }
 
 @InProceedings{chen2013novel,
-  Title                    = {A Novel Approach Based on Ensemble Learning to NIPS4B Challenge},
+  Title                    = {A novel approach based on ensemble learning to NIPS4B challenge},
   Author                   = {Chen, Wei and Zhao, Gang and Li, Xiaohui},
   Booktitle                = {proc. of int. symp. Neural Information Scaled for Bioacoustics, sabiod. org/nips4b, joint to NIPS, Nevada},
   Year                     = {2013}
@@ -248,7 +248,7 @@
 }
 
 @Article{colombia2009frogs,
-  Title                    = {Frogs species Classification using LPC and Classification Algorithms on Wireless Sensor Network Platform},
+  Title                    = {Frogs species classification using LPC and classification algorithms on wireless sensor network platform},
   Author                   = {Colombia, Cali and del Cauca, Valle},
   Journal                  = {International Science and Technology Conference},
   Year                     = {2009}
@@ -629,7 +629,7 @@
 }
 
 @Article{jaafarcomparative,
-  Title                    = {A Comparative Study of Classification Algorithms and Feature Extractions for Frog Identification System},
+  Title                    = {A comparative study of classification algorithms and feature extractions for frog identification system},
   Author                   = {Jaafar, Haryati and Ramli, Dzati Athiar and Shahrudin, Shahriza},
   Journal                  = {School of Electrical and Electronic 4th Postgraduate Colloquium},
   Year                     = {2013},
@@ -682,7 +682,7 @@
 }
 
 @InCollection{kular2015classifying,
-  Title                    = {Classifying Frog Calls Using Gaussian Mixture Models},
+  Title                    = {Classifying frog calls using Gaussian Mixture Models},
   Author                   = {Kular, Dalwinderjeet and Hollowood, Kathryn and Ommojaro, Olatide and Smart, Katrina and Bush, Mark and Ribeiro, Eraldo},
   Booktitle                = {Advances in Visual Computing},
   Publisher                = {Springer},
@@ -733,7 +733,7 @@
 }
 
 @Article{barkWPDraey,
-  Title                    = {Single-Channel Source Separation of Audio Signals Using Bark Scale Wavelet Packet Decomposition},
+  Title                    = {Single-channel source separation of audio signals using Bark scale wavelet packet decomposition},
   Author                   = {Litvin, Yevgeni and Cohen, Israel},
   Journal                  = {Journal of Signal Processing Systems},
   Year                     = {2011},
@@ -1202,7 +1202,7 @@ nearest neighbour; spectral peak track}
 }
 
 @InProceedings{emr2015Xie,
-  Title                    = {Image Processing and Classification Procedure for the Analysis of Australian Frog Vocalisations},
+  Title                    = {Image processing and classification procedure for the analysis of Australian frog vocalisations},
   Author                   = {Xie, Jie and Towsey, Michael and Zhang, Jinglan and Roe, Paul},
   Booktitle                = {Proceedings of the 2Nd International Workshop on Environmental Multimedia Retrieval},
   Year                     = {2015},
